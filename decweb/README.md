@@ -19,7 +19,7 @@ Prestados e Tomados, **enviar** a declaração e baixar os PDFs (Declaração + 
    Dentro do Meu Drive, o `clientes.csv` (com senhas) e os `logs` seriam sincronizados com a nuvem.
 3. Na pasta: `pip install -r requirements.txt`
 4. Copie `config\configuracao.exemplo.ini` para `config\configuracao.ini` e confira `raiz_fechamento`
-   (a pasta `FECHAMENTO FISCAL` que contém `08_AGOSTO`, `09_SETEMBRO`...).
+   (a pasta **`001_FECHAMENTO FISCAL`**, com `001_` e underscore, que contém `08_AGOSTO`, `09_SETEMBRO`...).
 5. Copie `config\clientes.exemplo.csv` para `config\clientes.csv` e preencha **uma linha por empresa**:
    `numero,apelido,nome_painel,cnpj,usuario,senha,aceitar_avisos`
    - `numero` **sem zero à esquerda** (`16`, não `016`) e `apelido` **igual ao usado hoje nos nomes dos arquivos**
