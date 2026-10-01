@@ -272,3 +272,46 @@ def test_outra_pendencia_continua_bloqueando_mesmo_com_permissao(monkeypatch):
     _modal(monkeypatch, [AVISO, "Cadastro do responsável é necessário"], aceitar_global=True, aceitar_cliente=True)
     with pytest.raises(dl.PendenciaNoDecWeb):
         dl._confirmar_modal_preparar(object())
+
+
+# ---------------------------------------------------------------- aviso com movimento no mês
+# O DecWeb dá a MESMA mensagem para quem não teve nota nenhuma e para quem só emite por NFS-e
+# (a escrituração manual fica vazia). O relatório de Prestados que o robô acabou de baixar desempata.
+
+def _modal_com_cliente(monkeypatch, pendencias, **kw):
+    cliques = _modal(monkeypatch, pendencias, **kw)
+    monkeypatch.setattr(dl, "CLIENTE_ATUAL", {**CLIENTE, "_etapas": set()})
+    monkeypatch.setattr(dl, "COMPETENCIA_ATUAL", "09/2026")
+    return cliques
+
+
+def test_aviso_com_notas_no_prestados_segue_sem_precisar_de_permissao(monkeypatch, pastas):
+    mun, _ = pastas
+    grava_prestados_em_pasta(mun, xlsx_decweb([("NFSE 000123", 1500.0, "Normal")]))
+    cliques = _modal_com_cliente(monkeypatch, [AVISO])
+    assert dl._confirmar_modal_preparar(object()) is True
+    assert any("idCbPrep" in c for c in cliques)
+    assert not any("idCbSalvarNovo" in c for c in cliques)  # nunca 'Preparar e Enviar'
+    assert "aviso_escrituracao_aceito" in dl.CLIENTE_ATUAL["_etapas"]
+
+
+def test_aviso_com_prestados_vazio_continua_bloqueando_e_explica(monkeypatch, pastas):
+    mun, _ = pastas
+    grava_prestados_em_pasta(mun, xlsx_decweb([]))
+    _modal_com_cliente(monkeypatch, [AVISO])
+    with pytest.raises(dl.PendenciaNoDecWeb, match="receita zero"):
+        dl._confirmar_modal_preparar(object())
+
+
+def test_sem_relatorio_baixado_continua_bloqueando(monkeypatch, pastas):
+    _modal_com_cliente(monkeypatch, [AVISO])
+    with pytest.raises(dl.PendenciaNoDecWeb):
+        dl._confirmar_modal_preparar(object())
+
+
+def test_outra_pendencia_bloqueia_mesmo_com_notas(monkeypatch, pastas):
+    mun, _ = pastas
+    grava_prestados_em_pasta(mun, xlsx_decweb([("NFSE 000123", 1500.0, "Normal")]))
+    _modal_com_cliente(monkeypatch, [AVISO, "Cadastro do responsável é necessário"])
+    with pytest.raises(dl.PendenciaNoDecWeb):
+        dl._confirmar_modal_preparar(object())

@@ -179,7 +179,8 @@ ARQUIVO_RESULTADOS = PASTA_LOGS / "resultados.csv"
 ARQUIVO_RESUMO = PASTA_LOGS / "resumo_atual.csv"
 CAMPOS_RESULTADOS = ["timestamp", "competencia", "numero", "apelido", "cliente", "fase", "status", "etapas", "detalhe"]
 CAMPOS_RESUMO = ["competencia", "numero", "apelido", "cliente", "status", "etapas", "detalhe", "timestamp"]
-ETAPAS_ORDEM = ["declaracao_criada", "zips_baixados", "conferido", "enviada", "pdf_baixado"]
+ETAPAS_ORDEM = ["declaracao_criada", "zips_baixados", "conferido", "aviso_escrituracao_aceito",
+                "enviada", "pdf_baixado"]
 
 # Conferência DecWeb x Portal Nacional antes do envio (divergiu -> não envia). Vem de config/configuracao.ini
 # (padrão: desligada); --com-conferencia liga e --sem-conferencia desliga numa execução.
@@ -191,6 +192,11 @@ POLITICA_SEM_EMITIDAS = _CFG["sem_emitidas"]
 # (ver _confirmar_modal_preparar).
 ACEITAR_AVISOS = False
 ACEITAR_AVISOS_CLIENTE = False
+
+# Cliente e competência da vez — só para o modal de preparar conseguir conferir o relatório
+# já baixado antes de decidir se um aviso de escrituração bloqueia (ver _confirmar_modal_preparar).
+CLIENTE_ATUAL: dict | None = None
+COMPETENCIA_ATUAL = ""
 
 
 def marcar_etapa(cliente: dict, etapa: str) -> None:
@@ -845,6 +851,39 @@ def _pendencias_do_modal(driver: webdriver.Chrome) -> list[str]:
     ]
 
 
+def _so_avisos_de_escrituracao(pendencias: list[str]) -> bool:
+    """True quando as ÚNICAS mensagens do modal são 'Não foi informado serviço
+    prestado/tomado para esta escrituração'. Qualquer outra pendência (cadastro do
+    responsável, campo inválido, 'necessária'...) devolve False e segue bloqueando."""
+    return bool(pendencias) and all(
+        re.search(r"não foi informado serviço (prestado|tomado)", p, re.I) for p in pendencias
+    )
+
+
+def notas_do_prestados_baixado(cliente: dict | None, competencia: str) -> int | None:
+    """Quantas notas NÃO canceladas o relatório de Serviços Prestados que o robô acabou
+    de baixar traz. None quando não dá para saber (relatório ausente ou ilegível).
+
+    É isso que separa os dois casos que geram a MESMA mensagem no DecWeb:
+
+      - relatório com notas  -> o aviso é só sobre a escrituração manual (o cliente
+        emite por NFS-e); a declaração tem movimento e pode seguir;
+      - relatório vazio      -> cliente de receita zero de verdade; só segue com
+        aceitar_avisos=sim, como antes.
+    """
+    if not cliente or not competencia:
+        return None
+    try:
+        mes, ano = competencia.split("/")
+        dados = cp.achar_decweb_prestados(
+            Path(configuracao.pasta_municipais(_CFG, mes)), cliente, mes, ano
+        )
+    except Exception as e:  # relatório corrompido, pasta fora do ar, layout novo...
+        log.warning("Não deu para ler o Prestados baixado (%s) — tratando como desconhecido.", e)
+        return None
+    return None if dados is None else len(dados["notas"])
+
+
 def _confirmar_modal_preparar(driver: webdriver.Chrome) -> bool:
     """Se o modal 'Preparar Declaração para envio' tiver aberto, confirma
     nele e devolve True. Devolve False quando o modal não apareceu.
@@ -879,19 +918,35 @@ def _confirmar_modal_preparar(driver: webdriver.Chrome) -> bool:
     # 'Preparar' (nunca em 'Preparar e Enviar': o envio continua nos ícones).
     # Qualquer outra pendência ("necessária", "inválid", cadastro...) segue
     # bloqueando como antes.
+    # 01/10/2026 (QUALIDENTE, com notas no mês): a MESMA mensagem aparece em
+    # cliente que TEM movimento — ela fala da escrituração manual, não das
+    # NFS-e. Exigir aceitar_avisos nesse caso parava todo cliente de NFS-e.
+    # Agora o relatório de Prestados que o robô acabou de baixar desempata:
+    # com notas, segue; sem notas (receita zero), continua exigindo o
+    # aceitar_avisos. O envio em si segue adiante, nos ícones da lista.
     if not _elemento_visivel(driver, "//input[contains(@id, 'idCbSalvarEdicao')]"):
         pendencias = _pendencias_do_modal(driver)
-        so_avisos_de_receita_zero = bool(pendencias) and all(
-            re.search(r"não foi informado serviço (prestado|tomado)", p, re.I) for p in pendencias
-        )
+        notas = notas_do_prestados_baixado(CLIENTE_ATUAL, COMPETENCIA_ATUAL) if _so_avisos_de_escrituracao(pendencias) else None
+        motivo = ""
+        if ACEITAR_AVISOS or ACEITAR_AVISOS_CLIENTE:
+            motivo = "--aceitar-avisos / aceitar_avisos=sim no clientes.csv"
+        elif notas:
+            motivo = f"o Prestados baixado tem {notas} nota(s) no mês — aviso é da escrituração manual"
         if (
-            (ACEITAR_AVISOS or ACEITAR_AVISOS_CLIENTE)
-            and so_avisos_de_receita_zero
+            motivo
+            and _so_avisos_de_escrituracao(pendencias)
             and _elemento_visivel(driver, "//input[contains(@id, 'formPrepararDeclaracao:idCbPrep')]")
         ):
-            log.warning("Avisos aceitos (--aceitar-avisos / aceitar_avisos=sim no clientes.csv): %s", "; ".join(pendencias))
+            log.warning("Avisos aceitos (%s): %s", motivo, "; ".join(pendencias))
+            if CLIENTE_ATUAL is not None:
+                marcar_etapa(CLIENTE_ATUAL, "aviso_escrituracao_aceito")
             _clicar_xpath(driver, "//input[contains(@id, 'formPrepararDeclaracao:idCbPrep')]")
             return True
+        if _so_avisos_de_escrituracao(pendencias) and notas == 0:
+            pendencias.append(
+                "o relatório de Prestados do mês veio sem notas (receita zero?) — "
+                "confirme e, se for o caso, marque aceitar_avisos=sim na linha do cliente"
+            )
         try:
             _clicar_xpath(driver, "//input[contains(@id, 'idCbCancelar')]", timeout=8)
         except Exception:
@@ -1381,12 +1436,13 @@ def fluxo_completo(
 # ----------------------------------------------------------------------
 
 def processar_cliente(cliente: dict, competencia: str, fase: str, retificadora: bool = False) -> dict:
-    global ACEITAR_AVISOS_CLIENTE
+    global ACEITAR_AVISOS_CLIENTE, CLIENTE_ATUAL, COMPETENCIA_ATUAL
     nome = cliente["nome_painel"]
     ACEITAR_AVISOS_CLIENTE = bool(cliente.get("aceitar_avisos"))
     # a pasta do clientes.csv é ignorada de propósito — a pasta de download
     # é sempre a do mês da competência (ver pasta_download_da_competencia)
     cliente = {**cliente, "pasta_download": pasta_download_da_competencia(competencia), "_etapas": set()}
+    CLIENTE_ATUAL, COMPETENCIA_ATUAL = cliente, competencia
     resultado = {"cliente": nome, "status": "erro", "detalhe": "", "etapas": []}
     driver = None
     try:
@@ -1427,6 +1483,7 @@ def processar_cliente(cliente: dict, competencia: str, fase: str, retificadora: 
             salvar_diagnostico(driver, cliente)
     finally:
         ACEITAR_AVISOS_CLIENTE = False
+        CLIENTE_ATUAL, COMPETENCIA_ATUAL = None, ""
         resultado["etapas"] = [e for e in ETAPAS_ORDEM if e in cliente["_etapas"]]
         if driver is not None:
             time.sleep(2)  # dá tempo de qualquer download em andamento

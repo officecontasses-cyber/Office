@@ -10,7 +10,7 @@ Prestados e Tomados, **enviar** a declaração e baixar os PDFs (Declaração + 
 | Pastas | `<raiz>\<MM_MES>\002 ARQUIVOS MUNICIPAIS` (primeiro o mês, depois o tipo), como no Drive do escritório |
 | Nomes dos arquivos | `{n}_{apelido}_PortoAlegre_MM.AAAA_NFSE_ServPrestados.zip` (+ subpasta extraída com o mesmo nome), `..._NFSE_ServTomados.zip`, `..._DeclaraçãoMensal.pdf`, `..._ISSQN.pdf` |
 | Conferência com o Portal Nacional | **desligada** (config). Ligada, acha a planilha Emitidas pelo **CNPJ** dentro dela e, sem planilha, envia assim mesmo (`sem_emitidas = enviar`) |
-| Avisos "Não foi informado serviço prestado/tomado" | por cliente: coluna `aceitar_avisos` do `clientes.csv` (além do `--aceitar-avisos` da rodada inteira) |
+| Avisos "Não foi informado serviço prestado/tomado" | com notas no relatório baixado, segue sozinho; sem notas, só com `aceitar_avisos` no `clientes.csv` (ou `--aceitar-avisos` na rodada) |
 | `clientes.csv` | aceita BOM, linhas em branco e a coluna `cnpj` |
 
 ## Instalação (uma vez)
@@ -51,13 +51,19 @@ Outras fases: `--fase 1` (cria + baixa, **não envia**), `--fase 2` (envia), `--
 | `--com-conferencia` / `--sem-conferencia` | liga/desliga, só nesta rodada, a conferência com a planilha Emitidas do Portal Nacional |
 | `--aceitar-avisos` | aceita os avisos de receita zero para **todas** as empresas da rodada (prefira a coluna do CSV) |
 
-### Receita zero
-Quando a empresa não teve notas, o DecWeb avisa "Não foi informado serviço prestado/tomado" e o robô, por segurança,
-para e registra pendência. Para empresas que você **confirmou** que não tiveram receita, marque `sim` em
-`aceitar_avisos`. Só esses avisos são aceitos; qualquer outra pendência (cadastro, valor inválido...) continua bloqueando.
+### Avisos "Não foi informado serviço prestado/tomado"
+Essa mensagem fala da **escrituração manual**, e aparece nos dois casos: empresa sem nenhuma nota no mês e
+empresa que só emite por NFS-e. Quem desempata é o relatório de Serviços Prestados que o robô acabou de baixar:
+
+- **com notas** — a declaração tem movimento; o robô segue (clicando em "Preparar", nunca em "Preparar e Enviar")
+  e anota a etapa `aviso_escrituracao_aceito` no resumo, para você conferir o valor da guia;
+- **sem notas** — receita zero; o robô para e registra pendência. Para empresas que você **confirmou** sem receita,
+  marque `sim` em `aceitar_avisos` no `clientes.csv`.
+
+Só esses avisos são aceitos; qualquer outra pendência (cadastro, valor inválido...) continua bloqueando.
 
 ## Resultado
-`logs\resumo_atual.csv` (status e etapas por empresa: `declaracao_criada;zips_baixados;conferido;enviada;pdf_baixado`),
+`logs\resumo_atual.csv` (status e etapas por empresa: `declaracao_criada;zips_baixados;conferido;aviso_escrituracao_aceito;enviada;pdf_baixado`),
 `logs\resultados.csv` (histórico) e `logs\` (execução). Em erro ou pendência, imagem e HTML da tela em `logs\diagnostico\`.
 O robô nunca grava usuário nem senha nos logs. Os PDFs e planilhas ficam em `002 ARQUIVOS MUNICIPAIS` do mês.
 
