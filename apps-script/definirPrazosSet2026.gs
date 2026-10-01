@@ -45,8 +45,10 @@ const PRAZOS_SET2026 = {
 
 function definirPrazosSet2026() {
   const C = PRAZOS_SET2026;
-  const sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(C.ABA);
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sh = ss.getSheetByName(C.ABA);
   if (!sh) { _avisoSet2026_('Aba ' + C.ABA + ' não encontrada. Nada foi alterado.'); return; }
+  const tz = ss.getSpreadsheetTimeZone();   // a data deve ser criada no fuso da planilha, não no do script
 
   const n = _ultimaLinhaDadosSet2026_(sh) - 1;
   const v = sh.getRange(2, 1, n, C.COL_PRAZO).getValues();
@@ -89,7 +91,7 @@ function definirPrazosSet2026() {
   Object.keys(porData).forEach(function (chave) {
     const p = chave.split('-').map(Number);
     const rl = sh.getRangeList(porData[chave]);
-    rl.setValue(new Date(p[0], p[1] - 1, p[2]));
+    rl.setValue(Utilities.parseDate(p[0] + '-' + p[1] + '-' + p[2], tz, 'yyyy-M-d'));
     rl.setNumberFormat('dd/mm/yyyy');
   });
   SpreadsheetApp.flush();
