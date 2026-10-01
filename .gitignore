@@ -1,0 +1,6 @@
+# Robô DecWeb: senhas, configuração local e logs (podem ter dados de clientes) NUNCA vão para o repositório
+decweb/config/clientes.csv
+decweb/config/configuracao.ini
+decweb/logs/
+__pycache__/
+.pytest_cache/
