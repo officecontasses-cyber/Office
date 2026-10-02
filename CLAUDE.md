@@ -24,6 +24,11 @@ passo a passo, um passo por vez.
   para ela encaminhar. (Regra dada em 02/10/2026.)
 - Lembrar: a Tacom é apurada pela matriz, e só o ISSQN de Porto Alegre entra nessa prioridade.
   O robô roda no PC do escritório, não na nuvem: a agente prepara o comando e confere o resultado.
+- **LOPES & NADAL (cliente 186) também é prioridade**, mas com outra regra: **só se roda depois que a cliente envia os documentos**
+  do mês. Quando chegarem, vai na frente de todos os outros (logo depois da Tacom) e o **ISSQN é enviado junto com o
+  restante dos impostos**, tudo de uma vez, não a guia do ISSQN sozinha. (Regra dada em 02/10/2026.)
+  Não confundir com o 258 (Nadal Participações), que é outro cliente. Enquanto os documentos não chegarem, o 186 fica
+  fora das rodadas em lote (DecWeb e Portal Nacional).
 
 ## Prazos que já erramos
 
