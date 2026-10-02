@@ -25,8 +25,8 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Rodar `definirPrazosSet2026()` com a versão nova (ISSQN Porto Alegre = 13/10).
 
 ### DecWeb (ISSQN Porto Alegre) — 09/2026
-- [ ] Rodar os clientes restantes (Tacom já feita): 2, 26, 133(feito), 152, 155, 173, 177, 186(aguarda documentos), 189, 205, 209, 237, 238, 241, 257, 258.
-  Já fechados: 16, 18, 117, 133 (01/10) e 138, 263 (02/10).
+- [ ] Rodar os **15 clientes restantes** de Porto Alegre: 2, 26, 152, 155, 173, 177, 186 (só depois dos documentos), 189, 205, 209, 237, 238, 241, 257, 258.
+  Já fechados em 09/2026: 16, 18, 117, 133 (01/10) e Tacom 138 e 263 (02/10).
 - [ ] **Senhas faltando no `clientes.csv`:** 26 (Raldi: sem CNPJ e sem senha na planilha) e 152 (Conselho: célula com várias linhas).
 - [ ] Definir quais clientes estão **sem movimento** em setembro (`aceitar_avisos=sim`); candidatos de agosto: 2, 26, 117, 138, 152, 173, 209, 237, 238.
 - [ ] **Lopes & Nadal (186):** prioridade; só roda **depois que a cliente enviar os documentos**; ISSQN sai junto com o restante dos impostos.
@@ -51,7 +51,6 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] As 7 linhas "Não se aplica" fixas e as observações (aguardando a Fernanda avaliar).
 - [ ] Dias de prazo de ISSQN dos demais municípios (hoje só Porto Alegre 13/10 e São Leopoldo 15/10).
 - [ ] Possível gerador de TSV a partir dos PDFs que o robô baixa.
-- [ ] Renomear `logs\resultados.csv` da rodada com erro do Portal Nacional (foi feito: `resultados_rodada_com_erro.csv`); ignorar os "sem movimento" dela.
 
 ### Bloqueios do ambiente
 - [ ] Consulta de CNPJ por API pública **bloqueada** pela política de rede (hosts negados: brasilapi.com.br, publica.cnpj.ws, receitaws.com.br). A Fernanda precisa liberar o domínio em
@@ -76,6 +75,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 ### Portal Nacional
 - [x] Robô adaptado (saída na 003 do mês, período pela competência, `clientes.csv` robusto), instalado em `C:\Robos\portalnacional`; extensão instalada no perfil do robô.
 - [x] **Bug de sessão corrigido:** o perfil compartilhado do Chrome mantinha a sessão do cliente anterior (a rodada inteira baixou o 238). Agora a sessão é apagada antes de cada login.
+- [x] `logs\resultados.csv` da rodada com erro renomeado para `resultados_rodada_com_erro.csv` (os "sem movimento" dela não valem).
 - [x] Teste com o 16 e depois o 238: troca de empresa correta, "empresa logada confirmada pelo CNPJ".
 - [x] Certificados verificados: 18 válidos, 11 sem certificado neste PC.
 
