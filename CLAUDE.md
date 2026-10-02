@@ -3,6 +3,12 @@
 Contexto do escritório (Fernanda, officecont.asses@gmail.com). Respostas em português,
 passo a passo, um passo por vez.
 
+## Memória de pendências (ler primeiro, atualizar sempre)
+
+`memoria/PENDENCIAS.md` guarda **o que está pendente e o que já foi resolvido**. Leia no início de cada sessão e atualize a cada
+etapa; salve também um snapshot datado (`PENDENCIAS_E_RESOLVIDOS_AAAA-MM-DD.md`) na pasta `ARQUIVOS EXTENSÃO - CODE - CLAUDE` do Drive.
+A Fernanda pediu em 02/10/2026: "não podemos perder os contextos".
+
 ## Regras que não se discutem
 
 - **GUIA só vai para a fila como "Enviado" com envio comprovado pelo G-Click.** Gerar a guia,
