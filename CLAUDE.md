@@ -25,6 +25,13 @@ passo a passo, um passo por vez.
 - Lembrar: a Tacom é apurada pela matriz, e só o ISSQN de Porto Alegre entra nessa prioridade.
   O robô roda no PC do escritório, não na nuvem: a agente prepara o comando e confere o resultado.
 
+## Prazos que já erramos
+
+- **ISSQN de Porto Alegre, competência 09/2026, vence 13/10/2026** — está impresso na própria guia do
+  DecWeb ("Não receber esta guia após 13/10/2026"). Eu tinha usado 09/10 (supondo que o dia 10 caía no
+  sábado e antecipava); estava errado. **Na dúvida, o prazo é o da guia, nunca uma regra deduzida.**
+  Nos meses seguintes, conferir a data na primeira guia gerada antes de gravar o prazo na planilha.
+
 ## Planilha Controle_Fiscal
 
 Abas por mês (`Set2026`, `Ago2026`...), mais `Atualizações` e `Cadastro_Clientes`.

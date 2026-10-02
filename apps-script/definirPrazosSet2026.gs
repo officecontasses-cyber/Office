@@ -8,8 +8,8 @@
  *    domingo, antecipa); DARF IRPJ, CSLL e REFIS 30/10.
  *  - Obrigações estaduais só para clientes do RS (coluna A termina em /RS): GIA RS e SPED ICMS 15/10
  *    (Lefisc); Guia ICMS 13/10 (12/10 é feriado, prorroga). Outra UF não recebe a data do RS.
- *  - Guia ISSQN e Declaração Prefeitura: prazo por município (coluna A). Porto Alegre 09/10 (dia 10
- *    cai no sábado, antecipa); São Leopoldo 15/10. Município fora da lista fica em branco.
+ *  - Guia ISSQN e Declaração Prefeitura: prazo por município (coluna A). Porto Alegre 13/10 (data
+ *    impressa nas guias do DecWeb: "Não receber esta guia após 13/10/2026"); São Leopoldo 15/10. Município fora da lista fica em branco.
  *  - Não mexe em SPED CONTRIBUIÇÕES (16/11/2026, já está na planilha).
  *  - Linhas internas, Certificado Digital e status "Não se aplica" ficam sem prazo.
  *
@@ -42,7 +42,7 @@ const PRAZOS_SET2026 = {
   },
   OBRIGACOES_ISS: ['GUIA ISSQN', 'DECLARAÇÃO PREFEITURA'],
   POR_MUNICIPIO_ISS: {
-    'PORTO ALEGRE/RS': [2026, 10, 9],
+    'PORTO ALEGRE/RS': [2026, 10, 13],
     'SÃO LEOPOLDO/RS': [2026, 10, 15]
   }
 };
