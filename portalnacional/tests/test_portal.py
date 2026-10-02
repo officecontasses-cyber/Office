@@ -6,7 +6,7 @@ from datetime import date
 import openpyxl
 import pytest
 
-import configuracao
+import portal_config
 import portal_nacional_download as pn
 from conftest import RAIZ_FECHAMENTO
 
@@ -50,9 +50,9 @@ def test_pasta_vai_na_003_dentro_do_mes():
 def test_ini_de_exemplo_e_recusado(tmp_path, monkeypatch):
     ini = tmp_path / "x.ini"
     ini.write_text("[pastas]\nraiz_fechamento = C:\\AJUSTAR\\algo\n", encoding="utf-8")
-    monkeypatch.setattr(configuracao, "ARQUIVO", ini)
+    monkeypatch.setattr(portal_config, "ARQUIVO", ini)
     with pytest.raises(SystemExit):
-        configuracao.carregar()
+        portal_config.carregar()
 
 
 # ---------------------------------------------------------------- clientes.csv
@@ -139,3 +139,54 @@ def test_situacao_do_certificado():
     assert pn.situacao_certificado(CNPJ, certs())[0] == "OK"
     assert pn.situacao_certificado("11111111000111", certs())[0] == "VENCIDO"
     assert pn.situacao_certificado("22222222000122", certs()) == ("SEM CERTIFICADO", None)
+
+
+# ---------------------------------------------------------------- isolamento de sessão (bug de 02/10/2026)
+
+class DriverFalso:
+    """Registra os comandos do DevTools e devolve um texto de página."""
+    def __init__(self, texto="", falhar=()):
+        self.cmds, self.texto, self.falhar = [], texto, set(falhar)
+
+    def execute_cdp_cmd(self, nome, args):
+        if nome in self.falhar:
+            raise RuntimeError("falhou")
+        self.cmds.append((nome, args))
+
+    def execute_script(self, script):
+        return self.texto
+
+
+def test_sessao_do_portal_e_apagada_antes_de_cada_login():
+    d = DriverFalso()
+    pn.limpar_sessao_portal(d)
+    nomes = [n for n, _ in d.cmds]
+    assert "Network.clearBrowserCookies" in nomes and "Network.clearBrowserCache" in nomes
+    origens = {a["origin"] for n, a in d.cmds if n == "Storage.clearDataForOrigin"}
+    assert "https://certificado.nfse.gov.br" in origens and "https://www.nfse.gov.br" in origens
+
+
+def test_falha_ao_limpar_nao_derruba_o_robo(caplog):
+    d = DriverFalso(falhar={"Network.clearBrowserCookies"})
+    pn.limpar_sessao_portal(d)  # não levanta
+    assert "Não consegui limpar" in caplog.text
+
+
+def test_login_limpa_a_sessao_antes_de_abrir_a_pagina_de_login(monkeypatch):
+    ordem = []
+    monkeypatch.setattr(pn, "limpar_sessao_portal", lambda d: ordem.append("limpou"))
+    monkeypatch.setattr(pn, "_navegar_com_retentativa", lambda d, url, ap, **k: ordem.append("abriu") or False)
+    assert pn.fazer_login_certificado(object(), "ILS", CLIENTE) is False
+    assert ordem[:2] == ["limpou", "abriu"]
+
+
+def test_empresa_logada_confirmada_pelo_cnpj_na_pagina():
+    assert pn.conferir_empresa_logada(DriverFalso("Empresa 12.345.678/0001-90 - ILS"), CLIENTE) is True
+
+
+def test_empresa_logada_suspeita_quando_a_pagina_mostra_outro_cnpj():
+    assert pn.conferir_empresa_logada(DriverFalso("REAT HOLDING 49.252.432/0001-89"), CLIENTE) is False
+
+
+def test_pagina_sem_cnpj_nao_permite_concluir():
+    assert pn.conferir_empresa_logada(DriverFalso("Bem-vindo ao portal"), CLIENTE) is None

@@ -14,6 +14,7 @@ Adaptado em 02/10/2026 de um pacote de outro escritório. O que mudou:
 | `clientes.csv` | aceita BOM do Excel, linhas em branco e CNPJ com pontuação; para com mensagem clara se faltar coluna ou o CNPJ não tiver 14 dígitos |
 | Quarentena | `003 ARQUIVOS PORTAL NACIONAL\_QUARENTENA_cnpj_divergente` (a conferência do DecWeb não enxerga essa subpasta) |
 | Conferência de CNPJ | normaliza a pontuação |
+| **Sessão do portal** | **apagada antes de cada login.** Todos os clientes usam o mesmo perfil do Chrome do robô, e o cookie de sessão ficava nele: em 02/10/2026 uma rodada inteira baixou os dados do 238. A conferência de CNPJ barrou os arquivos, mas "0 notas / sem movimento" não passa por conferência |
 
 O nome do arquivo (`{n}_{apelido}_{cidade}_MM.AAAA_Emitidas.xlsx`) é achado pela conferência Prestados × Emitidas do
 DecWeb (que também localiza pelo CNPJ dentro da planilha). Com o Portal Nacional de volta, basta ligar
@@ -54,6 +55,7 @@ Resultado: planilhas na `003` do mês; `logs\resultados.csv` (uma linha por empr
 `erro`, `login_falhou`).
 
 ## Cuidados
+- **Desconfie de "sem movimento" em série.** Se vários clientes seguidos saírem com 0 notas, confira o log: deve haver "Sessão anterior do portal apagada" antes de cada login, e a linha "empresa logada confirmada pelo CNPJ" quando a página mostra o CNPJ.
 - **Confere o CNPJ** dentro da planilha antes de arquivar; se divergir, vai para a quarentena e o status fica `erro`.
 - Enquanto roda, o robô grava por empresa uma política temporária do Chrome em `HKCU\Software\Policies\Google\Chrome`
   (seleção do certificado) e a **apaga ao terminar**. Não precisa de administrador.

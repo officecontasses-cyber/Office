@@ -80,7 +80,7 @@ except ImportError:  # pragma: no cover
 
 import openpyxl
 
-import configuracao
+import portal_config
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException, WebDriverException
@@ -127,7 +127,7 @@ _CFG: dict | None = None
 def _cfg() -> dict:
     global _CFG
     if _CFG is None:
-        _CFG = configuracao.carregar()
+        _CFG = portal_config.carregar()
     return _CFG
 
 
@@ -408,12 +408,13 @@ def _navegar_com_retentativa(
     return False
 
 
-def fazer_login_certificado(driver: webdriver.Chrome, apelido_cliente: str) -> bool:
+def fazer_login_certificado(driver: webdriver.Chrome, apelido_cliente: str, cliente: dict | None = None) -> bool:
     """Navega pro link de acesso via certificado e PAUSA pra escolha manual
     do certificado na janela nativa do Windows/Chrome. Retorna True se caiu
     de volta autenticado no Portal Contribuinte."""
     # Página de login: sem clique humano, 90s é mais que suficiente quando o
     # portal está saudável — se estourar, é engasgo dele, tenta de novo.
+    limpar_sessao_portal(driver)
     if not _navegar_com_retentativa(driver, URL_LOGIN, apelido_cliente, timeout_pagina=90):
         return False
 
@@ -446,7 +447,65 @@ def fazer_login_certificado(driver: webdriver.Chrome, apelido_cliente: str) -> b
         return False
 
     log.info("Cliente %s: login com certificado OK.", apelido_cliente)
+    if cliente is not None:
+        quem = conferir_empresa_logada(driver, cliente)
+        if quem is True:
+            log.info("Cliente %s: empresa logada confirmada pelo CNPJ na página.", apelido_cliente)
+        elif quem is False:
+            log.warning("Cliente %s: a página do portal mostra CNPJ(s), mas NÃO o do cliente — "
+                        "possível sessão de outra empresa. Confira os arquivos desse cliente.", apelido_cliente)
+        else:
+            log.info("Cliente %s: a página não mostra CNPJ; a empresa será conferida pelo CNPJ dentro da planilha.",
+                     apelido_cliente)
     return True
+
+
+# ----------------------------------------------------------------------
+# ISOLAMENTO DE SESSÃO ENTRE CLIENTES
+# ----------------------------------------------------------------------
+# Visto em 02/10/2026: o robô abre um Chrome novo por cliente, MAS todos usam o MESMO perfil
+# (perfil_chrome_robo). O cookie de sessão do portal ficou no perfil, o cliente seguinte "logou" em 1 segundo
+# ainda como o cliente anterior e a rodada inteira baixou os dados do 238. A conferência de CNPJ barrou os
+# arquivos (nada errado foi arquivado), mas "0 notas / sem movimento" não passa por conferência nenhuma:
+# era a sessão do 238, não do cliente. Por isso a sessão do portal é apagada ANTES de cada login.
+
+ORIGENS_PORTAL = ("https://www.nfse.gov.br", "https://certificado.nfse.gov.br", "https://nfse.gov.br")
+
+
+def limpar_sessao_portal(driver: webdriver.Chrome) -> None:
+    """Apaga cookies, cache e armazenamento do portal no perfil do robô (via DevTools), para o login do
+    cliente começar do zero. A extensão não depende deles: ela usa a sessão que o login cria."""
+    comandos = [("Network.clearBrowserCookies", {}), ("Network.clearBrowserCache", {})]
+    comandos += [("Storage.clearDataForOrigin", {"origin": o, "storageTypes": "all"}) for o in ORIGENS_PORTAL]
+    falhas = []
+    for nome, args in comandos:
+        try:
+            driver.execute_cdp_cmd(nome, args)
+        except Exception as e:  # noqa: BLE001 - qualquer falha do CDP vira aviso
+            falhas.append(f"{nome}: {str(e).splitlines()[0] if str(e) else type(e).__name__}")
+    if falhas:
+        log.warning("Não consegui limpar toda a sessão do portal (%s).", "; ".join(falhas))
+    else:
+        log.info("Sessão anterior do portal apagada.")
+
+
+_CNPJ_FORMATADO = re.compile(r"\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}")
+
+
+def conferir_empresa_logada(driver: webdriver.Chrome, cliente: dict) -> bool | None:
+    """Tenta confirmar, pela própria página do portal, que a sessão é da empresa certa.
+    True = o CNPJ do cliente aparece na página; False = aparecem CNPJs, mas não o do cliente (suspeito);
+    None = a página não mostra CNPJ nenhum (não dá para saber). Só informa no log: quem barra é a
+    conferência de CNPJ do arquivo e a limpeza de sessão."""
+    try:
+        corpo = driver.execute_script("return document.body ? document.body.innerText : '';") or ""
+    except WebDriverException:
+        return None
+    esperado = _so_digitos(cliente["cnpj"])
+    achados = {_so_digitos(m) for m in _CNPJ_FORMATADO.findall(corpo)}
+    if esperado in achados or esperado in _so_digitos(corpo):
+        return True
+    return False if achados else None
 
 
 # ----------------------------------------------------------------------
@@ -626,13 +685,13 @@ def nome_arquivo_padrao(cliente: dict, competencia: str, tipo: str) -> str:
 
 def pasta_staging_mes(competencia: str) -> Path:
     mes, _ano = competencia.split("/")
-    return configuracao.pasta_nacional(_cfg(), mes)
+    return portal_config.pasta_nacional(_cfg(), mes)
 
 
 def pasta_quarentena(competencia: str) -> Path:
     """Dentro da 003 do mês: quem procura um arquivo errado olha ali, e o glob da conferência do DecWeb
     (só a pasta, sem subpastas) não enxerga a quarentena."""
-    return pasta_staging_mes(competencia) / configuracao.QUARENTENA
+    return pasta_staging_mes(competencia) / portal_config.QUARENTENA
 
 
 def conferir_cnpj(arquivo: Path, cliente: dict, tipo: str) -> None:
@@ -732,7 +791,7 @@ def periodo_da_competencia(competencia: str) -> tuple[str, str]:
 def processar_cliente(driver: webdriver.Chrome, cliente: dict, competencia: str) -> None:
     data_inicial, data_final = periodo_da_competencia(competencia)
 
-    if not fazer_login_certificado(driver, cliente["apelido"]):
+    if not fazer_login_certificado(driver, cliente["apelido"], cliente):
         log.error("Pulando cliente %s — login não confirmado.", cliente["apelido"])
         for tipo in ("Emitidas", "Recebidas"):
             registrar_resultado(competencia, cliente, tipo, "login_falhou")
@@ -753,7 +812,7 @@ def processar_cliente(driver: webdriver.Chrome, cliente: dict, competencia: str)
                     raise
                 log.warning("Cliente %s: sessão do portal caiu antes de %s — refazendo o login.",
                             cliente["apelido"], tipo)
-                if not fazer_login_certificado(driver, cliente["apelido"]):
+                if not fazer_login_certificado(driver, cliente["apelido"], cliente):
                     raise
                 inicio = datetime.now()
                 qtd_notas = gerar_relacao(driver, tipo, data_inicial, data_final)

@@ -32,6 +32,14 @@ passo a passo, um passo por vez.
   sábado e antecipava); estava errado. **Na dúvida, o prazo é o da guia, nunca uma regra deduzida.**
   Nos meses seguintes, conferir a data na primeira guia gerada antes de gravar o prazo na planilha.
 
+## Armadilhas já vividas
+
+- **Portal Nacional, 02/10/2026:** o perfil do Chrome do robô é compartilhado e guardava a sessão do portal; a rodada inteira
+  baixou os dados do 238. O robô agora apaga a sessão antes de cada login. Resultado "sem movimento" repetido em vários
+  clientes seguidos é sinal de alerta, não de verdade: conferir o log antes de aceitar.
+- Dois robôs na mesma máquina não podem ter módulos com o mesmo nome (`configuracao.py` do DecWeb e do Portal Nacional
+  colidiram). O do Portal Nacional agora é `portal_config.py`.
+
 ## Planilha Controle_Fiscal
 
 Abas por mês (`Set2026`, `Ago2026`...), mais `Atualizações` e `Cadastro_Clientes`.
