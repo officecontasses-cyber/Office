@@ -4,3 +4,7 @@ decweb/config/configuracao.ini
 decweb/logs/
 __pycache__/
 .pytest_cache/
+# Robô Portal Nacional: lista de clientes (CNPJs), configuração local e logs NUNCA vão para o repositório
+portalnacional/config/clientes.csv
+portalnacional/config/configuracao.ini
+portalnacional/logs/

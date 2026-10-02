@@ -54,3 +54,13 @@ desse texto. Não trocar por data pura — há processo próprio que reescreve a
 21 clientes de Porto Alegre. Raiz do Drive no PC: `I:\Meu Drive\1015_ROTINA AUTOMATICA\001 FECHAMENTO FISCAL\001_FECHAMENTO FISCAL`.
 
 Ver `decweb/README.md` para fases, flags e o tratamento dos avisos de escrituração.
+
+## Robô Portal Nacional (NFS-e Emitidas/Recebidas)
+
+`portalnacional/` neste repositório; instalar em `C:\Robos\portalnacional` (local, sem acento, fora do Meu Drive).
+Entra com o **certificado A1 de cada empresa** (precisa estar instalado no PC) e baixa Emitidas e Recebidas para
+`<raiz>\<MM_MES>\003 ARQUIVOS PORTAL NACIONAL`. Cliente sem certificado ou vencido é pulado e fica de fora.
+Entram **todos os clientes da base** (aba Cadastro_Clientes, 29 em 02/10/2026), não só Porto Alegre.
+O período baixado sai da competência (dia 1 ao último dia do mês seguinte). A extensão do Chrome usada é de terceiros:
+só no perfil dedicado do robô. Ver `portalnacional/LEIA-ME.md`.
+
