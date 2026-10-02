@@ -11,8 +11,10 @@
  *   - Lucro Presumido, sem empregados; sócios-administradores Marcelo Michelon Cornetet e Mariangela Conte Cornetet.
  *   - CNPJ 69.405.790/0001-91 (lido do nome do arquivo do certificado A1; os dígitos verificadores conferem).
  *
- * O que NÃO está preenchido de propósito (a Fernanda confirma com o Cartão CNPJ, que ainda não está na pasta):
- *   CNAE principal e secundários. O contrato não traz CNAE, só o objeto social.
+ * CNAEs e endereço: lidos do Cartão CNPJ (comprovante de situação cadastral, ATIVA desde 30/09/2026), em 02/10/2026.
+ *   Principal 71.11-1-00; secundários 64.62-0-00, 68.10-2-02 e 68.10-2-01. Av. Juca Batista, 8000, casa 802, Belém Novo,
+ *   CEP 91.781-200, Porto Alegre/RS. Inscrição municipal 049298-2-9 (DecWeb, Porto Alegre), informada pela Fernanda em 02/10/2026.
+ * Senha do DecWeb NÃO entra aqui nem no repositório: vai só no clientes.csv local do robô (C:\Robos\decweb).
  *
  * Bloco da Set2026: cópia do bloco do cliente 2 (RF CONSULTORIA: Presumido, Porto Alegre, aluguel de imóveis),
  * que tem CERTIFICADO DIGITAL, REINF, SERVIÇOS TOMADOS/PRESTADOS, RECEITA ALUGUEIS, GUIA ISSQN,
@@ -37,8 +39,8 @@ const BELEM265 = {
   COLS_LIMPAR: [6, 7, 8, 11, 14],  // F Data, G Valor, H Status, K Observações, N Fechamento
   CADASTRO: {
     cidade: 'PORTO ALEGRE / RS',
-    cnaePrincipal: 'A CONFIRMAR (Cartão CNPJ)',
-    cnaeSecundarios: 'A CONFIRMAR — objeto: serviços de arquitetura; holding; aluguel e compra e venda de imóveis próprios',
+    cnaePrincipal: '71.11-1-00 - Serviços de arquitetura',
+    cnaeSecundarios: '64.62-0-00 - Holdings de instituições não-financeiras; 68.10-2-02 - Aluguel de imóveis próprios; 68.10-2-01 - Compra e venda de imóveis próprios',
     socios: 'MARCELO MICHELON CORNETET (Sócio-Administrador); MARIANGELA CONTE CORNETET (Sócia-Administradora)',
     regime: 'Lucro Presumido',
     portalNacional: 'PENDENTE DE CADASTRO',
@@ -48,8 +50,8 @@ const BELEM265 = {
   OBS: {
     'CERTIFICADO DIGITAL': 'Cliente novo (início das atividades em 08/09/2026). Certificado A1 (.pfx) na pasta CERTIFICADOS do cliente; senha com o Gian.',
     'RECEITA ALUGUEIS': 'Receita projetada de R$ 15.000/mês (proposta de 04/08/2026). Pedir os contratos de locação.',
-    'GUIA ISSQN': 'Cliente novo: confirmar a inscrição municipal e o acesso ao DecWeb antes da 1ª declaração.',
-    'DECLARAÇÃO PREFEITURA': 'Cliente novo: confirmar a inscrição municipal e o acesso ao DecWeb antes da 1ª declaração.',
+    'GUIA ISSQN': 'Cliente novo. Inscrição municipal 049298-2-9 (Porto Alegre); acesso ao DecWeb já feito. ISS só incide na arquitetura (71.11-1-00): confirmar o tratamento de aluguel e venda de imóveis próprios antes da 1ª declaração.',
+    'DECLARAÇÃO PREFEITURA': 'Cliente novo. Inscrição municipal 049298-2-9 (Porto Alegre); acesso ao DecWeb já feito. Confirmar se há serviço prestado/tomado na 1ª competência.',
     'DARF IRPJ': 'Lucro Presumido, apuração trimestral. 1º trimestre da empresa: 3º tri/2026 (atividades desde 08/09/2026).',
     'DARF CSLL': 'Lucro Presumido, apuração trimestral. 1º trimestre da empresa: 3º tri/2026 (atividades desde 08/09/2026).'
   }

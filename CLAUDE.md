@@ -103,6 +103,9 @@ BELEM BRASIL ARQUITETURA E PARTICIPACOES LTDA (nome registrado; no grupo aparece
 JUCISRS em 30/09/2026, atividades desde 08/09/2026. **Lucro Presumido**, sem empregados. Objeto: arquitetura, holding, aluguel e
 compra e venda de imóveis próprios (13 imóveis integralizados no capital). Sócios-administradores: Marcelo Michelon Cornetet
 (sócio também da Zenith Paracuru, 264) e Mariangela Conte Cornetet (sócia também da Conte Arquitetura, 071).
-Em aberto: CNAEs (não constam no contrato; ver Cartão CNPJ), inscrição municipal, acesso ao DecWeb, certificado A1 instalado no PC
-(para o Portal Nacional) e divergências entre documentos (capital R$ 5,95 mi na proposta x R$ 5,98 mi no contrato; "Holding" x
-"Participações" no nome). Script que inclui o cliente: `apps-script/incluirClienteBelemSet2026.gs`.
+Cartão CNPJ (02/10/2026): ATIVA desde 30/09/2026, ME. CNAE principal 71.11-1-00 (arquitetura); secundários 64.62-0-00 (holding),
+68.10-2-02 (aluguel de imóveis próprios) e 68.10-2-01 (compra e venda de imóveis próprios). Av. Juca Batista, 8000, casa 802,
+Belém Novo, Porto Alegre/RS, CEP 91.781-200. **Prefeitura: Porto Alegre; inscrição municipal 049298-2-9; acesso ao DecWeb feito.**
+Em aberto: entrar no `clientes.csv` do DecWeb e do Portal Nacional (local, com senha só no PC), certificado A1 instalado no PC e
+divergência de capital (R$ 5,95 mi na proposta x R$ 5,98 mi no contrato). Script que inclui o cliente: `apps-script/incluirClienteBelemSet2026.gs`
+(atualizado, ainda não rodado).

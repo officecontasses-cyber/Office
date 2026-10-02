@@ -39,12 +39,12 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Ligar `conferencia = sim` no DecWeb quando houver Emitidas, para comparar Prestados × Emitidas.
 
 ### Cliente novo 265 — BELEM BRASIL HOLDING
-- [ ] **Levantar os dados completos pela BrasilAPI** (`https://brasilapi.com.br/api/cnpj/v1/69405790000191`: CNAE principal e secundários, endereço, situação, data de abertura). O domínio foi liberado em 02/10, mas **só vale em sessão NOVA**: abrir uma sessão nova e consultar. Alternativa: a Fernanda manda um print do "Consultar CNPJ".
-- [ ] **Confirmar a prefeitura** (a sede no contrato é Porto Alegre, bairro Belém Novo) **antes** de buscar inscrição municipal e acesso ao DecWeb.
-- [ ] Depois de ter os dados completos: rodar o script `apps-script/incluirClienteBelemSet2026.gs` (cadastro + bloco da Set2026). **Ainda não rodado** (a Fernanda não incluiu).
-- [ ] Instalar o certificado A1 (pasta CERTIFICADOS do cliente; senha com o Gian) no PC para o Portal Nacional; incluir o 265 no `clientes.csv` do Portal Nacional.
-- [ ] Divergências entre documentos: capital R$ 5,95 mi (proposta) × R$ 5,98 mi (contrato registrado); nome "Holding" × "Participações".
-- [ ] Apagar a mensagem do grupo de WhatsApp que expõe a senha do certificado.
+- [ ] Rodar `apps-script/incluirClienteBelemSet2026.gs` (já atualizado com CNAEs e inscrição municipal), depois `verificarClienteBelemSet2026()` e `definirPrazosSet2026()`. **Ainda não rodado** (a Fernanda roda).
+- [ ] **Incluir o 265 no `clientes.csv` do DecWeb** (local, `C:\Robos\decweb\config`; usuário = CNPJ, senha com a Fernanda, **nunca no repositório/chat**) e no `clientes.csv` do Portal Nacional.
+- [ ] Definir o tratamento do ISSQN: só a arquitetura (71.11-1-00) deve gerar ISS; aluguel e compra e venda de imóveis próprios são fora do ISS (?) confirmar antes da 1ª declaração.
+- [ ] Instalar o certificado A1 (pasta CERTIFICADOS do cliente; senha com o Gian) no PC para o Portal Nacional.
+- [ ] Divergência restante: capital R$ 5,95 mi (proposta) × R$ 5,98 mi (contrato registrado). (O nome oficial é "ARQUITETURA E PARTICIPACOES"; "Holding" é uso interno.)
+- [ ] Apagar a mensagem do grupo de WhatsApp que expõe a senha do certificado. (A senha do DecWeb também foi digitada na sessão de 02/10/2026: considerar trocá-la.)
 
 ### Antigas (de agosto) e estruturais
 - [ ] R-4010 do 189; PER/DCOMP do 133; conferência do 238.
@@ -53,6 +53,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Possível gerador de TSV a partir dos PDFs que o robô baixa.
 
 ### Bloqueios do ambiente
+- [x] BrasilAPI deu 404 para o 265 em 02/10 (CNPJ de 30/09, recente demais); dados vieram do Cartão CNPJ enviado em print.
 - [x] ~~Consulta de CNPJ bloqueada pela rede~~ → em 02/10 a Fernanda liberou `brasilapi.com.br` em *Acesso à rede > Personalizado* do ambiente "TESTE" (mantida a lista padrão de gerenciadores de pacotes). **Vale só para sessões novas.**
 - [ ] Se a BrasilAPI falhar numa sessão nova, liberar também `publica.cnpj.ws` e `receitaws.com.br`.
 
@@ -78,6 +79,10 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [x] `logs\resultados.csv` da rodada com erro renomeado para `resultados_rodada_com_erro.csv` (os "sem movimento" dela não valem).
 - [x] Teste com o 16 e depois o 238: troca de empresa correta, "empresa logada confirmada pelo CNPJ".
 - [x] Certificados verificados: 18 válidos, 11 sem certificado neste PC.
+
+### Cliente 265 (02/10/2026)
+- [x] Cartão CNPJ lido: ATIVA desde 30/09/2026; CNAE principal 71.11-1-00; secundários 64.62-0-00, 68.10-2-02, 68.10-2-01; Av. Juca Batista, 8000, casa 802, Belém Novo, Porto Alegre/RS, CEP 91.781-200.
+- [x] Prefeitura confirmada: **Porto Alegre**. Inscrição municipal **049298-2-9** feita; acesso ao DecWeb feito.
 
 ### Regras e memória registradas
 - [x] Guia só vira `Enviado` com envio comprovado pelo G-Click; declaração da prefeitura é comprovada pelo recibo.
