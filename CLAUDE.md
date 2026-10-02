@@ -30,6 +30,13 @@ passo a passo, um passo por vez.
   Não confundir com o 258 (Nadal Participações), que é outro cliente. Enquanto os documentos não chegarem, o 186 fica
   fora das rodadas em lote (DecWeb e Portal Nacional).
 
+- **TACOM — SPED Fiscal de 10/2026 (prazo combinado com a cliente):** a Leidislaine Ribeiro (Tacom) entra de férias em outubro e
+  pediu os **arquivos do SPED Fiscal para transmissão até quinta 08/10/2026**. A Fernanda respondeu em 02/10/2026 que envia
+  **até quarta 07/10/2026**. Também pediu para **acessar a máquina dela na segunda 05/10/2026** (para buscar as notas fiscais),
+  em horário **antes das 11:00**, pois ela não consegue nesse horário. Esses prazos vêm antes do prazo legal (SPED ICMS RS 15/10).
+  Não está claro no e-mail se vale para só uma ou para todas as empresas Tacom (138, 263); confirmar com a Fernanda.
+  Este item **furou a fila**: conferir a data antes de qualquer outra rodada na semana de 05/10.
+
 ## Prazos que já erramos
 
 - **ISSQN de Porto Alegre, competência 09/2026, vence 13/10/2026** — está impresso na própria guia do
