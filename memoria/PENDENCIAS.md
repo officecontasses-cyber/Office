@@ -1,7 +1,7 @@
 # Pendências e resolvidos — OfficeCont (Fechamento Fiscal)
 
 Documento vivo. **Atualizar a cada etapa** e salvar um snapshot datado na pasta `ARQUIVOS EXTENSÃO - CODE - CLAUDE` do Drive,
-para não perdermos contexto. Última atualização: **02/10/2026**.
+para não perdermos contexto. Última atualização: **02/10/2026** (fim da sessão 1; a sessão 2 começa pela consulta do CNPJ do 265).
 
 Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação da Fernanda.
 
@@ -39,7 +39,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Ligar `conferencia = sim` no DecWeb quando houver Emitidas, para comparar Prestados × Emitidas.
 
 ### Cliente novo 265 — BELEM BRASIL HOLDING
-- [ ] **Levantar os dados completos por API/consulta do CNPJ** (CNAE principal e secundários, endereço, situação, data de abertura): o ambiente bloqueou os hosts de consulta (ver "Bloqueios").
+- [ ] **Levantar os dados completos pela BrasilAPI** (`https://brasilapi.com.br/api/cnpj/v1/69405790000191`: CNAE principal e secundários, endereço, situação, data de abertura). O domínio foi liberado em 02/10, mas **só vale em sessão NOVA**: abrir uma sessão nova e consultar. Alternativa: a Fernanda manda um print do "Consultar CNPJ".
 - [ ] **Confirmar a prefeitura** (a sede no contrato é Porto Alegre, bairro Belém Novo) **antes** de buscar inscrição municipal e acesso ao DecWeb.
 - [ ] Depois de ter os dados completos: rodar o script `apps-script/incluirClienteBelemSet2026.gs` (cadastro + bloco da Set2026). **Ainda não rodado** (a Fernanda não incluiu).
 - [ ] Instalar o certificado A1 (pasta CERTIFICADOS do cliente; senha com o Gian) no PC para o Portal Nacional; incluir o 265 no `clientes.csv` do Portal Nacional.
@@ -53,8 +53,8 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Possível gerador de TSV a partir dos PDFs que o robô baixa.
 
 ### Bloqueios do ambiente
-- [ ] Consulta de CNPJ por API pública **bloqueada** pela política de rede (hosts negados: brasilapi.com.br, publica.cnpj.ws, receitaws.com.br). A Fernanda precisa liberar o domínio em
-  *Network access* do ambiente da sessão.
+- [x] ~~Consulta de CNPJ bloqueada pela rede~~ → em 02/10 a Fernanda liberou `brasilapi.com.br` em *Acesso à rede > Personalizado* do ambiente "TESTE" (mantida a lista padrão de gerenciadores de pacotes). **Vale só para sessões novas.**
+- [ ] Se a BrasilAPI falhar numa sessão nova, liberar também `publica.cnpj.ws` e `receitaws.com.br`.
 
 ---
 
