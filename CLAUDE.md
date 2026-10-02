@@ -37,6 +37,12 @@ passo a passo, um passo por vez.
   Não está claro no e-mail se vale para só uma ou para todas as empresas Tacom (138, 263); confirmar com a Fernanda.
   Este item **furou a fila**: conferir a data antes de qualquer outra rodada na semana de 05/10.
 
+## Pendências com data
+
+- **REAT HOLDING (238), 2ª quinzena de outubro/2026 (16 a 31/10):** a Fernanda deve enviar à cliente o **relatório de débitos
+  ref. 06/2026** (Relatório Fiscal de 21/08/2026, enviado pela Júlia Rocha) **+ o IRPJ e a CSLL vencidos de meses anteriores**.
+  (Pedido de 02/10/2026; a Controle_Fiscal tem a observação nas linhas DARF IRPJ e DARF CSLL do 238.)
+
 ## Prazos que já erramos
 
 - **ISSQN de Porto Alegre, competência 09/2026, vence 13/10/2026** — está impresso na própria guia do
@@ -80,7 +86,17 @@ Ver `decweb/README.md` para fases, flags e o tratamento dos avisos de escritura�
 `portalnacional/` neste repositório; instalar em `C:\Robos\portalnacional` (local, sem acento, fora do Meu Drive).
 Entra com o **certificado A1 de cada empresa** (precisa estar instalado no PC) e baixa Emitidas e Recebidas para
 `<raiz>\<MM_MES>\003 ARQUIVOS PORTAL NACIONAL`. Cliente sem certificado ou vencido é pulado e fica de fora.
-Entram **todos os clientes da base** (aba Cadastro_Clientes, 29 em 02/10/2026), não só Porto Alegre.
+Entram **todos os clientes da base** (aba Cadastro_Clientes, 29 em 02/10/2026; 30 com o 265), não só Porto Alegre.
 O período baixado sai da competência (dia 1 ao último dia do mês seguinte). A extensão do Chrome usada é de terceiros:
 só no perfil dedicado do robô. Ver `portalnacional/LEIA-ME.md`.
 
+## Cliente novo: 265 BELEM BRASIL HOLDING (02/10/2026)
+
+BELEM BRASIL ARQUITETURA E PARTICIPACOES LTDA (nome registrado; no grupo aparece como "Arquitetura e Holding"), Porto Alegre/RS
+(Belém Novo), CNPJ 69.405.790/0001-91 (lido do nome do arquivo do certificado; dígitos conferem), NIRE 43212412791, registrada na
+JUCISRS em 30/09/2026, atividades desde 08/09/2026. **Lucro Presumido**, sem empregados. Objeto: arquitetura, holding, aluguel e
+compra e venda de imóveis próprios (13 imóveis integralizados no capital). Sócios-administradores: Marcelo Michelon Cornetet
+(sócio também da Zenith Paracuru, 264) e Mariangela Conte Cornetet (sócia também da Conte Arquitetura, 071).
+Em aberto: CNAEs (não constam no contrato; ver Cartão CNPJ), inscrição municipal, acesso ao DecWeb, certificado A1 instalado no PC
+(para o Portal Nacional) e divergências entre documentos (capital R$ 5,95 mi na proposta x R$ 5,98 mi no contrato; "Holding" x
+"Participações" no nome). Script que inclui o cliente: `apps-script/incluirClienteBelemSet2026.gs`.
