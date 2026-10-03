@@ -1,7 +1,7 @@
 # Pendências e resolvidos — OfficeCont (Fechamento Fiscal)
 
 Documento vivo. **Atualizar a cada etapa** e salvar um snapshot datado na pasta `ARQUIVOS EXTENSÃO - CODE - CLAUDE` do Drive,
-para não perdermos contexto. Última atualização: **02/10/2026** (fim da sessão 1; a sessão 2 começa pela consulta do CNPJ do 265).
+para não perdermos contexto. Última atualização: **03/10/2026** (sessão 2: cliente 265 cadastrado e com 09/2026 fechado; falta o restante do fechamento de 09/2026).
 
 Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação da Fernanda.
 
@@ -87,7 +87,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 
 ### DecWeb — 265 em 09/2026 (03/10/2026)
 - [x] Fase 1 sem envio: login na empresa certa, sem Prestados/Tomados. Fase T parou por pendência no cadastro (responsável não informado); Fernanda preencheu o responsável no site. Fase T de novo: **declaração ENVIADA às 08:42**, guia sem valor a recolher (não impressa), PDF `265_BelemBrasil_PortoAlegre_09.2026_DeclaraçãoMensal.pdf` baixado.
-- [ ] Fila Atualizações do 265 (Set2026): DECLARAÇÃO PREFEITURA `Enviado` e GUIA ISSQN `Sem movimento` — propostas, **aguardam a Fernanda colar e processar**.
+- [x] Fila Atualizações do 265 (Set2026) **colada e processada em 03/10 (08:56)**: DECLARAÇÃO PREFEITURA `Enviado` (linha 328), GUIA ISSQN `Sem movimento` (327), SERVIÇOS PRESTADOS `Sem movimento` (325), SERVIÇOS TOMADOS `Sem movimento` (324).
 - [ ] Chamar atenção para: nome do arquivo do certificado A1 do 265 no Drive tem a senha escrita; a senha do DecWeb é a mesma. Renomear o arquivo e trocar as senhas.
 
 ### Portal Nacional — 265 em 09/2026 (03/10/2026)
@@ -100,7 +100,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
 - [ ] Pró-labore dos sócios: o contrato (cl. 13) permite, mas não fixa valor; definir com os sócios antes de abrir Folha.
 - [ ] Bairro dos sócios no contrato é "Chapéu do Sol" e o da sede é "Belém Novo" (Cartão CNPJ e DecWeb usam Belém Novo).
-- [ ] 265 no SIEG, depois no G-Click (tarefas mensais). Em andamento em 03/10.
+- [x] 265 cadastrado **via extensão Claude in Chrome pela Fernanda** em 03/10 (o arquivo `INSTRUCOES_CHROME_265_SIEG_GCLICK.md` gerado pela agente estava incorreto e não foi usado; existe a skill `cadastro-cliente-sieg`). (?) confirmar se foram SIEG e G-Click, ou só o SIEG.
 
 ### Regras e memória registradas
 - [x] Guia só vira `Enviado` com envio comprovado pelo G-Click; declaração da prefeitura é comprovada pelo recibo.
