@@ -10,6 +10,8 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 ## PENDENTE
 
 ### Com data marcada
+- [ ] **E-mail ao Gian: certificado A1 do 258 Nadal vence em 14/10/2026** (e avisar os próximos: 155 em 27/10, 71 em 13/11, 117 em 11/12, 126 em 16/12). Conferir nos Itens Enviados do OWA se já foi enviado; rascunho entregue à Fernanda em 03/10. Rodar o Portal Nacional do 258 antes de 14/10.
+- [ ] **Tacom: ligar para a Leidislaine na segunda 05/10 cedo.** O e-mail enviado não teve retorno até 03/10 (sábado); confirmar o acesso à máquina dela antes das 11:00.
 - [ ] **Tacom — SPED Fiscal (10/2026):** enviar os arquivos à Leidislaine Ribeiro **até quarta 07/10** (ela transmite até quinta 08/10; entra de férias).
   Acesso à máquina dela na **segunda 05/10, antes das 11:00** (a Fernanda não consegue nesse horário; conferir se ela confirmou). (?) vale para 138, 263 ou ambas?
 - [ ] **ISSQN Porto Alegre 09/2026 vence 13/10.** Rodar o DecWeb nos clientes restantes antes disso (ver abaixo).
