@@ -22,7 +22,6 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Tacom 09/2026: 263 declaração Enviado; 263 guia Enviado R$ 4.089,69 (G-Click comprovado em 02/10); 138 declaração Enviado. (?) 138 guia: lançar `Sem movimento`?
 - [ ] Corrigir observações das guias do 16 e do 18 (dizem "Venc. 09/10"; o correto é **13/10/2026**).
 - [ ] Guias do 16 (R$ 422,87) e do 18 (R$ 42,00): continuam `Pendente` até o envio comprovado no G-Click; depois `Enviado`.
-- [ ] Rodar `definirPrazosSet2026()` com a versão nova (ISSQN Porto Alegre = 13/10).
 
 ### DecWeb (ISSQN Porto Alegre) — 09/2026
 - [ ] Rodar os **15 clientes restantes** de Porto Alegre: 2, 26, 152, 155, 173, 177, 186 (só depois dos documentos), 189, 205, 209, 237, 238, 241, 257, 258.
@@ -39,7 +38,6 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Ligar `conferencia = sim` no DecWeb quando houver Emitidas, para comparar Prestados × Emitidas.
 
 ### Cliente novo 265 — BELEM BRASIL HOLDING
-- [ ] Rodar `apps-script/incluirClienteBelemSet2026.gs` (já atualizado com CNAEs e inscrição municipal), depois `verificarClienteBelemSet2026()` e `definirPrazosSet2026()`. **Ainda não rodado** (a Fernanda roda).
 - [x] 265 incluído no `clientes.csv` do DecWeb em 03/10/2026 (script `decweb/adicionar_cliente265.bat`, Fernanda confirmou "deu"). **Falta o `clientes.csv` do Portal Nacional** (sem senha) e trocar a senha do DecWeb.
 - [ ] Definir o tratamento do ISSQN: só a arquitetura (71.11-1-00) deve gerar ISS; aluguel e compra e venda de imóveis próprios são fora do ISS (?) confirmar antes da 1ª declaração.
 - [ ] Instalar o certificado A1 (pasta CERTIFICADOS do cliente; senha com o Gian) no PC para o Portal Nacional.
@@ -83,6 +81,11 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 ### Cliente 265 (02/10/2026)
 - [x] Cartão CNPJ lido: ATIVA desde 30/09/2026; CNAE principal 71.11-1-00; secundários 64.62-0-00, 68.10-2-02, 68.10-2-01; Av. Juca Batista, 8000, casa 802, Belém Novo, Porto Alegre/RS, CEP 91.781-200.
 - [x] Prefeitura confirmada: **Porto Alegre**. Inscrição municipal **049298-2-9** feita; acesso ao DecWeb feito.
+
+### Planilha em 03/10/2026
+- [x] Script do 265 rodado: cadastro na linha 31; 12 linhas na Set2026 (322 a 333); verificação sem problemas.
+- [x] `definirPrazosSet2026()` rodado com a versão nova: ISSQN/Declaração de Porto Alegre em 13/10 (22 linhas de cada; 1 de São Leopoldo em 15/10); `verificarPrazosSet2026()` sem problemas. A 1ª rodada tinha usado a versão antiga da planilha (09/10 em 44 linhas), já corrigida.
+- [ ] Município sem prazo de ISS (Brasília, Rio de Janeiro, Novo Hamburgo, São Sebastião do Caí, Montenegro, Palhoça): cadastrar os dias (já era pendência).
 
 ### Regras e memória registradas
 - [x] Guia só vira `Enviado` com envio comprovado pelo G-Click; declaração da prefeitura é comprovada pelo recibo.
