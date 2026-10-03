@@ -121,6 +121,12 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] 238, pontos para REINF (15/10) e conferência: INSS retido R$ 1.295,45 (Prime System), IRRF R$ 17,75 e PIS/COFINS/CSLL retidos R$ 141,86 nas notas tomadas. Conferir se a retenção sobre prestador ME/EPP está correta.
 - [ ] Falta baixar/conferir: 189, 237, 241, 257, 258 (Emitidas e Recebidas) e Recebidas do 155. Sem certificado: 2, 26, 173, 177, 209.
 
+### Conciliação rodada no PC (`conciliacao.py 09/2026 --sem-pdf`, 03/10/2026) — nenhuma divergência
+- [x] **Conciliados, sem divergência:** 16 (Prest. 221 notas R$ 142.642,60; Tom. 4 notas R$ 753,49), 155 (Prest. 107 notas R$ 21.051,25; Tom. 8 notas R$ 2.666,53), 189 (Prest. 2 notas R$ 2.868.189,79; Tom. 1 nota R$ 142.933,33), 237 (Tom. 1 nota R$ 1,60), 238 (Tom. 7 notas R$ 15.730,90, ISS retido R$ 609,54), 241 (Prest. 32 notas R$ 48.063,00; Tom. 5 notas R$ 6.261,84), 257 (Prest. 2 notas R$ 145.250,72, ISS retido R$ 762,54; Tom. 13 notas R$ 3.691,23), 265.
+- [ ] **Sem planilha do Portal (sem certificado neste PC, não dá para conciliar):** 2 (Tom. 2 notas R$ 2.285,70), 18 (Prest. 1 nota R$ 2.100,00), 133 (Tom. 1 nota R$ 300,00), 138 (Tom. 9 notas R$ 28.980,50), 177 (Prest. 1 nota R$ 26.520,00), 263 (Prest. 9 notas R$ 81.793,56; Tom. 1 nota R$ 650,00). Os 26, 173, 209 e o 258 não apareceram (sem arquivos do DecWeb nem do Portal): o 258 tem certificado, rodar o Portal para confirmar que não há notas.
+- [ ] Notas de outra competência no Portal, ignoradas (conferir no CSV `--csv-notas` se alguma tem ISS retido e se entrou na declaração do mês certo): 155 (63 de 08/2026 em Prestados; 1 de 10/2026 em Tomados), 16 (6 de 10/2026), 237 (1 de 08/2026), 238 (1 de 08/2026), 241 (3 de 08/2026), 257 (1 de 08/2026 e 1 de 10/2026).
+- [ ] 155: 3 notas com valor zero e 1 cancelada (Prestados), iguais nos dois lados.
+
 ### Cadastros do 265 (03/10/2026)
 - [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
