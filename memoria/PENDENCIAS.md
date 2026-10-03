@@ -40,7 +40,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 
 ### Cliente novo 265 — BELEM BRASIL HOLDING
 - [ ] Rodar `apps-script/incluirClienteBelemSet2026.gs` (já atualizado com CNAEs e inscrição municipal), depois `verificarClienteBelemSet2026()` e `definirPrazosSet2026()`. **Ainda não rodado** (a Fernanda roda).
-- [ ] **Incluir o 265 no `clientes.csv` do DecWeb** (local, `C:\Robos\decweb\config`; usuário = CNPJ, senha com a Fernanda, **nunca no repositório/chat**) e no `clientes.csv` do Portal Nacional.
+- [x] 265 incluído no `clientes.csv` do DecWeb em 03/10/2026 (script `decweb/adicionar_cliente265.bat`, Fernanda confirmou "deu"). **Falta o `clientes.csv` do Portal Nacional** (sem senha) e trocar a senha do DecWeb.
 - [ ] Definir o tratamento do ISSQN: só a arquitetura (71.11-1-00) deve gerar ISS; aluguel e compra e venda de imóveis próprios são fora do ISS (?) confirmar antes da 1ª declaração.
 - [ ] Instalar o certificado A1 (pasta CERTIFICADOS do cliente; senha com o Gian) no PC para o Portal Nacional.
 - [ ] Divergência restante: capital R$ 5,95 mi (proposta) × R$ 5,98 mi (contrato registrado). (O nome oficial é "ARQUITETURA E PARTICIPACOES"; "Holding" é uso interno.)
