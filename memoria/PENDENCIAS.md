@@ -95,6 +95,12 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [x] Recibo da prefeitura conferido no PDF: declaração de Set/2026 recebida em 03/10/2026 às 08:42:47, receita bruta, imposto próprio e retido = R$ 0,00.
 - [ ] **Out/2026 do 265:** o Recebidas traz 1 NFS-e tomada, nº 182232, de 01/10/2026 (competência 10/2026): SAFEWEB, certificado digital e-CNPJ A1, R$ 275,00, ISS 2% (R$ 5,50) não retido. Não é de 09/2026. Tratar no fechamento de outubro.
 
+### DecWeb 09/2026 — rodada fase 1 de 03/10 (14 clientes, sem envio)
+- [x] Declaração criada e dados baixados (ainda **não enviadas**) para: 2, 26, 155, 173, 177, 189, 209, 237, 238, 241, 257, 258. O 26 (Raldi) passou com a senha nova.
+- [ ] **152 CRBM5 (Conselho de Biomedicina, insc. 276754-2-4): bloqueado.** O DecWeb não deixa abrir Set/2026 porque existe **Ago/2026 – Retificadora 1 – Aberta** (a Original de Ago foi enviada em 10/09/2026). Não era problema de senha. A Fernanda precisa decidir no site: concluir/enviar a retificadora (se for correção real) ou descartá-la (se foi aberta por engano). Ainda não sabemos quem a abriu.
+- [ ] **205 L S BECKER: `login_falhou`** (usuário/senha do `clientes.csv`). Conferir na mão no DecWeb; evitar várias tentativas seguidas.
+- [ ] Próximo: fase T nos 12 criados (com `aceitar_avisos` em branco: quem não tiver notas para com pendência e a Fernanda confirma receita zero), depois guias para o G-Click e TSV da fila.
+
 ### Cadastros do 265 (03/10/2026)
 - [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
