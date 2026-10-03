@@ -111,6 +111,15 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] **Conferência com o Portal Nacional (chave de acesso é a mesma nos dois lados):** rodar o Portal para 155, 189, 237, 241, 257 e 258 (têm certificado). **Sem certificado neste PC:** 2, 26, 173, 177, 209 (conferir de outro modo). Cuidados: competência pela data da prestação (155 e 241 têm notas emitidas em 01/10 com prestação em 30/09); 155 tem 1 nota cancelada e 3 com valor 0; a retenção de R$ 762,54 do 257.
 - [ ] Pendências remanescentes: 152 (retificadora de agosto aberta), 205 (login), 186 (documentos).
 
+### Conciliação DecWeb × Portal Nacional — 09/2026 (03/10/2026, arquivos do Drive)
+- [x] **155 Mainieri (Emitidas × Prestados): bate.** Portal competência 09/2026 = 108 notas (107 normais + 1 cancelada), R$ 21.051,25, ISS R$ 842,02; mesmas notas 876 a 983 do DecWeb. Recebidas do 155 ainda não baixadas.
+- [x] **16 Centro Clínico: bate.** Emitidas 221 notas = R$ 142.642,60 (receita da declaração; ISS fixo R$ 422,87 por 2 profissionais); Recebidas 4 notas = R$ 753,49 (= Tomados do DecWeb). 6 notas de 10/2026 ficam de fora.
+- [x] **238 REAT (Recebidas × Tomados): bate.** 7 notas de set. = R$ 15.730,90, ISS retido R$ 609,54 (Prime System e Primegrid); a 8ª nota do Portal (Castro Serralheria, R$ 450) é de 08/2026. Sem arquivo de Emitidas (0 notas). **A declaração do 238 ainda não foi enviada.**
+- [x] 265: Emitidas 0; Recebidas 1 nota de 10/2026 (SAFEWEB, R$ 275,00).
+- [ ] Alerta 155: 63 notas com competência 08/2026 foram geradas entre 31/08 e 03/09; a declaração de agosto foi recebida em 05/09 (R$ 22.477,87, ISS R$ 899,14), depois delas. Sem indício de furo, mas o mês inteiro não foi conferido.
+- [ ] 238, pontos para REINF (15/10) e conferência: INSS retido R$ 1.295,45 (Prime System), IRRF R$ 17,75 e PIS/COFINS/CSLL retidos R$ 141,86 nas notas tomadas. Conferir se a retenção sobre prestador ME/EPP está correta.
+- [ ] Falta baixar/conferir: 189, 237, 241, 257, 258 (Emitidas e Recebidas) e Recebidas do 155. Sem certificado: 2, 26, 173, 177, 209.
+
 ### Cadastros do 265 (03/10/2026)
 - [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
