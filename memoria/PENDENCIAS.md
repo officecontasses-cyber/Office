@@ -127,6 +127,11 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] Notas de outra competência no Portal, ignoradas (conferir no CSV `--csv-notas` se alguma tem ISS retido e se entrou na declaração do mês certo): 155 (63 de 08/2026 em Prestados; 1 de 10/2026 em Tomados), 16 (6 de 10/2026), 237 (1 de 08/2026), 238 (1 de 08/2026), 241 (3 de 08/2026), 257 (1 de 08/2026 e 1 de 10/2026).
 - [ ] 155: 3 notas com valor zero e 1 cancelada (Prestados), iguais nos dois lados.
 
+### Portal Nacional 09/2026 — situação da pasta 003 (03/10/2026, ~12:25)
+- [x] **Com Emitidas e Recebidas:** 16, 71, 126, 155, 189, 241, 257, 261. **Só Recebidas** (Emitidas sem notas, provável): 152, 197, 237, 238, 264, 265. **Só Emitidas:** 205. **Sem nenhum arquivo:** 117, 247, 258 (zero nos dois, ou falha: ver `portalnacional\logs\resultados.csv`). **Não rodou:** 186 (aguarda documentos).
+- [x] Clientes com certificado (19): 16, 71, 117, 126, 152, 155, 186, 189, 197, 205, 237, 238, 241, 247, 257, 258, 261, 264, 265. Sem certificado (11): 2, 18, 26, 133, 138, 173, 177, 185, 209, 248, 263.
+- [ ] Previsão pelo Portal para o DecWeb (a conferir no resultado): **205** Prestados 17 notas normais, R$ 95.753,11, ISS 2% = R$ 1.915,06 (1 cancelada e 1 substituída fora; 5 notas de 10/2026 fora); **152** Tomados 59 notas, R$ 84.099,50, ISS R$ 1.920,13, **ISS retido R$ 568,44** em 14 notas (gera guia; 3 canceladas; 11 notas de 10/2026 e 1 de 08/2026 fora).
+
 ### Cadastros do 265 (03/10/2026)
 - [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
