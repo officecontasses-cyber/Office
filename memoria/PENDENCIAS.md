@@ -132,6 +132,14 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [x] Clientes com certificado (19): 16, 71, 117, 126, 152, 155, 186, 189, 197, 205, 237, 238, 241, 247, 257, 258, 261, 264, 265. Sem certificado (11): 2, 18, 26, 133, 138, 173, 177, 185, 209, 248, 263.
 - [ ] Previsão pelo Portal para o DecWeb (a conferir no resultado): **205** Prestados 17 notas normais, R$ 95.753,11, ISS 2% = R$ 1.915,06 (1 cancelada e 1 substituída fora; 5 notas de 10/2026 fora); **152** Tomados 59 notas, R$ 84.099,50, ISS R$ 1.920,13, **ISS retido R$ 568,44** em 14 notas (gera guia; 3 canceladas; 11 notas de 10/2026 e 1 de 08/2026 fora).
 
+### DecWeb 09/2026 — situação após o `resultados.csv` (03/10/2026, ~12:30)
+- [x] **205 L S Becker enviado** (recibo 03/10 12:26:41): receita R$ 95.753,11, ISS R$ 1.915,06, guia R$ 1.915,06 venc. 13/10 — **bateu exatamente com a previsão do Portal**.
+- [x] Enviadas: 18 de 22 (2, 16, 18, 26, 117, 133, 138, 155, 177, 189, 205, 209, 237, 241, 257, 258, 263, 265).
+- [ ] **Pendência (mesma mensagem nas 3):** 173 (11:19 e 12:26), 238 (11:24 e 12:27), 152 (12:25): "Não foi informado serviço prestado/tomado para esta escrituração". O Prestados baixado está vazio, então o robô só segue com `aceitar_avisos=sim` no `clientes.csv`. O 173 continuou parando às 12:26 mesmo após a confirmação da Fernanda: conferir se o `sim` foi salvo na linha dele. 238 e 152 também precisam do `sim` (receita própria zero confirmada pelo Portal: sem Emitidas).
+- [ ] **O DecWeb importa o ISS retido dos tomados sozinho:** em agosto o 238 foi declarado com retido R$ 588,84 e o 152 com R$ 424,55. **Esperado em setembro:** 238 retido R$ 609,54 (tudo Porto Alegre); 152 retido total R$ 568,44, sendo **R$ 461,69 de Porto Alegre** (guia no DecWeb) e **R$ 106,75 de Estrela/RS** (2 notas, incidência em Estrela). Verificar nos PDFs depois do envio.
+- [ ] **152, Estrela/RS:** em agosto houve um lançamento separado de R$ 25,63 para o Município de Estrela ("Declaração de Serviços Eventuais Tomados", competência 08/2026, venc. 23/09). Para setembro, pelas notas do Portal, esperar R$ 106,75; é feito no portal de Estrela, não no DecWeb. A Fernanda precisa fazer/confirmar.
+- [ ] 186 Lopes & Nadal: aguarda documentos.
+
 ### Cadastros do 265 (03/10/2026)
 - [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
