@@ -40,7 +40,6 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 ### Cliente novo 265 — BELEM BRASIL HOLDING
 - [x] 265 incluído no `clientes.csv` do DecWeb em 03/10/2026 (script `decweb/adicionar_cliente265.bat`, Fernanda confirmou "deu"). **Falta o `clientes.csv` do Portal Nacional** (sem senha) e trocar a senha do DecWeb.
 - [ ] ISSQN do 265 nos meses seguintes: só a arquitetura (71.11-1-00) deve gerar ISS; aluguel e compra e venda de imóveis próprios ficam fora do ISS (?) confirmar. **Voltar `aceitar_avisos` do 265 para em branco** (o `sim` valeu só para 09/2026, receita zero confirmada pela Fernanda em 03/10).
-- [ ] Divergência restante: capital R$ 5,95 mi (proposta) × R$ 5,98 mi (contrato registrado). (O nome oficial é "ARQUITETURA E PARTICIPACOES"; "Holding" é uso interno.)
 - [ ] Apagar a mensagem do grupo de WhatsApp que expõe a senha do certificado. (A senha do DecWeb também foi digitada na sessão de 02/10/2026: considerar trocá-la.)
 
 ### Antigas (de agosto) e estruturais
@@ -95,6 +94,13 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [x] Certificado A1 instalado (vence 01/10/2027), 265 incluído no `clientes.csv` do Portal (30 clientes). Rodada do 265: sessão anterior apagada, empresa logada confirmada pelo CNPJ, **Emitidas 0 notas** (09/2026 a 31/10), Recebidas geraram `265_BelemBrasil_PortoAlegre_09.2026_Recebidas.xlsx` na 003 de setembro.
 - [x] Recibo da prefeitura conferido no PDF: declaração de Set/2026 recebida em 03/10/2026 às 08:42:47, receita bruta, imposto próprio e retido = R$ 0,00.
 - [ ] **Out/2026 do 265:** o Recebidas traz 1 NFS-e tomada, nº 182232, de 01/10/2026 (competência 10/2026): SAFEWEB, certificado digital e-CNPJ A1, R$ 275,00, ISS 2% (R$ 5,50) não retido. Não é de 09/2026. Tratar no fechamento de outubro.
+
+### Cadastros do 265 (03/10/2026)
+- [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
+- [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
+- [ ] Pró-labore dos sócios: o contrato (cl. 13) permite, mas não fixa valor; definir com os sócios antes de abrir Folha.
+- [ ] Bairro dos sócios no contrato é "Chapéu do Sol" e o da sede é "Belém Novo" (Cartão CNPJ e DecWeb usam Belém Novo).
+- [ ] 265 no SIEG, depois no G-Click (tarefas mensais). Em andamento em 03/10.
 
 ### Regras e memória registradas
 - [x] Guia só vira `Enviado` com envio comprovado pelo G-Click; declaração da prefeitura é comprovada pelo recibo.
