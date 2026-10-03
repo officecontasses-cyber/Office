@@ -39,7 +39,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 
 ### Cliente novo 265 — BELEM BRASIL HOLDING
 - [x] 265 incluído no `clientes.csv` do DecWeb em 03/10/2026 (script `decweb/adicionar_cliente265.bat`, Fernanda confirmou "deu"). **Falta o `clientes.csv` do Portal Nacional** (sem senha) e trocar a senha do DecWeb.
-- [ ] Definir o tratamento do ISSQN: só a arquitetura (71.11-1-00) deve gerar ISS; aluguel e compra e venda de imóveis próprios são fora do ISS (?) confirmar antes da 1ª declaração.
+- [ ] ISSQN do 265 nos meses seguintes: só a arquitetura (71.11-1-00) deve gerar ISS; aluguel e compra e venda de imóveis próprios ficam fora do ISS (?) confirmar. **Voltar `aceitar_avisos` do 265 para em branco** (o `sim` valeu só para 09/2026, receita zero confirmada pela Fernanda em 03/10).
 - [ ] Instalar o certificado A1 (pasta CERTIFICADOS do cliente; senha com o Gian) no PC para o Portal Nacional.
 - [ ] Divergência restante: capital R$ 5,95 mi (proposta) × R$ 5,98 mi (contrato registrado). (O nome oficial é "ARQUITETURA E PARTICIPACOES"; "Holding" é uso interno.)
 - [ ] Apagar a mensagem do grupo de WhatsApp que expõe a senha do certificado. (A senha do DecWeb também foi digitada na sessão de 02/10/2026: considerar trocá-la.)
@@ -86,6 +86,11 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [x] Script do 265 rodado: cadastro na linha 31; 12 linhas na Set2026 (322 a 333); verificação sem problemas.
 - [x] `definirPrazosSet2026()` rodado com a versão nova: ISSQN/Declaração de Porto Alegre em 13/10 (22 linhas de cada; 1 de São Leopoldo em 15/10); `verificarPrazosSet2026()` sem problemas. A 1ª rodada tinha usado a versão antiga da planilha (09/10 em 44 linhas), já corrigida.
 - [ ] Município sem prazo de ISS (Brasília, Rio de Janeiro, Novo Hamburgo, São Sebastião do Caí, Montenegro, Palhoça): cadastrar os dias (já era pendência).
+
+### DecWeb — 265 em 09/2026 (03/10/2026)
+- [x] Fase 1 sem envio: login na empresa certa, sem Prestados/Tomados. Fase T parou por pendência no cadastro (responsável não informado); Fernanda preencheu o responsável no site. Fase T de novo: **declaração ENVIADA às 08:42**, guia sem valor a recolher (não impressa), PDF `265_BelemBrasil_PortoAlegre_09.2026_DeclaraçãoMensal.pdf` baixado.
+- [ ] Fila Atualizações do 265 (Set2026): DECLARAÇÃO PREFEITURA `Enviado` e GUIA ISSQN `Sem movimento` — propostas, **aguardam a Fernanda colar e processar**.
+- [ ] Chamar atenção para: nome do arquivo do certificado A1 do 265 no Drive tem a senha escrita; a senha do DecWeb é a mesma. Renomear o arquivo e trocar as senhas.
 
 ### Regras e memória registradas
 - [x] Guia só vira `Enviado` com envio comprovado pelo G-Click; declaração da prefeitura é comprovada pelo recibo.
