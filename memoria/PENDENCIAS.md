@@ -21,9 +21,18 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] **SPED Contribuições 09/2026:** prazo 16/11 (na planilha). Pendência de agosto: SPED Contribuições 15/10.
 
 ### Fila da Controle_Fiscal (aba Atualizações) — a confirmar que foi colada e processada
-- [ ] Tacom 09/2026: 263 declaração Enviado; 263 guia Enviado R$ 4.089,69 (G-Click comprovado em 02/10); 138 declaração Enviado. (?) 138 guia: lançar `Sem movimento`?
+- [x] Tacom 09/2026: 263 declaração e guia (R$ 4.089,69, G-Click 02/10 14:03) já `Enviado` na planilha (conferido em 03/10). 138 declaração `Enviado`; **138 guia: Fernanda confirmou "sem movimento" em 03/10** → TSV `Sem movimento` entregue; colar e processar.
 - [ ] Corrigir observações das guias do 16 e do 18 (dizem "Venc. 09/10"; o correto é **13/10/2026**).
 - [ ] Guias do 16 (R$ 422,87) e do 18 (R$ 42,00): continuam `Pendente` até o envio comprovado no G-Click; depois `Enviado`.
+
+### Guias ISSQN POA 09/2026 — decisões de 03/10 (após conciliação Portal x DecWeb)
+- [ ] **155 (R$ 842,02): NÃO postar ainda** — aguardar confirmação da Camila (Fernanda, 03/10). Conciliação sem divergência.
+- [ ] **257 (R$ 6.500,00): conferir com o cliente e analisar na SEGUNDA 05/10.** ISS 7.262,54, retido só 762,54; a Fernanda estranhou porque o cliente geralmente retém tudo. Verificar se os tomadores deveriam ter retido (notas de prestados do 257) antes de postar a guia.
+- [ ] **205 (R$ 1.915,06): segurar.** Conciliação: DecWeb tem 1 nota de R$ 6.000,00 (ISS 120,00) que o Portal não tem; 3 canceladas no Portal x 2 no DecWeb. Identificar a nota (`findstr /I "Becker" notas_09_2026.csv`); se cancelada, retificar declaração e refazer guia.
+- [ ] 152 (R$ 461,69): divergência só de 1 nota de R$ 42,00 no Portal (ISS e retido iguais); retido total 568,44 = 461,69 POA + 106,75 Estrela. Fernanda decide postar; localizar a nota depois.
+- [ ] Liberadas pela conciliação (postar no G-Click quando a Fernanda decidir): 16 (422,87), 189 (634,31), 238 (609,54), 241 (2.403,15). 18 (42,00) e 177 (530,40) só conferidas por conta (2%), sem Portal. 173 (422,87, ISS fixo).
+- [ ] **186 Lopes & Nadal:** cliente enviou os documentos em 03/10 → rodar Portal Nacional e DecWeb (prioridade logo após a Tacom); ISSQN sai junto com os demais impostos no G-Click. Em agosto a guia foi R$ 422,87 (fixo por profissional).
+- [ ] Portal Nacional 117, 247 (Montenegro/RS, não é DecWeb) e 258: comando entregue em 03/10; falta o `logs\resultados.csv`.
 
 ### DecWeb (ISSQN Porto Alegre) — 09/2026
 - [ ] Rodar os **15 clientes restantes** de Porto Alegre: 2, 26, 152, 155, 173, 177, 186 (só depois dos documentos), 189, 205, 209, 237, 238, 241, 257, 258.
