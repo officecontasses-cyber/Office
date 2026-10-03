@@ -140,6 +140,15 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] **152, Estrela/RS:** em agosto houve um lançamento separado de R$ 25,63 para o Município de Estrela ("Declaração de Serviços Eventuais Tomados", competência 08/2026, venc. 23/09). Para setembro, pelas notas do Portal, esperar R$ 106,75; é feito no portal de Estrela, não no DecWeb. A Fernanda precisa fazer/confirmar.
 - [ ] 186 Lopes & Nadal: aguarda documentos.
 
+### DecWeb 09/2026 — rodada final de 03/10 (173, 152, 238 enviados às 14:02 a 14:04)
+- [x] **21 de 22 enviadas** (falta só o 186, que aguarda documentos). Recibos: 152 às 14:02:14, 173 às 14:02:59, 238 às 14:03:48.
+- [x] **Previsões do Portal confirmadas:** 238 ISS retido R$ 609,54 (guia R$ 609,54); 152 ISS retido R$ 461,69 de Porto Alegre (guia R$ 461,69); 205 R$ 95.753,11 / R$ 1.915,06.
+- [x] **Correção:** o **173 NÃO é sem guia**. É Sociedade de Profissionais (2 profissionais × 35 UFM × R$ 6,0411): ISS fixo e **guia de R$ 422,87** (venc. 13/10), receita NFSE R$ 0,00. Eu havia dito "sem guia"; estava errado. (O mesmo profissional, Rodrigo Tavares Lopes, mesmo CPF, consta na declaração do 16 e na do 173: conferir se pode constar nas duas.)
+- [ ] **Guias a enviar pelo G-Click (venc. 13/10), 11 guias, R$ 14.783,91:** 16 (422,87), 18 (42,00), 155 (842,02), 173 (422,87), 177 (530,40), 189 (634,31), 205 (1.915,06), 238 (609,54), 152 (461,69), 241 (2.403,15), 257 (6.500,00). Ficam `Pendente` até o envio comprovado.
+- [ ] **152, Estrela/RS:** R$ 106,75 de ISS retido (2 notas com incidência em Estrela) a declarar no portal do Município de Estrela (em agosto foram R$ 25,63, venc. 23/09). Pelas notas do Portal; confirmar.
+- [ ] **Voltar `aceitar_avisos` para em branco** em 173, 238, 152 (e 265, se ainda estiver `sim`).
+- [ ] Conciliação: rodar de novo `conciliacao.py` com 152 e 205 (Portal já baixado).
+
 ### Cadastros do 265 (03/10/2026)
 - [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
