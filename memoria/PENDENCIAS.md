@@ -49,6 +49,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] As 7 linhas "Não se aplica" fixas e as observações (aguardando a Fernanda avaliar).
 - [ ] Dias de prazo de ISSQN dos demais municípios (hoje só Porto Alegre 13/10 e São Leopoldo 15/10).
 - [ ] Possível gerador de TSV a partir dos PDFs que o robô baixa.
+- [x] **`decweb/conciliacao.py` criado em 03/10/2026:** concilia Prestados×Emitidas, Tomados×Recebidas, declaração e guia (PDF) pela chave de acesso. Validado com dados reais do 155, 16 e 238. Falta rodar no PC do escritório (copiar o arquivo para `C:\Robos\decweb` e `pip install pypdf`) e conferir a leitura dos PDFs com `--ler-pdf`.
 
 ### Bloqueios do ambiente
 - [x] BrasilAPI deu 404 para o 265 em 02/10 (CNPJ de 30/09, recente demais); dados vieram do Cartão CNPJ enviado em print.

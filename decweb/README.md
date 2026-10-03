@@ -67,6 +67,22 @@ Só esses avisos são aceitos; qualquer outra pendência (cadastro, valor invál
 `logs\resultados.csv` (histórico) e `logs\` (execução). Em erro ou pendência, imagem e HTML da tela em `logs\diagnostico\`.
 O robô nunca grava usuário nem senha nos logs. Os PDFs e planilhas ficam em `002 ARQUIVOS MUNICIPAIS` do mês.
 
+## Conciliação DecWeb × Portal Nacional (`conciliacao.py`)
+Depois que os dois robôs rodaram, compara o que o DecWeb declarou com o que o Portal Nacional mostra. **Não abre site**,
+só lê os arquivos da pasta do mês (`002 ARQUIVOS MUNICIPAIS` e `003 ARQUIVOS PORTAL NACIONAL`):
+```
+python conciliacao.py 09/2026                    # todos os clientes que tenham arquivos
+python conciliacao.py 09/2026 155 16 238         # só alguns
+python conciliacao.py 09/2026 --detalhe --csv conciliacao_09_2026.csv
+python conciliacao.py x --ler-pdf "C:\...\155_Mainieri_PortoAlegre_09.2026_DeclaraçãoMensal.pdf"   # confere a leitura de um PDF
+```
+Por cliente confere **Prestados × Emitidas**, **Tomados × Recebidas** (qtd, valor de cada nota, ISS e ISS retido, casando
+pela chave de acesso, que é a mesma nos dois lados) e a **DeclaraçãoMensal e a guia** (receita × Prestados, total a recolher ×
+guia, vencimento, recibo). Para ler os PDFs: `pip install pypdf` (sem ele, o resto funciona e os PDFs aparecem como "não conferidos").
+Situações: `ok`, `atencao` (bate, mas há algo para olhar: ISS diferente, nota zerada, notas de outra competência), `divergencia`
+(nota só de um lado, valor ou ISS retido diferente), `sem_portal` (o Portal não tem planilha: não baixada, ou o robô não grava
+planilha com 0 notas), `sem_dados`. Só lê `numero` e `apelido` do `clientes.csv`; nunca usuário ou senha.
+
 ## Cuidados
 - Não use o mesmo Chrome do robô ao mesmo tempo. Em lotes grandes o Chrome pode cair; o robô tenta de novo.
 - Se o DecWeb apontar pendência (cadastro do responsável desatualizado etc.), o robô para nessa empresa, registra e
