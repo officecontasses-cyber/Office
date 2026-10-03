@@ -280,3 +280,25 @@ def test_pdf_fora_do_formato_nao_fica_em_silencio(pastas, monkeypatch):
     monkeypatch.setattr(co, "texto_pdf", lambda caminho: "texto qualquer sem os campos")
     sit, texto = co.conciliar_declaracao(CLIENTE, "09", "2026", mun, None)
     assert sit == "atencao" and "NÃO consegui ler a receita bruta e o total a recolher" in texto
+
+
+def test_relatorio_nota_a_nota_e_sem_pdf(pastas, tmp_path):
+    mun, nac = pastas
+    grava_decweb(mun, "tomados", xlsx_decweb([
+        ("202610000000000493", 100.0, 5.0, 5.0, "Normal", CHAVE_A),      # ok
+        ("202610000000000494", 200.0, 10.0, 0, "Normal", CHAVE_B),       # valor diferente
+        ("202610000000000995", 50.0, 0, 0, "Normal", CHAVE_C),           # só no DecWeb
+    ]), como_zip=True)                                                    # relação lida direto do ZIP da prefeitura
+    grava_portal(nac, "tomados", xlsx_portal([
+        (493, "09/2026", 100.0, 5.0, "2 - Retido pelo Tomador", "Normal", CHAVE_A),
+        (494, "09/2026", 250.0, 10.0, "1 - Não Retido", "Normal", CHAVE_B),
+        (777, "09/2026", 9.0, 0, "1 - Não Retido", "Normal", CHAVE_D),
+        (121, "08/2026", 450.0, 0, "1 - Não Retido", "Normal", "9" * 50),
+    ]))
+    r = co.conciliar_cliente(CLIENTE, "09/2026", com_pdf=False)
+    assert r["lados"]["declaracao"]["texto"] == "PDF não conferido (--sem-pdf)"
+    co.gravar_csv_notas([r], str(tmp_path / "n.csv"))
+    linhas = [l.split(";") for l in (tmp_path / "n.csv").read_text(encoding="utf-8-sig").splitlines()[1:]]
+    por_nota = {l[4]: l[3] for l in linhas}
+    assert por_nota == {"493": "ok", "494": "valor_diferente", "995": "so_no_decweb", "777": "so_no_portal",
+                        "121": "portal_outra_competencia_08-2026"}

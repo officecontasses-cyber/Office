@@ -13,6 +13,10 @@ Roda sozinho, SEM abrir site, a partir dos arquivos que os dois robôs já grava
       {n}_{apelido}_PortoAlegre_MM.AAAA_Emitidas.xlsx
       {n}_{apelido}_PortoAlegre_MM.AAAA_Recebidas.xlsx
 
+O lado DecWeb é a RELAÇÃO DE NOTAS que a prefeitura devolve no zip (Serviços Prestados / Tomados): o script lê a
+pasta já extraída ou, se não houver, o próprio .zip. A DeclaraçãoMensal e a guia em PDF são só uma conferência extra
+(desligue com --sem-pdf).
+
 O que é conferido, por cliente:
   PRESTADOS   notas do DecWeb x Emitidas do Portal (competência MM/AAAA, sem canceladas): quantidade, valor de cada
               nota, ISS e ISS retido. As notas são casadas pela CHAVE DE ACESSO (igual nos dois lados); se um lado
@@ -33,6 +37,7 @@ Uso (na pasta do robô DecWeb, usa config/configuracao.ini e config/clientes.csv
     python conciliacao.py 09/2026 155 16 238         # só alguns (pelo número)
     python conciliacao.py 09/2026 --csv conciliacao_09_2026.csv
     python conciliacao.py 09/2026 --detalhe          # lista nota a nota o que divergiu
+    python conciliacao.py 09/2026 --csv-notas notas_09_2026.csv --sem-pdf   # planilha com UMA LINHA POR NOTA
     python conciliacao.py x --ler-pdf "caminho\\155_..._DeclaraçãoMensal.pdf"   # confere a leitura de um PDF
 
 NUNCA lê nem imprime usuário/senha do clientes.csv: só 'numero' e 'apelido'.
@@ -267,6 +272,7 @@ class Comparacao:
     retido_diferente: list[tuple[Nota, Nota]] = field(default_factory=list)
     iss_diferente: list[tuple[Nota, Nota]] = field(default_factory=list)
     zeradas: list[Nota] = field(default_factory=list)
+    pares: list[tuple[Nota, Nota]] = field(default_factory=list)   # (DecWeb, Portal) casadas
 
     @property
     def situacao(self) -> str:
@@ -311,6 +317,7 @@ def comparar(decweb: Lado, portal: Lado) -> Comparacao:
             sobra_d.append(d)
     sobra_p = [p for p in resto_p if id(p) not in usados2]
 
+    comp.pares = sorted(pares, key=lambda par: par[1].numero)
     comp.so_decweb = sorted(sobra_d, key=lambda n: n.numero)
     comp.so_portal = sorted(sobra_p, key=lambda n: n.numero)
     for d, p in pares:
@@ -489,7 +496,7 @@ def conciliar_declaracao(cliente: dict, mes: str, ano: str, pasta_mun: Path, pre
     return nivel, "; ".join(partes)
 
 
-def conciliar_cliente(cliente: dict, competencia: str, cfg: dict | None = None) -> dict:
+def conciliar_cliente(cliente: dict, competencia: str, cfg: dict | None = None, com_pdf: bool = True) -> dict:
     cfg = cfg or configuracao.carregar()
     mes, ano = competencia.split("/")
     mun = configuracao.pasta_municipais(cfg, mes)
@@ -503,7 +510,10 @@ def conciliar_cliente(cliente: dict, competencia: str, cfg: dict | None = None) 
             prest_decweb = dec
         sit, comp, texto = conciliar_lado(dec, por)
         out["lados"][tipo] = {"situacao": sit, "texto": texto, "comparacao": comp, "decweb": dec, "portal": por}
-    sit, texto = conciliar_declaracao(cliente, mes, ano, mun, prest_decweb)
+    if com_pdf:
+        sit, texto = conciliar_declaracao(cliente, mes, ano, mun, prest_decweb)
+    else:
+        sit, texto = "sem_dados", "PDF não conferido (--sem-pdf)"
     out["lados"]["declaracao"] = {"situacao": sit, "texto": texto, "comparacao": None, "decweb": None, "portal": None}
     return out
 
@@ -568,6 +578,51 @@ def gravar_csv(resultados: list[dict], caminho: str) -> None:
                 ])
 
 
+def linhas_notas(resultados: list[dict]) -> list[list]:
+    """Uma linha por nota, dos dois lados (DecWeb = relação do zip da prefeitura; Portal = Emitidas/Recebidas)."""
+    saida = []
+    for r in resultados:
+        c = r["cliente"]
+        for tipo in ("prestados", "tomados"):
+            comp = r["lados"][tipo]["comparacao"]
+            if comp is None:
+                continue
+            dif_valor = {id(d) for d, _p in comp.valor_diferente}
+            dif_ret = {id(d) for d, _p in comp.retido_diferente}
+            dif_iss = {id(d) for d, _p in comp.iss_diferente}
+
+            def linha(situacao, d, p):
+                n = p or d
+                return [c["numero"], c["apelido"], tipo, situacao, n.numero, (p.chave if p else d.chave),
+                        d.valor if d else "", p.valor if p else "", d.iss if d else "", p.iss if p else "",
+                        d.iss_retido if d else "", p.iss_retido if p else ""]
+            for d, p in comp.pares:
+                if id(d) in dif_valor:
+                    sit = "valor_diferente"
+                elif id(d) in dif_ret:
+                    sit = "iss_retido_diferente"
+                elif id(d) in dif_iss:
+                    sit = "iss_diferente"
+                elif abs(d.valor) <= TOLERANCIA:
+                    sit = "valor_zero"
+                else:
+                    sit = "ok"
+                saida.append(linha(sit, d, p))
+            saida.extend(linha("so_no_decweb", d, None) for d in comp.so_decweb)
+            saida.extend(linha("so_no_portal", None, p) for p in comp.so_portal)
+            saida.extend(linha("portal_outra_competencia_" + p.competencia.replace("/", "-"), None, p)
+                         for p in comp.portal.outras_competencias)
+    return saida
+
+
+def gravar_csv_notas(resultados: list[dict], caminho: str) -> None:
+    with open(caminho, "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(["numero", "apelido", "lado", "situacao_da_nota", "nfse", "chave", "valor_decweb", "valor_portal",
+                    "iss_decweb", "iss_portal", "retido_decweb", "retido_portal"])
+        w.writerows(linhas_notas(resultados))
+
+
 def carregar_clientes(numeros: list[str]) -> list[dict]:
     arq = Path(__file__).parent / "config" / "clientes.csv"
     if not arq.exists():
@@ -587,7 +642,9 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="Conciliação DecWeb x Portal Nacional.")
     ap.add_argument("competencia", help="MM/AAAA (com --ler-pdf, qualquer valor)")
     ap.add_argument("clientes", nargs="*", help="números dos clientes (se omitido, todos do clientes.csv)")
-    ap.add_argument("--csv", help="grava o resultado neste arquivo CSV (separador ;)")
+    ap.add_argument("--csv", help="grava o resumo (por cliente e lado) neste arquivo CSV (separador ;)")
+    ap.add_argument("--csv-notas", metavar="ARQUIVO", help="grava UMA LINHA POR NOTA (DecWeb x Portal) neste CSV (separador ;)")
+    ap.add_argument("--sem-pdf", action="store_true", help="não confere a DeclaraçãoMensal e a guia em PDF (só as relações de notas)")
     ap.add_argument("--detalhe", action="store_true", help="lista nota a nota o que divergiu")
     ap.add_argument("--ler-pdf", metavar="ARQUIVO", help="só mostra o texto e os campos lidos de uma DeclaraçãoMensal.pdf ou "
                     "guia ISSQN.pdf (para conferir a leitura); nesse modo a competência é ignorada")
@@ -610,7 +667,7 @@ def main(argv=None) -> int:
     cfg = configuracao.carregar()
     resultados = []
     for c in carregar_clientes(args.clientes):
-        r = conciliar_cliente(c, args.competencia, cfg)
+        r = conciliar_cliente(c, args.competencia, cfg, com_pdf=not args.sem_pdf)
         if args.clientes or any(l["situacao"] != "sem_dados" for l in r["lados"].values()):
             resultados.append(r)
     if not resultados:
@@ -620,6 +677,9 @@ def main(argv=None) -> int:
     if args.csv:
         gravar_csv(resultados, args.csv)
         print(f"CSV gravado em {args.csv}")
+    if args.csv_notas:
+        gravar_csv_notas(resultados, args.csv_notas)
+        print(f"CSV nota a nota gravado em {args.csv_notas}")
     return 0
 
 

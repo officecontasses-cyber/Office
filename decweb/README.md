@@ -76,6 +76,9 @@ python conciliacao.py 09/2026 155 16 238         # só alguns
 python conciliacao.py 09/2026 --detalhe --csv conciliacao_09_2026.csv
 python conciliacao.py x --ler-pdf "C:\...\155_Mainieri_PortoAlegre_09.2026_DeclaraçãoMensal.pdf"   # confere a leitura de um PDF
 ```
+O lado DecWeb é a **relação de notas do zip da prefeitura** (lê a pasta extraída ou o próprio `.zip`); os PDFs são uma conferência extra.
+`--csv-notas arquivo.csv` gera **uma linha por nota** (ok, valor_diferente, so_no_decweb, so_no_portal, portal_outra_competencia_MM-AAAA...) e `--sem-pdf` desliga a leitura dos PDFs.
+
 Por cliente confere **Prestados × Emitidas**, **Tomados × Recebidas** (qtd, valor de cada nota, ISS e ISS retido, casando
 pela chave de acesso, que é a mesma nos dois lados) e a **DeclaraçãoMensal e a guia** (receita × Prestados, total a recolher ×
 guia, vencimento, recibo). Para ler os PDFs: `pip install pypdf` (sem ele, o resto funciona e os PDFs aparecem como "não conferidos").
