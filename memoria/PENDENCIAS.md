@@ -103,6 +103,14 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] **205 L S BECKER: `login_falhou`** (usuário/senha do `clientes.csv`). Conferir na mão no DecWeb; evitar várias tentativas seguidas.
 - [ ] Próximo: fase T nos 12 criados (com `aceitar_avisos` em branco: quem não tiver notas para com pendência e a Fernanda confirma receita zero), depois guias para o G-Click e TSV da fila.
 
+### DecWeb 09/2026 — fase T de 03/10 (recibos lidos no Drive, 11:16 a 11:26)
+- [x] **Declarações enviadas (recibo da prefeitura):** 2, 26, 155, 177, 189, 209, 237, 241, 257, 258.
+- [x] Receita zero (sem guia): 2, 26, 209, 237, 258 (em 2 e 237 só há serviços tomados, sem ISS retido).
+- [ ] **Guias a enviar pelo G-Click (venc. 13/10/2026), total R$ 10.909,88:** 155 Mainieri R$ 842,02 · 177 ILS R$ 530,40 · 189 Real Engenharia R$ 634,31 (Sociedade de Profissionais, 3 prof. × 35 UFM) · 241 Simples GPS R$ 2.403,15 · 257 B2B R$ 6.500,00 (ISS R$ 7.262,54 menos R$ 762,54 retidos pela Telefônica). Mais as de 16 (R$ 422,87) e 18 (R$ 42,00). Ficam `Pendente` até o envio comprovado.
+- [ ] **173 Lopes & Martins e 238 REAT: NÃO enviados** (sem recibo). O 238 tem ISS **retido** nos tomados (R$ 609,54: Prime System e Primegrid), então não é sem movimento e gera guia; conferir também se a retenção sobre prestador do Simples (Prime System, 5%) está correta. Ver o log da rodada para o motivo da pendência.
+- [ ] **Conferência com o Portal Nacional (chave de acesso é a mesma nos dois lados):** rodar o Portal para 155, 189, 237, 241, 257 e 258 (têm certificado). **Sem certificado neste PC:** 2, 26, 173, 177, 209 (conferir de outro modo). Cuidados: competência pela data da prestação (155 e 241 têm notas emitidas em 01/10 com prestação em 30/09); 155 tem 1 nota cancelada e 3 com valor 0; a retenção de R$ 762,54 do 257.
+- [ ] Pendências remanescentes: 152 (retificadora de agosto aberta), 205 (login), 186 (documentos).
+
 ### Cadastros do 265 (03/10/2026)
 - [x] Capital resolvido: o contrato registrado na JUCISRS tem **R$ 5.980.000,00** (5.980.000 quotas de R$ 1,00; 2.990.000 para cada sócio, 50%); os R$ 5,95 mi eram só da proposta. Nome oficial "ARQUITETURA E PARTICIPACOES". Dados dos sócios (CPF/RG) lidos do contrato e entregues à Fernanda no chat; **não ficam neste repositório**.
 - [x] Fernanda está finalizando o cadastro do 265 no Domínio (importando do 238).
