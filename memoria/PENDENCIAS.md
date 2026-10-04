@@ -9,7 +9,7 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 Nunca registrar aqui senhas, CPFs completos ou certificados.
 
 **Situação em 04/10/2026 (noite):** agosto/2026 está **fechado** e o **SPED Contribuições de 08/2026 foi transmitido** (22 de 25;
-faltam 117, 002 e 227). Agora **volta o fechamento de 09/2026.**
+faltam 117 e 227; o 002 foi transmitido às 13:51). Agora **volta o fechamento de 09/2026.**
 
 ---
 
@@ -29,7 +29,8 @@ faltam 117, 002 e 227). Agora **volta o fechamento de 09/2026.**
 ### 2. SPED Contribuições 08/2026 (vence 15/10) — TRANSMITIDO em 04/10 (13:11 a 13:44)
 - [x] **Transmitidos (Original, ReceitaNet, recibos lidos no Drive, `08_AGOSTO\010 EFD CONTRIBUIÇÕES`):** 016, 018, 026, 071, 126, 133, 155, 173, 177, 185, 186, 189, 205, 209, 237, 238, 241, 247, 257, 258, 261 e 264 (22 de 25). Valores dos recibos = arquivos conferidos (016 PIS 770,94 / COFINS 3.558,16; 126, 155, 185, 257 a recolher; 018, 071, 177, 189 cobertos por retenção; 205 a recolher 200,53 / 925,50; 241 a recolher 231,78 / 1.069,82; 133 e 238 Real: 11,55 / 53,22 e 576,15 / 2.655,03; zerados: 026, 173, 209, 237, 247, 258, 261, 264). O PVA aceitou os arquivos com registro 0120.
 - [x] TSV `Enviado` da Ago2026 (SPED CONTRIBUIÇÕES) entregue em 04/10 para 186 (já colado) e para os outros 21 (a colar).
-- [ ] **Não transmitidos:** **117** Tabajara (arquivo zerado gerado; sem procuração/certificado, baixa em andamento: propor `Não se aplica`, a confirmar), **002** RF Consultoria (aluguel; Controle PIS 142,86 / COFINS 659,34; sem arquivo) e **227** PROGEST (sem arquivo). 152 (autarquia) e 197 (dispensada) já estão `Não se aplica` na Controle.
+- [x] **002 RF Consultoria transmitido** em 04/10 às 13:51:44 (recibo conferido: PIS 142,86 / COFINS 659,34, iguais ao DARF de agosto); TSV `Enviado` entregue. Total transmitido: 23 clientes.
+- [ ] **Ainda sem SPED de 08/2026:** **117** Tabajara (arquivo zerado gerado; sem procuração/certificado, baixa em andamento: propor `Não se aplica`, a confirmar) e **227** PROGEST (sem arquivo). 152 (autarquia) e 197 (dispensada) já estão `Não se aplica` na Controle.
 - [ ] Observações a manter: 257 é contribuinte de ICMS e o arquivo só tem serviços (confirmar se a receita de R$ 126.223,13 inclui mercadoria); 018 com saldo de retenção sem uso nos registros 1300/1700 (conferir no Domínio).
 - [ ] Linhas DARF PIS/COFINS de agosto ainda `Pendente` na Ago2026 (071, 133 COFINS, 237, 238, 241, 257, 258, 261): agosto está fechado; atualizar a planilha quando convier (071 `Retido`, 133 COFINS `Compensado` por PER/DCOMP, 237/258/261 `Sem movimento`).
 
@@ -39,7 +40,7 @@ faltam 117, 002 e 227). Agora **volta o fechamento de 09/2026.**
 - [ ] **155 (842,02): segurada, aguardando a Camila.**
 - [ ] **257 (6.500,00): analisar na SEGUNDA 05/10 com o cliente.** ISS 7.262,54, retido só 762,54 (cliente costuma reter tudo).
 - [ ] **205 (1.915,06): segurada.** DecWeb tem 1 nota de R$ 6.000,00 (ISS 120,00) que o Portal não tem; 3 canceladas no Portal x 2 no DecWeb. Rodar `findstr /I "Becker" notas_09_2026.csv`; se a nota estiver cancelada, retificar e refazer a guia.
-- [ ] Sem movimento ainda em branco na Set2026 (guia ISSQN): 2, 26, 209, 237 e 258 (Fernanda ainda não confirmou); 247 (Montenegro, DMS fora do DecWeb); 138, 117, 133 e 265 já `Sem movimento`.
+- [x] **Fernanda confirmou `Sem movimento` na guia ISSQN de 09/2026 de 26, 209, 237 e 258 (04/10)**; TSV entregue. [ ] Segue em branco o **2 RF Consultoria** (não confirmado); 247 (Montenegro, DMS fora do DecWeb); 138, 117, 133 e 265 já `Sem movimento`.
 - [ ] **152, Estrela/RS:** R$ 106,75 de ISS retido a declarar no portal de Estrela (em agosto foram R$ 25,63, venc. 23/09). Retido total 568,44 = 461,69 POA + 106,75 Estrela. A localizar a nota de R$ 42,00 que só o Portal tem.
 - [ ] Voltar `aceitar_avisos` para em branco em 173, 238, 152 e 265.
 - [ ] Rodar de novo `conciliacao.py` para 152, 205 e 186.
