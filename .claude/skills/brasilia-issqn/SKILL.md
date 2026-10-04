@@ -47,3 +47,6 @@ Colunas "Sem Retenção Na Fonte" e "Com Retenção Na Fonte", por "Tributado no
 - GUIA ISSQN: `Sem Recolhimento (Retenção Integral)`, 0,00, ISS apurado como prestador (DF e fora) só na observação.
 - GUIA ISSQN FORA MUNICÍPIO: é a guia que o próprio cliente paga como **tomador** de prestador de fora (ex.: Jundiaí R$ 39,43). `Pendente` com o valor da guia até o G-Click. Não confundir com o ISS que os tomadores dele retêm nas notas emitidas por ele (esse vai na observação da GUIA ISSQN).
 - DECLARAÇÃO PREFEITURA: `Enviado` com o protocolo de Prestados e a Não Movimento, depois da confirmação explícita da Fernanda (regra a registrar aqui quando ela confirmar).
+
+## Cliente 264 Zenith Paracuru (sem notas emitidas), 09/2026
+Quando o Portal não tem Emitidas, gerar no ISSNet as duas **Declarações de Não Movimento** (Serviços Prestados e Serviços Contratados), salvar como `264_Zenith_Brasília_MM.AAAA_DeclaraçãoMensalPrestados.pdf` e `..._Tomados.pdf`. TSV: SERVIÇOS TOMADOS `Sem movimento` 0,00; DECLARAÇÃO PREFEITURA `Enviado` (Não Movimentação Contratados/Prestados, data); GUIA ISSQN `Sem movimento` 0,00 ("Sem movimento econômico declarado (Tomados e Prestados) — sem guia gerada."). Regra confirmada pelo registro de agosto (05/09/2026) e de setembro (04/10/2026).
