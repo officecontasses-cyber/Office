@@ -7,6 +7,8 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 
 ---
 
+Mapa do processo e linha do tempo de 09/2026: ver `memoria/PROCESSO_FECHAMENTO_09-2026.md`.
+
 ## PENDENTE
 
 ### Com data marcada
