@@ -39,3 +39,20 @@
 264	Set2026	REINF	Enviado		R-2099 Fechamento dos Eventos Periódicos, Sucesso, recibo 12177295-01-2099-2609-12177295, enviado 04/10/2026 16:25 (Oficial). Sem retenção no mês.	
 117	Set2026	REINF	Não se aplica		Sem procuração e acesso ao certificado digital bloqueado no e-CAC do cliente devido ao falecimento do sócio; R-2099 de 04/10/2026 16:25 retornou Invalidado. Não se aplica até a baixa da empresa.	
 ```
+
+
+## Lote 2 (04/10/2026, 16:50 a 16:52): 241, 257 e 261; 265 com erro; 205 sem relatório
+### DP
+```tsv
+241	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:52 (Oficial). Sem retenção no mês.			
+257	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:50 (Oficial). Sem retenção no mês.			
+261	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:51 (Oficial). Sem retenção no mês.			
+265	MOD GERAL 09.2026			Aguardando procuração (Gian)			
+```
+### Controle_Fiscal
+```tsv
+241	Set2026	REINF	Enviado		R-2099 Fechamento dos Eventos Periódicos, Sucesso, recibo 12198596-08-2099-2609-12198596, enviado 04/10/2026 16:52 (Oficial). Sem retenção no mês.	
+257	Set2026	REINF	Enviado		R-2099 Fechamento dos Eventos Periódicos, Sucesso, recibo 12060363-05-2099-2609-12060363, enviado 04/10/2026 16:50 (Oficial). Sem retenção no mês. R-1000 (inclusão) de 04/10 16:50 retornou Invalidado; R-2099 com sucesso.	
+261	Set2026	REINF	Enviado		R-2099 Fechamento dos Eventos Periódicos, Sucesso, recibo 12177308-01-2099-2609-12177308, enviado 04/10/2026 16:51 (Oficial). Sem retenção no mês.	
+265	Set2026	REINF	Pendente		R-2099 não enviado em 04/10/2026: Domínio, erro 15 (para PJ usar certificado da matriz, do representante legal ou procurador habilitado na Procuração Eletrônica da RFB). Aguardando Gian liberar a procuração.	
+```
