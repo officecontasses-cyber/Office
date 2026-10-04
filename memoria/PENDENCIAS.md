@@ -3,13 +3,13 @@
 Documento vivo. **A cada rodada:** atualizar este arquivo (o que foi feito e o que falta), o log detalhado
 `PROCESSO_FECHAMENTO_09-2026.md` e salvar o snapshot `PENDENCIAS_E_RESOLVIDOS_AAAA-MM-DD.md` na pasta
 `ARQUIVOS EXTENSÃO - CODE - CLAUDE` do Drive (regra da Fernanda, 02/10 e 04/10/2026).
-Última atualização: **04/10/2026, fim da tarde.**
+Última atualização: **04/10/2026, noite.**
 
 Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação da Fernanda.
 Nunca registrar aqui senhas, CPFs completos ou certificados.
 
-**Situação em 04/10/2026:** agosto/2026 está **fechado** (Fernanda). Em andamento: **envio do SPED Contribuições de 08/2026
-(prazo 15/10)**; depois volta o fechamento de **09/2026**.
+**Situação em 04/10/2026 (noite):** agosto/2026 está **fechado** e o **SPED Contribuições de 08/2026 foi transmitido** (22 de 25;
+faltam 117, 002 e 227). Agora **volta o fechamento de 09/2026.**
 
 ---
 
@@ -20,20 +20,18 @@ Nunca registrar aqui senhas, CPFs completos ou certificados.
 - [ ] **Qua 07/10: SPED Fiscal da Tacom** (10/2026) à Leidislaine, que transmite até 08/10. (?) vale para 138, 263 ou ambas?
 - [ ] **13/10: ISSQN de Porto Alegre 09/2026** (o prazo é o impresso na guia, nunca o 09/10 do Domínio).
 - [ ] **14/10: certificado A1 do 258 Nadal vence.** Conferir no OWA (Itens Enviados) se o e-mail ao Gian foi enviado; rascunho entregue em 03/10. Demais: 155 em 27/10, 71 em 13/11, 117 em 11/12, 126 em 16/12.
-- [ ] **15/10: SPED Contribuições 08/2026** (ver seção 2) e **REINF** (186 de 09/2026 já enviado; conferir os demais).
+- [ ] **15/10: REINF de 09/2026** (186 já enviado; conferir os demais) e **002, 227 e 117 do SPED de 08/2026** (seção 2).
 - [ ] **Sex 16/10 (sugerido): retorno do contábil** com rendimentos financeiros e IRRF do 3º trimestre.
 - [ ] **23/10: DARF de PIS/COFINS de 09/2026. 30/10: IRPJ e CSLL do 3º trimestre. 16/11: SPED Contribuições de 09/2026.**
 - [ ] **16 a 31/10: REAT HOLDING (238):** enviar à cliente o relatório de débitos ref. 06/2026 (Relatório Fiscal de 21/08, Júlia Rocha) + IRPJ e CSLL vencidos de meses anteriores. (?) quais meses.
 - [ ] **238, retificação de junho/2026:** a FAT mostra guia complementar "A gerar" e pagamento "Pendente" (PIS R$ 38,96 + COFINS R$ 239,77 = R$ 278,73). Confirmar se foi gerada e paga.
 
-### 2. SPED Contribuições 08/2026 (em andamento, vence 15/10)
-Arquivos em `08_AGOSTO\010 EFD CONTRIBUIÇÕES` (pasta renomeada de "0010" em 04/10). Todos os cálculos conferem pela base.
-- [x] **186: TRANSMITIDO em 04/10 às 13:11** (PIS 53,74 / COFINS 248,01; recibo registrado na Ago2026).
-- [ ] **Importar no PVA, assinar e transmitir, sem pendência de conferência:** 126, 155, 185, 205, 189, 177, 018 e os zerados 026, 117, 173, 209, 247, 237, 258, 261 (ver ponto PVA abaixo).
-- [ ] **Outros arquivos conferidos:** 016 (PIS 770,94, conferido com o DARF), 071 (retido integralmente), 133 (Real: PIS 11,55 / COFINS 53,22), 238 (Real: PIS 576,15 / COFINS 2.655,03, bate com a FAT), 241 (231,78 / 1.069,82), 257 (820,45 / 3.786,69). Dúvida no 257: é contribuinte de ICMS e o arquivo só tem serviços (F550); confirmar que os R$ 126.223,13 incluem mercadoria.
-- [ ] **Sem arquivo na pasta:** 002 (aluguel), 227 PROGEST, 264 ZENITH. (197 dispensada e 152 autarquia não entregam.)
-- [ ] **Atenção ao PVA:** registros 0120 em 026, 173, 185, 189, 209 e 258 (os mesmos clientes com erro de 0120 em 07/2026; 173, 209 e 258 incluem o próprio 08/2026); no 018 o saldo de retenção de 06 a 08/2026 aparece sem uso nos registros 1300/1700; centavos de diferença entre M200/M600 e 1300/1700 em 071, 177 e 189.
-- [ ] Linhas DARF PIS/COFINS de agosto ainda `Pendente` na Ago2026 (071, 133 COFINS, 237, 238, 241, 257, 258, 261): atualizar quando convier (propostos: 071 `Retido`, 133 COFINS `Compensado` por PER/DCOMP, 237/258/261 `Sem movimento` já confirmados; 241/257/238 dependem de evidência do G-Click). Agosto está fechado, não é bloqueio.
+### 2. SPED Contribuições 08/2026 (vence 15/10) — TRANSMITIDO em 04/10 (13:11 a 13:44)
+- [x] **Transmitidos (Original, ReceitaNet, recibos lidos no Drive, `08_AGOSTO\010 EFD CONTRIBUIÇÕES`):** 016, 018, 026, 071, 126, 133, 155, 173, 177, 185, 186, 189, 205, 209, 237, 238, 241, 247, 257, 258, 261 e 264 (22 de 25). Valores dos recibos = arquivos conferidos (016 PIS 770,94 / COFINS 3.558,16; 126, 155, 185, 257 a recolher; 018, 071, 177, 189 cobertos por retenção; 205 a recolher 200,53 / 925,50; 241 a recolher 231,78 / 1.069,82; 133 e 238 Real: 11,55 / 53,22 e 576,15 / 2.655,03; zerados: 026, 173, 209, 237, 247, 258, 261, 264). O PVA aceitou os arquivos com registro 0120.
+- [x] TSV `Enviado` da Ago2026 (SPED CONTRIBUIÇÕES) entregue em 04/10 para 186 (já colado) e para os outros 21 (a colar).
+- [ ] **Não transmitidos:** **117** Tabajara (arquivo zerado gerado; sem procuração/certificado, baixa em andamento: propor `Não se aplica`, a confirmar), **002** RF Consultoria (aluguel; Controle PIS 142,86 / COFINS 659,34; sem arquivo) e **227** PROGEST (sem arquivo). 152 (autarquia) e 197 (dispensada) já estão `Não se aplica` na Controle.
+- [ ] Observações a manter: 257 é contribuinte de ICMS e o arquivo só tem serviços (confirmar se a receita de R$ 126.223,13 inclui mercadoria); 018 com saldo de retenção sem uso nos registros 1300/1700 (conferir no Domínio).
+- [ ] Linhas DARF PIS/COFINS de agosto ainda `Pendente` na Ago2026 (071, 133 COFINS, 237, 238, 241, 257, 258, 261): agosto está fechado; atualizar a planilha quando convier (071 `Retido`, 133 COFINS `Compensado` por PER/DCOMP, 237/258/261 `Sem movimento`).
 
 ### 3. Fechamento 09/2026 — Porto Alegre (DecWeb) — 22 de 22 declarações enviadas
 **Guias ISSQN (venc. 13/10):**
@@ -81,6 +79,7 @@ Arquivos em `08_AGOSTO\010 EFD CONTRIBUIÇÕES` (pasta renomeada de "0010" em 04
 ## RESOLVIDO (resumo por data)
 
 ### 04/10/2026
+- [x] **SPED Contribuições de 08/2026 transmitido para 22 clientes** (13:11 a 13:44; Original, ReceitaNet): 016, 018, 026, 071, 126, 133, 155, 173, 177, 185, 186, 189, 205, 209, 237, 238, 241, 247, 257, 258, 261 e 264; recibos lidos e conferidos com os arquivos; TSV de registro entregue.
 - [x] **186 (Lopes & Nadal) fechado até onde depende só da casa:** documentos chegaram; Portal (5 emitidas, 2 recebidas); DecWeb enviado às 11:26 (receita 11.475,05, guia 422,87); guia enviada pelo G-Click; PIS/COFINS (418,84, venc. 23/10) subidos e `Enviado`; REINF R-2099 enviado (recibo 12122144-09-2099-2609-12122144); Domínio conferido; auditoria da Controle feita e TSV colado (prestados, tomados, REINF, IRPJ/CSLL pendentes).
 - [x] **SPED Contribuições 08/2026 do 186 transmitido** (13:11:36, recibo na Ago2026); pasta do Drive renomeada para `010 EFD CONTRIBUIÇÕES`.
 - [x] Portal 117, 247 e 258 sem movimento; 9 guias ISSQN enviadas; 138 guia `Sem movimento`; correção do PIS do 016 em agosto (770,94, não 771,31).
