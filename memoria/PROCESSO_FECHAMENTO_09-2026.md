@@ -98,3 +98,12 @@ Já lançado e processado: DECLARAÇÃO PREFEITURA (Enviado), GUIA ISSQN 422,87 
 Conferência do DecWeb (relações ISSQNdec 09/2026): prestados 153/154/155 = 11.475,05, ISS 0 (sociedade de profissionais) e chaves iguais às do Portal; tomados: Google 22,50 com ISS 0,65 devido em SP (não retido, sem recolhimento pelo tomador).
 Regra anotada: o status `Enviado` já tinha sido colado pela Fernanda; conferir sempre a planilha antes de repetir pendência.
 
+## 9. SPED Contribuições 08/2026 do 186 (vence 15/10/2026) — preparação em 04/10
+
+- Regime: Lucro Presumido, PIS/COFINS cumulativos (0,65% / 3%), prestação de serviços (arquitetura). Sem créditos no Bloco M (vedado no cumulativo); retenções F600: nenhuma.
+- Fontes de agosto conferidas no Drive (`008 ARQUIVOS DOMÍNIO`, 08_AGOSTO): Serviços 186 (gerado 18/09): notas 151 (4.475,05) e 152 (3.792,00), emitidas em 03/09 com **data de saída 31/08**, AC 900, total R$ 8.267,05. Entradas 186: Officecont nota 996 (R$ 612,40, CFOP 1-933, AC 800) e Google nota 38618431 (R$ 288,28, CFOP 2-933, UF SP, AC 800, emissão 02/09, entrada 31/08), total R$ 900,68.
+- **Valores esperados no PVA:** M200 (PIS cód. 8109-01) = **R$ 53,74** sobre base 8.267,05; M600 (COFINS cód. 2172-01) = **R$ 248,01**. Batem com os DARF de agosto (PIS 53,74 e COFINS 248,01, G-Click 07/09 16:04).
+- DCTFWeb 08/2026 (guia 07.16.26253.1195912-6, R$ 1.005,02, vencimento 18/09, recibo 50000526102454): só INSS de contribuintes individuais (pró-labore): cód. 1099 = 356,62 e cód. 1138 = 648,40. PIS/COFINS não constam na DCTFWeb (o débito vai pela MIT; não verificado).
+- Arquivo a gerar no Domínio: `EFD_contribuições0000186.txt`, pasta `08_AGOSTO\010 EFD CONTRIBUIÇÕES` (padrão das competências anteriores: os arquivos de 07/2026 estão em `07_JULHO\010 EFD CONTRIBUIÇÕES`). Fluxo no PVA: Nova > Importar (Ctrl+I) > validar > conferir M200/M600 > assinar > transmitir (checkpoint humano na assinatura).
+- Em 07/2026 o 186 passou sem erro estrutural (os erros do reg. 0120 foram 026, 173, 185, 189, 197, 209, 258).
+
