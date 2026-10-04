@@ -11,3 +11,6 @@ Olá, [nome]. Na apuração do ISSQN de setembro/2026 de Porto Alegre, a nota 31
 Assunto: 152, nota de Florianópolis/SC (set/2026): ISS recolhido?
 Olá, Gian. No Portal Nacional consta a nota nº 6940 da LITORAL SERVIÇOS AUTOMOTIVOS (R$ 42,00, 01/09/2026) com incidência em Florianópolis/SC. O Portal mostra ISS R$ 0,00 e "não retido", então não vemos valor a recolher por nós. Mesmo assim, pergunto: vocês recolheram algum ISS para Florianópolis, ou já possuem acesso ao portal de lá para declarar? Se não houver acesso, podemos orientar. Obrigada, Fernanda.
 Observação da agente: o Portal indica ISS zero nessa nota; o e-mail pergunta por precaução, como pedido.
+
+## 3. Pedido aos clientes sem certificado (2, 18, 26, 133, 138, 173, 177, 185, 209, 248, 263): só retenção federal
+**WhatsApp/e-mail (adaptar o nome):** Bom dia! Aqui é a Fernanda, da OfficeCont. Para fecharmos os impostos federais de setembro/2026, precisamos da **relação das notas fiscais de serviço que vocês RECEBERAM (serviços contratados) em setembro/2026**, com prestador, valor e, se houver, o valor retido de IRRF, PIS/COFINS/CSLL (4,65%) ou INSS (11%). Se não houve nenhuma retenção em nenhuma nota, basta nos avisar "sem retenção". Pode nos mandar até [data]? Obrigada.
