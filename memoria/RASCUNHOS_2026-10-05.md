@@ -22,3 +22,6 @@ Olá, [nome]. Ao fechar o ISSQN de setembro/2026 de Porto Alegre, a prefeitura l
 ## 5. Pedido à Inês: movimento de setembro/2026 dos clientes 18, 177 e 133 (não enviado)
 **Assunto:** Movimento setembro/2026: CC&D (18), ILS (177) e RFL (133)
 Oi, Inês, bom dia! Para fechar setembro/2026, não encontramos documentos desses clientes na pasta 001_DOCUMENTOS DIGITALIZADOS de 09_SETEMBRO nem no e-mail: **CC&D (18), ILS (177) e RFL (133)**. Pode nos mandar o movimento do mês (notas emitidas e recebidas, extratos, folha, o que houver)? Também precisamos saber se a **Datasys Sistemas em Informática** reteve algum imposto (IRRF, PIS/COFINS/CSLL ou INSS) nas notas de 29/09: nº 11 da CC&D (R$ 2.100,00) e nº 13 da ILS (R$ 26.520,00). Se não houve movimento além disso, é só avisar. Obrigada!
+
+## 6. Gian: procuração eletrônica do 265 (REINF) (não enviado)
+Gian, bom dia! Ao enviar o EFD-Reinf de 09/2026 do cliente **265 Belem Brasil Holding**, o Domínio devolveu o erro 15: para pessoa jurídica é preciso certificado da matriz, do representante legal ou de procurador habilitado na Procuração Eletrônica da RFB. Você consegue liberar a procuração eletrônica para a Officecont no e-CAC do 265 (serviço EFD-Reinf)? Prazo do REINF: 15/10. Obrigada!
