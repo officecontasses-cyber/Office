@@ -1,6 +1,7 @@
 """Uso:
     python -m robo_issqn 09/2026          mostra os dados (não acessa nada)
     python -m robo_issqn abrir            etapa A: abre o portal no Chrome (somente leitura)
+    python -m robo_issqn inspecionar      etapa B: lê os campos da tela aberta no Chrome (somente leitura)
 """
 import sys
 from pathlib import Path
@@ -28,11 +29,22 @@ def abrir() -> int:
     return 0
 
 
+def inspecionar_tela() -> int:
+    from .inspecao import inspecionar
+
+    env = ler_env()
+    arquivo = inspecionar(Path(env.get("ISSQN_PASTA_SAIDA", "saida")), int(env.get("ISSQN_PORTA_CONTROLE", "9222")))
+    print(f"Relatório salvo em: {arquivo}")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     if len(argv) == 2 and argv[1] == "abrir":
         return abrir()
+    if len(argv) == 2 and argv[1] == "inspecionar":
+        return inspecionar_tela()
     if len(argv) != 2:
-        print("Uso: python -m robo_issqn MM/AAAA | abrir")
+        print("Uso: python -m robo_issqn MM/AAAA | abrir | inspecionar")
         return 2
     comp = Competencia.parse(argv[1])
     c = CLIENTE_126
