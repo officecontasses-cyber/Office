@@ -22,6 +22,7 @@ def abrir() -> int:
         perfil=Path(env.get("ISSQN_PERFIL_NAVEGADOR", "perfil_navegador")),
         saida=Path(env.get("ISSQN_PASTA_SAIDA", "saida")),
         chrome_path=env.get("ISSQN_CHROME_PATH") or None,
+        porta=int(env.get("ISSQN_PORTA_CONTROLE", "9222")),
     )
     print(f"Print salvo em: {arquivo}")
     return 0
