@@ -15,6 +15,8 @@ faltam 117 e 227; o 002 foi transmitido às 13:51). Agora **volta o fechamento d
 
 ## PENDENTE
 
+- [ ] **126 Tatsch & Leite (São Leopoldo), ISS 09/2026, vence 15/10 (04/10):** Portal Emitidas, competência 09/2026: 209 notas normais, R$ 153.662,41, ISS 2% = **R$ 3.073,23**, todas `Não Retido` e com incidência em São Leopoldo (7 notas de 10/2026 ficam fora). Recebidas: nenhuma retenção (BIOLAB 3D R$ 4,50 em São Leopoldo e CLINICORP/AMBIENTUUS em outros municípios, todos não retidos), então não há ISS retido a declarar. Falta: conferir o valor pago em agosto, confirmar com a Fernanda como a declaração é feita no portal de São Leopoldo (não consta na memória) e gerar a guia.
+
 - [ ] **SEGUNDA 05/10, PRIMEIRO HORÁRIO (lembrete):** enviar ao **257** o WhatsApp e o e-mail perguntando se a Lifecombr (nota 31, ISS R$ 6.500,00) deveria ter retido; textos em `memoria/RASCUNHOS_2026-10-05.md`. Também enviar o e-mail do **152** ao Gian sobre o ISS de Florianópolis (nota 6940, R$ 42,00; ISS 0,00 no Portal). Confirmar se o Gian é o contato do 152.
 - [ ] **152, Estrela/RS (R$ 106,75, ENGI PROJECT):** Fernanda e agente acessam juntas o portal de Estrela, para aprender a baixar as notas e fazer a declaração. Marcar horário.
 - [ ] **205:** Fernanda confirmou (04/10) que a guia R$ 1.915,06 pode ser postada (nota 197 é a substituta); `conciliacao.py` corrigido (nota de substituição gerada conta como normal). Postar no G-Click.
