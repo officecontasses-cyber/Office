@@ -18,7 +18,9 @@ def abrir_portal(url: str, perfil: Path, saida: Path, chrome_path: str | None = 
     saida.mkdir(parents=True, exist_ok=True)
     # No Windows o Chrome roda com sandbox normal (evita a faixa "--no-sandbox"); em Linux/root desligado.
     opcoes = dict(user_data_dir=str(perfil), headless=False, accept_downloads=True, no_viewport=True,
-                  chromium_sandbox=(os.name == "nt"))
+                  chromium_sandbox=(os.name == "nt"),
+                  # o login da SEMFA usa a extensão Lacuna Web PKI: o Playwright desliga extensões por padrão
+                  ignore_default_args=["--disable-extensions"])
     if chrome_path:
         opcoes["executable_path"] = chrome_path
     else:
