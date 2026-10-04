@@ -140,3 +140,8 @@ Próximo: voltar ao fechamento de 09/2026 (confirmar sem movimento 2, 26, 209, 2
 - Conciliação: Portal Emitidas (209 notas, R$ 153.662,41, ISS R$ 3.073,23) = DMS prestador = guia R$ 3.073,23 (venc. 15/10/2026, `ISSV 2026: 9/0`). Recebidas sem retenção; tomador do DMS tem 16 notas (ISS 65,41, não retido).
 - A sessão da nuvem não alcançou o Chrome (ferramentas da extensão indisponíveis); a extensão rodou em sessão própria do app desktop, sem acesso ao repositório.
 - Também nesta rodada: `conciliacao.py` corrigido (nota de substituição gerada conta como normal); 205 liberada; 257 e 152 analisados (ver PENDENCIAS.md).
+
+## 14. Novo Hamburgo (261 e 197), ISSQN 09/2026 (04/10/2026)
+- Gravação da Fernanda do processo no Atende.Net/IPM (261 Giatech); skill em `.claude/skills/novo-hamburgo-issqn/SKILL.md`. Diferente de POA e São Leopoldo: a declaração precisa ser protocolada (Prestados e Tomados) e o carnê emitido na hora.
+- 261: Prestados R$ 34.000,00 (ISS R$ 680,00, guia venc. 20/10/2026) conciliado com o Portal; Tomados R$ 483,40 (ISS retido em NH zero; outros municípios R$ 5,57); divergência de nota Google (19985753 no protocolo x 19171581 comp. 08/2026 no Portal).
+- 197 ASBBM: a fazer (Portal só com Recebidas, R$ 5.500,00).
