@@ -38,12 +38,13 @@ faltam 117 e 227; o 002 foi transmitido às 13:51). Agora **volta o fechamento d
 **Guias ISSQN (venc. 13/10):**
 - [x] Enviadas e já na Controle (TSV colado, G-Click 04/10 11:34): 16 (422,87), 18 (42,00), 152 (461,69), 173 (422,87), 177 (530,40), 186 (422,87), 189 (634,31), 238 (609,54), 241 (2.403,15); 263 Tacom (4.089,69, em 02/10).
 - [ ] **155 (842,02): segurada, aguardando a Camila.**
-- [ ] **257 (6.500,00): analisar na SEGUNDA 05/10 com o cliente.** ISS 7.262,54, retido só 762,54 (cliente costuma reter tudo).
-- [ ] **205 (1.915,06): segurada.** DecWeb tem 1 nota de R$ 6.000,00 (ISS 120,00) que o Portal não tem; 3 canceladas no Portal x 2 no DecWeb. Rodar `findstr /I "Becker" notas_09_2026.csv`; se a nota estiver cancelada, retificar e refazer a guia.
+- [ ] **257 (6.500,00): analisar na SEGUNDA 05/10 com o cliente.** ISS 7.262,54, retido só 762,54 (cliente costuma reter tudo). **Explicado (04/10):** a guia de 6.500,00 é o ISS (5%) da nota 31 LIFECOMBR TELECOMUNICACOES, R$ 130.000,00, item 10.05, `Não Retido` no Portal; a nota 32 TELEFONICA (R$ 15.250,72, ISS 762,54) veio retida. Perguntar ao cliente se a Lifecombr devia ter retido.
+- [ ] **205 (1.915,06): provável OK (04/10):** a nota 196 está `Substituída` pela 197 (R$ 6.000, `NFS-e de Substituição Gerada`, Normal); a soma das normais do Portal (com a 197) = R$ 95.753,11 = DecWeb (17 notas). A divergência vem de como o `conciliacao.py` trata nota de substituição; ajustar o script e aguardar a confirmação da Fernanda para postar a guia. Texto anterior: **segurada.** DecWeb tem 1 nota de R$ 6.000,00 (ISS 120,00) que o Portal não tem; 3 canceladas no Portal x 2 no DecWeb. Rodar `findstr /I "Becker" notas_09_2026.csv`; se a nota estiver cancelada, retificar e refazer a guia.
 - [x] **Fernanda confirmou `Sem movimento` na guia ISSQN de 09/2026 de 26, 209, 237 e 258 (04/10)**; TSV entregue. [ ] Segue em branco o **2 RF Consultoria** (não confirmado); 247 (Montenegro, DMS fora do DecWeb); 138, 117, 133 e 265 já `Sem movimento`.
 - [ ] **152, Estrela/RS:** R$ 106,75 de ISS retido a declarar no portal de Estrela (em agosto foram R$ 25,63, venc. 23/09). Retido total 568,44 = 461,69 POA + 106,75 Estrela. A localizar a nota de R$ 42,00 que só o Portal tem.
 - [ ] Voltar `aceitar_avisos` para em branco em 173, 238, 152 e 265.
-- [ ] Rodar de novo `conciliacao.py` para 152, 205 e 186.
+- [ ] Rodar de novo `conciliacao.py` para 152, 205 e 186. **152 (04/10), comparado pela chave:** única nota só no Portal da 09/2026 é a LITORAL SERVICOS AUTOMOTIVOS nº 6940 (R$ 42,00, 01/09, incidência Florianópolis/SC, ISS 0,00: sem efeito na guia); ENGI PROJECT notas 1146 e 1218 (ISS retido 25,63 + 81,12 = **R$ 106,75, incidência Estrela/RS**): declarar/pagar no portal de Estrela. Notas de 10/2026 e 08/2026 no Portal são de outra competência (não entram).
+- [ ] **227 PROGEST:** estava inativa; as entregas começam em 09/2026 (por isso sem SPED de 08/2026). **FAT do 186: feito.**
 - [ ] Rodrigo Tavares Lopes (mesmo CPF) consta como profissional nos clientes 16 e 173: conferir.
 - [ ] 155: 63 notas de 08/2026 geradas entre 31/08 e 03/09; sem indício de furo, mas agosto inteiro não foi conferido.
 - [ ] Município sem prazo de ISS: Brasília, Rio de Janeiro, Novo Hamburgo, São Sebastião do Caí, Montenegro, Palhoça (já era pendência).
