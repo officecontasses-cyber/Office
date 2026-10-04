@@ -18,3 +18,7 @@ Observação da agente: o Portal indica ISS zero nessa nota; o e-mail pergunta p
 ## 4. Cliente 2 RF Consultoria: cobrança das notas de setembro/2026 (não enviado)
 **Assunto:** RF Consultoria: notas fiscais de serviços tomados, setembro/2026
 Olá, [nome]. Ao fechar o ISSQN de setembro/2026 de Porto Alegre, a prefeitura listou duas notas de serviços tomados da **Freire Administração e Serviços Prediais Ltda** (CNPJ 10.420.067/0001-39): nº 14263, de 14/09/2026, e nº 14320, de 28/09/2026, ambas de R$ 1.142,85 (total R$ 2.285,70). Não temos essas notas no escritório. Pode nos enviar os PDFs ou XMLs? Também precisamos confirmar: (1) as duas notas são mesmo de serviços distintos, já que têm o mesmo valor? (2) houve retenção de algum imposto (IRRF, PIS/COFINS/CSLL ou INSS) em alguma delas? Se não houve, basta responder "sem retenção". Obrigada, Fernanda, OfficeCont.
+
+## 5. Pedido à Inês: movimento de setembro/2026 dos clientes 18, 177 e 133 (não enviado)
+**Assunto:** Movimento setembro/2026: CC&D (18), ILS (177) e RFL (133)
+Oi, Inês, bom dia! Para fechar setembro/2026, não encontramos documentos desses clientes na pasta 001_DOCUMENTOS DIGITALIZADOS de 09_SETEMBRO nem no e-mail: **CC&D (18), ILS (177) e RFL (133)**. Pode nos mandar o movimento do mês (notas emitidas e recebidas, extratos, folha, o que houver)? Também precisamos saber se a **Datasys Sistemas em Informática** reteve algum imposto (IRRF, PIS/COFINS/CSLL ou INSS) nas notas de 29/09: nº 11 da CC&D (R$ 2.100,00) e nº 13 da ILS (R$ 26.520,00). Se não houve movimento além disso, é só avisar. Obrigada!
