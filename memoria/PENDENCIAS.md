@@ -36,6 +36,10 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] 258 Set2026: guia ISSQN ainda em branco → propor `Sem movimento` (Fernanda confirma). 247 Set2026: declaração/guias em branco; Montenegro usa DMS/Livro Fiscal (não DecWeb); Portal sem notas → (?) lançar sem movimento após confirmação.
 - [ ] **186 Lopes & Nadal — Portal 04/10:** Emitidas 5 notas (151 e 152 são de 08/2026, já declaradas em agosto; **09/2026 = 153 Tortelli R$ 2.500,00 + 154 Anderlise R$ 4.475,05 + 155 Ruy R$ 4.500,00 = R$ 11.475,05**, numeração 151–155 contínua, nenhuma cancelada). Recebidas: 2 notas Google (SP, ISS não retido; 288,28 de 08/2026 e 22,50 de 09/2026). Previsão da guia: ISS fixo R$ 422,87 (2 profissionais, igual a agosto). Falta rodar o DecWeb do 186 e conferir.
 
+- [x] **186 DecWeb enviado em 04/10 às 11:26** (receita R$ 11.475,05, guia R$ 422,87, igual ao Portal e à previsão). Fernanda colou o TSV do 186.
+- [ ] **G-Click 04/10 11:34:** Fernanda subiu 9 guias em lote (16, 18, 152, 173, 177, 186, 189, 238, 241 = R$ 5.949,70; o "R$ 8.388,07" dito antes estava errado). O log colado mostra só a atividade "Guia ISS" (upload); **falta ver "Envio ao cliente" com horário** para lançar `Enviado`. Fernanda disse "enviei agora"; TSV `Enviado` entregue condicionado à conferência do passo "Envio ao cliente".
+- [ ] **186 — federais:** gerar PIS/COFINS 09/2026 depois do ISSQN enviado. Previsão pelas NFS-e (3 notas de 09/2026, R$ 11.475,05): PIS 0,65% = R$ 74,59; COFINS 3% = R$ 344,25 (total R$ 418,84); conferir no Domínio e no regime (competência ou caixa). IRPJ/CSLL do 3º trimestre vencem 30/10.
+
 ### DecWeb (ISSQN Porto Alegre) — 09/2026
 - [ ] Rodar os **15 clientes restantes** de Porto Alegre: 2, 26, 152, 155, 173, 177, 186 (só depois dos documentos), 189, 205, 209, 237, 238, 241, 257, 258.
   Já fechados em 09/2026: 16, 18, 117, 133 (01/10) e Tacom 138 e 263 (02/10).
