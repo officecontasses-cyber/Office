@@ -15,6 +15,10 @@ faltam 117 e 227; o 002 foi transmitido às 13:51). Agora **volta o fechamento d
 
 ## PENDENTE
 
+- [ ] **SEGUNDA 05/10, PRIMEIRO HORÁRIO (lembrete):** enviar ao **257** o WhatsApp e o e-mail perguntando se a Lifecombr (nota 31, ISS R$ 6.500,00) deveria ter retido; textos em `memoria/RASCUNHOS_2026-10-05.md`. Também enviar o e-mail do **152** ao Gian sobre o ISS de Florianópolis (nota 6940, R$ 42,00; ISS 0,00 no Portal). Confirmar se o Gian é o contato do 152.
+- [ ] **152, Estrela/RS (R$ 106,75, ENGI PROJECT):** Fernanda e agente acessam juntas o portal de Estrela, para aprender a baixar as notas e fazer a declaração. Marcar horário.
+- [ ] **205:** Fernanda confirmou (04/10) que a guia R$ 1.915,06 pode ser postada (nota 197 é a substituta); `conciliacao.py` corrigido (nota de substituição gerada conta como normal). Postar no G-Click.
+
 ### 1. Datas marcadas
 - [ ] **Seg 05/10, antes das 11:00:** ligar para a Leidislaine (Tacom) e combinar o acesso à máquina dela (e-mail sem retorno até 03/10).
 - [ ] **Qua 07/10: SPED Fiscal da Tacom** (10/2026) à Leidislaine, que transmite até 08/10. (?) vale para 138, 263 ou ambas?
@@ -43,7 +47,7 @@ faltam 117 e 227; o 002 foi transmitido às 13:51). Agora **volta o fechamento d
 - [x] **Fernanda confirmou `Sem movimento` na guia ISSQN de 09/2026 de 26, 209, 237 e 258 (04/10)**; TSV entregue. [ ] Segue em branco o **2 RF Consultoria** (não confirmado); 247 (Montenegro, DMS fora do DecWeb); 138, 117, 133 e 265 já `Sem movimento`.
 - [ ] **152, Estrela/RS:** R$ 106,75 de ISS retido a declarar no portal de Estrela (em agosto foram R$ 25,63, venc. 23/09). Retido total 568,44 = 461,69 POA + 106,75 Estrela. A localizar a nota de R$ 42,00 que só o Portal tem.
 - [ ] Voltar `aceitar_avisos` para em branco em 173, 238, 152 e 265.
-- [ ] Rodar de novo `conciliacao.py` para 152, 205 e 186. **152 (04/10), comparado pela chave:** única nota só no Portal da 09/2026 é a LITORAL SERVICOS AUTOMOTIVOS nº 6940 (R$ 42,00, 01/09, incidência Florianópolis/SC, ISS 0,00: sem efeito na guia); ENGI PROJECT notas 1146 e 1218 (ISS retido 25,63 + 81,12 = **R$ 106,75, incidência Estrela/RS**): declarar/pagar no portal de Estrela. Notas de 10/2026 e 08/2026 no Portal são de outra competência (não entram).
+- [ ] Rodar de novo `conciliacao.py` (já corrigido) para 152, 205 e 186. Reset do `aceitar_avisos` (173, 238, 152, 265): **feito pela Fernanda em 04/10**. **152 (04/10), comparado pela chave:** única nota só no Portal da 09/2026 é a LITORAL SERVICOS AUTOMOTIVOS nº 6940 (R$ 42,00, 01/09, incidência Florianópolis/SC, ISS 0,00: sem efeito na guia); ENGI PROJECT notas 1146 e 1218 (ISS retido 25,63 + 81,12 = **R$ 106,75, incidência Estrela/RS**): declarar/pagar no portal de Estrela. Notas de 10/2026 e 08/2026 no Portal são de outra competência (não entram).
 - [ ] **227 PROGEST:** estava inativa; as entregas começam em 09/2026 (por isso sem SPED de 08/2026). **FAT do 186: feito.**
 - [ ] Rodrigo Tavares Lopes (mesmo CPF) consta como profissional nos clientes 16 e 173: conferir.
 - [ ] 155: 63 notas de 08/2026 geradas entre 31/08 e 03/09; sem indício de furo, mas agosto inteiro não foi conferido.

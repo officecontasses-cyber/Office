@@ -137,7 +137,8 @@ class Nota:
     @property
     def cancelada(self) -> bool:
         s = self.situacao.lower()
-        return "cancel" in s or "substitu" in s
+        # "Substituída" (a nota trocada) está fora; "NFS-e de Substituição Gerada" (a nota nova) vale como normal
+        return "cancel" in s or "substituíd" in s or "substituid" in s
 
 
 @dataclass

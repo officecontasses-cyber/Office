@@ -302,3 +302,10 @@ def test_relatorio_nota_a_nota_e_sem_pdf(pastas, tmp_path):
     por_nota = {l[4]: l[3] for l in linhas}
     assert por_nota == {"493": "ok", "494": "valor_diferente", "995": "so_no_decweb", "777": "so_no_portal",
                         "121": "portal_outra_competencia_08-2026"}
+
+
+def test_nota_de_substituicao_gerada_conta_como_normal():
+    from conciliacao import Nota
+    assert not Nota(1, 10.0, situacao="101 - NFS-e de Substituição Gerada Normal").cancelada
+    assert Nota(2, 10.0, situacao="100 - NFS-e Gerada Substituída").cancelada
+    assert Nota(3, 10.0, situacao="100 - NFS-e Gerada Cancelada").cancelada
