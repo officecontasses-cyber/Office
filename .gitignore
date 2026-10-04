@@ -1,0 +1,13 @@
+# Segredos e dados sensíveis: nunca versionar
+.env
+*.pem
+perfil_navegador/
+# Arquivos baixados/gerados (PDFs de clientes)
+entrada/
+saida/
+*.pdf
+*.PDF
+# Python
+__pycache__/
+*.pyc
+.venv/
