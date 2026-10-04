@@ -20,7 +20,7 @@ Colunas: Nº | aba | Status | Observação | Detalhe | Rótulo caixa | Valor cai
 247	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:23 (Oficial). Recibo 12177294-01-2099-2609-12177294. Sem retenção.			
 258	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:22 (Oficial). Recibo 12043662-02-2099-2609-12043662. Sem retenção.			
 264	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:25 (Oficial). Recibo 12177295-01-2099-2609-12177295. Sem retenção.			
-117	MOD GERAL 09.2026		Sem movimento	+R-2099 04/10/2026 16:25 INVALIDADO (sem recibo): reenviar/conferir.			
+117	MOD GERAL 09.2026		Sem movimento				
 ```
 
 ## Retenções (colar só depois de conferir; Status em branco até o REINF ser enviado)

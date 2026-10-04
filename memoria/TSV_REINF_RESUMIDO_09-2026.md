@@ -17,7 +17,7 @@
 247	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:23 (Oficial). Sem retenção no mês.			
 258	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:22 (Oficial). Sem retenção no mês.			
 264	MOD GERAL 09.2026	Enviado	Sem movimento	Enviado 04/10/2026 16:25 (Oficial). Sem retenção no mês.			
-117	MOD GERAL 09.2026		Sem movimento	+R-2099 04/10/2026 16:25 invalidado (sem recibo): reenviar.			
+117	MOD GERAL 09.2026		Sem movimento				
 ```
 
 ## Controle_Fiscal (aba Atualizações; 7 colunas: Nº | aba | Obrigação | Status | Valor | Observações | Processado)
@@ -37,5 +37,5 @@
 247	Set2026	REINF	Enviado		R-2099 Fechamento dos Eventos Periódicos, Sucesso, recibo 12177294-01-2099-2609-12177294, enviado 04/10/2026 16:23 (Oficial). Sem retenção no mês.	
 258	Set2026	REINF	Enviado		R-2099 Fechamento dos Eventos Periódicos, Sucesso, recibo 12043662-02-2099-2609-12043662, enviado 04/10/2026 16:22 (Oficial). Sem retenção no mês.	
 264	Set2026	REINF	Enviado		R-2099 Fechamento dos Eventos Periódicos, Sucesso, recibo 12177295-01-2099-2609-12177295, enviado 04/10/2026 16:25 (Oficial). Sem retenção no mês.	
-117	Set2026	REINF	Pendente		R-2099 enviado 04/10/2026 16:25 (Oficial) com situação Invalidado, sem recibo: reenviar/conferir. Cliente sem procuração/em processo de baixa.	
+117	Set2026	REINF	Não se aplica		Sem procuração e acesso ao certificado digital bloqueado no e-CAC do cliente devido ao falecimento do sócio; R-2099 de 04/10/2026 16:25 retornou Invalidado. Não se aplica até a baixa da empresa.	
 ```
