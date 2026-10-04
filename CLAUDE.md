@@ -8,6 +8,9 @@ passo a passo, um passo por vez.
 `memoria/PENDENCIAS.md` guarda **o que está pendente e o que já foi resolvido**. Leia no início de cada sessão e atualize a cada
 etapa; salve também um snapshot datado (`PENDENCIAS_E_RESOLVIDOS_AAAA-MM-DD.md`) na pasta `ARQUIVOS EXTENSÃO - CODE - CLAUDE` do Drive.
 A Fernanda pediu em 02/10/2026: "não podemos perder os contextos".
+**A cada rodada (04/10/2026):** registrar tudo na memória: `PENDENCIAS.md` (o que foi feito e o que ainda está pendente),
+o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026 está fechado; o SPED Contribuições de 08/2026
+(prazo 15/10) está em envio e depois o fechamento de 09/2026 continua.
 
 ## Regras que não se discutem
 
