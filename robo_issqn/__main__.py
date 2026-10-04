@@ -1,7 +1,8 @@
 """Uso:
     python -m robo_issqn 09/2026          mostra os dados (não acessa nada)
     python -m robo_issqn abrir            etapa A: abre o portal no Chrome (somente leitura)
-    python -m robo_issqn inspecionar      etapa B: lê os campos da tela aberta no Chrome (somente leitura)
+    python -m robo_issqn inspecionar      lê os campos da tela aberta no Chrome (somente leitura)
+    python -m robo_issqn consultar 09/2026  etapa B1: preenche a Consulta DMS e clica em Localizar (só consulta)
 """
 import sys
 from pathlib import Path
@@ -38,13 +39,27 @@ def inspecionar_tela() -> int:
     return 0
 
 
+def consultar_dms(texto_comp: str) -> int:
+    from .consulta import consultar
+
+    env = ler_env()
+    arquivo = consultar(
+        CLIENTE_126, Competencia.parse(texto_comp),
+        Path(env.get("ISSQN_PASTA_SAIDA", "saida")), int(env.get("ISSQN_PORTA_CONTROLE", "9222")),
+    )
+    print(f"Relatório salvo em: {arquivo}")
+    return 0
+
+
 def main(argv: list[str]) -> int:
+    if len(argv) == 3 and argv[1] == "consultar":
+        return consultar_dms(argv[2])
     if len(argv) == 2 and argv[1] == "abrir":
         return abrir()
     if len(argv) == 2 and argv[1] == "inspecionar":
         return inspecionar_tela()
     if len(argv) != 2:
-        print("Uso: python -m robo_issqn MM/AAAA | abrir | inspecionar")
+        print("Uso: python -m robo_issqn MM/AAAA | abrir | inspecionar | consultar MM/AAAA")
         return 2
     comp = Competencia.parse(argv[1])
     c = CLIENTE_126
