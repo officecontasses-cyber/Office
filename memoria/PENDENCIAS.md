@@ -32,7 +32,9 @@ Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação
 - [ ] 152 (R$ 461,69): divergência só de 1 nota de R$ 42,00 no Portal (ISS e retido iguais); retido total 568,44 = 461,69 POA + 106,75 Estrela. Fernanda decide postar; localizar a nota depois.
 - [ ] Liberadas pela conciliação (postar no G-Click quando a Fernanda decidir): 16 (422,87), 189 (634,31), 238 (609,54), 241 (2.403,15). 18 (42,00) e 177 (530,40) só conferidas por conta (2%), sem Portal. 173 (422,87, ISS fixo).
 - [ ] **186 Lopes & Nadal:** cliente enviou os documentos em 03/10 → rodar Portal Nacional e DecWeb (prioridade logo após a Tacom); ISSQN sai junto com os demais impostos no G-Click. Em agosto a guia foi R$ 422,87 (fixo por profissional).
-- [ ] Portal Nacional 117, 247 (Montenegro/RS, não é DecWeb) e 258: comando entregue em 03/10; falta o `logs\resultados.csv`.
+- [x] Portal Nacional rodado em 04/10 (`resultados.csv` recebido): 117, 247 (Montenegro/RS) e 258 deram `sem_movimento` em Emitidas e Recebidas nas duas rodadas (03/10 e 04/10); coerente com os recibos (258 receita 0,00; 117 mesmo padrão de jul/ago). Aceito, sem sinal de sessão vazada.
+- [ ] 258 Set2026: guia ISSQN ainda em branco → propor `Sem movimento` (Fernanda confirma). 247 Set2026: declaração/guias em branco; Montenegro usa DMS/Livro Fiscal (não DecWeb); Portal sem notas → (?) lançar sem movimento após confirmação.
+- [ ] **186 Lopes & Nadal — Portal 04/10:** Emitidas 5 notas (151 e 152 são de 08/2026, já declaradas em agosto; **09/2026 = 153 Tortelli R$ 2.500,00 + 154 Anderlise R$ 4.475,05 + 155 Ruy R$ 4.500,00 = R$ 11.475,05**, numeração 151–155 contínua, nenhuma cancelada). Recebidas: 2 notas Google (SP, ISS não retido; 288,28 de 08/2026 e 22,50 de 09/2026). Previsão da guia: ISS fixo R$ 422,87 (2 profissionais, igual a agosto). Falta rodar o DecWeb do 186 e conferir.
 
 ### DecWeb (ISSQN Porto Alegre) — 09/2026
 - [ ] Rodar os **15 clientes restantes** de Porto Alegre: 2, 26, 152, 155, 173, 177, 186 (só depois dos documentos), 189, 205, 209, 237, 238, 241, 257, 258.
