@@ -38,11 +38,12 @@ Colunas "Sem Retenção Na Fonte" e "Com Retenção Na Fonte", por "Tributado no
 
 ## Resultado 71 Conte, 09/2026
 - Protocolo: 42 notas, R$ 1.091.077,54 = Portal. Tributado no município (DF): R$ 972.981,50, ISS R$ 46.949,88; fora do município: R$ 118.096,04, ISS R$ 5.603,74 (Portal 5.603,75, 1 centavo de arredondamento). Total ISS R$ 52.553,62. Tudo com retenção (tomador Caixa Econômica Federal); sem retenção R$ 0,00. Sem guia.
-- Tomados: Declaração de Não Movimento. Pelo Portal, o 71 reteve ISS de R$ 39,43 numa nota de São Paulo (RIPA Arquitetura nº 153): conferir se há recolhimento a fazer para São Paulo.
+- Tomados (DF): Declaração de Não Movimento. Mas o 71 retém ISS de R$ 39,43 de uma nota de prestador de fora (RIPA Arquitetura nº 153, R$ 1.971,36, 2%): a Fernanda emitiu a guia de **Jundiaí/SP** (GISS Online, nº 00026073855, competência 09/2026, venc. 26/10/2026) e salvou como `71_Conte_Jundiaí_09.2026_ISSQNTomados.pdf`. Atenção: o Portal mostra "Município de Incidência: São Paulo/SP" nessa nota, e o código da chave de acesso (3525904) é de Jundiaí; conferir onde o serviço foi executado (item 7.11, decoração) antes de dar o assunto por encerrado.
 - Federais pelas notas: IRRF R$ 52.371,72 e contribuições retidas R$ 10.910,78.
 
 ## Registro na Controle_Fiscal (TSV de 7 colunas, inline, aba Atualizações)
 - SERVIÇOS TOMADOS: `Sem movimento`, 0,00, `Declaração de Não Movimentação (Contratados) <data>.`
 - SERVIÇOS PRESTADOS: `Pendente`, valor total do protocolo, `... (42 notas) — falta conferência XML x Domínio.`
-- GUIA ISSQN e GUIA ISSQN FORA MUNICÍPIO: `Sem Recolhimento (Retenção Integral)`, 0,00, ISS apurado só na observação.
+- GUIA ISSQN: `Sem Recolhimento (Retenção Integral)`, 0,00, ISS apurado como prestador (DF e fora) só na observação.
+- GUIA ISSQN FORA MUNICÍPIO: é a guia que o próprio cliente paga como **tomador** de prestador de fora (ex.: Jundiaí R$ 39,43). `Pendente` com o valor da guia até o G-Click. Não confundir com o ISS que os tomadores dele retêm nas notas emitidas por ele (esse vai na observação da GUIA ISSQN).
 - DECLARAÇÃO PREFEITURA: `Enviado` com o protocolo de Prestados e a Não Movimento, depois da confirmação explícita da Fernanda (regra a registrar aqui quando ela confirmar).
