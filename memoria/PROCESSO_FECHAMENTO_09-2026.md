@@ -91,3 +91,10 @@ Pontos de atenção: nota 153 segue com data de saída 29/09 (emissão 30/09), s
 - **REINF 186 (04/10):** R-2099 Fechamento dos Eventos Periódicos, competência 09/2026, **Sucesso**, recibo 12122144-09-2099-2609-12122144, enviado 04/10/2026 12:50, ambiente Oficial. G-Click: tarefa "EFD Reinf - (Ativo)" com a atividade "Recibo" concluída por fernanda.officecont em 04/10 12:51 (vencimento 15/10, meta 13/10). Relatório lista só o R-2099 (sem R-2010/R-2020/R-4010/R-4020). Retenções do mês: nenhuma (prestados "não retido", IRRF e contribuições retidas 0,00; única entrada é a Google/SP sem retenção; Domínio com retenções zeradas) → "Sem movimento" na planilha do DP. Pergunta em aberto: houve distribuição de lucros ou pagamento a pessoa física em setembro (R-4010)? A ausência no relatório só mostra que não foi enviado.
 - **Planilha do DP** (`CONTROLE | DP REINF'S`): abas `MOD GERAL MM.2026`; no layout de 08.2026 cada linha é Nº · Empresa · Obrigação · Status · Observações (Sem movimento / COM RETENÇÃO) · detalhes · "ok". A aba de 09.2026 não apareceu na leitura (última lida: 08.2026); Fernanda atualiza a linha do 186 (nunca escrevemos no DP).
 
+## 8. Auditoria da Controle_Fiscal para o 186 (04/10/2026, 12:54 — planilha lida no Drive)
+
+Já lançado e processado: DECLARAÇÃO PREFEITURA (Enviado), GUIA ISSQN 422,87 (Enviado, G-Click 11:34 + envio ao cliente), DARF PIS 74,59 e DARF COFINS 344,25 (Enviado). Fila `Atualizações` vazia de pendências do 186.
+**Faltava na Set2026:** REINF (sem status), SERVIÇOS PRESTADOS (11.475,05), SERVIÇOS TOMADOS (22,50), DARF IRPJ e DARF CSLL (pendentes do contábil). TSV entregue para os cinco itens. SPED CONTRIBUIÇÕES de 09/2026 vence 16/11 (sem ação agora). **Ago2026 do 186: SPED CONTRIBUIÇÕES ainda Pendente, vence 15/10.**
+Conferência do DecWeb (relações ISSQNdec 09/2026): prestados 153/154/155 = 11.475,05, ISS 0 (sociedade de profissionais) e chaves iguais às do Portal; tomados: Google 22,50 com ISS 0,65 devido em SP (não retido, sem recolhimento pelo tomador).
+Regra anotada: o status `Enviado` já tinha sido colado pela Fernanda; conferir sempre a planilha antes de repetir pendência.
+
