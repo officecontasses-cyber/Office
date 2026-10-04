@@ -134,3 +134,9 @@ Recibos (PDF e .REC) lidos na pasta `010 EFD CONTRIBUIÇÕES`: 22 transmitidos (
 Próximo: voltar ao fechamento de 09/2026 (confirmar sem movimento 2, 26, 209, 237, 258 na guia ISSQN; FAT do 186; Domínio dos demais clientes; segunda 05/10: Tacom e 257).
 - **Atualização (04/10, noite):** recibo do **002 RF Consultoria** lido: transmitido às 13:51:44 (Original), PIS 142,86 e COFINS 659,34 a recolher, iguais ao DARF de agosto; TSV `Enviado` entregue (total 23 transmitidos; faltam 117 e 227). O PDF do 264 reenviado é o mesmo recibo das 13:44:39. Fernanda colou o TSV dos 21 e confirmou `Sem movimento` na guia ISSQN de 09/2026 de 26, 209, 237 e 258 (TSV entregue); o 2 segue em branco.
 
+
+## 13. São Leopoldo (126), ISSQN 09/2026 (04/10/2026)
+- A Fernanda gravou o processo no portal (vídeo de 2m34s, guardado por ela). Resumo e passo a passo em `.claude/skills/sao-leopoldo-issqn/SKILL.md`.
+- Conciliação: Portal Emitidas (209 notas, R$ 153.662,41, ISS R$ 3.073,23) = DMS prestador = guia R$ 3.073,23 (venc. 15/10/2026, `ISSV 2026: 9/0`). Recebidas sem retenção; tomador do DMS tem 16 notas (ISS 65,41, não retido).
+- A sessão da nuvem não alcançou o Chrome (ferramentas da extensão indisponíveis); a extensão rodou em sessão própria do app desktop, sem acesso ao repositório.
+- Também nesta rodada: `conciliacao.py` corrigido (nota de substituição gerada conta como normal); 205 liberada; 257 e 152 analisados (ver PENDENCIAS.md).
