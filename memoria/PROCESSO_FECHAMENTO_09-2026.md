@@ -145,3 +145,6 @@ Próximo: voltar ao fechamento de 09/2026 (confirmar sem movimento 2, 26, 209, 2
 - Gravação da Fernanda do processo no Atende.Net/IPM (261 Giatech); skill em `.claude/skills/novo-hamburgo-issqn/SKILL.md`. Diferente de POA e São Leopoldo: a declaração precisa ser protocolada (Prestados e Tomados) e o carnê emitido na hora.
 - 261: Prestados R$ 34.000,00 (ISS R$ 680,00, guia venc. 20/10/2026) conciliado com o Portal; Tomados R$ 483,40 (ISS retido em NH zero; outros municípios R$ 5,57); divergência de nota Google (19985753 no protocolo x 19171581 comp. 08/2026 no Portal).
 - 197 ASBBM (feito em 04/10, 15:10 e 15:11): Prestados sem notas; Tomados 2 notas, R$ 5.500,00 (ISS outros municípios R$ 175,00, não retido); sem guia; conciliado com o Portal.
+
+## 15. Brasília (71 e 264), ISSQN 09/2026 (04/10/2026)
+- 4 gravações da Fernanda (ISSNet On-Line / Nota Control). Skill `.claude/skills/brasilia-issqn/SKILL.md`. 71: protocolo 42 notas, R$ 1.091.077,54 = Portal, retenção integral (Caixa), sem guia; Não Movimento em Contratados. 264: pendente de gravação e protocolo.
