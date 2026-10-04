@@ -4,6 +4,7 @@ Somente leitura: não clica em nada do portal. Salva um print para conferirmos a
 """
 from __future__ import annotations
 
+import os
 from datetime import datetime
 from pathlib import Path
 
@@ -15,7 +16,9 @@ def abrir_portal(url: str, perfil: Path, saida: Path, chrome_path: str | None = 
 
     perfil.mkdir(parents=True, exist_ok=True)
     saida.mkdir(parents=True, exist_ok=True)
-    opcoes = dict(user_data_dir=str(perfil), headless=False, accept_downloads=True, no_viewport=True)
+    # No Windows o Chrome roda com sandbox normal (evita a faixa "--no-sandbox"); em Linux/root desligado.
+    opcoes = dict(user_data_dir=str(perfil), headless=False, accept_downloads=True, no_viewport=True,
+                  chromium_sandbox=(os.name == "nt"))
     if chrome_path:
         opcoes["executable_path"] = chrome_path
     else:
