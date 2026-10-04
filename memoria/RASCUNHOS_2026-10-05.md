@@ -14,3 +14,7 @@ Observação da agente: o Portal indica ISS zero nessa nota; o e-mail pergunta p
 
 ## 3. Pedido aos clientes sem certificado (2, 18, 26, 133, 138, 173, 177, 185, 209, 248, 263): só retenção federal
 **WhatsApp/e-mail (adaptar o nome):** Bom dia! Aqui é a Fernanda, da OfficeCont. Para fecharmos os impostos federais de setembro/2026, precisamos da **relação das notas fiscais de serviço que vocês RECEBERAM (serviços contratados) em setembro/2026**, com prestador, valor e, se houver, o valor retido de IRRF, PIS/COFINS/CSLL (4,65%) ou INSS (11%). Se não houve nenhuma retenção em nenhuma nota, basta nos avisar "sem retenção". Pode nos mandar até [data]? Obrigada.
+
+## 4. Cliente 2 RF Consultoria: cobrança das notas de setembro/2026 (não enviado)
+**Assunto:** RF Consultoria: notas fiscais de serviços tomados, setembro/2026
+Olá, [nome]. Ao fechar o ISSQN de setembro/2026 de Porto Alegre, a prefeitura listou duas notas de serviços tomados da **Freire Administração e Serviços Prediais Ltda** (CNPJ 10.420.067/0001-39): nº 14263, de 14/09/2026, e nº 14320, de 28/09/2026, ambas de R$ 1.142,85 (total R$ 2.285,70). Não temos essas notas no escritório. Pode nos enviar os PDFs ou XMLs? Também precisamos confirmar: (1) as duas notas são mesmo de serviços distintos, já que têm o mesmo valor? (2) houve retenção de algum imposto (IRRF, PIS/COFINS/CSLL ou INSS) em alguma delas? Se não houve, basta responder "sem retenção". Obrigada, Fernanda, OfficeCont.
