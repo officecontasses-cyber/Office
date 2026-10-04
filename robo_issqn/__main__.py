@@ -3,6 +3,7 @@
     python -m robo_issqn abrir            etapa A: abre o portal no Chrome (somente leitura)
     python -m robo_issqn inspecionar      lê os campos da tela aberta no Chrome (somente leitura)
     python -m robo_issqn consultar 09/2026  etapa B1: preenche a Consulta DMS e clica em Localizar (só consulta)
+    python -m robo_issqn livro 09/2026      etapa B2: baixa o Livro Fiscal Eletrônico (DMS) em PDF
 """
 import sys
 from pathlib import Path
@@ -51,7 +52,21 @@ def consultar_dms(texto_comp: str) -> int:
     return 0
 
 
+def baixar_livro(texto_comp: str) -> int:
+    from .livro_dms import baixar_livro_fiscal
+
+    env = ler_env()
+    arquivo = baixar_livro_fiscal(
+        CLIENTE_126, Competencia.parse(texto_comp),
+        Path(env.get("ISSQN_PASTA_SAIDA", "saida")), int(env.get("ISSQN_PORTA_CONTROLE", "9222")),
+    )
+    print(f"Livro Fiscal salvo em: {arquivo}")
+    return 0
+
+
 def main(argv: list[str]) -> int:
+    if len(argv) == 3 and argv[1] == "livro":
+        return baixar_livro(argv[2])
     if len(argv) == 3 and argv[1] == "consultar":
         return consultar_dms(argv[2])
     if len(argv) == 2 and argv[1] == "abrir":
@@ -59,7 +74,7 @@ def main(argv: list[str]) -> int:
     if len(argv) == 2 and argv[1] == "inspecionar":
         return inspecionar_tela()
     if len(argv) != 2:
-        print("Uso: python -m robo_issqn MM/AAAA | abrir | inspecionar | consultar MM/AAAA")
+        print("Uso: python -m robo_issqn MM/AAAA | abrir | inspecionar | consultar MM/AAAA | livro MM/AAAA")
         return 2
     comp = Competencia.parse(argv[1])
     c = CLIENTE_126

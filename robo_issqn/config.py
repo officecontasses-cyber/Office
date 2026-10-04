@@ -62,3 +62,16 @@ class Competencia:
     def portal(self) -> str:
         """Formato do filtro da tela Consulta DMS (ex.: 2026/09)."""
         return f"{self.ano}/{self.mes:02d}"
+
+
+def nome_arquivo(cliente: Cliente, comp: Competencia, sufixo: str) -> str:
+    """Padrão da pasta 002: 126_Tatsch&Leite_SãoLeopoldo_09.2026_<sufixo>.PDF"""
+    return f"{cliente.codigo}_{cliente.nome_arquivo}_{cliente.cidade_arquivo}_{comp.mm_aaaa}_{sufixo}.PDF"
+
+
+def nome_livro_dms(cliente: Cliente, comp: Competencia) -> str:
+    return nome_arquivo(cliente, comp, "NFSE_Prest_Tomad")
+
+
+def nome_guia(cliente: Cliente, comp: Competencia) -> str:
+    return nome_arquivo(cliente, comp, "ISSQN")
