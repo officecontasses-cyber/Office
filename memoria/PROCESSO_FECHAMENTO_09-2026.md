@@ -163,3 +163,11 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Retenção a recolher: só BIOLAB 1507, R$ 225,00, CRF 4,65% = R$ 10,46, cód. 5952 — confere com o Portal.
 - Entradas: Facebook no Domínio é 146442407 (R$ 1.703,92, emissão 02/10, entrada 30/09); o Portal de setembro traz 144113199 (02/09, R$ 1.922,60) que não está no Domínio. Ideal Art 444 lançada por R$ 336,74 (Portal R$ 347,16). A confirmar.
 - IRPJ/CSLL do trimestre (receita R$ 298.842,06 até 17/09) estão subestimados até importar as saídas restantes.
+
+### 19b. 126 — XMLs conferidos (05/10/2026)
+- Facebook 144113199: emitida 02/09, **competência 31/08** (anúncios de agosto), R$ 1.922,60. Pertence a agosto (confirmar que entrou na Entradas de 08/2026). A 146442407 (emissão 02/10, entrada 30/09, R$ 1.703,92) é a de setembro: Domínio correto.
+- Ideal Art 444: serviço R$ 347,16 − desconto incondicional R$ 10,42 = **líquido R$ 336,74**. Domínio correto (valor contábil líquido). CST 200 / cClassTrib 200029, redução de 60%: CBS 0,36% (R$ 1,21), IBS 0,04% (R$ 0,13).
+- BC de IBS/CBS = valor do serviço − ISS − PIS/COFINS destacados (Facebook: 1.922,60 − 55,75 − 31,72 − 146,12 = 1.689,00; Clinicorp: 383,85 − 7,68 ISS = 376,17).
+- Facebook: "vTotalRet" 177,84 do XML são tributos aproximados (Lei 12.741) e PIS/COFINS próprios do prestador; não há retenção federal.
+- BIOLAB 1507 (emissão 01/10, entrada 30/09): Fernanda confirmou, mantém em setembro.
+- 126: fica pendente apenas importar as saídas 1760–1841 e rever o demonstrativo (PIS/COFINS, IRPJ/CSLL) na rodada dos serviços prestados.
