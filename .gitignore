@@ -2,3 +2,4 @@ sieg_controle/carteira*.csv
 sieg_controle/exports/
 sieg_controle/relatorio*.xlsx
 __pycache__/
+sieg_controle/resumo_*.md
