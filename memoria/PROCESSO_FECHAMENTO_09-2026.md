@@ -171,3 +171,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Facebook: "vTotalRet" 177,84 do XML são tributos aproximados (Lei 12.741) e PIS/COFINS próprios do prestador; não há retenção federal.
 - BIOLAB 1507 (emissão 01/10, entrada 30/09): Fernanda confirmou, mantém em setembro.
 - 126: fica pendente apenas importar as saídas 1760–1841 e rever o demonstrativo (PIS/COFINS, IRPJ/CSLL) na rodada dos serviços prestados.
+
+## 20. 189 Real Engenharia: Recebidas do Portal (05/10/2026)
+- Uma NFS-e tomada: nº 5, 08/09/2026, XAVANTINA EMPREENDIMENTOS IMOBILIARIOS LTDA (CNPJ 38.543.058/0001-54, não optante), R$ 142.933,33, item 10.09 (representação comercial), NBS 102010000. DPS 5, série 70000. ISS 2% = R$ 2.858,67, **não retido**, incidência Chapecó/SC.
+- **IRRF R$ 2.144,00** (1,5% de 142.933,33). PIS/COFINS/CSLL "não retidos" no XML. **Sem nenhum campo de IBS/CBS** (CST, cClassTrib, base, valores vazios).
+- A confirmar: (1) código do IRRF (provável 8045, comissões e corretagens PJ, 1,5%) e natureza de rendimento do R-4020; (2) data do pagamento (fato gerador do IRRF); (3) se a CRF 4,65% (IN RFB 459/2004, intermediação de negócios) é devida mesmo com "não retido" no XML (seria R$ 6.646,40; não confirmado).
