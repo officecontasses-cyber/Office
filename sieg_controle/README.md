@@ -20,8 +20,7 @@ python controle.py --inspect   # confere colunas reais das exportações (rode n
 python controle.py             # gera relatorio_carteira.xlsx
 ```
 
-O relatório tem uma aba de resumo, uma aba por fonte (só empresas da carteira, com a coluna `alerta`)
-e uma aba "sem registro" com CNPJs da carteira que não aparecem na exportação.
+O relatório tem as abas Resumo, Painel (uma linha por empresa) e uma aba por fonte, com as colunas `nivel` e `motivo`.
 
 **Regras (por coluna, conferidas nas exportações de 05/10/2026):**
 - Certidões: `Situação` = Irregular, ou `Data de Vencimento` já passada → IRREGULAR; vence em até `--dias` (padrão 30) ou situação diferente de Regular (ex.: "Outros", "Positiva com Efeitos de Negativa", "Indisponível para emissão") → ATENÇÃO.
