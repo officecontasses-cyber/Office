@@ -157,3 +157,9 @@ Emitidas 09/2026 (10 clientes): INSS retido zero. 16 Centro Clínico 221 notas R
 
 ## 18. REINF 09/2026 e planilha do DP (04/10/2026)
 Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Sucesso para 16 clientes (recibos no TSV) e **117 Invalidado**. Planilha do DP: aba `MOD GERAL 09.2026` (A Nº, B Empresa, C Obrigação, D Status, E e F Observações, G ok do DP, H e I caixa de valores do 152); modelo do 186: D `Enviado`, E `Sem movimento`, F `Enviado dd/mm/aaaa hh:mm (Oficial). Sem retenção`. Criado o script `apps-script/atualizarReinfDP.gs` (fila `Atualizações REINF` colada em TSV, igual à da Controle_Fiscal) e o TSV em `memoria/TSV_DP_REINF_09-2026.md`. Valores de retenção sofridos por mês se repetem (71: 83,61 e 259,20; 152: INSS 1.269,26; 189: IRRF 2.144,00), o que confere com os meses anteriores da planilha do DP.
+
+## 19. Domínio 126 — conferência 05/10/2026
+- Saídas do Domínio param na NFS-e 1759 (17/09): 127 notas, R$ 86.386,91 (ISS R$ 1.727,73). Faltam importar as notas 1760 a 1841 (82 notas, R$ 67.275,50). Com elas: 209 notas = R$ 153.662,41 (= Portal Emitidas de setembro; ISS R$ 3.073,23 = guia). Notas 1842 a 1848 (R$ 7.570,00) são de 01 e 02/10: ficam em outubro.
+- Retenção a recolher: só BIOLAB 1507, R$ 225,00, CRF 4,65% = R$ 10,46, cód. 5952 — confere com o Portal.
+- Entradas: Facebook no Domínio é 146442407 (R$ 1.703,92, emissão 02/10, entrada 30/09); o Portal de setembro traz 144113199 (02/09, R$ 1.922,60) que não está no Domínio. Ideal Art 444 lançada por R$ 336,74 (Portal R$ 347,16). A confirmar.
+- IRPJ/CSLL do trimestre (receita R$ 298.842,06 até 17/09) estão subestimados até importar as saídas restantes.
