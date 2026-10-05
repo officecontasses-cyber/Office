@@ -23,9 +23,12 @@ python controle.py             # gera relatorio_carteira.xlsx
 O relatório tem uma aba de resumo, uma aba por fonte (só empresas da carteira, com a coluna `alerta`)
 e uma aba "sem registro" com CNPJs da carteira que não aparecem na exportação.
 
-**Limitação:** o layout das exportações não foi confirmado. O casamento usa o CNPJ/CPF encontrado em
-qualquer célula da linha, e o `alerta` é heurístico (palavras `ALERTAS` em `controle.py`). Confira a
-primeira saída contra o portal e ajuste as palavras-chave.
+**Regras (por coluna, conferidas nas exportações de 05/10/2026):**
+- Certidões: `Situação` = Irregular, ou `Data de Vencimento` já passada → IRREGULAR; vence em até `--dias` (padrão 30) ou situação diferente de Regular (ex.: "Outros", "Positiva com Efeitos de Negativa", "Indisponível para emissão") → ATENÇÃO.
+- Diagnóstico Fiscal: `Situação` = "Não" → IRREGULAR. **Inferência não confirmada pela SIEG**: bate com os 19 irregulares do painel e com a CRFB-PGFN, mas confirme (constante `DIAG_IRREGULAR`).
+- Parcelamentos: "Não validado – primeira parcela não paga" → ATENÇÃO; parcelamento ativo com `Data da Parcela` vencida e não quitado → IRREGULAR. A coluna `Data da Parcela` veio vazia nesta exportação, então o atraso de pagamento ainda não é detectado; `Consulta em Atraso` tem significado não confirmado e não gera alerta.
+- A aba **Painel** traz uma linha por empresa, ordenada do pior para o melhor.
+- Sem `carteira.csv`, o script usa todas as empresas das exportações (aviso na tela).
 
 ## Validade dos certificados digitais (API)
 
