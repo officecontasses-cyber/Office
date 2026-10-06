@@ -213,3 +213,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Domínio (Entradas set/2026, total geral R$ 26.616,43 = NF-e R$ 26.607,36 + NFS-e R$ 9,07): NFS-e lançadas 4089 Valesul 499455 (R$ 9,07, 1-933, ac. 800), 4090 e 4091 Pluxee 8803672 e 8803674 (R$ 0,00, 2-933, ac. 800). Unifique 460991 (outubro) não aparece: correto.
 - Prefeitura (DecWeb) 9 notas R$ 28.980,50: faltam no Domínio 6 notas, R$ 28.971,43: VOJ 40 (24.490,73), Ellu's 1353 (1.593,68), Contrei 6423 (141,89), Unifique 443812 (9,90), Unimed BH 1915711 (143,91) e 1977955 (2.591,32). Sem XML na pasta do Drive; lançar manualmente ou subir os XMLs.
 - Conferir INSS retido (11%, R$ 175,30) na Ellu's 1353 para o R-2010.
+
+### 23c. Tacom 138: as 6 NFS-e faltantes são de setembro (06/10/2026)
+- Zip "08.2026_138" (pasta do Portal por competência 08, que cobre emissões até 30/09). XMLs: dCompet de setembro em todos (01/09 a 11/09). A prefeitura de agosto traz outros números (VOJ 39, Ellu's 1317, Contrei 5577, Unifique 353551, Unimed 1630783 e 1672302), portanto as 6 notas são de setembro e precisam ser lançadas em 09/2026.
+- Dados: VOJ 40 (170301, R$ 24.490,73, ME/EPP, sem ISS); Ellu's 1353 (170501, R$ 1.593,68, ISS 5% R$ 79,68, INSS retido R$ 175,30, líquido R$ 1.418,38); Contrei 6423 (070101, R$ 141,89, ISS 2,5% R$ 3,55, BH, PIS 0,92 e COFINS 4,26 destacados do prestador); Unifique 443812 (010701, R$ 9,90, ISS 0,20, CST 410/410999); Unimed BH 1915711 (042301, R$ 143,91, dedução R$ 100,74, base R$ 43,17, ISS 1,30) e 1977955 (042301, R$ 2.591,32, dedução R$ 1.813,92, base R$ 777,40, ISS 23,32).
+- Com as 6, o Domínio fecha as 9 NFS-e da prefeitura: R$ 28.980,50.
