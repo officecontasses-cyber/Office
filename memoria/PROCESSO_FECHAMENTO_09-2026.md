@@ -208,3 +208,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Remessas 4698 e 4699 saíram com IBS/CBS CST 000/000001 (IBS R$ 40,17; CBS R$ 361,46); os retornos 33132/33166/33188/33204 vieram sem grupo IBS/CBS (CST 41, ICMS suspenso). A confirmar com o Fiscal.
 - Advertências do Domínio: (a) PIS/COFINS da guia Estoque sem os impostos no acumulador (Beller 10504 e 23640); (b) cClassTrib IBS/CBS inválido (XML sem IBS/CBS) nos produtos 12805, 12806, 17055, 20932, 21353 (notas 33166, 33188, 33204); (c) CEST 2103400 do produto 20932 (nota 33188) diferente do cadastro (em branco). Configurar os produtos e o acumulador após o fechamento.
 - Tomados NFS-e: o relatório de Entradas enviado traz só as NF-e (espécie 36); falta o relatório com as NFS-e (espécie 39) para conciliar com a prefeitura (9 notas, R$ 28.980,50).
+
+### 23b. Tacom 138: conciliação dos tomados NFS-e (06/10/2026)
+- Domínio (Entradas set/2026, total geral R$ 26.616,43 = NF-e R$ 26.607,36 + NFS-e R$ 9,07): NFS-e lançadas 4089 Valesul 499455 (R$ 9,07, 1-933, ac. 800), 4090 e 4091 Pluxee 8803672 e 8803674 (R$ 0,00, 2-933, ac. 800). Unifique 460991 (outubro) não aparece: correto.
+- Prefeitura (DecWeb) 9 notas R$ 28.980,50: faltam no Domínio 6 notas, R$ 28.971,43: VOJ 40 (24.490,73), Ellu's 1353 (1.593,68), Contrei 6423 (141,89), Unifique 443812 (9,90), Unimed BH 1915711 (143,91) e 1977955 (2.591,32). Sem XML na pasta do Drive; lançar manualmente ou subir os XMLs.
+- Conferir INSS retido (11%, R$ 175,30) na Ellu's 1353 para o R-2010.
