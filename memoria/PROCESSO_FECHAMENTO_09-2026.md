@@ -239,3 +239,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 ## 25. Tacom 263 (Tacom Projetos POA): levantamento prévio da prefeitura (06/10/2026)
 - DecWeb 09/2026 (IM 954945-2-9, CNPJ 01.005.845/0021-86): Serviços Tomados 1 nota (OfficeCont, NFS-e 1018, 01/09, R$ 650,00, ISS 0, ME/EPP); Serviços Prestados 9 NFS-e (54 a 62), R$ 81.793,56, ISS 5% = R$ 4.089,69 (igual à guia enviada). Tomadores: Consórcio Gestor de Bilhetagem Metropolitano (7 notas), Catsul Guaíba, Expresso Charqueadas.
 - A fazer quando a Fernanda trouxer os relatórios: conciliar com o Domínio (Entradas/Saídas) e o ICMS (Controle indica contribuinte ICMS = NÃO para o 263); gerar TSV para Serviços Tomados e Serviços Prestados.
+
+## 26. Tacom 248 Palhoça/SC (CNPJ 01.005.845/0020-03): prefeitura e ICMS (06/10/2026)
+- Os arquivos baixados em 06/10 são do 248 (não do 263): Declaração de Serviços Prestados (sem documentos, R$ 0,00, protocolo 10e087db7f1edc0c56a385b360e040, 15:40:50) e de Serviços Tomados (NFe 1017 da OfficeCont, 01/09/2026, R$ 650,00, serviço 17.19.01, incidência Porto Alegre, ISS R$ 0,00, protocolo e63627324fa60197accea2cdf1e85c, 15:41:57).
+- SAT/SC: sem NF-e e sem NFC-e emitidas em 09/2026 (consulta por emitente); como destinatário, 1 NF-e: Leonardo Alves Sebastião ME (06.331.140/0001-29), NF 123 série 1, 14/09/2026, R$ 15,00, ICMS 0, evento Ciência da Operação (planilha `248_DFE - Excel Notas NF-es_092026.xlsx`).
+- TSV provisório em `TSV_TACOM_248_09-2026.md`. Pendentes: Domínio (tomados e entrada de R$ 15,00), GUIA ICMS, SPED ICMS, DIME. 263 (POA): aguardando os relatórios do Domínio.
