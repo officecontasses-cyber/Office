@@ -189,3 +189,9 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - A conferir: Chanfro nº 2 (competência 08/2026, emitida 14/09): IRRF 42,00 + CRF 130,20; verificar se entrou em agosto. Giovani nº 676 (competência 10/2026): IRRF 83,61 + CRF 259,20 pertence a outubro.
 - IBS/CBS (set): 13 notas com dados (CBS R$ 145,38; IBS R$ 16,14; base R$ 17.558,31; CST 000/000001 em 9 e 200/200052 em 4). 126 sem dados (121 ME/EPP/MEI + 5 não optantes: Kontik 1142004/1142005, Paulo Sampaio 250, CIEE 81654, Giovani 659).
 - Atenção: Caixa Cartões Pré-Pagos 30774046 com valor zero; 18 notas de competência 09 emitidas em 02/10.
+
+## 22. Tacom 138: importação das notas tomadas no Domínio (06/10/2026)
+- Prefeitura (DecWeb, Serviços Tomados 09/2026, IM 233879-2-0, CNPJ 08.196.752/0002-62): 9 notas, R$ 28.980,50, deduções R$ 1.914,66, ISS R$ 108,28, ISS retido 0. Notas: VOJ 40 (R$ 24.490,73, Simples), Ellu's 1353 (1.593,68), Contrei 6423 (141,89, BH), Unifique 443812 (9,90), Valesul 499455 (9,07), Unimed BH 1915711 (143,91) e 1977955 (2.591,32), Pluxee 8803672 e 8803674 (valor 0,00, SP).
+- Portal Nacional: não há Recebidas do 138 na pasta 003. XMLs no Drive (SIEG): pasta 09 = Valesul 499455, Pluxee 8803672 e 8803674; pasta 10 = Unifique 460991 (02/10), VOJ 41 e Ellus 1387.
+- Domínio (importação): advertências nos 4 XMLs com IBS/CBS (Unifique 460991 de 02/10, Valesul, Pluxee x2): "imposto 183-IBS e 184-CBS não está relacionado no acumulador 800, dados descartados"; Pluxee com valor contábil zerado.
+- A fazer: ajustar acumulador 800 (IBS 183 / CBS 184); decidir Pluxee valor 0; conferir Unifique 460991 (outubro) e as 6 notas da prefeitura sem XML na pasta 09. Prazo: SPED ICMS para Leidislaine até 07/10.
