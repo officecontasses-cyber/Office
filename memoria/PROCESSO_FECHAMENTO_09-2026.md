@@ -265,3 +265,6 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 
 ### 28c. 248: SPED ICMS enviado (06/10/2026)
 - G-Click "EFD ICMS/IPI (Dia 12) SET/2026": Arquivo Sped 16:32 e Envio arquivo 16:33 (Fernanda); Recibo entrega pendente (Leidislaine). Enviado sem a NF-e 123. TSV em `TSV_TACOM_248_09-2026_rodada3.md`.
+
+### 28d. Ordem de retomada (06/10/2026, noite)
+- Os SPED ICMS das Tacom eram o que tinha prazo (Leidislaine, 07-08/10). Próximo: voltar ao **71 Conte**, de onde paramos (aguardando o Domínio da Fernanda: Entradas, Retenções a Recolher e Demonstrativo). Segue pendente o 138 (regerar o SPED com as 4 NF-e) e o Domínio do 263.
