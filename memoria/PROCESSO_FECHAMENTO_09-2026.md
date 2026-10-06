@@ -262,3 +262,6 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 
 ### 28b. 248: SPED ICMS liberado sem a NF-e 123 (06/10/2026)
 - A NF-e 123 (R$ 15,00) não veio do SIEG; a Fernanda verifica depois e libera o SPED ICMS do 248 mesmo assim; avisará quando enviar. Entradas e Guia ICMS ficam Pendente até lançar a nota; avaliar retificação do SPED depois.
+
+### 28c. 248: SPED ICMS enviado (06/10/2026)
+- G-Click "EFD ICMS/IPI (Dia 12) SET/2026": Arquivo Sped 16:32 e Envio arquivo 16:33 (Fernanda); Recibo entrega pendente (Leidislaine). Enviado sem a NF-e 123. TSV em `TSV_TACOM_248_09-2026_rodada3.md`.
