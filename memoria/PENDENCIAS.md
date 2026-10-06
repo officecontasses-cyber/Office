@@ -119,6 +119,28 @@ skills em `.claude/skills/` (`sao-leopoldo-issqn`, `novo-hamburgo-issqn`, `brasi
 
 ---
 
+## J. REVISAR APÓS OS FECHAMENTOS: Reforma Tributária (IBS/CBS) e cadastros no Domínio (registrado em 06/10/2026)
+
+Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para ser revisado depois do fechamento, sem pressa agora.
+
+**Tacom 138 (e 248/263): fiscal é tratado pela matriz; alertar a equipe da matriz**
+- [ ] Avisar a matriz: remessas para conserto 4698 e 4699 (Tacom Sistemas, 01/09 e 22/09, R$ 40.161,90) saíram com IBS/CBS (CST 000 / cClassTrib 000001; IBS R$ 40,17 e CBS R$ 361,46), enquanto os retornos 33132, 33166, 33188 e 33204 (Tacom Projetos MG, R$ 25.949,40) vieram sem grupo IBS/CBS. Verificar se o destaque nas remessas está correto.
+- [ ] Domínio, cadastro de produtos: preencher CST/cClassTrib de IBS/CBS dos produtos 12805, 12806, 17055, 20932 e 21353 (advertência "cClass Trib inválido"); classificação correta de retorno de conserto a confirmar com o Fiscal.
+- [ ] Domínio, produto 20932 (POS TACOM GPOS700, NCM 8471.90.19): preencher o CEST (XML traz 2103400; confirmar o código).
+- [ ] Domínio, acumulador das compras CFOP 1.556 (Beller 10504 e 23640): relacionar PIS/COFINS ou limpar PIS/COFINS da guia Estoque dos produtos, conforme o regime/uso (a definir).
+- [ ] Domínio, acumulador 800 (serviços tomados): relacionar os impostos 183-IBS e 184-CBS; criar acumulador separado para CST 410 / cClassTrib 410999 (ex.: Unifique, suporte 010701).
+- [ ] Decidir o que fazer com NFS-e de valor R$ 0,00 (Pluxee 8803672 e 8803674): o Domínio avisa "valor contábil zerado".
+- [ ] Tomados NFS-e de 09/2026 ainda sem lançamento: VOJ 40, Ellu's 1353, Contrei 6423, Unifique 443812, Unimed BH 1915711 e 1977955 (R$ 28.971,43); pedir os XMLs; conferir INSS retido (11%) na Ellu's 1353 para o R-2010.
+- [ ] Unifique 460991, VOJ 41 e Ellu's 1387 (INSS retido R$ 175,30) são de outubro: lançar no fechamento de 10/2026.
+
+**Demais clientes**
+- [ ] 126: acumuladores de tomados com IBS/CBS (Facebook, Clinicorp, Ambientuus, Ideal Art 200/200029); base IBS/CBS = valor − ISS − PIS/COFINS destacados; importar saídas 1760 a 1841.
+- [ ] 71: acumuladores de tomados por código de serviço (arquivo `ACUMULADORES_71_09-2026.md`: 13 notas com IBS/CBS, CST 000/000001 e 200/200052); nota 60 Laura de Luca aguardando retorno da Francine; Caixa Cartões 30774046 valor zero; Chanfro nº 2 (competência 08, IRRF 42,00 + CRF 130,20) conferir; local de execução da nota 153 (RIPA).
+- [ ] 189: acumulador de tomados sem IBS/CBS (nota 5 Xavantina); decidir CRF 4,65% e confirmar data de pagamento e código do IRRF (R-4020 já enviado).
+- [ ] Geral: padronizar acumuladores de serviços tomados por tipo (com IBS/CBS integral, com redução 200052, sem incidência 410, sem dados), transformar em skill para outubro.
+
+---
+
 ## Como manter este documento
 1. Ao fim de cada rodada: mover o item de PENDENTE para RESOLVIDO (com a data) ou ajustar o texto; acrescentar o que surgiu.
 2. Atualizar o log detalhado em `PROCESSO_FECHAMENTO_09-2026.md`.

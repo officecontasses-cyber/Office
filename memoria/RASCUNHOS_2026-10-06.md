@@ -39,3 +39,20 @@ Qualquer dúvida, estamos à disposição.
 Atenciosamente,
 Fernanda
 OfficeCont Assessoria Empresarial
+
+## 2. Aviso à equipe da matriz (Tacom): remessas para conserto com IBS/CBS
+
+Assunto: Tacom | NFs 4698 e 4699 (remessa para conserto) com IBS/CBS e retornos sem IBS/CBS
+
+Olá, pessoal,
+
+Ao conferirmos o movimento de ICMS de 09/2026 da Tacom Sistemas de Bilhetagem Inteligente (CNPJ 08.196.752/0002-62), notamos que:
+
+- As NF-e 4698 (01/09/2026, R$ 14.916,59) e 4699 (22/09/2026, R$ 25.245,31), natureza "REMESSA P/ CONSERTO" (CFOP 6.915), saíram com IBS/CBS destacados (CST 000, classificação 000001): IBS R$ 40,17 e CBS R$ 361,46 no total.
+- Os retornos de conserto emitidos pela Tacom Projetos (NF-e 33132, 33166, 33188 e 33204, CFOP 2.916, R$ 25.949,40) vieram sem o grupo de IBS/CBS.
+
+Pedimos que confirmem se o destaque nas remessas está correto para esse tipo de operação e se o retorno deve ou não trazer IBS/CBS. Como o fiscal é tratado pela matriz, deixamos o aviso para a verificação de vocês.
+
+Atenciosamente,
+Fernanda
+OfficeCont Assessoria Empresarial
