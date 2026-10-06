@@ -176,3 +176,9 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Uma NFS-e tomada: nº 5, 08/09/2026, XAVANTINA EMPREENDIMENTOS IMOBILIARIOS LTDA (CNPJ 38.543.058/0001-54, não optante), R$ 142.933,33, item 10.09 (representação comercial), NBS 102010000. DPS 5, série 70000. ISS 2% = R$ 2.858,67, **não retido**, incidência Chapecó/SC.
 - **IRRF R$ 2.144,00** (1,5% de 142.933,33). PIS/COFINS/CSLL "não retidos" no XML. **Sem nenhum campo de IBS/CBS** (CST, cClassTrib, base, valores vazios).
 - A confirmar: (1) código do IRRF (provável 8045, comissões e corretagens PJ, 1,5%) e natureza de rendimento do R-4020; (2) data do pagamento (fato gerador do IRRF); (3) se a CRF 4,65% (IN RFB 459/2004, intermediação de negócios) é devida mesmo com "não retido" no XML (seria R$ 6.646,40; não confirmado).
+
+### 20b. 189: Domínio conferido e REINF enviado (06/10/2026)
+- Entradas: NFS-e nº 5 (08/09, Xavantina, R$ 142.933,33), espécie 39, acumulador 1005, CFOP 2-933, UF SC, IRRF 1,50% = R$ 2.144,00. Demonstrativo do IRRF: saldo devedor R$ 2.144,00. ISS retido 0, IBS/CBS 0. Confere.
+- Regime: Lucro Presumido trimestral (presunção 32%). ISS "débito por profissional habilitado" R$ 634,31 = guia já enviada.
+- REINF: R-4020, R-2099 e R-4099 com Sucesso em 06/10/2026 06:29 (recibos no TSV). Ainda sem resposta: CRF 4,65%, data do pagamento e código do IRRF (provisório 170806 do modelo do DP).
+- Saídas do 189 ficam para a rodada de serviços prestados: Domínio traz em setembro só a NFS-e 44 (09/09, R$ 1.348.516,53); o Portal Emitidas de setembro soma R$ 2.868.189,79.

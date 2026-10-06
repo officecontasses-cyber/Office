@@ -66,3 +66,13 @@ Controle_Fiscal (aba `Atualizações`, 7 colunas):
 ```tsv
 126	Set2026	REINF	Enviado		R-4020 (CRF R$ 10,46, cód. 5952, BIOLAB nº 1507) recibo 97463238-10-4020-2609-97463238; R-2099 recibo 12127193-10-2099-2609-12127193; R-4099 recibo 5830434-10-4099-2609-5830434. Enviados 06/10/2026 06:03 (Oficial). Com retenção.	
 ```
+
+## 189 enviado em 06/10/2026 06:29 (R-4020 + R-2099 + R-4099, todos Sucesso, Oficial)
+DP (aba `Atualizações REINF`, 8 colunas):
+```tsv
+189	MOD GERAL 09.2026	Enviado	COM RETENÇÃO	IRRF (Cód. Rec. 170806): R$ 2.144,00\nEnviado 06/10/2026 06:29 (Oficial): R-4020 + R-2099 + R-4099.			
+```
+Controle_Fiscal (aba `Atualizações`, 7 colunas):
+```tsv
+189	Set2026	REINF	Enviado		R-4020 (IRRF R$ 2.144,00, Xavantina NFS-e nº 5) recibo 20706833-02-4020-2609-20706833; R-2099 recibo 12056927-02-2099-2609-12056927; R-4099 recibo 5813615-02-4099-2609-5813615. Enviados 06/10/2026 06:29 (Oficial). Com retenção.	
+```
