@@ -268,3 +268,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 
 ### 28d. Ordem de retomada (06/10/2026, noite)
 - Os SPED ICMS das Tacom eram o que tinha prazo (Leidislaine, 07-08/10). Próximo: voltar ao **71 Conte**, de onde paramos (aguardando o Domínio da Fernanda: Entradas, Retenções a Recolher e Demonstrativo). Segue pendente o 138 (regerar o SPED com as 4 NF-e) e o Domínio do 263.
+
+## 28e. Auditoria declarações municipais x GUIA ISSQN sem valor (06/10/2026)
+- Base: export Controle_Fiscal de 06/10 18:20 (Set2026). Declaração Enviado + ISS zerado + GUIA ISSQN em branco: **só o 2 (RF Consultoria)** (recibo 03/10 11:16:19, receita e imposto R$ 0,00, só tomados sem ISS retido). TSV entregue no chat (GUIA ISSQN → Sem movimento, 0).
+- Já corretos: 117, 133, 138, 197, 209, 237, 258, 26, 264, 265 (Sem movimento) e 71 (Sem Recolhimento — Retenção Integral). 117, 133 e 265 estão com Valor vazio (cosmético: 0).
+- Sem declaração entregue (fora da auditoria): 185 (RJ), 227, 247 (Montenegro). 248: TSV rodada 1 já tem Guia ISSQN Sem movimento (conferir se colado).
