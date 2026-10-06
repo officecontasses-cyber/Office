@@ -254,3 +254,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 
 ### 27b. Correção da regra de status (06/10/2026)
 - A Fernanda corrigiu: onde não há nota na fonte oficial (ex.: SAT/SC sem NF-e/NFC-e emitidas), não há o que importar no Domínio; a linha vai como `Sem movimento`. `Pendente` vale só onde há movimento ainda não importado/conciliado. TSV do 248 refeito (Prestados, Guia ISSQN e Saídas `Sem movimento`; Tomados PREF `Pendente`). CLAUDE.md, PENDENCIAS e snapshot ajustados.
+
+## 28. Tacom 248: Domínio e entradas (06/10/2026)
+- Fernanda colou o TSV da rodada 1 do 248. Domínio, Entradas 09/2026 (16:23): só NFS-e 1017 OfficeCont (cód. 22, 01/09, R$ 650,00, CFOP 2.933, acumulador 800) = prefeitura. Importação: NFS-e 1020 (01/10/2026, R$ 650,00) desmarcada (outubro); aviso "183-IBS e 184-CBS não estão no acumulador 800".
+- SEFAZ/SC (planilha DFe): NF-e 123 de Leonardo Alves Sebastião ME, 14/09/2026, R$ 15,00, chave 42260906331140000129550010000001231001583000, não está no Domínio: lançar.
+- Em agosto (precedente): DIME `NÃO SE APLICA` (dispensada desde junho), SPED envio "Envio pela Matriz". TSV da rodada 2 em `TSV_TACOM_248_09-2026_rodada2.md`. Ajuste do acumulador 800 do 248 anotado para depois do fechamento.
