@@ -195,3 +195,10 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Portal Nacional: não há Recebidas do 138 na pasta 003. XMLs no Drive (SIEG): pasta 09 = Valesul 499455, Pluxee 8803672 e 8803674; pasta 10 = Unifique 460991 (02/10), VOJ 41 e Ellus 1387.
 - Domínio (importação): advertências nos 4 XMLs com IBS/CBS (Unifique 460991 de 02/10, Valesul, Pluxee x2): "imposto 183-IBS e 184-CBS não está relacionado no acumulador 800, dados descartados"; Pluxee com valor contábil zerado.
 - A fazer: ajustar acumulador 800 (IBS 183 / CBS 184); decidir Pluxee valor 0; conferir Unifique 460991 (outubro) e as 6 notas da prefeitura sem XML na pasta 09. Prazo: SPED ICMS para Leidislaine até 07/10.
+
+### 22b. Tacom 138: conteúdo dos XMLs do Drive (06/10/2026)
+- Valesul 499455 (22/09, Cachoeirinha, não optante): cTribNac 100201, ISS 2,5% R$ 0,23 não retido; IBS/CBS CST 000 / 000001, cIndOp 100301, base R$ 8,84, IBS 0,10% R$ 0,01, CBS 0,90% R$ 0,08.
+- Pluxee 8803672 e 8803674 (15/09, São Paulo, não optante): cTribNac 171201, valor R$ 0,00; CST 000 / 000001, cIndOp 100301, tudo zero.
+- Unifique 460991 (emitida 02/10, competência 10/2026, Porto Alegre, não optante): cTribNac 010701 "SUPORTE 24H - PJ", R$ 9,90, ISS 2% R$ 0,20; IBS/CBS CST 410 / cClassTrib 410999, cIndOp 100401, base R$ 9,70, alíquotas e valores zerados.
+- VOJ 41 (emitida 05/10, ME/EPP, cTribNac 170301, R$ 24.490,73) e Ellu's 1387 (emitida 05/10, ME/EPP, cTribNac 170501 "LIMPEZA SET 26", R$ 1.593,68, ISS 5% R$ 79,68, INSS retido R$ 175,30): sem IBS/CBS; são de outubro.
+- Pendente: XMLs de VOJ 40, Ellu's 1353, Unifique 443812, Contrei 6423 e Unimed BH (1915711 e 1977955), ainda não vistos; conferir se a Ellu's 1353 teve INSS retido (R-2010).
