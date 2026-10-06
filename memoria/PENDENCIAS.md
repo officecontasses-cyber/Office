@@ -130,7 +130,7 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] Domínio, acumulador das compras CFOP 1.556 (Beller 10504 e 23640): relacionar PIS/COFINS ou limpar PIS/COFINS da guia Estoque dos produtos, conforme o regime/uso (a definir).
 - [ ] Domínio, acumulador 800 (serviços tomados): relacionar os impostos 183-IBS e 184-CBS; criar acumulador separado para CST 410 / cClassTrib 410999 (ex.: Unifique, suporte 010701).
 - [ ] Decidir o que fazer com NFS-e de valor R$ 0,00 (Pluxee 8803672 e 8803674): o Domínio avisa "valor contábil zerado".
-- [ ] Tomados NFS-e de 09/2026 ainda sem lançamento no Domínio (XMLs recebidos em 06/10; são competência 09/2026, não 08): VOJ 40, Ellu's 1353, Contrei 6423, Unifique 443812, Unimed BH 1915711 e 1977955 (R$ 28.971,43); Ellu's 1353 tem INSS retido R$ 175,30 (R-2010 do 138: decidir; conferir também a Ellu's 1317 de agosto).
+- [x] Tomados NFS-e de 09/2026 (Tacom 138) conciliados em 06/10: 9 NFS-e da prefeitura = Domínio, R$ 28.980,50; critério de competência = campo dCompet do XML (decisão da Fernanda). Pendente: conferir INSS retido R$ 175,30 da Ellu's 1353 no Domínio e decidir o R-2010 do 138 (conferir também a Ellu's 1317 de agosto); relacionar 183-IBS/184-CBS no acumulador 800; Unifique 443812 está no acumulador 1007 (CST 410).
 - [ ] Unifique 460991, VOJ 41 e Ellu's 1387 (INSS retido R$ 175,30) são de outubro: lançar no fechamento de 10/2026.
 
 **Demais clientes**

@@ -222,3 +222,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 ### 23d. Tacom 138: critério de competência das NFS-e (06/10/2026)
 - Fernanda pediu para avaliar a competência, não a emissão. Pelo campo de competência do XML (dCompet) as 6 notas são de 09/2026. Pelo período do serviço descrito: Ellu's 1353 "LIMPEZA AGOSTO 26" e Unimed 1915711 "Referência 08/2026" = agosto; Contrei 6423 "SETEMBRO/2026" = setembro; Unimed 1977955 "Mensalidade 10/2026" = outubro; VOJ 40 e Unifique 443812 sem referência.
 - Critério pendente de decisão (campo dCompet x período do serviço). No 126 (Facebook) foi usado o campo de competência do XML. Se valer o período do serviço, Ellu's 1387 "LIMPEZA SET 26" (INSS R$ 175,30), Unifique 460991 e VOJ 41 (emitidas em outubro) entram em setembro, e Ellu's 1353 e Unimed 1915711 iriam para agosto (fechado).
+
+### 23e. Tacom 138: conciliação final dos tomados NFS-e (06/10/2026)
+- Critério confirmado pela Fernanda: competência pelo campo dCompet do XML (as 6 notas ficam em 09/2026).
+- Domínio Entradas set/2026: NF-e CFOP 1.556 R$ 657,96 + NFS-e CFOP 1.933 R$ 26.103,38 (Valesul 4089, Ellu's 4093, VOJ 4097, Unifique 4098 no acumulador 1007) + NF-e CFOP 2.916 R$ 25.949,40 + NFS-e CFOP 2.933 R$ 2.877,12 (Pluxee 4090 e 4091 zeradas, Unimed 4094 e 4095, Contrei 4101) = R$ 55.587,86 = NF-e do SEFAZ (R$ 26.607,36) + NFS-e da prefeitura (R$ 28.980,50).
+- Pendências: INSS retido da Ellu's 1353 (R$ 175,30), R-2010 do 138, impostos 183/184 no acumulador 800, base de ISS das Unimed (dedução).
