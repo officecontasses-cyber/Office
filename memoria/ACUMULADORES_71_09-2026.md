@@ -74,3 +74,7 @@ Soma: CBS R$ 145,38; IBS R$ 16,14; base R$ 17.558,31.
 
 - Caixa Cartões Pré-Pagos nº 30774046 (cód. 171201): valor R$ 0,00 com CST 000.
 - 18 notas de competência 09 emitidas em 02/10.
+
+## 5. Correção e observação sobre a nota 60 (06/10/2026)
+- Correção: não é verdade que só os não optantes trazem IBS/CBS. Das 13 notas com dados, 8 são de ME/EPP (Marcelo Santos da Costa x2, Copiadora Nitplot, Bruna K., Deko, Engemaster, Barbosa Gomes e Laura de Luca) e 5 de não optantes (GPBR, Omiexperience, Solides, Broffices, Caixa Cartões).
+- Nota 60, Laura de Luca Baccarin (emitida 02/10/2026, competência 09/2026, ME/EPP; em agosto, nota 57, era MEI com código 170301): usa cTribNac 070104 (arquitetura, NBS 114021300) com descrição "Supervisão técnica de demandas, acompanhamento de obra e organização de demandas", e CST 000 / cClassTrib 000001 (integral, CBS 0,9% R$ 22,50 e IBS 0,1% R$ 2,50). As demais notas de arquitetura/engenharia de ME/EPP deste mês usam CST 200 / 200052 (redução de cerca de 30%). Possível inconsistência entre código do serviço, descrição e classificação; a confirmar com a fornecedora.
