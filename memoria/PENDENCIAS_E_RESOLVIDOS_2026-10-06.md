@@ -4,9 +4,10 @@ Cópia da rodada de 05 e 06/10/2026. O documento completo está em `memoria/PEND
 
 ## K. RODADA 05–06/10/2026: o que foi feito e o que falta (resumo por cliente)
 
-**Regra de status (Fernanda, 06/10):** linhas que dependem do Domínio (Serviços Tomados/Prestados, Entradas, Saídas e a Guia ISSQN "sem movimento")
-só vão como `Enviado`/`Importado`/`Sem movimento` depois do Domínio importado e conciliado; antes disso ficam `Pendente` ("Em andamento" na observação).
-`DECLARAÇÃO PREFEITURA` fica `Enviado` com o recibo. Regra gravada no `CLAUDE.md`. Competência das NFS-e tomadas: campo `dCompet` do XML.
+**Regra de status (Fernanda, 06/10):** onde há movimento (notas a lançar), as linhas Serviços Tomados/Prestados, Entradas e Saídas só vão como
+`Importado`/`Enviado` depois do Domínio importado e conciliado; antes ficam `Pendente` ("Em andamento" na observação). Onde **não há nota** na fonte
+oficial (SEFAZ/SAT, Portal, prefeitura), vai direto `Sem movimento`. `DECLARAÇÃO PREFEITURA` fica `Enviado` com o recibo. Regra no `CLAUDE.md`.
+Competência das NFS-e tomadas: campo `dCompet` do XML.
 
 ### Clientes da retenção federal (REINF; Domínio conferido com os relatórios)
 - [x] **126 Tatsch & Leite:** Recebidas conferidas (retenção só da BIOLAB 1507: CRF R$ 10,46, cód. 5952); Facebook 144113199 é de agosto (já lançada); Ideal Art 444 = R$ 336,74 (desconto incondicional). **REINF enviado 06/10 06:03** (R-4020 recibo 97463238-10-4020-2609-97463238, R-2099 12127193-10-2099-2609-12127193, R-4099 5830434-10-4099-2609-5830434); TSV do DP e da Controle entregues.
@@ -27,7 +28,7 @@ só vão como `Enviado`/`Importado`/`Sem movimento` depois do Domínio importado
 
 ### Tacom 248 (Palhoça/SC, CNPJ …/0020-03) e 263 (Porto Alegre)
 - [x] **248, prefeitura de Palhoça:** declarações de Serviços Prestados (sem documentos) e Tomados (NFe 1017 OfficeCont, R$ 650,00, ISS 0) enviadas em 06/10 (15:40 e 15:41); SAT/SC: sem NF-e/NFC-e emitidas; 1 NF-e recebida (Leonardo Alves Sebastião ME, NF 123, 14/09, R$ 15,00).
-- [ ] **248:** falta o Domínio (tomados e a NF-e de R$ 15,00), GUIA ICMS, SPED ICMS e DIME; TSV provisório em `TSV_TACOM_248_09-2026.md` (só `DECLARAÇÃO PREFEITURA` como `Enviado`, o resto `Pendente`).
+- [ ] **248:** falta o Domínio (tomados e a NF-e de R$ 15,00), GUIA ICMS, SPED ICMS e DIME; TSV provisório em `TSV_TACOM_248_09-2026.md` (Declaração `Enviado`; Prestados, Guia ISSQN e Saídas `Sem movimento`; Tomados PREF `Pendente` até o Domínio).
 - [ ] **263:** DecWeb: tomados R$ 650,00 (OfficeCont, NFS-e 1018) e prestados 9 NFS-e R$ 81.793,56 (ISS R$ 4.089,69 = guia enviada). Falta o Domínio (Entradas/Saídas) para conciliar e gerar o TSV; contribuinte de ICMS = NÃO.
 
 ### Reforma tributária e acumuladores (outubro com agilidade)

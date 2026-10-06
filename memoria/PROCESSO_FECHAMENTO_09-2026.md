@@ -251,3 +251,6 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 ## 27. Revisão geral e regra de status do Domínio (06/10/2026)
 - Regra gravada no CLAUDE.md e na seção K do PENDENCIAS: o que depende do Domínio fica Pendente até importar e conciliar. Aplicada: 248 (tomados PREF, prestados, guia ISSQN e saídas Pendente; declaração Enviado) e 138 (SPED ICMS - Envio arquivo Pendente até regerar o SPED com as 4 NF-e).
 - Seção K do PENDENCIAS reescrita com tudo de 05 e 06/10 (126, 189, 71, 238, 152, 138, 248, 263); snapshot `PENDENCIAS_E_RESOLVIDOS_2026-10-06.md`.
+
+### 27b. Correção da regra de status (06/10/2026)
+- A Fernanda corrigiu: onde não há nota na fonte oficial (ex.: SAT/SC sem NF-e/NFC-e emitidas), não há o que importar no Domínio; a linha vai como `Sem movimento`. `Pendente` vale só onde há movimento ainda não importado/conciliado. TSV do 248 refeito (Prestados, Guia ISSQN e Saídas `Sem movimento`; Tomados PREF `Pendente`). CLAUDE.md, PENDENCIAS e snapshot ajustados.
