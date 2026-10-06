@@ -121,6 +121,8 @@ skills em `.claude/skills/` (`sao-leopoldo-issqn`, `novo-hamburgo-issqn`, `brasi
 
 ## J. REVISAR APÓS OS FECHAMENTOS: Reforma Tributária (IBS/CBS) e cadastros no Domínio (registrado em 06/10/2026)
 
+- [ ] **URGENTE Tacom 138, SPED Fiscal 09/2026 (conferir antes da Leidislaine transmitir, até 08/10):** o arquivo gerado em 06/10 traz só 6 NF-e (C100: 4 retornos CFOP 2.916 e 2 remessas CFOP 6.915). As 4 compras CFOP 1.556 que estão no Domínio e no SEFAZ (ZRZ 4917, Fortpel 1558521, Beller 23640 e 10504, R$ 657,96, acumulador 106) não estão no SPED (em agosto a compra de uso e consumo CFOP 2.556, acumulador 206, entrou). Verificar a configuração do acumulador 106 e gerar de novo; avisar a Leidislaine.
+
 Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para ser revisado depois do fechamento, sem pressa agora.
 
 **Tacom 138 (e 248/263): fiscal é tratado pela matriz; alertar a equipe da matriz**

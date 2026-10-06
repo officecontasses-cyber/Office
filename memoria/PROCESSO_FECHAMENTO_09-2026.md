@@ -230,3 +230,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 
 ### 23f. Tacom 138: INSS retido da Ellu's fica para depois do fechamento (06/10/2026)
 - A Fernanda confirmou que o cálculo é feito pela matriz. Registrado para ajuste após o fechamento: acumulador da Ellu's 1353 (INSS retido R$ 175,30), conferência da Ellu's 1317 (agosto) e aviso à matriz sobre o R-2010, junto com os cadastros de produtos e as demais advertências (seção J do PENDENCIAS).
+
+## 24. Tacom 138: SPED, GIA e fila do Controle_Fiscal (06/10/2026)
+- GIA RS 09/2026: protocolo TED 13542570, 06/10/2026 15:15:59 (comprovante de transmissão; recibo definitivo depois). SPED Fiscal 09/2026 enviado à Leidislaine pelo G-Click em 06/10 15:18; E110 sem débito/crédito, saldo credor R$ 17.385,19 a transportar.
+- Alerta: o SPED não traz as 4 NF-e de compra CFOP 1.556 (R$ 657,96; acumulador 106) que constam no Domínio e no SEFAZ (C100 = 6 notas).
+- TSV da fila (8 linhas: Serviços Tomados, Serviços Prestados, Entradas, Saídas, Guia ICMS, GIA RS, SPED envio e SPED recibo) em `TSV_TACOM_138_09-2026.md`.
