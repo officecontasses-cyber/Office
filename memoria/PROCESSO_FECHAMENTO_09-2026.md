@@ -182,3 +182,10 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Regime: Lucro Presumido trimestral (presunção 32%). ISS "débito por profissional habilitado" R$ 634,31 = guia já enviada.
 - REINF: R-4020, R-2099 e R-4099 com Sucesso em 06/10/2026 06:29 (recibos no TSV). Ainda sem resposta: CRF 4,65%, data do pagamento e código do IRRF (provisório 170806 do modelo do DP).
 - Saídas do 189 ficam para a rodada de serviços prestados: Domínio traz em setembro só a NFS-e 44 (09/09, R$ 1.348.516,53); o Portal Emitidas de setembro soma R$ 2.868.189,79.
+
+## 21. 71 Conte Arquitetura: Recebidas do Portal (06/10/2026; arquivo baixado em 03-04/10)
+- Competência 09/2026: 139 notas normais, R$ 456.689,03 (fora: 5 canceladas + 1 substituída; 22 notas de competência 08 e 83 de competência 10).
+- Retenção em setembro: nota 659 Giovani Gazen (R$ 5.574,32): IRRF 83,61 (1,5%) + CRF 259,20 (4,65%), INSS 0. ISS retido pelo tomador: nota 153 RIPA, R$ 39,43, Portal indica incidência São Paulo/SP (local de execução ainda a confirmar; guia de Jundiaí já emitida).
+- A conferir: Chanfro nº 2 (competência 08/2026, emitida 14/09): IRRF 42,00 + CRF 130,20; verificar se entrou em agosto. Giovani nº 676 (competência 10/2026): IRRF 83,61 + CRF 259,20 pertence a outubro.
+- IBS/CBS (set): 13 notas com dados (CBS R$ 145,38; IBS R$ 16,14; base R$ 17.558,31; CST 000/000001 em 9 e 200/200052 em 4). 126 sem dados (121 ME/EPP/MEI + 5 não optantes: Kontik 1142004/1142005, Paulo Sampaio 250, CIEE 81654, Giovani 659).
+- Atenção: Caixa Cartões Pré-Pagos 30774046 com valor zero; 18 notas de competência 09 emitidas em 02/10.
