@@ -227,3 +227,6 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Critério confirmado pela Fernanda: competência pelo campo dCompet do XML (as 6 notas ficam em 09/2026).
 - Domínio Entradas set/2026: NF-e CFOP 1.556 R$ 657,96 + NFS-e CFOP 1.933 R$ 26.103,38 (Valesul 4089, Ellu's 4093, VOJ 4097, Unifique 4098 no acumulador 1007) + NF-e CFOP 2.916 R$ 25.949,40 + NFS-e CFOP 2.933 R$ 2.877,12 (Pluxee 4090 e 4091 zeradas, Unimed 4094 e 4095, Contrei 4101) = R$ 55.587,86 = NF-e do SEFAZ (R$ 26.607,36) + NFS-e da prefeitura (R$ 28.980,50).
 - Pendências: INSS retido da Ellu's 1353 (R$ 175,30), R-2010 do 138, impostos 183/184 no acumulador 800, base de ISS das Unimed (dedução).
+
+### 23f. Tacom 138: INSS retido da Ellu's fica para depois do fechamento (06/10/2026)
+- A Fernanda confirmou que o cálculo é feito pela matriz. Registrado para ajuste após o fechamento: acumulador da Ellu's 1353 (INSS retido R$ 175,30), conferência da Ellu's 1317 (agosto) e aviso à matriz sobre o R-2010, junto com os cadastros de produtos e as demais advertências (seção J do PENDENCIAS).

@@ -132,6 +132,7 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] Decidir o que fazer com NFS-e de valor R$ 0,00 (Pluxee 8803672 e 8803674): o Domínio avisa "valor contábil zerado".
 - [x] Tomados NFS-e de 09/2026 (Tacom 138) conciliados em 06/10: 9 NFS-e da prefeitura = Domínio, R$ 28.980,50; critério de competência = campo dCompet do XML (decisão da Fernanda). Pendente: conferir INSS retido R$ 175,30 da Ellu's 1353 no Domínio e decidir o R-2010 do 138 (conferir também a Ellu's 1317 de agosto); relacionar 183-IBS/184-CBS no acumulador 800; Unifique 443812 está no acumulador 1007 (CST 410).
 - [ ] Unifique 460991, VOJ 41 e Ellu's 1387 (INSS retido R$ 175,30) são de outubro: lançar no fechamento de 10/2026.
+- [ ] **Tacom 138, ajustar após o fechamento (INSS retido, registrado em 06/10/2026):** a Tacom é apurada pela matriz, mas é preciso ajustar no Domínio o acumulador de serviços tomados da Ellu's 1353 (cód. 170501, mão de obra, 01/09/2026, R$ 1.593,68) para registrar o **INSS retido de R$ 175,30 (11%)**; conferir se a Ellu's 1317 de agosto teve a mesma retenção; alertar a matriz sobre o R-2010. Fazer junto com os cadastros de produtos e as demais advertências desta seção.
 
 **Demais clientes**
 - [ ] 126: acumuladores de tomados com IBS/CBS (Facebook, Clinicorp, Ambientuus, Ideal Art 200/200029); base IBS/CBS = valor − ISS − PIS/COFINS destacados; importar saídas 1760 a 1841.
