@@ -235,3 +235,7 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - GIA RS 09/2026: protocolo TED 13542570, 06/10/2026 15:15:59 (comprovante de transmissão; recibo definitivo depois). SPED Fiscal 09/2026 enviado à Leidislaine pelo G-Click em 06/10 15:18; E110 sem débito/crédito, saldo credor R$ 17.385,19 a transportar.
 - Alerta: o SPED não traz as 4 NF-e de compra CFOP 1.556 (R$ 657,96; acumulador 106) que constam no Domínio e no SEFAZ (C100 = 6 notas).
 - TSV da fila (8 linhas: Serviços Tomados, Serviços Prestados, Entradas, Saídas, Guia ICMS, GIA RS, SPED envio e SPED recibo) em `TSV_TACOM_138_09-2026.md`.
+
+## 25. Tacom 263 (Tacom Projetos POA): levantamento prévio da prefeitura (06/10/2026)
+- DecWeb 09/2026 (IM 954945-2-9, CNPJ 01.005.845/0021-86): Serviços Tomados 1 nota (OfficeCont, NFS-e 1018, 01/09, R$ 650,00, ISS 0, ME/EPP); Serviços Prestados 9 NFS-e (54 a 62), R$ 81.793,56, ISS 5% = R$ 4.089,69 (igual à guia enviada). Tomadores: Consórcio Gestor de Bilhetagem Metropolitano (7 notas), Catsul Guaíba, Expresso Charqueadas.
+- A fazer quando a Fernanda trouxer os relatórios: conciliar com o Domínio (Entradas/Saídas) e o ICMS (Controle indica contribuinte ICMS = NÃO para o 263); gerar TSV para Serviços Tomados e Serviços Prestados.
