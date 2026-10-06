@@ -244,3 +244,6 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Os arquivos baixados em 06/10 são do 248 (não do 263): Declaração de Serviços Prestados (sem documentos, R$ 0,00, protocolo 10e087db7f1edc0c56a385b360e040, 15:40:50) e de Serviços Tomados (NFe 1017 da OfficeCont, 01/09/2026, R$ 650,00, serviço 17.19.01, incidência Porto Alegre, ISS R$ 0,00, protocolo e63627324fa60197accea2cdf1e85c, 15:41:57).
 - SAT/SC: sem NF-e e sem NFC-e emitidas em 09/2026 (consulta por emitente); como destinatário, 1 NF-e: Leonardo Alves Sebastião ME (06.331.140/0001-29), NF 123 série 1, 14/09/2026, R$ 15,00, ICMS 0, evento Ciência da Operação (planilha `248_DFE - Excel Notas NF-es_092026.xlsx`).
 - TSV provisório em `TSV_TACOM_248_09-2026.md`. Pendentes: Domínio (tomados e entrada de R$ 15,00), GUIA ICMS, SPED ICMS, DIME. 263 (POA): aguardando os relatórios do Domínio.
+
+### 26b. Regra de status reforçada pela Fernanda (06/10/2026)
+- Declaração à prefeitura e serviços tomados da prefeitura = Enviado (recibo). Linhas que dependem da importação no Domínio (Serviços Tomados/Prestados, Entradas, Saídas) ficam Pendente ("em andamento") até haver o Domínio conferido. "Em andamento" não existe no vocabulário da planilha (Set/Ago/Jul): usar Pendente com "Em andamento" na observação. TSV do 248 revisado: Serviços Prestados e Saídas passam a Pendente.
