@@ -247,3 +247,7 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 
 ### 26b. Regra de status reforçada pela Fernanda (06/10/2026)
 - Declaração à prefeitura e serviços tomados da prefeitura = Enviado (recibo). Linhas que dependem da importação no Domínio (Serviços Tomados/Prestados, Entradas, Saídas) ficam Pendente ("em andamento") até haver o Domínio conferido. "Em andamento" não existe no vocabulário da planilha (Set/Ago/Jul): usar Pendente com "Em andamento" na observação. TSV do 248 revisado: Serviços Prestados e Saídas passam a Pendente.
+
+## 27. Revisão geral e regra de status do Domínio (06/10/2026)
+- Regra gravada no CLAUDE.md e na seção K do PENDENCIAS: o que depende do Domínio fica Pendente até importar e conciliar. Aplicada: 248 (tomados PREF, prestados, guia ISSQN e saídas Pendente; declaração Enviado) e 138 (SPED ICMS - Envio arquivo Pendente até regerar o SPED com as 4 NF-e).
+- Seção K do PENDENCIAS reescrita com tudo de 05 e 06/10 (126, 189, 71, 238, 152, 138, 248, 263); snapshot `PENDENCIAS_E_RESOLVIDOS_2026-10-06.md`.

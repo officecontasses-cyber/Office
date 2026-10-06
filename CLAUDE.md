@@ -18,6 +18,10 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
   baixar o PDF e salvar no Drive **não** é envio. Sem a comprovação do G-Click, o status da
   guia fica `Pendente`. (Regra dada pela Fernanda em 01/10/2026.)
   A **DECLARAÇÃO PREFEITURA** é diferente: o recibo da própria prefeitura comprova o envio.
+- **Status das linhas que dependem do Domínio (regra da Fernanda, 06/10/2026):** Serviços Tomados, Serviços Prestados, Entradas, Saídas
+  (e a Guia ISSQN quando o "Sem movimento" depende delas) só viram `Enviado`, `Importado` ou `Sem movimento` depois que o Domínio foi
+  importado e **conciliado** com a prefeitura/Portal/SEFAZ. Enquanto falta importar ou conciliar, ficam **`Pendente`** (escrever "Em andamento"
+  na observação; "Em andamento" não existe no vocabulário da planilha). `DECLARAÇÃO PREFEITURA` continua `Enviado` com o recibo/protocolo.
 - **Nada é escrito direto na Controle_Fiscal.** Toda atualização entra pela aba `Atualizações`
   (fila), em TSV **inline no chat**, e a Fernanda roda o script `processarAtualizacoes()`.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
