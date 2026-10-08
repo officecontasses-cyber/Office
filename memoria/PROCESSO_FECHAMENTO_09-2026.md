@@ -296,3 +296,6 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Precedente: DARF idêntico (R$ 16.900,00, código 1150, venc. 15/06/2026, obs. "IOF MUTUO CBR 05.06.2026") na pasta de junho. Perguntar se outubro é um segundo mútuo de R$ 500 mil ou renovação do de junho.
 - Instrução do Gian: contabilizar no ATIVO conta específica "CBR Engenharia" = R$ 516.900,00 (R$ 500.000,00 de empréstimo + R$ 16.900,00 de IOF pago por conta do mutuário); conferir o extrato de 10/2026 e o pagamento do IOF.
 - A conferir (não confirmado): contrato de mútuo escrito (prazo, juros, cláusula de ressarcimento do IOF); tratamento dos juros na Conte (Lucro Presumido) e IRRF retido pela CBR; quem paga o DARF; linha na Controle_Fiscal (aba Out2026, a criar). Códigos, alíquotas e prazo de recolhimento do IOF devem ser conferidos na legislação vigente/Sicalc.
+
+## 28j. 71 Conte: pesquisa LeFisc do mútuo (08/10/2026)
+- Resultado detalhado em `MUTUO_CONTE_CBR_LEFISC_2026-10-08.md`: IRRF (tabela regressiva, retém a CBR), IRPJ/CSLL (juros integrais na base presumida), PIS/COFINS (tendência de não incidência), IOF (código 1150 e vencimento 15/10 conferem; valor do DARF R$ 16.900,00 x R$ 16.865,00 a 0,0082% ou R$ 9.382,50 a 0,0041%: alíquota vigente a confirmar). Correção: art. 13 da Lei 9.779 é IOF, não IRRF.
