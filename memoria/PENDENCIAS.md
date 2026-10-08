@@ -67,7 +67,7 @@ Competência das NFS-e tomadas: campo `dCompet` do XML.
 
 ### B. ISSQN de 09/2026 — Porto Alegre (DecWeb, 22 de 22 enviadas; guias vencem 13/10)
 - [ ] **205 (R$ 1.915,06):** Fernanda confirmou a guia; **postar no G-Click**. (nota 197 é a substituta da 196; `conciliacao.py` já corrigido.)
-- [x] **155 Mainieri (08/10):** retificadora 1 enviada (recibo 08/10 09:39:11, receita R$ 22.676,34, ISS R$ 907,02); guia nova R$ 907,02 (venc. 13/10) com G-Click 10:11 e envio ao cliente 10:12; TSV Enviado entregue. FAT2026 L4 = 22.676,34 a digitar (L14 já calcula 4%). A guia antiga de R$ 842,02 não vale. Conferir FAT de agosto (K4 22.477,87 x Portal 08/2026 Normal 22.233,73).
+- [x] **155 Mainieri (08/10):** retificadora 1 enviada (recibo 08/10 09:39:11, receita R$ 22.676,34, ISS R$ 907,02); guia nova R$ 907,02 (venc. 13/10) com G-Click 10:11 e envio ao cliente 10:12; TSV Enviado entregue. FAT2026 L4 = 22.676,34 a digitar (L14 já calcula 4%). A guia antiga de R$ 842,02 não vale. FAT de agosto (K4 22.477,87) conferida pela Fernanda em 08/10: está OK, sem retificadora.
 - [ ] **257 (R$ 6.500,00):** aguarda a resposta do cliente (item A).
 - [ ] **152:** ISS retido total R$ 568,44 = R$ 461,69 POA + **R$ 106,75 Estrela/RS** (ENGI PROJECT, notas 1146 e 1218): **fazer junto com a Fernanda no portal de Estrela** (baixar as notas e declarar); marcar horário. Em agosto foram R$ 25,63 (venc. 23/09).
 - [ ] **2 RF Consultoria:** guia ISSQN em branco (não confirmado) até a resposta do cliente. **247 Montenegro:** DMS fora do DecWeb.
