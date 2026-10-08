@@ -290,3 +290,9 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - FAT `155_MAINIERI E OLIVEIRA_FAT2026`, aba 2026: **L4 (SETEMBRO, receita serviços) = 22676,34**; L14 (ISSQN) já tem fórmula `=L4*4%` = 907,05 (guia: 907,02, diferença de R$ 0,03 por arredondamento nota a nota); IRPJ/CSLL/PIS/COFINS calculam sozinhos.
 - Alerta: K4 (agosto) = 22.477,87, enquanto a Emitidas 08/2026 Normal soma 22.233,73 (3 notas canceladas em 03/09, R$ 430,47). Conferir se agosto foi declarado e lançado com valor correto.
 - **Fernanda (08/10): agosto do 155 está OK** (K4 22.477,87 da FAT x Emitidas 08/2026 22.233,73 + canceladas): conferido por ela, sem retificadora. Alerta encerrado.
+
+## 28i. 71 Conte: DARF de IOF sobre mútuo à CBR Engenharia (e-mail do Gian, 07/10/2026; revisão 08/10)
+- DARF (Drive: `DARF IOF MUTOI CBR 06102026 VCTO 15102026.pdf`, emitido no Sicalc Web em 07/10 08:12): CNPJ 08.307.701/0001-80 (Conte Cornetet Arquitetura), código **1150** (IOF operações de crédito PJ), principal R$ 16.900,00, sem multa/juros, vencimento **15/10/2026**, PA exibido 10/10/2026 (no detalhe "PA 01/10/2026"), obs. "IOF MUTUO CBR". 16.900 = 3,38% de R$ 500.000.
+- Precedente: DARF idêntico (R$ 16.900,00, código 1150, venc. 15/06/2026, obs. "IOF MUTUO CBR 05.06.2026") na pasta de junho. Perguntar se outubro é um segundo mútuo de R$ 500 mil ou renovação do de junho.
+- Instrução do Gian: contabilizar no ATIVO conta específica "CBR Engenharia" = R$ 516.900,00 (R$ 500.000,00 de empréstimo + R$ 16.900,00 de IOF pago por conta do mutuário); conferir o extrato de 10/2026 e o pagamento do IOF.
+- A conferir (não confirmado): contrato de mútuo escrito (prazo, juros, cláusula de ressarcimento do IOF); tratamento dos juros na Conte (Lucro Presumido) e IRRF retido pela CBR; quem paga o DARF; linha na Controle_Fiscal (aba Out2026, a criar). Códigos, alíquotas e prazo de recolhimento do IOF devem ser conferidos na legislação vigente/Sicalc.
