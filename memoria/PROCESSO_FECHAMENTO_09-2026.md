@@ -284,3 +284,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Recibo (Retificadora 1): recebida 08/10/2026 09:39:11; receita bruta R$ 22.676,34; imposto próprio R$ 907,02; retido de terceiros R$ 0,00; compensação 0,00; total a recolher R$ 907,02 (bate com a Emitidas do Portal).
 - Guia nova (Retificadora 1, gerada 08/10 09:39): R$ 907,02, venc. 13/10/2026 (impresso na guia). Substitui a de R$ 842,02 (03/10), que não vale mais. PDFs na pasta 002 ARQUIVOS MUNICIPAIS (mesmos nomes de arquivo, sobrescritos).
 - Planilha: DECLARAÇÃO PREFEITURA Enviado (recibo); GUIA ISSQN Pendente R$ 907,02 até o G-Click comprovar o envio (regra de 01/10). Subir a guia nova no G-Click e conferir que a antiga não foi enviada à cliente.
+
+## 28h. 155 Mainieri: G-Click e FAT (08/10/2026)
+- G-Click (print): Guia ISS 08/10 10:11 e Envio ao cliente 08/10 10:12 (fernanda.officecont), vencimento 13/10 → GUIA ISSQN `Enviado` R$ 907,02.
+- FAT `155_MAINIERI E OLIVEIRA_FAT2026`, aba 2026: **L4 (SETEMBRO, receita serviços) = 22676,34**; L14 (ISSQN) já tem fórmula `=L4*4%` = 907,05 (guia: 907,02, diferença de R$ 0,03 por arredondamento nota a nota); IRPJ/CSLL/PIS/COFINS calculam sozinhos.
+- Alerta: K4 (agosto) = 22.477,87, enquanto a Emitidas 08/2026 Normal soma 22.233,73 (3 notas canceladas em 03/09, R$ 430,47). Conferir se agosto foi declarado e lançado com valor correto.
