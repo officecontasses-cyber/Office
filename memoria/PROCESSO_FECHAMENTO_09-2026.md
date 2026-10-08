@@ -273,3 +273,9 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Base: export Controle_Fiscal de 06/10 18:20 (Set2026). Declaração Enviado + ISS zerado + GUIA ISSQN em branco: **só o 2 (RF Consultoria)** (recibo 03/10 11:16:19, receita e imposto R$ 0,00, só tomados sem ISS retido). TSV entregue no chat (GUIA ISSQN → Sem movimento, 0).
 - Já corretos: 117, 133, 138, 197, 209, 237, 258, 26, 264, 265 (Sem movimento) e 71 (Sem Recolhimento — Retenção Integral). 117, 133 e 265 estão com Valor vazio (cosmético: 0).
 - Sem declaração entregue (fora da auditoria): 185 (RJ), 227, 247 (Montenegro). 248: TSV rodada 1 já tem Guia ISSQN Sem movimento (conferir se colado).
+
+## 28f. 155 Mainieri: retificadora DecWeb x Emitidas do Portal (08/10/2026)
+- Camila (06/10 09:47): faturamento 09/2026 R$ 22.676,34; notas de R$ 0,00 canceladas; retificadora aberta no DecWeb. Original (03/10): receita R$ 21.051,25, ISS R$ 842,02.
+- Fase 1 do robô (08/10 09:26): reaproveitou a retificadora Aberta, baixou ServPrestados/ServTomados; nada enviado.
+- Emitidas baixada de novo (Drive 08/10 12:44): competência 09/2026, 112 notas Normal, todas 4%, ISS não retido = **R$ 22.676,34, ISS R$ 907,02** (confere com a Camila). 4 canceladas de 09/2026 com R$ 0,00 (nº 913, 963, 966, 972). Competência 08/2026: 3 canceladas em 03/09 (R$ 430,47, ISS R$ 18,40; nº 813, 814, 821) — conferir se o Ago estava ok.
+- Falta: conferir a tela do DecWeb (receita 22.676,34), rodar fase 2 `--retificadora --enviar` e fase 3; guia nova substitui a de R$ 842,02; G-Click comprova o envio.
