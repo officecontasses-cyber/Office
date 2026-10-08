@@ -44,3 +44,22 @@ Entregue em um único texto, em português, na ordem acima, com: norma/artigo, t
 ```
 
 Depois: colar a resposta no chat com o Claude Code para montar o tratamento por tributo da Conte (IRRF, IRPJ/CSLL, PIS/COFINS, IOF) e o REINF da CBR.
+
+---
+## 2ª pesquisa (08/10/2026): reconhecimento dos juros do mútuo no Lucro Presumido (competência x caixa)
+
+```
+Continue no LeFisc (já estou logada). Mesmas regras de antes: só leitura, sem senha, texto LITERAL com norma/artigo/vigência/URL, "NÃO ENCONTRADO" quando não achar, sem opinião.
+
+Contexto: empresa de arquitetura no LUCRO PRESUMIDO (apuração trimestral de IRPJ/CSLL) é MUTUANTE de um mútuo em dinheiro a outra PJ. Juros de 6% a.a. capitalizados mensalmente e incorporados ao saldo durante 6 meses de carência; só haverá pagamento em dinheiro a partir de 10/01/2027. Dúvida: no Presumido, esses juros entram na base do IRPJ/CSLL por competência (mês a mês, 3º trimestre/2026) ou só quando recebidos (regime de caixa)?
+
+Traga:
+1. IN RFB 1.585/2015, art. 70, § 9º e dispositivos vizinhos (rendimentos de aplicações financeiras no Presumido "somente por ocasião da alienação, resgate ou cessão"): o texto completo, e se há alguma referência a mútuo.
+2. IN RFB 1.700/2017: artigos do Lucro Presumido sobre "ganhos de capital, rendimentos e ganhos líquidos em aplicações financeiras e demais receitas" e sobre o regime de caixa/competência na apuração da receita (opção pelo regime de caixa no Presumido). Texto literal.
+3. Lei 9.249/1995, art. 20 (texto vigente completo, caput e parágrafos, inclusive o acréscimo de demais receitas e ganhos de capital à base da CSLL) e art. 3º, § 1º (adicional de IRPJ).
+4. Lei 9.430/1996, art. 25 e art. 1º, § 1º e § 2º, se tratarem de períodos e regime de reconhecimento. Lei 9.718/1998, art. 13 (opção pelo lucro presumido) e dispositivos sobre regime de caixa.
+5. Soluções de Consulta ou Soluções de Divergência da Cosit sobre "juros", "mútuo" ou "receita financeira" no Lucro Presumido e o momento de reconhecimento (competência x caixa). Se o banco do LeFisc só busca por título, tente também Perguntas e Respostas, Boletins e Plantões sobre "receitas financeiras lucro presumido regime de caixa".
+6. Código de receita do DARF de IRPJ e CSLL no Lucro Presumido trimestral e prazo (último dia útil do mês seguinte ao trimestre), se constar em norma.
+
+Entregue em um único texto, na ordem acima, com a lista final do que NÃO foi encontrado.
+```
