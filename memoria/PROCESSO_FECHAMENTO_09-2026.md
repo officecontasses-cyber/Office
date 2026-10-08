@@ -279,3 +279,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - Fase 1 do robô (08/10 09:26): reaproveitou a retificadora Aberta, baixou ServPrestados/ServTomados; nada enviado.
 - Emitidas baixada de novo (Drive 08/10 12:44): competência 09/2026, 112 notas Normal, todas 4%, ISS não retido = **R$ 22.676,34, ISS R$ 907,02** (confere com a Camila). 4 canceladas de 09/2026 com R$ 0,00 (nº 913, 963, 966, 972). Competência 08/2026: 3 canceladas em 03/09 (R$ 430,47, ISS R$ 18,40; nº 813, 814, 821) — conferir se o Ago estava ok.
 - Falta: conferir a tela do DecWeb (receita 22.676,34), rodar fase 2 `--retificadora --enviar` e fase 3; guia nova substitui a de R$ 842,02; G-Click comprova o envio.
+
+## 28g. 155 Mainieri: retificadora enviada (08/10/2026)
+- Recibo (Retificadora 1): recebida 08/10/2026 09:39:11; receita bruta R$ 22.676,34; imposto próprio R$ 907,02; retido de terceiros R$ 0,00; compensação 0,00; total a recolher R$ 907,02 (bate com a Emitidas do Portal).
+- Guia nova (Retificadora 1, gerada 08/10 09:39): R$ 907,02, venc. 13/10/2026 (impresso na guia). Substitui a de R$ 842,02 (03/10), que não vale mais. PDFs na pasta 002 ARQUIVOS MUNICIPAIS (mesmos nomes de arquivo, sobrescritos).
+- Planilha: DECLARAÇÃO PREFEITURA Enviado (recibo); GUIA ISSQN Pendente R$ 907,02 até o G-Click comprovar o envio (regra de 01/10). Subir a guia nova no G-Click e conferir que a antiga não foi enviada à cliente.
