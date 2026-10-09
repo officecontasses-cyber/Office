@@ -17,7 +17,7 @@ Revisei o DARF e o mútuo pelo lado fiscal (apuração e obrigações acessória
 - Os juros do mútuo entram na base do IRPJ e da CSLL pelo valor integral, sem percentual de presunção (IN RFB 1.700/2017, art. 215, § 3º, I, "e"). Como a Conte usa competência, são reconhecidos mês a mês.
 - Juros por competência (dias corridos desde 05/06, 6% a.a. capitalizado mensalmente): junho R$ 2.109,28; julho R$ 2.454,56; agosto R$ 2.455,99; setembro R$ 2.457,33.
 - **3º trimestre/2026:** juros R$ 7.367,88; imposto adicional **R$ 2.505,08** (IRPJ 15% R$ 1.105,18 + adicional 10% R$ 736,79 + CSLL 9% R$ 663,11), a somar na apuração do trimestre (DARF 2089 e 2372, vencimento 30/10). Hoje não estão na FAT nem na apuração.
-- **PIS e COFINS:** pelo LeFisc (matéria editorial, não norma) não incidem sobre esses juros, desde que o mútuo não seja atividade habitual da Conte. Vou conferir o objeto social e a habitualidade (já são dois mútuos de R$ 500 mil em 2026, se o de outubro for novo).
+- **PIS e COFINS:** pelo LeFisc (matéria editorial, não norma) não incidem sobre esses juros, desde que o mútuo não seja atividade habitual da Conte.
 - **IRRF:** quando a CBR pagar os juros (1ª parcela em 10/01/2027), ela deve reter pela tabela regressiva (IN RFB 1.585/2015, arts. 46 e 47: de 22,5% a 15%, conforme o prazo). A faixa depende da contagem do prazo, a definir. A Conte deduz o IRRF na apuração do trimestre.
 
 **3. 2º trimestre/2026: complemento**
