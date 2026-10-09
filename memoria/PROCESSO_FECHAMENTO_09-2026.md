@@ -304,3 +304,9 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 
 ## 28k. RF Consultoria: receita de aluguéis variável a partir de 10/2026 (09/10/2026)
 - E-mail "RF Consultoria | Informativo receita aluguéis": Fernanda perguntou se o informativo se refere ao faturamento mensal e se "a partir de 10/2026 não terá mais o valor fixo de receita"; Ricardo Fernandes (RFS) respondeu "sim, exatamente". Registrado em CLAUDE.md (pendências com data) e PENDENCIAS.md para a apuração de 10/2026.
+
+## 28l. Revisão ISSQN e fechamento municipal pendentes (09/10/2026, export da Controle_Fiscal de 09/10)
+- **Guias ISSQN Set/2026 `Pendente` (vcto 13/10, sem comprovação G-Click):** 205 L S Becker R$ 1.915,06; 257 B2B R$ 6.500,00. Demais: `Enviado` (com G-Click) ou `Sem movimento`. 152: GUIA ISSQN e GUIA ISSQN - FORA MUNICÍPIO com mesmo valor (R$ 461,69) e mesma observação: conferir duplicidade.
+- **Sem declaração/guia lançada:** 185 (RJ), 227 (inativa até 09/2026), 247 (Montenegro, DMS fora do DecWeb).
+- **Serviços Tomados/Prestados em branco em Set/2026 (conferência XML x Portal x Domínio):** 2, 16, 18, 26, 117, 126, 133, 152, 155, 173, 177, 189, 205, 209, 237, 238, 241, 257, 258, 263 (e 185, 227, 247). Candidatos a Prestados `Sem movimento` (receita zero na declaração): 2, 26, 117, 133, 209, 237, 258 (117 e 258 já confirmados sem Emitidas no Portal). Com `Pendente` correto por regra (aguardando Domínio): 71 Prestados; 197 Tomados; 261 Tomados e Prestados.
+- **Ago/2026 ainda com `Pendente` no export** (CLAUDE.md diz agosto fechado): 2, 18, 71 (2), 138, 152 (2), 155, 185, 227 (4), 237, 241 (3), 247, 248 (2), 257 (2), 258 (2), 261, 263 (2); Jul/2026: 177, 238 (2), 248, 263. Conferir se são linhas desatualizadas.
