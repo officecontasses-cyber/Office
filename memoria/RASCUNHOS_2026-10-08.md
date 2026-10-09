@@ -26,7 +26,7 @@ Essa operação de mútuo não chegou até mim durante o trimestre; só tomei co
 **4. Obrigações acessórias a revisar** (conforme o que aprovarmos)
 - DCTF: retificar o período do 2º trimestre, se houver complemento, e informar o do 3º; verificar se o IOF recolhido (código 1150) exige informação na DCTF.
 - EFD-Contribuições: manter a conta de juros fora da base de PIS e COFINS (a confirmar, item 2).
-- EFD-Reinf: a CBR deve informar o IRRF retido (R-4020) quando pagar os juros; vou avisá-los. Pela Conte, não há evento neste momento.
+- EFD-Reinf: a CBR deve informar o IRRF retido (R-4020) quando pagar os juros. Pela Conte, não há evento neste momento.
 - Controle fiscal da casa: incluir o DARF de IOF e o complemento do 2º trimestre nas obrigações de outubro.
 
 **5. O que aguardo do seu retorno**
