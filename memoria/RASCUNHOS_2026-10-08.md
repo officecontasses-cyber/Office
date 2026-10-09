@@ -20,11 +20,11 @@ Revisei o DARF e o mútuo pelo lado fiscal (apuração e obrigações acessória
 - **PIS e COFINS:** pelo LeFisc (matéria editorial, não norma) não incidem sobre esses juros, desde que o mútuo não seja atividade habitual da Conte.
 - **IRRF:** quando a CBR pagar os juros (1ª parcela em 10/01/2027), ela deve reter pela tabela regressiva (IN RFB 1.585/2015, arts. 46 e 47: de 22,5% a 15%, conforme o prazo). A faixa depende da contagem do prazo, a definir. A Conte deduz o IRRF na apuração do trimestre.
 
-**3. 2º trimestre/2026: complemento**
-Os juros de 05 a 30/06 (R$ 2.109,28) pertencem ao 2º trimestre e não entraram na apuração, cujo DARF (R$ 210.949,29) venceu em 31/07. O complemento é de **R$ 717,16** (IRPJ R$ 316,39, adicional R$ 210,93, CSLL R$ 189,84), com multa de mora e juros Selic (multa estimada em R$ 143,43 pela regra de 0,33% ao dia, limitada a 20%; a calcular na emissão). Proponho emitir esse complemento junto com a apuração do 3º trimestre, e preciso da sua autorização, porque gera custo de multa e juros.
+**3. 2º trimestre/2026: precisa de revisão**
+Essa operação de mútuo não chegou até mim durante o trimestre; só tomei conhecimento agora, pelo seu e-mail do DARF. Por isso os juros de 05 a 30/06 (R$ 2.109,28) não foram considerados na apuração do 2º trimestre, cujo DARF (R$ 210.949,29) venceu em 31/07. Precisamos revisar essa apuração. Pelas minhas contas o efeito seria de **R$ 717,16** (IRPJ R$ 316,39, adicional R$ 210,93, CSLL R$ 189,84), com multa de mora e juros Selic (multa estimada em R$ 143,43, pela regra de 0,33% ao dia limitada a 20%; a calcular na emissão). Antes de emitir qualquer complemento, preciso da sua orientação, porque gera custo de multa e juros. Proponho revisar o 2º trimestre junto com a apuração do 3º. Também peço que operações como empréstimos, mútuos e aportes cheguem ao fiscal no momento em que ocorrem, para entrarem na apuração do período correto.
 
 **4. Obrigações acessórias a revisar** (conforme o que aprovarmos)
-- DCTF: retificar o período do 2º trimestre com o complemento e informar o do 3º; verificar se o IOF recolhido (código 1150) exige informação na DCTF.
+- DCTF: retificar o período do 2º trimestre, se houver complemento, e informar o do 3º; verificar se o IOF recolhido (código 1150) exige informação na DCTF.
 - ECF: refletir a receita financeira do mútuo nos trimestres de 2026.
 - EFD-Contribuições: manter a conta de juros fora da base de PIS e COFINS (a confirmar, item 2).
 - EFD-Reinf: a CBR deve informar o IRRF retido (R-4020) quando pagar os juros; vou avisá-los. Pela Conte, não há evento neste momento.
@@ -32,7 +32,7 @@ Os juros de 05 a 30/06 (R$ 2.109,28) pertencem ao 2º trimestre e não entraram 
 
 **5. O que aguardo do seu retorno**
 1. Se o DARF de outubro é de um novo mútuo (e, se for, o contrato e os comprovantes dos PIX) ou se repete junho.
-2. Autorização para o complemento do 2º trimestre e para incluir os juros do mútuo por competência na apuração.
+2. Sua orientação sobre a revisão do 2º trimestre (e eventual complemento) e a autorização para incluir os juros do mútuo por competência na apuração.
 3. Contrato assinado, comprovante de pagamento do DARF de junho e extrato de outubro.
 
 **Extra (revisei com o apoio do Claude; fica a seu critério avaliar)**
