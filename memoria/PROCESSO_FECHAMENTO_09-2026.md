@@ -311,3 +311,10 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - **Serviços Tomados/Prestados em branco em Set/2026 (conferência XML x Portal x Domínio):** 2, 16, 18, 26, 117, 126, 133, 152, 155, 173, 177, 189, 205, 209, 237, 238, 241, 257, 258, 263 (e 185, 227, 247). Candidatos a Prestados `Sem movimento` (receita zero na declaração): 2, 26, 117, 133, 209, 237, 258 (117 e 258 já confirmados sem Emitidas no Portal). Com `Pendente` correto por regra (aguardando Domínio): 71 Prestados; 197 Tomados; 261 Tomados e Prestados.
 - **Ago/2026 ainda com `Pendente` no export** (CLAUDE.md diz agosto fechado): 2, 18, 71 (2), 138, 152 (2), 155, 185, 227 (4), 237, 241 (3), 247, 248 (2), 257 (2), 258 (2), 261, 263 (2); Jul/2026: 177, 238 (2), 248, 263. Conferir se são linhas desatualizadas.
 - 09/10 17:48: **205 L S Becker**, guia ISSQN R$ 1.915,06 (venc. 13/10) subida e enviada ao cliente no G-Click (print). TSV `Enviado` entregue. Segue pendente a guia do 257 (aguarda a resposta do cliente sobre a retenção da nota 31) e o REINF do 205.
+
+## 28m. SPED ICMS Tacom 138 e 248: recibos (09/10/2026)
+- Fernanda: a Leidislaine já transmitiu; falta registrar na planilha e subir os recibos no G-Click. Recibos no Drive (pasta do 138/248, salvos 08/10).
+- **138** (CNPJ …/0002-62, IE RS, perfil A): recebido pelo SERPRO em 07/10/2026 10:13:48, hash 20AF8EEFF931734B8EE356D16599A157, remessa original, débitos/créditos/ICMS a recolher R$ 0,00, saldo credor R$ 17.385,19. O `.txt` do Drive (06/10 18:06) tem 6 C100 (4 retornos CFOP 2.916 e 2 remessas 6.915) e nenhuma compra CFOP 1.556; hash não conferido. **Provável retificadora (pós-fechamento, registrado na seção J da PENDENCIAS).**
+- **248** (CNPJ …/0020-03, IE SC, perfil B): recebido em 07/10/2026 10:23:16, hash 2F1C93028E7F35F11C60662CE06B7440, remessa original, tudo R$ 0,00; arquivo sem NF-e, coerente. NF-e 123 (R$ 15,00) segue fora.
+- TSV entregue (138 recibo; 248 envio e recibo, `Enviado`). Número do recibo não transcrito (leitura do PDF embaralhada).
+

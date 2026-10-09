@@ -3,7 +3,7 @@
 Documento vivo. **A cada rodada:** atualizar este arquivo (o que foi feito e o que falta), o log detalhado
 `PROCESSO_FECHAMENTO_09-2026.md` e salvar o snapshot `PENDENCIAS_E_RESOLVIDOS_AAAA-MM-DD.md` na pasta
 `ARQUIVOS EXTENSÃO - CODE - CLAUDE` do Drive (regra da Fernanda, 02/10 e 04/10/2026).
-Última atualização: **06/10/2026, noite (rodada de 05 e 06/10 registrada na seção K, logo abaixo).**
+Última atualização: **09/10/2026 (recibos SPED 138/248 e retificadora do 138 anotada na seção J); antes: 06/10/2026, noite (rodada de 05 e 06/10 registrada na seção K, logo abaixo).**
 
 Convenção: `[ ]` pendente · `[x]` resolvido · `(?)` precisa de confirmação da Fernanda.
 Nunca registrar aqui senhas, CPFs completos ou certificados.
@@ -38,7 +38,7 @@ Competência das NFS-e tomadas: campo `dCompet` do XML.
 ### Tacom 138 (fiscal e cálculo pela matriz)
 - [x] **Tomados NFS-e:** as 9 notas da prefeitura (R$ 28.980,50) conciliadas com o Domínio; **Entradas** (8 NF-e R$ 26.607,36 + 9 NFS-e) e **Saídas** (2 NF-e R$ 40.161,90) conferem com o txt do SEFAZ RS e com os XMLs. ICMS do mês zero; saldo credor R$ 17.385,19 vai para 10/2026.
 - [x] **GIA RS 09/2026** transmitida (protocolo TED 13542570, 06/10 15:15:59; recibo definitivo depois).
-- [ ] **URGENTE: SPED Fiscal 09/2026 sem 4 NF-e** de compra CFOP 1.556 (R$ 657,96, acumulador 106). Regerar e conferir antes de a Leidislaine transmitir (até 08/10); `SPED ICMS - Envio arquivo` fica `Pendente` até lá. Depois, `SPED ICMS (Recibo)`.
+- [ ] **SPED Fiscal 09/2026 transmitido em 07/10 (provavelmente sem as 4 NF-e** de compra CFOP 1.556; retificadora pós-fechamento, ver seção J) (R$ 657,96, acumulador 106). Regerar e conferir antes de a Leidislaine transmitir (até 08/10); `SPED ICMS - Envio arquivo` fica `Pendente` até lá. Depois, `SPED ICMS (Recibo)`.
 - [ ] TSV da fila (`TSV_TACOM_138_09-2026.md`): a Fernanda cola (Tomados/Entradas/Saídas `Importado`, Guia ICMS `Sem movimento`, GIA `Enviado`, SPED envio `Pendente`, recibo `Pendente`).
 - [ ] **Após o fechamento (seção J):** acumulador 800 (183/184), CST 410 (acumulador 1007), INSS retido R$ 175,30 da Ellu's 1353 (R-2010 do 138; conferir a 1317 de agosto), produtos 12805/12806/17055/20932/21353 (cClassTrib) e CEST do 20932, PIS/COFINS no acumulador 106, Pluxee R$ 0,00; avisar a matriz sobre as remessas 4698/4699 com IBS/CBS (rascunho em `RASCUNHOS_2026-10-06.md`, item 2).
 
@@ -158,7 +158,8 @@ Competência das NFS-e tomadas: campo `dCompet` do XML.
 
 ## J. REVISAR APÓS OS FECHAMENTOS: Reforma Tributária (IBS/CBS) e cadastros no Domínio (registrado em 06/10/2026)
 
-- [ ] **URGENTE Tacom 138, SPED Fiscal 09/2026 (conferir antes da Leidislaine transmitir, até 08/10):** o arquivo gerado em 06/10 traz só 6 NF-e (C100: 4 retornos CFOP 2.916 e 2 remessas CFOP 6.915). As 4 compras CFOP 1.556 que estão no Domínio e no SEFAZ (ZRZ 4917, Fortpel 1558521, Beller 23640 e 10504, R$ 657,96, acumulador 106) não estão no SPED (em agosto a compra de uso e consumo CFOP 2.556, acumulador 206, entrou). Verificar a configuração do acumulador 106 e gerar de novo; avisar a Leidislaine.
+- [ ] **PÓS-FECHAMENTO, Tacom 138: provável RETIFICADORA do SPED Fiscal 09/2026 (registrado em 09/10/2026).** A Leidislaine transmitiu em **07/10/2026 10:13:48** (recibo `138_Tacom_PortoAlegre_09.2026_ReciboSPEDICMS.pdf`, hash 20AF8EEFF931734B8EE356D16599A157, saldo credor R$ 17.385,19). O `.txt` do Drive (06/10 18:06) tem só 6 NF-e e **não tem as 4 compras CFOP 1.556** (R$ 657,96, acum. 106). Hash do `.txt` não foi calculado: se foi esse arquivo, o SPED saiu sem as compras e precisa de retificação (confirmar com a Leidislaine qual arquivo ela transmitiu). Fazer depois do fechamento: acertar o acumulador 106, regerar, pedir a retificadora e registrar o novo recibo. TSV do recibo entregue com essa ressalva.
+- [x] (histórico) Tacom 138, SPED Fiscal 09/2026 (era urgente até 08/10; transmitido em 07/10, ver item acima): o arquivo gerado em 06/10 traz só 6 NF-e (C100: 4 retornos CFOP 2.916 e 2 remessas CFOP 6.915). As 4 compras CFOP 1.556 que estão no Domínio e no SEFAZ (ZRZ 4917, Fortpel 1558521, Beller 23640 e 10504, R$ 657,96, acumulador 106) não estão no SPED (em agosto a compra de uso e consumo CFOP 2.556, acumulador 206, entrou). Verificar a configuração do acumulador 106 e gerar de novo; avisar a Leidislaine.
 
 Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para ser revisado depois do fechamento, sem pressa agora.
 
