@@ -57,6 +57,10 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
   ref. 06/2026** (Relatório Fiscal de 21/08/2026, enviado pela Júlia Rocha) **+ o IRPJ e a CSLL vencidos de meses anteriores**.
   (Pedido de 02/10/2026; a Controle_Fiscal tem a observação nas linhas DARF IRPJ e DARF CSLL do 238.)
 
+- **RF CONSULTORIA (cliente 2, a confirmar) — apuração de 10/2026 (feita em novembro):** o Ricardo Fernandes (RFS) confirmou em 09/10/2026
+  que **a partir de 10/2026 a receita de aluguéis deixa de ter valor fixo**: passa a valer o **faturamento mensal**. Não repetir o valor
+  de meses anteriores; pedir ao cliente o valor do mês antes de apurar (e conferir com as notas/recibos). Ver `memoria/PENDENCIAS.md`.
+
 ## Prazos que já erramos
 
 - **ISSQN de Porto Alegre, competência 09/2026, vence 13/10/2026** — está impresso na própria guia do

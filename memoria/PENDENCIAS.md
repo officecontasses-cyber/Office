@@ -55,6 +55,7 @@ Competência das NFS-e tomadas: campo `dCompet` do XML.
 ---
 
 ## PENDENTE
+- [ ] **Apuração de 10/2026 (novembro) — RF Consultoria (cliente 2, a confirmar):** Ricardo Fernandes (RFS) confirmou por e-mail em 09/10/2026 que a partir de 10/2026 a receita de aluguéis **não é mais valor fixo**, e sim o **faturamento mensal**. Pedir o valor do mês ao cliente antes de apurar; não usar o valor fixo dos meses anteriores; conferir com as notas/recibos e refletir em FAT, PIS/COFINS e demais obrigações do mês. (A mensagem original da Júlia e a imagem colada no e-mail não foram vistas por mim: confirmar o cliente e o contrato/valor anterior.)
 
 ### A. SEGUNDA 05/10, PRIMEIRO HORÁRIO (mensagens e ligações; textos prontos em `RASCUNHOS_2026-10-05.md`) — (?) a Fernanda não informou o resultado; confirmar
 - [ ] **Antes das 11:00: ligar para a Leidislaine (Tacom)** e combinar o acesso à máquina dela (e-mail sem retorno até 03/10). SPED Fiscal da Tacom: a Fernanda prometeu os arquivos até **qua 07/10** (ela transmite até 08/10). (?) vale para 138, 263 ou ambas?
