@@ -42,3 +42,11 @@ Observação: os cálculos são estimativas, baseadas no contrato e em pesquisa 
 
 Att.
 Fernanda
+
+## Cliente 257 B2B: confirmação da retenção do ISS da nota 31 (versão de 09/10/2026, para enviar hoje)
+
+**WhatsApp**
+Bom dia! Aqui é a Fernanda, da OfficeCont. Fechando o ISS de Porto Alegre de setembro da B2B, a nota 31 (LIFECOMBR TELECOMUNICAÇÕES, R$ 130.000,00) está como NÃO retida, ou seja, o ISS de R$ 6.500,00 (5%) fica por conta da B2B. A nota 32 (TELEFÔNICA) veio com retenção. Precisamos confirmar: a Lifecombr realmente não reteve o ISS, ou a nota deveria ter sido emitida com retenção? A guia vence terça, 13/10 (segunda, 12/10, é feriado). Se não tivermos retorno até segunda, enviamos a guia de R$ 6.500,00 para pagamento, para não vencer. Pode nos confirmar hoje? Obrigada!
+
+**E-mail** — Assunto: B2B | ISS Porto Alegre 09/2026: confirmação da retenção na nota 31 (vence 13/10)
+Olá, [nome]. Na apuração do ISSQN de setembro/2026 de Porto Alegre, a nota 31 (LIFECOMBR TELECOMUNICAÇÕES LTDA, R$ 130.000,00, serviço 10.05) consta como "Não retido", gerando ISS de R$ 6.500,00 a recolher pela B2B. A nota 32 (TELEFÔNICA BRASIL S.A., R$ 15.250,72, ISS R$ 762,54) consta como retida pelo tomador. Vocês confirmam que a Lifecombr não reteve o ISS? Se a retenção devesse ter ocorrido, nos avisem para avaliarmos a correção da declaração antes do vencimento. A guia vence em 13/10/2026 (12/10 é feriado); se não tivermos retorno até segunda-feira, enviaremos a guia de R$ 6.500,00 para pagamento, para que não vença sem recolhimento. Obrigada, Fernanda, OfficeCont.
