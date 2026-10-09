@@ -317,4 +317,4 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - **138** (CNPJ …/0002-62, IE RS, perfil A): recebido pelo SERPRO em 07/10/2026 10:13:48, hash 20AF8EEFF931734B8EE356D16599A157, remessa original, débitos/créditos/ICMS a recolher R$ 0,00, saldo credor R$ 17.385,19. O `.txt` do Drive (06/10 18:06) tem 6 C100 (4 retornos CFOP 2.916 e 2 remessas 6.915) e nenhuma compra CFOP 1.556; hash não conferido. **Provável retificadora (pós-fechamento, registrado na seção J da PENDENCIAS).**
 - **248** (CNPJ …/0020-03, IE SC, perfil B): recebido em 07/10/2026 10:23:16, hash 2F1C93028E7F35F11C60662CE06B7440, remessa original, tudo R$ 0,00; arquivo sem NF-e, coerente. NF-e 123 (R$ 15,00) segue fora.
 - TSV entregue (138 recibo; 248 envio e recibo, `Enviado`). Número do recibo não transcrito (leitura do PDF embaralhada).
-
+- Pós-fechamento (pedido da Fernanda, 09/10): 248, lançar a NF-e 123 e avaliar retificadora do SPED ICMS; anotado na seção J da PENDENCIAS.
