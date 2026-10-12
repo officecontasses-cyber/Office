@@ -213,3 +213,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - 238 REINF: conferir IRRF na nota Atlas (natureza 15044 inclui IR 1708) e tipos de serviço do R-2010 (493 -> 100000025; 494 -> 100000001) na tabela vigente. Ver log 28s.
 
 - REGRA (12/10/2026, Fernanda): sempre que criar/atualizar uma skill, copiar o arquivo para a pasta ARQUIVOS EXTENSÃO - CODE - CLAUDE do Drive, com o NOME DA SKILL (ex.: conciliacao-retencoes-servicos-tomados.md). Já no Drive: conciliacao-retencoes-servicos-tomados.md (id 1MgXNeMeJFgFM1z7Vnl0pFnnXM5Dst-lB); conciliador-tributario-fiscal está como SKILL.md (id 1DTjkH9VeUwSG2mGL1dxVZ1HoDnBWXvBd), renomear se ela quiser.
+- 238 REINF: relatório de conferência OK; falta recibo (R-2010, R-4020, R-2099) para TSV; DARF 5952 R$ 141,86 e IRRF 1708 R$ 17,75 (venc. CSRF 20/10); INSS R$ 1.295,45 via DCTFWeb. Ver log 28u.
