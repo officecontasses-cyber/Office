@@ -59,7 +59,7 @@ Competência das NFS-e tomadas: campo `dCompet` do XML.
 
 ### A. SEGUNDA 05/10, PRIMEIRO HORÁRIO (mensagens e ligações; textos prontos em `RASCUNHOS_2026-10-05.md`) — (?) a Fernanda não informou o resultado; confirmar
 - [ ] **Antes das 11:00: ligar para a Leidislaine (Tacom)** e combinar o acesso à máquina dela (e-mail sem retorno até 03/10). SPED Fiscal da Tacom: a Fernanda prometeu os arquivos até **qua 07/10** (ela transmite até 08/10). (?) vale para 138, 263 ou ambas?
-- [ ] **257 (WhatsApp + e-mail, seção 1):** perguntar se a Lifecombr (nota 31, R$ 130.000,00, item 10.05) deveria ter retido o ISS de R$ 6.500,00 (guia vence 13/10).
+- [x] (resolvido em 12/10, ver seção B) **257 (WhatsApp + e-mail, seção 1):** perguntar se a Lifecombr (nota 31, R$ 130.000,00, item 10.05) deveria ter retido o ISS de R$ 6.500,00 (guia vence 13/10).
 - [ ] **E-mail ao Gian, 152 (seção 2):** ISS de Florianópolis (nota 6940 da Litoral Serviços Automotivos, R$ 42,00, incidência Florianópolis/SC, ISS 0,00 no Portal): recolheram ou ele já tem acesso lá? Gian é interno (responsável contábil nos cadastros de São Leopoldo), não contato do cliente.
 - [ ] **Gian, 265:** liberar a **procuração eletrônica** (REINF deu erro 15 no Domínio); conferir no OWA (Itens Enviados) se o e-mail sobre o certificado do 258 (vence 14/10) foi enviado (rascunho de 03/10).
 - [ ] **Inês (seção 5):** pedir o movimento de setembro de **18, 177 e 133** (pasta `001_DOCUMENTOS DIGITALIZADOS` > `09_SETEMBRO` vazia nos três; e-mail dela não conferido daqui) e perguntar se a **Datasys** reteve imposto nas notas de 29/09 (18: nº 11, R$ 2.100,00; 177: nº 13, R$ 26.520,00). 133: nota tomada nº 18 de MEI, R$ 300,00.
@@ -69,7 +69,7 @@ Competência das NFS-e tomadas: campo `dCompet` do XML.
 ### B. ISSQN de 09/2026 — Porto Alegre (DecWeb, 22 de 22 enviadas; guias vencem 13/10)
 - [x] **205 (R$ 1.915,06):** G-Click 09/10/2026 17:48 (Guia ISS + Envio ao cliente, fernanda.officecont); TSV `Enviado` entregue. Falta conferir o REINF do 205 (R-2099 não consta na lista de enviados). (nota 197 é a substituta da 196; `conciliacao.py` já corrigido.)
 - [x] **155 Mainieri (08/10):** retificadora 1 enviada (recibo 08/10 09:39:11, receita R$ 22.676,34, ISS R$ 907,02); guia nova R$ 907,02 (venc. 13/10) com G-Click 10:11 e envio ao cliente 10:12; TSV Enviado entregue. FAT2026 L4 = 22.676,34 a digitar (L14 já calcula 4%). A guia antiga de R$ 842,02 não vale. FAT de agosto (K4 22.477,87) conferida pela Fernanda em 08/10: está OK, sem retificadora.
-- [ ] **257 (R$ 6.500,00):** aguarda a resposta do cliente (item A).
+- [x] **257 (R$ 6.500,00):** resolvido em 12/10/2026 (Fernanda): guia ISSQN gerada e enviada ao cliente, G-Click Guia ISS e Envio ao cliente 12/10/2026 09:56 (fernanda.officecont), venc. 13/10; guia ficou como estava (sem alteração de valor). TSV `Enviado` R$ 6.500,00 entregue. A etiqueta "Ret" vermelha ao lado da Guia ISS no G-Click não foi explicada.
 - [ ] **152:** ISS retido total R$ 568,44 = R$ 461,69 POA + **R$ 106,75 Estrela/RS** (ENGI PROJECT, notas 1146 e 1218): **fazer junto com a Fernanda no portal de Estrela** (baixar as notas e declarar); marcar horário. Em agosto foram R$ 25,63 (venc. 23/09).
 - [ ] **2 RF Consultoria:** guia ISSQN em branco (não confirmado) até a resposta do cliente. **247 Montenegro:** DMS fora do DecWeb.
 - [ ] Rodrigo Tavares Lopes (mesmo CPF) consta como profissional nos clientes 16 e 173: conferir.

@@ -318,3 +318,8 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 - **248** (CNPJ …/0020-03, IE SC, perfil B): recebido em 07/10/2026 10:23:16, hash 2F1C93028E7F35F11C60662CE06B7440, remessa original, tudo R$ 0,00; arquivo sem NF-e, coerente. NF-e 123 (R$ 15,00) segue fora.
 - TSV entregue (138 recibo; 248 envio e recibo, `Enviado`). Número do recibo não transcrito (leitura do PDF embaralhada).
 - Pós-fechamento (pedido da Fernanda, 09/10): 248, lançar a NF-e 123 e avaliar retificadora do SPED ICMS; anotado na seção J da PENDENCIAS.
+
+## 28n. 257 B2B: guia ISSQN enviada (12/10/2026)
+- Print do G-Click: tarefa ISSQN SET/2026, cliente 257 B2B Soluções, Guia ISS e Envio ao cliente em 12/10/2026 09:56 (fernanda.officecont), vencimento 13/10, etiqueta "Ret" na Guia ISS (significado não confirmado). Fernanda: pendência resolvida e guia enviada ao cliente; a guia ficou como estava. TSV `GUIA ISSQN` `Enviado` R$ 6.500,00 entregue (valor da memória; o print não mostra o valor).
+- Restam no 257 (ICMS, contribuinte): ENTRADAS, SAÍDAS, GUIA ICMS (13/10), GIA RS e SPED ICMS (15/10) em branco na Controle de 09/10.
+
