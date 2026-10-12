@@ -204,3 +204,7 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - REINF 205 (09/2026): R-2099 enviado com sucesso, recibo 12260744-01-2099-2609-12260744, 12/10 11:49. Pendente: G-Click e conferir cadastro duplicado '1205' no Domínio. Próximos: 238, 152, 71, 227, 265.
 
 - 238 REAT (REINF 09/2026): conciliado Portal x Prefeitura x Domínio; Domínio só tem a nota 19764. Lançar as outras 7 notas no Domínio (STV 20038, Prime System 493/494 etc.), reexportar Retenções a Recolher e depois R-4020 (CRF/IRRF), R-2010 (INSS Prime System) e R-2099. Ver log 28q.
+
+- REGRA (12/10/2026): antes de montar REINF/retenções de qualquer cliente, conciliar Domínio x Portal Nacional x Prefeitura.
+- PÓS-FECHAMENTO 238: acumuladores 1005/1006 sem IBS/CBS (notas 20038, 21748, 21806) e data de entrada da nota 555002 (Telefônica). Ver log 28r.
+- 238 REINF: conferir pontos (1) a (6) do log 28r, depois R-2010, R-4020 e R-2099.

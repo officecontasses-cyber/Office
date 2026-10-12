@@ -343,3 +343,13 @@ Portal (Recebidas, 8 notas, R$ 16.180,90): ISS retido 609,54 = Declaração Mens
 Domínio (Entradas + Retenções a Recolher 09/2026): só nota 19764 Atlas (CRF 59,32). Faltam no Domínio 7 notas.
 Retenções no Portal não refletidas no Domínio: STV 20038 (CRF 82,54 + IRRF 17,75); Prime System 493/494 (INSS 1.017,39 + 278,06 = 1.295,45, mão de obra 17.05.01 -> R-2010).
 Conclusão: REINF do 238 não deve ser enviado antes de lançar as notas no Domínio e reexportar Retenções a Recolher. Pendente: Serviços Tomados 238 segue Pendente. Verificar data de pagamento (fato gerador R-4020): Atlas venc. 10/10, STV 05/10.
+
+## 28r. 238 REAT — reconciliação após reimportação (12/10/2026 ~12:07)
+Domínio agora: 7 notas (R$ 15.730,90 = Portal 16.180,90 menos nota 121 Castro, competência 08/2026). Retenções a Recolher: IRRF 17,75 (STV 20038), ISS ret 609,54 (493, 494, 994), CRF 141,86 (STV 82,54 + Atlas 59,32), INSS 1.295,45 (493, 494); total 2.064,60 = Portal. Bate com Declaração Mensal PA (ISS 609,54).
+Pontos de atenção: (1) IRRF STV aparece com alíq. 1,50% mas valor 17,75 = 1%; verificar alíquota/código (1% x 1,5% = diferença R$ 8,87). (2) Primegrid 994 (07.02.01, 'abastecimento de gerador'): sem CRF; verificar enquadramento. (3) Atlas: sem IRRF; verificar. (4) Prime System é ME/EPP (Simples): sem IRRF/CRF, INSS 11% retido; verificar declaração do Simples arquivada. (5) fato gerador do R-4020 = pagamento (Atlas venc. 10/10, STV 05/10): confirmar data de pagamento. (6) Notas 21748 Atlas (06/10) e 21806 STV (07/10) são de outubro: fora de setembro.
+REINF 238: R-2010 (Prime System, INSS 1.295,45), R-4020 (Atlas CRF; STV IRRF+CRF), depois R-2099. Naturezas no Domínio: 15044 (Atlas), 15045 (STV); códigos de receita mostrados: 170806 (IRRF), 595207 (CRF), 1162 (INSS): conferir na tabela da Receita.
+## Pós-fechamento (advertências da importação XML, 12/10)
+- Notas 20038, 21748, 21806: imposto 183-IBS e 184-CBS não relacionados ao acumulador 1005/1006 ("dados serão descartados"): ajustar acumuladores no pós-fechamento.
+- Nota 555002 Telefônica: data de entrada 07/09 anterior à emissão 10/09: corrigir data de entrada (pós-fechamento).
+## Regra para as próximas rodadas
+Antes de qualquer REINF/retenção, conciliar Domínio x Portal Nacional x Prefeitura (Recebidas e Declaração Mensal) e só então enviar.
