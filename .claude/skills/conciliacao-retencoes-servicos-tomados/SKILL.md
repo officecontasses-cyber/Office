@@ -131,7 +131,7 @@ Ressalvas (🟡): (i) a tabela abaixo é correlação de consultoria, não ofici
 
 Pontos de atenção da tabela:
 - **Confirma o que o Domínio usou no 238:** 15044 = Conservação/Manutenção (Atlas, item 14.01) e 15045 = Segurança/Vigilância (STV, item 11.02). 🟡 (conferência com a tabela de consultoria, não com o Manual vigente.)
-- 15044 traz **IR 1708 e agregado 5952**: logo, o IRRF da manutenção/conservação é uma questão real a verificar (no 238 só houve CRF na nota Atlas).
+- 15044 traz **IR 1708 e agregado 5952**: logo, o IRRF da manutenção/conservação é uma questão real a verificar (no 238 só houve CRF na nota Atlas). Resolvido no 238 pelo LeFisc: o IRRF do art. 716 incide só sobre limpeza e conservação de **bens imóveis** (1%, código 1708); manutenção de elevadores fica sem IRRF.
 - 15003 a 15042 e 15099 são serviços profissionais e técnicos; 15043 a 15046 são limpeza, conservação, vigilância e mão de obra, que na prática de retenção têm IRRF de 1% e CSRF (ver seção 3).
 - Item **10.05** (corretagem de bens móveis/imóveis, caso real da 257) **não aparece** na correlação; a tabela mapeia comissões/corretagens ao item 10.09 (15052, DARF 8045). Para 10.05 usar o código 8045 e registrar ⚠️ (usado na 257).
 - Códigos de natureza com a minuta v3.0/2019 (numeração de 9 dígitos, ex.: 500000052) **não** são os do Domínio: não usar.
@@ -172,7 +172,7 @@ Pontos de atenção da tabela:
 | 100000030 | Telefonia ou telemarketing |
 | 100000031 | Trabalho temporário na forma da Lei nº 6.019/1974 |
 
-Aplicação ao 238 (Prime System): nota 493 (recepcionista, item 17.05.01) → 100000025; nota 494 (limpeza e conservação) → 100000001. Selecionar pelo **serviço efetivamente prestado**, não pelo item da LC 116.
+Aplicação ao 238 (Prime System): nota 493 (recepcionista, item 17.05.01) → 100000025; nota 494 (limpeza e conservação) → 100000001. Selecionar pelo **serviço efetivamente prestado**, não pelo item da LC 116. Esses tipos foram usados no envio do 238 em 12/10/2026 e constam no relatório de conferência.
 
 Tabela de trabalho (preencher a cada conciliação):
 
@@ -187,8 +187,9 @@ Como diferenciar naturezas parecidas: o texto do serviço prevalece sobre o tít
 | Tributo | Alíquota | Base | Recolhimento | Selo |
 |---|---|---|---|---|
 | **IRRF** serviços profissionais e outros serviços de PJ | 1,5% | valor do serviço | DARF; código de receita conforme a natureza (Tabela 01) | 🟡 código |
-| **IRRF** limpeza, conservação, segurança, vigilância, locação de mão de obra | 1% (as skills internas divergem sobre o código DARF; o Domínio mostrou alíquota 1,50 com valor equivalente a 1%) | valor do serviço | DARF | 🟡 alíquota/código, verificar |
-| **CSRF** (CSLL 1% + COFINS 3% + PIS 0,65%) | 4,65% total | valor do serviço | DARF **5952** único (soma dos três) | 🟢 alíquota e 5952 |
+| **IRRF** limpeza e conservação de bens imóveis (LeFisc: art. 716, Decreto 9.580/2018, nota 1) | 1% | valor do serviço | DARF 1708 | 🟢 alíquota e 1708 |
+| **IRRF** segurança, vigilância e locação de mão de obra | 1% (o Domínio pode exibir "1,50" como demonstração; o valor a recolher é o que vale); confirmar a regra no LeFisc | valor do serviço | DARF | 🟡 |
+| **CSRF** (CSLL 1% + COFINS 3% + PIS 0,65%) | 4,65% total | valor do serviço | DARF **5952** único (soma dos três); confissão na DCTFWeb (MIT) como 5952/07 desde os fatos geradores de 01/2025 | 🟢 alíquota e 5952 |
 | **INSS** cessão de mão de obra/empreitada | 11% | valor bruto (a base pode ser reduzida por materiais/equipamentos quando destacados e permitidos) | Reinf R-2010, débito na DCTFWeb | 🟢 11%, 🟡 base e forma de pagamento |
 | **ISS** retido | alíquota do município (mínimo geral 2%, LC 157) | valor do serviço (ou base do item) | guia/DAM do município | 🟢 conceito, 🟡 por município |
 
@@ -207,15 +208,17 @@ Códigos de receita relevantes (lista COD_REC da Receita; confirmar a vigência)
 | 8863 | Bens e serviços adquiridos de sociedades cooperativas e associações profissionais (**tabela de órgãos públicos**) |
 | 6147, 6175, 6188, 6190, 9060, 8739, 8767, 8850 | Retenções **de órgãos públicos federais** (IN RFB 1.234, Anexo I): não se aplicam a tomador privado |
 
-Atenção: no Domínio os códigos aparecem com 6 dígitos (ex.: 170806, 595207). Interpretar como código de receita (1708, 5952) seguido de sufixo de 2 dígitos que **não identifiquei**; confirmar com o suporte do Domínio ou com o leiaute. 🔴
+Atenção: no Domínio e na planilha do DP os códigos aparecem com 6 dígitos (ex.: 170806, 595207). O sufixo `07` de 595207 corresponde à variação 5952/07 da CSRF na DCTFWeb (fonte: LeFisc). O sufixo `06` de 170806 é interpretado como variação equivalente do 1708, **sem confirmação**. 🟡
 
-Prazos (🟡, divergem entre fontes internas, **conferir na legislação vigente**):
-- IRRF: o prazo depende do código de receita; não afirmar de memória. Consultar a regra vigente do código usado.
-- CSRF 5952: as skills internas citam "último dia útil da quinzena seguinte"; a regra atual pode ser "último dia útil do segundo decêndio do mês seguinte". Verificar.
-- INSS retido: prazo da DCTFWeb/guia do mês seguinte. Verificar o dia.
+Prazos:
+- **CSRF 5952 (🟢, LeFisc, art. 35 da Lei 10.833):** até o último dia útil do **2º decêndio do mês subsequente** ao mês dos fatos geradores (fatos de setembro: vence até o último dia útil até 20/10).
+- IRRF (🟡): o prazo depende do código de receita; não afirmar de memória. Consultar a regra vigente do código usado.
+- INSS retido (🟡): prazo da DCTFWeb/guia do mês seguinte. Verificar o dia.
 - ISS retido: lei municipal (Porto Alegre: ver guia gerada no DecWeb; usar a data impressa na guia, nunca regra deduzida).
 
-**Regra do somatório da CSRF** (🟡): a dispensa vale quando o valor a reter (soma dos três tributos) é ≤ R$ 10,00, o que equivale a pagamento ≤ R$ 215,05 (10 ÷ 0,0465). O teste se faz **somando os pagamentos do mês ao mesmo prestador**: quando a soma ultrapassa R$ 215,05, retém-se sobre o total do mês, descontando o que já foi retido. Confirmar a base mensal no texto vigente.
+**Regra do limite de dispensa da CSRF (🟢 LeFisc/Solução de Consulta Cosit 258/2024):** fica dispensada a retenção de valor igual ou inferior a R$ 10,00 (exceto DARF eletrônico via Siafi). O limite é verificado **sobre o valor a ser retido em cada pagamento** (soma das três alíquotas, 4,65%), mesmo que haja mais de um pagamento no mesmo dia. R$ 10,00 ÷ 4,65% = R$ 215,05 de pagamento, referência prática. 🟡 A leitura anterior de "somar os pagamentos do mês" foi substituída por esta, que vem da solução de consulta citada pelo LeFisc.
+
+**Manutenção em caráter isolado (🟢 LeFisc, IN SRF 459/2004 art. 1º §2º II):** não há retenção de CSRF se a manutenção for efetuada em caráter isolado, como mero conserto de bem defeituoso. Manutenção contratada de forma recorrente (ex.: elevadores, mensal) retém.
 
 **Valor abaixo do limite de dispensa:** retenção zero é o resultado **correto**, não divergência. Registrar a conta (valor x 4,65% = X ≤ R$ 10) no relatório.
 
@@ -225,13 +228,14 @@ Sempre exigir comprovação por escrito arquivada com a nota:
 
 | Hipótese | Efeito | Condição a comprovar | Selo |
 |---|---|---|---|
-| Prestador optante do Simples Nacional | Dispensa IRRF e CSRF | Declaração do prestador anexa à nota (modelo da IN RFB 1.234/2012, art. a confirmar); o Portal mostra a opção, mas não substitui a declaração | 🟡 |
+| Prestador optante do Simples Nacional | Dispensa IRRF e CSRF | Declaração do prestador, **em 2 vias assinadas pelo representante legal**, modelo do Anexo I da IN SRF 459/2004 (arts. 3º e 11) e IN RFB 765/2007; o Portal mostra a opção, mas não substitui a declaração. Sem a declaração, o tomador deve reter. | 🟢 (LeFisc) |
 | Simples com cessão de mão de obra/empreitada (serviços do art. 18, §5º-C da LC 123, Anexo IV) | **Não dispensa o INSS 11%** | Enquadramento do serviço | 🟡 |
 | MEI | Sem IRRF/CSRF; INSS 11% só nas atividades de cessão/empreitada permitidas ao MEI (hidráulica, elétrica, pintura, alvenaria, carpintaria, manutenção/reparo de veículos) | CCMEI e atividade | 🟡 |
-| Valor mínimo | CSRF ≤ R$ 10 retido (pagamento mensal ≤ R$ 215,05); IRRF de valor ≤ R$ 10 | Cálculo | 🟡 |
-| Entidades imunes/isentas | Dispensa de IRRF/CSRF conforme a norma | Declaração/comprovação de imunidade ou isenção | 🟡 |
+| Valor mínimo | CSRF: valor a reter ≤ R$ 10,00 por pagamento; IRRF de valor ≤ R$ 10 | Cálculo | 🟢 CSRF / 🟡 IRRF |
+| Cooperativas (CSLL) | Sem retenção de CSLL; PIS e COFINS retidos (cooperativa em geral) | Natureza 15001/15002 e art. 21 da Lei 10.865/2004 | 🟡 |
+| Entidades imunes/isentas | Dispensa de IRRF/CSRF conforme a norma; se isenta só de alguns tributos, retém-se pelos demais (recolhimento individualizado 5987 CSLL, 5979 PIS, 5960 COFINS) | Declaração/comprovação, com o enquadramento legal na nota | 🟡 |
 | Órgãos públicos | Regra própria (Lei 9.430/96 art. 64 e IN RFB 1.234/2012). A Tabela de Retenção do Anexo I tem IR + CSLL + COFINS + PIS por natureza: p.ex. 4,80% de IR (total 9,45%, código 6190) para vigilância, limpeza, locação de mão de obra e demais serviços; **não vale para tomador privado** | Ver skill `conferencia-retencoes-pagamentos-orgao-publico` | 🟡 |
-| Serviço fora da lista das retenções de CSRF | Sem CSRF | Item da lista da Lei 10.833, art. 30 (a nota deve ser enquadrada, não presumida) | 🟡 |
+| Serviço fora da lista das retenções de CSRF | Sem CSRF | Item da lista da Lei 10.833, art. 30: limpeza, conservação, manutenção, segurança, vigilância, transporte de valores, locação de mão de obra, assessoria creditícia/mercadológica, gestão de crédito, seleção e riscos, administração de contas a pagar e a receber, e serviços profissionais (a nota deve ser enquadrada, não presumida). Ex.: "abastecimento de gerador" não consta (decisão do contador). | 🟢 lista / 🟡 enquadramento |
 | ISS: prestador estabelecido em outro município e serviço não listado como retido pelo tomador | Sem retenção pelo tomador; ISS recolhido na origem | Local de incidência (LC 116 art. 3º e 6º e LC 175/2020) e lei municipal | 🟡 |
 
 Cuidados:
@@ -249,7 +253,7 @@ Cruzamentos obrigatórios:
 1. **Nota x Domínio Entradas:** valor contábil, datas (entrada ≥ emissão), CFOP/acumulador, base, alíquota e valor por imposto. A soma por imposto do relatório deve bater com o total da seção "Total Geral".
 2. **Domínio Entradas x Retenções a Recolher:** mesmo fornecedor, nota e valor; total geral das retenções = soma dos totais por imposto.
 3. **Portal x Domínio:** retenção destacada na nota = retenção lançada. Conferir por tributo (IRRF, PIS/COFINS/CSLL, INSS, ISS). Lembrar que o Portal pode trazer retenção de PIS/COFINS/CSLL "não retidos" em campos separados.
-4. **ISS: Domínio x município:** a soma do ISS retido no Domínio deve ser igual ao "imposto retido de contribuinte substituído" da Declaração Mensal (ou do relatório municipal) e da guia.
+4. **ISS: Domínio x município:** a soma do ISS retido no Domínio deve ser igual ao "imposto retido de contribuinte substituído" da Declaração Mensal (ou do relatório municipal) e da guia. Abrir também a relação de serviços tomados do município (`002 ARQUIVOS MUNICIPAIS`).
 5. **Reinf x Domínio:** R-2010 por nota (INSS: valor bruto, base, retenção, tipo de serviço); R-4020 por pagamento (natureza, base, IRRF, CSRF) com data de pagamento; totais do evento = Retenções a Recolher da competência; conferir recibo e se R-2099/R-4099 fecharam.
 6. **Pago/recolhido:** DARF/GPS/guia pagos x valor retido, por código de receita e período de apuração.
 7. **Competência:** nota com competência diferente da pedida fica fora (ex.: competência 08 emitida em setembro; competência de outubro emitida antes). Registrar como "fora da competência" e verificar se foi lançada no mês certo.
@@ -265,7 +269,7 @@ Tolerância: diferença de R$ 0,01 por arredondamento nota a nota é ✅ com obs
 | Retenção a maior | Valor retido > base x alíquota | Estornar o excesso, devolver/compensar com o prestador, retificar DARF/Reinf |
 | Retenção a menor | Valor retido < esperado | Complementar com recolhimento em atraso e retificação |
 | Natureza incorreta | Natureza do Domínio/Reinf não condiz com o item da nota | Corrigir cadastro/lançamento no Domínio e retificar o evento |
-| Dispensa indevida | Dispensa aplicada sem comprovação (declaração do Simples ausente, acumulado que passou do limite) | Obter a declaração ou reter; recolher e retificar |
+| Dispensa indevida | Dispensa aplicada sem comprovação (declaração do Simples ausente, valor a reter acima de R$ 10) | Obter a declaração ou reter; recolher e retificar |
 | Código de recolhimento errado | DARF com código de receita diferente do da natureza | Retificar DARF/PER-DCOMP e ajustar o Reinf |
 | Domínio x Portal | Falta nota, valor, alíquota ou fornecedor | Lançar/corrigir no Domínio (o Domínio espelha o Portal); se o Portal estiver errado, pedir cancelamento/substituição ao prestador |
 | Domínio x município | ISS retido diferente da Declaração Mensal | Corrigir lançamento ou retificar a declaração municipal |
@@ -282,7 +286,7 @@ Regra: divergência é **achado para o contador decidir**, não correção autom
 - [ ] Natureza da prestação e **código de tributação nacional/item LC 116**
 - [ ] É cessão de mão de obra ou empreitada? (INSS 11%)
 - [ ] Local de incidência do ISS e se o tomador é responsável (LC 116 art. 3º/6º, lei municipal)
-- [ ] Acumulado do mês do prestador (teste dos R$ 215,05) e valor líquido a pagar
+- [ ] Valor a reter por pagamento (limite de R$ 10,00 da CSRF) e valor líquido a pagar
 - [ ] Data de pagamento (fato gerador de IRRF/CSRF)
 - [ ] Natureza de rendimento e tipo de serviço conferidos na tabela vigente
 - [ ] Domínio = Portal = município = Reinf = guia paga
@@ -306,17 +310,17 @@ Integração com a rotina da OfficeCont (CLAUDE.md):
 
 ## 9. Exemplos práticos
 
-**Exemplo 1: tudo bate (REAT 238, Atlas, nota 19764).** Serviço 14.01 de R$ 1.275,60, prestador não optante. CSRF: 1.275,60 x 4,65% = 59,32. Portal 59,32, Domínio 59,32, retenção em 5952. ✅ Falta confirmar natureza e data de pagamento.
+**Exemplo 1: tudo bate (REAT 238, Atlas, nota 19764).** Serviço 14.01 de R$ 1.275,60, prestador não optante. CSRF: 1.275,60 x 4,65% = 59,32. Portal 59,32, Domínio 59,32, retenção em 5952, natureza 15044, sem IRRF (manutenção de elevadores não é limpeza/conservação de imóvel). ✅
 
-**Exemplo 2: alíquota divergente (STV, nota 20038).** Vigilância de R$ 1.774,97. Portal: IRRF 17,75 (= 1%). Domínio: alíquota exibida 1,50, valor 17,75. ⚠️ Corrigir a alíquota do cadastro (ou o valor, se a regra vigente for 1,5% = 26,62, diferença de R$ 8,87).
+**Exemplo 2: alíquota exibida diferente (STV, nota 20038).** Vigilância de R$ 1.774,97. Portal: IRRF 17,75 (= 1%). Domínio exibe 1,50 como demonstração, valor a recolher 17,75. ✅ (decisão da Fernanda: o cálculo e o valor a recolher estão corretos).
 
-**Exemplo 3: Simples com INSS (Prime System, notas 493 e 494).** Optante do Simples, mão de obra (17.05.01): sem IRRF/CSRF (dispensa com declaração), INSS 11% retido (1.017,39 e 278,06) e ISS 5% (462,45 e 126,39). Portal = Domínio = Declaração Mensal (ISS total 609,54). ✅ Reinf: R-2010.
+**Exemplo 3: Simples com INSS (Prime System, notas 493 e 494).** Optante do Simples, mão de obra (17.05.01): sem IRRF/CSRF (dispensa com declaração), INSS 11% retido (1.017,39 e 278,06) e ISS 5% (462,45 e 126,39). Portal = Domínio = Declaração Mensal (ISS total 609,54). Sem a declaração do Simples arquivada, IRRF 1% (R$ 117,77) e CSRF 4,65% (R$ 547,63) seriam devidos. ✅ Reinf: R-2010 (tipos 100000025 e 100000001).
 
 **Exemplo 4: abaixo do limite (Telefônica, R$ 13,43, software).** 13,43 x 4,65% = 0,62 ≤ R$ 10. Retenção zero correta. ✅ Registrar a conta.
 
 **Exemplo 5: fora da competência (Castro, nota 121).** Emitida em 11/09, competência 08/2026: não entra em setembro; conferir se foi lançada em agosto. ⚠️
 
-**Exemplo 6: nota duvidosa (Primegrid, nota 994).** "Abastecimento de gerador" lançado como 07.02.01; ISS 3% retido corretamente; Portal diz PIS/COFINS não retidos. ⚠️ Verificar o enquadramento (se fosse manutenção/conservação, CRF de R$ 32,09).
+**Exemplo 6: nota duvidosa (Primegrid, nota 994).** "Abastecimento de gerador" lançado como 07.02.01; ISS 3% retido corretamente; Portal diz PIS/COFINS não retidos. Fora da lista do art. 30 da Lei 10.833: sem CSRF; se fosse enquadrado como manutenção, CRF de R$ 32,09. ⚠️ decisão do contador.
 
 ## 10. Pós-transmissão: registro nas planilhas
 
