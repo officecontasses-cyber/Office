@@ -202,3 +202,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 4. Conferir a planilha Controle_Fiscal antes de repetir uma pendência (a Fernanda pode já ter colado o TSV).
 
 - REINF 205 (09/2026): R-2099 enviado com sucesso, recibo 12260744-01-2099-2609-12260744, 12/10 11:49. Pendente: G-Click e conferir cadastro duplicado '1205' no Domínio. Próximos: 238, 152, 71, 227, 265.
+
+- 238 REAT (REINF 09/2026): conciliado Portal x Prefeitura x Domínio; Domínio só tem a nota 19764. Lançar as outras 7 notas no Domínio (STV 20038, Prime System 493/494 etc.), reexportar Retenções a Recolher e depois R-4020 (CRF/IRRF), R-2010 (INSS Prime System) e R-2099. Ver log 28q.

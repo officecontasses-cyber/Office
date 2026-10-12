@@ -337,3 +337,9 @@ Pasta `001 ARQUIVOS REINF` (18 PDFs: 17 individuais e 1 consolidado): R-2099 Suc
 R-2099 Fechamento, Sucesso, recibo 12260744-01-2099-2609-12260744, 12/10/2026 11:49 (Oficial). Sem movimento (sem retenção como tomador, sem INSS retido sofrido).
 Relatório: `205 - L SCHMELING BECKER ANESTESIOLOGISTA.pdf` (Drive). O mesmo relatório mostra R-1000 (inclusão e alteração, 11:49) em nome da empresa "1205": conferir se o cadastro "1205" no Domínio é duplicado.
 TSV entregue; falta ela confirmar/subir recibo no G-Click. Próximos REINF: 238, 152, 71, 227, 265.
+
+## 28q. 238 REAT — conciliação Portal Nacional x Prefeitura x Domínio (12/10/2026)
+Portal (Recebidas, 8 notas, R$ 16.180,90): ISS retido 609,54 = Declaração Mensal PA (recibo 03/10 14:03:48) OK.
+Domínio (Entradas + Retenções a Recolher 09/2026): só nota 19764 Atlas (CRF 59,32). Faltam no Domínio 7 notas.
+Retenções no Portal não refletidas no Domínio: STV 20038 (CRF 82,54 + IRRF 17,75); Prime System 493/494 (INSS 1.017,39 + 278,06 = 1.295,45, mão de obra 17.05.01 -> R-2010).
+Conclusão: REINF do 238 não deve ser enviado antes de lançar as notas no Domínio e reexportar Retenções a Recolher. Pendente: Serviços Tomados 238 segue Pendente. Verificar data de pagamento (fato gerador R-4020): Atlas venc. 10/10, STV 05/10.
