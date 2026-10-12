@@ -208,3 +208,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - REGRA (12/10/2026): antes de montar REINF/retenções de qualquer cliente, conciliar Domínio x Portal Nacional x Prefeitura.
 - PÓS-FECHAMENTO 238: acumuladores 1005/1006 sem IBS/CBS (notas 20038, 21748, 21806) e data de entrada da nota 555002 (Telefônica). Ver log 28r.
 - 238 REINF: conferir pontos (1) a (6) do log 28r, depois R-2010, R-4020 e R-2099.
+
+- Skill nova (12/10/2026): conciliacao-retencoes-servicos-tomados (repo: .claude/skills/conciliacao-retencoes-servicos-tomados/SKILL.md). Tabela 01 de naturezas NÃO foi incluída (fonte oficial inacessível no ambiente); completar com a tabela vigente da Receita.
