@@ -26,7 +26,7 @@ Escopo: **somente retenções sobre serviços tomados**. Fora do escopo: escritu
 
 ## 0. Legenda de confiança
 
-Esta skill foi escrita sem acesso à Tabela 01 oficial da Receita (o download falhou no ambiente em que foi redigida). Por isso cada regra traz um selo:
+Esta skill foi escrita a partir de: (a) a **Tabela de Correlação da EFD-Reinf (evento R-4020)** fornecida pela Fernanda em 12/10/2026, material de consultoria **sem caráter oficial** (a própria fonte avisa que não existe correlação oficial entre itens da LC 116 e naturezas); (b) o **Anexo I dos Leiautes da EFD-Reinf v3.0, que é uma minuta de agosto/2019** (usada só para a Tabela 06; a numeração de natureza dessa minuta não é a que o Domínio usa); (c) a lista de códigos de receita (COD_REC) da Receita; (d) a Tabela de Retenção do Anexo I da IN RFB 1.234 (pagamentos de **órgãos públicos**, não de empresas privadas). Nada disso substitui o Manual vigente. Cada regra traz um selo:
 
 - 🟢 **Consolidado**: regra estável, conferida entre as skills internas e a prática do escritório.
 - 🟡 **Verificar**: depende de legislação que muda, de número de artigo, de código que não pude confirmar ou de divergência entre fontes. **Confirme na versão vigente antes de aplicar** e diga isso ao usuário.
@@ -61,27 +61,125 @@ Passos:
 
 ## 2. Naturezas de rendimento (EFD-Reinf)
 
-🔴 **Atenção:** esta skill **não lista a tabela de códigos de memória**. A natureza de rendimento (Tabela 01) é campo obrigatório do R-4010/R-4020, muda por leiaute e um código errado gera retenção/recolhimento em código errado. Procedimento:
+### 2.1 Como escolher a natureza (R-4020, pagamentos a PJ)
+1. Partir do **código de tributação nacional/item da LC 116** da nota (Portal) e da **descrição do serviço**.
+2. Achar a natureza na tabela 2.2 (a coluna de itens é só referência interpretativa).
+3. Conferir se o **código de receita** da natureza (IR e/ou agregado 5952) é o que o Domínio mostra em "Cód. Rec." na Retenções a Recolher.
+4. Na dúvida entre duas naturezas, ficar com a de **descrição mais específica**; se nenhuma serve, usar **15099** (demais serviços técnicos, de assistência técnica/administrativa e semelhantes), registrando ⚠️.
+5. Registrar no relatório: código, descrição literal e item da LC 116 usado.
 
-1. Baixar a Tabela 01 vigente (Anexo I do Manual da EFD-Reinf, portal SPED) e salvar na pasta de conferências do mês.
-2. Para cada serviço, partir do **código de tributação nacional/item da LC 116** da nota e escolher o código da Tabela 01 **mais aproximado do serviço**, lendo a descrição literal.
-3. Conferir se o código de receita da tabela (DARF) é o mesmo usado pelo Domínio (coluna "Cód. Rec.").
-4. Registrar no relatório: código, descrição literal da tabela e base de escolha.
+Ressalvas (🟡): (i) a tabela abaixo é correlação de consultoria, não oficial; confirmar a natureza no Manual vigente (os códigos de 5 dígitos 15xxx são os usados hoje pelo Domínio); (ii) a natureza indica **quais tributos podem incidir** (IR e/ou agregado), mas **não prova que a retenção é devida** no caso concreto: dispensas (seção 4), limites e regime do prestador continuam valendo; (iii) o pagamento sem retenção pode ter de ser informado com retenção zero.
 
-Observações úteis:
-- Os códigos de natureza se dividem em grupos (por tipo de beneficiário e de rendimento). Fóruns técnicos indicam que o R-4020 usa naturezas de grupos específicos, e que o prestador informa a retenção sofrida no R-4080 e o tomador no R-4020. 🟡 Não confirmado no leiaute oficial.
-- Mesmo pagamento **sem retenção** (dispensa) pode precisar ser informado no R-4020 com retenção zero, quando a natureza é sujeita à retenção. 🟡 Verificar no Manual vigente.
-- Tabela 06 (tipo de serviço) é outra tabela, usada no **R-2010** para o INSS. Também não está reproduzida aqui. 🔴
+### 2.2 Tabela de correlação (natureza x código de receita x itens LC 116)
 
-Tabela de trabalho (preencher a cada conciliação, **não reutilizar sem conferir**):
+"Agreg. 5952" = retenção agregada de CSLL + COFINS + PIS (DARF 5952). Em "IR" aparece o código de receita do IRRF.
 
-| Serviço (item LC 116) | Natureza no Domínio | Natureza correta na Tabela 01 vigente | Descrição literal | Selo |
+| Cód. | Natureza | IR | Agreg. | Itens LC 116 |
+|---|---|---|---|---|
+| 15001 | Cooperativas de trabalho: serviços pessoais prestados por associados | 3280 | – | diversos |
+| 15002 | Associações de profissionais: serviços pessoais prestados por associados | 1708 | 5952 | diversos |
+| 15003 | Administração de bens ou negócios em geral (exceto consórcios/fundos mútuos) | 1708 | 5952 | 17.12 |
+| 15004 | Advocacia | 1708 | 5952 | 17.14 |
+| 15005 | Análise clínica laboratorial | 1708 | 5952 | 4.02, 5.03 |
+| 15006 | Análises técnicas | 1708 | 5952 | 17.01 a 17.09 |
+| 15007 | Arquitetura | 1708 | 5952 | 7.01 a 7.19 |
+| 15008 | Assessoria e consultoria técnica (exceto assistência técnica a terceiros ligada a ramo de indústria/comércio do prestador) | 1708 | 5952 | 17.01 a 17.03 |
+| 15009 | Assistência social | 1708 | 5952 | 27.01 |
+| 15010 | Auditoria | 1708 | 5952 | 17.16 |
+| 15011 | Avaliação e perícia | 1708 | 5952 | 17.09, 28.01 |
+| 15012 | Biologia e biomedicina | 1708 | 5952 | 30.01, 4.01 |
+| 15013 | Cálculo em geral | 1708 | 5952 | 17.18 |
+| 15014 | Consultoria | 1708 | 5952 | 1.06, 17.01, 17.20 |
+| 15015 | Contabilidade | 1708 | 5952 | 17.19 |
+| 15016 | Desenho técnico | 1708 | 5952 | 23.01, 31.01, 32.01 |
+| 15017 | Economia | 1708 | 5952 | 17.20 |
+| 15018 | Elaboração de projetos | 1708 | 5952 | 7.03 |
+| 15019 | Engenharia (exceto construção de estradas, pontes, prédios e obras assemelhadas) | 1708 | 5952 | 7.01 a 7.19 |
+| 15020 | Ensino e treinamento | 1708 | 5952 | 8.02, 17.24 |
+| 15021 | Estatística | 1708 | 5952 | 17.21 |
+| 15022 | Fisioterapia | 1708 | 5952 | 4.08 |
+| 15023 | Fonoaudiologia | 1708 | 5952 | 4.08 |
+| 15024 | Geologia | 1708 | 5952 | 7.01 |
+| 15025 | Leilão | 1708 | 5952 | 17.13 |
+| 15026 | Medicina (exceto ambulatório, banco de sangue, casa de saúde/repouso sob orientação médica, hospital e pronto-socorro) | 1708 | 5952 | 4.01 |
+| 15027 | Nutricionismo e dietética | 1708 | 5952 | 4.10 |
+| 15028 | Odontologia | 1708 | 5952 | 4.12 |
+| 15029 | Organização de feiras, congressos, seminários, simpósios e congêneres | 1708 | 5952 | 17.10 |
+| 15030 | Pesquisa em geral | 1708 | 5952 | 2.01, 17.01 |
+| 15031 | Planejamento | 1708 | 5952 | 1.08, 17.03 |
+| 15032 | Programação | 1708 | 5952 | 1.01, 1.02, 1.04, 1.07, 1.08 |
+| 15033 | Prótese | 1708 | 5952 | 4.14 |
+| 15034 | Psicologia e psicanálise | 1708 | 5952 | 4.15, 4.16 |
+| 15035 | Química | 1708 | 5952 | 7.12, 30.01 |
+| 15036 | Radiologia e radioterapia | 1708 | 5952 | 4.02 |
+| 15037 | Relações públicas | 1708 | 5952 | 35.01 |
+| 15038 | Serviço de despachante | 1708 | 5952 | 33.01 |
+| 15039 | Terapêutica ocupacional | 1708 | 5952 | 4.08 |
+| 15040 | Tradução ou interpretação comercial | 1708 | 5952 | 17.02 |
+| 15041 | Urbanismo | 1708 | 5952 | 7.01, 7.19 |
+| 15042 | Veterinária | 1708 | 5952 | 5.01 |
+| 15043 | **Limpeza** | 1708 | 5952 | 7.10, 7.11, 14.01 |
+| 15044 | **Conservação/Manutenção**, exceto reformas e obras assemelhadas | 1708 | 5952 | 7.10, 7.11, 14.01 |
+| 15045 | **Segurança/Vigilância/Transporte de valores** | 1708 | 5952 | 11.02, 11.05 |
+| 15046 | **Locação de mão de obra** | 1708 | 5952 | 17.05 |
+| 15047 | Assessoria creditícia, mercadológica, gestão de crédito, seleção e riscos, administração de contas a pagar e a receber | 5944 | 5952 | 10.04 |
+| 15050 | Transporte internacional de valores por empresas nacionais; estaleiros navais (REB) em conservação, modernização, conversão e reparo | 1708 | – | n/a |
+| 15051 | Pagamento a empresas estrangeiras de transporte de valores | 1708 | – | n/a |
+| 15052 | Demais comissões, corretagens ou outra importância por representação comercial ou mediação de negócios civis e comerciais (fora dos códigos do grupo 20) | 8045 | – | 10.09 |
+| 15099 | Demais serviços técnicos, de assistência técnica, de assistência administrativa e semelhantes | 1708 | 5952 | 14.02, 31.01, outros |
+
+Pontos de atenção da tabela:
+- **Confirma o que o Domínio usou no 238:** 15044 = Conservação/Manutenção (Atlas, item 14.01) e 15045 = Segurança/Vigilância (STV, item 11.02). 🟡 (conferência com a tabela de consultoria, não com o Manual vigente.)
+- 15044 traz **IR 1708 e agregado 5952**: logo, o IRRF da manutenção/conservação é uma questão real a verificar (no 238 só houve CRF na nota Atlas).
+- 15003 a 15042 e 15099 são serviços profissionais e técnicos; 15043 a 15046 são limpeza, conservação, vigilância e mão de obra, que na prática de retenção têm IRRF de 1% e CSRF (ver seção 3).
+- Item **10.05** (corretagem de bens móveis/imóveis, caso real da 257) **não aparece** na correlação; a tabela mapeia comissões/corretagens ao item 10.09 (15052, DARF 8045). Para 10.05 usar o código 8045 e registrar ⚠️ (usado na 257).
+- Códigos de natureza com a minuta v3.0/2019 (numeração de 9 dígitos, ex.: 500000052) **não** são os do Domínio: não usar.
+
+### 2.3 Tipo de serviço do R-2010 (INSS: cessão de mão de obra/empreitada), Tabela 06 (minuta v3.0, ago/2019 🟡)
+
+| Código | Tipo de serviço |
+|---|---|
+| 100000001 | Limpeza, conservação ou zeladoria |
+| 100000002 | Vigilância ou segurança |
+| 100000003 | Construção civil |
+| 100000004 | Serviços de natureza rural |
+| 100000005 | Digitação |
+| 100000006 | Preparação de dados para processamento |
+| 100000007 | Acabamento |
+| 100000008 | Embalagem |
+| 100000009 | Acondicionamento |
+| 100000010 | Cobrança |
+| 100000011 | Coleta ou reciclagem de lixo ou de resíduos |
+| 100000012 | Copa |
+| 100000013 | Hotelaria |
+| 100000014 | Corte ou ligação de serviços públicos |
+| 100000015 | Distribuição |
+| 100000016 | Treinamento e ensino |
+| 100000017 | Entrega de contas e de documentos |
+| 100000018 | Ligação de medidores |
+| 100000019 | Leitura de medidores |
+| 100000020 | Manutenção de instalações, de máquinas ou de equipamentos |
+| 100000021 | Montagem |
+| 100000022 | Operação de máquinas, de equipamentos e de veículos |
+| 100000023 | Operação de pedágio ou de terminal de transporte |
+| 100000024 | Operação de transporte de passageiros |
+| 100000025 | Portaria, recepção ou ascensorista |
+| 100000026 | Recepção, triagem ou movimentação de materiais |
+| 100000027 | Promoção de vendas ou de eventos |
+| 100000028 | Secretaria e expediente |
+| 100000029 | Saúde |
+| 100000030 | Telefonia ou telemarketing |
+| 100000031 | Trabalho temporário na forma da Lei nº 6.019/1974 |
+
+Aplicação ao 238 (Prime System): nota 493 (recepcionista, item 17.05.01) → 100000025; nota 494 (limpeza e conservação) → 100000001. Selecionar pelo **serviço efetivamente prestado**, não pelo item da LC 116.
+
+Tabela de trabalho (preencher a cada conciliação):
+
+| Serviço (item LC 116) | Natureza no Domínio | Natureza correta | Descrição literal | Selo |
 |---|---|---|---|---|
 | (preencher) | (preencher) | (preencher) | (preencher) | ⬜ |
 
-Evidência observada (não validada): na REAT HOLDING (238), 09/2026, o Domínio atribuiu **15044** à manutenção de elevadores (item 14.01) e **15045** à vigilância (item 11.02). A coerência com a Tabela 01 ainda precisa ser conferida. 🔴
-
-Como diferenciar naturezas parecidas: usar o item da LC 116 e a descrição da nota (o texto do "serviço" prevalece sobre o título da nota); se o mesmo prestador faz serviços mistos (ex.: vigilância + monitoramento), classificar por nota, não por fornecedor; se o serviço não encontra descrição na tabela, registrar ⚠️ e consultar o contador responsável.
+Como diferenciar naturezas parecidas: o texto do serviço prevalece sobre o título da nota; se o mesmo prestador faz serviços mistos (ex.: vigilância + monitoramento), classificar **por nota**, não por fornecedor; se não houver descrição na tabela, ⚠️ e consultar o contador responsável.
 
 ## 3. Códigos de retenção
 
@@ -92,6 +190,23 @@ Como diferenciar naturezas parecidas: usar o item da LC 116 e a descrição da n
 | **CSRF** (CSLL 1% + COFINS 3% + PIS 0,65%) | 4,65% total | valor do serviço | DARF **5952** único (soma dos três) | 🟢 alíquota e 5952 |
 | **INSS** cessão de mão de obra/empreitada | 11% | valor bruto (a base pode ser reduzida por materiais/equipamentos quando destacados e permitidos) | Reinf R-2010, débito na DCTFWeb | 🟢 11%, 🟡 base e forma de pagamento |
 | **ISS** retido | alíquota do município (mínimo geral 2%, LC 157) | valor do serviço (ou base do item) | guia/DAM do município | 🟢 conceito, 🟡 por município |
+
+Códigos de receita relevantes (lista COD_REC da Receita; confirmar a vigência):
+
+| Código | Descrição na lista |
+|---|---|
+| 1708 | Remuneração de serviços profissionais prestados por Pessoa Jurídica |
+| 5952 | Retenções de Contribuições, pagamento PJ a PJ de Direito Privado (CSLL + COFINS + PIS) |
+| 5979 | PIS/PASEP, retenção pagamento PJ a PJ de Direito Privado |
+| 5960 | COFINS, retenção pagamento PJ a PJ de Direito Privado |
+| 5987 | CSLL, retenção pagamento PJ a PJ de Direito Privado |
+| 8045 | Comissões e corretagens pagos à PJ e serviços de propaganda prestados por PJ (art. 53 da Lei 7.450/85) |
+| 5944 | Pagamento de PJ a PJ por serviços de factoring |
+| 3280 | Serviços pessoais prestados por associados de cooperativas de trabalho |
+| 8863 | Bens e serviços adquiridos de sociedades cooperativas e associações profissionais (**tabela de órgãos públicos**) |
+| 6147, 6175, 6188, 6190, 9060, 8739, 8767, 8850 | Retenções **de órgãos públicos federais** (IN RFB 1.234, Anexo I): não se aplicam a tomador privado |
+
+Atenção: no Domínio os códigos aparecem com 6 dígitos (ex.: 170806, 595207). Interpretar como código de receita (1708, 5952) seguido de sufixo de 2 dígitos que **não identifiquei**; confirmar com o suporte do Domínio ou com o leiaute. 🔴
 
 Prazos (🟡, divergem entre fontes internas, **conferir na legislação vigente**):
 - IRRF: o prazo depende do código de receita; não afirmar de memória. Consultar a regra vigente do código usado.
@@ -114,7 +229,7 @@ Sempre exigir comprovação por escrito arquivada com a nota:
 | MEI | Sem IRRF/CSRF; INSS 11% só nas atividades de cessão/empreitada permitidas ao MEI (hidráulica, elétrica, pintura, alvenaria, carpintaria, manutenção/reparo de veículos) | CCMEI e atividade | 🟡 |
 | Valor mínimo | CSRF ≤ R$ 10 retido (pagamento mensal ≤ R$ 215,05); IRRF de valor ≤ R$ 10 | Cálculo | 🟡 |
 | Entidades imunes/isentas | Dispensa de IRRF/CSRF conforme a norma | Declaração/comprovação de imunidade ou isenção | 🟡 |
-| Órgãos públicos | Regra própria (Lei 9.430/96 art. 64 e IN RFB 1.234/2012) | Ver skill `conferencia-retencoes-pagamentos-orgao-publico` | 🟡 |
+| Órgãos públicos | Regra própria (Lei 9.430/96 art. 64 e IN RFB 1.234/2012). A Tabela de Retenção do Anexo I tem IR + CSLL + COFINS + PIS por natureza: p.ex. 4,80% de IR (total 9,45%, código 6190) para vigilância, limpeza, locação de mão de obra e demais serviços; **não vale para tomador privado** | Ver skill `conferencia-retencoes-pagamentos-orgao-publico` | 🟡 |
 | Serviço fora da lista das retenções de CSRF | Sem CSRF | Item da lista da Lei 10.833, art. 30 (a nota deve ser enquadrada, não presumida) | 🟡 |
 | ISS: prestador estabelecido em outro município e serviço não listado como retido pelo tomador | Sem retenção pelo tomador; ISS recolhido na origem | Local de incidência (LC 116 art. 3º e 6º e LC 175/2020) e lei municipal | 🟡 |
 
@@ -205,5 +320,6 @@ Integração com a rotina da OfficeCont (CLAUDE.md):
 ## 10. Limites desta skill
 
 - Não calcula tributo sobre a receita do prestador, nem substitui a leitura da legislação vigente.
+- A tabela de naturezas (2.2) é correlação de consultoria; a Tabela 06 vem de minuta de 2019. Atualizar quando a Fernanda trouxer o Manual/Anexo I vigente da EFD-Reinf.
 - Quando a regra mudou recentemente (reforma tributária IBS/CBS, alterações de leiaute da EFD-Reinf, prazos de recolhimento), avisar o usuário para confirmar a versão vigente.
 - Não transmite eventos; prepara o roteiro e confere o resultado.

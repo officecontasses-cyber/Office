@@ -353,3 +353,7 @@ REINF 238: R-2010 (Prime System, INSS 1.295,45), R-4020 (Atlas CRF; STV IRRF+CRF
 - Nota 555002 Telefônica: data de entrada 07/09 anterior à emissão 10/09: corrigir data de entrada (pós-fechamento).
 ## Regra para as próximas rodadas
 Antes de qualquer REINF/retenção, conciliar Domínio x Portal Nacional x Prefeitura (Recebidas e Declaração Mensal) e só então enviar.
+
+## 28s. Skill de retenções atualizada com as tabelas enviadas (12/10/2026)
+Tabela de Correlação R-4020 (consultoria, não oficial) incluída na skill conciliacao-retencoes-servicos-tomados: confirma 15044 = Conservação/Manutenção (Atlas 14.01) e 15045 = Segurança/Vigilância (STV 11.02), ambas com IR 1708 + agregado 5952. Tabela 06 (tipo de serviço R-2010) vem de MINUTA v3.0 de 08/2019: conferir vigente. PDF 'tabela_retencao' é a tabela de ÓRGÃOS PÚBLICOS (IN RFB 1.234), não vale para tomador privado.
+Efeitos no 238: R-2010 Prime System: nota 493 (recepcionista) -> tipo 100000025 (Portaria, recepção ou ascensorista); nota 494 (limpeza/conservação) -> 100000001. Atlas (15044) tem IR 1708 na natureza: verificar se IRRF é devido (só houve CRF). Códigos do Domínio em 6 dígitos (170806, 595207): sufixo não identificado.

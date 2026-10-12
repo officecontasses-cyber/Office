@@ -210,3 +210,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - 238 REINF: conferir pontos (1) a (6) do log 28r, depois R-2010, R-4020 e R-2099.
 
 - Skill nova (12/10/2026): conciliacao-retencoes-servicos-tomados (repo: .claude/skills/conciliacao-retencoes-servicos-tomados/SKILL.md). Tabela 01 de naturezas NÃO foi incluída (fonte oficial inacessível no ambiente); completar com a tabela vigente da Receita.
+- 238 REINF: conferir IRRF na nota Atlas (natureza 15044 inclui IR 1708) e tipos de serviço do R-2010 (493 -> 100000025; 494 -> 100000001) na tabela vigente. Ver log 28s.
