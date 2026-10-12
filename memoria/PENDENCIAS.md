@@ -200,3 +200,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 2. Atualizar o log detalhado em `PROCESSO_FECHAMENTO_09-2026.md`.
 3. Salvar o snapshot `PENDENCIAS_E_RESOLVIDOS_AAAA-MM-DD.md` na pasta do Drive e dar `git push`.
 4. Conferir a planilha Controle_Fiscal antes de repetir uma pendência (a Fernanda pode já ter colado o TSV).
+
+- REINF 205 (09/2026): R-2099 enviado com sucesso, recibo 12260744-01-2099-2609-12260744, 12/10 11:49. Pendente: G-Click e conferir cadastro duplicado '1205' no Domínio. Próximos: 238, 152, 71, 227, 265.
