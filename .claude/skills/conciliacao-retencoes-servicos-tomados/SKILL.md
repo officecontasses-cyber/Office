@@ -23,7 +23,7 @@ Escopo: **somente retenções sobre serviços tomados**. Fora do escopo: escritu
 | Validar um fornecedor | [7. Checklist por fornecedor](#7-checklist-por-fornecedor) |
 | Formato da resposta e integração com o fechamento | [8. Entrega](#8-formato-de-entrega-e-integração-com-o-fechamento) |
 | Exemplos práticos | [9. Exemplos](#9-exemplos-práticos) |
-| Registrar o REINF enviado nas planilhas (Controle_Fiscal e DP) | [11. Pós-transmissão](#11-pós-transmissão-registro-nas-planilhas) |
+| Registrar o REINF enviado nas planilhas (Controle_Fiscal e DP) | [10. Pós-transmissão](#10-pós-transmissão-registro-nas-planilhas) |
 
 ## 0. Legenda de confiança
 
@@ -318,11 +318,11 @@ Integração com a rotina da OfficeCont (CLAUDE.md):
 
 **Exemplo 6: nota duvidosa (Primegrid, nota 994).** "Abastecimento de gerador" lançado como 07.02.01; ISS 3% retido corretamente; Portal diz PIS/COFINS não retidos. ⚠️ Verificar o enquadramento (se fosse manutenção/conservação, CRF de R$ 32,09).
 
-## 11. Pós-transmissão: registro nas planilhas
+## 10. Pós-transmissão: registro nas planilhas
 
 Depois que o Reinf for transmitido, o registro vai para **duas planilhas diferentes**. Nunca escrever direto nelas: entregar TSV inline para a Fernanda colar na aba de fila e rodar o script de processamento.
 
-### 11.1 Ordem de trabalho (aprendida no 238, 09/2026)
+### 10.1 Ordem de trabalho (aprendida no 238, 09/2026)
 1. **Conciliar antes de transmitir** (seções 1 a 7): Domínio x Portal Nacional (Recebidas) x município (Declaração Mensal **e** relação de serviços tomados da pasta `002 ARQUIVOS MUNICIPAIS`). Abrir **todas** as fontes das pastas 002 e 003 antes de marcar qualquer coluna como indisponível. O município só informa ISS: para IRRF, CRF e INSS escrever "não se aplica, a prefeitura só informa ISS" (não "n/a").
 2. **Decidir as dúvidas** (alíquota, dispensa, enquadramento, data do fato gerador do R-4020). Registrar a decisão da Fernanda no log. Exemplo de decisão: a alíquota exibida no Domínio pode ser só demonstração; o valor a recolher é o que vale.
 3. A Fernanda transmite e salva **dois PDFs**: (a) o **relatório de conferência** ("EFD-Reinf - Envio de Arquivos") na pasta de conferências e (b) o **relatório de consulta do envio** (com nº do recibo, situação e data/hora) na pasta REINF, nome `NNN - NOME DA EMPRESA.pdf`.
@@ -335,7 +335,7 @@ Observações práticas:
 - Cadastro duplicado: o relatório pode mostrar a empresa como `1238` em alguns eventos e `238` em outros (e `1205`/`205`). É o mesmo CNPJ; registrar e pedir para conferir duplicidade de cadastro no Domínio.
 - Um R-4020 por beneficiário pode gerar vários recibos. Listar todos.
 
-### 11.2 Planilha Controle_Fiscal (aba `Atualizações`, 7 colunas)
+### 10.2 Planilha Controle_Fiscal (aba `Atualizações`, 7 colunas)
 `Nº | aba | Obrigação (prefixo) | Status | Valor | Observações | Processado (em branco)`
 
 - Linha **REINF**: `Enviado`, com os recibos e a data/hora de cada evento, mais "sem movimento: sem retenção como tomador e sem INSS retido sofrido" quando só houver R-2099.
@@ -347,7 +347,7 @@ Observações práticas:
 ```
 - Antes de entregar, conferir no `Set2026` quais linhas de REINF estão em branco ou `Pendente` e quais clientes não têm linha de REINF (ex.: Tacom 138, 248 e 263 não têm; perguntar se a obrigação se aplica).
 
-### 11.3 Planilha do DP: `CONTROLE | DP REINF'S`
+### 10.3 Planilha do DP: `CONTROLE | DP REINF'S`
 Local: Drive, planilha `CONTROLE | DP REINF'S` (id `14idmBAj9YO4V_R8_pRbVc4iyDQIhGo9OZwDVOPsPmmM`).
 - Abas por mês: `MOD GERAL MM.AAAA` (ex.: `MOD GERAL 09.2026`). Colunas: `Nº | Empresa | Obrigação | Status | Observações (Sem movimento ou COM RETENÇÃO) | Observações (detalhe)`. A caixa lateral (colunas H e seguintes) é do 152 (CRBM5), com os códigos de retenção de órgãos públicos.
 - Fila: aba **`Atualizações REINF`**, colunas `Nº | aba | Status | Observação | Detalhe | Rótulo caixa | Valor caixa | Processado`. O script grava Status, Observação e Detalhe e marca `Processado`.
@@ -367,11 +367,11 @@ Local: Drive, planilha `CONTROLE | DP REINF'S` (id `14idmBAj9YO4V_R8_pRbVc4iyDQI
 ```
 - Os códigos de 6 dígitos (170806 e 595207) são os que o Domínio e o DP usam; o `07` de 5952/07 é a variação da CSRF na DCTFWeb (MIT) desde 01/2025 (fonte: LeFisc). O sufixo `06` do 170806 é interpretado como variação equivalente, sem confirmação. 🟡
 
-### 11.4 Fechamento da rodada
+### 10.4 Fechamento da rodada
 - Registrar na memória: `memoria/PENDENCIAS.md`, o log do processo e o snapshot datado no Drive.
 - Listar o que falta recolher: DARF 5952 (CSRF, vence no último dia útil do 2º decêndio do mês seguinte), DARF do IRRF, INSS via DCTFWeb depois do R-2099 (🟡 confirmar vencimentos), recibo no G-Click e declaração do Simples dos prestadores dispensados.
 
-## 10. Limites desta skill
+## 11. Limites desta skill
 
 - Não calcula tributo sobre a receita do prestador, nem substitui a leitura da legislação vigente.
 - A tabela de naturezas (2.2) é correlação de consultoria; a Tabela 06 vem de minuta de 2019. Atualizar quando a Fernanda trouxer o Manual/Anexo I vigente da EFD-Reinf.
