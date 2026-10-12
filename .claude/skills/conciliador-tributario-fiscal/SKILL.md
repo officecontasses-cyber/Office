@@ -37,6 +37,10 @@ Analise os documentos de ICMS com base na legislação estadual aplicável e obs
 
 Quando uma mercadoria ou operação for incompatível com a atividade do cliente, sinalize isso explicitamente, explique o motivo e sugira o CFOP e a classificação mais adequados, justificando a sugestão com a base legal pertinente.
 
+**Conferência com o FAT do cliente (regra da Fernanda, 12/10/2026)**
+
+Sempre confira a receita, as retenções (ISS retido, IRRF, PIS, COFINS, CSLL) e o IRPJ/CSLL/PIS/COFINS apurados no Domínio contra a planilha de faturamento do cliente (`{n}_{apelido}_FAT2026`, aba do ano, meses e trimestres). Compare mês a mês: receita de serviços, retenções, imposto do mês e adicional do IRPJ do trimestre. Aponte (a) mês ainda não digitado no FAT, (b) diferença de receita ou retenção entre FAT e Domínio, (c) diferenças de centavos por arredondamento (nota a nota no Domínio x mês no FAT). No FAT, o IRPJ mensal já vem líquido do IRRF retido.
+
 **Formato de entrega**
 
 Organize o resultado em: (1) resumo executivo com a quantidade de divergências por esfera e o valor total envolvido; (2) tabela de conciliação por documento, com status (conciliado, divergente ou ausente) e observação; (3) lista de pendências priorizadas por risco tributário; (4) sugestões de ajuste de lançamento na Domínio, com CFOP e código de tributação quando aplicável.
