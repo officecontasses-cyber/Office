@@ -35,3 +35,12 @@ Colunas: Nº | aba | Status | Observação | Detalhe | Rótulo caixa | Valor cai
 152	MOD GERAL 09.2026				COD 6228 CSLL	245,50	
 152	MOD GERAL 09.2026				INSS 1162	1269,26	
 ```
+
+## 152 CRBM5, versão de 13/10/2026 (substitui os valores provisórios acima; Status fica em branco até o REINF ser enviado)
+Critério (Anexo I da IN RFB 1.234, tabela de órgãos públicos): serviços (IRRF 4,8% + 4,65%) = 6190; mercadorias/serviços com materiais (1,2% + 4,65%) = 6147; só CSLL 1% (nota 15095) = 6228; INSS 11% (Realize Next 3279/3280) = 1162. IRRF 1.178,40 da Implanta (4,8%) entra em 6190. Ficam fora: nota 741590 Rede OK IRRF 17,66 e 255/4517 (emitidas em 01/10), 734991 (competência 08) e Life Card 159 (R$ 6,31 + 6,10, base não fecha com a tabela).
+```tsv
+152	MOD GERAL 09.2026		COM RETENÇÃO	VALORES AO LADO	COD 6190 COSIRF S/SERVIÇOS	2756,92	
+152	MOD GERAL 09.2026				COD 6147 COSIRF S/MERCADORIAS	44,14	
+152	MOD GERAL 09.2026				COD 6228 CSLL	245,50	
+152	MOD GERAL 09.2026				INSS 1162	1269,26	
+```
