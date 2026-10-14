@@ -61,3 +61,9 @@ Planilha do DP (aba Atualizações REINF):
 152	MOD GERAL 09.2026				COD 6243 COFINS	167,73	
 152	MOD GERAL 09.2026				INSS 1162	1269,26	
 ```
+
+### 152, atualização de 14/10/2026 (após relatórios de conferência da Receita)
+Controle_Fiscal, linha REINF da 152 com os totalizadores (substitui a anterior):
+```tsv
+152	Set2026	REINF	Enviado		R-2010 Sucesso recibo 5745056-04-2010-2609-5745056; R-4020 Sucesso, 14 recibos (um por beneficiário) 23511133-04-4020-2609-23511133 a 23511146-04-4020-2609-23511146; R-2099 Sucesso 12203533-04-2099-2609-12203533; R-4099 Sucesso 5930225-04-4099-2609-5930225; enviados 14/10/2026 19:36 (Oficial). Totalizadores da Receita conferidos com o Domínio: INSS 1162-01 R$ 1.269,26 (base R$ 11.538,71) e retenções federais R$ 6.122,04 (614705 141,25; 618805 40,00; 619005 5.680,81; 622805 55,91; 623005 36,34; 624305 167,73). Fora: nota 741590 (Rede OK) e Volpmann 48337, a verificar em outubro.	
+```
