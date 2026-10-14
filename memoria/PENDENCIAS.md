@@ -228,3 +228,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - ESTILO (13/10/2026, Fernanda): em mensagens e textos, REINF no feminino: 'a REINF' (não 'o REINF').
 
 - [ ] **152 (14/10/2026):** Domínio (Retenções a Recolher) x planilha do Gian conciliados: códigos 6190 5.680,81 / 6147 141,25 / 6188 40,00 / 6228 55,91 / 6230 36,34 / 6243 167,73 / INSS 1162 1.269,26 batem. Em aberto: Life Card 159 (704,59 x 131,40), Realize 3279 (natureza 17032 x 17031), J. Ronier (17003 x 17099), Volpmann 42703 (competência) e 48337, nota 741590. Depois: REINF e TSV da caixa do DP. Ver log 28ac.
+- [ ] **152 (14/10, decisões):** corrigir no Domínio Life Card 159 (BC 131,40); Realize 3279 é PORTARIA (natureza a definir, não 17031/17032); Volpmann 48337 com retenção federal 35,59 (IRRF 18,07 + contribuições 17,52) fora do Domínio/planilha: confirmar pagamento em setembro e lançar; ISS PoA 461,69 confere com a Declaração Mensal. Ver log 28ac.
