@@ -44,3 +44,20 @@ Critério (Anexo I da IN RFB 1.234, tabela de órgãos públicos): serviços (IR
 152	MOD GERAL 09.2026				COD 6228 CSLL	245,50	
 152	MOD GERAL 09.2026				INSS 1162	1269,26	
 ```
+
+## 152 CRBM5, VERSÃO FINAL de 14/10/2026 (REINF enviada; substitui as versões de 13/10 e as provisórias)
+Fonte: Retenções a Recolher do Domínio (emissão 14/10/2026) = planilha do Gian (setembro/2026) = recibos. Total R$ 7.391,30 (federais 6.122,04 + INSS 1.269,26). Fora: Volpmann 48337 (não paga; outubro) e nota 741590. Atenção: a CSLL 6228 agora é só a dos Correios (55,91); a CSLL da Implanta (nota 15095) ficou dentro do 6190. O script só grava rótulo que já exista na caixa do DP (H) e avisa se não achar: se faltar "COD 6188", "COD 6230 PIS" ou "COD 6243 COFINS", incluir a linha na caixa antes.
+Controle_Fiscal (aba Atualizações):
+```tsv
+152	Set2026	REINF	Enviado		R-2010 Sucesso recibo 5745056-04-2010-2609-5745056; R-4020 Sucesso, 14 recibos (um por beneficiário) 23511133-04-4020-2609-23511133 a 23511146-04-4020-2609-23511146; R-2099 Sucesso 12203533-04-2099-2609-12203533; R-4099 Sucesso 5930225-04-4099-2609-5930225; enviados 14/10/2026 19:36 (Oficial).	
+```
+Planilha do DP (aba Atualizações REINF):
+```tsv
+152	MOD GERAL 09.2026	Enviado	COM RETENÇÃO	VALORES AO LADO\nEnviado 14/10/2026 19:36 (Oficial): R-2010 + R-4020 + R-2099 + R-4099.	COD 6190 COSIRF S/SERVIÇOS	5680,81	
+152	MOD GERAL 09.2026				COD 6147 COSIRF S/MERCADORIAS	141,25	
+152	MOD GERAL 09.2026				COD 6188	40,00	
+152	MOD GERAL 09.2026				COD 6228 CSLL	55,91	
+152	MOD GERAL 09.2026				COD 6230 PIS	36,34	
+152	MOD GERAL 09.2026				COD 6243 COFINS	167,73	
+152	MOD GERAL 09.2026				INSS 1162	1269,26	
+```
