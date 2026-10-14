@@ -226,3 +226,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 
 - PÓS-FECHAMENTO 71 (13/10/2026, pedido da Fernanda): notas **2 Monique de Azevedo Chaves (R$ 1.272,82, 07/10, chave 33045572267662436000117000000000000226100125049818)** e **61 Laura de Luca Baccarin (R$ 2.500,00, 06/10, chave 43149022245454954000102000000000006126100693472954)**, competência 09/2026 no Portal, ainda NÃO lançadas no Domínio (XML não encontrado; SIEG sem pasta Outubro). Serviços Tomados do 71 fica Pendente; a Fernanda revisa depois do fechamento. Sem retenção federal nessas notas. Não importar o XML 2_P_4625 (P. Marques, competência 10/2026).
 - ESTILO (13/10/2026, Fernanda): em mensagens e textos, REINF no feminino: 'a REINF' (não 'o REINF').
+
+- [ ] **152 (14/10/2026):** Domínio (Retenções a Recolher) x planilha do Gian conciliados: códigos 6190 5.680,81 / 6147 141,25 / 6188 40,00 / 6228 55,91 / 6230 36,34 / 6243 167,73 / INSS 1162 1.269,26 batem. Em aberto: Life Card 159 (704,59 x 131,40), Realize 3279 (natureza 17032 x 17031), J. Ronier (17003 x 17099), Volpmann 42703 (competência) e 48337, nota 741590. Depois: REINF e TSV da caixa do DP. Ver log 28ac.
