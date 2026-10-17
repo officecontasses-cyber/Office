@@ -63,3 +63,10 @@ XMLs na SIEG (Setembro). Todos os valores e datas batem com o Domínio (total R$
 | 25042 | Medlog | 2.197,50 | Simples, 4 itens, 3 duplicatas |
 | 76043 | Biodental (SC) | 947,78 | CRT 3, venda interestadual a não contribuinte; ICMS 42,57 (4%/12%); DIFAL R$ 118,58 devido pelo vendedor; IBS 0,95 / CBS 8,53 |
 PONTO DE ATENÇÃO: crédito de ICMS R$ 42,57 no acum. 206 (Biodental 76043) parece indevido (Qualidente é prestadora de serviços, não contribuinte de ICMS). Revisar acumulador; créditos IBS/CBS das entradas só pós-fechamento (ano-teste informativo). Sem crédito de ICMS nas demais (Simples).
+
+## Conferência IBS/CBS pós-ajustes (17/10/2026, relatórios Domínio salvos de novo)
+- Entradas: ICMS removido (base 0, ICMS 0; Biodental 76043 em duas linhas do acum. 206: 889,68 + 58,10 = 947,78). Total Entradas 14.596,54 e Serviços Tomados 753,49 inalterados. Prestados 142.642,60.
+- Resumo dos Impostos (13:45): IBS débito 54,87 / crédito 3,77 / a recolher 51,10; CBS débito 494,84 / crédito 33,87 / a recolher 460,97. Débitos = esperado (CBS 494,84, IBS 54,87) -> ajuste dos prestados OK.
+- Origem dos créditos do Domínio (conferido): XML 9167 Bassanello (IBSCBSTot: IBS 2,82, CBS 25,34) + XML 76043 Biodental (IBS 0,95, CBS 8,53) = CBS 33,87 e IBS 3,77 (batem exatamente). XMLs 37276 Ortholay e 25042 Medlog: sem grupo IBS/CBS.
+- NFS-e tomadas (Portal, 4 notas, CST 000 / cClassTrib 000001): CBS 0,75+1,62+4,20+0,07 = 6,64; IBS 0,08+0,18+0,47+0,01 = 0,74. NÃO estão nos créditos do Domínio (acum. 800 sem relacionar 183/184).
+- Após ajustar o acumulador 800: créditos esperados CBS 40,51 e IBS 4,51 (saldo CBS 454,33 e IBS 50,36). Informativo em 2026.

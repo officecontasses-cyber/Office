@@ -61,7 +61,12 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
   que **a partir de 10/2026 a receita de aluguéis deixa de ter valor fixo**: passa a valer o **faturamento mensal**. Não repetir o valor
   de meses anteriores; pedir ao cliente o valor do mês antes de apurar (e conferir com as notas/recibos). Ver `memoria/PENDENCIAS.md`.
 
-- **Gatilho "fechamento da empresa #N" (pedido da Fernanda, 17/10/2026):** ao ouvir isso, ler `memoria/CLIENTE_00N_*.md` (dossiê do cliente: Portal Nacional, prefeitura e particularidades já mapeadas), conferir a Controle_Fiscal do mês e levantar o que falta. Dossiê existente: `memoria/CLIENTE_002_RF_CONSULTORIA.md` (empresa #2).
+- **Gatilho "fechamento da empresa #N" (pedido da Fernanda, 17/10/2026):** ao ouvir isso, ler `memoria/CLIENTE_00N_*.md` (dossiê do cliente: Portal Nacional, prefeitura e particularidades já mapeadas), conferir a Controle_Fiscal do mês e levantar o que falta.
+  **Conferência IBS/CBS (pedido da Fernanda, 17/10/2026) — entra em todo "fechamento da empresa #N":** comparar os dados de IBS/CBS (ano-teste 2026, informativo) em três pontos:
+  (1) **Prestados:** Portal Nacional (relatório `Emitidas`: CST, cClassTrib, base, CBS/IBS) x Domínio (Resumo dos Impostos: débitos IBS/CBS; acumulador 900 precisa relacionar 183-IBS/184-CBS);
+  (2) **Serviços tomados (NFS-e):** Portal (`Recebidas`/`ServTomados`: CST, cClassTrib, CBS e IBS destacados) x créditos no Domínio (acumulador 800);
+  (3) **Entradas (NF-e):** XML (grupo `IBSCBSTot`: `vIBS`, `vCBS`, e por item CST/cClassTrib) x créditos no Domínio (acumulador 206 etc.).
+  Fechar a soma: créditos do Domínio = NFS-e tomadas + NF-e (Simples costuma vir sem IBS/CBS). Apontar divergência e o que ajustar no acumulador. Dossiê existente: `memoria/CLIENTE_002_RF_CONSULTORIA.md` (empresa #2).
 
 ## Prazos que já erramos
 

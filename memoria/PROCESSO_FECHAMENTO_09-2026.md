@@ -448,3 +448,6 @@ Domínio = Portal = DecWeb nos prestados (221 notas, R$ 142.642,60) e tomados (R
 
 ## 28ap. 17/10/2026 — #16 Entradas: XMLs conferidos
 4 NF-e (9167, 37276, 25042, 76043) = Domínio, R$ 14.596,54. Único ponto: crédito de ICMS R$ 42,57 da Biodental 76043 (acum. 206) sem suporte para não contribuinte; ajustar/ confirmar. Detalhes no dossiê #16.
+
+## 28aq. 17/10/2026 — #16 IBS/CBS reconferido; IBS/CBS vira item fixo do "fechamento da empresa #N"
+Fernanda ajustou IBS/CBS dos prestados e removeu o ICMS das entradas. Domínio: débitos IBS 54,87 / CBS 494,84 (ok). Créditos 3,77/33,87 = NF-e 9167 + 76043. Faltam créditos das 4 NFS-e tomadas (CBS 6,64 / IBS 0,74, acum. 800). CLAUDE.md: gatilho agora inclui conferência IBS/CBS (prestados, tomados, entradas XML).

@@ -238,3 +238,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **#2 RF Consultoria (17/10 noite):** retificadora DecWeb enviada (recibo 17/10 12:48:07); tomados válidos R$ 2.022,15 (Freire 14320 cancelada); guias PIS/COFINS 802,20 e IRPJ/CSLL 5.063,73 geradas, falta G-Click; abrir PDFs da Freire (confirmar nota 14263 e a 13882 de agosto, descrição e retenção); Fernanda cola o TSV consolidado (log 28ak).
 
 - **#16 Qualidente 09/2026 — Entradas (17/10):** 4 XMLs conferidos, valores batem (14.596,54). Pendente: decidir o crédito de ICMS R$ 42,57 da NF 76043 (Biodental, acum. 206) e créditos IBS/CBS (pós-fechamento).
+
+- **#16 IBS/CBS (17/10):** prestados e entradas OK no Domínio. Pendente: relacionar o acumulador 800 (serviços tomados) a IBS/CBS para entrarem créditos CBS 6,64 / IBS 0,74. **Regra nova:** "fechamento da empresa #N" sempre confere IBS/CBS (Portal/XML x Domínio) — ver CLAUDE.md.
