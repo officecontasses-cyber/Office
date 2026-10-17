@@ -469,3 +469,6 @@ PIS/COFINS 13,65/63,00 compensados por retenção (assumida: nota 11 Datasys); I
 
 ## 28aw. 17/10/2026 — #18 CC&D conferido (nota 11, Saídas, Entradas, FAT, guia REFIS)
 Retenção da Datasys confirmada na DANFSe (129,15); Domínio, FAT e nota batem (PIS/COFINS compensados, IRPJ 56,70 / CSLL 118,44, IBS 1,98 / CBS 17,83). Entradas: Officecont NF 1029 R$ 474,80 (emitida 05/10, após o DecWeb). REFIS 31,50 guia gerada. Falta guia IRPJ/CSLL, G-Click do REFIS e conferir a NF 1029 na prefeitura.
+
+## 28ax. 17/10/2026 — #18 REFIS comprovado no G-Click (18:30)
+Tarefa REFIS concluída em 17/10 18:30. TSV final do #18 só depois que a Fernanda enviar o restante (pedido dela).

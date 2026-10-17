@@ -51,3 +51,6 @@
 - **IRPJ/CSLL 3º tri:** guias ainda não geradas/salvas (IRPJ 56,70 cód. 2089; CSLL 118,44 cód. 2372; venc. 30/10).
 - Pasta do cliente (Movimento CCED 09-2026, enviada em 09/10): recibos RFL x CCED (devolução de empréstimo R$ 516,80 em 10/09 e 17/09) e "Slips" de pagamentos (10/09: RFL 1.970,85, Officecont 474,80 ref. NF 3607 08/2026, Prefeitura 42,00 ISS ago). Empréstimo entre RFL e CC&D não é receita (fora do FAT). Lidos só o recibo de 10/09 e o slip de 10/09.
 - Em aberto: saldo credor de retenção PIS 48,95 / COFINS 225,00 no Domínio (a retenção mensal do FAT cobre exatamente o devido, o saldo não se explica; ver 1300/1700).
+
+## G-Click REFIS (17/10/2026)
+Print: tarefa REFIS (CC&D SERVICOS, meta 09/10, venc. 30/10), atividade "Guia" concluída por fernanda.officecont em 17/10/2026 18:30. DARF REFIS 31,50 = comprovada (`Enviado` no TSV final). **A Fernanda pediu o TSV final do #18 só depois que ela enviar o restante** (guia IRPJ/CSLL, NF 1029 etc.); não entregar antes.
