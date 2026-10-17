@@ -499,3 +499,6 @@ Resumo 19:15: IRPJ 104.929,65 e CSLL 69.457,20 (= estimativa). Pasta `_71` tem o
 
 ## 28bg. 17/10/2026 — #71 XMLs das notas 2 e 61 conferidos
 Nota 2 Monique (MEI, R$ 1.272,82, comp. 20/09, sem IBS/CBS) e nota 61 Laura (R$ 2.500,00, comp. 30/09, CST 200/200052, IBS 1,75 e CBS 15,75) = Portal. Falta lançar no Domínio e regerar Entradas/Resumo.
+
+## 28bh. 17/10/2026 — #71 Domínio final conferido
+Entradas 147 notas, 469.779,47 = Portal; créditos IBS 17,89 / CBS 161,13 = Portal; Serviços 1.091.077,54 sem duplicidade; IRPJ 104.929,65 / CSLL 69.457,20; PIS/COFINS 0. TSV: Prestados e Tomados `Importado`, PIS/COFINS `Retido`; IRPJ/CSLL `Pendente` (guias).

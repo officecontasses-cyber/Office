@@ -275,3 +275,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#71 (17/10 22:2x):** Resumo com rendimentos: IRPJ 104.929,65 / CSLL 69.457,20 (venc. 30/10; guias a gerar após liberar rendimentos/ADI 7936). Pasta `_71` sem os XMLs das notas 2 (Monique) e 61 (Laura): baixar do Portal pelas chaves (em `CLIENTE_071_CONTE.md`).
 
 - **#71 (17/10):** XMLs das notas 2 e 61 conferidos (= Portal). Pendente: lançar no Domínio e regerar Entradas (esperado 469.779,47) e Resumo (créditos IBS 17,89 / CBS 161,13); informe Bradesco; guias IRPJ/CSLL.
+
+- **#71 (17/10 22:25) conferido:** Entradas 469.779,47 = Portal; IBS/CBS = Portal; Prestados/Tomados prontos para `Importado`. Pendente: guias IRPJ 104.929,65 e CSLL 69.457,20 (30/10) após informe Bradesco/ADI 7936; G-Click; FAT set (receita 1.091.077,54, retenções); SPED set (16/11); pendências menores (RIPA 153, nota 60 Laura/Francine, Chanfro nº 2, Caixa Cartões zero, IOF mútuo).
