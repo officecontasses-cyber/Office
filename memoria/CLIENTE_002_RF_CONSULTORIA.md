@@ -53,3 +53,10 @@ Fontes lidas: Controle_Fiscal (export 17/10), FAT `002_RFCONSULTORIA_FAT2026` (D
 
 ## Atualização 17/10/2026 (tarde): decisões da Fernanda e arquivos do Domínio
 Fernanda confirmou: **Serviços Prestados set = Sem movimento**; **rendimentos = zerado**; arquivos do Domínio salvos (`Demonstrativo dos Impostos_2_092026.pdf` e `Empresa 2 - RF CONSULTORIA E NEGOCIOS LTDA.pdf`). Domínio set/2026: saídas do 3º tri R$ 65.934,00 (32%); base R$ 21.098,88; PIS R$ 142,86 e COFINS R$ 659,34 (base R$ 21.978,00); IRPJ R$ 3.164,83 (adicional 0); CSLL R$ 1.898,90; ISS retido sem movimento; IBS/CBS zerados; total R$ 5.865,93. Tudo igual ao FAT. Não vi o Acompanhamento de Entradas: não confirmei se as notas da Freire estão lançadas (Serviços Tomados segue pendente).
+
+## Correção e achado (17/10/2026, mais tarde): Entradas e Saídas do Domínio
+Eu havia dito que não achei o Acompanhamento de Entradas: ele existia (`Entradas_2_092026.pdf`, `Saídas_2_092026.pdf`, pasta 008); minha busca anterior filtrou por horário e perdeu os arquivos.
+- **Entradas set (Domínio):** só a Officecont nota 1050 (CNPJ 35.743.878/0001-00), emissão 05/10/2026, entrada 30/09/2026, CFOP 1.933, acumulador 800, R$ 879,30. **Freire (14263 e 14320, R$ 2.285,70) NÃO está lançada.**
+- **Saídas set (Domínio):** nota 202609, "clientes diversos", 30/09, CFOP 5.949, acumulador 1002, R$ 21.978,00 (receita de aluguel).
+- **Prefeitura (DecWeb, 03/10):** só a Freire; a Officecont 1050 não consta, provavelmente porque foi emitida em 05/10, depois da declaração (inferência). Efeito no imposto: nenhum (ISS 0), mas a declaração de tomados não inclui a nota 1050.
+- Serviços Tomados set: levantado R$ 3.165,00 (879,30 + 2.285,70), `Pendente` até lançar a Freire e conciliar.

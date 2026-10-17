@@ -425,3 +425,6 @@ Dossiê `CLIENTE_002_RF_CONSULTORIA.md` atualizado (seção "Levantamento do fec
 
 ## 28ah. 17/10/2026 — empresa #2: Domínio conferido; empresa #16 dossiê
 #2: Demonstrativo do Domínio = FAT (PIS 142,86; COFINS 659,34; IRPJ 3.164,83; CSLL 1.898,90). Fernanda: prestados sem movimento, rendimentos zerado. #16: dossiê `CLIENTE_016_QUALIDENTE.md` criado (sem Domínio de set localizado; estimativa pelo Portal PIS 927,18, COFINS 4.279,28, IRPJ 27.918,30, CSLL 12.210,59).
+
+## 28ai. 17/10/2026 — empresa #2, Entradas/Saídas do Domínio
+Entradas set: só Officecont 1050 (R$ 879,30; emissão 05/10, entrada 30/09; CFOP 1.933; acum. 800). Saídas set: nota 202609 R$ 21.978,00 (CFOP 5.949; acum. 1002). Freire (2.285,70) fora do Domínio; Officecont fora da prefeitura (emitida depois de 03/10). TSV Serviços Tomados `Pendente` R$ 3.165,00 entregue. Correção: eu tinha dito que o arquivo de Entradas não existia.
