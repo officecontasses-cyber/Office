@@ -277,3 +277,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#71 (17/10):** XMLs das notas 2 e 61 conferidos (= Portal). Pendente: lançar no Domínio e regerar Entradas (esperado 469.779,47) e Resumo (créditos IBS 17,89 / CBS 161,13); informe Bradesco; guias IRPJ/CSLL.
 
 - **#71 (17/10 22:25) conferido:** Entradas 469.779,47 = Portal; IBS/CBS = Portal; Prestados/Tomados prontos para `Importado`. Pendente: guias IRPJ 104.929,65 e CSLL 69.457,20 (30/10) após informe Bradesco/ADI 7936; G-Click; FAT set (receita 1.091.077,54, retenções); SPED set (16/11); pendências menores (RIPA 153, nota 60 Laura/Francine, Chanfro nº 2, Caixa Cartões zero, IOF mútuo).
+
+- **#126 (17/10, preparado):** dossiê `CLIENTE_126_TATSCH_LEITE.md`. Pendentes: importar saídas 1760–1841 e regerar Domínio; FAT ago/set; IBS/CBS (XML dos prestados); DARF PIS/COFINS (23/10, ~998,81/4.609,87) e IRPJ/CSLL (30/10, ~23.289,40/10.544,19); créditos PIS 785,32 e COFINS 462,54 (PER/DCOMP); SPED set.

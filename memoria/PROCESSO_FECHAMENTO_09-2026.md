@@ -502,3 +502,6 @@ Nota 2 Monique (MEI, R$ 1.272,82, comp. 20/09, sem IBS/CBS) e nota 61 Laura (R$ 
 
 ## 28bh. 17/10/2026 — #71 Domínio final conferido
 Entradas 147 notas, 469.779,47 = Portal; créditos IBS 17,89 / CBS 161,13 = Portal; Serviços 1.091.077,54 sem duplicidade; IRPJ 104.929,65 / CSLL 69.457,20; PIS/COFINS 0. TSV: Prestados e Tomados `Importado`, PIS/COFINS `Retido`; IRPJ/CSLL `Pendente` (guias).
+
+## 28bi. 17/10/2026 — #126 Tatsch & Leite preparado; #71 Domínio final conferido (log 28bh)
+Criado `memoria/CLIENTE_126_TATSCH_LEITE.md`: Portal 209 emitidas (153.662,41, sem IBS/CBS) / 15 recebidas (10.981,61, CRF 10,46, CBS 5,97 / IBS 0,66); Domínio de 05/10 desatualizado (faltam saídas 1760–1841); FAT ago/set em branco; estimativas PIS 998,81 / COFINS 4.609,87 e IRPJ 23.289,40 / CSLL 10.544,19; Rendimentos 3º tri `Sim`.
