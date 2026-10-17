@@ -23,6 +23,7 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
   prefeitura/Portal/SEFAZ; enquanto isso ficam **`Pendente`** ("Em andamento" na observação; esse status não existe na planilha).
   Onde **não há nota** na fonte oficial (SEFAZ/SAT, Portal, relatório da prefeitura), não há o que importar: a linha vai direto como
   **`Sem movimento`**. `DECLARAÇÃO PREFEITURA` fica `Enviado` com o recibo/protocolo.
+  **ENTRADAS (regra da Fernanda, 17/10/2026):** a linha ENTRADAS é só de **compra de produtos** (NF-e de mercadoria/uso e consumo, CT-e de frete). **NFS-e de serviços tomados NÃO entram em ENTRADAS** (vão em SERVIÇOS TOMADOS). Se não há NF-e no hub SIEG (pasta `Entrada` do CNPJ) e não consta no Domínio, ENTRADAS = `Sem movimento`.
 - **Nada é escrito direto na Controle_Fiscal.** Toda atualização entra pela aba `Atualizações`
   (fila), em TSV **inline no chat**, e a Fernanda roda o script `processarAtualizacoes()`.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
