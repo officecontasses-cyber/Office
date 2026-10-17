@@ -41,3 +41,13 @@
 - ISS 42,00 = guia enviada. Sem créditos de IBS/CBS (sem tomados nem entradas lançados).
 - IBS/CBS prestados: débitos CBS 17,83 e IBS 1,98 = base 1.981,35 (2.100,00 - ISS 42,00 - PIS 13,65 - COFINS 63,00) x 0,9% e 0,1%, sem redução. Falta conferir CST/cClassTrib no XML da nota 11 (sem Portal).
 - **Ressalva:** o Domínio assume retenção da Datasys em setembro (nota 11, 29/09). Sem confirmação (Inês não respondeu; XML não visto). Cenário sem retenção em set: PIS 13,65 + COFINS 63,00 a recolher; IRPJ 151,20 - 63,00 = 88,20; CSLL 181,44 - 42,00 = 139,44.
+
+## Conferência completa 09/2026 (17/10/2026, dados salvos pela Fernanda)
+- **Nota 11 Datasys (DANFSe lido, chave 43149022293309631000178000000000001126090976944995, emitida 29/09/2026 18:53, competência 28/09):** R$ 2.100,00; ISS 2% = 42,00 não retido; **retenções federais confirmadas: IRRF 31,50 + PIS/COFINS/CSLL 97,65 (13,65 + 63,00 + 21,00) = 129,15**; IBS/CBS CST 000 / cClassTrib 000001, base 1.981,35 (2.100,00 - 118,65), IBS 1,98 e CBS 17,83 sem redução = Domínio. (XML na pasta do cliente; lido só o PDF.)
+- **Domínio Saídas (Serviços_18):** nota 11, 2.100,00, ISS 42,00, IRRF 31,50, PIS-RET 13,65, COFINS-R 63,00, CSOC-RET 21,00 = nota. Conciliado com a Declaração Mensal (receita 2.100,00).
+- **FAT 2026 (018_CCED SERVICOS_FAT2026):** receita 2.100,00 todo mês (jan-set), total 18.900,00 (<= R$ 120.000, confirma presunção de 16% no IRPJ, rótulo "IRPJ - percentual de 16%"); 3º tri: receita 6.300,00, IRPJ 56,70 e CSLL 118,44 líquidos de retenção = Domínio; PIS/COFINS cobertos pela retenção; REFIS 31,50.
+- **Entradas (Entradas_18):** NF 1029 OFFICECONT ASSESSORIA EMPRESARIAL LTDA (CNPJ 35.743.878/0001-00), emissão 05/10/2026, entrada 30/09/2026, R$ 474,80, CFOP 1-933, sem ISS e sem crédito de IBS/CBS no Domínio. A nota é de 05/10, depois da declaração DecWeb de 01/10: falta conferir se aparece nos tomados da prefeitura (ISSQNdec) e os dados IBS/CBS da nota.
+- **REFIS set:** guia SENDA/Sicalc gerada 17/10 18:25, cód. 9100, PA 01/09/2026, venc. 30/10/2026, R$ 31,50 = Domínio/FAT. Falta G-Click.
+- **IRPJ/CSLL 3º tri:** guias ainda não geradas/salvas (IRPJ 56,70 cód. 2089; CSLL 118,44 cód. 2372; venc. 30/10).
+- Pasta do cliente (Movimento CCED 09-2026, enviada em 09/10): recibos RFL x CCED (devolução de empréstimo R$ 516,80 em 10/09 e 17/09) e "Slips" de pagamentos (10/09: RFL 1.970,85, Officecont 474,80 ref. NF 3607 08/2026, Prefeitura 42,00 ISS ago). Empréstimo entre RFL e CC&D não é receita (fora do FAT). Lidos só o recibo de 10/09 e o slip de 10/09.
+- Em aberto: saldo credor de retenção PIS 48,95 / COFINS 225,00 no Domínio (a retenção mensal do FAT cobre exatamente o devido, o saldo não se explica; ver 1300/1700).
