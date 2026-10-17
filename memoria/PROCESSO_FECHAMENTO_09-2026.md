@@ -428,3 +428,6 @@ Dossiê `CLIENTE_002_RF_CONSULTORIA.md` atualizado (seção "Levantamento do fec
 
 ## 28ai. 17/10/2026 — empresa #2, Entradas/Saídas do Domínio
 Entradas set: só Officecont 1050 (R$ 879,30; emissão 05/10, entrada 30/09; CFOP 1.933; acum. 800). Saídas set: nota 202609 R$ 21.978,00 (CFOP 5.949; acum. 1002). Freire (2.285,70) fora do Domínio; Officecont fora da prefeitura (emitida depois de 03/10). TSV Serviços Tomados `Pendente` R$ 3.165,00 entregue. Correção: eu tinha dito que o arquivo de Entradas não existia.
+
+## 28aj. 17/10/2026 — empresa #2: decisões e comandos
+Fernanda: (1) a Freire não pode ser lançada no Domínio porque não temos as notas (fica Pendente); (2) pediu o comando de retificadora do DecWeb para incluir a Officecont 1050 nos tomados (fase 1 `--retificadora` sem enviar; conferir; fase 2 `--retificadora --enviar`; fase 3); (3) acha que já cobrou o Ricardo: prompt para a extensão Claude no navegador procurar no e-mail (somente leitura), entregue no chat.
