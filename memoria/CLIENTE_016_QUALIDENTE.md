@@ -48,3 +48,8 @@ TSV consolidado entregue em 17/10 (inclui a correção do PIS de ago, R$ 770,94)
 16	Set2026	DARF CSLL	Pendente	12210,59	3º tri: base R$ 135.673,22 x 9% = R$ 12.210,59 (= Domínio). Venc. 30/10.	
 16	Ago2026	DARF PIS	Enviado	770,94	Correção: guia SENDA de 14/09 (doc. 07.16.26257.8748597-1) traz PIS R$ 770,94 (método agregado), igual ao EFD-Contribuições 08/2026; os R$ 771,31 eram a soma nota a nota (diferença R$ 0,37).	
 ```
+
+## Rendimentos e IBS/CBS (17/10/2026)
+- Planilha `CONTROLE | Rendimentos`, aba 3ºTRIM 2026, linha 16 QUALIDENTE: LIBERADO FISCAL = `Zerado` (observação Ø). FAT sem rendimentos financeiros.
+- IBS/CBS, prestados (acumulador 900; Domínio com débitos zero porque o acumulador não relaciona 183-IBS/184-CBS): as 221 notas de 09/2026 do Portal têm todas CST 200, cClassTrib 200029 (serviços de saúde humana), cIndOp 030101, CBS 0,90% nominal com redução 60% (0,36%), IBS estadual 0,10% com redução 60% (0,04%), IBS municipal 0,00%; base IBS/CBS = valor - PIS - COFINS (total R$ 137.435,74); esperado após o ajuste: CBS R$ 494,84 e IBS R$ 54,87.
+- Tomados (acumulador 800): Portal CST 000 / cClassTrib 000001, base R$ 737,50, CBS R$ 6,64 e IBS R$ 0,74; o Domínio mostra créditos de CBS R$ 33,87 e IBS R$ 3,77 (maiores: diferença de R$ 27,23 e R$ 3,03, origem não identificada, talvez NF-e).

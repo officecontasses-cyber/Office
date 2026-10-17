@@ -442,3 +442,6 @@ PIS/COFINS 802,20 (23/10), IRPJ/CSLL 5.063,73 (30/10) = Domínio = FAT; CP DCTFW
 
 ## 28an. 17/10/2026 — empresa #16 (Qualidente) conferida
 Domínio = Portal = DecWeb nos prestados (221 notas, R$ 142.642,60) e tomados (R$ 753,49). Impostos Domínio: PIS 927,18; COFINS 4.279,28; IRPJ 27.918,30; CSLL 12.210,59; ISS 422,87. Pontos de atenção: NF-e das entradas sem XML, crédito de ICMS (acum. 206) em não contribuinte, IBS/CBS, FAT set, guias a gerar. Detalhes no dossiê.
+
+## 28ao. 17/10/2026 — #2 ALERTA distrato do locatário; #16 rendimentos e IBS/CBS
+#2: nota Freire 14263 lida (taxa de administração R$ 1.142,85, sem retenção); demonstrativo ago/2026 mostra distrato do Consulado Geral da Itália em 26/08/2026 (aluguel de agosto R$ 19.047,60 em 26 dias): receita fixa de R$ 21.978,00 em ago e set precisa ser confirmada com o cliente antes de enviar/pagar as guias. #16: rendimentos 3º tri `Zerado`; dados de IBS/CBS do acumulador 900 (CST 200 / 200029 / red. 60%) levantados.
