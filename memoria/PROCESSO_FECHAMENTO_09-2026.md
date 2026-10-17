@@ -439,3 +439,6 @@ Retificadora 1 (12:48:07): tomados Officecont 1050 + Freire 14263 válidas = R$ 
 PIS/COFINS 802,20 (23/10), IRPJ/CSLL 5.063,73 (30/10) = Domínio = FAT; CP DCTFWeb 502,51 (20/10, DP). Sem divergência. Falta G-Click.
 
 ## 28am. 17/10/2026 — #2 G-Click: IRPJ/CSLL concluídas 13:00; PIS/COFINS check sem data no print. TSV Enviado entregue.
+
+## 28an. 17/10/2026 — empresa #16 (Qualidente) conferida
+Domínio = Portal = DecWeb nos prestados (221 notas, R$ 142.642,60) e tomados (R$ 753,49). Impostos Domínio: PIS 927,18; COFINS 4.279,28; IRPJ 27.918,30; CSLL 12.210,59; ISS 422,87. Pontos de atenção: NF-e das entradas sem XML, crédito de ICMS (acum. 206) em não contribuinte, IBS/CBS, FAT set, guias a gerar. Detalhes no dossiê.

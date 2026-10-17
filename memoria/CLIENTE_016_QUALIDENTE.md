@@ -30,3 +30,21 @@ Receita set R$ 142.642,60: PIS R$ 927,18 e COFINS R$ 4.279,28. 3º tri: 162.730,
 
 ## Roteiro quando a Fernanda disser "fechamento da empresa #16"
 Ler o Demonstrativo dos Impostos e o Acompanhamento de Serviços/Entradas do Domínio (008/005), conciliar Prestados com Portal (Emitidas, competência = mês) e com a Declaração do DecWeb; Tomados/Entradas; TSV com status só após conferir; DARF PIS/COFINS no G-Click; IRPJ/CSLL no fechamento do trimestre.
+
+## Fechamento 09/2026: conferência com o Domínio (17/10/2026)
+Arquivos (008): `Serviços_16_092026.pdf`, `Entradas_16_092026.pdf`, `Empresa 16 - CENTRO CLINICO DE ODONTOLOGIA SS LTDA.pdf` (resumo dos impostos). Portal (003) e município (002) já na pasta.
+- **Prestados:** Domínio 221 notas (2823 a 3043, sem lacunas) R$ 142.642,60 = Portal Emitidas (221 normais comp. 09/2026) = DecWeb (receita R$ 142.642,60). Portal tem mais 6 notas de 10/2026 (R$ 2.340,00), corretamente fora.
+- **Tomados:** Domínio 4 NFS-e R$ 753,49 (Clinicorp 7589 R$ 7,90 e 17980 R$ 475,69; Icarus 13234 R$ 84,90; Ambientuus 381951 R$ 185,00) = Portal Recebidas; sem retenção.
+- **Impostos (Domínio):** ISS fixo R$ 422,87 (= declaração e guia); PIS R$ 927,18 e COFINS R$ 4.279,28 (base 142.642,60; Portal nota a nota dá PIS 927,58, diferença de arredondamento); IRPJ R$ 27.918,30 (20.350,98 + adicional 7.567,32) e CSLL R$ 12.210,59 sobre base R$ 135.673,22 (3º tri R$ 423.978,80 x 32%). Tudo igual ao cálculo da agente.
+- **Atenção:** (1) Entradas tem 4 NF-e de mercadoria (R$ 13.843,05; CFOP 1.556 acum. 106 e 2.556 acum. 206) sem conferência com XML; (2) o acum. 206 da Biodental 76043 gerou crédito de ICMS R$ 42,57 e o Domínio mostra saldo credor de ICMS R$ 164,94 num cliente não contribuinte (em ago eram "apenas informativas"); (3) IBS/CBS: Portal tem CBS R$ 494,84 e IBS R$ 54,87 nas emitidas e o Domínio mostra débitos zero (créditos 33,87 e 3,77): ajuste de acumulador no pós-fechamento; (4) FAT 016 ainda sem set; (5) guias de PIS/COFINS e IRPJ/CSLL ainda não geradas; (6) saldo credor de IRRF R$ 0,01.
+TSV consolidado entregue em 17/10 (inclui a correção do PIS de ago, R$ 770,94).
+```tsv
+16	Set2026	SERVIÇOS PRESTADOS	Importado	142642,60	Domínio (Serviços 17/10) = Portal Emitidas = DecWeb: 221 NFS-e normais (nº 2823 a 3043, sem lacunas), R$ 142.642,60; 6 notas de 10/2026 (R$ 2.340,00) fora da competência.	
+16	Set2026	SERVIÇOS TOMADOS	Importado	753,49	Domínio (Entradas 17/10) = Portal Recebidas: 4 NFS-e R$ 753,49 (Clinicorp 7589 e 17980, Icarus 13234, Ambientuus 381951); ISS, IRRF e contribuições sem retenção; declaração DecWeb sem imposto retido.	
+16	Set2026	ENTRADAS	Pendente	14596,54	Em andamento: Domínio Entradas R$ 14.596,54 (tomados R$ 753,49 + 4 NF-e de mercadoria R$ 13.843,05); falta conferir as 4 NF-e com os XMLs e o ICMS (R$ 42,57) do acum. 206 da Biodental 76043 em cliente não contribuinte.	
+16	Set2026	DARF PIS	Pendente	927,18	Domínio: base R$ 142.642,60 x 0,65% (método agregado; soma nota a nota daria R$ 927,58). Venc. 23/10. Guia ainda não gerada/subida no G-Click.	
+16	Set2026	DARF COFINS	Pendente	4279,28	Domínio: base R$ 142.642,60 x 3%. Venc. 23/10. Guia ainda não gerada/subida no G-Click.	
+16	Set2026	DARF IRPJ	Pendente	27918,30	3º tri: receita R$ 423.978,80 x 32% = base R$ 135.673,22; IRPJ 15% R$ 20.350,98 + adicional 10% R$ 7.567,32 = R$ 27.918,30 (= Domínio). Rendimentos zerado. Venc. 30/10; cota única ou até 3 cotas de R$ 9.306,10 (confirmar).	
+16	Set2026	DARF CSLL	Pendente	12210,59	3º tri: base R$ 135.673,22 x 9% = R$ 12.210,59 (= Domínio). Venc. 30/10.	
+16	Ago2026	DARF PIS	Enviado	770,94	Correção: guia SENDA de 14/09 (doc. 07.16.26257.8748597-1) traz PIS R$ 770,94 (método agregado), igual ao EFD-Contribuições 08/2026; os R$ 771,31 eram a soma nota a nota (diferença R$ 0,37).	
+```
