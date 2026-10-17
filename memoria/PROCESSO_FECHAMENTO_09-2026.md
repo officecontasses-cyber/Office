@@ -526,3 +526,6 @@ Guias conferidas nos PDFs: PIS+COFINS 4.091,90 (COFINS 3.093,09 + PIS 998,81, ve
 
 ## 28bp. 17/10/2026 — #126 Serviços Tomados: Fernanda verifica após o restante do fechamento
 Linha SERVIÇOS TOMADOS do 126 fica sem TSV (Pendente) até a verificação da Fernanda (Facebook 146442407 e Officecont 1056 fora do export do Portal; diferença Domínio x Portal 2.557,75 explicada, não confirmada no Portal).
+
+## 28bq. 17/10/2026 — #133 RFL preparado
+Dossiê `CLIENTE_133_RFL.md` criado: Lucro Real, aluguel R$ 700/mês, PIS 11,56 / COFINS 53,26 (FAT, conferidos); tomados 1 NFS-e MEI R$ 300 (ISS 0); crédito de compensação só R$ 5,78; PIS de 08/2026 a confirmar; 133 fora da planilha de Rendimentos; faltam Domínio 09/2026 e apuração IRPJ/CSLL.
