@@ -475,3 +475,6 @@ Tarefa REFIS concluída em 17/10 18:30. TSV final do #18 só depois que a Fernan
 
 ## 28ay. 17/10/2026 — #26 Raldi preparado
 Criado `memoria/CLIENTE_026_RALDI.md`. Empresa sem movimento (FAT 2026 todo zero; Ago2026 `Sem movimento`). Set: declaração (03/10, receita 0,00), guia `Sem movimento` e REINF enviados; faltam tomados/prestados, DARFs, SPED e confirmação nas fontes e no Domínio.
+
+## 28az. 17/10/2026 — #18 TSV final entregue
+Guia IRPJ/CSLL 175,14 conferida (56,70 + 118,44) e G-Click concluído 18:35; REFIS 18:30. TSV final: prestados `Importado`, PIS/COFINS `Compensado`, IRPJ/CSLL/REFIS `Enviado`; tomados `Pendente` 474,80 (NF 1029).

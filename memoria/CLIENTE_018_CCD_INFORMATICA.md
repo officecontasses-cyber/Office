@@ -54,3 +54,8 @@
 
 ## G-Click REFIS (17/10/2026)
 Print: tarefa REFIS (CC&D SERVICOS, meta 09/10, venc. 30/10), atividade "Guia" concluída por fernanda.officecont em 17/10/2026 18:30. DARF REFIS 31,50 = comprovada (`Enviado` no TSV final). **A Fernanda pediu o TSV final do #18 só depois que ela enviar o restante** (guia IRPJ/CSLL, NF 1029 etc.); não entregar antes.
+
+## Guia IRPJ/CSLL e G-Click (17/10/2026) — TSV final entregue
+- Guia SENDA (gerada 18:34:40): doc. 07.16.26290.7300127-6, venc. 30/10/2026, total 175,14 = IRPJ cód. 2089 56,70 + CSLL cód. 2372 118,44 (PA 3º tri/2026). Confere com Domínio e FAT. Arquivo `18_CC&D_PortoAlegre_09.2026_IRPJ-CSLL 3ºTRIM.pdf`.
+- G-Click: tarefa "CSLL e IRPJ - LP (Trimestral)" (CC&D SERVICOS, meta 27/10, venc. 30/10) concluída por fernanda.officecont em 17/10/2026 18:35. REFIS concluído 18:30.
+- TSV final entregue: Serviços Prestados `Importado` 2100,00; PIS/COFINS `Compensado` 0,00; IRPJ 56,70, CSLL 118,44 e REFIS 31,50 `Enviado`; **Serviços Tomados segue `Pendente` 474,80** (NF 1029 Officecont, emitida 05/10, falta conferir na prefeitura e IBS/CBS).
