@@ -249,3 +249,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 
 - **#16 concluído (17/10):** FAT set e correção da DARF PIS de agosto feitos (Fernanda). Nada pendente do #16 além do que já estava pós-fechamento.
 - **#18 CC&D (17/10):** dossiê criado (`CLIENTE_018_CCD_INFORMATICA.md`). Em aberto: retenção da Datasys na nota 11 (R$ 2.100,00; pergunta à Inês desde 05/10), Domínio set, PIS/COFINS, IRPJ/CSLL 3º tri, REFIS 31,50 (30/10), IBS/CBS, SPED Contribuições.
+
+- **#18 (17/10, Domínio conferido):** IRPJ 56,70 e CSLL 118,44 (3º tri, venc. 30/10) e REFIS 31,50 (30/10) a gerar; PIS/COFINS dependem da confirmação da retenção da Datasys na nota 11. Pendente: Entradas/Saídas do Domínio, XML da nota 11 (CST IBS/CBS e retenções), confirmar 16% de presunção do IRPJ (receita anual <= R$ 120.000), saldo credor de retenção PIS 48,95 / COFINS 225,00.

@@ -463,3 +463,6 @@ Tarefas CSLL e IRPJ - LP (Trimestral) e COFINS / PIS concluídas no G-Click em 1
 
 ## 28au. 17/10/2026 — #16 encerrado (FAT e DARF PIS ago colados); #18 CC&D preparado
 Fernanda confirmou que o FAT de set e a correção da DARF PIS de ago do #16 já estão feitos. Criado `memoria/CLIENTE_018_CCD_INFORMATICA.md`: cadastro, Datasys (retenção 129,15 em ago), REFIS 31,50, Set2026 (declaração/guia/REINF enviados; tomados, prestados, DARFs, SPED em aberto). Aguarda a Fernanda indicar onde salvou os dados mapeados.
+
+## 28av. 17/10/2026 — #18 CC&D: Domínio conferido (só o resumo dos impostos salvo)
+PIS/COFINS 13,65/63,00 compensados por retenção (assumida: nota 11 Datasys); IRPJ 56,70 (16%) e CSLL 118,44 (32%) do 3º tri; REFIS 31,50; IBS 1,98 / CBS 17,83. Faltam Entradas/Saídas, XML da nota 11 e confirmação da retenção.

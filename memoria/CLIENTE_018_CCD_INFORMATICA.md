@@ -32,3 +32,12 @@
 4. REFIS de set (R$ 31,50, venc. 30/10).
 5. IBS/CBS: prestados (nota 11: CST/cClassTrib; sem Portal sem certificado, usar XML/DecWeb), tomados (NFS-e), entradas (NF-e), créditos x acumuladores.
 6. EFD-Contribuições set (venc. 16/11) e saldo de retenção sem uso (1300/1700).
+
+## Domínio 09/2026 — Resumo dos Impostos (arquivo "Empresa 18 - CCED SERVICOS DE INFORMATICA LTDA.pdf", 17/10 18:22; único arquivo novo no Drive; Entradas/Saídas/Serviços do 18 não foram salvos)
+- PIS 0,65% x 2.100,00 = 13,65 e COFINS 3% x 2.100,00 = 63,00, **cobertos por retenção de 13,65 e 63,00** (a recolher 0). Saldo credor de retenção a transportar: PIS 48,95 e COFINS 225,00 (total 273,95), sem uso (mesmo ponto do SPED 08/2026, registros 1300/1700).
+- **IRPJ 3º tri:** base 1.008,00 (= 6.300,00 x 16%), 15% = 151,20, IRRF retido 94,50 (3 x 31,50), **a recolher 56,70**. O Domínio usa **16%** de presunção no IRPJ (serviços com receita anual até R$ 120.000, art. 40 da Lei 9.250/95; sem confirmação total do artigo: conferir o FAT do ano).
+- **CSLL 3º tri:** base 2.016,00 (= 6.300,00 x 32%), 9% = 181,44, retido 63,00 (3 x 21,00), **a recolher 118,44**.
+- **REFIS:** base 2.100,00 x 1,5% = 31,50 (venc. 30/10).
+- ISS 42,00 = guia enviada. Sem créditos de IBS/CBS (sem tomados nem entradas lançados).
+- IBS/CBS prestados: débitos CBS 17,83 e IBS 1,98 = base 1.981,35 (2.100,00 - ISS 42,00 - PIS 13,65 - COFINS 63,00) x 0,9% e 0,1%, sem redução. Falta conferir CST/cClassTrib no XML da nota 11 (sem Portal).
+- **Ressalva:** o Domínio assume retenção da Datasys em setembro (nota 11, 29/09). Sem confirmação (Inês não respondeu; XML não visto). Cenário sem retenção em set: PIS 13,65 + COFINS 63,00 a recolher; IRPJ 151,20 - 63,00 = 88,20; CSLL 181,44 - 42,00 = 139,44.
