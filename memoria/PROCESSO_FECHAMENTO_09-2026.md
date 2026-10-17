@@ -487,3 +487,6 @@ Resumo dos Impostos do Domínio zerado (saldos credores antigos PIS 1,90 / COFIN
 
 ## 28bc. 17/10/2026 — #71 Conte preparado; regra fixa: conferir CONTROLE | Rendimentos ao preparar a empresa
 Criado `memoria/CLIENTE_071_CONTE.md`. Prestados Portal x Domínio: 42 notas, R$ 1.091.077,54, tudo igual. Tomados: Portal 147 (469.779,47) x Domínio 145 (466.006,65): faltam nota 2 Monique (1.272,82) e nota 61 Laura (2.500,00). Rendimentos 3º tri do 71: não liberado ("Falta só Informe de Rend. 3º trim/2026 BRADESCO"); estimativa IRPJ ~104.929,63 e CSLL ~69.457,26 (método do FAT). #26: Rendimentos 3º tri `Zerado`. CLAUDE.md: conferir a planilha Rendimentos em todo "fechamento da empresa #N".
+
+## 28bd. 17/10/2026 — #71 Domínio regerado: receita de setembro duplicada (série 900 e série U)
+Serviços_71: 42 notas em duas séries (900 e U), Total Geral 2.182.155,08; Resumo com base de PIS/COFINS 2.182.155,08 (PIS 7.091,99 e COFINS 32.732,25 a recolher indevidos) e IRPJ 152.373,51 / CSLL 98.569,15 inflados. Entradas inalteradas (466.006,65; faltam notas 2 e 61). IBS/CBS créditos 16,14/145,38 = Portal sem a nota 61. XML 1811 sem IBS/CBS. Não gerar DARF antes de corrigir o Domínio.

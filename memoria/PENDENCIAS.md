@@ -266,3 +266,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 
 - **#71 (17/10, preparado):** dossiê `CLIENTE_071_CONTE.md`. Prestados `Importado` (conciliado); tomados dependem de lançar 2 notas (Monique 2, Laura 61); rendimentos 3º tri em branco (falta informe Bradesco); FAT set em branco; estimativa IRPJ ~104.929,63 / CSLL ~69.457,26 (venc. 30/10); IBS/CBS dos prestados sem dado no Portal (conferir XML).
 - **#26:** Rendimentos 3º tri `Zerado` confirmado. **Regra:** sempre conferir a planilha `CONTROLE | Rendimentos` ao preparar a empresa.
+
+- **#71 (17/10, Domínio regerado) ALERTA:** receita de set em dobro no Domínio (série 900 + série U); Resumo mostra PIS 7.091,99 / COFINS 32.732,25 / IRPJ 152.373,51 / CSLL 98.569,15 inflados. Corrigir e regerar antes de gerar DARF/TSV. Entradas ainda sem as notas 2 (Monique) e 61 (Laura); informe Bradesco 3º tri pendente.
