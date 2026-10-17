@@ -70,3 +70,6 @@ Todos os 10 XMLs abertos; nº, emitente e vNF batem com o Domínio. IBS/CBS = gr
 - COFINS 09/2026: 4.609,87 − 562,22 − 954,56 = **3.093,09** (= FAT). PIS 09/2026 **998,81** a recolher integral (não compensado).
 - Rendimentos (CONTROLE | Rendimentos, 3ºTRIM 2026): 126 = `Sim` (liberado), sem observação; FAT com rendimentos 0,00 no tri.
 - FAT: ISSQN set estava 3.073,25; guia/Domínio/Portal = 3.073,23. Aba Compensações ainda com banner e saldos "pendentes" (462,54 / 785,32) já consumidos.
+
+## TSV final entregue (17/10/2026 ~20:40) — DARFs enviados no G-Click
+G-Click 17/10 20:34: COFINS/PIS (venc. 23/10) e CSLL/IRPJ LP 3 cotas COTA 1 (venc. 30/10). Guia PIS+COFINS: doc 07.16.26290.7485452-3, COFINS 3.093,09 + PIS 998,81 = 4.091,90. Guia IRPJ+CSLL cota 1: doc 07.16.26290.7487505-9, IRPJ 7.763,14 + CSLL 3.514,73 = 11.277,87 (= 1/3 de 23.289,40 e 10.544,19). Cotas 2 e 3 (nov e dez, com Selic) pendentes. TSV: PIS, COFINS, IRPJ, CSLL = Enviado; SERVIÇOS PRESTADOS e ENTRADAS = Importado. SERVIÇOS TOMADOS ficou fora (Facebook 146442407 e Officecont 1056 fora do export do Portal) aguardando OK da Fernanda.

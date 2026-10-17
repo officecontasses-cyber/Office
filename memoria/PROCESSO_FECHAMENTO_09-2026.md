@@ -520,3 +520,6 @@ Decisão da Fernanda: a divergência de créditos IBS/CBS do 126 (Domínio IBS 1
 
 ## 28bn. 17/10/2026 — #126 compensação PIS/COFINS conferida
 PER/DCOMP 002 (COFINS 562,22) e 003 (PIS 954,56) = 1.516,78 contra COFINS 09/2026: DARF COFINS 3.093,09 (= FAT); PIS 998,81 integral. Ajustes de FAT entregues à Fernanda para colar (ISSQN set 3.073,23; banner e saldos da aba Compensações; aviso da set). Dúvida: nº de doc. de arrecadação igual no PER/DCOMP 003.
+
+## 28bo. 17/10/2026 — #126 DARFs enviados; TSV final
+Guias conferidas nos PDFs: PIS+COFINS 4.091,90 (COFINS 3.093,09 + PIS 998,81, venc. 23/10); IRPJ+CSLL cota 1 11.277,87 (7.763,14 + 3.514,73, venc. 30/10). TSV: DARF PIS/COFINS/IRPJ/CSLL `Enviado`, SERVIÇOS PRESTADOS e ENTRADAS `Importado`. Tomados fora, aguarda OK; SPED set 16/11; cotas 2 e 3 de IRPJ/CSLL (nov/dez); IBS/CBS depois.
