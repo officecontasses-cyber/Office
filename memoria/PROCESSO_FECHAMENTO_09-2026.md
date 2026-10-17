@@ -481,3 +481,6 @@ Guia IRPJ/CSLL 175,14 conferida (56,70 + 118,44) e G-Click concluído 18:35; REF
 
 ## 28ba. 17/10/2026 — #26 Raldi: Domínio zerado, sem certificado
 Resumo dos Impostos do Domínio zerado (saldos credores antigos PIS 1,90 / COFINS 8,78 / CSLL 8,43). `--verificar-certificados`: 26 SEM CERTIFICADO (Portal não lido). TSV `Sem movimento` proposto com ressalva; rendimentos 3º tri a confirmar.
+
+## 28bb. 17/10/2026 — #18 retificadora 1 do DecWeb conferida; #26 sem certificado
+#18: Retificadora 1 enviada 18:42:44 (receita 2.100,00, ISS 42,00); tomados mostram a NF 1029 Officecont 474,80 (prestação 30/09) = Domínio: Serviços Tomados `Importado`. A guia nova é 42,82 (venc. 30/10), com 0,82 de acréscimo; não enviar antes de confirmar o pagamento da original (42,00). Arquivo da guia foi sobrescrito. #26: ver 28ba.

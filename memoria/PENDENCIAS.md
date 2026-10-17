@@ -261,3 +261,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#18 fechado, salvo Serviços Tomados (17/10):** TSV final entregue; IRPJ 56,70, CSLL 118,44 e REFIS 31,50 `Enviado` (G-Click 18:30/18:35). Pendente: NF 1029 Officecont (474,80) na prefeitura/IBS-CBS, saldo credor de retenção PIS 48,95 / COFINS 225,00, SPED Contribuições set (16/11).
 
 - **#26 (17/10):** Domínio e DecWeb zerados; Portal Nacional não lido (sem certificado). Pendente: confirmar rendimentos 3º tri (planilha Rendimentos), decidir `Sem movimento` com ressalva do Portal, SPED set (16/11).
+
+- **#18 retificadora (17/10 18:42:44) conferida:** tomados NF 1029 confirmada na prefeitura (474,80) -> `Importado`. Pendente: confirmar se a guia original de 42,00 (venc. 13/10) foi paga antes de decidir sobre a guia nova de 42,82; IBS/CBS da NF 1029; SPED set 16/11.
