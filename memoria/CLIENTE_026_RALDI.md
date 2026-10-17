@@ -25,3 +25,7 @@
 2. Rendimentos financeiros 3º tri (planilha CONTROLE | Rendimentos, linha 26): se `Zerado`, IRPJ/CSLL do trimestre `Sem movimento`.
 3. IBS/CBS: sem notas, nada a conferir (confirmar no Portal/Domínio).
 4. SPED Contribuições set (16/11) sem movimento (0120 do PVA).
+
+## Conferência DecWeb x Portal Nacional (17/10/2026)
+- **DecWeb zerado: coerente.** Declaração 09/2026 (recibo 03/10 11:17:09): receita 0,00, imposto 0,00, retido de terceiros 0,00; sem guia; sem zip de NFS-e prestadas/tomadas no Drive (nos clientes com nota, o robô baixa); FAT 2026 zerado; Ago idem. Isso vale para notas que entram no ISSQNdec (NFS-e emitida/recebida no sistema municipal/nacional).
+- **Portal Nacional: NÃO verificado.** O 26 consta entre os 11 clientes sem certificado instalado no PC (lista de 02/10; PENDENCIAS); não há arquivos do Portal do 26 em 08 e 09/2026. "Zero" no Portal só vale se o robô rodar com certificado válido (existe um .pfx de Antenor Raldi de 2024 na pasta de certificados; validade não verificada). Alternativas: SIEG (CNPJ 05.057.885/0001-89) ou relação de notas do cliente.
