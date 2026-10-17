@@ -514,3 +514,6 @@ Regra gravada no CLAUDE.md. #71: SIEG Entrada só com Julho e Domínio só NFS-e
 
 ## 28bl. 17/10/2026 — #126 NF-e conferidas XML a XML
 10 XMLs abertos: valores = Domínio (20.853,80 + CT-e 76,00 = 20.929,80). IBS/CBS dos XMLs: 7,64 / 69,04; Domínio (descontado NFS-e Portal) 9,20 / 83,06: sobra IBS 1,56 / CBS 14,02 sem origem identificada. ENTRADAS produtos pronta para `Importado`; IBS/CBS aberto.
+
+## 28bm. 17/10/2026 — #126: IBS/CBS fica para depois do fechamento; Fernanda vai compensar PIS/COFINS
+Decisão da Fernanda: a divergência de créditos IBS/CBS do 126 (Domínio IBS 1,56 / CBS 14,02 acima dos XMLs) é vista após o fechamento. Ela vai compensar PIS/COFINS (créditos PIS 785,32 / COFINS 462,54) e atualizar o FAT do 126 (ago 109.035,74 / set 153.662,41), depois avisa. Até lá: DARF PIS/COFINS do 126 não gerar; ENTRADAS produtos 20.929,80 aguarda confirmação para `Importado`.

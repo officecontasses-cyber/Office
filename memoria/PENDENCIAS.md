@@ -284,3 +284,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#126 (17/10 22:4x):** Domínio regerado e conferido (ver dossiê). Pendente: abrir os valores dos 10 XMLs de NF-e e fechar créditos IBS/CBS; Portal novo p/ Facebook e Officecont 1056; DARF PIS/COFINS (23/10) e IRPJ/CSLL (30/10); créditos PIS 785,32 / COFINS 462,54; FAT ago/set; SPED.
 
 - [ ] **126 IBS/CBS (17/10):** NF-e conferidas XML a XML (valores = Domínio); créditos do Domínio excedem os XMLs em IBS 1,56 / CBS 14,02 (acumulador/lançamento a identificar). ENTRADAS produtos 20.929,80 pronta para `Importado`.
+- [ ] **126 (17/10, decisão da Fernanda):** IBS/CBS (divergência 1,56/14,02) fica para **depois do fechamento**. Fernanda vai **compensar PIS/COFINS** e atualizar o FAT 126; aguardar o aviso dela antes de gerar DARF PIS/COFINS (23/10), IRPJ (23.289,40) e CSLL (10.544,19) (30/10).
