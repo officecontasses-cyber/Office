@@ -496,3 +496,6 @@ Serviços_71: 42 notas em duas séries (900 e U), Total Geral 2.182.155,08; Resu
 
 ## 28bf. 17/10/2026 — #71 Resumo com rendimentos e pasta _71 conferida
 Resumo 19:15: IRPJ 104.929,65 e CSLL 69.457,20 (= estimativa). Pasta `_71` tem o pacote do Portal de 06/10 (sem as notas 2 Monique e 61 Laura; só a 60 Laura). Entradas inalterado. Falta baixar os XMLs das 2 notas, lançar, regerar; informe Bradesco; guias IRPJ/CSLL.
+
+## 28bg. 17/10/2026 — #71 XMLs das notas 2 e 61 conferidos
+Nota 2 Monique (MEI, R$ 1.272,82, comp. 20/09, sem IBS/CBS) e nota 61 Laura (R$ 2.500,00, comp. 30/09, CST 200/200052, IBS 1,75 e CBS 15,75) = Portal. Falta lançar no Domínio e regerar Entradas/Resumo.

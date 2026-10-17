@@ -273,3 +273,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#117 (17/10):** tudo `Sem movimento` conforme prefeitura (baixa em andamento, sócio faleceu); TSV entregue; SPED set (16/11) a decidir (`Não se aplica`).
 
 - **#71 (17/10 22:2x):** Resumo com rendimentos: IRPJ 104.929,65 / CSLL 69.457,20 (venc. 30/10; guias a gerar após liberar rendimentos/ADI 7936). Pasta `_71` sem os XMLs das notas 2 (Monique) e 61 (Laura): baixar do Portal pelas chaves (em `CLIENTE_071_CONTE.md`).
+
+- **#71 (17/10):** XMLs das notas 2 e 61 conferidos (= Portal). Pendente: lançar no Domínio e regerar Entradas (esperado 469.779,47) e Resumo (créditos IBS 17,89 / CBS 161,13); informe Bradesco; guias IRPJ/CSLL.
