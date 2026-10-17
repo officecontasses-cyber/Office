@@ -451,3 +451,6 @@ Domínio = Portal = DecWeb nos prestados (221 notas, R$ 142.642,60) e tomados (R
 
 ## 28aq. 17/10/2026 — #16 IBS/CBS reconferido; IBS/CBS vira item fixo do "fechamento da empresa #N"
 Fernanda ajustou IBS/CBS dos prestados e removeu o ICMS das entradas. Domínio: débitos IBS 54,87 / CBS 494,84 (ok). Créditos 3,77/33,87 = NF-e 9167 + 76043. Faltam créditos das 4 NFS-e tomadas (CBS 6,64 / IBS 0,74, acum. 800). CLAUDE.md: gatilho agora inclui conferência IBS/CBS (prestados, tomados, entradas XML).
+
+## 28ar. 17/10/2026 — #16 IBS/CBS após ajuste do acum. 800
+Créditos IBS 4,53 / CBS 40,65 (esperado 4,51 / 40,51; Domínio usou o valor contábil e não a BC sem ISS do Portal). Débitos conferem. Diferença R$ 0,02/0,14, informativa; aceita salvo decisão contrária da Fernanda.

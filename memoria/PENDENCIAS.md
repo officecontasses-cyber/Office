@@ -240,3 +240,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#16 Qualidente 09/2026 — Entradas (17/10):** 4 XMLs conferidos, valores batem (14.596,54). Pendente: decidir o crédito de ICMS R$ 42,57 da NF 76043 (Biodental, acum. 206) e créditos IBS/CBS (pós-fechamento).
 
 - **#16 IBS/CBS (17/10):** prestados e entradas OK no Domínio. Pendente: relacionar o acumulador 800 (serviços tomados) a IBS/CBS para entrarem créditos CBS 6,64 / IBS 0,74. **Regra nova:** "fechamento da empresa #N" sempre confere IBS/CBS (Portal/XML x Domínio) — ver CLAUDE.md.
+
+- **#16 IBS/CBS (17/10, após ajuste do acum. 800):** resolvido, com diferença imaterial de R$ 0,02 (IBS) / R$ 0,14 (CBS) por base (valor contábil x BC do Portal). Seguem pendentes do #16: guias PIS/COFINS e IRPJ/CSLL no G-Click, FAT set, correção da DARF PIS de agosto.

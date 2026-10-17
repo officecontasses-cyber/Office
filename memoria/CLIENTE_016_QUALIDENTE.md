@@ -70,3 +70,7 @@ PONTO DE ATENÇÃO: crédito de ICMS R$ 42,57 no acum. 206 (Biodental 76043) par
 - Origem dos créditos do Domínio (conferido): XML 9167 Bassanello (IBSCBSTot: IBS 2,82, CBS 25,34) + XML 76043 Biodental (IBS 0,95, CBS 8,53) = CBS 33,87 e IBS 3,77 (batem exatamente). XMLs 37276 Ortholay e 25042 Medlog: sem grupo IBS/CBS.
 - NFS-e tomadas (Portal, 4 notas, CST 000 / cClassTrib 000001): CBS 0,75+1,62+4,20+0,07 = 6,64; IBS 0,08+0,18+0,47+0,01 = 0,74. NÃO estão nos créditos do Domínio (acum. 800 sem relacionar 183/184).
 - Após ajustar o acumulador 800: créditos esperados CBS 40,51 e IBS 4,51 (saldo CBS 454,33 e IBS 50,36). Informativo em 2026.
+
+## IBS/CBS após ajuste do acumulador 800 (17/10/2026 14:10, Resumo dos Impostos)
+- Débitos: IBS 54,87 / CBS 494,84 (= Portal). Créditos: IBS 4,53 / CBS 40,65. A recolher (informativo): IBS 50,34 / CBS 454,19.
+- Esperado pelo Portal+XML: IBS 4,51 / CBS 40,51. Diferença IBS +0,02 / CBS +0,14: o Domínio calculou 0,9% (CBS) e 0,1% (IBS) sobre o valor contábil das 4 NFS-e tomadas (753,49 = CBS 6,78; IBS 0,76 por nota), enquanto o Portal usa a BC IBS/CBS (737,50, sem o ISS). NF-e: continuam 33,87 / 3,77. Diferença imaterial e informativa em 2026; ajuste opcional (base sem ISS no acum. 800).
