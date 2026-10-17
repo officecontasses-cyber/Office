@@ -61,6 +61,8 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
   que **a partir de 10/2026 a receita de aluguéis deixa de ter valor fixo**: passa a valer o **faturamento mensal**. Não repetir o valor
   de meses anteriores; pedir ao cliente o valor do mês antes de apurar (e conferir com as notas/recibos). Ver `memoria/PENDENCIAS.md`.
 
+- **Gatilho "fechamento da empresa #N" (pedido da Fernanda, 17/10/2026):** ao ouvir isso, ler `memoria/CLIENTE_00N_*.md` (dossiê do cliente: Portal Nacional, prefeitura e particularidades já mapeadas), conferir a Controle_Fiscal do mês e levantar o que falta. Dossiê existente: `memoria/CLIENTE_002_RF_CONSULTORIA.md` (empresa #2).
+
 ## Prazos que já erramos
 
 - **ISSQN de Porto Alegre, competência 09/2026, vence 13/10/2026** — está impresso na própria guia do
