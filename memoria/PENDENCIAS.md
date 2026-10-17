@@ -271,3 +271,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 
 - **#71 (17/10 22:xx):** Domínio corrigido (série U). Pendentes: lançar notas 2 (Monique) e 61 (Laura) (baixar XMLs do Portal e colar em `007 ARQUIVOS SIEG\_71`); rendimentos Caixa/Bradesco no Domínio (informe Bradesco); FAT set; conferir ADI 7936 (liminares sobre o +10%); IBS/CBS dos 41 XMLs restantes.
 - **#117 (17/10):** tudo `Sem movimento` conforme prefeitura (baixa em andamento, sócio faleceu); TSV entregue; SPED set (16/11) a decidir (`Não se aplica`).
+
+- **#71 (17/10 22:2x):** Resumo com rendimentos: IRPJ 104.929,65 / CSLL 69.457,20 (venc. 30/10; guias a gerar após liberar rendimentos/ADI 7936). Pasta `_71` sem os XMLs das notas 2 (Monique) e 61 (Laura): baixar do Portal pelas chaves (em `CLIENTE_071_CONTE.md`).

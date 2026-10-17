@@ -493,3 +493,6 @@ Serviços_71: 42 notas em duas séries (900 e U), Total Geral 2.182.155,08; Resu
 
 ## 28be. 17/10/2026 — #71 Domínio corrigido; pasta _71 criada; #117 sem movimento
 #71: série U corrigida (Total Geral = Total Série 1.091.077,54); Resumo PIS/COFINS 0 a recolher; IRPJ 108.730,41 e CSLL 64.003,82 (sem rendimentos); estimativa com rendimentos IRPJ ~104.929,63 / CSLL ~69.457,26; FAT conferido (reproduz 1º, 2º e parcial do 3º tri); LC 224/2025 +10% já considerado, ADI 7936 com liminares noticiadas. Entradas ainda sem as notas 2 e 61 (XMLs fora do Drive; pasta `_71` criada em 007 ARQUIVOS SIEG). #117: tudo sem movimento conforme prefeitura (processo de baixa, sócio falecido), Rendimentos 3º tri Zerado; dossiê `CLIENTE_117_TABAJARA.md`; TSV entregue.
+
+## 28bf. 17/10/2026 — #71 Resumo com rendimentos e pasta _71 conferida
+Resumo 19:15: IRPJ 104.929,65 e CSLL 69.457,20 (= estimativa). Pasta `_71` tem o pacote do Portal de 06/10 (sem as notas 2 Monique e 61 Laura; só a 60 Laura). Entradas inalterado. Falta baixar os XMLs das 2 notas, lançar, regerar; informe Bradesco; guias IRPJ/CSLL.
