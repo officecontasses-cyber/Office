@@ -79,3 +79,6 @@ TSV consolidado enviado em 17/10 (substitui os anteriores):
 2	Set2026	DARF IRPJ	Pendente	3164,83	3º tri: base R$ 21.098,88 x 15%, sem adicional; rendimentos zerado. Guia IRPJ+CSLL R$ 5.063,73 gerada em 17/10 (doc. 07.16.26290.6704807-0), venc. 30/10; sem comprovação do G-Click.	
 2	Set2026	DARF CSLL	Pendente	1898,90	3º tri: base R$ 21.098,88 x 9%. Mesma guia de R$ 5.063,73 (doc. 07.16.26290.6704807-0), venc. 30/10; sem comprovação do G-Click.	
 ```
+
+## Conferência das guias de 09/2026 antes do envio ao cliente (17/10/2026)
+Guias lidas (pasta 002 ARQUIVOS MUNICIPAIS/guias): PIS/COFINS doc. 07.16.26290.6703422-2 (venc. 23/10; COFINS 2172 R$ 659,34 + PIS 8109 R$ 142,86 = R$ 802,20) e IRPJ/CSLL doc. 07.16.26290.6704807-0 (venc. 30/10; IRPJ 2089 R$ 3.164,83 + CSLL 2372 R$ 1.898,90 = R$ 5.063,73; PA 3º trim/2026). CNPJ e razão social conferem; valores = Demonstrativo do Domínio = FAT; 25/10 é domingo (PIS/COFINS antecipa para 23/10) e 31/10 é sábado (IRPJ/CSLL em 30/10). CP DCTFWeb (DP): R$ 502,51, venc. 20/10. Total do mês R$ 6.368,44. Pendente: comprovação do G-Click. Cota única nas duas guias; parcelamento do IRPJ em até 3 cotas só se o cliente pedir (cada cota ≥ R$ 1.000; confirmar).
