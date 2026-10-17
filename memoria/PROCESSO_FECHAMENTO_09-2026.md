@@ -437,3 +437,5 @@ Retificadora 1 (12:48:07): tomados Officecont 1050 + Freire 14263 válidas = R$ 
 
 ## 28al. 17/10/2026 — #2 guias conferidas
 PIS/COFINS 802,20 (23/10), IRPJ/CSLL 5.063,73 (30/10) = Domínio = FAT; CP DCTFWeb 502,51 (20/10, DP). Sem divergência. Falta G-Click.
+
+## 28am. 17/10/2026 — #2 G-Click: IRPJ/CSLL concluídas 13:00; PIS/COFINS check sem data no print. TSV Enviado entregue.
