@@ -263,3 +263,6 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#26 (17/10):** Domínio e DecWeb zerados; Portal Nacional não lido (sem certificado). Pendente: confirmar rendimentos 3º tri (planilha Rendimentos), decidir `Sem movimento` com ressalva do Portal, SPED set (16/11).
 
 - **#18 retificadora (17/10 18:42:44) conferida:** tomados NF 1029 confirmada na prefeitura (474,80) -> `Importado`. Pendente: confirmar se a guia original de 42,00 (venc. 13/10) foi paga antes de decidir sobre a guia nova de 42,82; IBS/CBS da NF 1029; SPED set 16/11.
+
+- **#71 (17/10, preparado):** dossiê `CLIENTE_071_CONTE.md`. Prestados `Importado` (conciliado); tomados dependem de lançar 2 notas (Monique 2, Laura 61); rendimentos 3º tri em branco (falta informe Bradesco); FAT set em branco; estimativa IRPJ ~104.929,63 / CSLL ~69.457,26 (venc. 30/10); IBS/CBS dos prestados sem dado no Portal (conferir XML).
+- **#26:** Rendimentos 3º tri `Zerado` confirmado. **Regra:** sempre conferir a planilha `CONTROLE | Rendimentos` ao preparar a empresa.

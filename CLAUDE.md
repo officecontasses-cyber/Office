@@ -66,7 +66,8 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
   (1) **Prestados:** Portal Nacional (relatório `Emitidas`: CST, cClassTrib, base, CBS/IBS) x Domínio (Resumo dos Impostos: débitos IBS/CBS; acumulador 900 precisa relacionar 183-IBS/184-CBS);
   (2) **Serviços tomados (NFS-e):** Portal (`Recebidas`/`ServTomados`: CST, cClassTrib, CBS e IBS destacados) x créditos no Domínio (acumulador 800);
   (3) **Entradas (NF-e):** XML (grupo `IBSCBSTot`: `vIBS`, `vCBS`, e por item CST/cClassTrib) x créditos no Domínio (acumulador 206 etc.).
-  Fechar a soma: créditos do Domínio = NFS-e tomadas + NF-e (Simples costuma vir sem IBS/CBS). Apontar divergência e o que ajustar no acumulador. Dossiê existente: `memoria/CLIENTE_002_RF_CONSULTORIA.md` (empresa #2).
+  Fechar a soma: créditos do Domínio = NFS-e tomadas + NF-e (Simples costuma vir sem IBS/CBS). Apontar divergência e o que ajustar no acumulador.
+  **Rendimentos financeiros (pedido da Fernanda, 17/10/2026) — sempre conferir ao preparar a empresa (#N):** abrir a planilha `CONTROLE | Rendimentos` (Drive, pasta `1IgWAiAS7sxB7qAq8ZCjePeyNDlImJ4Kd`; arquivo `CONTROLE | Rendimentos.xlsx`, id `1ucTfGyMAsMT7AWpNJdI4Nbn0iTZ0UmBA`), aba do trimestre (`3ºTRIM 2026` etc.), linha da empresa: `LIBERADO FISCAL` (Sim / Zerado / NT = não tem conta / em branco = não liberado) e `Observações` (ex.: "Falta só Informe de Rend. ... BRADESCO"). Em branco = IRPJ/CSLL do trimestre não fecha. Trazer o resultado no resumo da preparação. Dossiê existente: `memoria/CLIENTE_002_RF_CONSULTORIA.md` (empresa #2).
 
 ## Prazos que já erramos
 

@@ -484,3 +484,6 @@ Resumo dos Impostos do Domínio zerado (saldos credores antigos PIS 1,90 / COFIN
 
 ## 28bb. 17/10/2026 — #18 retificadora 1 do DecWeb conferida; #26 sem certificado
 #18: Retificadora 1 enviada 18:42:44 (receita 2.100,00, ISS 42,00); tomados mostram a NF 1029 Officecont 474,80 (prestação 30/09) = Domínio: Serviços Tomados `Importado`. A guia nova é 42,82 (venc. 30/10), com 0,82 de acréscimo; não enviar antes de confirmar o pagamento da original (42,00). Arquivo da guia foi sobrescrito. #26: ver 28ba.
+
+## 28bc. 17/10/2026 — #71 Conte preparado; regra fixa: conferir CONTROLE | Rendimentos ao preparar a empresa
+Criado `memoria/CLIENTE_071_CONTE.md`. Prestados Portal x Domínio: 42 notas, R$ 1.091.077,54, tudo igual. Tomados: Portal 147 (469.779,47) x Domínio 145 (466.006,65): faltam nota 2 Monique (1.272,82) e nota 61 Laura (2.500,00). Rendimentos 3º tri do 71: não liberado ("Falta só Informe de Rend. 3º trim/2026 BRADESCO"); estimativa IRPJ ~104.929,63 e CSLL ~69.457,26 (método do FAT). #26: Rendimentos 3º tri `Zerado`. CLAUDE.md: conferir a planilha Rendimentos em todo "fechamento da empresa #N".
