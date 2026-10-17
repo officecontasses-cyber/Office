@@ -67,3 +67,8 @@ Controle_Fiscal, linha REINF da 152 com os totalizadores (substitui a anterior):
 ```tsv
 152	Set2026	REINF	Enviado		R-2010 Sucesso recibo 5745056-04-2010-2609-5745056; R-4020 Sucesso, 14 recibos (um por beneficiário) 23511133-04-4020-2609-23511133 a 23511146-04-4020-2609-23511146; R-2099 Sucesso 12203533-04-2099-2609-12203533; R-4099 Sucesso 5930225-04-4099-2609-5930225; enviados 14/10/2026 19:36 (Oficial). Totalizadores da Receita conferidos com o Domínio: INSS 1162-01 R$ 1.269,26 (base R$ 11.538,71) e retenções federais R$ 6.122,04 (614705 141,25; 618805 40,00; 619005 5.680,81; 622805 55,91; 623005 36,34; 624305 167,73). Fora: nota 741590 (Rede OK) e Volpmann 48337, a verificar em outubro.	
 ```
+
+### 152, Serviços Tomados `Importado` (17/10/2026, Fernanda confirmou)
+```tsv
+152	Set2026	SERVIÇOS TOMADOS PREF.	Importado		Domínio importado e conciliado (confirmado pela Fernanda em 17/10/2026): Retenções a Recolher = planilha do Gian = totalizadores da Receita (R$ 7.391,30). ISS retido de Porto Alegre R$ 461,69 = Declaração Mensal de 03/10/2026. ISS de Estrela (Engi, R$ 106,75) é tratado à parte no portal de Estrela.	
+```
