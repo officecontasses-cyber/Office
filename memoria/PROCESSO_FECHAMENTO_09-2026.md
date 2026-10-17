@@ -523,3 +523,6 @@ PER/DCOMP 002 (COFINS 562,22) e 003 (PIS 954,56) = 1.516,78 contra COFINS 09/202
 
 ## 28bo. 17/10/2026 — #126 DARFs enviados; TSV final
 Guias conferidas nos PDFs: PIS+COFINS 4.091,90 (COFINS 3.093,09 + PIS 998,81, venc. 23/10); IRPJ+CSLL cota 1 11.277,87 (7.763,14 + 3.514,73, venc. 30/10). TSV: DARF PIS/COFINS/IRPJ/CSLL `Enviado`, SERVIÇOS PRESTADOS e ENTRADAS `Importado`. Tomados fora, aguarda OK; SPED set 16/11; cotas 2 e 3 de IRPJ/CSLL (nov/dez); IBS/CBS depois.
+
+## 28bp. 17/10/2026 — #126 Serviços Tomados: Fernanda verifica após o restante do fechamento
+Linha SERVIÇOS TOMADOS do 126 fica sem TSV (Pendente) até a verificação da Fernanda (Facebook 146442407 e Officecont 1056 fora do export do Portal; diferença Domínio x Portal 2.557,75 explicada, não confirmada no Portal).
