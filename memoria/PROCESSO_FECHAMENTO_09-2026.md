@@ -422,3 +422,6 @@ Snapshot `PENDENCIAS_E_RESOLVIDOS_2026-10-17.md` criado no Drive (id 1hx_EYkZfz3
 
 ## 28ag. 17/10/2026 — fechamento empresa #2 (09/2026), levantamento
 Dossiê `CLIENTE_002_RF_CONSULTORIA.md` atualizado (seção "Levantamento do fechamento 09/2026"). Achados: FAT já tem set (IRPJ 3.164,83, CSLL 1.898,90, PIS 142,86, COFINS 659,34); DCTFWeb 13/10 com CP 502,51 (venc. 20/10, DP); tomados Freire 2.285,70 (Simples); Controle com Serviços Tomados/Prestados/Receita Aluguéis e DARFs em branco; nada de Domínio/Portal do 2 para set.
+
+## 28ah. 17/10/2026 — empresa #2: Domínio conferido; empresa #16 dossiê
+#2: Demonstrativo do Domínio = FAT (PIS 142,86; COFINS 659,34; IRPJ 3.164,83; CSLL 1.898,90). Fernanda: prestados sem movimento, rendimentos zerado. #16: dossiê `CLIENTE_016_QUALIDENTE.md` criado (sem Domínio de set localizado; estimativa pelo Portal PIS 927,18, COFINS 4.279,28, IRPJ 27.918,30, CSLL 12.210,59).
