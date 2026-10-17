@@ -255,3 +255,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#18 (17/10, conferido):** retenção da Datasys confirmada (nota 11). Pendente: gerar guia IRPJ 56,70 + CSLL 118,44 (30/10); G-Click do REFIS 31,50 (guia gerada 17/10) e das guias de IRPJ/CSLL; conferir NF 1029 Officecont (474,80, emitida 05/10) nos tomados da prefeitura e no IBS/CBS; saldo credor de retenção PIS 48,95 / COFINS 225,00; SPED Contribuições set (16/11).
 
 - **#18 REFIS enviado (G-Click 17/10 18:30).** TSV final do #18 aguarda o restante (IRPJ/CSLL, NF 1029 Officecont) por pedido da Fernanda.
+
+- **#26 Raldi (17/10, preparado):** dossiê criado. Aguarda Domínio set e fontes para `Sem movimento` em tomados/prestados, DARF PIS/COFINS e IRPJ/CSLL (3º tri; conferir planilha Rendimentos); SPED set 16/11. Cadastro mostra IE "Baixada" (não contribuinte de ICMS).

@@ -472,3 +472,6 @@ Retenção da Datasys confirmada na DANFSe (129,15); Domínio, FAT e nota batem 
 
 ## 28ax. 17/10/2026 — #18 REFIS comprovado no G-Click (18:30)
 Tarefa REFIS concluída em 17/10 18:30. TSV final do #18 só depois que a Fernanda enviar o restante (pedido dela).
+
+## 28ay. 17/10/2026 — #26 Raldi preparado
+Criado `memoria/CLIENTE_026_RALDI.md`. Empresa sem movimento (FAT 2026 todo zero; Ago2026 `Sem movimento`). Set: declaração (03/10, receita 0,00), guia `Sem movimento` e REINF enviados; faltam tomados/prestados, DARFs, SPED e confirmação nas fontes e no Domínio.
