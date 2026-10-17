@@ -242,3 +242,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#16 IBS/CBS (17/10):** prestados e entradas OK no Domínio. Pendente: relacionar o acumulador 800 (serviços tomados) a IBS/CBS para entrarem créditos CBS 6,64 / IBS 0,74. **Regra nova:** "fechamento da empresa #N" sempre confere IBS/CBS (Portal/XML x Domínio) — ver CLAUDE.md.
 
 - **#16 IBS/CBS (17/10, após ajuste do acum. 800):** resolvido, com diferença imaterial de R$ 0,02 (IBS) / R$ 0,14 (CBS) por base (valor contábil x BC do Portal). Seguem pendentes do #16: guias PIS/COFINS e IRPJ/CSLL no G-Click, FAT set, correção da DARF PIS de agosto.
+
+- **#16 guias (17/10):** PIS/COFINS 5.206,46 (23/10) e IRPJ/CSLL 40.128,89 (30/10) conferidas, sem divergência. Pendente: subir/enviar no G-Click e comprovar (status das DARFs fica `Pendente` até lá).

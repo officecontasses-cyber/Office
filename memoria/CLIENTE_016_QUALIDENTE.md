@@ -74,3 +74,8 @@ PONTO DE ATENÇÃO: crédito de ICMS R$ 42,57 no acum. 206 (Biodental 76043) par
 ## IBS/CBS após ajuste do acumulador 800 (17/10/2026 14:10, Resumo dos Impostos)
 - Débitos: IBS 54,87 / CBS 494,84 (= Portal). Créditos: IBS 4,53 / CBS 40,65. A recolher (informativo): IBS 50,34 / CBS 454,19.
 - Esperado pelo Portal+XML: IBS 4,51 / CBS 40,51. Diferença IBS +0,02 / CBS +0,14: o Domínio calculou 0,9% (CBS) e 0,1% (IBS) sobre o valor contábil das 4 NFS-e tomadas (753,49 = CBS 6,78; IBS 0,76 por nota), enquanto o Portal usa a BC IBS/CBS (737,50, sem o ISS). NF-e: continuam 33,87 / 3,77. Diferença imaterial e informativa em 2026; ajuste opcional (base sem ISS no acum. 800).
+
+## Guias conferidas antes do envio (17/10/2026, geradas 18:10 no SENDA)
+- PIS/COFINS: doc. 07.16.26290.7257450-7, PA 09/2026, venc. 23/10/2026, total 5.206,46 = COFINS cód. 2172 4.279,28 + PIS cód. 8109 927,18. Confere com o Domínio (Resumo dos Impostos).
+- IRPJ/CSLL 3º tri: doc. 07.16.26290.7258599-1, venc. 30/10/2026, total 40.128,89 = IRPJ cód. 2089 27.918,30 + CSLL cód. 2372 12.210,59. Confere com o Domínio (IRPJ 15% 20.350,98 + adicional 7.567,32 = 27.918,30; CSLL 135.673,22 x 9%).
+- Arquivos no Drive: `16_CentroClinico_PortoAlegre_09.2026_PIS-COFINS.pdf` e `..._IRPJ-CSLL 3ºTRIM.pdf`. Sem divergência. Status segue Pendente até a comprovação do G-Click.

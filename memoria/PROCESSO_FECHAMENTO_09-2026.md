@@ -454,3 +454,6 @@ Fernanda ajustou IBS/CBS dos prestados e removeu o ICMS das entradas. Domínio: 
 
 ## 28ar. 17/10/2026 — #16 IBS/CBS após ajuste do acum. 800
 Créditos IBS 4,53 / CBS 40,65 (esperado 4,51 / 40,51; Domínio usou o valor contábil e não a BC sem ISS do Portal). Débitos conferem. Diferença R$ 0,02/0,14, informativa; aceita salvo decisão contrária da Fernanda.
+
+## 28as. 17/10/2026 — #16 guias PIS/COFINS e IRPJ/CSLL conferidas
+PIS/COFINS 5.206,46 (23/10) e IRPJ/CSLL 40.128,89 (30/10) = Domínio, códigos e PA corretos. Falta envio e comprovação no G-Click.
