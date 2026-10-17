@@ -53,3 +53,13 @@ TSV consolidado entregue em 17/10 (inclui a correção do PIS de ago, R$ 770,94)
 - Planilha `CONTROLE | Rendimentos`, aba 3ºTRIM 2026, linha 16 QUALIDENTE: LIBERADO FISCAL = `Zerado` (observação Ø). FAT sem rendimentos financeiros.
 - IBS/CBS, prestados (acumulador 900; Domínio com débitos zero porque o acumulador não relaciona 183-IBS/184-CBS): as 221 notas de 09/2026 do Portal têm todas CST 200, cClassTrib 200029 (serviços de saúde humana), cIndOp 030101, CBS 0,90% nominal com redução 60% (0,36%), IBS estadual 0,10% com redução 60% (0,04%), IBS municipal 0,00%; base IBS/CBS = valor - PIS - COFINS (total R$ 137.435,74); esperado após o ajuste: CBS R$ 494,84 e IBS R$ 54,87.
 - Tomados (acumulador 800): Portal CST 000 / cClassTrib 000001, base R$ 737,50, CBS R$ 6,64 e IBS R$ 0,74; o Domínio mostra créditos de CBS R$ 33,87 e IBS R$ 3,77 (maiores: diferença de R$ 27,23 e R$ 3,03, origem não identificada, talvez NF-e).
+
+## Entradas 09/2026 — conferência dos XMLs (17/10/2026)
+XMLs na SIEG (Setembro). Todos os valores e datas batem com o Domínio (total R$ 14.596,54).
+| NF | Fornecedor | Valor | Observação |
+|---|---|---|---|
+| 9167 | Distribuidora Dentária Bassanello | 4.949,07 | Simples (CSOSN 400), mesma UF, ICMS 0, 28 itens CFOP 5102 |
+| 37276 | Dental Ortholay | 5.748,70 | Simples (CSOSN 102/500), ICMS 0, boleto |
+| 25042 | Medlog | 2.197,50 | Simples, 4 itens, 3 duplicatas |
+| 76043 | Biodental (SC) | 947,78 | CRT 3, venda interestadual a não contribuinte; ICMS 42,57 (4%/12%); DIFAL R$ 118,58 devido pelo vendedor; IBS 0,95 / CBS 8,53 |
+PONTO DE ATENÇÃO: crédito de ICMS R$ 42,57 no acum. 206 (Biodental 76043) parece indevido (Qualidente é prestadora de serviços, não contribuinte de ICMS). Revisar acumulador; créditos IBS/CBS das entradas só pós-fechamento (ano-teste informativo). Sem crédito de ICMS nas demais (Simples).

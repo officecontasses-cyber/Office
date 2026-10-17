@@ -445,3 +445,6 @@ Domínio = Portal = DecWeb nos prestados (221 notas, R$ 142.642,60) e tomados (R
 
 ## 28ao. 17/10/2026 — #2 ALERTA distrato do locatário; #16 rendimentos e IBS/CBS
 #2: nota Freire 14263 lida (taxa de administração R$ 1.142,85, sem retenção); demonstrativo ago/2026 mostra distrato do Consulado Geral da Itália em 26/08/2026 (aluguel de agosto R$ 19.047,60 em 26 dias): receita fixa de R$ 21.978,00 em ago e set precisa ser confirmada com o cliente antes de enviar/pagar as guias. #16: rendimentos 3º tri `Zerado`; dados de IBS/CBS do acumulador 900 (CST 200 / 200029 / red. 60%) levantados.
+
+## 28ap. 17/10/2026 — #16 Entradas: XMLs conferidos
+4 NF-e (9167, 37276, 25042, 76043) = Domínio, R$ 14.596,54. Único ponto: crédito de ICMS R$ 42,57 da Biodental 76043 (acum. 206) sem suporte para não contribuinte; ajustar/ confirmar. Detalhes no dossiê #16.
