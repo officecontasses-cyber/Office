@@ -517,3 +517,6 @@ Regra gravada no CLAUDE.md. #71: SIEG Entrada só com Julho e Domínio só NFS-e
 
 ## 28bm. 17/10/2026 — #126: IBS/CBS fica para depois do fechamento; Fernanda vai compensar PIS/COFINS
 Decisão da Fernanda: a divergência de créditos IBS/CBS do 126 (Domínio IBS 1,56 / CBS 14,02 acima dos XMLs) é vista após o fechamento. Ela vai compensar PIS/COFINS (créditos PIS 785,32 / COFINS 462,54) e atualizar o FAT do 126 (ago 109.035,74 / set 153.662,41), depois avisa. Até lá: DARF PIS/COFINS do 126 não gerar; ENTRADAS produtos 20.929,80 aguarda confirmação para `Importado`.
+
+## 28bn. 17/10/2026 — #126 compensação PIS/COFINS conferida
+PER/DCOMP 002 (COFINS 562,22) e 003 (PIS 954,56) = 1.516,78 contra COFINS 09/2026: DARF COFINS 3.093,09 (= FAT); PIS 998,81 integral. Ajustes de FAT entregues à Fernanda para colar (ISSQN set 3.073,23; banner e saldos da aba Compensações; aviso da set). Dúvida: nº de doc. de arrecadação igual no PER/DCOMP 003.

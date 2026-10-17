@@ -285,3 +285,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 
 - [ ] **126 IBS/CBS (17/10):** NF-e conferidas XML a XML (valores = Domínio); créditos do Domínio excedem os XMLs em IBS 1,56 / CBS 14,02 (acumulador/lançamento a identificar). ENTRADAS produtos 20.929,80 pronta para `Importado`.
 - [ ] **126 (17/10, decisão da Fernanda):** IBS/CBS (divergência 1,56/14,02) fica para **depois do fechamento**. Fernanda vai **compensar PIS/COFINS** e atualizar o FAT 126; aguardar o aviso dela antes de gerar DARF PIS/COFINS (23/10), IRPJ (23.289,40) e CSLL (10.544,19) (30/10).
+- [ ] **126 (17/10 noite):** compensação conferida (COFINS 09/2026 → DARF 3.093,09; PIS 998,81 integral, venc. 23/10; gerar/comprovar no G-Click). Fernanda cola ajustes no FAT (ISSQN set 3.073,23; aba Compensações zerada). Conferir nº do doc. de arrecadação do PER/DCOMP 003. IRPJ 23.289,40 / CSLL 10.544,19 (30/10). IBS/CBS depois.

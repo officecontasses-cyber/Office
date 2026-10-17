@@ -63,3 +63,10 @@ Todos os 10 XMLs abertos; nº, emitente e vNF batem com o Domínio. IBS/CBS = gr
 
 - Valores = Domínio nas 10 NF-e (+ CT-e 4175904 São Miguel 76,00, sem XML no hub = 20.929,80). ENTRADAS (produtos) conferida.
 - **IBS/CBS créditos NÃO fecham:** Domínio IBS 9,86 / CBS 89,03; menos NFS-e Portal 0,66 / 5,97 = 9,20 / 83,06 esperado das NF-e; XMLs somam 7,64 / 69,04. **Sobra no Domínio: IBS 1,56 / CBS 14,02** (proporção 0,1%/0,9% ⇒ base ≈ R$ 1.558). Causa não identificada (hipóteses: Facebook/Officecont fora do Portal; CT-e; base sem desconto na 1008460; acumulador). Conferir lançamento a lançamento no Domínio.
+
+## Compensação PIS/COFINS 09/2026 (17/10/2026) — conferida
+- PER/DCOMP 002 `00350.22053.171026.1.3.04-0009`: crédito COFINS 01/2025 (DARF 20/03/2025, 2172-01), saldo do PERDCOMP 001: original 462,54, Selic 21,55% = **562,22**; saldo do crédito original após = 0,00. Débito: COFINS 09/2026 (venc. 23/10), DCTFWeb recibo 050000540023248.
+- PER/DCOMP 003 `00672.82985.171026.1.3.04-1725`: crédito PIS 01/2025 (**8109-02**, original 785,32), Selic 21,55% = **954,56**; saldo 0,00. Débito: COFINS 09/2026. **Atenção:** o PDF traz o mesmo nº de documento de arrecadação do COFINS (07.16.25079.4208194-3); conferir se o DARF de PIS tem número próprio.
+- COFINS 09/2026: 4.609,87 − 562,22 − 954,56 = **3.093,09** (= FAT). PIS 09/2026 **998,81** a recolher integral (não compensado).
+- Rendimentos (CONTROLE | Rendimentos, 3ºTRIM 2026): 126 = `Sim` (liberado), sem observação; FAT com rendimentos 0,00 no tri.
+- FAT: ISSQN set estava 3.073,25; guia/Domínio/Portal = 3.073,23. Aba Compensações ainda com banner e saldos "pendentes" (462,54 / 785,32) já consumidos.
