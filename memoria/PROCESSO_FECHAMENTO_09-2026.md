@@ -505,3 +505,6 @@ Entradas 147 notas, 469.779,47 = Portal; créditos IBS 17,89 / CBS 161,13 = Port
 
 ## 28bi. 17/10/2026 — #126 Tatsch & Leite preparado; #71 Domínio final conferido (log 28bh)
 Criado `memoria/CLIENTE_126_TATSCH_LEITE.md`: Portal 209 emitidas (153.662,41, sem IBS/CBS) / 15 recebidas (10.981,61, CRF 10,46, CBS 5,97 / IBS 0,66); Domínio de 05/10 desatualizado (faltam saídas 1760–1841); FAT ago/set em branco; estimativas PIS 998,81 / COFINS 4.609,87 e IRPJ 23.289,40 / CSLL 10.544,19; Rendimentos 3º tri `Sim`.
+
+## 28bj. 17/10/2026 — #71 faltou a linha ENTRADAS no TSV
+Controle (export 17/10 ~19:30): Prestados, Tomados, PIS, COFINS, IRPJ e CSLL do 71 já colados; ENTRADAS em branco (a linha não tinha sido incluída no TSV). TSV entregue: ENTRADAS `Importado` 469.779,47 (Domínio = Portal, 147 NFS-e, sem NF-e).
