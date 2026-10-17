@@ -457,3 +457,6 @@ Créditos IBS 4,53 / CBS 40,65 (esperado 4,51 / 40,51; Domínio usou o valor con
 
 ## 28as. 17/10/2026 — #16 guias PIS/COFINS e IRPJ/CSLL conferidas
 PIS/COFINS 5.206,46 (23/10) e IRPJ/CSLL 40.128,89 (30/10) = Domínio, códigos e PA corretos. Falta envio e comprovação no G-Click.
+
+## 28at. 17/10/2026 — #16 guias enviadas (G-Click 18:11)
+Tarefas CSLL e IRPJ - LP (Trimestral) e COFINS / PIS concluídas no G-Click em 17/10 18:11, com confirmação da Fernanda. TSV `Enviado` para DARF PIS 927,18, COFINS 4.279,28, IRPJ 27.918,30 e CSLL 12.210,59.

@@ -79,3 +79,6 @@ PONTO DE ATENÇÃO: crédito de ICMS R$ 42,57 no acum. 206 (Biodental 76043) par
 - PIS/COFINS: doc. 07.16.26290.7257450-7, PA 09/2026, venc. 23/10/2026, total 5.206,46 = COFINS cód. 2172 4.279,28 + PIS cód. 8109 927,18. Confere com o Domínio (Resumo dos Impostos).
 - IRPJ/CSLL 3º tri: doc. 07.16.26290.7258599-1, venc. 30/10/2026, total 40.128,89 = IRPJ cód. 2089 27.918,30 + CSLL cód. 2372 12.210,59. Confere com o Domínio (IRPJ 15% 20.350,98 + adicional 7.567,32 = 27.918,30; CSLL 135.673,22 x 9%).
 - Arquivos no Drive: `16_CentroClinico_PortoAlegre_09.2026_PIS-COFINS.pdf` e `..._IRPJ-CSLL 3ºTRIM.pdf`. Sem divergência. Status segue Pendente até a comprovação do G-Click.
+
+## G-Click, comprovação (17/10/2026)
+Print: "CSLL e IRPJ - LP (Trimestral)" (CENTRO CLINICO, meta 27/10, venc. 30/10) e "COFINS / PIS" (meta 21/10, venc. 23/10), atividades concluídas por fernanda.officecont em 17/10/2026 18:11. Fernanda confirmou o envio. DARF PIS/COFINS/IRPJ/CSLL = `Enviado`. Pendente no #16: FAT set (receita 142.642,60) e correção da DARF PIS de agosto (770,94).
