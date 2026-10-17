@@ -431,3 +431,6 @@ Entradas set: só Officecont 1050 (R$ 879,30; emissão 05/10, entrada 30/09; CFO
 
 ## 28aj. 17/10/2026 — empresa #2: decisões e comandos
 Fernanda: (1) a Freire não pode ser lançada no Domínio porque não temos as notas (fica Pendente); (2) pediu o comando de retificadora do DecWeb para incluir a Officecont 1050 nos tomados (fase 1 `--retificadora` sem enviar; conferir; fase 2 `--retificadora --enviar`; fase 3); (3) acha que já cobrou o Ricardo: prompt para a extensão Claude no navegador procurar no e-mail (somente leitura), entregue no chat.
+
+## 28ak. 17/10/2026 (noite) — empresa #2: DecWeb retificadora, e-mail, guias
+Retificadora 1 (12:48:07): tomados Officecont 1050 + Freire 14263 válidas = R$ 2.022,15; Freire 14320 cancelada. Correção: o valor de 3.165,00 que informei antes estava errado. Guias: PIS/COFINS 802,20 (23/10) e IRPJ/CSLL 5.063,73 (30/10) geradas 17/10, sem G-Click. E-mail: cobrança 04/10, resposta 05/10 (14320 duplicada/cancelada). Código 19831 = proprietário RF na Freire Imóveis.

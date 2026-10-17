@@ -60,3 +60,22 @@ Eu havia dito que não achei o Acompanhamento de Entradas: ele existia (`Entrada
 - **Saídas set (Domínio):** nota 202609, "clientes diversos", 30/09, CFOP 5.949, acumulador 1002, R$ 21.978,00 (receita de aluguel).
 - **Prefeitura (DecWeb, 03/10):** só a Freire; a Officecont 1050 não consta, provavelmente porque foi emitida em 05/10, depois da declaração (inferência). Efeito no imposto: nenhum (ISS 0), mas a declaração de tomados não inclui a nota 1050.
 - Serviços Tomados set: levantado R$ 3.165,00 (879,30 + 2.285,70), `Pendente` até lançar a Freire e conciliar.
+
+## Resultado do DecWeb e do e-mail (17/10/2026, noite)
+- **Retificadora 1** da declaração de 09/2026 recebida em **17/10/2026 12:48:07** (receita 0, imposto 0, total a recolher 0, sem guia). Tomados da retificadora: Officecont 1050 (emissão 05/10, prestação 30/09, R$ 879,30, Simples), Freire 14263 (R$ 1.142,85) e Freire 14320 (**Cancelada**); total válido **R$ 2.022,15** (o R$ 3.165,00 que eu tinha calculado estava errado: a 14320 foi cancelada).
+- **Guias geradas em 17/10:** PIS+COFINS R$ 802,20 (venc. 23/10) e IRPJ+CSLL do 3º tri R$ 5.063,73 (venc. 30/10). Sem comprovação do G-Click: ficam `Pendente`.
+- **E-mail (extensão, OWA):** cobrança das notas de set em 04/10 16:18; Ricardo respondeu em 05/10 14:11 repassando a Freire: vale a nota de 14/09 (14263); a de 28/09 (14320) foi emitida em duplicidade e cancelada. Nada sobre descrição do serviço nem retenção. Agosto: cobrança em 14/09 (nota 13882, R$ 1.318,68); Ricardo mandou documentos em 16/09, mas nenhum e-mail cita a 13882. Anexos não abertos pela extensão.
+- **Código 19831 = código de proprietário da RF na Freire Imóveis** (demonstrativos de 2019/2020 no Drive): os PDFs "NF - 19831 RF Consultoria" são da Freire para a RF; serviço provavelmente administração de aluguéis (inferência; anexos de 2026 não lidos). Observação não confirmada: 1.318,68 = 6,0% de 21.978,00 e 1.142,85 = 5,2%.
+- **Pendências:** abrir/salvar no Drive os PDFs da Freire (69 KB e 30 KB) para confirmar nº, descrição e retenção; nota de agosto 13882 (Controle Ago Serviços Tomados `Pendente`).
+
+TSV consolidado enviado em 17/10 (substitui os anteriores):
+```tsv
+2	Set2026	SERVIÇOS PRESTADOS	Sem movimento	0,00	Prefeitura (Declaração Mensal): receita bruta R$ 0,00; confirmado pela Fernanda em 17/10/2026. Portal não consultado (sem certificado).	
+2	Set2026	RECEITA ALUGUEIS	Importado	21978,00	Domínio (Saídas 17/10): nota 202609 de 30/09, CFOP 5.949, acum. 1002, R$ 21.978,00 (valor fixo até 09/2026) = FAT; PIS/COFINS sobre R$ 21.978,00.	
+2	Set2026	DECLARAÇÃO PREFEITURA	Enviado		Retificadora 1 recebida em 17/10/2026 12:48:07 (inclui a Officecont 1050, de 05/10, que não constava da original de 03/10 11:16:19). Receita bruta R$ 0,00 e imposto devido R$ 0,00 (só tomados, sem ISS retido).	
+2	Set2026	SERVIÇOS TOMADOS	Pendente	2022,15	Em andamento: DecWeb (Retificadora 1) = Freire 14263 R$ 1.142,85 + Officecont 1050 R$ 879,30 = R$ 2.022,15 (Freire 14320 cancelada). Domínio tem só a Officecont 1050 (R$ 879,30); Freire 14263 sem nota no escritório, não lançada.	
+2	Set2026	DARF PIS	Pendente	142,86	Domínio = FAT. Guia PIS+COFINS R$ 802,20 gerada em 17/10 (doc. 07.16.26290.6703422-2), venc. 23/10; sem comprovação do G-Click.	
+2	Set2026	DARF COFINS	Pendente	659,34	Domínio = FAT. Mesma guia de R$ 802,20 (doc. 07.16.26290.6703422-2), venc. 23/10; sem comprovação do G-Click.	
+2	Set2026	DARF IRPJ	Pendente	3164,83	3º tri: base R$ 21.098,88 x 15%, sem adicional; rendimentos zerado. Guia IRPJ+CSLL R$ 5.063,73 gerada em 17/10 (doc. 07.16.26290.6704807-0), venc. 30/10; sem comprovação do G-Click.	
+2	Set2026	DARF CSLL	Pendente	1898,90	3º tri: base R$ 21.098,88 x 9%. Mesma guia de R$ 5.063,73 (doc. 07.16.26290.6704807-0), venc. 30/10; sem comprovação do G-Click.	
+```
