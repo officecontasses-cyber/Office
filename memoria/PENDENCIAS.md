@@ -259,3 +259,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#26 Raldi (17/10, preparado):** dossiê criado. Aguarda Domínio set e fontes para `Sem movimento` em tomados/prestados, DARF PIS/COFINS e IRPJ/CSLL (3º tri; conferir planilha Rendimentos); SPED set 16/11. Cadastro mostra IE "Baixada" (não contribuinte de ICMS).
 
 - **#18 fechado, salvo Serviços Tomados (17/10):** TSV final entregue; IRPJ 56,70, CSLL 118,44 e REFIS 31,50 `Enviado` (G-Click 18:30/18:35). Pendente: NF 1029 Officecont (474,80) na prefeitura/IBS-CBS, saldo credor de retenção PIS 48,95 / COFINS 225,00, SPED Contribuições set (16/11).
+
+- **#26 (17/10):** Domínio e DecWeb zerados; Portal Nacional não lido (sem certificado). Pendente: confirmar rendimentos 3º tri (planilha Rendimentos), decidir `Sem movimento` com ressalva do Portal, SPED set (16/11).

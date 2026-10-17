@@ -478,3 +478,6 @@ Criado `memoria/CLIENTE_026_RALDI.md`. Empresa sem movimento (FAT 2026 todo zero
 
 ## 28az. 17/10/2026 — #18 TSV final entregue
 Guia IRPJ/CSLL 175,14 conferida (56,70 + 118,44) e G-Click concluído 18:35; REFIS 18:30. TSV final: prestados `Importado`, PIS/COFINS `Compensado`, IRPJ/CSLL/REFIS `Enviado`; tomados `Pendente` 474,80 (NF 1029).
+
+## 28ba. 17/10/2026 — #26 Raldi: Domínio zerado, sem certificado
+Resumo dos Impostos do Domínio zerado (saldos credores antigos PIS 1,90 / COFINS 8,78 / CSLL 8,43). `--verificar-certificados`: 26 SEM CERTIFICADO (Portal não lido). TSV `Sem movimento` proposto com ressalva; rendimentos 3º tri a confirmar.

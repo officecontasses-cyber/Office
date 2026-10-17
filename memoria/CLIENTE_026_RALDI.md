@@ -29,3 +29,8 @@
 ## Conferência DecWeb x Portal Nacional (17/10/2026)
 - **DecWeb zerado: coerente.** Declaração 09/2026 (recibo 03/10 11:17:09): receita 0,00, imposto 0,00, retido de terceiros 0,00; sem guia; sem zip de NFS-e prestadas/tomadas no Drive (nos clientes com nota, o robô baixa); FAT 2026 zerado; Ago idem. Isso vale para notas que entram no ISSQNdec (NFS-e emitida/recebida no sistema municipal/nacional).
 - **Portal Nacional: NÃO verificado.** O 26 consta entre os 11 clientes sem certificado instalado no PC (lista de 02/10; PENDENCIAS); não há arquivos do Portal do 26 em 08 e 09/2026. "Zero" no Portal só vale se o robô rodar com certificado válido (existe um .pfx de Antenor Raldi de 2024 na pasta de certificados; validade não verificada). Alternativas: SIEG (CNPJ 05.057.885/0001-89) ou relação de notas do cliente.
+
+## Domínio 09/2026 e certificado (17/10/2026)
+- **Certificado:** `--verificar-certificados` (print da Fernanda, 17/10): **26 Raldi = SEM CERTIFICADO** (o 18 CC&D também). Portal Nacional do 26 não pode ser lido pelo robô.
+- **Domínio, Resumo dos Impostos (Empresa 26, 17/10 18:44; único arquivo salvo, sem Entradas/Saídas/Serviços):** IBS, CBS, ICMS e ISS zerados (débitos e créditos); PIS, COFINS, CSLL e IRPJ com base 0,00 e nada a recolher. Saldos credores de retenções antigas: PIS 1,90, COFINS 8,78, CSLL 8,43 (total 19,11), só transportados (retenção de períodos anteriores; FAT 2026 sem retenção).
+- Conclusão: DecWeb, FAT e Domínio zerados e coerentes; Portal Nacional não verificado (sem certificado). TSV proposto `Sem movimento` com ressalva do Portal; IRPJ/CSLL do 3º tri dependem de `Zerado` em CONTROLE | Rendimentos (ainda não confirmado).
