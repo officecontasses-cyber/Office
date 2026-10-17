@@ -68,3 +68,6 @@
 - **Serviços:** Total Série único R$ 1.091.077,54 (sem duplicidade).
 - **Resumo (19:24):** créditos IBS **17,89** e CBS **161,13** (= Portal; saldo credor IBS 38,93 e CBS 350,51, como previsto); débitos IBS/CBS zero; retenções IRRF 83,61 + ISS retido 39,43 + contribuições 259,20 (382,24); PIS/COFINS 0 a recolher (saldos 0,02/0,07); **IRPJ 104.929,65 e CSLL 69.457,20** (inalterados). 
 - Status: Serviços Prestados `Importado`; Serviços Tomados `Importado` 469.779,47; PIS/COFINS `Retido`. IRPJ/CSLL seguem `Pendente` (guias a gerar; informe Bradesco; ADI 7936). Todas as linhas de Entradas do 71 são NFS-e (espécie 39); sem NF-e.
+
+## ENTRADAS do 71 = `Sem movimento` (regra da Fernanda, 17/10/2026)
+ENTRADAS é só compra de produtos (NF-e/CT-e); NFS-e tomadas ficam em SERVIÇOS TOMADOS. No SIEG (`Entrada/2026`) o 71 só tem a pasta `Julho` (sem Agosto nem Setembro) e as 147 linhas do Domínio Entradas de 09/2026 são todas NFS-e (espécie 39): ENTRADAS 09/2026 = `Sem movimento`. **Corrige o TSV anterior (ENTRADAS `Importado` 469.779,47, que misturava serviços tomados).**

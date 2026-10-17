@@ -508,3 +508,6 @@ Criado `memoria/CLIENTE_126_TATSCH_LEITE.md`: Portal 209 emitidas (153.662,41, s
 
 ## 28bj. 17/10/2026 — #71 faltou a linha ENTRADAS no TSV
 Controle (export 17/10 ~19:30): Prestados, Tomados, PIS, COFINS, IRPJ e CSLL do 71 já colados; ENTRADAS em branco (a linha não tinha sido incluída no TSV). TSV entregue: ENTRADAS `Importado` 469.779,47 (Domínio = Portal, 147 NFS-e, sem NF-e).
+
+## 28bk. 17/10/2026 — regra ENTRADAS = só compra de produtos; #71 ENTRADAS `Sem movimento`; #126 Domínio conferido
+Regra gravada no CLAUDE.md. #71: SIEG Entrada só com Julho e Domínio só NFS-e: ENTRADAS `Sem movimento` (corrige o TSV anterior). #126: saídas 209 notas 153.662,41 = Portal = guia; PIS 998,81 / COFINS 4.609,87 / IRPJ 23.289,40 / CSLL 10.544,19 = estimativa; Entradas 34.469,16 (NF-e/CT-e 20.929,80 + NFS-e 13.539,36); diferença NFS-e x Portal explicada (Facebook, Officecont 1056, Ideal Art); XML 461485 = devolução (Saída 5-202) com débito IBS 0,31 / CBS 2,80.
