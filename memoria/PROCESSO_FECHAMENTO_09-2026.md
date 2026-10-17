@@ -460,3 +460,6 @@ PIS/COFINS 5.206,46 (23/10) e IRPJ/CSLL 40.128,89 (30/10) = Domínio, códigos e
 
 ## 28at. 17/10/2026 — #16 guias enviadas (G-Click 18:11)
 Tarefas CSLL e IRPJ - LP (Trimestral) e COFINS / PIS concluídas no G-Click em 17/10 18:11, com confirmação da Fernanda. TSV `Enviado` para DARF PIS 927,18, COFINS 4.279,28, IRPJ 27.918,30 e CSLL 12.210,59.
+
+## 28au. 17/10/2026 — #16 encerrado (FAT e DARF PIS ago colados); #18 CC&D preparado
+Fernanda confirmou que o FAT de set e a correção da DARF PIS de ago do #16 já estão feitos. Criado `memoria/CLIENTE_018_CCD_INFORMATICA.md`: cadastro, Datasys (retenção 129,15 em ago), REFIS 31,50, Set2026 (declaração/guia/REINF enviados; tomados, prestados, DARFs, SPED em aberto). Aguarda a Fernanda indicar onde salvou os dados mapeados.

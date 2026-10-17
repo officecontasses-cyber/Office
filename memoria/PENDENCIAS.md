@@ -246,3 +246,6 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#16 guias (17/10):** PIS/COFINS 5.206,46 (23/10) e IRPJ/CSLL 40.128,89 (30/10) conferidas, sem divergência. Pendente: subir/enviar no G-Click e comprovar (status das DARFs fica `Pendente` até lá).
 
 - **#16 guias ENVIADAS (17/10, G-Click 18:11):** PIS/COFINS e IRPJ/CSLL concluídas. Resta no #16: FAT set e correção da DARF PIS de agosto (770,94).
+
+- **#16 concluído (17/10):** FAT set e correção da DARF PIS de agosto feitos (Fernanda). Nada pendente do #16 além do que já estava pós-fechamento.
+- **#18 CC&D (17/10):** dossiê criado (`CLIENTE_018_CCD_INFORMATICA.md`). Em aberto: retenção da Datasys na nota 11 (R$ 2.100,00; pergunta à Inês desde 05/10), Domínio set, PIS/COFINS, IRPJ/CSLL 3º tri, REFIS 31,50 (30/10), IBS/CBS, SPED Contribuições.
