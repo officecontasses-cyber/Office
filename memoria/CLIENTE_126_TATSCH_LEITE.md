@@ -43,3 +43,23 @@ Agosto (referência): prestados 182 notas R$ 109.035,74 (ISS 2.180,70); tomados 
 - **Entradas (Domínio):** total R$ 34.469,16 = NF-e/CT-e **R$ 20.929,80** (11 linhas) + NFS-e tomadas R$ 13.539,36 (17 linhas). NFS-e: Portal Recebidas 15 notas R$ 10.981,61; diferença R$ 2.557,75 explicada: Facebook 146442407 (1.703,92, emitida 02/10) e Officecont 1056 (864,25, emitida 05/10) não estão no export do Portal (03/10) e Ideal Art 444 (Domínio 336,74 x Portal 347,16: desconto incondicional 10,42) = 1.703,92 + 864,25 - 10,42. 
 - **NF-e no SIEG (`007 ARQUIVOS SIEG` > CNPJ 10914420000137 > Entrada > 2026 > Setembro):** 11 XMLs; 10 coincidem por número com as NF-e do Domínio (563218, 132190, 1008460, 4128, 1011991, 1011099, 1647221, 461527, 563221, 462789); valores dos XMLs não abertos (exceto o 461485). O 11º XML é a **NF 461485 (JJGC, 01/09, finNFe 4, CFOP 1202, devolução de R$ 778,75, ICMS desonerado, IBS 0,31 / CBS 2,80, CST 200/200030)**: está lançada em **Saídas** (CFOP 5-202, R$ 778,75) e gera os **débitos de IBS 0,31 e CBS 2,80** do Resumo. CT-e 4175904 (São Miguel, R$ 76,00) não tem XML no hub NF-e.
 - **IBS/CBS créditos:** Domínio IBS 9,86 / CBS 89,03; Portal NFS-e IBS 0,66 / CBS 5,97 (Clinicorp, Ambientuus, Ideal Art); resto (IBS 9,20 / CBS 83,06) viria das NF-e (e talvez Facebook/Officecont), não conferido XML a XML.
+
+## Conferência XML a XML das NF-e de entrada (17/10/2026, SIEG > Entrada > 2026 > Setembro)
+Todos os 10 XMLs abertos; nº, emitente e vNF batem com o Domínio. IBS/CBS = grupo `IBSCBSTot` (valores lidos do XML decodificado):
+
+| NF | Emitente | vNF | vIBS | vCBS |
+|---|---|---|---|---|
+| 4128 | Fatto 3D | 413,01 | 0,30 | 2,74 |
+| 132190 | JB Embalagens | 398,24 | 0,37 | 3,26 |
+| 461527 | JJGC (devolvida em 461485) | 778,75 | 0,31 | 2,80 |
+| 462789 | JJGC | 5.004,98 | 2,01 | 18,18 |
+| 563218 | JJGC PR | 3.575,00 | 0,00 | 0,00 (redução 100%) |
+| 563221 | JJGC PR | 2.941,90 | 0,00 | 0,00 (CST 410) |
+| 1008460 | Dentalshop | 1.296,04 | 1,12 | 10,03 |
+| 1011099 | Dentalshop | 769,80 | 0,64 | 5,70 |
+| 1011991 | Dentalshop | 549,00 | 0,45 | 4,06 |
+| 1647221 | Quantity SC | 5.127,08 | 2,44 | 22,27 |
+| **Soma 10 NF-e** | | **20.853,80** | **7,64** | **69,04** |
+
+- Valores = Domínio nas 10 NF-e (+ CT-e 4175904 São Miguel 76,00, sem XML no hub = 20.929,80). ENTRADAS (produtos) conferida.
+- **IBS/CBS créditos NÃO fecham:** Domínio IBS 9,86 / CBS 89,03; menos NFS-e Portal 0,66 / 5,97 = 9,20 / 83,06 esperado das NF-e; XMLs somam 7,64 / 69,04. **Sobra no Domínio: IBS 1,56 / CBS 14,02** (proporção 0,1%/0,9% ⇒ base ≈ R$ 1.558). Causa não identificada (hipóteses: Facebook/Officecont fora do Portal; CT-e; base sem desconto na 1008460; acumulador). Conferir lançamento a lançamento no Domínio.

@@ -511,3 +511,6 @@ Controle (export 17/10 ~19:30): Prestados, Tomados, PIS, COFINS, IRPJ e CSLL do 
 
 ## 28bk. 17/10/2026 — regra ENTRADAS = só compra de produtos; #71 ENTRADAS `Sem movimento`; #126 Domínio conferido
 Regra gravada no CLAUDE.md. #71: SIEG Entrada só com Julho e Domínio só NFS-e: ENTRADAS `Sem movimento` (corrige o TSV anterior). #126: saídas 209 notas 153.662,41 = Portal = guia; PIS 998,81 / COFINS 4.609,87 / IRPJ 23.289,40 / CSLL 10.544,19 = estimativa; Entradas 34.469,16 (NF-e/CT-e 20.929,80 + NFS-e 13.539,36); diferença NFS-e x Portal explicada (Facebook, Officecont 1056, Ideal Art); XML 461485 = devolução (Saída 5-202) com débito IBS 0,31 / CBS 2,80.
+
+## 28bl. 17/10/2026 — #126 NF-e conferidas XML a XML
+10 XMLs abertos: valores = Domínio (20.853,80 + CT-e 76,00 = 20.929,80). IBS/CBS dos XMLs: 7,64 / 69,04; Domínio (descontado NFS-e Portal) 9,20 / 83,06: sobra IBS 1,56 / CBS 14,02 sem origem identificada. ENTRADAS produtos pronta para `Importado`; IBS/CBS aberto.

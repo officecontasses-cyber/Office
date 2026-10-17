@@ -282,3 +282,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 
 - **Regra nova (17/10):** ENTRADAS só de compra de produtos (NF-e/CT-e); sem NF-e no SIEG e no Domínio = `Sem movimento`. **#71 ENTRADAS = `Sem movimento`** (corrige TSV anterior).
 - **#126 (17/10 22:4x):** Domínio regerado e conferido (ver dossiê). Pendente: abrir os valores dos 10 XMLs de NF-e e fechar créditos IBS/CBS; Portal novo p/ Facebook e Officecont 1056; DARF PIS/COFINS (23/10) e IRPJ/CSLL (30/10); créditos PIS 785,32 / COFINS 462,54; FAT ago/set; SPED.
+
+- [ ] **126 IBS/CBS (17/10):** NF-e conferidas XML a XML (valores = Domínio); créditos do Domínio excedem os XMLs em IBS 1,56 / CBS 14,02 (acumulador/lançamento a identificar). ENTRADAS produtos 20.929,80 pronta para `Importado`.
