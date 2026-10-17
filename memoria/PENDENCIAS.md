@@ -268,3 +268,6 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - **#26:** Rendimentos 3º tri `Zerado` confirmado. **Regra:** sempre conferir a planilha `CONTROLE | Rendimentos` ao preparar a empresa.
 
 - **#71 (17/10, Domínio regerado) ALERTA:** receita de set em dobro no Domínio (série 900 + série U); Resumo mostra PIS 7.091,99 / COFINS 32.732,25 / IRPJ 152.373,51 / CSLL 98.569,15 inflados. Corrigir e regerar antes de gerar DARF/TSV. Entradas ainda sem as notas 2 (Monique) e 61 (Laura); informe Bradesco 3º tri pendente.
+
+- **#71 (17/10 22:xx):** Domínio corrigido (série U). Pendentes: lançar notas 2 (Monique) e 61 (Laura) (baixar XMLs do Portal e colar em `007 ARQUIVOS SIEG\_71`); rendimentos Caixa/Bradesco no Domínio (informe Bradesco); FAT set; conferir ADI 7936 (liminares sobre o +10%); IBS/CBS dos 41 XMLs restantes.
+- **#117 (17/10):** tudo `Sem movimento` conforme prefeitura (baixa em andamento, sócio faleceu); TSV entregue; SPED set (16/11) a decidir (`Não se aplica`).

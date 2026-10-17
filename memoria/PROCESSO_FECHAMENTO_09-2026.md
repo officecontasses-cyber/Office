@@ -490,3 +490,6 @@ Criado `memoria/CLIENTE_071_CONTE.md`. Prestados Portal x Domínio: 42 notas, R$
 
 ## 28bd. 17/10/2026 — #71 Domínio regerado: receita de setembro duplicada (série 900 e série U)
 Serviços_71: 42 notas em duas séries (900 e U), Total Geral 2.182.155,08; Resumo com base de PIS/COFINS 2.182.155,08 (PIS 7.091,99 e COFINS 32.732,25 a recolher indevidos) e IRPJ 152.373,51 / CSLL 98.569,15 inflados. Entradas inalteradas (466.006,65; faltam notas 2 e 61). IBS/CBS créditos 16,14/145,38 = Portal sem a nota 61. XML 1811 sem IBS/CBS. Não gerar DARF antes de corrigir o Domínio.
+
+## 28be. 17/10/2026 — #71 Domínio corrigido; pasta _71 criada; #117 sem movimento
+#71: série U corrigida (Total Geral = Total Série 1.091.077,54); Resumo PIS/COFINS 0 a recolher; IRPJ 108.730,41 e CSLL 64.003,82 (sem rendimentos); estimativa com rendimentos IRPJ ~104.929,63 / CSLL ~69.457,26; FAT conferido (reproduz 1º, 2º e parcial do 3º tri); LC 224/2025 +10% já considerado, ADI 7936 com liminares noticiadas. Entradas ainda sem as notas 2 e 61 (XMLs fora do Drive; pasta `_71` criada em 007 ARQUIVOS SIEG). #117: tudo sem movimento conforme prefeitura (processo de baixa, sócio falecido), Rendimentos 3º tri Zerado; dossiê `CLIENTE_117_TABAJARA.md`; TSV entregue.
