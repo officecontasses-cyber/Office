@@ -598,3 +598,6 @@ Notas 44 e 45 = Portal (2.868.189,79); CSOC-RET corrigido; IRPJ 391.472,54 e CSL
 
 ## 28cn. 18/10/2026 — #189 guia IRPJ/CSLL conferida
 Guia 520.405,60 (391.472,54 + 128.933,06) conferida no PDF; G-Click 17:32 (guia + envio ao cliente). TSV `Enviado` entregue.
+
+## 28co. 18/10/2026 — #189 TSV colado; #197 regime em avaliação
+197: associação profissional; hipótese de isenção/imunidade de IRPJ/CSLL (não confirmada). Sem lançar IRPJ/CSLL até a Fernanda confirmar natureza jurídica/enquadramento. Dossiê atualizado.

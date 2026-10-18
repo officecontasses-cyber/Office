@@ -318,3 +318,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [x] **189 (18/10):** TSV colado; IRPJ/CSLL em cota única; DCTFWeb **não é do fiscal** (retirada das pendências).
 - [ ] **197 (18/10) em preparação:** [ ] salvar Domínio 197; [ ] Tomados XML x Domínio; [ ] PIS/COFINS sem folha/anuidade (confirmar); [ ] CSLL 95,64 (30/10) e IRPJ −79,60 (PER/DCOMP?); [ ] IBS/CBS.
 - [x] **189 (18/10):** guia IRPJ/CSLL 520.405,60 (cota única, 30/10) conferida e enviada no G-Click; TSV entregue. [ ] FAT set, CRF 4,65% Xavantina, cadastro tomador, IBS/CBS, SPED.
+- [ ] **197 (18/10):** avaliar enquadramento (associação sem fins lucrativos? isenta/imune de IRPJ/CSLL?) — pedir cartão CNPJ/estatuto/natureza jurídica; DARF IRPJ/CSLL não lançados; demais pendências do 197 mantidas. 189 TSV colado.

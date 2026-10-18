@@ -11,3 +11,7 @@ CNPJ 05.164.750/0001-12 (na Controle perdeu o zero à esquerda). Lucro Presumido
 - Domínio set/2026: **não há relatório 197 na pasta 008** (busca 18/10).
 ## Pendências
 Salvar Domínio 197 (Entradas/Serviços/Resumo); XML x Domínio dos Tomados; PIS/COFINS (confirmar sem folha/anuidade); CSLL 95,64 (30/10) e saldo credor de IRPJ (−79,60; acumula 1º/2ºTRIM): compensar via PER/DCOMP?; IBS/CBS.
+
+## Avaliação do regime (18/10/2026, a pedido da Fernanda) — HIPÓTESE, a confirmar
+Fernanda acha que a ASBBM não apura IRPJ/CSLL como LP normal. Indícios: associação profissional (CNAE 9412-0/99), "presidente" e nenhum sócio no cadastro, receita de serviços 0 no ano (só rendimentos financeiros e, em tese, anuidades), Cadastro_Clientes traz "Lucro Presumido" (possível rótulo padrão). O FAT calcula IRPJ/CSLL como LP sobre 100% dos rendimentos (set: IRPJ −79,60 no tri; CSLL 95,64), mas não há guia de IRPJ/CSLL registrada no Controle/Drive para o 2ºTRIM (FAT: CSLL 267,00) — inconclusivo (a aba Jul2026 só tem linhas DARF IRPJ para os Lucro Real 133 e 238).
+Se for associação civil sem fins lucrativos, pode ser **isenta** de IRPJ/CSLL (hipótese: Lei 9.532/1997, art. 15; sem confirmação de texto) ou imune — **não confirmado**. Falta: natureza jurídica no cartão CNPJ, estatuto, declaração de isenção, tratamento do IRRF s/ aplicações (definitivo?) e PIS/COFINS (PIS sobre folha 1%?). Decisão e status ficam com a Fernanda; não lançar IRPJ/CSLL antes.
