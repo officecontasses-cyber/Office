@@ -13,3 +13,7 @@ CNPJ 11.790.491/0001-38, Porto Alegre/RS (Jardim Itu Sabará), IM 278572-2-0, **
 
 ## Falta
 Domínio 09/2026 (Entradas/Saídas/Resumo) para confirmar Prestados/Tomados/Entradas e a base zerada de PIS/COFINS/IRPJ/CSLL; SPED Contribuições 16/11 (sem movimento); IBS/CBS (sem prestados NFS-e; verificar se há tomadas). Pendência antiga: Rodrigo Tavares Lopes (mesmo CPF) também consta como profissional no 16.
+
+## DecWeb e Domínio analisados (18/10/2026)
+- **DecWeb:** só existem `DeclaraçãoMensal.pdf` e `ISSQN.pdf` (sem zips de prestados/tomados, pois não há NFS-e): Declaração recebida 03/10 14:02:59 (aut. BE CC BD 53 3C BC 36 38 0A B4 12 6E CD 4C 89 F5): Sociedade de Profissionais, 2 profissionais x 35 UFM x 6,0411 = 422,87; NFSE receita bruta 0,00; retido de terceiros 0,00; total a recolher 422,87. Sem certificado: Portal Nacional não consultável (cadastro pendente).
+- **Domínio Resumo (11:08):** ISS 422,87; PIS/COFINS/IRPJ/CSLL sem base (0,00); IBS/CBS 0,00. Há um valor 8,71 na linha de PIS/Total (coluna ilegível no texto): conferir visualmente. Não há Entradas/Saídas/Serviços salvos (sem movimento no Domínio).

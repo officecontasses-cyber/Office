@@ -15,3 +15,10 @@ CNPJ 17.333.275/0001-40, Porto Alegre/RS, **Lucro Presumido**, não contribuinte
 
 ## Falta
 Domínio 09/2026 do 155 (Entradas, Saídas/Serviços, Resumo) para fechar ENTRADAS/TOMADOS/PRESTADOS e as guias: PIS 147,40 e COFINS 680,29 (23/10; DARF 8109/2172, sem retenção) e IRPJ 3.307,90 / CSLL 1.984,74 (30/10, cota única ou 3 cotas de 1.102,63 / 661,58). SIEG: verificar se há NF-e de produtos.
+
+## Domínio 09/2026 conferido (18/10/2026 11:13 a 11:16)
+- **Serviços (Acompanhamento de Serviços):** 116 NFS-e (nº 876 a 991), AC 900, **R$ 22.676,34, ISS 907,02 = Portal = declaração = guia**. Pronto para `Importado`.
+- **Resumo (11:16):** ISS 907,02; PIS 147,40 (base 22.676,34 x 0,65%), COFINS 680,29, **IRPJ 3.307,90 e CSLL 1.984,74 (base trimestral 22.052,67): = FAT**. IBS e CBS **sem débito nem crédito** (só saldos credores anteriores IBS 4,26 / CBS 38,40).
+- **Entradas (11 NFS-e, esp. 39, acum. 800, CFOP 1-933/2-933):** R$ 4.334,21 x Portal Recebidas 09/2026 R$ 3.804,08 (10 notas): diferença **R$ 530,13 = Imobzi 229513 (17/09, SP)**, que não está na planilha Recebidas do Portal (origem a confirmar: SIEG ou prefeitura de SP). Todas sem ISS retido. Sem NF-e de produtos no Domínio; SIEG: `NF-es/17333275000140/Entrada/2026` só mostrou Agosto.
+- **IBS/CBS (conferência da Fernanda):** Portal Emitidas: BC 20.941,65, **CBS 188,46 e IBS 20,90** (CST 000 / 000001) x Domínio débitos 0,00 → acumulador 900 sem 183-IBS/184-CBS (como no 186). Recebidas: CBS 15,88 / IBS 1,77 (Safeweb, Bom Negócio x2, Orago, GRPQA) x créditos 0,00 → acumulador 800. Ajustar pós-fechamento (informativo).
+- **Rendimentos (3ºTRIM 2026, planilha baixada 18/10):** 155 = **`Zerado`** (confirmado de novo).

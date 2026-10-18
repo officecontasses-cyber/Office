@@ -299,3 +299,6 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **155 Mainieri (18/10, preparado, dossiê CLIENTE_155_MAINIERI.md):** falta Domínio 09/2026; corrigir ISSQN set no FAT (907,05 -> 907,02); reverificar agosto (63 x 62 notas); DARF PIS 147,40/COFINS 680,29 (23/10), IRPJ 3.307,90/CSLL 1.984,74 (30/10); certificado A1 vence 27/10.
 - [ ] **133 IRPJ/CSLL (18/10):** dependem da liberação da contabilidade (Lucro Real); TSV `Pendente` entregue; venc. 30/10.
 - [ ] **173 Lopes & Martins (18/10, preparado, dossiê CLIENTE_173_LOPES_MARTINS.md):** falta Domínio 09/2026; propostas: PRESTADOS/TOMADOS/DARF PIS-COFINS-IRPJ-CSLL `Sem movimento` (base zerada, rendimentos Zerado) após confirmar no Domínio; SPED 16/11.
+- [ ] **155 (18/10):** Domínio conferido; pendentes: Imobzi 229513 (530,13) fora do Portal, IBS/CBS acumuladores 900/800, ISSQN set no FAT (907,05 -> 907,02), agosto 63 x 62 notas, DARFs.
+- [ ] **173 (18/10):** DecWeb/Domínio analisados (receita 0, ISS 422,87); conferir valor 8,71 no Resumo; TSV Sem movimento depois da confirmação.
+- [ ] **177 ILS (18/10, preparado, dossiê CLIENTE_177_ILS.md):** falta Domínio 09/2026 e confirmar retenções da Datasys na nota 13; FAT setembro em branco; IRPJ 2.625,48 / CSLL 1.495,73 esperados (30/10).
