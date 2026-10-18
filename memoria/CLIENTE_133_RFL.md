@@ -43,3 +43,10 @@ Criada `_133` em `007 ARQUIVOS SIEG` (id 1FTDUA311NpqBf9WmDbihK4masg9ShjhN, ao l
 - **Declaração mensal (PDF baixado):** `Retificadora 1`, recebida 18/10/2026 10:27:59, autenticação 6A BC E9 BB 66 CE 34 F1 7D A4 98 A7 FE 4B 6A 9C, base 0, total a recolher 0,00 (ISS zero, bate).
 - **Resumo (`Empresa 133`, 10:25) é anterior ao lançamento**: PIS 11,56 / COFINS 53,26, IBS/CBS/ISS 0. Esperado inalterado (sem crédito); regerar para confirmar.
 - Pendentes: PIS 08/2026, crédito/pagamento de set (PIS 11,56 + COFINS 53,26, venc. 23/10), IRPJ/CSLL (Lucro Real), Serviços_133, rendimentos, SPED 16/11.
+
+## PIS/COFINS 09/2026 do 133 — compensação parcial e guia (18/10/2026 ~11:00, conferido)
+- **PER/DCOMP** `29817.01875.181026.1.3.04-9972` (PDF `DEC PERDCOMP 027.pdf` na pasta de compensações, mas é a **028**; a 027 é de 20/09): crédito COFINS 10/2024 (DARF 07.01.24311.6620518-4, cód. 5856-01, pago 11/11/2024, R$ 180,53; crédito inicial 114,00), saldo original 5,78, Selic 25,44% = **7,25**, saldo do crédito = 0,00. Débito: COFINS 09/2026 (5856-01, venc. 23/10), DCTFWeb recibo 050000540031181 (18/10).
+- **Guia** `133_RFL_PortoAlegre_09.2026_PIS-COFINS.pdf`: doc 07.16.26291.8027591-4, venc. 23/10, **COFINS 46,01 (5856) + PIS 11,56 (6912) = 57,57** (recibo declaração 50000540031241). COFINS 53,26 - 7,25 = 46,01 = FAT. G-Click `Darf Pis / Cofins` concluída 18/10/2026 10:58 (fernanda.officecont).
+- **FAT:** na aba Compensações a linha 028 repete o nº da 027 (`38252.90637.200926.1.3.04-0560`): o correto é `29817.01875.181026.1.3.04-9972`. A observação de set diz "COMPENSADO PARTE DO COFINS" (PIS não foi compensado).
+- **Crédito de 10/2024 esgotado:** outubro/2026 e seguintes viram DARF cheio (~R$ 64,8/mês) salvo novo crédito.
+- PIS de agosto (11,55): a DEC da 027 (20/09) não está na pasta; crédito usado 60,41 < débitos de agosto (53,22 + 11,55 = 64,77): conferir.

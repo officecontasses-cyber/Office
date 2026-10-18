@@ -547,3 +547,6 @@ Entradas 1.552,35 = DecWeb retificadora 1; retificadora (recebida 10:27:59) tota
 
 ## 28bw. 18/10/2026 — #133 conferido (nota 18 lançada) e #152 Entradas/Prestados
 133: TSV Tomados Importado 1.552,35 / Entradas Sem movimento / Prestados Confirmado 701,38 / Declaração Prefeitura (retificadora 1, 10:27:59). 152 (CRBM5, CNPJ 13.738.204/0001-76): PRESTADOS `Sem movimento` (receita bruta 0,00 na Declaração Mensal; sem Emitidas); ENTRADAS `Pendente` (50+ XMLs de NF-e em SIEG Entrada/2026/Setembro; Domínio Entradas_152_092026 não está no Drive). Em jul ENTRADAS foi Importado e em ago ficou Pendente.
+
+## 28bx. 18/10/2026 — #133 PIS/COFINS: compensação parcial e guia
+PER/DCOMP 29817.01875.181026.1.3.04-9972 (COFINS 7,25); guia 57,57 (COFINS 46,01 + PIS 11,56), G-Click 18/10 10:58. TSV entregue: DARF PIS e COFINS `Enviado`. FAT: corrigir nº da PerdComp na linha 028. Crédito esgotado.
