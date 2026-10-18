@@ -601,3 +601,6 @@ Guia 520.405,60 (391.472,54 + 128.933,06) conferida no PDF; G-Click 17:32 (guia 
 
 ## 28co. 18/10/2026 — #189 TSV colado; #197 regime em avaliação
 197: associação profissional; hipótese de isenção/imunidade de IRPJ/CSLL (não confirmada). Sem lançar IRPJ/CSLL até a Fernanda confirmar natureza jurídica/enquadramento. Dossiê atualizado.
+
+## 28cp. 18/10/2026 — #197 documentos no Drive; #205 preparado (IBS/CBS pós-fechamento anotado)
+197: estatuto 2014 = associação sem fins lucrativos (sem distribuição, dirigentes sem remuneração); anuidades R$ 150 (2023); falta cartão CNPJ/declaração de isenção. 205: 17 notas válidas 95.753,11 (196 substituída, 194 cancelada); retenções set IRRF 245,30 e CS 760,41 não estão no FAT; FAT sem adicional de IRPJ (3ºTRIM IRPJ ~20.153,46, CSLL ~9.101,82); PIS 516,10/COFINS 2.382,00. IBS/CBS (acum. 900, 183/184) anotado para pós-fechamento. Dossiê CLIENTE_205_LS_BECKER.md.
