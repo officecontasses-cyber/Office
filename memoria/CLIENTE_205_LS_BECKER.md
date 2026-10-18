@@ -28,3 +28,8 @@ Domínio ao importar os prestados de setembro avisa em cada nota: "O imposto 183
 - IRPJ/CSLL 3ºTRIM **cota única**: 07.16.26291.8655276-6, total 29.255,29 (IRPJ 2089 20.153,46 + CSLL 2372 9.101,83), venc. 30/10.
 - G-Click: "Darf Pis / Cofins" e "CSLL E IRPJ" concluídos por fernanda.officecont em 18/10 17:59 (print sem a linha "Envio ao cliente"). TSV: DARFs `Enviado`.
 - Portal Recebidas do 205: **rodar de novo** (a Officecont 1040 foi emitida em 05/10, depois da rodada de 03/10): `python portal_nacional_download.py --competencia 09/2026 --clientes 205` em `C:\Robos\portalnacional`.
+
+## Portal rodado de novo (18/10/2026 ~18:07) — CONFERIDO
+- Recebidas 09/2026: 1 NFS-e nº 1040 Officecont (DPS 349, série 70000), ME/EPP, R$ 740,80, serviços contábeis 17.19.01, ISS não retido (0), PIS/COFINS/CSLL não retidos, sem IBS/CBS destacado (CST em branco). = Domínio (NFS-e 1040, entrada 30/09, 740,80, AC 800). **Tomados = `Importado` 740,80.**
+- Emitidas atualizada (31 notas): setembro inalterado (17 válidas = 95.753,11; 194 cancelada, 196 substituída); novas só de **competência 10/2026** (211–222) — ficam para o fechamento de outubro.
+- IBS/CBS (item 2): tomada sem IBS/CBS no Portal e créditos 0 no Domínio: coerente. Prestados: ver pendência pós-fechamento (acum. 900).

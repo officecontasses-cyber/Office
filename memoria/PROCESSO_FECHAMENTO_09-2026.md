@@ -610,3 +610,6 @@ Guia 520.405,60 (391.472,54 + 128.933,06) conferida no PDF; G-Click 17:32 (guia 
 
 ## 28cr. 18/10/2026 — #205 guias conferidas; #209 preparado
 205: PIS/COFINS 2.898,10 (23/10) e IRPJ/CSLL 29.255,29 (cota única, 30/10) conferidas, G-Click 17:59; Portal Recebidas a rodar de novo (Officecont 1040, 05/10). 209: sem certificado/Domínio; declaração 0,00; extrato Bradesco set com PIX R$ 500 do sócio (não é receita) e rend. R$ 0,01; Rendimentos Sim; proposta Sem movimento. Dossiê CLIENTE_209_FOCO_D.md.
+
+## 28cs. 18/10/2026 — #205 Portal rodado: Tomados conferido; #209 TSV colado
+Recebidas: Officecont 1040 R$ 740,80 = Domínio; sem IBS/CBS. TSV Tomados `Importado`. Emitidas set inalterada (95.753,11); notas 211–222 são de outubro.

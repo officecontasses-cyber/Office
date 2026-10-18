@@ -326,3 +326,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **Rede do ambiente:** sites do governo (planalto.gov.br, gov.br/receitafederal) bloqueados; se quiser que eu leia a lei direto, liberar esses domínios em Network access.
 - [x] **205 (18/10):** guias PIS/COFINS 2.898,10 e IRPJ/CSLL 29.255,29 (cota única) conferidas, G-Click 17:59; TSV `Enviado`. [ ] rodar Portal 205 (Recebidas) para fechar Tomados (Officecont 1040, 740,80); [ ] IBS/CBS pós-fechamento.
 - [ ] **209 (18/10) preparado:** Sem movimento (prestados/PIS/COFINS/IRPJ/CSLL), Tomados `Não se aplica`; confirmar com Fernanda; aporte do sócio R$ 500 (contabilizar como aporte); rend. R$ 0,01; sem certificado/Domínio.
+- [x] **205 (18/10):** Portal rodado, Recebidas = Officecont 1040 R$ 740,80 = Domínio; TSV Tomados `Importado` entregue. Resta: IBS/CBS pós-fechamento (acum. 900/183/184), cadastro "1205" duplicado. 209: TSV colado.
