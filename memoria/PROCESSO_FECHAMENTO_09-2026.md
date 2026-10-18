@@ -568,3 +568,6 @@ Imobzi 229513 (530,13) agora no Portal. TSV: Prestados Importado 22.676,34; Toma
 
 ## 28cd. 18/10/2026 — #155 guias conferidas; #177 Domínio conferido
 155: guia PIS/COFINS 827,69 (680,29 + 147,40) e IRPJ/CSLL cota única 5.292,64 (3.307,90 + 1.984,74); G-Click 18/10 (IRPJ/CSLL 11:37). 177: Domínio = esperado (nota 13 26.520,00, ISS 530,40, retenções 397,80/172,38/795,60/265,20; IRPJ 2.625,48 e CSLL 1.495,73 a pagar até 30/10; PIS/COFINS 0 a recolher); Officecont 1037 (626,15) fora do DecWeb original: avaliar retificadora.
+
+## 28ce. 18/10/2026 — #173 TSV entregue; #185 Portal rodado, conferência parcial
+173: TSV com seis linhas `Sem movimento` entregue a pedido. 185: comando do Portal entregue; Portal gerou só Recebidas (Certisign 17021298, 189,68, competência 10/2026, fora de 09). FAT lido (set aluguéis 3.832,51; PIS 24,91; COFINS 114,98; IRPJ/CSLL 3ºTRIM 477,67/353,62). Rendimentos = Sim. Domínio 185 ainda não salvo. Dossiê criado: CLIENTE_185_PALAS_ATENA.md.
