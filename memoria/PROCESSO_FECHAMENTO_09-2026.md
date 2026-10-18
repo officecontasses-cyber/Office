@@ -562,3 +562,6 @@ Dossiê CLIENTE_173_LOPES_MARTINS.md: Sociedade de Profissionais, ISS fixo 422,8
 
 ## 28cb. 18/10/2026 — #155 Domínio conferido; #173 DecWeb/Domínio; #177 preparado
 155: Serviços 116 notas 22.676,34 / ISS 907,02 = Portal; Resumo PIS 147,40 / COFINS 680,29 / IRPJ 3.307,90 / CSLL 1.984,74 = FAT; Entradas 4.334,21 x Portal 3.804,08 (Imobzi 229513 530,13 fora do Portal); IBS/CBS Domínio 0 x Portal débitos 188,46/20,90 e créditos 15,88/1,77; Rendimentos 155 `Zerado`. 173: DecWeb só declaração + guia (422,87), Domínio só Resumo. 177: dossiê criado (Datasys nota 13, 26.520,00, ISS 530,40; retenções esperadas; falta Domínio e confirmação da retenção).
+
+## 28cc. 18/10/2026 — #155 Portal rodado de novo: Recebidas 4.334,21 = Domínio
+Imobzi 229513 (530,13) agora no Portal. TSV: Prestados Importado 22.676,34; Tomados Importado 4.334,21; Entradas Sem movimento. Pendentes 155: IBS/CBS acumuladores, ISSQN set no FAT (907,05 -> 907,02), agosto 63 x 62, DARFs (PIS 147,40/COFINS 680,29 23/10; IRPJ 3.307,90/CSLL 1.984,74 30/10), certificado A1 27/10.

@@ -22,3 +22,8 @@ Domínio 09/2026 do 155 (Entradas, Saídas/Serviços, Resumo) para fechar ENTRAD
 - **Entradas (11 NFS-e, esp. 39, acum. 800, CFOP 1-933/2-933):** R$ 4.334,21 x Portal Recebidas 09/2026 R$ 3.804,08 (10 notas): diferença **R$ 530,13 = Imobzi 229513 (17/09, SP)**, que não está na planilha Recebidas do Portal (origem a confirmar: SIEG ou prefeitura de SP). Todas sem ISS retido. Sem NF-e de produtos no Domínio; SIEG: `NF-es/17333275000140/Entrada/2026` só mostrou Agosto.
 - **IBS/CBS (conferência da Fernanda):** Portal Emitidas: BC 20.941,65, **CBS 188,46 e IBS 20,90** (CST 000 / 000001) x Domínio débitos 0,00 → acumulador 900 sem 183-IBS/184-CBS (como no 186). Recebidas: CBS 15,88 / IBS 1,77 (Safeweb, Bom Negócio x2, Orago, GRPQA) x créditos 0,00 → acumulador 800. Ajustar pós-fechamento (informativo).
 - **Rendimentos (3ºTRIM 2026, planilha baixada 18/10):** 155 = **`Zerado`** (confirmado de novo).
+
+## Portal Nacional rodado de novo (18/10/2026 ~11:29) — conferido
+- **Recebidas 09/2026: agora 11 NFS-e normais, R$ 4.334,21 = Domínio Entradas.** A **Imobzi 229513 (17/09, R$ 530,13, SP, ISS 15,37 não retido) apareceu** (não estava no export de 03/10 e 08/10). Fecha a diferença; as demais seguem iguais. 3 notas de competência 10/2026 (580894, 1943 e uma nova).
+- **Emitidas 09/2026:** inalterada, 116 notas, R$ 22.676,34, ISS R$ 907,02. Agosto continua com 63 normais (R$ 22.664,20) x 62 declaradas.
+- Sem NF-e de produtos em setembro (SIEG Entrada só com Agosto): ENTRADAS `Sem movimento`.
