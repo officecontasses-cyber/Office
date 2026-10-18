@@ -529,3 +529,6 @@ Linha SERVIÇOS TOMADOS do 126 fica sem TSV (Pendente) até a verificação da F
 
 ## 28bq. 17/10/2026 — #133 RFL preparado
 Dossiê `CLIENTE_133_RFL.md` criado: Lucro Real, aluguel R$ 700/mês, PIS 11,56 / COFINS 53,26 (FAT, conferidos); tomados 1 NFS-e MEI R$ 300 (ISS 0); crédito de compensação só R$ 5,78; PIS de 08/2026 a confirmar; 133 fora da planilha de Rendimentos; faltam Domínio 09/2026 e apuração IRPJ/CSLL.
+
+## 28br. 18/10/2026 — #133 DecWeb retificadora 1 e Domínio conferidos
+Retificadora 1: tomados 18 (MEI 300,00) + 1051 (Officecont 1.252,35) = 1.552,35, ISS 0; PDF retificado não achado no Drive. Domínio: Saídas 701,38 = FAT; Entradas só 1051 (1.252,35), falta a nº 18 (300,00); Resumo PIS 11,56 / COFINS 53,26. Pendentes: PDF da retificadora, nota 18, Serviços_133, balancete/LALUR, PIS ago, crédito set.

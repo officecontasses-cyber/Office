@@ -22,3 +22,10 @@ CERTIFICADO `Não se aplica`; REINF `Enviado` (R-2099 12113783-10-2099-2609-1211
 
 ## Pedidos à Fernanda
 Domínio de 09/2026 do 133 (Entradas, Saídas/Serviços, Resumo/Demonstrativo, balancete/apuração Lucro Real), confirmação do PIS de agosto e da fonte de crédito para setembro, e se o 133 entra no controle de Rendimentos.
+
+## DecWeb retificadora 1 + Domínio (18/10/2026 ~10:30, conferido)
+- **DecWeb (fase T --retificadora --enviar, rodada ~10:25):** `52545628_202609_NFSE_ServTomados.xlsx` agora diz `Competência 09/2026 Retificadora 1` com **2 notas tomadas, R$ 1.552,35, ISS 0**: nº 18 (11/09, Shaiane Pires Duarte Quincoses, MEI, R$ 300,00, fora do município) e **nº 1051 (05/10, Officecont, R$ 1.252,35, Simples, tributação no município, sem retenção)**. Antes (original) só a nº 18. O zip foi atualizado. **O PDF `DeclaraçãoMensal` retificado NÃO apareceu no Drive** (o do Drive é o original de 01/10 17:37, 7.530 bytes): conferir a pasta local do robô / sincronização e o recibo da retificadora.
+- **Domínio Saídas:** 701,38 = aluguel 700,00 (CFOP 5-949, clientes diversos) + 1,38 rendimento (BANCO): = FAT.
+- **Domínio Entradas (NFS-e, esp. 39, acum. 800):** só a **1051 Officecont R$ 1.252,35** (entrada 30/09). **A nº 18 (MEI, R$ 300,00) não está no Domínio**: DecWeb 1.552,35 x Domínio 1.252,35 = 300,00.
+- **Resumo:** PIS 11,56 + COFINS 53,26 = 64,82 (= FAT); IBS, CBS e ISS zerados.
+- Serviços_133 (relatório do Domínio) e balancete/LALUR (Lucro Real) não foram salvos.
