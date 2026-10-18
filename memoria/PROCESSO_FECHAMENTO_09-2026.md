@@ -589,3 +589,6 @@ Portal 2 NFS-e (44 e 45, 2.868.189,79); Domínio só nota 44 → nota 45 (1.519.
 
 ## 28ck. 18/10/2026 — #185 guias conferidas
 PIS/COFINS 139,89 (23/10) e IRPJ/CSLL 831,30 (30/10) conferidas no PDF; envio no G-Click confirmado pela Fernanda. TSV final `Enviado`.
+
+## 28cl. 18/10/2026 — #189 Domínio conferido
+Notas 44 e 45 = Portal (2.868.189,79); CSOC-RET corrigido; IRPJ 391.472,54 e CSLL 128.933,06 batem com a estimativa; PIS/COFINS retenção integral. TSV entregue. Pendentes: guias IRPJ/CSLL (cotas), FAT set, CRF 4,65%, cadastro tomador, IBS/CBS.

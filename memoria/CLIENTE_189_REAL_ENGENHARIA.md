@@ -20,3 +20,9 @@ Cliente grande: ~R$ 1,35 mi por nota; acima de R$ 1,25 mi/tri entra a presunçã
   Valores > R$ 2.000: pode ser em até 3 cotas (30/10, 30/11, 30/12).
 ## Pendências 189
 Lançar nota 45 no Domínio; corrigir cadastro do tomador e CSOC-RET (44 e 42); lançar rendimentos financeiros do trimestre no Domínio (hoje fora do Demonstrativo); novo relatório Serviços/Demonstrativo; FAT setembro; CRF 4,65% Xavantina; IBS/CBS pós-fechamento; guias IRPJ/CSLL.
+
+## Domínio refeito (18/10/2026 12:46-12:57) — CONFERIDO
+- Serviços: notas 44 (1.348.516,53) e 45 (1.519.673,26) = 2.868.189,79 = Portal; IRRF 43.022,85; PIS-RET 18.643,24; COFINS-R 86.045,70; **CSOC-RET corrigido para 1%** (13.485,16 + 15.196,73 = 28.681,89). Tomador ainda "Frost Frio Refrigeração" (cadastro).
+- Resumo: ISS 634,31; IRRF (Xavantina nº 5) 2.144,00; PIS/COFINS 18.643,23/86.045,69 totalmente retidos (a recolher 0; saldo 0,03 cada); **IRPJ a recolher 391.472,54** (base serviços 1.918.958,44 + rend. financeiros; retenções 115.264,34) e **CSLL 128.933,06** (retenções 55.652,22) = minha estimativa (CSLL difere 0,02).
+- FAT set a digitar: receita 2.868.189,79; IRRF 43.022,85; PIS 18.643,24; COFINS 86.045,70; CSLL 28.681,89.
+- TSV: Prestados Importado 2.868.189,79; Tomados Importado 142.933,33 (obs. CRF 4,65% pendente); PIS/COFINS `Retido` 0; IRPJ/CSLL `Pendente` até guias (cotas 30/10, 30/11, 30/12 a decidir).
