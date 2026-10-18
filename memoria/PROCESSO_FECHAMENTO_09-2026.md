@@ -646,3 +646,6 @@ Domínio salvo e conferido (Entradas: McAfee R$ 1,60; Resumo: IRPJ 3.824,15 / CS
 
 ## 28dc. 18/10/2026 — #237 guias IRPJ/CSLL enviadas
 Guia 07.16.26291.8790200-0 (7.207,99 = 3.824,15 + 3.383,84, cota única, venc. 30/10) conferida no PDF; G-Click concluído 19:25 e envio ao cliente 19:26. TSV `Enviado` entregue.
+
+## 28dd. 18/10/2026 — #197 base legal parte 2 (extensão)
+Relatório da extensão recebido (fontes oficiais Receita/Planalto/STF/Manual ECF): resumo em `BASE_LEGAL_ASBBM_PARTE2_2026-10-18.md`; dossiê e rascunho do Gian atualizados. Lista de "não encontrado" preservada (profissional/científica, IRRF de isenta/imune, Lucro Presumido para isenta, retificação Presumido → isenta, código DARF PIS folha). Rótulo "#227" na mensagem era do 197.

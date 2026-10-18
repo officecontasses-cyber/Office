@@ -35,3 +35,10 @@ Fico no aguardo para fechar o 197.
 
 Obrigada,
 Fernanda
+
+## Complemento ao e-mail do Gian (ASBBM) — achados da pesquisa em fontes oficiais (18/10, noite)
+Acrescentar ao rascunho (texto sugerido; conferir antes de enviar):
+- "Pesquisamos no portal de normas da Receita, no Planalto e no STF. A SC Cosit 50/2019 condiciona a isenção do art. 15 aos limites de remuneração de dirigentes do art. 12 §§4º–6º; a SC 178/2017 diz que associação cultural não tem imunidade, só isenção; a P&R PJ 2026 (pergunta 033) diz que a isenção independe de reconhecimento prévio."
+- "A ECF 2024 foi entregue em Lucro Presumido. A IN 2.004/2021 art. 7º §2º e a P&R 023 vedam retificar para mudar o regime de tributação; não achamos norma específica para Presumido → isenta/imune. Como você prefere tratar (retificar, consulta à Receita ou outro caminho)?"
+- "Perguntas objetivas: (1) a ASBBM remunera dirigentes? (2) há receitas além de anuidades (aluguel, cursos, outras)? (3) as aplicações financeiras têm IRRF retido? (4) enquadramos 2022–2023 como imune por algum motivo (educação/assistência social)?"
+- Cuidado: o resumo é nosso; a conclusão é do contador responsável.
