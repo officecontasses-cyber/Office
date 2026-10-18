@@ -629,3 +629,6 @@ Emitidas: NFS-e 1 (25/09) Biosys R$ 40.000,00, ISS 1.200, IRRF 600, CS 1.860; Re
 ## 28cx. 18/10/2026 — #227 FAT 2026 criado no Drive; #197 resultado do Lefisc
 - FAT `227_PROGEST_FAT2026` (Google Sheet, id 1E-Rn0Qamaq_syMBI7MFdIKC9Yw5mgmtBku47zvHHul0) em `227_PROGEST/2026/002_FISCAL`. Set/2026: receita 40.000,00; retenções IRRF 600, PIS 260, COFINS 1.200, CSLL 400; ISSQN 1.200; **IRPJ 1.320; CSLL 752**; PIS/COFINS a recolher 0; adicional 0; rendimentos 0 (Controle Rendimentos = NT). Jan–Jun em branco, Jul/Ago zerados (a confirmar). Fórmulas conferidas na leitura do Drive. (1ª tentativa deu #ERROR por sintaxe en-US; arquivo apagado e refeito em pt-BR; só aba de FAT, sem abas "Dados do cliente"/"Notas".)
 - #197: relatório do Lefisc recebido; resumo em `BASE_LEGAL_ASBBM_LEFISC_2026-10-18.md`.
+
+## 28cy. 18/10/2026 — #237 preparado (Real Representação)
+Dossiê `CLIENTE_237_REAL_REPRESENTACAO.md`. Controle: REINF/Declaração/Guia ISSQN ok; demais em branco. Portal (03/10): McAfee R$ 1,60 (set) + honorário OfficeCont 1019 (comp. 08). Sem Emitidas; sem Domínio de set. na pasta 008. Rendimentos 3ºTRIM = Sim; FAT confere. Apuração 3ºTRIM: base 37.598,21; IRPJ 3.824,15 e CSLL 3.383,84 (venc. 30/10). Rodar Portal de novo (honorário de set. emitido depois de 03/10).
