@@ -26,3 +26,6 @@ Prefeitura (Rio): Fernanda envia em outro local (18/10/2026) e libera depois.
   **Divergência:** IRPJ/CSLL com base 12.272,06 (= receita 12.270,20 + 1,86 a 100%, sem presunção 32%): CSLL 1.104,49 / IRPJ 1.840,81 (a recolher 1.104,56 e 1.729,24). FAT usa 32%: IRPJ 477,67 e CSLL 353,62. Parametrização de presunção do aluguel no Domínio a corrigir antes das guias (IRPJ/CSLL 30/10).
 - Prefeitura Rio: Confirmação de Ausência de Movimento SET/2026, doc 0016911212, emitida 18/10 12:02 (`185_Palas_RioDeJaneiro_09.2026_DeclaraçãoMensal.pdf`).
 - Sem Entradas/Saídas/Serviços do 185 no Drive (sem movimento).
+
+## Domínio corrigido (18/10/2026 12:27)
+Base IRPJ/CSLL 3.928,32 (= 12.270,20 x 32% = 3.926,46 + rend. 1,86). IRPJ 589,25 - IRRF 0,36 - saldo anterior 111,21 = **477,68 a recolher** (FAT 477,67; 1 centavo). CSLL 353,55 + 0,07 (resíduo do 2ºTRIM, FAT também 353,62) = **353,62**. PIS 24,91 / COFINS 114,98. Total federal 971,19 + ... (PIS/COFINS 139,89). Vence 30/10 (PIS/COFINS 23/10). FAT: "CSLL a compensar 12/2025 10,41" não aplicado no Domínio — decidir. TSV: DARF IRPJ 477,68 e CSLL 353,62 `Pendente` até G-Click.

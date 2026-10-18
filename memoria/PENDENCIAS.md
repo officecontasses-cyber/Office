@@ -310,3 +310,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **185 (18/10):** Domínio conferido; PIS 24,91/COFINS 114,98 ok; [ ] corrigir presunção IRPJ/CSLL no Domínio (100% x 32%) antes das guias (30/10); [ ] GMA; Rendimentos = Sim; Prefeitura: ausência de movimento emitida.
 - [x] **177 (18/10):** guia IRPJ/CSLL 4.121,21 gerada e enviada (G-Click 12:14); TSV `Enviado` entregue. [ ] Officecont 1037/Tomados, FAT set, IBS/CBS pós-fechamento.
 - [ ] **177/185 (18/10):** TSV dos faltantes do 177 (Prestados, Tomados Pendente, DARF PIS/COFINS retenção integral) e 185 RECEITA ALUGUEIS entregue; aguardam colagem. 185 ainda: presunção IRPJ/CSLL no Domínio, GMA, DARFs PIS/COFINS com G-Click.
+- [x] **185 (18/10):** Domínio corrigido (IRPJ 477,68; CSLL 353,62). [ ] guias PIS 24,91/COFINS 114,98 (23/10) e IRPJ/CSLL (30/10) com G-Click; [ ] CSLL a compensar 10,41; [ ] GMA. 177 e 185 TSV colados.
