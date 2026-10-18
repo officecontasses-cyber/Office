@@ -28,3 +28,9 @@ Google Sheet `227_PROGEST_FAT2026` em `227_PROGEST/2026/002_FISCAL` (id 1E-Rn0Qa
 
 ## IBS/CBS — pós-fechamento (18/10/2026)
 Domínio (Resumo dos Dados, Advertências): NFS-e nº 1, 25/09/2026, R$ 40.000,00 (Biosys): "O imposto 183-IBS e 184-CBS não estão relacionados no acumulador 910. Os dados serão descartados." Portal da nota: BC IBS/CBS 37.340,00; CBS 0,90% = 336,06; IBS 0,10% = 37,34 (CST 000, cClassTrib 000001). Fica para depois do fechamento (ano-teste 2026, informativo): relacionar 183/184 ao acumulador 910 e conferir CBS 336,06 / IBS 37,34. A importação segue sem os dados de IBS/CBS (descartados).
+
+## Guia ISSQN São Sebastião do Caí — set/2026 (18/10/2026)
+- PDF `227_Progest_SãoSebastiãoDoCaí_09.2026_ISSQN.pdf` (002 ARQUIVOS MUNICIPAIS, id 1ubV7HNs4AbQkRaDlVV0xXP5eFvDJyFN6): boleto BB do Município (CNPJ 88.370.879/0001-04), Dívida 4 – ISSQN VARIÁVEL, cadastro 20355008, doc. 21526979, emitido 18/10/2026, **venc. 20/10/2026**, valor do documento R$ 1.200,00, **multa 60,00 + acréscimos 12,00 = valor cobrado R$ 1.272,00**. Confere com o FAT (ISSQN 1.200) e a NFS-e nº 1.
+- G-Click: "ISSQN - São Sebastião do Caí - SET/2026" (ação 12/10, meta 13/10, venc. 20/10): Guia ISS concluída 18/10 19:48 e Envio ao cliente 19:49 (fernanda.officecont) → GUIA ISSQN `Enviado`.
+- **Não achei no Drive o recibo/protocolo da declaração de set. em São Sebastião do Caí** (só o boleto). Confirmar com a Fernanda se a declaração foi feita e salvar o comprovante; a linha DECLARAÇÃO PREFEITURA não foi proposta sem comprovação.
+- Multa e acréscimos de R$ 72,00 no boleto: confirmar a origem (o município pode considerar vencimento anterior ao dia 20); anotar para repasse ao cliente.

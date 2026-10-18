@@ -649,3 +649,6 @@ Guia 07.16.26291.8790200-0 (7.207,99 = 3.824,15 + 3.383,84, cota única, venc. 3
 
 ## 28dd. 18/10/2026 — #197 base legal parte 2 (extensão)
 Relatório da extensão recebido (fontes oficiais Receita/Planalto/STF/Manual ECF): resumo em `BASE_LEGAL_ASBBM_PARTE2_2026-10-18.md`; dossiê e rascunho do Gian atualizados. Lista de "não encontrado" preservada (profissional/científica, IRRF de isenta/imune, Lucro Presumido para isenta, retificação Presumido → isenta, código DARF PIS folha). Rótulo "#227" na mensagem era do 197.
+
+## 28de. 18/10/2026 — #227 guia ISSQN São Sebastião do Caí
+Boleto 21526979 (valor 1.200,00 + multa 60,00 + acréscimos 12,00 = 1.272,00; venc. 20/10) salvo; G-Click guia 19:48 e envio 19:49. TSV `Enviado` valor 1200,00. Falta comprovante da declaração (não achado no Drive).
