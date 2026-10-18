@@ -613,3 +613,6 @@ Guia 520.405,60 (391.472,54 + 128.933,06) conferida no PDF; G-Click 17:32 (guia 
 
 ## 28cs. 18/10/2026 — #205 Portal rodado: Tomados conferido; #209 TSV colado
 Recebidas: Officecont 1040 R$ 740,80 = Domínio; sem IBS/CBS. TSV Tomados `Importado`. Emitidas set inalterada (95.753,11); notas 211–222 são de outubro.
+
+## 28ct. 18/10/2026 — #197 prompt para a extensão (Lefisc); #227 preparação iniciada
+197: Lefisc/gov bloqueados para a agente; prompt pronto para a extensão em `PROMPT_EXTENSAO_LEFISC_197.md`. 227 PROGEST: sem Portal/Domínio/FAT 2026; manual cita nota real de R$ 40.000,00 em setembro (indício de receita); Rendimentos NT/sem movimento; .pfx com senha no nome (Drive). Dossiê CLIENTE_227_PROGEST.md.
