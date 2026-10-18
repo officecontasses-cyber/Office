@@ -26,3 +26,6 @@ Lançar nota 45 no Domínio; corrigir cadastro do tomador e CSOC-RET (44 e 42); 
 - Resumo: ISS 634,31; IRRF (Xavantina nº 5) 2.144,00; PIS/COFINS 18.643,23/86.045,69 totalmente retidos (a recolher 0; saldo 0,03 cada); **IRPJ a recolher 391.472,54** (base serviços 1.918.958,44 + rend. financeiros; retenções 115.264,34) e **CSLL 128.933,06** (retenções 55.652,22) = minha estimativa (CSLL difere 0,02).
 - FAT set a digitar: receita 2.868.189,79; IRRF 43.022,85; PIS 18.643,24; COFINS 86.045,70; CSLL 28.681,89.
 - TSV: Prestados Importado 2.868.189,79; Tomados Importado 142.933,33 (obs. CRF 4,65% pendente); PIS/COFINS `Retido` 0; IRPJ/CSLL `Pendente` até guias (cotas 30/10, 30/11, 30/12 a decidir).
+
+## Correção 18/10/2026
+IRPJ e CSLL em **cota única** (Fernanda). DCTFWeb (guia 4.971,86) **não é do fiscal**: sai das pendências do fechamento fiscal.

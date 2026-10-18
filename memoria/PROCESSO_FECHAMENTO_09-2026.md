@@ -592,3 +592,6 @@ PIS/COFINS 139,89 (23/10) e IRPJ/CSLL 831,30 (30/10) conferidas no PDF; envio no
 
 ## 28cl. 18/10/2026 — #189 Domínio conferido
 Notas 44 e 45 = Portal (2.868.189,79); CSOC-RET corrigido; IRPJ 391.472,54 e CSLL 128.933,06 batem com a estimativa; PIS/COFINS retenção integral. TSV entregue. Pendentes: guias IRPJ/CSLL (cotas), FAT set, CRF 4,65%, cadastro tomador, IBS/CBS.
+
+## 28cm. 18/10/2026 — #189 cota única; DCTFWeb fora do fiscal; #197 preparação iniciada
+189: IRPJ/CSLL em cota única. Regra: DCTFWeb não é do fiscal (CLAUDE.md). 197 ASBBM: Recebidas 5.500,00 (SC 175,00 ISS), FAT CSLL 95,64 e IRPJ −79,60, Rendimentos Sim; Domínio 197 não encontrado. Dossiê CLIENTE_197_ASBBM.md.
