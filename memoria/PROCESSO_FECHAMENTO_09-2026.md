@@ -595,3 +595,6 @@ Notas 44 e 45 = Portal (2.868.189,79); CSOC-RET corrigido; IRPJ 391.472,54 e CSL
 
 ## 28cm. 18/10/2026 — #189 cota única; DCTFWeb fora do fiscal; #197 preparação iniciada
 189: IRPJ/CSLL em cota única. Regra: DCTFWeb não é do fiscal (CLAUDE.md). 197 ASBBM: Recebidas 5.500,00 (SC 175,00 ISS), FAT CSLL 95,64 e IRPJ −79,60, Rendimentos Sim; Domínio 197 não encontrado. Dossiê CLIENTE_197_ASBBM.md.
+
+## 28cn. 18/10/2026 — #189 guia IRPJ/CSLL conferida
+Guia 520.405,60 (391.472,54 + 128.933,06) conferida no PDF; G-Click 17:32 (guia + envio ao cliente). TSV `Enviado` entregue.

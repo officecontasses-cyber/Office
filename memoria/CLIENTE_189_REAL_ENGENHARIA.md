@@ -29,3 +29,6 @@ Lançar nota 45 no Domínio; corrigir cadastro do tomador e CSOC-RET (44 e 42); 
 
 ## Correção 18/10/2026
 IRPJ e CSLL em **cota única** (Fernanda). DCTFWeb (guia 4.971,86) **não é do fiscal**: sai das pendências do fechamento fiscal.
+
+## Guia IRPJ/CSLL 3ºTRIM (18/10/2026)
+Guia 07.16.26291.8615560-0, total 520.405,60 (IRPJ 2089 = 391.472,54; CSLL 2372 = 128.933,06), cota única, venc. 30/10/2026, recibo declaração 50000540041620. PDF `189_RealEngenharia_PortoAlegre_09.2026_IRPJ-CSLL 3ºTRIM.pdf` na pasta de guias. G-Click TRIM 03/2026: "CSLL E IRPJ" e "Envio ao cliente" concluídos por fernanda.officecont em 18/10 17:32 (selo "Ret" ao lado da atividade, significado não confirmado). TSV: DARF IRPJ e CSLL `Enviado`.

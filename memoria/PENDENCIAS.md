@@ -317,3 +317,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [x] **189 (18/10):** Domínio refeito conferido (notas 44/45, CSOC-RET 1%, IRPJ 391.472,54, CSLL 128.933,06); TSV Prestados/Tomados/PIS/COFINS/IRPJ/CSLL entregue. [ ] guias IRPJ/CSLL (cotas?), FAT set, CRF 4,65% Xavantina, cadastro do tomador, IBS/CBS, DCTFWeb 4.971,86 (20/10).
 - [x] **189 (18/10):** TSV colado; IRPJ/CSLL em cota única; DCTFWeb **não é do fiscal** (retirada das pendências).
 - [ ] **197 (18/10) em preparação:** [ ] salvar Domínio 197; [ ] Tomados XML x Domínio; [ ] PIS/COFINS sem folha/anuidade (confirmar); [ ] CSLL 95,64 (30/10) e IRPJ −79,60 (PER/DCOMP?); [ ] IBS/CBS.
+- [x] **189 (18/10):** guia IRPJ/CSLL 520.405,60 (cota única, 30/10) conferida e enviada no G-Click; TSV entregue. [ ] FAT set, CRF 4,65% Xavantina, cadastro tomador, IBS/CBS, SPED.
