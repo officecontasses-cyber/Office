@@ -553,3 +553,6 @@ PER/DCOMP 29817.01875.181026.1.3.04-9972 (COFINS 7,25); guia 57,57 (COFINS 46,01
 
 ## 28by. 18/10/2026 — #152 Domínio (Entradas/Saídas) e #155 preparado
 152: Entradas Domínio 151.480,45 = NFS-e/energia 112.605,92 (serviços tomados, `Importado` desde 17/10; inclui energia CEEE 331,18) + NF-e/NFC-e 38.874,53 (33 documentos, 25 série 1 + outras; ICMS Outras 37.474,53 + J. Ronier 1.400,00 com COSIRF). Saídas 1.112,26 = 4 devoluções (CFOP 5-202/5-411) a House Parts, não serviços: PRESTADOS segue `Sem movimento`. SIEG Entrada/Setembro: 35+ XMLs lidos por nome (conferência por valor não feita). 155: dossiê criado (ver CLIENTE_155_MAINIERI.md): Emitidas 22.676,34 = declaração = guia; FAT ISS 907,05 x 907,02; agosto com 63 notas no Portal x 62 declaradas; falta Domínio.
+
+## 28bz. 18/10/2026 — #133 IRPJ/CSLL dependem da contabilidade
+Fernanda: IRPJ e CSLL do 133 (Lucro Real) dependem da liberação da contabilidade. TSV `Pendente` entregue para DARF IRPJ e DARF CSLL (obs: aguarda contabilidade; venc. 30/10).
