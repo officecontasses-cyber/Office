@@ -565,3 +565,6 @@ Dossiê CLIENTE_173_LOPES_MARTINS.md: Sociedade de Profissionais, ISS fixo 422,8
 
 ## 28cc. 18/10/2026 — #155 Portal rodado de novo: Recebidas 4.334,21 = Domínio
 Imobzi 229513 (530,13) agora no Portal. TSV: Prestados Importado 22.676,34; Tomados Importado 4.334,21; Entradas Sem movimento. Pendentes 155: IBS/CBS acumuladores, ISSQN set no FAT (907,05 -> 907,02), agosto 63 x 62, DARFs (PIS 147,40/COFINS 680,29 23/10; IRPJ 3.307,90/CSLL 1.984,74 30/10), certificado A1 27/10.
+
+## 28cd. 18/10/2026 — #155 guias conferidas; #177 Domínio conferido
+155: guia PIS/COFINS 827,69 (680,29 + 147,40) e IRPJ/CSLL cota única 5.292,64 (3.307,90 + 1.984,74); G-Click 18/10 (IRPJ/CSLL 11:37). 177: Domínio = esperado (nota 13 26.520,00, ISS 530,40, retenções 397,80/172,38/795,60/265,20; IRPJ 2.625,48 e CSLL 1.495,73 a pagar até 30/10; PIS/COFINS 0 a recolher); Officecont 1037 (626,15) fora do DecWeb original: avaliar retificadora.

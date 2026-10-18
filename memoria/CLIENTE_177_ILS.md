@@ -14,3 +14,9 @@ Meses anteriores: receita 26.520,00/mês; retenções IRRF 397,80, PIS 172,38, C
 
 ## Falta
 Domínio 09/2026 (Entradas/Saídas/Resumo) e confirmação de que a **nota 13 (29/09) teve as retenções da Datasys** (pergunta pendente à Inês; precisa XML ou informe); digitar setembro no FAT; depois TSV de Prestados `Importado` 26.520,00, Tomados (sem nota?), DARFs PIS/COFINS `Compensado`, IRPJ (2.625,48) e CSLL (1.495,73) trimestrais (venc. 30/10), SPED 16/11.
+
+## Domínio 09/2026 conferido (18/10/2026 11:41 a 11:43) — IBS/CBS fica para depois do fechamento
+- **Serviços:** nota 13 (emissão 29/09, saída 28/09), Datasys, AC 900, **R$ 26.520,00, ISS 530,40** (= DecWeb = declaração = guia) e retenções **IRRF 397,80 (1,5%), PIS-RET 172,38, COFINS-R 795,60, CSOC-RET 265,20**: a Datasys reteve como em todos os meses (resolve a pergunta pendente).
+- **Entradas:** só NFS-e 1037 Officecont (emissão 05/10, entrada 30/09, série 900, CFOP 1-933, **R$ 626,15**, Simples, ISS 0). **Não consta no DecWeb original** (tomados 0,00 na declaração de 03/10). CNPJ do 177 só existe no hub NFS-es do SIEG (sem NF-es/Entrada): sem NF-e de produtos.
+- **Resumo:** ISS 530,40; PIS 172,38 e COFINS 795,60 integralmente retidos (a recolher 0; resíduos de centavos: PIS 0,04, COFINS 0,02); **IRPJ 3.818,88 − retido 1.193,40 = 2.625,48; CSLL 2.291,33 − retida 795,60 = 1.495,73** (base trimestral 25.459,20): = FAT esperado. IBS/CBS 0,00.
+- **Advertências na importação (print):** 183-IBS e 184-CBS não relacionados ao acum. 900 (dados descartados; pós-fechamento) e data de saída 28/09 < emissão 29/09 (as duas em setembro: sem efeito na competência; não ajustar, regra de 13/10).

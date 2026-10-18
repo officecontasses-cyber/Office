@@ -303,3 +303,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **173 (18/10):** DecWeb/Domínio analisados (receita 0, ISS 422,87); conferir valor 8,71 no Resumo; TSV Sem movimento depois da confirmação.
 - [ ] **177 ILS (18/10, preparado, dossiê CLIENTE_177_ILS.md):** falta Domínio 09/2026 e confirmar retenções da Datasys na nota 13; FAT setembro em branco; IRPJ 2.625,48 / CSLL 1.495,73 esperados (30/10).
 - [x] **155 (18/10):** Portal rodado de novo; Recebidas 4.334,21 = Domínio (Imobzi 229513 apareceu). TSV Prestados/Tomados Importado, Entradas Sem movimento entregue. [ ] DARFs, IBS/CBS pós-fechamento, FAT ISS 907,02, agosto 63 x 62, certificado 27/10.
+- [x] **155 (18/10):** guias PIS/COFINS 827,69 e IRPJ/CSLL 5.292,64 conferidas e enviadas no G-Click; TSV entregue. [ ] IBS/CBS pós-fechamento, FAT ISS 907,02, agosto 63 x 62, certificado A1 27/10.
+- [ ] **177 (18/10):** Domínio conferido (retenções Datasys confirmadas); [ ] DARF IRPJ 2.625,48 / CSLL 1.495,73 (30/10) a gerar e comprovar; [ ] Officecont 1037 (626,15) fora do DecWeb: retificadora?; [ ] FAT set a digitar; [ ] IBS/CBS pós-fechamento; SPED 16/11.

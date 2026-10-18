@@ -27,3 +27,7 @@ Domínio 09/2026 do 155 (Entradas, Saídas/Serviços, Resumo) para fechar ENTRAD
 - **Recebidas 09/2026: agora 11 NFS-e normais, R$ 4.334,21 = Domínio Entradas.** A **Imobzi 229513 (17/09, R$ 530,13, SP, ISS 15,37 não retido) apareceu** (não estava no export de 03/10 e 08/10). Fecha a diferença; as demais seguem iguais. 3 notas de competência 10/2026 (580894, 1943 e uma nova).
 - **Emitidas 09/2026:** inalterada, 116 notas, R$ 22.676,34, ISS R$ 907,02. Agosto continua com 63 normais (R$ 22.664,20) x 62 declaradas.
 - Sem NF-e de produtos em setembro (SIEG Entrada só com Agosto): ENTRADAS `Sem movimento`.
+
+## Guias conferidas (18/10/2026)
+- **PIS/COFINS:** doc 07.16.26291.8086591-6, venc. 23/10, COFINS 680,29 (2172-01) + PIS 147,40 (8109-02) = **827,69** (gerada 11:36:47; recibo declaração 50000540032578).
+- **IRPJ/CSLL 3º tri (cota única):** doc 07.16.26291.8087474-5, venc. 30/10, IRPJ 3.307,90 (2089-01) + CSLL 1.984,74 (2372-01) = **5.292,64** (gerada 11:37:20). G-Click `CSLL e IRPJ - LP (Trimestral)` concluída 18/10 11:37 (print). Na tarefa COFINS/PIS a linha da atividade ficou cortada no print: envio confirmado pela Fernanda por escrito.
