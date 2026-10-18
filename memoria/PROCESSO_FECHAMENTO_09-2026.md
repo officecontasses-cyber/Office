@@ -532,3 +532,6 @@ Dossiê `CLIENTE_133_RFL.md` criado: Lucro Real, aluguel R$ 700/mês, PIS 11,56 
 
 ## 28br. 18/10/2026 — #133 DecWeb retificadora 1 e Domínio conferidos
 Retificadora 1: tomados 18 (MEI 300,00) + 1051 (Officecont 1.252,35) = 1.552,35, ISS 0; PDF retificado não achado no Drive. Domínio: Saídas 701,38 = FAT; Entradas só 1051 (1.252,35), falta a nº 18 (300,00); Resumo PIS 11,56 / COFINS 53,26. Pendentes: PDF da retificadora, nota 18, Serviços_133, balancete/LALUR, PIS ago, crédito set.
+
+## 28bs. 18/10/2026 — #133 retificadora enviada à mão; falta baixar o PDF
+Log do robô (18/10 10:25): retificadora criada, zip de tomados baixado, mas "o DecWeb não liberou o envio — resolver na mão: ver o modal 'Preparar Declaração para envio'" (diagnóstico em C:\Robos\decweb\logs\diagnostico (20261018_102523_133)). Fernanda enviou na mão. Comando entregue: `python decweb_login.py --competencia 09/2026 --fase 3 --clientes 133`. A conferir: PDF diz "Retificadora 1" e total dos tomados 1.552,35.
