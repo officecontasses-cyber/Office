@@ -535,3 +535,6 @@ Retificadora 1: tomados 18 (MEI 300,00) + 1051 (Officecont 1.252,35) = 1.552,35,
 
 ## 28bs. 18/10/2026 — #133 retificadora enviada à mão; falta baixar o PDF
 Log do robô (18/10 10:25): retificadora criada, zip de tomados baixado, mas "o DecWeb não liberou o envio — resolver na mão: ver o modal 'Preparar Declaração para envio'" (diagnóstico em C:\Robos\decweb\logs\diagnostico (20261018_102523_133)). Fernanda enviou na mão. Comando entregue: `python decweb_login.py --competencia 09/2026 --fase 3 --clientes 133`. A conferir: PDF diz "Retificadora 1" e total dos tomados 1.552,35.
+
+## 28bt. 18/10/2026 — #133 NFS-e nº 18 localizada
+Na pasta 001 do cliente: DANFSe e recibo Banrisul (R$ 300,00, 14/09). Despesa real (serviço de levantamento p/ projeto arquitetônico, MEI Pelotas, ISS 0). Falta lançar no Domínio.

@@ -29,3 +29,7 @@ Domínio de 09/2026 do 133 (Entradas, Saídas/Serviços, Resumo/Demonstrativo, b
 - **Domínio Entradas (NFS-e, esp. 39, acum. 800):** só a **1051 Officecont R$ 1.252,35** (entrada 30/09). **A nº 18 (MEI, R$ 300,00) não está no Domínio**: DecWeb 1.552,35 x Domínio 1.252,35 = 300,00.
 - **Resumo:** PIS 11,56 + COFINS 53,26 = 64,82 (= FAT); IBS, CBS e ISS zerados.
 - Serviços_133 (relatório do Domínio) e balancete/LALUR (Lucro Real) não foram salvos.
+
+## NFS-e nº 18 (Shaiane, MEI) — localizada na pasta do cliente (18/10/2026)
+`Movimento RFL 09-2026` (001): `Shaiane NF 18.pdf` (DANFSe) e `Comprovante Shaiane NF 18.pdf` (recibo Banrisul). **Nota real e paga:** NFS-e 18, emitida 11/09/2026, chave 43144072250455947000165000000000001826090455843397 (= a do DecWeb), prestador 50.455.947 Shaiane Pires Duarte Quincoses (MEI, Pelotas/RS), tomador RFL Sistemas S/A, CNAE/serv. 07.01.04, "Levantamento de todo hospital para projeto arquitetônico", R$ 300,00, ISS não retido (local Pelotas), sem IBS/CBS. Pagamento: Banrisul PIX/transferência 14/09/2026 18:23, "PGTO NF 18", R$ 300,00, NSU 20260914001960240786.
+**Conclusão:** despesa real da RFL, falta lançar no Domínio (Entradas/Serviços tomados, acumulador 800, R$ 300,00); depois o Domínio fecha em 1.552,35 = DecWeb retificadora. Classificação contábil (despesa x custo do projeto) é decisão da Fernanda.
