@@ -619,3 +619,6 @@ Recebidas: Officecont 1040 R$ 740,80 = Domínio; sem IBS/CBS. TSV Tomados `Impor
 
 ## 28cu. 18/10/2026 — cmd do 205/227
 Print: 205 Portal OK; 227 fora do clientes.csv do robô. Comando para incluir (echo >> config\clientes.csv) e linha do Cadastro_Clientes entregues; declaração SSC 09/2026 não encontrada no Drive.
+
+## 28cv. 18/10/2026 — #227 Portal conferido
+Emitidas: NFS-e 1 (25/09) Biosys R$ 40.000,00, ISS 1.200, IRRF 600, CS 1.860; Recebidas: Safeweb 170080 R$ 275,00 (ISS 5,50 PoA). Esperado: PIS/COFINS retidos, IRPJ 1.320 e CSLL 752 (cota única). Falta Domínio, declaração/guia ISS SSC (sem procedimento na memória), REINF, FAT, cadastro. TSV Pendente entregue.
