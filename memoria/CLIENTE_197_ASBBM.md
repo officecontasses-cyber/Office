@@ -30,3 +30,6 @@ Base legal: ver `memoria/RASCUNHOS_2026-10-18.md` (pedido ao Gian). Os sites do 
 
 ## Base legal, parte 2 (extensão, 18/10/2026 noite)
 Resumo em `BASE_LEGAL_ASBBM_PARTE2_2026-10-18.md`. Principais: SC Cosit 50/2019 existe (dirigentes: art. 12 §§4–6) e SC 84/2025 é da Cosit; SC 243/2019 + Decreto 8.426/2015 art. 1º → COFINS 4% sobre receita financeira da isenta com receita não própria; FORMA_TRIB 8 = imune, 9 = isenta (Leiaute 12); isenção independe de reconhecimento prévio; ADI 1802 julgada em 2018; retificação de ECF não pode mudar o regime (IN 2.004 art. 7º §2º), sem norma específica Presumido → isenta/imune; DCTFWeb hoje é a IN 2.237/2024. Sem DARF e sem retificação até decisão do Gian/Fernanda.
+
+## TSV de resolução adiada (18/10/2026 noite)
+Fernanda pediu para registrar na Controle apenas observações resumidas do que foi mapeado e resolver o 197 **por último**, depois das demais empresas. TSV em `TSV_197_09-2026.md` (Tomados/PIS/COFINS/IRPJ/CSLL `Pendente`). Atenção aos prazos: PIS/COFINS 23/10 e IRPJ/CSLL 30/10 — decidir enquadramento antes.

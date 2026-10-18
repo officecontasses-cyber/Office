@@ -8,5 +8,7 @@ Pedido da Fernanda (18/10/2026): guardar para analisar quais clientes não têm 
 | Nº | Cliente | Situação | Fonte |
 |---|---|---|---|
 | 237 | Real Representação | **Honorário de set. não foi emitido** (Fernanda, 18/10/2026); última nota no Portal: nº 1019, competência 08/2026 (R$ 495,80) | Portal 237 rodado 18/10 + confirmação da Fernanda |
+| 241 | Simples GPS RS | Portal Recebidas (rodada de 03/10) sem nota OfficeCont de competência 09/2026 (as últimas: 972 comp. 07 e 935 comp. 06); conferir após novo Portal | Portal 241 |
+| 197 | ASBBM | Portal Recebidas (03/10): sem nota OfficeCont (só Attitude e Advogados); conferir | Portal 197 |
 
 (demais clientes: pendente de análise)

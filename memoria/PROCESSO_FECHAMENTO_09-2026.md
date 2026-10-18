@@ -655,3 +655,6 @@ Boleto 21526979 (valor 1.200,00 + multa 60,00 + acréscimos 12,00 = 1.272,00; ve
 
 ## 28df. 18/10/2026 — #227 fechamento (Domínio, IRPJ/CSLL, procedimento SSC)
 Domínio salvo e conferido (Serviços 40.000; Entradas 275; Resumo IRPJ 1.320 / CSLL 752; PIS/COFINS retidos). Guia IRPJ+CSLL R$ 2.072,00 (cota única, venc. 30/10) enviada no G-Click 20:12. Fernanda: em São Sebastião do Caí, com movimento só há guia + demonstrativo; declaração só para sem movimento. TSV: Prestados/Tomados Importado; PIS/COFINS Sem Recolhimento (Retenção Integral); IRPJ/CSLL Enviado; Declaração Prefeitura Não se aplica (proposta).
+
+## 28dg. 18/10/2026 — #241 preparado; #197 TSV com observações resumidas
+#241: dossiê `CLIENTE_241_SIMPLES_GPS.md` (Emitidas 32 NFS-e R$ 48.063,00; Recebidas comp. 09 R$ 6.261,84; PIS/COFINS a recolher 123,89/571,83 venc. 23/10; IRPJ 7.549,47 / CSLL 3.846,74 venc. 30/10; sem Domínio nem honorário de set.). #197: TSV de pendências resumidas em `TSV_197_09-2026.md`; resolução por último.
