@@ -293,3 +293,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **133 (18/10):** retificadora 1 do DecWeb enviada à mão pela Fernanda (robô parou no modal 'Preparar Declaração para envio'); rodar fase 3 e conferir PDF (Retificadora 1, tomados 1.552,35).
 - [ ] **133:** lançar no Domínio a NFS-e nº 18 (Shaiane MEI, R$ 300,00, paga 14/09, docs em 001 `Movimento RFL 09-2026`); depois regerar Entradas/Resumo.
 - [x] **133 (18/10):** nota 18 lançada, Entradas 1.552,35 = DecWeb; retificadora 1 baixada (0,00). [ ] Regerar Resumo; PIS ago; crédito/DARF PIS-COFINS set (23/10); IRPJ/CSLL Lucro Real; SPED 16/11.
+- [ ] **152 (18/10):** TSV Prestados `Sem movimento` e Entradas `Pendente` entregues; salvar `Entradas_152_092026.pdf` (e Saídas) do Domínio para conferir NF-e (50+ XMLs no SIEG, pasta Setembro) e fechar ENTRADAS. [ ] 133: TSV entregue (Tomados, Entradas, Prestados, Declaração); regerar Resumo; DARF PIS/COFINS, IRPJ/CSLL.

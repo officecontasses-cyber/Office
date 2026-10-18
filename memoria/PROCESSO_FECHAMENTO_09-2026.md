@@ -544,3 +544,6 @@ Criada a pasta `_133` em 007 ARQUIVOS SIEG com a nota e o comprovante; dados de 
 
 ## 28bv. 18/10/2026 — #133 nota 18 lançada e conferida
 Entradas 1.552,35 = DecWeb retificadora 1; retificadora (recebida 10:27:59) total 0,00; SIEG sem NF-e (ENTRADAS Sem movimento). TSV: Tomados Importado 1.552,35, Entradas Sem movimento, Prestados Confirmado 701,38, Declaração Prefeitura (obs retificadora). Resumo a regerar; DARFs/IRPJ/CSLL pendentes.
+
+## 28bw. 18/10/2026 — #133 conferido (nota 18 lançada) e #152 Entradas/Prestados
+133: TSV Tomados Importado 1.552,35 / Entradas Sem movimento / Prestados Confirmado 701,38 / Declaração Prefeitura (retificadora 1, 10:27:59). 152 (CRBM5, CNPJ 13.738.204/0001-76): PRESTADOS `Sem movimento` (receita bruta 0,00 na Declaração Mensal; sem Emitidas); ENTRADAS `Pendente` (50+ XMLs de NF-e em SIEG Entrada/2026/Setembro; Domínio Entradas_152_092026 não está no Drive). Em jul ENTRADAS foi Importado e em ago ficou Pendente.
