@@ -329,3 +329,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [x] **205 (18/10):** Portal rodado, Recebidas = Officecont 1040 R$ 740,80 = Domínio; TSV Tomados `Importado` entregue. Resta: IBS/CBS pós-fechamento (acum. 900/183/184), cadastro "1205" duplicado. 209: TSV colado.
 - [ ] **197 (18/10):** Fernanda roda `PROMPT_EXTENSAO_LEFISC_197.md` na extensão; trazer o resultado para atualizar o rascunho ao Gian.
 - [ ] **227 PROGEST (18/10) em preparação:** rodar Portal (certificado A1 no PC?), REINF R-2099, declaração/guia ISS São Sebastião do Caí, Domínio, FAT 2026, linhas de agosto `Pendente`, cadastro; indício de nota R$ 40.000,00 em set. (manual 25/09); ⚠ .pfx com senha no nome do arquivo no Drive.
+- [ ] **227 (18/10):** incluir no `clientes.csv` do Portal (comando entregue) e no `Cadastro_Clientes` (TSV entregue); rodar Portal 227; declaração SSC 09/2026 não salva.
