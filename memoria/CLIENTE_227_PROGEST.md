@@ -22,3 +22,6 @@ Rodar Portal Nacional (certificado A1 instalado?) para o 227; REINF R-2099 (pró
 - **Recebidas:** 1 NFS-e nº 170080 da SAFEWEB SEGURANÇA DA INFORMAÇÃO (CNPJ 01.579.286/0001-74), Porto Alegre, R$ 275,00 ("Certificado Digital e-CNPJ A1 - 1 Ano", pedido 1011418542), ISS 2% = 5,50 não retido (devido ao prestador), CBS 2,20/IBS 0,24 (BC 244,06), PIS 4,54/COFINS 20,90 destacados (sem retenção), ME/EPP não optante? (campo "Não Optante").
 - **Apuração esperada (a confirmar com o Domínio):** receita set = 40.000,00; ISS 1.200,00; PIS 260 e COFINS 1.200 cobertos pela retenção (a recolher 0); 3ºTRIM (jul/ago sem receita): base 32% = 12.800,00; IRPJ 15% 1.920,00 − IRRF 600,00 = **1.320,00**; CSLL 9% 1.152,00 − 400,00 = **752,00** (cota única, venc. 30/10; sem adicional). Rendimentos NT/sem movimento.
 - **Declaração São Sebastião do Caí:** em agosto só há o `Comprovante de lançamento de sem movimento` (20/09); nenhum passo a passo do sistema da prefeitura na memória/repositório; setembro ainda não declarado (há nota tributada). Gravar o passo a passo (print) para virar skill.
+
+## FAT 2026 (18/10/2026)
+Google Sheet `227_PROGEST_FAT2026` em `227_PROGEST/2026/002_FISCAL` (id 1E-Rn0Qamaq_syMBI7MFdIKC9Yw5mgmtBku47zvHHul0). Set: receita 40.000; IRPJ 1.320; CSLL 752; ISSQN 1.200; PIS/COFINS 0 (retidos); rendimentos 0 (NT).
