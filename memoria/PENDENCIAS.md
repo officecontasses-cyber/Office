@@ -308,3 +308,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [x] **173 (18/10):** TSV (seis `Sem movimento`) entregue.
 - [ ] **185 (18/10):** Portal rodado (só Recebidas, Certisign fora de 09); FAT e Rendimentos (Sim) lidos; [ ] salvar Domínio 185 para conferir; [ ] Prefeitura (Fernanda libera); [ ] GMA taxa de administração; [ ] DARFs PIS 24,91/COFINS 114,98 e IRPJ/CSLL do 3ºTRIM (conferir com Domínio); [ ] IBS/CBS pós-fechamento.
 - [ ] **185 (18/10):** Domínio conferido; PIS 24,91/COFINS 114,98 ok; [ ] corrigir presunção IRPJ/CSLL no Domínio (100% x 32%) antes das guias (30/10); [ ] GMA; Rendimentos = Sim; Prefeitura: ausência de movimento emitida.
+- [x] **177 (18/10):** guia IRPJ/CSLL 4.121,21 gerada e enviada (G-Click 12:14); TSV `Enviado` entregue. [ ] Officecont 1037/Tomados, FAT set, IBS/CBS pós-fechamento.

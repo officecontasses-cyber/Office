@@ -574,3 +574,6 @@ Imobzi 229513 (530,13) agora no Portal. TSV: Prestados Importado 22.676,34; Toma
 
 ## 28cf. 18/10/2026 — #185 Domínio conferido e Rendimentos
 Rendimentos 185 = Sim (não Zerado). Domínio: PIS/COFINS = FAT; IRPJ/CSLL com base a 100% (1.840,81/1.104,49) x FAT 32% (477,67/353,62) — corrigir presunção. Prefeitura Rio: ausência de movimento 0016911212.
+
+## 28cg. 18/10/2026 — #177 guia IRPJ/CSLL enviada (G-Click)
+Guia 4.121,21 (2.625,48 + 1.495,73) conferida no PDF; G-Click concluído 12:14. TSV DARF IRPJ/CSLL `Enviado` entregue. Resta 177: Tomados (retificadora Officecont 1037), FAT set, IBS/CBS pós-fechamento.

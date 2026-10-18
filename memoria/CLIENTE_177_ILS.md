@@ -20,3 +20,6 @@ Domínio 09/2026 (Entradas/Saídas/Resumo) e confirmação de que a **nota 13 (2
 - **Entradas:** só NFS-e 1037 Officecont (emissão 05/10, entrada 30/09, série 900, CFOP 1-933, **R$ 626,15**, Simples, ISS 0). **Não consta no DecWeb original** (tomados 0,00 na declaração de 03/10). CNPJ do 177 só existe no hub NFS-es do SIEG (sem NF-es/Entrada): sem NF-e de produtos.
 - **Resumo:** ISS 530,40; PIS 172,38 e COFINS 795,60 integralmente retidos (a recolher 0; resíduos de centavos: PIS 0,04, COFINS 0,02); **IRPJ 3.818,88 − retido 1.193,40 = 2.625,48; CSLL 2.291,33 − retida 795,60 = 1.495,73** (base trimestral 25.459,20): = FAT esperado. IBS/CBS 0,00.
 - **Advertências na importação (print):** 183-IBS e 184-CBS não relacionados ao acum. 900 (dados descartados; pós-fechamento) e data de saída 28/09 < emissão 29/09 (as duas em setembro: sem efeito na competência; não ajustar, regra de 13/10).
+
+## 18/10/2026 — guia IRPJ/CSLL 3ºTRIM
+Guia 07.16.26291.8139196-9, total 4.121,21 (IRPJ 2089 = 2.625,48; CSLL 2372 = 1.495,73), venc. 30/10/2026, recibo declaração 50000540033457. G-Click: CSLL E IRPJ concluído por fernanda.officecont em 18/10 12:14 (meta 27/10). PDF salvo na pasta de guias. TSV: DARF IRPJ e DARF CSLL `Enviado`.
