@@ -640,3 +640,6 @@ Dossiê `CLIENTE_237_REAL_REPRESENTACAO.md`. Controle: REINF/Declaração/Guia I
 ## 28da. 18/10/2026 — #237 Portal rodado; #227 IBS/CBS pós-fechamento
 - #237: Recebidas inalteradas (McAfee R$ 1,60 set.; OfficeCont 1019 é de ago.; falta honorário de set.). Emitidas: NFS-e 14 (15/10) é competência 10/2026, R$ 60.233,22 — não entra em set.; set. sem receita. Domínio set. do 237 ainda não salvo.
 - #227: advertência do Domínio (183-IBS e 184-CBS não relacionados no acumulador 910; dados descartados) anotada para pós-fechamento.
+
+## 28db. 18/10/2026 — #237 fechamento (TSV)
+Domínio salvo e conferido (Entradas: McAfee R$ 1,60; Resumo: IRPJ 3.824,15 / CSLL 3.383,84 = FAT). Honorário de set. não emitido (lista para o Gian em `HONORARIOS_NAO_EMITIDOS_AVISO_GIAN.md`). Cota única. TSV: Tomados Importado 1,60; Prestados, PIS, COFINS Sem movimento; IRPJ 3.824,15 e CSLL 3.383,84 Pendente (guia a gerar).

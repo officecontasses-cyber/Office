@@ -28,3 +28,8 @@ Prestados `Sem movimento`; DARF PIS e COFINS `Sem movimento`; Tomados `Pendente`
 
 ## Pendências do 237
 - [x] Portal 237 rodado de novo (18/10); [ ] honorário OfficeCont de set. (não está no Portal); [ ] relatórios Domínio set/2026; [ ] Tomados/Prestados/PIS/COFINS definitivos; [ ] guia IRPJ/CSLL (cota?) e G-Click; [ ] FAT: zeros em Ago/Set; [ ] linhas de agosto ainda `Pendente` na Ago2026 (Tomados R$ 497,40 e DARF PIS/COFINS — conferir); [ ] IBS/CBS pós-fechamento; [ ] SPED set. em novembro.
+
+## Fechamento 09/2026 (18/10/2026, noite)
+- Domínio salvo: `Entradas_237_092026.pdf` (só NFS-e 14851809 Client Co, R$ 1,60, CFOP 2-933 — confere com o Portal) e `Empresa 237 - ...pdf` (Resumo dos Impostos: PIS 0,00, COFINS 0,00, CSLL base 37.598,21 → 3.383,84, IRPJ 5.639,73 − deduções 1.815,58 = **3.824,15**; ISS 0; IBS/CBS 0,00). Confere com o FAT (atualizado: Ago/Set receita 0,00).
+- Fernanda: honorário OfficeCont de set. **não foi emitido**; cota única para IRPJ/CSLL. TSV em `TSV_237_09-2026.md`. Guias IRPJ/CSLL ainda a gerar (DARF 2089 e 2372, venc. 30/10).
+- Aviso ao Gian: ver `HONORARIOS_NAO_EMITIDOS_AVISO_GIAN.md`.
