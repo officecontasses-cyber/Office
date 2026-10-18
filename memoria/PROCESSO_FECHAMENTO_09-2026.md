@@ -577,3 +577,6 @@ Rendimentos 185 = Sim (não Zerado). Domínio: PIS/COFINS = FAT; IRPJ/CSLL com b
 
 ## 28cg. 18/10/2026 — #177 guia IRPJ/CSLL enviada (G-Click)
 Guia 4.121,21 (2.625,48 + 1.495,73) conferida no PDF; G-Click concluído 12:14. TSV DARF IRPJ/CSLL `Enviado` entregue. Resta 177: Tomados (retificadora Officecont 1037), FAT set, IBS/CBS pós-fechamento.
+
+## 28ch. 18/10/2026 — Controle conferida: 177 faltantes e 185 receita aluguéis
+Controle Set2026 após colagens: 177 sem SERVIÇOS PRESTADOS (Importado 26.520,00), SERVIÇOS TOMADOS (Pendente, Officecont 1037), DARF PIS/COFINS (Sem Recolhimento (Retenção Integral)); SPED Contribuições fica para depois. 185: Tomados Sem movimento, Declaração Enviado, Guia Não se aplica, DARF PIS/COFINS Pendente já na planilha; linha RECEITA ALUGUEIS em branco → Importado 3.832,51 (base PIS/COFINS do Domínio = FAT); 185 não tem linhas Prestados/Entradas/Saídas.
