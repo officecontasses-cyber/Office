@@ -556,3 +556,6 @@ PER/DCOMP 29817.01875.181026.1.3.04-9972 (COFINS 7,25); guia 57,57 (COFINS 46,01
 
 ## 28bz. 18/10/2026 — #133 IRPJ/CSLL dependem da contabilidade
 Fernanda: IRPJ e CSLL do 133 (Lucro Real) dependem da liberação da contabilidade. TSV `Pendente` entregue para DARF IRPJ e DARF CSLL (obs: aguarda contabilidade; venc. 30/10).
+
+## 28ca. 18/10/2026 — #173 preparado
+Dossiê CLIENTE_173_LOPES_MARTINS.md: Sociedade de Profissionais, ISS fixo 422,87 (= declaração = guia = FAT), receita 0, rendimentos Zerado; falta Domínio para fechar Tomados/Prestados/Entradas e DARFs (sugestão `Sem movimento`, como jul/ago).
