@@ -538,3 +538,6 @@ Log do robô (18/10 10:25): retificadora criada, zip de tomados baixado, mas "o 
 
 ## 28bt. 18/10/2026 — #133 NFS-e nº 18 localizada
 Na pasta 001 do cliente: DANFSe e recibo Banrisul (R$ 300,00, 14/09). Despesa real (serviço de levantamento p/ projeto arquitetônico, MEI Pelotas, ISS 0). Falta lançar no Domínio.
+
+## 28bu. 18/10/2026 — #133 pasta `_133` criada; dados da NFS-e 18 entregues
+Criada a pasta `_133` em 007 ARQUIVOS SIEG com a nota e o comprovante; dados de lançamento entregues à Fernanda (CFOP 1-933, acum. 800, R$ 300,00, sem crédito PIS/COFINS).
