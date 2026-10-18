@@ -29,3 +29,8 @@ Prefeitura (Rio): Fernanda envia em outro local (18/10/2026) e libera depois.
 
 ## Domínio corrigido (18/10/2026 12:27)
 Base IRPJ/CSLL 3.928,32 (= 12.270,20 x 32% = 3.926,46 + rend. 1,86). IRPJ 589,25 - IRRF 0,36 - saldo anterior 111,21 = **477,68 a recolher** (FAT 477,67; 1 centavo). CSLL 353,55 + 0,07 (resíduo do 2ºTRIM, FAT também 353,62) = **353,62**. PIS 24,91 / COFINS 114,98. Total federal 971,19 + ... (PIS/COFINS 139,89). Vence 30/10 (PIS/COFINS 23/10). FAT: "CSLL a compensar 12/2025 10,41" não aplicado no Domínio — decidir. TSV: DARF IRPJ 477,68 e CSLL 353,62 `Pendente` até G-Click.
+
+## Guias 09/2026 (18/10/2026, enviadas no G-Click, confirmado pela Fernanda)
+- PIS/COFINS: 07.16.26291.8174732-1, total 139,89 (COFINS 2172 114,98 + PIS 8109 24,91), venc. 23/10.
+- IRPJ/CSLL 3ºTRIM: 07.16.26291.8175508-1, total 831,30 (IRPJ 2089 477,68 + CSLL 2372 353,62), venc. 30/10 (cota única). Recibo declaração 50000540034064.
+- TSV final: DARF PIS/COFINS/IRPJ/CSLL `Enviado`. Pendente: GMA, CSLL a compensar 10,41 (não aplicada), IBS/CBS pós-fechamento, SPED Contribuições.

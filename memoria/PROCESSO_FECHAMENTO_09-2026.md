@@ -586,3 +586,6 @@ Presunção corrigida: base 3.928,32; IRPJ 477,68 e CSLL 353,62 (CSLL inclui 0,0
 
 ## 28cj. 18/10/2026 — #189 preparado
 Portal 2 NFS-e (44 e 45, 2.868.189,79); Domínio só nota 44 → nota 45 (1.519.673,26) falta lançar; CSOC-RET 1% errado (49.220,85); rendimentos financeiros fora do Demonstrativo; FAT setembro em branco. PIS/COFINS retenção integral; IRPJ ~391.472,54 e CSLL ~128.933,04 (estimativa, 3ºTRIM). Rendimentos = Sim. Dossiê CLIENTE_189_REAL_ENGENHARIA.md.
+
+## 28ck. 18/10/2026 — #185 guias conferidas
+PIS/COFINS 139,89 (23/10) e IRPJ/CSLL 831,30 (30/10) conferidas no PDF; envio no G-Click confirmado pela Fernanda. TSV final `Enviado`.
