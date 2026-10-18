@@ -36,3 +36,10 @@ Domínio de 09/2026 do 133 (Entradas, Saídas/Serviços, Resumo/Demonstrativo, b
 
 ## Pasta `_133` e dados para lançar a NFS-e 18 (18/10/2026)
 Criada `_133` em `007 ARQUIVOS SIEG` (id 1FTDUA311NpqBf9WmDbihK4masg9ShjhN, ao lado da `_71`; não existia pasta "importações _133") com cópias de `Shaiane NF 18.pdf` e `Comprovante Shaiane NF 18.pdf` (as originais continuam em `Movimento RFL 09-2026`). Dados do lançamento: NFS-e 18, emissão 11/09/2026, fornecedor 50.455.947/0001-65 (Shaiane Pires Duarte Quincoses, MEI, Pelotas/RS, IBGE 4314407), valor contábil 300,00, CFOP 1-933, acumulador 800, ISS 0 não retido, sem IBS/CBS, sem crédito de PIS/COFINS (mesmo tratamento da 1051).
+
+## Conferência após lançar a NFS-e 18 (18/10/2026 10:39)
+- **Entradas (10:39):** cód. 13 NFS-e 18 (11/09, série 70000, esp. 39, Shaiane, CFOP 1-933, acum. 800, R$ 300,00, ISS/IRRF/CRF 0) + cód. 12 NFS-e 1051 Officecont (R$ 1.252,35) = **1.552,35 = DecWeb retificadora 1**. SIEG: CNPJ do 133 só tem a pasta `Servico Tomado` (sem `Entrada`): sem NF-e de produtos.
+- **Saídas (10:39):** 701,38 (700,00 + 1,38) inalterado = FAT.
+- **Declaração mensal (PDF baixado):** `Retificadora 1`, recebida 18/10/2026 10:27:59, autenticação 6A BC E9 BB 66 CE 34 F1 7D A4 98 A7 FE 4B 6A 9C, base 0, total a recolher 0,00 (ISS zero, bate).
+- **Resumo (`Empresa 133`, 10:25) é anterior ao lançamento**: PIS 11,56 / COFINS 53,26, IBS/CBS/ISS 0. Esperado inalterado (sem crédito); regerar para confirmar.
+- Pendentes: PIS 08/2026, crédito/pagamento de set (PIS 11,56 + COFINS 53,26, venc. 23/10), IRPJ/CSLL (Lucro Real), Serviços_133, rendimentos, SPED 16/11.

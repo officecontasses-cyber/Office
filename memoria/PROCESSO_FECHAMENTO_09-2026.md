@@ -541,3 +541,6 @@ Na pasta 001 do cliente: DANFSe e recibo Banrisul (R$ 300,00, 14/09). Despesa re
 
 ## 28bu. 18/10/2026 — #133 pasta `_133` criada; dados da NFS-e 18 entregues
 Criada a pasta `_133` em 007 ARQUIVOS SIEG com a nota e o comprovante; dados de lançamento entregues à Fernanda (CFOP 1-933, acum. 800, R$ 300,00, sem crédito PIS/COFINS).
+
+## 28bv. 18/10/2026 — #133 nota 18 lançada e conferida
+Entradas 1.552,35 = DecWeb retificadora 1; retificadora (recebida 10:27:59) total 0,00; SIEG sem NF-e (ENTRADAS Sem movimento). TSV: Tomados Importado 1.552,35, Entradas Sem movimento, Prestados Confirmado 701,38, Declaração Prefeitura (obs retificadora). Resumo a regerar; DARFs/IRPJ/CSLL pendentes.

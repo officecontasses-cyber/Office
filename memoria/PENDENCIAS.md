@@ -292,3 +292,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **133 (18/10):** retificadora 1 do DecWeb (tomados 1.552,35) rodada; **PDF retificado ausente no Drive**; Domínio sem a NFS-e nº 18 MEI (300,00); falta Serviços_133 e balancete/LALUR p/ IRPJ/CSLL; PIS ago e crédito de set (ver acima).
 - [ ] **133 (18/10):** retificadora 1 do DecWeb enviada à mão pela Fernanda (robô parou no modal 'Preparar Declaração para envio'); rodar fase 3 e conferir PDF (Retificadora 1, tomados 1.552,35).
 - [ ] **133:** lançar no Domínio a NFS-e nº 18 (Shaiane MEI, R$ 300,00, paga 14/09, docs em 001 `Movimento RFL 09-2026`); depois regerar Entradas/Resumo.
+- [x] **133 (18/10):** nota 18 lançada, Entradas 1.552,35 = DecWeb; retificadora 1 baixada (0,00). [ ] Regerar Resumo; PIS ago; crédito/DARF PIS-COFINS set (23/10); IRPJ/CSLL Lucro Real; SPED 16/11.
