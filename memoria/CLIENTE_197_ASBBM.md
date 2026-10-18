@@ -22,3 +22,8 @@ Se for associação civil sem fins lucrativos, pode ser **isenta** de IRPJ/CSLL 
 - Também: pasta `RE: DOCUMENTOS CONTÁBEIS 04/2026 à 06/2026 - ASBBM` (extratos PagBank/aplicações).
 - Não achei cartão CNPJ (natureza jurídica), declaração de isenção/imunidade nem ECF/IRPJ-CSLL pagos. 004_DECLARAÇÕES tem DEC PREF, SEDIF, GIA, DCTF WEB, REINF, SPED CONTRIB, MIT, DEFIS (não abertas).
 - Conclusão parcial: o estatuto sustenta "associação sem fins lucrativos"; enquadramento fiscal (isenta/imune) ainda **não confirmado** — decisão da Fernanda/contador.
+
+## Consulta pública do CNPJ (BrasilAPI, 18/10/2026) — dados da Receita
+Razão social ASSOCIACAO SUL BRASILEIRA DE BIOMEDICINA, nome fantasia AGAB; **natureza jurídica Associação Privada (3999)**; ativa (situação desde 03/08/2022); início de atividade 04/05/2001; CNAE 9412-0/99; porte "Demais"; capital 0; sem Simples; QSA: Tiago Santos Carvalho (Presidente, desde 29/04/2016). Endereço R. Joaquim Manuel de Macedo 33, apto 406, Operário, Novo Hamburgo/RS.
+**Histórico de forma de tributação na ECF (campo regime_tributario):** 2019, 2020, 2021 = ISENTO DO IRPJ; 2022, 2023 = IMUNE DE IRPJ; **2024 = LUCRO PRESUMIDO**; 2025 não consta. Cadastro_Clientes (planilha) só traz "Lucro Presumido", CNAE e presidente, sem natureza jurídica.
+Base legal: ver `memoria/RASCUNHOS_2026-10-18.md` (pedido ao Gian). Os sites do governo (planalto, receita) estão bloqueados pela rede do ambiente; texto legal citado de memória + resumos de soluções de consulta (Cosit 50/2019 e 84/2025) vistos por busca — **a confirmar**.

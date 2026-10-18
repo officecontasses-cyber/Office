@@ -15,3 +15,10 @@ Domínio ao importar os prestados de setembro avisa em cada nota: "O imposto 183
 - PIS 622,40 − ret. 106,30 = **516,10**; COFINS 2.872,59 − ret. 490,59 = **2.382,00** (venc. 23/10; FAT mostra 622,40/2.872,59 sem retenções; "compensações": crédito de IRPJ 03/2026 esgotado em 17/08, a confirmar se há outro crédito).
 - 3ºTRIM: receita 332.357,16 (jul 199.218,05 + ago 37.386,00 + set 95.753,11) x 32% = 106.354,29. IRPJ 15% 15.953,14 + **adicional 10% sobre (106.354,29 − 60.000) = 4.635,43** − IRRF 435,11 = **~20.153,46**. CSLL 9% 9.571,89 − retida 470,07 = **~9.101,82**.
 - **ALERTA FAT:** o FAT mostra IRPJ 3ºTRIM 15.763,33 e CSLL 9.265,35 **sem o adicional de IRPJ** (não há linha de adicional no FAT do 205, como há no 189) e sem as retenções de set. Corrigir antes de gerar a guia (venc. 30/10; pode ser 3 cotas).
+
+## Conferência 18/10/2026 (Domínio salvo, FAT corrigido) — CONFERIDO
+- Domínio Serviços: 192–210 = 95.753,11 (notas 194 cancelada e 196 substituída lançadas com 0,00); ISS 1.915,06; IRRF 245,30; PIS-RET 106,30; COFINS-R 490,59; CSOC-RET 163,52 (Portal 163,53, 1 centavo).
+- Domínio Resumo: PIS **516,10**; COFINS **2.382,00**; IRPJ base 106.354,29 → 15.953,14 − IRRF 435,11 + adicional 4.635,43 = **20.153,46**; CSLL 9.571,89 − 470,06 = **9.101,83** (FAT 9.101,82, 1 centavo). IBS/CBS 0.
+- Entradas do Domínio: só NFS-e 1040 Officecont (emissão 05/10, entrada 30/09, CFOP 1-933, AC 800, R$ 740,80): é serviço tomado (vai em TOMADOS, não ENTRADAS). Portal Recebidas do 205 **não está no Drive**; Tomados fica `Pendente` até conferir.
+- FAT corrigido: retenções set (IRRF 245,30; PIS 106,30; COFINS 490,59; CSLL 163,53), PIS 516,10, COFINS 2.382,00, IRPJ 3ºTRIM 20.153,46, CSLL 9.101,82, adicional 4.635,43.
+- Controle (export 18/10 ~20:50): Prestados, Tomados e DARFs ainda em branco no 205.

@@ -604,3 +604,6 @@ Guia 520.405,60 (391.472,54 + 128.933,06) conferida no PDF; G-Click 17:32 (guia 
 
 ## 28cp. 18/10/2026 — #197 documentos no Drive; #205 preparado (IBS/CBS pós-fechamento anotado)
 197: estatuto 2014 = associação sem fins lucrativos (sem distribuição, dirigentes sem remuneração); anuidades R$ 150 (2023); falta cartão CNPJ/declaração de isenção. 205: 17 notas válidas 95.753,11 (196 substituída, 194 cancelada); retenções set IRRF 245,30 e CS 760,41 não estão no FAT; FAT sem adicional de IRPJ (3ºTRIM IRPJ ~20.153,46, CSLL ~9.101,82); PIS 516,10/COFINS 2.382,00. IBS/CBS (acum. 900, 183/184) anotado para pós-fechamento. Dossiê CLIENTE_205_LS_BECKER.md.
+
+## 28cq. 18/10/2026 — #197 CNPJ via API e rascunho ao Gian; #205 conferido
+197: BrasilAPI = Associação Privada; ECF: isento 2019-21, imune 2022-23, Lucro Presumido 2024; rascunho ao Gian em RASCUNHOS_2026-10-18.md (planalto/receita bloqueados; base legal de memória + resumos). 205: Domínio (Serviços/Resumo/Entradas) e FAT corrigido conferidos: PIS 516,10, COFINS 2.382,00, IRPJ 20.153,46, CSLL 9.101,83; Tomados (Officecont 1040, 740,80) pendente do Portal Recebidas.
