@@ -307,3 +307,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **177 (18/10):** Domínio conferido (retenções Datasys confirmadas); [ ] DARF IRPJ 2.625,48 / CSLL 1.495,73 (30/10) a gerar e comprovar; [ ] Officecont 1037 (626,15) fora do DecWeb: retificadora?; [ ] FAT set a digitar; [ ] IBS/CBS pós-fechamento; SPED 16/11.
 - [x] **173 (18/10):** TSV (seis `Sem movimento`) entregue.
 - [ ] **185 (18/10):** Portal rodado (só Recebidas, Certisign fora de 09); FAT e Rendimentos (Sim) lidos; [ ] salvar Domínio 185 para conferir; [ ] Prefeitura (Fernanda libera); [ ] GMA taxa de administração; [ ] DARFs PIS 24,91/COFINS 114,98 e IRPJ/CSLL do 3ºTRIM (conferir com Domínio); [ ] IBS/CBS pós-fechamento.
+- [ ] **185 (18/10):** Domínio conferido; PIS 24,91/COFINS 114,98 ok; [ ] corrigir presunção IRPJ/CSLL no Domínio (100% x 32%) antes das guias (30/10); [ ] GMA; Rendimentos = Sim; Prefeitura: ausência de movimento emitida.

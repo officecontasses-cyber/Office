@@ -19,3 +19,10 @@ Prefeitura (Rio): Fernanda envia em outro local (18/10/2026) e libera depois.
 - GMA Imobiliária (taxa de administração, ~R$ 305,77/mês, sem NFS-e) — confirmar se lançada.
 - Prefeitura/ISSQN (Rio) e DARFs: aguardam Fernanda; DARF só `Enviado` com G-Click.
 - IBS/CBS: pós-fechamento.
+
+## Atualização 18/10/2026 (Domínio salvo)
+- Rendimentos 3ºTRIM 2026: 185 = **Sim**, observações em branco (não é "Zerado"; há rendimento no trimestre: ago 1,86, IRRF 0,36, já no FAT; set 0,00). Obs.: na aba 3ºTrim 2025 consta "CLIENTE ESTA PROVIDENCIANDO, 14/10" (aba antiga, só informativo).
+- Domínio (Empresa 185, Resumo, emissão 18/10 12:11): PIS 24,91 e COFINS 114,98 = FAT. IBS/CBS/ISS zerados.
+  **Divergência:** IRPJ/CSLL com base 12.272,06 (= receita 12.270,20 + 1,86 a 100%, sem presunção 32%): CSLL 1.104,49 / IRPJ 1.840,81 (a recolher 1.104,56 e 1.729,24). FAT usa 32%: IRPJ 477,67 e CSLL 353,62. Parametrização de presunção do aluguel no Domínio a corrigir antes das guias (IRPJ/CSLL 30/10).
+- Prefeitura Rio: Confirmação de Ausência de Movimento SET/2026, doc 0016911212, emitida 18/10 12:02 (`185_Palas_RioDeJaneiro_09.2026_DeclaraçãoMensal.pdf`).
+- Sem Entradas/Saídas/Serviços do 185 no Drive (sem movimento).

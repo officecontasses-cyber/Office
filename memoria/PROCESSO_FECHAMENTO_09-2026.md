@@ -571,3 +571,6 @@ Imobzi 229513 (530,13) agora no Portal. TSV: Prestados Importado 22.676,34; Toma
 
 ## 28ce. 18/10/2026 — #173 TSV entregue; #185 Portal rodado, conferência parcial
 173: TSV com seis linhas `Sem movimento` entregue a pedido. 185: comando do Portal entregue; Portal gerou só Recebidas (Certisign 17021298, 189,68, competência 10/2026, fora de 09). FAT lido (set aluguéis 3.832,51; PIS 24,91; COFINS 114,98; IRPJ/CSLL 3ºTRIM 477,67/353,62). Rendimentos = Sim. Domínio 185 ainda não salvo. Dossiê criado: CLIENTE_185_PALAS_ATENA.md.
+
+## 28cf. 18/10/2026 — #185 Domínio conferido e Rendimentos
+Rendimentos 185 = Sim (não Zerado). Domínio: PIS/COFINS = FAT; IRPJ/CSLL com base a 100% (1.840,81/1.104,49) x FAT 32% (477,67/353,62) — corrigir presunção. Prefeitura Rio: ausência de movimento 0016911212.
