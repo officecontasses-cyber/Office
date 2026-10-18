@@ -632,3 +632,7 @@ Emitidas: NFS-e 1 (25/09) Biosys R$ 40.000,00, ISS 1.200, IRRF 600, CS 1.860; Re
 
 ## 28cy. 18/10/2026 — #237 preparado (Real Representação)
 Dossiê `CLIENTE_237_REAL_REPRESENTACAO.md`. Controle: REINF/Declaração/Guia ISSQN ok; demais em branco. Portal (03/10): McAfee R$ 1,60 (set) + honorário OfficeCont 1019 (comp. 08). Sem Emitidas; sem Domínio de set. na pasta 008. Rendimentos 3ºTRIM = Sim; FAT confere. Apuração 3ºTRIM: base 37.598,21; IRPJ 3.824,15 e CSLL 3.383,84 (venc. 30/10). Rodar Portal de novo (honorário de set. emitido depois de 03/10).
+
+## 28cz. 18/10/2026 — FAT 227 refeito no layout da casa; prompt Lefisc parte 2 (197)
+- FAT 227 refeito a partir do layout do FAT 237 (linhas: título, MÊS APURAÇÃO, Receitas, Retenções, IRRF = 1,5% da receita, ISSQN, IRPJ = receita×4,8% − IRRF + rendimentos, CSLL = receita×2,88% − ret. + rendimentos×9%, COFINS, PIS). Salvo como `227_PROGEST_FAT2026.xlsx` (Drive não converte xlsx em Planilha Google via ferramenta). Set: IRPJ 1.320 / CSLL 752 / ISSQN 1.200. Versões anteriores (Planilha Google via CSV, sem formatação) foram para a lixeira. Ajuste manual: célula B25 diz "pagos em 30/10" — trocar por "vencem em 30/10".
+- `PROMPT_EXTENSAO_LEFISC_197_PARTE2.md`: itens "não confirmados" do relatório do Lefisc (SC 243/2019, 19/2022, 218/2021, 50/2019; 4% COFINS; IN 1.585 art. 72 e ADI 1802; códigos FORMA_TRIB da ECF; LP/retificação; DCTF/Reinf/DIRF; Lei 13.204; art. 13-A MP; código DARF PIS folha).
