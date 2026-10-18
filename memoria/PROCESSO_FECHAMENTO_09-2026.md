@@ -652,3 +652,6 @@ Relatório da extensão recebido (fontes oficiais Receita/Planalto/STF/Manual EC
 
 ## 28de. 18/10/2026 — #227 guia ISSQN São Sebastião do Caí
 Boleto 21526979 (valor 1.200,00 + multa 60,00 + acréscimos 12,00 = 1.272,00; venc. 20/10) salvo; G-Click guia 19:48 e envio 19:49. TSV `Enviado` valor 1200,00. Falta comprovante da declaração (não achado no Drive).
+
+## 28df. 18/10/2026 — #227 fechamento (Domínio, IRPJ/CSLL, procedimento SSC)
+Domínio salvo e conferido (Serviços 40.000; Entradas 275; Resumo IRPJ 1.320 / CSLL 752; PIS/COFINS retidos). Guia IRPJ+CSLL R$ 2.072,00 (cota única, venc. 30/10) enviada no G-Click 20:12. Fernanda: em São Sebastião do Caí, com movimento só há guia + demonstrativo; declaração só para sem movimento. TSV: Prestados/Tomados Importado; PIS/COFINS Sem Recolhimento (Retenção Integral); IRPJ/CSLL Enviado; Declaração Prefeitura Não se aplica (proposta).

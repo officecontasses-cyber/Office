@@ -34,3 +34,10 @@ Domínio (Resumo dos Dados, Advertências): NFS-e nº 1, 25/09/2026, R$ 40.000,0
 - G-Click: "ISSQN - São Sebastião do Caí - SET/2026" (ação 12/10, meta 13/10, venc. 20/10): Guia ISS concluída 18/10 19:48 e Envio ao cliente 19:49 (fernanda.officecont) → GUIA ISSQN `Enviado`.
 - **Não achei no Drive o recibo/protocolo da declaração de set. em São Sebastião do Caí** (só o boleto). Confirmar com a Fernanda se a declaração foi feita e salvar o comprovante; a linha DECLARAÇÃO PREFEITURA não foi proposta sem comprovação.
 - Multa e acréscimos de R$ 72,00 no boleto: confirmar a origem (o município pode considerar vencimento anterior ao dia 20); anotar para repasse ao cliente.
+
+## Fechamento 227 (18/10/2026 noite)
+- **Domínio set/2026 salvo:** `Serviços_227_092026.pdf` (NFS-e 1, 25/09, AC 910, R$ 40.000,00; ISS 1.200; IRRF 600; PIS-RET 260; COFINS-R 1.200; CSOC-RET 400), `Entradas_227_092026.pdf` (Safeweb 170080, R$ 275,00, CFOP 1-933, AC 800), `Empresa 227 - PROGEST ....pdf` (Resumo: ISS 1.200; PIS/COFINS devidos 260/1.200 e retidos → a recolher 0; **IRPJ base 12.800 → 1.920 − 600 = 1.320; CSLL 1.152 − 400 = 752**; IBS/CBS 0,00). Tudo confere com o Portal e o FAT.
+- **Guia IRPJ/CSLL 3ºTRIM (cota única):** `227_Progest_SãoSebastiãoDoCaí_09.2026_IRPJ-CSLL 3ºTRIM.pdf` — doc. 07.16.26291.8874891-9, R$ 2.072,00 (IRPJ 2089 1.320,00 + CSLL 2372 752,00), venc. 30/10/2026, recibo 50000540046419, gerada 18/10 20:11:35. G-Click 20:12: CSLL E IRPJ + Envio ao cliente (a subtarefa "Envio guia Whatsapp" aparece com X, não feita).
+- **Demonstrativo mensal ISS** salvo (`..._09.2026_DemonstrativoMensal.pdf`; PDF de imagem, não li o conteúdo).
+- **Procedimento São Sebastião do Caí (Fernanda, 18/10/2026):** com movimento = só **guia ISSQN + Demonstrativo Mensal** (NFS-e Módulo Administrador); a **declaração só existe para sem movimento** (em agosto: comprovante de lançamento de sem movimento). Guardar para os próximos meses (skill "sao-sebastiao-do-cai-issqn" a criar).
+- Resta: REINF R-2099; cadastro/clientes.csv; IBS/CBS pós-fechamento; SPED set. em novembro.
