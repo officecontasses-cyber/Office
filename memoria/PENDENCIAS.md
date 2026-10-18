@@ -324,3 +324,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [x] **205 (18/10):** Domínio e FAT corrigido conferidos (PIS 516,10; COFINS 2.382,00; IRPJ 20.153,46; CSLL 9.101,83). [ ] Portal Recebidas 205 (Officecont 1040, 740,80); [ ] guias PIS/COFINS (23/10) e IRPJ/CSLL (30/10, cota?); [ ] IBS/CBS pós-fechamento.
 - [ ] **197 (18/10):** rascunho ao Gian (`RASCUNHOS_2026-10-18.md`): ECF 2019-21 isento, 2022-23 imune, 2024 LP; falta natureza/enquadramento atual, ECF 2025, requisitos; DARF 197 só depois da resposta.
 - [ ] **Rede do ambiente:** sites do governo (planalto.gov.br, gov.br/receitafederal) bloqueados; se quiser que eu leia a lei direto, liberar esses domínios em Network access.
+- [x] **205 (18/10):** guias PIS/COFINS 2.898,10 e IRPJ/CSLL 29.255,29 (cota única) conferidas, G-Click 17:59; TSV `Enviado`. [ ] rodar Portal 205 (Recebidas) para fechar Tomados (Officecont 1040, 740,80); [ ] IBS/CBS pós-fechamento.
+- [ ] **209 (18/10) preparado:** Sem movimento (prestados/PIS/COFINS/IRPJ/CSLL), Tomados `Não se aplica`; confirmar com Fernanda; aporte do sócio R$ 500 (contabilizar como aporte); rend. R$ 0,01; sem certificado/Domínio.

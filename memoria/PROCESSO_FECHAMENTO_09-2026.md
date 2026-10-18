@@ -607,3 +607,6 @@ Guia 520.405,60 (391.472,54 + 128.933,06) conferida no PDF; G-Click 17:32 (guia 
 
 ## 28cq. 18/10/2026 — #197 CNPJ via API e rascunho ao Gian; #205 conferido
 197: BrasilAPI = Associação Privada; ECF: isento 2019-21, imune 2022-23, Lucro Presumido 2024; rascunho ao Gian em RASCUNHOS_2026-10-18.md (planalto/receita bloqueados; base legal de memória + resumos). 205: Domínio (Serviços/Resumo/Entradas) e FAT corrigido conferidos: PIS 516,10, COFINS 2.382,00, IRPJ 20.153,46, CSLL 9.101,83; Tomados (Officecont 1040, 740,80) pendente do Portal Recebidas.
+
+## 28cr. 18/10/2026 — #205 guias conferidas; #209 preparado
+205: PIS/COFINS 2.898,10 (23/10) e IRPJ/CSLL 29.255,29 (cota única, 30/10) conferidas, G-Click 17:59; Portal Recebidas a rodar de novo (Officecont 1040, 05/10). 209: sem certificado/Domínio; declaração 0,00; extrato Bradesco set com PIX R$ 500 do sócio (não é receita) e rend. R$ 0,01; Rendimentos Sim; proposta Sem movimento. Dossiê CLIENTE_209_FOCO_D.md.

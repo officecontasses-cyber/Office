@@ -22,3 +22,9 @@ Domínio ao importar os prestados de setembro avisa em cada nota: "O imposto 183
 - Entradas do Domínio: só NFS-e 1040 Officecont (emissão 05/10, entrada 30/09, CFOP 1-933, AC 800, R$ 740,80): é serviço tomado (vai em TOMADOS, não ENTRADAS). Portal Recebidas do 205 **não está no Drive**; Tomados fica `Pendente` até conferir.
 - FAT corrigido: retenções set (IRRF 245,30; PIS 106,30; COFINS 490,59; CSLL 163,53), PIS 516,10, COFINS 2.382,00, IRPJ 3ºTRIM 20.153,46, CSLL 9.101,82, adicional 4.635,43.
 - Controle (export 18/10 ~20:50): Prestados, Tomados e DARFs ainda em branco no 205.
+
+## Guias 09/2026 (18/10/2026, G-Click 17:59 — print da Fernanda)
+- PIS/COFINS: 07.16.26291.8654338-4, total 2.898,10 (COFINS 2172 2.382,00 + PIS 8109 516,10), venc. 23/10, recibo declaração 50000540042351.
+- IRPJ/CSLL 3ºTRIM **cota única**: 07.16.26291.8655276-6, total 29.255,29 (IRPJ 2089 20.153,46 + CSLL 2372 9.101,83), venc. 30/10.
+- G-Click: "Darf Pis / Cofins" e "CSLL E IRPJ" concluídos por fernanda.officecont em 18/10 17:59 (print sem a linha "Envio ao cliente"). TSV: DARFs `Enviado`.
+- Portal Recebidas do 205: **rodar de novo** (a Officecont 1040 foi emitida em 05/10, depois da rodada de 03/10): `python portal_nacional_download.py --competencia 09/2026 --clientes 205` em `C:\Robos\portalnacional`.
