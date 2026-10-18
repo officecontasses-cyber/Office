@@ -643,3 +643,6 @@ Dossiê `CLIENTE_237_REAL_REPRESENTACAO.md`. Controle: REINF/Declaração/Guia I
 
 ## 28db. 18/10/2026 — #237 fechamento (TSV)
 Domínio salvo e conferido (Entradas: McAfee R$ 1,60; Resumo: IRPJ 3.824,15 / CSLL 3.383,84 = FAT). Honorário de set. não emitido (lista para o Gian em `HONORARIOS_NAO_EMITIDOS_AVISO_GIAN.md`). Cota única. TSV: Tomados Importado 1,60; Prestados, PIS, COFINS Sem movimento; IRPJ 3.824,15 e CSLL 3.383,84 Pendente (guia a gerar).
+
+## 28dc. 18/10/2026 — #237 guias IRPJ/CSLL enviadas
+Guia 07.16.26291.8790200-0 (7.207,99 = 3.824,15 + 3.383,84, cota única, venc. 30/10) conferida no PDF; G-Click concluído 19:25 e envio ao cliente 19:26. TSV `Enviado` entregue.

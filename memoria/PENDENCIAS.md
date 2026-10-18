@@ -338,3 +338,4 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **227 IBS/CBS (pós-fechamento):** acumulador 910 sem 183-IBS/184-CBS (Domínio descarta); conferir CBS 336,06 / IBS 37,34 da NFS-e 1 depois do fechamento.
 - [x] **237 (18/10 noite):** Domínio salvo/conferido; TSV entregue (`TSV_237_09-2026.md`); cota única. [ ] gerar guias IRPJ 3.824,15 / CSLL 3.383,84 (venc. 30/10) e comprovar no G-Click; [ ] IBS/CBS pós-fechamento.
 - [ ] **Honorários não emitidos (aviso ao Gian):** 237 (set.). Analisar os demais clientes (Portal Recebidas 09/2026: nota OfficeCont comp. 09) e avisar o Gian — `HONORARIOS_NAO_EMITIDOS_AVISO_GIAN.md`.
+- [x] **237 (18/10 19:26):** guias IRPJ/CSLL 3ºTRIM geradas e enviadas (G-Click); TSV `Enviado`. Resta: IBS/CBS pós-fechamento, SPED set. (nov.), aviso ao Gian (honorário set. não emitido).
