@@ -583,3 +583,6 @@ Controle Set2026 após colagens: 177 sem SERVIÇOS PRESTADOS (Importado 26.520,0
 
 ## 28ci. 18/10/2026 — #185 Domínio corrigido
 Presunção corrigida: base 3.928,32; IRPJ 477,68 e CSLL 353,62 (CSLL inclui 0,07 do 2ºTRIM) = FAT (IRPJ difere 0,01). Pendente: guias PIS/COFINS (23/10), IRPJ/CSLL (30/10), CSLL a compensar 10,41, GMA. TSV do 177 e 185 colados.
+
+## 28cj. 18/10/2026 — #189 preparado
+Portal 2 NFS-e (44 e 45, 2.868.189,79); Domínio só nota 44 → nota 45 (1.519.673,26) falta lançar; CSOC-RET 1% errado (49.220,85); rendimentos financeiros fora do Demonstrativo; FAT setembro em branco. PIS/COFINS retenção integral; IRPJ ~391.472,54 e CSLL ~128.933,04 (estimativa, 3ºTRIM). Rendimentos = Sim. Dossiê CLIENTE_189_REAL_ENGENHARIA.md.
