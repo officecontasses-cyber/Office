@@ -622,3 +622,6 @@ Print: 205 Portal OK; 227 fora do clientes.csv do robô. Comando para incluir (e
 
 ## 28cv. 18/10/2026 — #227 Portal conferido
 Emitidas: NFS-e 1 (25/09) Biosys R$ 40.000,00, ISS 1.200, IRRF 600, CS 1.860; Recebidas: Safeweb 170080 R$ 275,00 (ISS 5,50 PoA). Esperado: PIS/COFINS retidos, IRPJ 1.320 e CSLL 752 (cota única). Falta Domínio, declaração/guia ISS SSC (sem procedimento na memória), REINF, FAT, cadastro. TSV Pendente entregue.
+
+## 28cw. 18/10/2026 — prompt da extensão para a declaração/guia SSC (227)
+`memoria/PROMPT_EXTENSAO_SSC_227.md`: Fase 1 pesquisa (somente leitura) + Fase 2 ação com parada antes de enviar; salvar em `09_SETEMBRO\002 ARQUIVOS MUNICIPAIS` com o padrão `227_Progest_<Cidade>_09.2026_...`.
