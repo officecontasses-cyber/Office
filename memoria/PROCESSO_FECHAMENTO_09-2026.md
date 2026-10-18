@@ -636,3 +636,7 @@ Dossiê `CLIENTE_237_REAL_REPRESENTACAO.md`. Controle: REINF/Declaração/Guia I
 ## 28cz. 18/10/2026 — FAT 227 refeito no layout da casa; prompt Lefisc parte 2 (197)
 - FAT 227 refeito a partir do layout do FAT 237 (linhas: título, MÊS APURAÇÃO, Receitas, Retenções, IRRF = 1,5% da receita, ISSQN, IRPJ = receita×4,8% − IRRF + rendimentos, CSLL = receita×2,88% − ret. + rendimentos×9%, COFINS, PIS). Salvo como `227_PROGEST_FAT2026.xlsx` (Drive não converte xlsx em Planilha Google via ferramenta). Set: IRPJ 1.320 / CSLL 752 / ISSQN 1.200. Versões anteriores (Planilha Google via CSV, sem formatação) foram para a lixeira. Ajuste manual: célula B25 diz "pagos em 30/10" — trocar por "vencem em 30/10".
 - `PROMPT_EXTENSAO_LEFISC_197_PARTE2.md`: itens "não confirmados" do relatório do Lefisc (SC 243/2019, 19/2022, 218/2021, 50/2019; 4% COFINS; IN 1.585 art. 72 e ADI 1802; códigos FORMA_TRIB da ECF; LP/retificação; DCTF/Reinf/DIRF; Lei 13.204; art. 13-A MP; código DARF PIS folha).
+
+## 28da. 18/10/2026 — #237 Portal rodado; #227 IBS/CBS pós-fechamento
+- #237: Recebidas inalteradas (McAfee R$ 1,60 set.; OfficeCont 1019 é de ago.; falta honorário de set.). Emitidas: NFS-e 14 (15/10) é competência 10/2026, R$ 60.233,22 — não entra em set.; set. sem receita. Domínio set. do 237 ainda não salvo.
+- #227: advertência do Domínio (183-IBS e 184-CBS não relacionados no acumulador 910; dados descartados) anotada para pós-fechamento.

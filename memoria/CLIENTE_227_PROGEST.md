@@ -25,3 +25,6 @@ Rodar Portal Nacional (certificado A1 instalado?) para o 227; REINF R-2099 (pró
 
 ## FAT 2026 (18/10/2026)
 Google Sheet `227_PROGEST_FAT2026` em `227_PROGEST/2026/002_FISCAL` (id 1E-Rn0Qamaq_syMBI7MFdIKC9Yw5mgmtBku47zvHHul0). Set: receita 40.000; IRPJ 1.320; CSLL 752; ISSQN 1.200; PIS/COFINS 0 (retidos); rendimentos 0 (NT).
+
+## IBS/CBS — pós-fechamento (18/10/2026)
+Domínio (Resumo dos Dados, Advertências): NFS-e nº 1, 25/09/2026, R$ 40.000,00 (Biosys): "O imposto 183-IBS e 184-CBS não estão relacionados no acumulador 910. Os dados serão descartados." Portal da nota: BC IBS/CBS 37.340,00; CBS 0,90% = 336,06; IBS 0,10% = 37,34 (CST 000, cClassTrib 000001). Fica para depois do fechamento (ano-teste 2026, informativo): relacionar 183/184 ao acumulador 910 e conferir CBS 336,06 / IBS 37,34. A importação segue sem os dados de IBS/CBS (descartados).
