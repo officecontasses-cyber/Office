@@ -676,3 +676,6 @@ Fernanda: Montenegro só gera guias (ISS Digital, vencimento dia 10), sem entreg
 
 ## 28dm. 19/10/2026 — #247 rendimentos das aplicações
 Regra da Fernanda: rendimento só incide nos resgates. Extratos de depósito a prazo (Sicredi) achados na 001: SICREDINVEST resgates 24.500,00 em set. com rendimento 513,80 e IRRF 115,61; EXCLUSIVO R$ 200 mil sem resgate (rendimento provisionado ~49,8 mil fora). 3ºTRIM: IRPJ 3.801,46, CSLL 3.502,24. Regra no `CLAUDE.md`.
+
+## 28dn. 19/10/2026 — #247 Domínio e Portal conferidos
+Portal: só NFS-e 1048 (556,90) nas Recebidas. Domínio: tomados = Portal; sem movimento ISS; IRPJ 3.840,00 com saldo credor 2.994,33 (devedor 845,67) e CSLL 3.456,00, **sem os rendimentos/IRRF**. Apuração correta: IRPJ 807,13, CSLL 3.502,24 (cotas por imposto).
