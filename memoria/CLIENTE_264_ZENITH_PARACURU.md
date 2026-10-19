@@ -15,3 +15,8 @@ Sem receita comprovada: PIS, COFINS, IRPJ e CSLL = zero (confirmar). Se houver v
 
 ## Pendências do 264
 - [ ] Extratos de jul.-set. (conta e aplicação) ou confirmação da Betina; informe/validação dos rendimentos (`Zerado`?); [ ] Domínio set. (Entradas, Serviços, Demonstrativo); [ ] ajustar TOMADOS (2 notas set.); [ ] SIEG (cadastro e pasta Entrada); [ ] relatório de Emitidas do Portal; [ ] ler as declarações de set. de Brasília (PDF em imagem); [ ] situação do patrimônio de afetação/RET; [ ] renomear o .pfx; [ ] honorário de set. (Gian); [ ] IBS/CBS pós-fechamento.
+
+## Domínio set./2026 (19/10/2026, só `Entradas_264_092026.pdf` salvo)
+- **Entradas:** apenas a NFS-e **OfficeCont nº 1058, R$ 1.175,00** (emitida 05/10, comp. 09, CFOP 2.933, acumulador 801, série 900) → **o honorário de set. existe** (264 sai da lista do Gian). **Sem NF-e de mercadoria** → ENTRADAS = `Sem movimento` (por regra; o hub SIEG não tem pasta do CNPJ, mas o Domínio não traz nenhuma NF-e).
+- **Tomados — divergência:** o Portal (03/10) lista J M Rocha nº 29 (R$ 4.000,00, 21/09) e Andrade & Sombrio nº 60 (R$ 3.899,70, 04/09) de set., que **não estão no Domínio**; o Domínio só tem o honorário. → lançar no Domínio (ou explicar o tratamento: despesa de obra/estoque) e rever a linha TOMADOS (hoje `Sem movimento`, que não vale: há ao menos o honorário e as 2 notas do Portal). A NFS-e nº 30 (J M Rocha, R$ 28.784,10) é de outubro.
+- **Não salvos ainda:** Serviços, Demonstrativo dos Impostos e resumo (PIS/COFINS/IRPJ/CSLL), então as DARFs seguem `Pendente`. Receita segue `Pendente` (sem extratos).

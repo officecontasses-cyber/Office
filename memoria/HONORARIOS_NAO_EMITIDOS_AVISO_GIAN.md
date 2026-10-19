@@ -14,3 +14,4 @@ Pedido da Fernanda (18/10/2026): guardar para analisar quais clientes não têm 
 | ~~261~~ | Giatech | **Retirado em 19/10:** honorário nº 1035 (R$ 575,55, emitido 05/10, comp. 09) está no Domínio Entradas (o Portal de 03/10 foi rodado antes da emissão). | Domínio Entradas 261 |
 
 (demais clientes: pendente de análise)
+- 264 Zenith Paracuru: **honorário existe** (NFS-e nº 1058, R$ 1.175,00, comp. 09, no Domínio Entradas em 19/10) → fora da lista.
