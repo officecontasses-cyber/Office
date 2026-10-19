@@ -25,3 +25,15 @@ O cliente responde por Forms quando houve venda, **mas a Fernanda valida nos ext
 - **Jul/2026:** TED 14/07 **R$ 320.000,00** de Adelar Alves de Oliveira = a venda (bate com o FAT). PIX 10/07 R$ 11.614,12 do sócio Marcos Roberto Kerber (aporte/mútuo, não receita). Aplicação financeira de R$ 80.000,00 em 17/07. Saídas para sócios (Poliana Tavares Almeida 137.158,30 + 23.000,00 + 8.750,00; Kerber 23.000,00 + 5.212,53): natureza a confirmar (distribuição de lucros? devolução de capital?).
 - **Ago/2026:** **nenhum crédito** (só débitos); receita zero confirmada. DARF 25/08 R$ 11.680,00 = PIS 2.080,00 + COFINS 9.600,00 de julho.
 - **Set/2026:** **nenhum crédito de terceiros**; entradas são só resgates de aplicação (14.000,00 em 10/09; 4.000,00 em 16/09; 500,00 em 18/09; 6.000,00 em 25/09 = 24.500,00). **Receita de set. = zero confirmada pelo extrato.** Boleto OfficeCont R$ 581,65 em 10/09 (honorário; nota de set. a conferir). Rendimento da aplicação não aparece na conta corrente: a Rendimentos 3ºTRIM tem `LIBERADO FISCAL = Sim` sem observação; conferir no extrato da aplicação/informe se houve rendimento no trimestre (entra na base de IRPJ/CSLL no Presumido; FAT mostra rendimentos 0,00).
+
+## Aplicações Sicredi e rendimentos (extratos de depósito a prazo, 05/10/2026; regra: rendimento só nos resgates)
+Pasta `001_DOCUMENTOS DIGITALIZADOS` > 09_SETEMBRO `PORTOOUT_261005_135748.pdf` e 08_AGOSTO `EXTRATOS_261005_142201.pdf` (iguais nos dados). Dois produtos, ambos CDI, incide IRRF e IOF:
+- **SICREDINVEST EXCLUSIVO:** R$ 200.000,00, **sem movimentação** (sem resgate, rendimentos pagos 0,00); rendimentos provisionados acumulados 44.233,14 (31/07), 47.037,12 (31/08), **49.843,56 (30/09)** → fora do trimestre pela regra. **Atenção futura:** no resgate entram quase R$ 50 mil de rendimento na base de IRPJ/CSLL.
+- **SICREDINVEST (o de R$ 80.000,00 aplicado em 17/07):** em set. **resgates 24.500,00** (= os 4 resgates da conta corrente), **rendimento pago 513,80, IRRF 115,61 (22,5%)**, IOF 0; saldo 55.898,19 (bruto 57.419,92 em 30/09; provisão de IRRF 342,38 não conta). Ago.: sem movimento (rendimento provisionado 861,78 não conta).
+**FAT 247 (3ºTRIM):** `RENDIM. FINANCEIROS` set. = **513,80**; `IRRF S/RESGATES` set. = **115,61** (hoje 0,00 nas duas).
+
+## Apuração 3ºTRIM/2026 (cálculo; conferir com o Domínio)
+- IRPJ: base 320.000 × 8% = 25.600,00 + 513,80 = **26.113,80**; 15% = 3.917,07; sem adicional (< 60.000); **− IRRF 115,61 = 3.801,46**.
+- CSLL: 320.000 × 12% = 38.400,00 + 513,80 = **38.913,80** × 9% = **3.502,24**.
+- Total R$ 7.303,70 (> 2.000) → cota única ou 3 cotas (IRPJ ≈ 1.267,15; CSLL ≈ 1.167,41; cada ≥ 1.000), venc. 30/10 (1ª cota). No FAT (fórmula da casa): IRPJ set. = 513,80×15% − 115,61 = **−38,54** (negativo no mês, compensado no trimestre, como no 1ºTRIM), trimestre **3.801,46**; CSLL set. = 46,24, trimestre 3.502,24.
+- PIS/COFINS: set. zero (sem receita operacional; rendimento financeiro não entra no PIS/COFINS cumulativo da casa; não tenho a norma exata em mãos, conferir). Jul. já paga (2.080,00 + 9.600,00).

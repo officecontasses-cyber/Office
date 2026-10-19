@@ -673,3 +673,6 @@ Extratos Sicredi 07/08/09 achados na 001: venda 320.000,00 em 14/07; ago. e set.
 
 ## 28dl. 19/10/2026 — #247 Montenegro resolvido
 Fernanda: Montenegro só gera guias (ISS Digital, vencimento dia 10), sem entrega de declaração. Os PDFs de agosto do Drive são o DMS gerado pelo ADN (anônimo, sem recibo; o de "Prestados" é cópia do de tomados). Regra final no `CLAUDE.md`. Domínio/Portal de set. do 247 ainda não apareceram no Drive.
+
+## 28dm. 19/10/2026 — #247 rendimentos das aplicações
+Regra da Fernanda: rendimento só incide nos resgates. Extratos de depósito a prazo (Sicredi) achados na 001: SICREDINVEST resgates 24.500,00 em set. com rendimento 513,80 e IRRF 115,61; EXCLUSIVO R$ 200 mil sem resgate (rendimento provisionado ~49,8 mil fora). 3ºTRIM: IRPJ 3.801,46, CSLL 3.502,24. Regra no `CLAUDE.md`.
