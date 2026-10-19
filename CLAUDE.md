@@ -25,6 +25,8 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
   **`Sem movimento`**. `DECLARAÇÃO PREFEITURA` fica `Enviado` com o recibo/protocolo.
   **ENTRADAS (regra da Fernanda, 17/10/2026):** a linha ENTRADAS é só de **compra de produtos** (NF-e de mercadoria/uso e consumo, CT-e de frete). **NFS-e de serviços tomados NÃO entram em ENTRADAS** (vão em SERVIÇOS TOMADOS). Se não há NF-e no hub SIEG (pasta `Entrada` do CNPJ) e não consta no Domínio, ENTRADAS = `Sem movimento`.
 - **DCTFWeb não é do fiscal (Fernanda, 18/10/2026):** não listar guia/recibo da DCTFWeb (CP, IRRF folha etc.) como pendência do fechamento fiscal nem cobrar comprovação no G-Click; é de outro setor.
+- **Montenegro/RS (cliente 247) NÃO tem declaração de prefeitura (Fernanda, 19/10/2026):** o Livro Fiscal Eletrônico (DMS/ADN) é só relatório de conferência dos tomados, não é declaração entregue. `DECLARAÇÃO PREFEITURA` do 247 = `Não se aplica` (Ago2026 foi lançada `Enviado` por engano; Jul2026 usou "NA"). Nada de recibo a cobrar. Guia de ISSQN só se houver base/ISS apurado.
+- **Receita do 247 (Porto Mais Alegre):** o cliente informa vendas pelo Forms, mas a Fernanda **sempre valida nos extratos bancários** do mês os créditos com cara de receita (venda de imóvel, sinal, parcelas) que não tenham sido informados. Sem o extrato do mês no Drive, receita = `Pendente`, não `Sem movimento`.
 - **Nada é escrito direto na Controle_Fiscal.** Toda atualização entra pela aba `Atualizações`
   (fila), em TSV **inline no chat**, e a Fernanda roda o script `processarAtualizacoes()`.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.

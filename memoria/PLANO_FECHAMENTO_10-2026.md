@@ -5,7 +5,7 @@ Objetivo da Fernanda: no fechamento de outubro, fazer tudo com agilidade. Base: 
 ## Ordem sugerida do mês (primeira semana útil)
 1. **Dia 1:** Tacom (138 e 263 ISSQN POA, regra de 02/10) e DecWeb dos demais de POA em lote (`decweb_login.py --fase T --enviar`); 186 só depois que a cliente enviar os documentos.
 2. **Dia 1 a 2:** Portal Nacional em lote para os clientes com certificado (`portal_nacional_download.py`), depois `conciliacao.py` (já corrigido para nota de substituição). Rodar também para os que não geraram planilha, e conferir no log `Emitidas/Recebidas sem movimento` (sempre com login confirmado pelo CNPJ).
-3. **Dia 2 a 3:** prefeituras fora do DecWeb com as skills: `sao-leopoldo-issqn` (126), `novo-hamburgo-issqn` (261 e 197), `brasilia-issqn` (71 e 264); Montenegro (247), Rio (185), PROGEST (227) e São Paulo (a gravar/mapear).
+3. **Dia 2 a 3:** prefeituras fora do DecWeb com as skills: `sao-leopoldo-issqn` (126), `novo-hamburgo-issqn` (261 e 197), `brasilia-issqn` (71 e 264); Montenegro (247, sem declaração: só conferir o DMS dos tomados), Rio (185), PROGEST (227) e São Paulo (a gravar/mapear).
 4. **Federais:** retenções nas Recebidas e Emitidas do Portal (IRRF, contribuições, INSS) para REINF e DARF; REINF vence dia 15.
 5. **TSV para a Controle:** um bloco só por município, com evidência (recibo, DMS, print do G-Click).
 

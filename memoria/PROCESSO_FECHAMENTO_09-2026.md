@@ -664,3 +664,6 @@ Domínio salvo e conferido (Serviços 40.000; Entradas 275; Resumo IRPJ 1.320 / 
 
 ## 28di. 19/10/2026 — #241 guias e Domínio regravado
 Entradas 6.815,29 (série U apagada); guias PIS/COFINS 695,71 (23/10) e IRPJ+CSLL 11.685,81 (30/10, cota única) conferidas = Domínio e comprovadas no G-Click (18/10 21:48). TSV: DARF PIS/COFINS/IRPJ/CSLL `Enviado`. Em aberto: IRRF de julho 289,58 (FAT deduz, guia não); Entradas aguardam SIEG.
+
+## 28dj. 19/10/2026 — #241 IRRF indevido; #247 regras de Montenegro e extratos
+#241: IRRF de julho (289,58) era lançamento indevido no FAT; guias conferidas. #247: Montenegro não tem declaração (`Não se aplica`; Ago lançada `Enviado` por engano, corrigir); 1ºTRIM −2.994,33 do FAT = compensação de créditos; receita a validar nos extratos bancários (set. não está no Drive); hub SIEG sem pasta de set., NF-e de agosto pendente. Regras gravadas no `CLAUDE.md`.
