@@ -661,3 +661,6 @@ Domínio salvo e conferido (Serviços 40.000; Entradas 275; Resumo IRPJ 1.320 / 
 
 ## 28dh. 19/10/2026 — #241 conferido; #247 preparado
 #241: Domínio x Portal fecham (Prestados 48.063,00; Entradas série 900 6.815,29 incl. honorário nº 1055, que tira o 241 da lista do Gian; série U com possível duplicidade 1.784,38 e Vortx de agosto 588,91). IRPJ Domínio 7.839,05 x FAT 7.549,47: suspeita de erro no IRRF jul. do FAT (289,58). TSV: Prestados e Tomados `Importado`. #247: dossiê `CLIENTE_247_PORTO_MAIS_ALEGRE.md`; sem Domínio/Portal de set. no Drive; IRPJ 3.840,00/CSLL 3.456,00 esperados se a receita de set. for zero.
+
+## 28di. 19/10/2026 — #241 guias e Domínio regravado
+Entradas 6.815,29 (série U apagada); guias PIS/COFINS 695,71 (23/10) e IRPJ+CSLL 11.685,81 (30/10, cota única) conferidas = Domínio e comprovadas no G-Click (18/10 21:48). TSV: DARF PIS/COFINS/IRPJ/CSLL `Enviado`. Em aberto: IRRF de julho 289,58 (FAT deduz, guia não); Entradas aguardam SIEG.
