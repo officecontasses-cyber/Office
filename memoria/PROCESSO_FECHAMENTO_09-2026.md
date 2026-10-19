@@ -679,3 +679,6 @@ Regra da Fernanda: rendimento só incide nos resgates. Extratos de depósito a p
 
 ## 28dn. 19/10/2026 — #247 Domínio e Portal conferidos
 Portal: só NFS-e 1048 (556,90) nas Recebidas. Domínio: tomados = Portal; sem movimento ISS; IRPJ 3.840,00 com saldo credor 2.994,33 (devedor 845,67) e CSLL 3.456,00, **sem os rendimentos/IRRF**. Apuração correta: IRPJ 807,13, CSLL 3.502,24 (cotas por imposto).
+
+## 28do. 19/10/2026 — #258 preparado
+Dossiê `CLIENTE_258_NADAL_PARTICIPACOES.md`: holding sem receita, rendimentos só no 2ºTRIM (18.836,52); 3ºTRIM sem resgate (Itaú) → PIS/COFINS/IRPJ/CSLL zero esperados; falta o Domínio de set. e conferir Tomados/Prestados; certificado A1 vencido em 14/10.
