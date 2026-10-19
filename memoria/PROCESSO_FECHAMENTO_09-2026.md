@@ -694,3 +694,6 @@ Serviços e Resumo batem (IRPJ 1.772,32, CSLL 1.369,39, PIS/COFINS integrais); E
 
 ## 28ds. 19/10/2026 — #257 preparado
 Dossiê `CLIENTE_257_B2B_TEC2BR.md`: 09/2026 quase todo fechado em 12/10; faltam as DARFs (PIS 944,13/COFINS 4.357,52 em 23/10; IRPJ 19.321,40/CSLL 10.355,32 em 30/10) e o SPED Contribuições; pendências: guia nova do ISS no G-Click, aviso ao cliente (Lifecombr/IRRF), Ago2026 PIS/COFINS.
+
+## 28dt. 19/10/2026 — #264 e #265 preparados
+Dossiês criados. 264: sem extratos, tomados com nota no Portal (7.899,70) x Controle `Sem movimento`; 265: aluguéis de set. sem prova (sem conta/contratos); REINF pendente; SIEG sem cadastro nos dois; senhas dos .pfx expostas nos nomes dos arquivos.

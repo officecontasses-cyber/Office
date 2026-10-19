@@ -1,0 +1,16 @@
+# Cliente 265 — BELEM BRASIL ARQUITETURA E PARTICIPAÇÕES LTDA ("Belem Brasil Holding", Porto Alegre/RS)
+
+CNPJ 69.405.790/0001-91, IM 049298-2-9, Lucro Presumido, registrada na JUCISRS em 30/09/2026 (processo 263815404), atividades desde 08/09/2026. Objeto: arquitetura (71.11-1-00), holding, aluguel e compra e venda de imóveis próprios. Capital R$ 5.980.000,00 (13 imóveis a a m + R$ 321,67 em moeda). Sócios-administradores Marcelo Michelon Cornetet e Mariangela Conte Cornetet. Mais dados no `CLAUDE.md`. Rendimentos 3ºTRIM: `NT` (sem conta). Certificado A1: arquivo `.pfx` na pasta CERTIFICADOS com a **senha no nome do arquivo** (renomear).
+
+## Preparação 09/2026 (19/10/2026)
+**Controle Set2026:** DECLARAÇÃO PREFEITURA `Enviado` (03/10 08:42:47, receita 0,00, ISS 0,00); GUIA ISSQN `Sem movimento`; TOMADOS e PRESTADOS `Sem movimento` (Portal 03/10: nenhuma nota tomada de set. — a Safeweb 182232 é de 10/2026 —, Emitidas 0); **REINF `Pendente`** (R-2099 não enviado: Domínio erro 15, falta a procuração eletrônica ou o A1 do próprio 265); RECEITA ALUGUEIS, DARFs e SPED `Pendente`; CERTIFICADO DIGITAL em branco.
+**Receita de aluguéis de set. = não apurável com o Drive:** não há extrato, conta, contrato de locação, recibo, NF, pró-labore nem aplicação. A declaração zerada de ISS só diz que não houve NFS-e (aluguel de imóvel próprio não gera NFS-e). A projeção de R$ 15.000/mês (proposta e `cenario receita belem holding.xlsx`) **não é receita realizada**. Planilha do sócio `Bens IPTU Marcelo.xlsx` (controle pessoal, sem datas): aluguéis por imóvel somam R$ 17.246,30 (inclui imóveis que **não** estão no contrato social: Sala 402, Cel. Genuíno, Protásio Alves, Paracuru), e o apto 303 Intercity é participação nos lucros do hotel (natureza a confirmar). **Registro das matrículas em nome da PJ não confirmado** (ITBI/imunidade em andamento): condiciona desde quando os aluguéis são da PJ; set. pode ser R$ 0 na PJ (inferência). **Receita = `Pendente`**, não `Sem movimento`.
+**Tomados:** o Portal só tem a Safeweb nº 182232 (R$ 275,00, comp. 10/2026, ISS 5,50 não retido, CBS 2,20/IBS 0,24): outubro. Honorário da OfficeCont de set.: sem nota no Portal (empresa nova) → ver a regra de honorário.
+**SIEG:** CNPJ sem pasta no hub (cadastro no SIEG pendente: `INSTRUCOES_CHROME_265_SIEG_GCLICK.md`). **Domínio:** não há relatórios no Drive.
+**Capital:** vale o contrato social (R$ 5,98 mi), não a proposta (R$ 5,95 mi).
+
+## Período e apuração do 3ºTRIM
+Atividade a partir de 08/09/2026 (menos de um mês no trimestre). Sem receita comprovada: PIS/COFINS/IRPJ/CSLL = zero até confirmar; se houver aluguel recebido pela PJ: PIS 0,65%, COFINS 3% (cumulativo) e presunção de 32% (locação de imóveis próprios) conforme a regra aplicável (conferir) para IRPJ/CSLL.
+
+## Pendências do 265
+- [ ] Perguntar ao cliente (Marcelo/Mariangela): a PJ recebeu aluguel em set./2026 (de quais imóveis) ou continuou na PF? Existe conta bancária da PJ? [ ] contratos de locação e aditivos/cessão; [ ] matrículas atualizadas em nome da PJ; [ ] extrato de set.; [ ] pró-labore (ata/decisão); [ ] REINF: procuração eletrônica do Gian ou usar o A1 do 265; [ ] cadastro no SIEG e no G-Click; [ ] Domínio set.; [ ] renomear o .pfx (senha no nome); [ ] confirmar quais imóveis da planilha do sócio não são da PJ.
