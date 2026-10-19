@@ -658,3 +658,6 @@ Domínio salvo e conferido (Serviços 40.000; Entradas 275; Resumo IRPJ 1.320 / 
 
 ## 28dg. 18/10/2026 — #241 preparado; #197 TSV com observações resumidas
 #241: dossiê `CLIENTE_241_SIMPLES_GPS.md` (Emitidas 32 NFS-e R$ 48.063,00; Recebidas comp. 09 R$ 6.261,84; PIS/COFINS a recolher 123,89/571,83 venc. 23/10; IRPJ 7.549,47 / CSLL 3.846,74 venc. 30/10; sem Domínio nem honorário de set.). #197: TSV de pendências resumidas em `TSV_197_09-2026.md`; resolução por último.
+
+## 28dh. 19/10/2026 — #241 conferido; #247 preparado
+#241: Domínio x Portal fecham (Prestados 48.063,00; Entradas série 900 6.815,29 incl. honorário nº 1055, que tira o 241 da lista do Gian; série U com possível duplicidade 1.784,38 e Vortx de agosto 588,91). IRPJ Domínio 7.839,05 x FAT 7.549,47: suspeita de erro no IRRF jul. do FAT (289,58). TSV: Prestados e Tomados `Importado`. #247: dossiê `CLIENTE_247_PORTO_MAIS_ALEGRE.md`; sem Domínio/Portal de set. no Drive; IRPJ 3.840,00/CSLL 3.456,00 esperados se a receita de set. for zero.
