@@ -688,3 +688,6 @@ Itaú jul.-set.: créditos só do sócio Enio (R$ 300 mil + R$ 1 mi = AFAC, capi
 
 ## 28dq. 19/10/2026 — #261 preparado; TSV de limpeza do "undefined"
 #261: dossiê criado (receita 34.000,00; retenções PIS/COFINS integrais; CSLL não retida a confirmar; NF-e 542 em ENTRADAS). TSV com observação `Em andamento` regerado para as 58 células com "undefined" (`TSV_LIMPAR_UNDEFINED_SET2026.tsv`).
+
+## 28dr. 19/10/2026 — #261 Domínio conferido
+Serviços e Resumo batem (IRPJ 1.772,32, CSLL 1.369,39, PIS/COFINS integrais); ENTRADAS = NF-e 542 R$ 82,00; Tomados do Domínio (1.058,95) diverge do protocolo NH (483,40): honorário 1035 e Google de outubro faltam no Portal/protocolo. Honorário existe (261 sai da lista do Gian).
