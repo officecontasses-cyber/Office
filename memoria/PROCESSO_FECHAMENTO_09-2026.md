@@ -670,3 +670,6 @@ Entradas 6.815,29 (série U apagada); guias PIS/COFINS 695,71 (23/10) e IRPJ+CSL
 
 ## 28dk. 19/10/2026 — #247 extratos e Montenegro
 Extratos Sicredi 07/08/09 achados na 001: venda 320.000,00 em 14/07; ago. e set. sem crédito de terceiros (receita zero); resgates de aplicação 24.500,00 em set. (rendimento a conferir). Montenegro: pesquisa indica declaração de tomados (art. 50-A) e "sem movimento" (Decreto 4.314/2007 art. 33-G); contradiz a regra "sem declaração" gravada antes: regra voltou a "a confirmar" no `CLAUDE.md`; site bloqueado no ambiente.
+
+## 28dl. 19/10/2026 — #247 Montenegro resolvido
+Fernanda: Montenegro só gera guias (ISS Digital, vencimento dia 10), sem entrega de declaração. Os PDFs de agosto do Drive são o DMS gerado pelo ADN (anônimo, sem recibo; o de "Prestados" é cópia do de tomados). Regra final no `CLAUDE.md`. Domínio/Portal de set. do 247 ainda não apareceram no Drive.
