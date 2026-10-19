@@ -31,3 +31,24 @@ Notas para a Fernanda (não vão no e-mail):
 - 241 (Simples GPS): planilha diz "Sem aplicações financeiras", ok. 18, 177, 227, 265: NT (sem conta). Zerado: 16, 26, 117, 155, 173, 205, 257, 261.
 - IRPJ/CSLL do 3ºTRIM já gerados no G-Click: 241 (11.685,81), 237 e 227. Se algum "Sim" tiver rendimento pago que não entrou, a guia já enviada precisa ser refeita (diferença de IRPJ/CSLL; o IRRF do resgate abate o IRPJ).
 - Empresas do 3ºTRIM com guia IRPJ/CSLL ainda a gerar: conferir na Controle antes de gerar.
+
+## E-mail para a Gabi — VERSÃO REDUZIDA (substitui a anterior; conferir antes de enviar)
+
+**Assunto:** Rendimentos 3ºTRIM/2026 — alguns documentos que faltam (IRPJ/CSLL vencem 30/10)
+
+Oi, Gabi,
+
+Conferi nos documentos salvos as empresas marcadas como "Sim" na planilha `CONTROLE | Rendimentos` (3ºTRIM). Só a Porto Mais Alegre (247) tinha rendimento pago que não estava no FAT; as demais batem. Para fechar o que sobrou, preciso de:
+
+1. **Informe de rendimentos / extrato de aplicação do 3º trimestre** das que ainda estão em branco: **71 (Conte, Bradesco)**, **186 (Lopes & Nadal, outro formato de extrato)** e **264 (Zenith Paracuru)**.
+2. **RF Consultoria (2):** extrato da aplicação (ou confirmação de que não há aplicação) de jul. a set.
+3. **Palas Atena (185):** extrato de investimentos de **setembro** em PDF com texto (o que está na pasta é imagem).
+4. **Real Refrigeração (237):** extratos de fundos e CDB de **agosto** em PDF com texto (os da pasta são imagem).
+5. **Real Engenharia (189):** extratos dos fundos de **julho e setembro** em PDF com texto, para eu confirmar que os valores do informe da Caixa são resgates.
+
+Pode salvar na `001_DOCUMENTOS DIGITALIZADOS` do mês de cada empresa. Se conseguir, anote na planilha, ao lado do "Sim", o rendimento pago e o IRRF do trimestre.
+
+Preciso até **quarta-feira (21/10)**, porque as guias vencem em 30/10.
+
+Obrigada!
+Fernanda
