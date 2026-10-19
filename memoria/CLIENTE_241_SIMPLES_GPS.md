@@ -30,3 +30,5 @@ CNPJ 16.534.468/0001-04, IM 548615-2-7, Lucro Presumido, CNAE 8020-0/01 (monitor
 - **Em aberto:** a guia do IRPJ **não deduz o IRRF de julho (289,58)** que o FAT deduz (7.549,47). O Domínio de julho (arquivo de 14/08) mostra IRRF 0,00 em todas as notas, e 289,58 = 1% da mesma base da CSLL retida de julho (28.958,20): conferir a coluna IRRF das Emitidas de 07/2026. Se o IRRF for real, a guia pagaria 289,58 a mais (novo DARF 11.396,23 ou recuperar depois); se não for, corrigir o FAT.
 
 **Resolvido (19/10, Fernanda):** o IRRF de julho (289,58) foi **lançado indevidamente no FAT** e não consta na apuração. Guia IRPJ 7.839,05 está certa; corrigir o FAT (IRRF jul. = 0; IRPJ 3ºTRIM = 7.839,05, jul. 2.490,35 etc.). Rodar o Portal 07/2026 é opcional.
+
+**ENTRADAS (19/10, Fernanda):** sem NF-e/NFC-e = `Sem movimento`. Conferido: hub SIEG da 241 (`Entrada/2026`) só tem a pasta `Julho` (sincronização de 12/10, nada de setembro) e o Domínio de set. só tem NFS-e (serviços, vão em SERVIÇOS TOMADOS).
