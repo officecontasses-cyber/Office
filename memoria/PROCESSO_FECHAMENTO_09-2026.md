@@ -685,3 +685,6 @@ Dossiê `CLIENTE_258_NADAL_PARTICIPACOES.md`: holding sem receita, rendimentos s
 
 ## 28dp. 19/10/2026 — #258 extratos e contrato analisados
 Itaú jul.-set.: créditos só do sócio Enio (R$ 300 mil + R$ 1 mi = AFAC, capitalizado na minuta de alteração contratual de 19/10), nenhum resgate nem rendimento pago; FAT coerente (tudo zero). PIX Schroeder PE a esclarecer. 237 ganha sócia (Nadal). Dossiê atualizado.
+
+## 28dq. 19/10/2026 — #261 preparado; TSV de limpeza do "undefined"
+#261: dossiê criado (receita 34.000,00; retenções PIS/COFINS integrais; CSLL não retida a confirmar; NF-e 542 em ENTRADAS). TSV com observação `Em andamento` regerado para as 58 células com "undefined" (`TSV_LIMPAR_UNDEFINED_SET2026.tsv`).

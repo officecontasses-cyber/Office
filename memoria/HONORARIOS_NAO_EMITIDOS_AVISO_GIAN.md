@@ -11,4 +11,6 @@ Pedido da Fernanda (18/10/2026): guardar para analisar quais clientes não têm 
 | ~~241~~ | Simples GPS RS | **Retirado em 19/10:** honorário nº 1055 (R$ 553,45, emitido 05/10, comp. 09) está no Domínio/Portal. | Domínio Entradas 241 |
 | 197 | ASBBM | Portal Recebidas (03/10): sem nota OfficeCont (só Attitude e Advogados); conferir | Portal 197 |
 
+| 261 | Giatech | Portal Recebidas set. (03/10): 3 notas (Bagatini, eCustomize, Google), **sem nota OfficeCont comp. 09**; conferir no Domínio Entradas | Portal 261 |
+
 (demais clientes: pendente de análise)
