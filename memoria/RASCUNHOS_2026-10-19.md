@@ -53,17 +53,15 @@ Preciso até **quarta-feira (21/10)**, porque as guias vencem em 30/10.
 Obrigada!
 Fernanda
 
-## E-mail para a Gabi — 247, rendimento de aplicação (resumido; conferir antes de enviar)
+## E-mail para a Gabi — 247, rendimento dos resgates (só para ela confirmar; conferir antes de enviar)
 
-**Assunto:** 247 Porto Mais Alegre — rendimento de resgate no 3ºTRIM (preciso da sua análise)
+**Assunto:** 247 Porto Mais Alegre — confirmar rendimento dos resgates de set./2026
 
 Oi, Gabi,
 
-Na 247 (Porto Mais Alegre) o extrato de aplicação do Sicredi mostra, em setembro, resgates de R$ 24.500,00 do SICREDINVEST com **rendimento pago de R$ 513,80 e IRRF de R$ 115,61** (o SICREDINVEST EXCLUSIVO de R$ 200 mil não teve resgate). Isso não está no FAT nem no Domínio (hoje o IRPJ sai 3.840,00 − saldo credor 2.994,33 = 845,67 e a CSLL 3.456,00).
+Na 247 (Porto Mais Alegre), o extrato de aplicação do Sicredi mostra, em setembro, resgates de R$ 24.500,00 do SICREDINVEST com **rendimento pago de R$ 513,80 e IRRF de R$ 115,61**. O SICREDINVEST EXCLUSIVO (R$ 200 mil) não teve resgate.
 
-Com o rendimento: IRPJ 3.917,07 − IRRF 115,61 − saldo credor 2.994,33 = **807,13**; CSLL **3.502,24**.
-
-Pode analisar e me dizer se concorda e se o saldo credor de R$ 2.994,33 (do 1ºTRIM) pode ser usado assim? Extratos: `001_DOCUMENTOS DIGITALIZADOS` da 247, `09_SETEMBRO` (`PORTOOUT_261005_135748.pdf`).
+Pode confirmar se esses valores estão certos (e se há algum outro resgate com rendimento no 3º trimestre)? Extrato: `001_DOCUMENTOS DIGITALIZADOS` da 247, `09_SETEMBRO` (`PORTOOUT_261005_135748.pdf`).
 
 Obrigada!
 Fernanda
