@@ -697,3 +697,6 @@ Dossiê `CLIENTE_257_B2B_TEC2BR.md`: 09/2026 quase todo fechado em 12/10; faltam
 
 ## 28dt. 19/10/2026 — #264 e #265 preparados
 Dossiês criados. 264: sem extratos, tomados com nota no Portal (7.899,70) x Controle `Sem movimento`; 265: aluguéis de set. sem prova (sem conta/contratos); REINF pendente; SIEG sem cadastro nos dois; senhas dos .pfx expostas nos nomes dos arquivos.
+
+## 28du. 19/10/2026 — #238 preparado
+Dossiê `CLIENTE_238_REAT_HOLDING.md` (Lucro Real, aluguéis): REINF, Tomados e ISS fechados em 12/10; faltam Prestados/Entradas, DARFs (PIS 577,27/COFINS 2.661,91; IRPJ/CSLL pelo balancete), DARF 5952/1708 (20/10), guia complementar de junho (278,73) e o relatório de débitos ao cliente.
