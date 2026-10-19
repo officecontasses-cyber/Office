@@ -18,3 +18,7 @@ CNPJ 30.839.235/0001-32, Lucro Presumido, **contribuinte de ICMS (SIM)**, comér
 - [ ] Aug2026: REINF, DARF PIS e COFINS `Pendente` (SPED de agosto: PIS 820,45 e COFINS 3.786,69 a recolher): conferir se as guias de agosto foram pagas e atualizar.
 - [ ] Pós-fechamento: EBOOK-01 TIPO_ITEM 07; E115 `RS000032`/`RS000033`; IBS/CBS das tomadas (CBS 12,07, IBS 1,34, acumulador 800); NFS-e 31/32 sem grupo IBS/CBS.
 - [ ] Salvar o recibo definitivo da GIA (caixa postal da SEFAZ).
+
+## Guias geradas e enviadas (19/10/2026)
+- **PIS/COFINS:** nº 07.16.26292.3429886-0, **R$ 5.301,65** (COFINS 2172 R$ 4.357,52 + PIS 8109 R$ 944,13), venc. 23/10/2026, gerada 19:40:40; G-Click "Darf Pis / Cofins" concluído 19/10 19:41 (fernanda.officecont).
+- **IRPJ/CSLL:** nº 07.16.26292.3432106-4, **R$ 29.676,72** (IRPJ 2089 R$ 19.321,40 + CSLL 2372 R$ 10.355,32), venc. 30/10/2026, **cota única**, gerada 19:41:17; G-Click "CSLL e IRPJ - LP (Trimestral)" concluído 19/10 19:41. Valores = Domínio. Razão social na guia: B2B SOLUCOES EM TECNOLOGIA LTDA.
