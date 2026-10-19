@@ -682,3 +682,6 @@ Portal: só NFS-e 1048 (556,90) nas Recebidas. Domínio: tomados = Portal; sem m
 
 ## 28do. 19/10/2026 — #258 preparado
 Dossiê `CLIENTE_258_NADAL_PARTICIPACOES.md`: holding sem receita, rendimentos só no 2ºTRIM (18.836,52); 3ºTRIM sem resgate (Itaú) → PIS/COFINS/IRPJ/CSLL zero esperados; falta o Domínio de set. e conferir Tomados/Prestados; certificado A1 vencido em 14/10.
+
+## 28dp. 19/10/2026 — #258 extratos e contrato analisados
+Itaú jul.-set.: créditos só do sócio Enio (R$ 300 mil + R$ 1 mi = AFAC, capitalizado na minuta de alteração contratual de 19/10), nenhum resgate nem rendimento pago; FAT coerente (tudo zero). PIX Schroeder PE a esclarecer. 237 ganha sócia (Nadal). Dossiê atualizado.
