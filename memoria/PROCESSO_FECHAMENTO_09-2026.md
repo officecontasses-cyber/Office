@@ -691,3 +691,6 @@ Itaú jul.-set.: créditos só do sócio Enio (R$ 300 mil + R$ 1 mi = AFAC, capi
 
 ## 28dr. 19/10/2026 — #261 Domínio conferido
 Serviços e Resumo batem (IRPJ 1.772,32, CSLL 1.369,39, PIS/COFINS integrais); ENTRADAS = NF-e 542 R$ 82,00; Tomados do Domínio (1.058,95) diverge do protocolo NH (483,40): honorário 1035 e Google de outubro faltam no Portal/protocolo. Honorário existe (261 sai da lista do Gian).
+
+## 28ds. 19/10/2026 — #257 preparado
+Dossiê `CLIENTE_257_B2B_TEC2BR.md`: 09/2026 quase todo fechado em 12/10; faltam as DARFs (PIS 944,13/COFINS 4.357,52 em 23/10; IRPJ 19.321,40/CSLL 10.355,32 em 30/10) e o SPED Contribuições; pendências: guia nova do ISS no G-Click, aviso ao cliente (Lifecombr/IRRF), Ago2026 PIS/COFINS.
