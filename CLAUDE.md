@@ -99,7 +99,7 @@ Status | Prazo | Dias p/ Vencer | Observações | Contribuinte ICMS
 Colunas da fila `Atualizações` (7): Nº | aba | Obrigação (prefixo) | Status | Valor |
 Observações | Processado (deixar em branco; o script marca).
 
-Vocabulário de Status já usado: `Enviado`, `Pendente`, `Sem movimento`, `Importado`,
+Vocabulário de Status já usado: `Enviado`, `Pendente`, `Em andamento` (pedido da Fernanda em 19/10/2026: linhas cuja pendência foi deixada para o **pós-fechamento**; antes ficava só na observação), `Sem movimento`, `Importado`,
 `Compensado`, `Retido`, `Sem Recolhimento (Retenção Integral)`, `Não se aplica`, `Confirmado`.
 
 Prazo é **texto com contagem regressiva** ("dd/mm/aaaa · N dias"); `Dias p/ Vencer` lê a data
