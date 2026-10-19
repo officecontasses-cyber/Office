@@ -28,3 +28,9 @@ CNPJ 64.866.011/0001-31, IM 1083818, Lucro Presumido, consultoria em TI para o s
 
 ## Guia IRPJ/CSLL 3ºTRIM (19/10/2026)
 Guia `261_Giatech_NovoHamburgo_09.2026_IRPJ-CSLL 3ºTRIM.pdf`: nº 07.16.26292.3376831-6, **R$ 3.141,71** (IRPJ 2089 R$ 1.772,32 + CSLL 2372 R$ 1.369,39), venc. 30/10/2026, cota única, gerada 19/10 19:25:58. G-Click: tarefa "CSLL e IRPJ - LP (Trimestral) - TRIM 03/2026" concluída 19/10 19:26 e envio ao cliente 19:27 (fernanda.officecont). CSLL pela Betha não retida (cliente aparentemente não reteve; sem comprovante). Rendimentos 3ºTRIM = `Zerado` (planilha). Portal 09/2026 sendo rerodado (19/10) para o protocolo de Tomados de NH.
+
+## Portal rerodado (19/10/2026 19:36) — conferência
+- **Emitidas:** 1 NFS-e (nº 10, R$ 34.000,00) = Domínio. 
+- **Recebidas (5 notas, R$ 1.137,35):** Bagatini 3238 (240,00), eCustomize 759147 (165,00), **OfficeCont 1035 (575,55, comp. 09)**, **Google 19985753 (78,40, 02/10, comp. 09)** e **Google 19171581 (78,40, 02/09, comp. 08)**. A de comp. 08 só aparece pelo intervalo de datas do robô (01/09 a 31/10) e pertence a agosto (o protocolo de Ago tem 2 notas, ISS 2,27 = essa nota). **Setembro = 4 notas, R$ 1.058,95 = Domínio Entradas.**
+- **Protocolo de Tomados de NH (04/10):** tem 3 notas, R$ 483,40, e **inclui a Google de agosto (19171581) e não tem a OfficeCont 1035 nem a Google 19985753** → refazer com Bagatini, eCustomize, OfficeCont 1035 e Google 19985753 (R$ 1.058,95). ISS de outros municípios continua R$ 5,57 (eCustomize 3,30 + Google 2,27); ISS retido NH 0,00; nada muda em guia.
+- **Honorário:** OfficeCont 1035 (R$ 575,55) confirmado também no Portal (261 fora da lista do Gian).
