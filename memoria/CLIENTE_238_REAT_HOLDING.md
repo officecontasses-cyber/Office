@@ -24,3 +24,8 @@ Fontes: planilha `REAT_Holding_Balanco_Suspensao_JanAgo2026.xlsx` (Drive 1QD3sPn
 - **IRRF de R$ 81,72 (ago):** o Domínio deduz do IRPJ; a planilha não considera (conta IRRF S/APLICAÇÃO FINANCEIRA). Reduz o IRPJ de agosto.
 - **Parte B (prejuízo fiscal):** Domínio 137.620,38 (saldo anterior 12/2025); planilha usa 167.310,76 (premissa não confirmada, dif. 29.690,38). Sem efeito nos valores de jul/ago (a compensação é limitada a 30%), mas confirmar na ECF.
 - **PIS/COFINS de agosto não lançados** no razão/Domínio (o LAIR de ago igual nos dois). Cenário bruto da planilha: 7.064,72; o FAT/SPED de agosto tem PIS 576,15 + COFINS 2.655,03 = 3.231,18 líquido de créditos. Efeito aproximado nos tributos (16,8% do ajuste do LAIR): cerca de 543 (líquido) a 1.187 (bruto). Não confirmado.
+
+## Atualização 20/10/2026 (Fernanda)
+- **DARF PIS/COFINS set/2026 gerada e enviada ao cliente no G-Click em 20/10 às 10:12** (tarefa COFINS/PIS SET/2026, venc. 23/10; atividades "Darf Pis / Cofins" e "Envio ao cliente" concluídas). Valores do FAT (PIS 577,27 / COFINS 2.661,91), não conferidos com o PDF da guia.
+- **Correção minha:** DARF 5952 (CSRF 141,86) e IRRF 1708 (17,75) NÃO são pendência do fiscal: retenções vão pela DCTFWeb, o DP envia, e o REINF já está resolvido (regra "DCTFWeb não é do fiscal"). Não cobrar de novo.
+- **IRPJ/CSLL de set (venc. 30/10):** dependem de a contabilidade liberar a apuração (revisão do LALUR pós-fechamento).

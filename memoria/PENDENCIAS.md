@@ -374,3 +374,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [ ] **238 (19/10) preparado:** dossiê `CLIENTE_238_REAT_HOLDING.md`. FAT: PIS 577,27 e COFINS 2.661,91 (23/10); IRPJ/CSLL de set. dependem do balancete do Domínio. Falta Domínio set. (Resumo/Demonstrativo), DARFs 5952 (141,86) e 1708 (17,75) até 20/10, guia complementar de junho (278,73), relatório de débitos ao cliente (16 a 31/10), honorário de set.
 
 - [20/10/2026] **238:** conciliação IRPJ/CSLL jul/ago feita (ver dossiê): apuração bate; divergência só nas estimativas pagas (jul 2.704,61; ago 4.173,26). Pendente: razão das contas 1.1.3.08.004/005, comprovantes de DARF, lançar PIS/COFINS de agosto no Domínio, Parte B na ECF, decidir DARF de set (30/10).
+
+- [20/10/2026] **238:** DARF PIS/COFINS set enviada no G-Click (20/10 10:12). 5952/1708 não são do fiscal (DCTFWeb/DP). Aguardando a contabilidade liberar IRPJ/CSLL (venc. 30/10).
