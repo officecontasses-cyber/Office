@@ -376,3 +376,5 @@ Pedido da Fernanda: registrar tudo o que faltou configurar sobre a reforma para 
 - [20/10/2026] **238:** conciliação IRPJ/CSLL jul/ago feita (ver dossiê): apuração bate; divergência só nas estimativas pagas (jul 2.704,61; ago 4.173,26). Pendente: razão das contas 1.1.3.08.004/005, comprovantes de DARF, lançar PIS/COFINS de agosto no Domínio, Parte B na ECF, decidir DARF de set (30/10).
 
 - [20/10/2026] **238:** DARF PIS/COFINS set enviada no G-Click (20/10 10:12). 5952/1708 não são do fiscal (DCTFWeb/DP). Aguardando a contabilidade liberar IRPJ/CSLL (venc. 30/10).
+
+- [20/10/2026] **186 rendimentos 3ºTRIM:** liberado (Sim). FAT jul/set conferem com Invest Fácil; **falta lançar o Fundo Simples Automático:** ago 362,93 / IRRF 4,92 (documentado) e resgate de 31/07 (líquido 2.386,49; rendimento estimado ~650, falta documento do Bradesco). IRPJ/CSLL do trimestre do FAT estão sem rendimentos (provisórios). Ver RENDIMENTOS_3TRIM_2026_CONFERENCIA.md.

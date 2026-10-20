@@ -19,3 +19,15 @@ Em aberto: 71 Conte (falta o informe do Bradesco), 186 Lopes & Nadal (pedido out
 ## Achados paralelos
 - **002 RF Consultoria — receita:** o TED da Freire caiu de 20.879,10 (ago.) para 18.095,23 (01/09, ref. agosto, após o distrato de 26/08) e não há TED em outubro até 01/10: o FAT/Domínio com 21.978,00 em set. deve ser revisto (cenário já no dossiê `CLIENTE_002_RF_CONSULTORIA.md`). O extrato Sicredi da pasta aparece com o nome "PARE FACIL ESTACIONAMENTOS": confirmar se é a conta da RF.
 - **209:** extratos de agosto estão na pasta de setembro (08_AGOSTO vazia); **197:** nomes dos extratos de conta não batem com as pastas (agosto em julho, setembro em setembro).
+
+## 186 Lopes & Nadal (CNPJ 28.516.249/0001-73), Bradesco: conferência jul a set/2026 (20/10/2026)
+- Controle Rendimentos 3ºTRIM: `LIBERADO FISCAL` = Sim (planilha alterada em 19/10 21:57), sem observação.
+- Extratos em `001_DOCUMENTOS DIGITALIZADOS` > `09_SETEMBRO` (Investfácil JUL/AGO/SET, CDB JUL) e nas pastas de extratos de cada mês (Bradesco_Extrato, Resumo de Movimentação do Fundo Simples Automático).
+- **Invest Fácil (resgates):** jul renda 4,62 / IRRF 0,81; ago 0,00; set 0,90 / 0,17. FAT confere (jul, ago, set). CDB de 15/07 (R$ 4.000): só aplicação, sem resgate. Soma das linhas dos extratos confere com os totais.
+- **Fundo SIMPLES AUTOMATICO CLASSE RF (baixa automática): NÃO está no FAT.**
+  - Ago: resgates de 17/08 (18,15), 20/08 (1.005,02) e 25/08 (279,93) = líquido 1.303,10 (bate com o extrato); principal 945,09, **rendimento 362,93, IRRF 4,92** (Resumo de Movimentação AGO).
+  - Jul: "RESG AUTOMATICO INVESTIM" de 31/07, líquido 2.386,49. Não consta no Resumo de JUL (cota de 30/07) nem no de AGO; pelas cotas (1.437,37265 em 30/07; 918,83577 implícitas no início de ago.), são ~518,54 cotas. Rendimento **estimado em ~R$ 650 e IRRF de ~R$ 7 a 9 (estimativa, sem documento)**. Precisa do resumo/informe do Bradesco.
+  - Set: sem resgate do fundo (saldo 637,18844 cotas igual de 31/08 a 30/09).
+- **FAT IRPJ/CSLL 3ºTRIM (1.315,74 / 789,45) = 15% / 9% × 32% × receita de serviços (27.411,35), sem rendimentos nem IRRF.**
+  - Só com o documentado (rendimentos 368,45; IRRF 5,90): IRPJ ≈ 1.365,11; CSLL ≈ 822,61.
+  - Com o resgate de 31/07 estimado: IRPJ ≈ 1.455 e CSLL ≈ 881 (estimativa). Vencimento 30/10, cota única (< R$ 2.000).
