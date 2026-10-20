@@ -11,3 +11,16 @@ CNPJ 49.252.432/0001-89, **Lucro Real** (PIS/COFINS não cumulativos 1,65%/7,6%;
 
 ## Pendências do 238
 - [ ] Domínio set.: Resumo/Demonstrativo (PIS/COFINS, IRPJ/CSLL estimativa, balancete), Serviços (se houver) e Entradas atualizado; [ ] gerar e subir as DARFs (PIS/COFINS 23/10; IRPJ/CSLL 30/10) e DARF 5952 CSRF R$ 141,86 e IRRF 1708 R$ 17,75 (venc. 20/10) + INSS via DCTFWeb (não fiscal), recibo do REINF no G-Click; [ ] SERVIÇOS PRESTADOS (aluguel; sem NFS-e) e ENTRADAS `Sem movimento` após conferir SIEG/Portal; [ ] honorário de set. (lista do Gian); [ ] **retificação de junho/2026: guia complementar "A gerar" (PIS R$ 38,96 + COFINS R$ 239,77 = R$ 278,73, status pagamento Pendente)**; [ ] **16 a 31/10: enviar à cliente o relatório de débitos ref. 06/2026 (Relatório Fiscal de 21/08, Júlia Rocha) + IRPJ/CSLL vencidos de meses anteriores (quais?)**; [ ] e-mail do Gian de 16/10 sobre o "erro de apuração" da REAT (ler); [ ] Ago2026 DARF PIS/COFINS ainda `Pendente` (SPED: PIS 576,15 e COFINS 2.655,03); [ ] IBS/CBS pós-fechamento (acumuladores 1005/1006 sem IBS/CBS; data de entrada da nota 555002); [ ] declaração Simples da Prime System; cadastro '1238'/'238'.
+
+## Conciliação IRPJ/CSLL jul e ago/2026: planilha de balanço de suspensão x relatórios do Domínio (20/10/2026)
+
+Fontes: planilha `REAT_Holding_Balanco_Suspensao_JanAgo2026.xlsx` (Drive 1QD3sPnlvowb3Fmm3yBnbl01IppZuIc6v) e PDFs do Domínio (Imposto de Renda e Contribuição Social, jul e ago, emitidos 19/10).
+
+- **Apuração bate (jul e ago):** LAIR acumulado (62.372,89 / 93.545,41), adição da multa de trânsito (2.345,73), compensação de 30% (19.415,59 / 28.767,34), lucro real (45.303,03 / 67.123,80), IRPJ devido (6.795,45 / 10.068,57) e CSLL devida (4.077,27 / 6.041,14). Total devido acumulado: jul 10.872,73; ago 16.109,71.
+- **Divergência está só nas deduções (estimativas já pagas):**
+  - A planilha assume que tudo até o mês anterior foi pago (DARF do mês = devido acumulado - devido do mês anterior): jul 3.278,68 e ago 5.236,98 (FAT: IRPJ 3.273,11 + CSLL 1.963,87).
+  - O Domínio deduz só o que reconhece como pago: jul IRPJ 2.855,19 + CSLL 2.034,24 = 4.889,43 (a recolher 3.940,26 + 2.043,03 = 5.983,29); ago IRPJ 3.764,83 + IRRF 81,72 + CSLL 2.852,92 = 6.699,47 (a recolher 6.222,02 + 3.188,22 = 9.410,24).
+  - Diferença: jul 2.704,61; ago 4.173,26. A causa (pagamentos não lançados em 1.1.3.08.004/005, ou estimativas realmente não pagas) NÃO foi confirmada; precisa do razão dessas contas e dos comprovantes de DARF.
+- **IRRF de R$ 81,72 (ago):** o Domínio deduz do IRPJ; a planilha não considera (conta IRRF S/APLICAÇÃO FINANCEIRA). Reduz o IRPJ de agosto.
+- **Parte B (prejuízo fiscal):** Domínio 137.620,38 (saldo anterior 12/2025); planilha usa 167.310,76 (premissa não confirmada, dif. 29.690,38). Sem efeito nos valores de jul/ago (a compensação é limitada a 30%), mas confirmar na ECF.
+- **PIS/COFINS de agosto não lançados** no razão/Domínio (o LAIR de ago igual nos dois). Cenário bruto da planilha: 7.064,72; o FAT/SPED de agosto tem PIS 576,15 + COFINS 2.655,03 = 3.231,18 líquido de créditos. Efeito aproximado nos tributos (16,8% do ajuste do LAIR): cerca de 543 (líquido) a 1.187 (bruto). Não confirmado.
