@@ -13,9 +13,9 @@ Esta skill é **orquestradora**: ela mantém a ordem das etapas, os pontos de pa
 
 ## Regra de honestidade e fonte legal (não negociável)
 
-Nunca apresente uma base legal, uma alíquota, um prazo ou uma norma contábil de memória como se fosse definitiva nesta skill. O analista já está logado no Lefisc (via Claude in Chrome):
+Nunca apresente uma base legal, uma alíquota, um prazo ou uma norma contábil de memória como se fosse definitiva nesta skill. **Não presuma que o analista já sabe usar o Lefisc com a Claude, nem que já está logado** — trate isso como algo que pode precisar de explicação, não como um pré-requisito já resolvido:
 
-- Toda vez que uma conclusão relevante depender de legislação federal, estadual ou municipal, ou de norma contábil (CPC, NBC TG, Ofício/Parecer da Receita Federal), **peça ao analista para pesquisar no Lefisc** e cite a fonte retornada (lei, artigo, instrução normativa, parecer, CPC/NBC TG) na conclusão.
+- Toda vez que uma conclusão relevante depender de legislação federal, estadual ou municipal, ou de norma contábil (CPC, NBC TG, Ofício/Parecer da Receita Federal), **peça ao analista para pesquisar no Lefisc** e cite a fonte retornada (lei, artigo, instrução normativa, parecer, CPC/NBC TG) na conclusão. Quando pedir isso, explique objetivamente como fazer, sem assumir familiaridade: o analista precisa ter a extensão **Claude para Chrome** instalada e ativa no navegador, abrir o Lefisc já logado com a conta do escritório nessa mesma aba, e então pedir a você — ainda nesta conversa — para pesquisar o ponto específico (a extensão permite que você veja e opere a aba aberta). Se ele não souber se tem essa extensão instalada ou como navegar até lá, diga isso com clareza e sugira confirmar com a equipe/TI do escritório antes de seguir — não invente o passo a passo exato de instalação se não tiver certeza dele.
 - Se você mencionar uma base legal "de cabeça" (ex.: para orientar o que procurar), deixe explícito que é um ponto de partida a confirmar — nunca apresente como fato fechado sem a confirmação no Lefisc.
 - Se não for possível confirmar uma fonte, diga isso abertamente ao analista em vez de inventar número de lei, artigo ou parecer.
 - Isso vale também para qualquer número ou percentual que não seja 100% preciso (ex.: estimativas, médias): sinalize com "aproximadamente" / "a confirmar" em vez de apresentar como exato.
@@ -23,14 +23,18 @@ Nunca apresente uma base legal, uma alíquota, um prazo ou uma norma contábil d
 
 ## Antes de começar: confirmar escopo
 
-Pergunte (ou confirme pelo que já foi enviado na conversa) antes de iniciar a Etapa 1:
+A primeira pergunta, sempre, antes de qualquer outra coisa: **qual cliente e qual competência/período vamos fechar?** Não avance para nada mais sem isso.
 
-1. **Cliente, CNPJ e competência/período** a fechar.
-2. **Regime confirmado**: Lucro Real, apurando por **levantamento de balanço de suspensão ou redução** — se o cliente for Simples ou Presumido, ou se apurar só por estimativa mensal sem balanço, pare e direcione para a skill correta (ver "Quando escalar" no fim).
-3. **Acesso ao Lefisc** já logado no navegador do analista (necessário para toda a etapa 6 e para qualquer base legal ao longo do fechamento).
-4. **Onde está a pasta do cliente no Drive** (nome/código da pasta), pois várias etapas pedem documentos de lá.
+Com o cliente identificado (nome, código da carteira ou CNPJ), **procure você mesmo a pasta dele no Drive** antes de perguntar — busque por nome ou código (ex.: o código "238" encontra a pasta "238_REAT HOLDING") — e confirme com o analista o que encontrou, em vez de esperar que ele aponte o caminho exato. Só pergunte a pasta diretamente se a busca não encontrar nada ou encontrar mais de um resultado plausível.
 
-Só depois disso, apresente o checklist de 7 etapas (abaixo) e diga exatamente o que precisa receber primeiro (Etapa 1: razão, plano de contas e balancete).
+Depois disso, confirme:
+
+1. **Regime**: Lucro Real, apurando por **levantamento de balanço de suspensão ou redução** — se o cliente for Simples ou Presumido, ou se apurar só por estimativa mensal sem balanço, pare e direcione para a skill correta (ver "Quando escalar" no fim).
+2. **Acesso ao Lefisc**, quando e se for preciso usá-lo — ver a explicação em "Regra de honestidade e fonte legal" acima; não presuma que o analista já sabe como funciona.
+
+Com cliente, competência e pasta do Drive confirmados, **antes de pedir qualquer documento ao analista, procure você mesmo** na pasta do ano/mês correspondente o que já existir — razão, plano de contas e balancete (insumos da Etapa 1), comprovantes de pagamento em `001_DOCUMENTOS DIGITALIZADOS/{mês}` e demais arquivos relevantes ao fechamento (Etapa 3). Só peça ao analista o que você não encontrar lá, ou o que precisar de confirmação dele (ex.: "achei X e Y na pasta de setembro, é isso mesmo que vamos usar, ou falta algo?").
+
+Só depois disso, apresente o checklist de 7 etapas (abaixo).
 
 ## O checklist (7 etapas, sempre nesta ordem)
 
@@ -38,7 +42,7 @@ Nunca pule uma etapa nem avance sem o que a etapa anterior entregou — cada eta
 
 ### Etapa 1 — Leitura do histórico contábil
 
-**Peça:** razão contábil do início do último ano-calendário até o mês atual, o plano de contas e o balancete mais recente. Diga que podem estar no Drive do cliente (pergunte a pasta se ainda não souber) ou exportados do Domínio na hora.
+**Precisa de:** razão contábil do início do último ano-calendário até o mês atual, o plano de contas e o balancete mais recente — como já orientado em "Antes de começar", procure primeiro na pasta do cliente no Drive (normalmente em `005_CONTABIL RELATORIOS/{ano}/{mês}` da competência, ou do último mês fechado) antes de pedir ao analista. Se algum desses três não existir no Drive, peça que o analista envie ou exporte do Domínio na hora.
 
 **O que fazer:** antes de propor qualquer lançamento novo, leia os lançamentos recorrentes, a estrutura de contas em uso e o comportamento típico da empresa (que contas de banco, fornecedor, receita, tributo ela de fato usa, com que histórico). Isso vira a referência de classificação das etapas 2 e 4 — não adote um plano de contas "padrão de livro" se o cliente já tem uma lógica própria em uso.
 
@@ -50,18 +54,20 @@ Nunca pule uma etapa nem avance sem o que a etapa anterior entregou — cada eta
 
 **O que fazer:** classifique cada lançamento do extrato nas contas corretas, com base no histórico de classificação já identificado na Etapa 1 e na natureza de cada transação (ver `references/checklist-documentos.md` para a tabela de categorias padrão quando o histórico do cliente não decidir o caso). Monte os lançamentos já prontos no modelo de importação em Excel do Domínio.
 
-**Onde salvar:** no Drive, em `Meu Drive\1015_ROTINA AUTOMATICA\003 CONTABILIDADE`, com o nome `planilhamodeloimportacaolancamentoscontabeis`. Esta é a planilha de trabalho/staging do escritório (não é a pasta do cliente) — confirme com o analista que tem permissão de escrita nesse caminho antes de tentar salvar; se não tiver, entregue o arquivo e peça para ele salvar lá.
+**Onde salvar:** a planilha final, já com os lançamentos deste cliente e desta competência prontos para importar, vai na pasta do cliente — ano do fechamento, em `005_CONTABIL RELATORIOS`, na subpasta do mês (mesmo destino da Etapa 4; se o período for maior que um mês, crie uma pasta própria do período, em vez de uma subpasta mensal). `Meu Drive\1015_ROTINA AUTOMATICA\003 CONTABILIDADE\planilhamodeloimportacaolancamentoscontabeis` é o nome do **modelo/template** do escritório (planilha em branco no formato de importação do Domínio) — use-o como ponto de partida quando precisar, mas o arquivo preenchido com os dados reais do cliente não fica lá, fica em `005_CONTABIL RELATORIOS` do próprio cliente. Confirme com o analista que tem permissão de escrita nesses caminhos antes de salvar; se não tiver, entregue o arquivo pronto para ele salvar.
 
 Se o fluxo do cliente específico usar a importação por TXT de posições fixas (em vez do Excel), avise que a skill `transformar-extrato-dominio` converte um Excel já classificado nesse TXT — não refaça essa lógica aqui, apenas acione-a.
 
 ### Etapa 3 — Documentos e comprovantes
 
-**Peça:** comprovantes de pagamento e documentos que o cliente já tiver enviado, mais o que já estiver salvo na pasta do cliente no Drive — inclua explicitamente:
+**Antes de pedir qualquer coisa:** procure na pasta do cliente, no ano/mês da competência, em `001_DOCUMENTOS DIGITALIZADOS/{mês}` — é lá que normalmente já estão os comprovantes de pagamento digitalizados. Veja também `002_FISCAL`, `004_DECLARAÇÕES` e a pasta de cadastro (certidões/situação fiscal) quando existirem. Só depois de ver o que já está lá, peça ao analista o que faltar — nunca peça de novo o que já está no Drive.
+
+O que essa etapa precisa, vindo do Drive ou do analista:
 - Comprovantes de pagamentos federais (DARFs, GPS, etc.) do período.
-- Situação fiscal da empresa junto à Receita Federal (para conciliar parcelamentos e débitos ativos — peça a certidão/extrato de situação fiscal, não assuma que não há parcelamento em curso).
+- Situação fiscal da empresa junto à Receita Federal (para conciliar parcelamentos e débitos ativos — busque a certidão/extrato mais recente; se a que encontrar estiver desatualizada para a competência em fechamento, diga isso e peça uma consulta nova em vez de usar a antiga como se fosse atual).
 - Documentos das esferas estadual e municipal necessários ao fechamento (guias, declarações, o que for aplicável ao cliente).
 
-Se não souber onde estão, pergunte a pasta do Drive ou peça que o analista aponte os arquivos diretamente — nunca presuma um documento que não foi enviado nem apareceu na conversa.
+O que não existir em nenhuma dessas pastas, peça ao analista diretamente — nunca presuma um documento que não foi encontrado no Drive nem enviado na conversa.
 
 ### Etapa 4 — Integrações ao contábil (fiscal, folha, patrimônio)
 
