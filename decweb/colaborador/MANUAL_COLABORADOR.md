@@ -20,7 +20,8 @@ Só entram empresas com inscrição em **Porto Alegre**; as de outras cidades da
 4. **Claude Code** instalado e entrando na sua conta (a Fernanda orienta).
 
 ### Passo 2. Copiar a pasta do robô (fora do Meu Drive)
-1. A Fernanda envia o arquivo **`decweb.zip`** (sem o `clientes.csv`, sem `logs`).
+1. O arquivo **`decweb.zip`** (sem o `clientes.csv`, sem `logs`) está no Drive, na pasta `1015_ROTINA AUTOMATICA\002 FISCAL CAMILA\ROBO DECWEB - PORTO ALEGRE`.
+   Copie o zip para a área de trabalho (não rode nada de dentro do Drive).
 2. Crie a pasta `C:\Robos` e extraia o zip dentro dela, de modo que exista **`C:\Robos\decweb\decweb_login.py`**.
 3. **Nunca** coloque essa pasta dentro do "Meu Drive": o `clientes.csv` tem senhas e os `logs` iriam para a nuvem.
 
