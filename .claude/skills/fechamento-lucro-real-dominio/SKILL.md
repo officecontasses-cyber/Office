@@ -34,6 +34,8 @@ Depois disso, confirme:
 
 Com cliente, competência e pasta do Drive confirmados, **antes de pedir qualquer documento ao analista, procure você mesmo** na pasta do ano/mês correspondente o que já existir — razão, plano de contas e balancete (insumos da Etapa 1), comprovantes de pagamento em `001_DOCUMENTOS DIGITALIZADOS/{mês}` e demais arquivos relevantes ao fechamento (Etapa 3). Só peça ao analista o que você não encontrar lá, ou o que precisar de confirmação dele (ex.: "achei X e Y na pasta de setembro, é isso mesmo que vamos usar, ou falta algo?").
 
+**Peça também, desde já, para o analista baixar do próprio Domínio os relatórios fiscais do período** — além do que já está no Drive, estes só existem dentro do sistema: relatório de entradas, relatório de saídas, relatório de serviços prestados/tomados (quando o cliente emitir ou tomar serviço) e a apuração de impostos do período (demonstrativo de PIS/COFINS e, se aplicável, ICMS/ISS). Peça isso cedo, não só na Etapa 4 — quanto antes você tiver esses relatórios, mais dados tem disponíveis para cruzar durante a conciliação (Etapa 5), em vez de descobrir uma divergência de receita ou de crédito tributário só no fim. Não tenho um manual confiável do Domínio com o caminho exato de tela/menu para gerar cada um desses relatórios (um levantamento não encontrou documentação oficial acessível) — então pergunte ao analista como ele normalmente extrai esses relatórios no Domínio da empresa, ou oriente-o a consultar a ajuda/manual do próprio sistema, em vez de eu indicar um caminho de menu que não tenho certeza de que está correto.
+
 Só depois disso, apresente o checklist de 7 etapas (abaixo).
 
 ## O checklist (7 etapas, sempre nesta ordem)
@@ -71,7 +73,9 @@ O que não existir em nenhuma dessas pastas, peça ao analista diretamente — n
 
 ### Etapa 4 — Integrações ao contábil (fiscal, folha, patrimônio)
 
-**O que fazer:** depois da importação bancária (Etapa 2) e com os documentos da Etapa 3 em mãos, oriente a integração dos módulos que alimentam o contábil no Domínio — fiscal, folha de pagamento, patrimônio e demais módulos aplicáveis. Siga a ordem e os pontos de conferência descritos em `references/integracao-modulos-dominio.md`.
+**O que fazer:** quem efetua a integração no Domínio é o analista — você não opera o sistema diretamente, orienta. Depois da importação bancária (Etapa 2) e com os documentos da Etapa 3 e os relatórios fiscais pedidos em "Antes de começar" em mãos (entradas, saídas, serviços e apuração de impostos), oriente a integração dos módulos que alimentam o contábil no Domínio — fiscal, folha de pagamento, patrimônio e demais módulos aplicáveis. Siga a ordem e os pontos de conferência descritos em `references/integracao-modulos-dominio.md`.
+
+Use os relatórios de entradas/saídas/serviços/apuração de impostos como referência de conferência: depois que o analista confirmar que a integração foi feita no Domínio, confira se o que o razão/balancete resultante mostra (receita, tributos a recolher/recuperar) bate com o que esses relatórios já indicavam — uma divergência aqui é a chance de pegar um erro de integração antes da conciliação formal da Etapa 5, não depois.
 
 Para a depreciação/baixa de bens do patrimônio, acione `ativo-imobilizado-depreciacao` em vez de recalcular a lógica aqui. Para lançamentos-modelo de operações específicas que aparecerem durante a conferência (ex.: um lançamento de empréstimo ou de equivalência patrimonial que pareça fora do padrão do cliente), consulte `lancamentos-contabeis-padrao`.
 

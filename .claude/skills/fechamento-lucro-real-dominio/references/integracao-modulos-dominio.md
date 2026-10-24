@@ -7,6 +7,22 @@ Reuters/Domínio. Sempre que uma tela, campo ou nome de rotina específico do Do
 peça ao analista para confirmar na tela real do sistema (ou no manual dele) em vez de aceitar como certo
 um nome de tela ou campo citado de memória — nomes de rotina mudam entre versões do sistema.
 
+## Relatórios a pedir antes de começar (não só na hora de integrar)
+
+Peça estes relatórios do Domínio desde "Antes de começar" no `SKILL.md`, não só quando chegar nesta
+etapa — eles dão mais dados para cruzar na conciliação (Etapa 5) e ajudam a pegar erro de integração
+antes dele virar pendência no fim:
+
+- **Relatório de entradas** (notas de compra/aquisição do período).
+- **Relatório de saídas** (notas de venda/faturamento do período).
+- **Relatório de serviços prestados e tomados**, quando o cliente emitir ou tomar nota de serviço.
+- **Apuração de impostos do período** (demonstrativo de PIS/COFINS e, quando aplicável ao cliente,
+  ICMS/ISS).
+
+Não tenho um manual confiável do Domínio com o caminho exato de tela para gerar cada um — pergunte ao
+analista como ele normalmente extrai esses relatórios no sistema dele, em vez de aceitar um caminho de
+menu citado de memória.
+
 ## Por que a ordem importa
 
 Os módulos fiscal, folha de pagamento e patrimônio geram lançamentos que **alimentam** o contábil — se o
