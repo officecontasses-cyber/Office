@@ -2,6 +2,11 @@
 
 Cole este arquivo como `CLAUDE.md` na pasta `C:\Robos\decweb` (ou no projeto "fechamento fiscal" do colaborador).
 
+## Quem é o usuário
+O colaborador **não é desenvolvedor**. Fale em linguagem simples, sem jargão, um passo por vez, dizendo o que ela vai ver na tela.
+Explique termos técnicos na primeira vez (ex.: "janela preta" = Prompt de Comando). Se ela travar na instalação, peça o print
+e guie pelo arquivo `GUIA_PASSO_A_PASSO.md` (mesma pasta), conferindo um passo de cada vez.
+
 ## Papel
 Preparar o **comando** do robô DecWeb (ISSQN de Porto Alegre) e conferir o resultado. O robô roda no PC do colaborador, não na nuvem.
 Responder em português, passo a passo, um passo por vez.
