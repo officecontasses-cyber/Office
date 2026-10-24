@@ -16,12 +16,32 @@ antes dele virar pendência no fim:
 - **Relatório de entradas** (notas de compra/aquisição do período).
 - **Relatório de saídas** (notas de venda/faturamento do período).
 - **Relatório de serviços prestados e tomados**, quando o cliente emitir ou tomar nota de serviço.
-- **Apuração de impostos do período** (demonstrativo de PIS/COFINS e, quando aplicável ao cliente,
-  ICMS/ISS).
+- **Apuração de impostos do período** — ver o caminho confirmado abaixo, que varia por tributo.
 
-Não tenho um manual confiável do Domínio com o caminho exato de tela para gerar cada um — pergunte ao
-analista como ele normalmente extrai esses relatórios no sistema dele, em vez de aceitar um caminho de
-menu citado de memória.
+Para entradas, saídas e serviços, ainda não há um caminho de tela confirmado — pergunte ao analista como
+ele normalmente extrai esses relatórios no sistema dele, em vez de aceitar um caminho de menu citado de
+memória, ou peça que ele consulte a central de suporte do Domínio (suporte.dominioatendimento.com).
+
+### Apuração de impostos — caminho confirmado (central de suporte do Domínio, solução nº 1998)
+
+**Demonstrativo de impostos (uso geral)**: `Relatórios > Impostos > Demonstrativos` — define a
+competência inicial/final, seleciona os impostos desejados (ou o botão "Todos"), o detalhamento em
+"Opções" e a ordem (Data ou Documento), e confirma em "OK".
+
+**Atenção — este demonstrativo geral NÃO mostra os impostos abaixo**, porque cada um tem relatório
+próprio no sistema:
+
+| Imposto | Onde está o demonstrativo específico |
+|---|---|
+| 44 — Simples Nacional | `Relatórios > Impostos > Simples Nacional` |
+| 4, 5, 17, 19 — PIS e COFINS (cumulativo ou não-cumulativo) | `Relatórios > Acompanhamentos > Informativos de PIS e COFINS`; para conferência detalhada de créditos e débitos (EFD-Contribuições): `Movimentos > Apuração de PIS/COFINS` |
+| 38, 67, 68 — Retenções e substituição tributária (inclusive retenção de órgão público) | `Relatórios > Acompanhamentos > Retenções` |
+
+Um cliente que apure PIS/COFINS (como a maioria dos clientes deste perfil, no regime não-cumulativo do
+Real) **não vai aparecer no Demonstrativo geral** — use o caminho de PIS/COFINS acima para esse tributo
+especificamente. Essa tabela vem de uma fonte confirmada (central de suporte oficial do Domínio); mesmo
+assim, confirme com o analista se a versão/plano do Domínio da empresa segue a mesma nomenclatura de
+menu, já que o sistema pode variar por módulo contratado.
 
 ## Por que a ordem importa
 
