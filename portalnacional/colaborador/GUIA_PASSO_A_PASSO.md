@@ -71,13 +71,22 @@ Para cada empresa:
 
 Empresa **sem certificado, ou com certificado vencido, é pulada** pelo robô. Isso não trava as outras.
 
-Depois de instalar os que tiver, confira quem está com certificado válido. Na janela preta:
+Depois de instalar os que tiver, o próprio robô confere **os certificados que você instalou contra a lista das 26 empresas**. Na janela preta:
 ```
 cd C:\Robos\portalnacional
 python portal_nacional_download.py --verificar-certificados
 ```
-Abra o arquivo `C:\Robos\portalnacional\logs\certificados_status.csv` (abre no Excel). Ele mostra, empresa por empresa, se o certificado foi
-encontrado e se está na validade. **Guarde essa lista**: você vai usar no teste.
+Ele mostra na tela, empresa por empresa, uma destas situações:
+- **OK**: o certificado está instalado e válido (aparece também a data de vencimento);
+- **VENCIDO**: está instalado, mas já venceu (aparece a data em que venceu);
+- **SEM CERTIFICADO**: não achou certificado dessa empresa instalado no seu computador.
+
+A mesma lista fica salva em `C:\Robos\portalnacional\logs\certificados_status.csv` (abre no Excel).
+**Copie essa lista e mande para a Fernanda**: ela providencia os que estiverem VENCIDO ou SEM CERTIFICADO.
+Rode o comando de novo toda vez que instalar mais certificados. Guarde as empresas com **OK**: você vai usar uma delas no teste.
+
+> Se uma empresa que você acabou de instalar continuar como "SEM CERTIFICADO", o arquivo pode ser de outra empresa
+> ou ser um certificado de pessoa física (e-CPF), que o robô não usa. Avise a Fernanda.
 
 ### Passo 7. Instalar a extensão do Chrome (é ela que baixa as planilhas)
 1. Na pasta `C:\Robos\portalnacional`, dê **dois cliques** em **instalar_extensao.bat**.
@@ -88,7 +97,7 @@ encontrado e se está na validade. **Guarde essa lista**: você vai usar no test
 > Essa extensão só pode ficar nesse Chrome do robô. Não use essa janela para mais nada.
 
 ### Passo 8. Primeiro teste
-1. Escolha uma empresa que apareceu com certificado válido no Passo 6 (anote o número dela, por exemplo `92`).
+1. Escolha uma empresa que apareceu como **OK** no Passo 6 (anote o número dela, por exemplo `92`).
 2. Abra o seu Claude do fechamento fiscal (o mesmo do robô do DecWeb; se for a primeira vez, cole o texto do arquivo **CLAUDE_COLABORADOR.md**) e escreva:
    > Fechamento fiscal, Portal Nacional, competência 09/2026, empresa 92. Gere o comando.
 3. Ele dá um comando parecido com:
