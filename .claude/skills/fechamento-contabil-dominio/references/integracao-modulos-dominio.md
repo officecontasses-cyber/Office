@@ -112,6 +112,26 @@ Conferir em todos os regimes:
 - Retenções (ISS, IRRF, PIS/COFINS/CSLL, INSS) = relatório de retenções (`Relatórios > Acompanhamentos >
   Retenções`): retidas pelo cliente como tomador em obrigação a recolher; retidas dele como prestador em
   tributo a compensar/recuperar, não em despesa.
+- Retenções federais × controle da REINF do DP (ver "Retenções — controle do DP" abaixo).
+
+**Retenções — controle do DP (`CONTROLE | DP REINF'S`, aba `GATILHO`).** A 1ª aba da planilha resume,
+por cliente (Nº) e competência (colunas `01.2026` … `12.2026`), o que o DP registrou nas abas mensais
+(`MOD GERAL MM.AAAA`; em fevereiro, `REINFS 02.2026` e `SIMPLES NACIONAL 02.2026`):
+
+| Valor | Significado | O que o contábil faz |
+|---|---|---|
+| `COM RETENÇÃO` | Houve retenção e a REINF foi enviada | Conferir as retenções do razão com o detalhe |
+| `COM RETENÇÃO — NÃO ENVIADO` | Houve retenção, envio não marcado | Conferir e avisar o DP |
+| `PENDENTE` / `PENDENTE (COM RETENÇÃO)` | O DP ainda não concluiu | Os valores podem mudar — registrar pendência |
+| `NÃO ENTREGUE` | Marcado como não entregue | Avisar o DP; registrar pendência |
+| `SEM MOVIMENTO` | Sem retenção no mês | Retenção no contábil nessa competência é divergência a explicar |
+| `ENVIADO` / `SEM STATUS` | Enviado sem marcação de retenção / linha sem status | Conferir na aba do mês |
+| vazio | Cliente não está na aba do mês | Normal para quem não tem REINF |
+
+As colunas `Detalhe MM/AAAA` trazem o texto do DP (códigos de receita e valores, ex.: "IRRF (Cód. Rec.
+170806): R$ 83,61"). Quando o detalhe disser "VALORES AO LADO", os valores estão num quadro à direita
+na aba do mês (colunas H:I ou I:J): leia a aba do mês nesse caso. Os valores do detalhe são o que o DP
+digitou — confira com os comprovantes do pacote da Etapa 1 antes de tratá-los como definitivos.
 
 Conferir conforme o regime:
 
@@ -129,10 +149,11 @@ Alimenta: despesa de salários e pró-labore, encargos patronais (INSS, FGTS), p
 quando aplicável), retenções a recolher (INSS, IRRF).
 
 **De onde vêm os dados da folha — o contábil não salva relatórios da folha:**
-- **Planilha de controle da folha do DP, aba `GATILHO`** — ainda em criação pelo escritório. Quando
-  existir, ela diz por cliente se há folha (funcionários / só pró-labore / não) e se a folha da
-  competência está fechada; registre aqui o nome da planilha e as colunas quando ficar pronta. Até lá,
-  use o Drive e o `Perfil` do mapa.
+- **Planilha de controle da folha do DP, aba `GATILHO`** — **pendente**: a planilha que o DP usa para
+  controlar a folha ainda não foi localizada (a `CONTROLE | DP REINF'S` controla só a REINF); confirmar
+  com a Júlia, responsável pelo DP. Quando existir, a aba `GATILHO` dela diz por cliente se há folha
+  (funcionários / só pró-labore / não) e se a folha da competência está fechada; registre aqui o nome
+  da planilha e as colunas. Até lá, use o Drive e o `Perfil` do mapa.
 - **Pasta do cliente `{ano}/003_FOPAG/{MM_MÊS}`**, onde o DP salva a folha do mês. Nos clientes vistos,
   ela tem "Relação da Folha por Empregado {MMAAAA}" (.xls e .pdf), "Rateio Folha por Empregado
   {MMAAAA}", "FGTS {MMAAAA}" e "Detalhes Trabalhadores FGTS {MMAAAA}" — os nomes podem variar por
@@ -187,7 +208,8 @@ para cobrir diferença de integração.
   motivo de cada módulo fora da lista)
 - [ ] Relatórios do fiscal do item F da Etapa 1 disponíveis (pedidos agora, se tinham ficado pendentes)
 - [ ] Acumuladores do período com contas contábeis; ajustes combinados com o fiscal
-- [ ] Fiscal integrado e conferido: receita = saídas + serviços, entradas, retenções e tributos do regime
+- [ ] Fiscal integrado e conferido: receita = saídas + serviços, entradas, retenções (inclusive × GATILHO
+  da REINF do DP) e tributos do regime
 - [ ] Folha integrada e conferida com os dados do DP (controle da folha / `003_FOPAG`): líquido bate com
   o banco, encargos, FGTS e provisões gerados
 - [ ] Patrimônio integrado e conferido (bens do período cadastrados antes da geração, depreciação plausível)
