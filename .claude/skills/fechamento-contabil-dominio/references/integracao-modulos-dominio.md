@@ -47,55 +47,95 @@ menu, já que o sistema pode variar por módulo contratado.
 
 Os módulos fiscal, folha de pagamento e patrimônio geram lançamentos que **alimentam** o contábil — se o
 contábil for fechado antes de todos eles serem integrados, o balancete fica incompleto e qualquer
-conciliação ou apuração feita em cima dele (Etapas 5 e 6) vai estar errada. A ordem sugerida abaixo evita
+conciliação ou apuração feita em cima dele (Etapas 5 e 6) vai estar errada. A ordem abaixo evita
 reprocessamento: cada módulo depende de dados que o anterior já consolidou.
 
-## Ordem sugerida e o que conferir
+## Antes de integrar: a lista de módulos do cliente
+
+Monte a lista a partir da aba `Perfil` do mapa contábil do cliente e confirme com o pacote da Etapa 1:
+houve nota de entrada/saída/serviço no período? Há folha ou só pró-labore? O cliente tem bens no módulo
+de patrimônio? Usa algum outro módulo? Cliente sem integração fiscal (receita e tributos entram por
+outro caminho) também precisa estar marcado no `Perfil` — senão o fiscal parece "esquecido".
+
+## Ordem e o que conferir em cada módulo
+
+Depois de cada integração, peça o razão (ou o relatório de lançamentos gerados) das contas que o módulo
+alimenta e confira com os relatórios do pacote da Etapa 1. Diferença encontrada se corrige **no módulo**,
+com reintegração — não com lançamento manual no contábil.
 
 ### 1. Fiscal → Contábil
-Alimenta: receita bruta, tributos sobre venda (ICMS, PIS/COFINS, ISS conforme o caso), tributos a
-recuperar nas compras.
+Alimenta: receita bruta, tributos sobre receita e compras, tributos a recuperar, retenções.
 
-Conferir após a integração:
-- Total de notas de saída do período integrado = total apurado no módulo fiscal do Domínio para o mesmo
-  período (sem notas faltando nem duplicadas).
-- Tributos a recolher gerados no fiscal batem com o que será pago (ou já foi pago) — isso alimenta a
-  Etapa 5 (conciliação de tributos a recolher), junto com os comprovantes e a situação fiscal do pacote
-  da Etapa 1.
-- Créditos de PIS/COFINS/ICMS reconhecidos nas entradas estão de fato lançados nas contas de tributos a
-  recuperar, não direto em despesa.
+Conferir em todos os regimes:
+- Receita do razão no período = relatório de saídas + serviços prestados (sem notas faltando, duplicadas
+  ou canceladas lançadas). Receita **acima** do relatório depois da Etapa 3 costuma ser duplicidade com o
+  banco (recebimento lançado como receita em vez de baixa de Clientes).
+- Entradas integradas = relatório de entradas + serviços tomados, nas contas que o mapa mostra.
+- Retenções (ISS, IRRF, PIS/COFINS/CSLL, INSS) = relatório de retenções (`Relatórios > Acompanhamentos >
+  Retenções`): retidas pelo cliente como tomador em obrigação a recolher; retidas dele como prestador em
+  tributo a compensar/recuperar, não em despesa.
+
+Conferir conforme o regime:
+
+| Regime | O que o fiscal precisa ter gerado no contábil |
+|---|---|
+| **Simples Nacional** | Simples a recolher = relatório do Simples (`Relatórios > Impostos > Simples Nacional`) da competência. Não há crédito de PIS/COFINS a recuperar nas compras — se aparecer, a integração está configurada errada |
+| **Lucro Presumido** | PIS/COFINS cumulativos a recolher = informativo de PIS/COFINS (sem créditos nas compras); ISS e ICMS conforme a atividade. IRPJ/CSLL trimestrais: se o cliente apura no módulo fiscal do Domínio, a provisão entra nos meses de fechamento de trimestre — confira com a apuração; se não, ficam para a Etapa 6 |
+| **Lucro Real** | PIS/COFINS não cumulativos: débitos sobre a receita **e** créditos sobre as compras em tributos a recuperar (não direto em despesa) = `Movimentos > Apuração de PIS/COFINS`. ICMS e ISS conforme a atividade. IRPJ/CSLL ficam para a Etapa 6 |
+
+Os tributos gerados no fiscal alimentam a conciliação de tributos a recolher da Etapa 5, junto com os
+comprovantes e a situação fiscal do pacote da Etapa 1.
 
 ### 2. Folha de pagamento → Contábil
-Alimenta: despesa de salários, encargos patronais (INSS, FGTS), provisões (férias, 13º quando aplicável),
-retenções a recolher (INSS, IRRF, FGTS).
+Alimenta: despesa de salários e pró-labore, encargos patronais (INSS, FGTS), provisões (férias, 13º
+quando aplicável), retenções a recolher (INSS, IRRF).
 
 Conferir após a integração:
-- Total líquido da folha integrada = total que de fato será pago/foi pago no extrato bancário (cruza com
-  a Etapa 3) — nunca deixar passar pela conciliação sem bater.
-- Encargos patronais e provisões (férias/13º) foram gerados, não só o líquido da folha.
-- Retenções de terceiros (INSS, IRRF) estão em conta de obrigação a recolher, com o valor que será pago
-  no vencimento.
+- Total líquido da folha integrada = o que foi pago no extrato (cruza com a Etapa 3): depois do
+  pagamento, salários e pró-labore a pagar ficam zerados (ou com o saldo que se explica).
+- Encargos patronais e provisões (férias/13º) foram gerados, não só o líquido da folha. No Simples, a
+  parte patronal depende do anexo (há anexos em que o INSS patronal é recolhido fora do DAS) — confirme
+  no `Perfil`/com o colaborador em vez de presumir.
+- Retenções (INSS, IRRF) estão em obrigação a recolher, com o valor que será pago no vencimento.
+- Cliente só com pró-labore: o módulo gera o pró-labore e o INSS/IRRF retidos — confira só isso.
 
 ### 3. Patrimônio (ativo imobilizado) → Contábil
 Alimenta: depreciação do período, baixas/altas de bens.
 
 Conferir após a integração:
-- Toda aquisição e baixa de bem do período (identificada nos documentos do cliente do pacote da Etapa 1) está
-  cadastrada no módulo de patrimônio antes de gerar a depreciação — bem cadastrado depois da geração fica
-  de fora do cálculo do mês.
+- Toda aquisição e baixa de bem do período (identificada no pacote da Etapa 1 ou na importação bancária
+  da Etapa 3) está cadastrada no módulo antes de gerar a depreciação — bem cadastrado depois da geração
+  fica de fora do cálculo do mês.
 - O valor de depreciação gerado é coerente com o que a skill `ativo-imobilizado-depreciacao` calcularia
   para os mesmos bens (use-a para o cálculo em si; aqui só se confere se o Domínio gerou algo plausível).
+- Cliente com bens e sem módulo de patrimônio: a depreciação vira lançamento manual recorrente do
+  `Perfil` e entra na planilha de ajustes.
 
 ### 4. Outros módulos que alimentem o contábil (quando aplicável ao cliente)
 Ex.: contas a pagar/receber, se o cliente operar com esses módulos separados do fiscal. Confira, para
 qualquer módulo adicional, se ele já foi integrado **antes** de declarar a Etapa 4 concluída — um módulo
 esquecido é a causa mais comum de divergência só descoberta na conciliação (Etapa 5).
 
+## Ajustes manuais
+
+O que nenhum módulo gera entra na planilha `AJUSTES {NNN} {MM-AAAA}.xlsx`, no mesmo layout do modelo de
+importação (`references/lancamentos-bancarios.md`), em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`:
+
+- os lançamentos manuais recorrentes do `Perfil` do mapa (apropriações mensais, juros de mútuo,
+  depreciação sem módulo etc.);
+- o que o pacote da Etapa 1 mostrou que falta e não é de módulo (ex.: parcelamento novo da situação
+  fiscal ainda não registrado no passivo).
+
+Cada linha com o histórico e, na planilha de revisão do colaborador, o porquê. Nunca use ajuste manual
+para cobrir diferença de integração.
+
 ## Checklist de saída da Etapa 4
 
-- [ ] Fiscal integrado e conferido (saída/entrada, tributos)
-- [ ] Folha integrada e conferida (líquido bate com o banco, encargos e provisões geradas)
+- [ ] Lista de módulos do cliente montada (com o motivo de cada módulo fora da lista)
+- [ ] Fiscal integrado e conferido: receita = saídas + serviços, entradas, retenções e tributos do regime
+- [ ] Folha integrada e conferida (líquido bate com o banco, encargos e provisões gerados)
 - [ ] Patrimônio integrado e conferido (bens do período cadastrados antes da geração, depreciação plausível)
 - [ ] Qualquer outro módulo usado pelo cliente também integrado
-- [ ] Planilha/arquivo de integração salvo na pasta do cliente, ano do fechamento, em
-  `005_CONTABIL RELATORIOS`, subpasta do mês (ou pasta própria do período, se maior que um mês)
+- [ ] Divergências corrigidas no módulo e reconferidas, ou registradas como pendência aceita
+- [ ] Planilha de ajustes (se houver) revisada e importada sem erro
+- [ ] Razão e balancete exportados de novo, depois de tudo integrado (base da Etapa 5)

@@ -16,7 +16,30 @@ zero a cada fechamento.
 
 ## Abas e colunas
 
-### 1. `Contas` — contas em uso
+### 1. `Perfil` — como o cliente é contabilizado
+
+Duas tabelas na mesma aba.
+
+**Módulos e características**
+
+| Item | Valor | Observação |
+|---|---|---|
+| Regime | Simples Nacional · Lucro Presumido · Lucro Real (estimativa ou balanço) | Da aba `GATILHO` do fiscal |
+| Integração fiscal no Domínio | Sim · Não | Se não, a receita e os tributos entram por outro caminho (ex.: pelo banco) — diga qual |
+| Contribuinte de ICMS | Sim · Não · Baixada | |
+| Presta / toma serviço (ISS) | Presta · Toma · Ambos · Não | |
+| Folha | Funcionários · Só pró-labore · Não | |
+| Patrimônio no módulo do Domínio | Sim · Não | Se não, a depreciação (quando houver bens) é lançamento manual |
+| Outros módulos integrados | Ex.: contas a pagar/receber | |
+
+**Lançamentos manuais recorrentes** (os que nenhum módulo gera e o cliente faz todo mês)
+
+| Descrição | Conta débito | Conta crédito | Valor ou critério | Origem | Status |
+|---|---|---|---|---|---|
+
+Mesmas regras de status das `Regras` (`proposta` até o colaborador confirmar; `inativa` em vez de apagar).
+
+### 2. `Contas` — contas em uso
 
 | Coluna | Conteúdo |
 |---|---|
@@ -30,7 +53,7 @@ zero a cada fechamento.
 
 Liste só contas com saldo ou movimento no período lido — o plano de contas inteiro já está no Domínio.
 
-### 2. `Regras` — regras de classificação
+### 3. `Regras` — regras de classificação
 
 | Coluna | Conteúdo |
 |---|---|
@@ -51,7 +74,7 @@ Regras práticas:
 - Quando o razão do mês contradisser uma regra `confirmada`, não siga a regra: aponte a mudança e
   pergunte se a regra deve ficar `inativa` ou ganhar uma condição nova.
 
-### 3. `Saldos` — saldos de abertura e pendências herdadas
+### 4. `Saldos` — saldos de abertura e pendências herdadas
 
 | Coluna | Conteúdo |
 |---|---|
@@ -64,7 +87,7 @@ Regras práticas:
 Na Etapa 2, o saldo final do último mês fechado é a abertura da competência atual: confira contra o
 saldo inicial de cada extrato. Na Etapa 7, grave os saldos finais da competência que acabou de fechar.
 
-### 4. `Apuração` — tributos do regime
+### 5. `Apuração` — tributos do regime
 
 Uma linha por competência e tributo (formato longo, para servir a qualquer regime).
 
@@ -84,7 +107,7 @@ aparece em nenhum deles. No Lucro Real, saldo de prejuízo fiscal e base negativ
 (estão na Parte B do LALUR/e-Lalur) — se o colaborador informar, registre na observação com a fonte; se
 não, deixe em branco e trate na Etapa 6.
 
-### 5. `Histórico` — o que mudou no mapa
+### 6. `Histórico` — o que mudou no mapa
 
 | Coluna | Conteúdo |
 |---|---|
@@ -97,7 +120,9 @@ não, deixe em branco e trate na Etapa 6.
 
 1. Leia o razão do início do último ano-calendário até a competência, o balancete e o plano de contas
    (pacote da Etapa 1).
-2. Liste as contas com saldo ou movimento (aba `Contas`).
+2. Preencha o `Perfil` com o que o razão mostra (contas alimentadas por integração fiscal, de folha,
+   de patrimônio; lançamentos manuais que se repetem) e confirme com o colaborador o que o razão não
+   deixar claro. Liste as contas com saldo ou movimento (aba `Contas`).
 3. Para contas de banco e aplicação, agrupe as contrapartidas recorrentes por histórico/contraparte e
    valor: o que se repete vira regra `proposta`, com a origem (competências e quantidade).
 4. Grave os saldos finais do último mês fechado e marque os alertas (aba `Saldos`).
@@ -109,7 +134,7 @@ não, deixe em branco e trate na Etapa 6.
 
 1. Leia o mapa e veja no `Histórico` qual foi o último fechamento registrado.
 2. Leia no razão só os meses entre esse fechamento e a competência atual.
-3. Atualize: contas novas (aba `Contas`), regras novas ou contrariadas (aba `Regras`), saldos de
+3. Atualize: mudanças de perfil (aba `Perfil`), contas novas (aba `Contas`), regras novas ou contrariadas (aba `Regras`), saldos de
    abertura (aba `Saldos`), tributos do período (aba `Apuração`).
 4. Apresente ao colaborador só o que mudou — não repita o mapa inteiro.
 

@@ -81,7 +81,7 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
 **O que fazer:**
 
 1. **Procure o mapa** em `{ano}/005_CONTABIL RELATORIOS/` do cliente; se não houver no ano atual, procure no ano anterior (no primeiro fechamento do ano ele é copiado de lá).
-2. **Se não existe (primeiro fechamento do cliente nesta skill):** monte o mapa a partir do razão (do início do último ano-calendário até a competência), do balancete e do plano de contas — as cinco partes: contas em uso, regras de classificação, saldos de abertura e pendências herdadas, apuração dos tributos do regime e histórico do mapa.
+2. **Se não existe (primeiro fechamento do cliente nesta skill):** monte o mapa a partir do razão (do início do último ano-calendário até a competência), do balancete e do plano de contas — as seis partes: perfil do cliente (módulos usados e lançamentos manuais recorrentes), contas em uso, regras de classificação, saldos de abertura e pendências herdadas, apuração dos tributos do regime e histórico do mapa.
 3. **Se já existe:** leia o mapa e atualize só o que mudou entre o último fechamento registrado nele e a competência atual — contas novas, regras que deixaram de valer ou apareceram, saldos de abertura do último mês fechado, tributos apurados e pagos. Se o razão do período contradisser uma regra do mapa, o razão vence: aponte a mudança em vez de seguir a regra antiga.
 4. **Cruze com o pacote da Etapa 1:**
    - toda conta de banco/aplicação com saldo ou movimento no razão tem extrato no pacote? Se não tiver, volte e peça;
@@ -104,7 +104,7 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
    - `regra` — aplicou uma regra `confirmada` do mapa (diga qual);
    - `proposta` — nenhuma regra cobre; você sugere pela natureza da transação, pelo comprovante ou pela tabela padrão de `references/lancamentos-bancarios.md`. Precisa da confirmação do colaborador;
    - `pendente` — não dá para classificar com segurança (PIX sem identificação, pagamento que mistura contas sem detalhamento). Não chute.
-3. **Respeite o que as integrações vão lançar (Etapa 4):** o banco normalmente só **baixa** contas que os módulos alimentam — recebimento baixa Clientes (a receita vem do fiscal), pagamento de folha baixa Salários a pagar (a despesa vem da folha), pagamento de tributo baixa o tributo a recolher. Lançar receita, despesa de folha ou tributo pelo banco quando o módulo também lança gera duplicidade. Siga o que o mapa mostra que o cliente faz; na dúvida, pergunte.
+3. **Respeite o que as integrações vão lançar (Etapa 4):** o banco normalmente só **baixa** contas que os módulos alimentam — recebimento baixa Clientes (a receita vem do fiscal), pagamento de folha baixa Salários a pagar (a despesa vem da folha), pagamento de tributo baixa o tributo a recolher. Lançar receita, despesa de folha ou tributo pelo banco quando o módulo também lança gera duplicidade. Siga o que a aba `Perfil` do mapa diz sobre as integrações do cliente; na dúvida, pergunte.
 4. **Cuidados que mais geram erro:** transferência entre contas do próprio cliente aparece nos dois extratos e é lançada uma vez só; aplicação e resgate automáticos; estornos (identifique o lançamento original); DARF ou guia que paga mais de um código vira lançamento de várias linhas, com o detalhamento do comprovante — nunca rateio por estimativa.
 5. **Monte dois arquivos por competência**, na pasta do cliente em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`:
    - **Planilha de revisão** (`CONCILIACAO BANCARIA {NNN} {MM-AAAA}.xlsx`): todas as linhas do extrato, com a classificação, a origem (`regra`/`proposta`/`pendente`) e a observação — é o que o colaborador revisa;
@@ -122,19 +122,31 @@ Toda confirmação ou correção feita aqui entra na lista de regras novas do ma
 
 Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do Excel), acione `transformar-extrato-dominio`, que converte o Excel já classificado nesse TXT — não refaça essa lógica aqui.
 
-### Etapa 4 — Integrações ao contábil (fiscal, folha, patrimônio)
+### Etapa 4 — Integrações ao contábil (fiscal, folha, patrimônio) e ajustes manuais
 
-**O que fazer:** quem efetua a integração no Domínio é o colaborador — você não opera o sistema diretamente, orienta. Depois da importação bancária (Etapa 3) e com o pacote da Etapa 1 em mãos (incluindo os relatórios de entradas, saídas, serviços e apuração de impostos), oriente a integração dos módulos que alimentam o contábil no Domínio — fiscal, folha de pagamento (quando o cliente tiver folha ou pró-labore), patrimônio (quando tiver bens) e demais módulos aplicáveis. Siga a ordem e os pontos de conferência descritos em `references/integracao-modulos-dominio.md`.
+**Usa:** a aba `Perfil` do mapa contábil do cliente (quais módulos ele usa e quais lançamentos manuais se repetem todo mês), os relatórios do pacote da Etapa 1 (item F: entradas, saídas, serviços, apuração de impostos) e a importação bancária já feita na Etapa 3. Ordem, conferências por módulo e caminhos confirmados do Domínio em `references/integracao-modulos-dominio.md`.
 
-Use os relatórios de entradas/saídas/serviços/apuração de impostos como referência de conferência: depois que o colaborador confirmar que a integração foi feita no Domínio, confira se o que o razão/balancete resultante mostra (receita, tributos a recolher/recuperar) bate com o que esses relatórios já indicavam — uma divergência aqui é a chance de pegar um erro de integração antes da conciliação formal da Etapa 5, não depois.
+**Quem faz o quê:** quem integra no Domínio é o colaborador — você não opera o sistema, orienta e confere. A integração acontece dentro do Domínio, então aqui não há planilha de integração para gerar; o seu trabalho é dizer o que integrar, conferir o que cada módulo lançou e apontar o que corrigir.
 
-Para a depreciação/baixa de bens do patrimônio, acione `ativo-imobilizado-depreciacao` em vez de recalcular a lógica aqui. Para lançamentos-modelo de operações específicas que aparecerem durante a conferência (ex.: um lançamento de empréstimo ou de equivalência patrimonial que pareça fora do padrão do cliente), consulte `lancamentos-contabeis-padrao`.
+**O que fazer:**
 
-**Onde salvar:** a planilha pronta para importação (gerada pela integração) vai na pasta do cliente, no ano do fechamento, em `005_CONTABIL RELATORIOS`, dentro da subpasta do mês. Se o período fechado for maior que um mês, crie uma pasta nova para esse período em vez de usar uma subpasta mensal.
+1. **Monte a lista de módulos deste cliente** a partir do `Perfil` do mapa e do pacote (há notas no período? folha ou só pró-labore? bens no patrimônio? outros módulos?). Apresente como checklist, na ordem: fiscal → folha → patrimônio → outros. Módulo que o cliente não usa sai da lista com o motivo — não fica "em branco".
+2. **Um módulo por vez:** o colaborador integra e responde "integrei {módulo}". Peça o razão (ou o relatório de lançamentos gerados) das contas que o módulo alimenta e confira contra os relatórios do pacote — as conferências de cada módulo, inclusive o que muda por regime (Simples, Presumido, Real), estão na referência.
+3. **Cruze com o banco (Etapa 3):** as contas que o banco baixou e o módulo alimentou precisam conversar — receita no razão = relatório de saídas/serviços (receita a mais costuma ser duplicidade com o banco), salários a pagar zerados depois do pagamento, tributo pago baixado da conta certa.
+4. **Erro de integração se corrige na origem.** Se a conferência mostrar nota faltando ou duplicada, conta de integração errada ou tributo gerado errado, o colaborador corrige no módulo e reintegra — não proponha lançamento manual no contábil para tapar diferença de módulo. Depois da reintegração, confira de novo.
+5. **Ajustes manuais do mês:** lançamentos que nenhum módulo gera e que o cliente faz todo mês (os recorrentes estão no `Perfil` do mapa — ex.: apropriação de despesa antecipada, juros de mútuo, depreciação quando o cliente não usa o módulo de patrimônio) ou que o pacote mostrou que faltam. Monte esses lançamentos numa planilha `AJUSTES {NNN} {MM-AAAA}.xlsx`, no mesmo layout do modelo de importação (ver `references/lancamentos-bancarios.md`), em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`, com o histórico e o porquê de cada um, para o colaborador revisar e importar.
+
+**Apoio:** `ativo-imobilizado-depreciacao` para a depreciação/baixa de bens (não recalcule aqui); `lancamentos-contabeis-padrao` para lançamentos-modelo de operações fora do padrão do cliente (empréstimo, equivalência patrimonial etc.); `analisar-folha-pagamento` se a folha integrada não bater e for preciso abrir o holerite.
+
+**Porta de saída da Etapa 4:**
+- todo módulo da lista integrado e conferido, ou fora da lista com o motivo;
+- divergências corrigidas na origem e reconferidas, ou registradas como pendência aceita pelo colaborador;
+- planilha de ajustes (se houver) revisada e importada pelo colaborador, sem erro;
+- **razão e balancete exportados de novo pelo colaborador, depois de tudo integrado** — são a base da Etapa 5. Módulo novo ou lançamento manual recorrente que apareceu neste mês entra no `Perfil` do mapa na Etapa 7.
 
 ### Etapa 5 — Conciliação contábil conta a conta
 
-**Peça:** razão e balancete atualizados (pós-importação das etapas 3 e 4).
+**Usa:** o razão e o balancete exportados ao final da Etapa 4, já com a importação bancária, as integrações e os ajustes.
 
 **O que fazer:** concilie conta a conta o mês (ou período) a fechar. Para cada conta relevante, aponte: o que deve ser analisado nela, a divergência encontrada (se houver) e o passo objetivo para o colaborador resolver — o que ajustar e por quê, nunca só "está divergente".
 
@@ -171,7 +183,7 @@ Em todos os regimes:
 
 **O que fazer:** resuma o fechamento (o que foi conciliado, o que foi integrado, o resultado da apuração), liste pendências e riscos (documentos do pacote que faltaram, divergências aceitas sem solução definitiva, parcelamentos/débitos ativos e certidões positivas identificados na Etapa 1) e indique o próximo passo objetivo a executar no Domínio ou no período seguinte.
 
-**Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, saldos finais da competência fechada (que serão a abertura do próximo mês), os tributos apurados e pagos do mês na aba `Apuração` (no Real, também a forma: estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
+**Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, módulos e lançamentos manuais recorrentes novos no `Perfil` (Etapa 4), saldos finais da competência fechada (que serão a abertura do próximo mês), os tributos apurados e pagos do mês na aba `Apuração` (no Real, também a forma: estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
 
 Lembre o colaborador de **atualizar o status da competência no artefato Controle Contábil** (aba Fechamento: situação dos documentos, "Liberado p/ Gian" quando o fechamento estiver pronto para revisão).
 
