@@ -116,7 +116,8 @@ Conferir em todos os regimes:
 
 **Retenções — controle do DP (`CONTROLE | DP REINF'S`, aba `GATILHO`).** A 1ª aba da planilha resume,
 por cliente (Nº) e competência (colunas `01.2026` … `12.2026`), o que o DP registrou nas abas mensais
-(`MOD GERAL MM.AAAA`; em fevereiro, `REINFS 02.2026` e `SIMPLES NACIONAL 02.2026`):
+(`MOD GERAL MM.AAAA`; em fevereiro, também `SIMPLES NACIONAL 02.2026`). Aba de mês nova precisa seguir
+o nome `MOD GERAL MM.AAAA` para entrar na GATILHO:
 
 | Valor | Significado | O que o contábil faz |
 |---|---|---|
