@@ -6,7 +6,7 @@ lógica específica de **por que** se levanta um balanço para suspender ou redu
 checklist de insumos que as Etapas 1-5 precisam ter entregado antes de chegar aqui.
 
 **Toda referência legal abaixo é um ponto de partida para pesquisa, não uma citação pronta.** Antes de
-apresentar qualquer base legal ao analista como conclusão do fechamento, peça a ele para confirmar no
+apresentar qualquer base legal ao colaborador como conclusão do fechamento, peça a ele para confirmar no
 Lefisc o texto vigente (a lei pode ter sido alterada desde o conhecimento usado para montar este
 material) e cite a fonte retornada — nunca a fonte "de memória" listada aqui.
 
@@ -23,7 +23,7 @@ janeiro, ou desde o início de apuração) e demonstrar que:
 - O imposto devido pelo balanço acumulado é **zero ou negativo** (prejuízo fiscal/base negativa no
   acumulado) → a empresa pode **suspender** o pagamento do mês.
 
-Pedir ao analista para confirmar no Lefisc, antes de citar como definitivo: o fundamento legal vigente
+Pedir ao colaborador para confirmar no Lefisc, antes de citar como definitivo: o fundamento legal vigente
 para a possibilidade de suspensão/redução por balanço (historicamente associado à Lei 8.981/1995 art. 35
 e à IN RFB 1.700/2017 art. 47, mas confirme a redação e eventuais atualizações normativas atuais), e
 qualquer exigência formal de **livro-caixa/balanço transcrito no Diário** até a data do vencimento do
@@ -47,7 +47,7 @@ avance com dado presumido):
 ## Pontos de atenção mais comuns na Parte A (adições/exclusões) — verificar aplicabilidade e fonte no Lefisc
 
 Esta lista é só um roteiro de perguntas a fazer sobre o período fechado — não assuma que algum destes
-itens se aplica ao cliente sem evidência real na documentação recebida nas Etapas 1-3.
+itens se aplica ao cliente sem evidência real na documentação do pacote da Etapa 1.
 
 **Adições a verificar** (despesas contábeis que costumam não ser dedutíveis — confirmar fundamento e
 vigência no Lefisc antes de tratar como certo):
@@ -74,7 +74,7 @@ esse limite e o percentual continuam vigentes exatamente assim antes de aplicar.
 `apuracao-lucro-real` mantém o controle de saldo por ano de origem (Parte B) — não recrie esse controle
 aqui, peça o saldo atualizado a ela.
 
-## O que apresentar ao analista ao final da Etapa 6
+## O que apresentar ao colaborador ao final da Etapa 6
 
 1. Base de cálculo do balanço acumulado (LAIR + adições − exclusões).
 2. Cada adição/exclusão aplicada, com a fonte legal confirmada no Lefisc.

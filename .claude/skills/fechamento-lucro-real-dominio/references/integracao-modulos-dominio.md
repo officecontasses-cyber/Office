@@ -2,15 +2,15 @@
 
 Este arquivo apoia a Etapa 4 do `SKILL.md`. Ele descreve a lógica geral de por que cada módulo precisa
 ser integrado antes do contábil e o que conferir em cada um — **não é uma transcrição do manual de
-integração do Domínio**, que o analista deve ter disponível no próprio sistema ou no suporte Thomson
+integração do Domínio**, que o colaborador deve ter disponível no próprio sistema ou no suporte Thomson
 Reuters/Domínio. Sempre que uma tela, campo ou nome de rotina específico do Domínio estiver em jogo,
-peça ao analista para confirmar na tela real do sistema (ou no manual dele) em vez de aceitar como certo
+peça ao colaborador para confirmar na tela real do sistema (ou no manual dele) em vez de aceitar como certo
 um nome de tela ou campo citado de memória — nomes de rotina mudam entre versões do sistema.
 
-## Relatórios a pedir antes de começar (não só na hora de integrar)
+## Relatórios pedidos já na Etapa 1 (não só na hora de integrar)
 
-Peça estes relatórios do Domínio desde "Antes de começar" no `SKILL.md`, não só quando chegar nesta
-etapa — eles dão mais dados para cruzar na conciliação (Etapa 5) e ajudam a pegar erro de integração
+Estes relatórios do Domínio já são pedidos no pacote da Etapa 1 do `SKILL.md` (item F), não só quando
+chegar nesta etapa — eles dão mais dados para cruzar na conciliação (Etapa 5) e ajudam a pegar erro de integração
 antes dele virar pendência no fim:
 
 - **Relatório de entradas** (notas de compra/aquisição do período).
@@ -18,7 +18,7 @@ antes dele virar pendência no fim:
 - **Relatório de serviços prestados e tomados**, quando o cliente emitir ou tomar nota de serviço.
 - **Apuração de impostos do período** — ver o caminho confirmado abaixo, que varia por tributo.
 
-Para entradas, saídas e serviços, ainda não há um caminho de tela confirmado — pergunte ao analista como
+Para entradas, saídas e serviços, ainda não há um caminho de tela confirmado — pergunte ao colaborador como
 ele normalmente extrai esses relatórios no sistema dele, em vez de aceitar um caminho de menu citado de
 memória, ou peça que ele consulte a central de suporte do Domínio (suporte.dominioatendimento.com).
 
@@ -40,7 +40,7 @@ próprio no sistema:
 Um cliente que apure PIS/COFINS (como a maioria dos clientes deste perfil, no regime não-cumulativo do
 Real) **não vai aparecer no Demonstrativo geral** — use o caminho de PIS/COFINS acima para esse tributo
 especificamente. Essa tabela vem de uma fonte confirmada (central de suporte oficial do Domínio); mesmo
-assim, confirme com o analista se a versão/plano do Domínio da empresa segue a mesma nomenclatura de
+assim, confirme com o colaborador se a versão/plano do Domínio da empresa segue a mesma nomenclatura de
 menu, já que o sistema pode variar por módulo contratado.
 
 ## Por que a ordem importa
@@ -60,7 +60,8 @@ Conferir após a integração:
 - Total de notas de saída do período integrado = total apurado no módulo fiscal do Domínio para o mesmo
   período (sem notas faltando nem duplicadas).
 - Tributos a recolher gerados no fiscal batem com o que será pago (ou já foi pago) — isso alimenta a
-  Etapa 3 (situação fiscal) e a Etapa 5 (conciliação de tributos a recolher).
+  Etapa 5 (conciliação de tributos a recolher), junto com os comprovantes e a situação fiscal do pacote
+  da Etapa 1.
 - Créditos de PIS/COFINS/ICMS reconhecidos nas entradas estão de fato lançados nas contas de tributos a
   recuperar, não direto em despesa.
 
@@ -70,7 +71,7 @@ retenções a recolher (INSS, IRRF, FGTS).
 
 Conferir após a integração:
 - Total líquido da folha integrada = total que de fato será pago/foi pago no extrato bancário (cruza com
-  a Etapa 2) — nunca deixar passar pela conciliação sem bater.
+  a Etapa 3) — nunca deixar passar pela conciliação sem bater.
 - Encargos patronais e provisões (férias/13º) foram gerados, não só o líquido da folha.
 - Retenções de terceiros (INSS, IRRF) estão em conta de obrigação a recolher, com o valor que será pago
   no vencimento.
@@ -79,7 +80,7 @@ Conferir após a integração:
 Alimenta: depreciação do período, baixas/altas de bens.
 
 Conferir após a integração:
-- Toda aquisição e baixa de bem do período (identificada na Etapa 3, pelos comprovantes do cliente) está
+- Toda aquisição e baixa de bem do período (identificada nos documentos do cliente do pacote da Etapa 1) está
   cadastrada no módulo de patrimônio antes de gerar a depreciação — bem cadastrado depois da geração fica
   de fora do cálculo do mês.
 - O valor de depreciação gerado é coerente com o que a skill `ativo-imobilizado-depreciacao` calcularia
