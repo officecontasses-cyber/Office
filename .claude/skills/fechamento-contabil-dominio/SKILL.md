@@ -46,7 +46,7 @@ Nunca pule uma etapa nem avance sem o que a etapa anterior entregou — cada eta
 
 **Objetivo:** antes de qualquer análise, reunir na pasta do cliente o maior banco de dados possível da empresa no período — é com base nele que as conciliações das etapas seguintes são feitas. **Você não segue para a Etapa 2 enquanto o colaborador não disser que salvou o pacote** (ou aceitar explicitamente seguir sem um item).
 
-**1. Veja primeiro o que já está no Drive.** Na pasta do ano, olhe `001_DOCUMENTOS DIGITALIZADOS/{MM_MÊS}` de cada competência (ex.: `09_SETEMBRO`) e `005_CONTABIL RELATORIOS/{MM_MÊS}`, e procure exports recentes do SIEG para o CNPJ do cliente (ver `references/checklist-documentos.md`). Assim o pedido ao colaborador já sai só com o que falta.
+**1. Veja primeiro o que já está no Drive.** Na pasta do ano, olhe `001_DOCUMENTOS DIGITALIZADOS/{MM_MÊS}` de cada competência (ex.: `09_SETEMBRO`) e `005_CONTABIL RELATORIOS/{MM_MÊS}`, e procure exports recentes do SIEG para o CNPJ do cliente (ver `references/checklist-documentos.md`). Leia também a aba `Pendências` do papel de trabalho do último mês fechado (`CONCILIACAO …` em `005_CONTABIL RELATORIOS`): o que ficou pendente lá entra no pedido deste mês. Assim o pedido ao colaborador já sai só com o que falta.
 
 **2. Peça ao colaborador para salvar o que faltar**, numa única mensagem em formato de checklist (modelo em `references/checklist-documentos.md`), marcando o que já foi encontrado. O pacote é:
 
@@ -183,7 +183,7 @@ Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do
 
 **Usa:** o balancete final da Etapa 5 (conciliado), a apuração de impostos do Domínio e os comprovantes do pacote da Etapa 1 (itens F e B), a aba `Apuração` do mapa contábil do cliente (tributos e forma de apuração dos meses anteriores), a GATILHO do fiscal (o que o fiscal já fechou e o que está esperando a contabilidade) e a aba Lucros distribuídos do artefato Controle Contábil.
 
-**Objetivo:** conferir (ou apurar, quando for papel da contabilidade) os tributos sobre receita e lucro do regime do cliente e fechar o resultado do período. Quem apura e emite a guia dos tributos do mês é, em regra, o fiscal; o papel da contabilidade aqui é **trazer o que só ela vê** (receitas e despesas que não passam pelo módulo fiscal, o resultado contábil) e, no IRPJ/CSLL que depende do balanço ou do trimestre, **liberar a apuração ao fiscal**.
+**Objetivo:** conferir (ou apurar, quando for papel da contabilidade) os tributos sobre receita e lucro do regime do cliente e fechar o resultado do período. Quem apura e envia a guia é o fiscal — inclusive o IRPJ/CSLL do Lucro Presumido. A exceção é o **Lucro Real**: o fiscal aguarda a contabilidade liberar a apuração de IRPJ/CSLL e só então emite e envia a guia. O papel da contabilidade aqui é **trazer o que só ela vê** (receitas e despesas que não passam pelo módulo fiscal, o resultado contábil), **conferir** o que o fiscal apurou e, no Lucro Real, **liberar a apuração ao fiscal**.
 
 **O que fazer:**
 
@@ -192,12 +192,12 @@ Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do
 | Regime | O que esta etapa faz | Apoio |
 |---|---|---|
 | **Simples Nacional** | Confere o DAS: receita do contábil × receita declarada na apuração do Simples (relatório do Domínio ou PGDAS-D) × provisão × comprovante. Receita no contábil que não está no PGDAS-D é o achado mais importante. Se o anexo do cliente depende do fator R, confira a folha usada com a folha do DP (regra e percentual a confirmar no Lefisc) | `conferir-apuracao-simples-nacional`; `calcular-das-simples-nacional` se precisar recalcular |
-| **Lucro Presumido** | Confere PIS/COFINS cumulativos do mês e, no mês de fechamento de cada trimestre, IRPJ/CSLL trimestrais: base × presunção, mais as receitas que entram direto na base, conforme a regra vigente | `apuracao-lucro-presumido`; `calculo-pis-cofins-cumulativo` |
+| **Lucro Presumido** | Confere o que o fiscal apurou e enviou: PIS/COFINS cumulativos do mês e, no mês de fechamento de cada trimestre, IRPJ/CSLL trimestrais (base × presunção, mais as receitas que entram direto na base, conforme a regra vigente). Diferença vira aviso ao fiscal | `apuracao-lucro-presumido`; `calculo-pis-cofins-cumulativo` |
 | **Lucro Real — estimativa mensal** | Confere a estimativa de IRPJ/CSLL e o PIS/COFINS não cumulativo (débitos e créditos) | `apuracao-lucro-real`; `calculo-pis-cofins-nao-cumulativo` |
 | **Lucro Real — balanço de suspensão/redução** | Gera o levantamento do balanço acumulado e apura IRPJ/CSLL: base, adições e exclusões, compensação de prejuízo fiscal/base negativa, e se leva à **suspensão** (zero a pagar) ou **redução** (paga menos que a estimativa) | `references/apuracao-irpj-csll-balanco-suspensao.md`; `apuracao-lucro-real` |
 
 2. **Receitas e despesas que não passam pelo fiscal:** rendimento de aplicação, juros recebidos, aluguéis, ganho na venda de bem, recuperação de despesa e similares aparecem no contábil e podem não estar na apuração do fiscal. Liste as do período e confirme no Lefisc como cada uma entra na base de cada tributo do regime do cliente — não aplique regra de memória. O que estiver faltando na apuração do fiscal vira **aviso ao fiscal** (ver passo 4), não guia emitida por você.
-3. **IRPJ/CSLL que depende da contabilidade** (Real, e Presumido no fechamento do trimestre quando o escritório apura pela contabilidade): neste escritório, o DARF de IRPJ/CSLL fica na `Controle_Fiscal` como pendente "aguardando a contabilidade liberar a apuração". Feche a apuração, com cada valor que dependa de parâmetro legal ainda não confirmado no Lefisc marcado como preliminar, e prepare a **liberação ao fiscal**: competência, tributo, base, valor, forma (estimativa, suspensão ou redução) e a fonte legal de cada ajuste. O vencimento é o que está na `Controle_Fiscal` — não invente data.
+3. **IRPJ/CSLL do Lucro Real — liberação ao fiscal:** neste escritório, o DARF de IRPJ/CSLL do Real fica na `Controle_Fiscal` como pendente "aguardando a contabilidade liberar a apuração"; o fiscal emite e envia a guia depois da liberação. (No Presumido não há liberação: o fiscal apura e envia, e a contabilidade só confere.) Feche a apuração, com cada valor que dependa de parâmetro legal ainda não confirmado no Lefisc marcado como preliminar, e prepare a **liberação ao fiscal**: competência, tributo, base, valor, forma (estimativa, suspensão ou redução) e a fonte legal de cada ajuste. O vencimento é o que está na `Controle_Fiscal` — não invente data.
 4. **Divergência com a apuração do fiscal** (receita fora do PGDAS-D, receita financeira fora da base, crédito de PIS/COFINS sem origem): registre no papel de trabalho e redija o aviso ao fiscal com o valor, a competência e o porquê. Quem retifica a apuração e a declaração é o fiscal; você não emite guia nem retifica declaração.
 5. **Resultado do período:** lucro ou prejuízo contábil do mês e do acumulado do ano. **Lucros distribuídos** (aba Lucros distribuídos do artefato): confira se o resultado contábil acumulado os suporta. A regra de isenção e de retenção na fonte sobre lucros e dividendos depende do regime e teve mudança legal recente — confirme a regra vigente no Lefisc antes de concluir; não aplique regra de memória. Distribuição acima do que o resultado suporta é achado para o revisor.
 6. **Registre tudo numa aba `Tributos` do papel de trabalho** `CONCILIACAO {NNN} {MM-AAAA}.xlsx` (Etapa 5): uma linha por tributo, com base contábil, base do fiscal, apurado, provisionado, pago, diferença, status (`Conferido`, `Divergente — avisado ao fiscal`, `Liberado ao fiscal`, `Pendente`) e a fonte legal confirmada de cada ponto. Assim o revisor vê conciliação e tributos no mesmo arquivo.
@@ -208,19 +208,41 @@ Em todos os regimes:
 
 **Porta de saída da Etapa 6:**
 - cada tributo do regime com status na aba `Tributos` (nenhum `Divergente` sem aviso ao fiscal redigido);
-- IRPJ/CSLL que depende da contabilidade com a liberação ao fiscal pronta — ou com o motivo de ainda não estar;
+- no Lucro Real, IRPJ/CSLL com a liberação ao fiscal pronta — ou com o motivo de ainda não estar;
 - resultado do período e lucros distribuídos conferidos;
 - o colaborador revisou os avisos e a liberação ao fiscal antes de enviar. Só então siga para a Etapa 7.
 
-### Etapa 7 — Encerramento e próximos passos
+### Etapa 7 — Encerramento, liberação para revisão e próximos passos
 
-**O que fazer:** resuma o fechamento (o que foi conciliado, o que foi integrado, o resultado da apuração), confirme que os avisos e a liberação de IRPJ/CSLL ao fiscal (Etapa 6) foram enviados, liste pendências e riscos (documentos do pacote que faltaram, divergências aceitas sem solução definitiva, parcelamentos/débitos ativos e certidões positivas identificados na Etapa 1) e indique o próximo passo objetivo a executar no Domínio ou no período seguinte.
+**Objetivo:** fechar o ciclo do mês — garantir que nada ficou solto, deixar o próximo fechamento mais rápido (mapa atualizado) e entregar a competência para revisão no artefato Controle Contábil.
 
-**Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, módulos e lançamentos manuais recorrentes novos no `Perfil` (Etapa 4), saldos finais da competência fechada (que serão a abertura do próximo mês), os tributos apurados e pagos do mês na aba `Apuração` (no Real, também a forma: estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
+**O que fazer:**
 
-Lembre o colaborador de **atualizar o status da competência no artefato Controle Contábil** (aba Fechamento: situação dos documentos, "Liberado p/ Gian" quando o fechamento estiver pronto para revisão), indicando onde está o papel de trabalho de conciliação da Etapa 5 — é por ele que a revisão começa.
+1. **Confira as portas de saída de todas as etapas** (1 a 6). Se alguma não passou, volte nela — não encerre com etapa aberta sem o colaborador aceitar explicitamente.
+2. **Confira os arquivos do fechamento** na pasta do cliente e liste onde estão:
+   - `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`: `CONCILIACAO BANCARIA …` e `IMPORTACAO …` (Etapa 3), `AJUSTES …` (Etapas 4 e 5, se houver) e o papel de trabalho `CONCILIACAO …` com as abas `Contas`, `Resultado`, `Rodadas`, `Tributos` e `Pendências` (Etapas 5 a 7);
+   - `{ano}/005_CONTABIL RELATORIOS/`: `MAPA CONTABIL {NNN}.xlsx`.
+3. **Consolide as pendências** de todas as etapas numa lista única, cada uma com **responsável** e próximo passo, e grave a lista na aba `Pendências` do papel de trabalho:
 
-Se, ao longo do fechamento, surgir documento faltando ou confirmação pendente do cliente, use `pendencias-fechamento-cliente` para redigir o e-mail ao cliente e registrar as pendências, em vez de deixá-las soltas no resumo final.
+| Responsável | Exemplos | Como sai daqui |
+|---|---|---|
+| Cliente | documento que não veio, PIX sem identificação, contrato de empréstimo | E-mail redigido com `pendencias-fechamento-cliente` |
+| Fiscal | avisos e liberação de IRPJ/CSLL do Real (Etapa 6), divergência de receita | Confirmar com o colaborador que foram enviados |
+| DP | retenção `PENDENTE`/`NÃO ENTREGUE` na GATILHO da REINF, folha que não bateu | Aviso ao DP redigido |
+| Colaborador / revisor | `Pendência aceita` do papel de trabalho, diferença herdada de mês já fechado | Fica registrada para o revisor decidir |
+
+4. **Atualize o mapa contábil do cliente:** regras novas ou corrigidas nas Etapas 3 a 5, módulos e lançamentos manuais recorrentes novos no `Perfil` (Etapa 4), saldos finais da competência fechada na aba `Saldos` (são a abertura do próximo mês), os tributos apurados e pagos do mês na aba `Apuração` (no Real, também a forma: estimativa, suspensão ou redução) e uma linha no `Histórico`. O próximo fechamento começa desse mapa.
+5. **Entregue para revisão no artefato Controle Contábil** (aba Fechamento, linha do cliente e da competência). Diga ao colaborador o que preencher:
+   - situação dos documentos (o campo do analista, ex.: "Aguardando cliente" se ficou documento pendente);
+   - observação do analista: resumo curto — resultado do período, tributos, pendências em aberto e onde está o papel de trabalho;
+   - "Liberado p/ Gian" = Sim, quando não houver etapa aberta.
+6. **Redija o resumo para o revisor (Gian)**, curto, para o colaborador colar onde a equipe combina: cliente, competência, regime, resultado do mês e acumulado, tributos (conferidos, liberados ao fiscal, avisados), pendências por responsável e o caminho do papel de trabalho — é por ele que a revisão começa.
+
+**Se a revisão devolver o fechamento** (o revisor marca ajuste no artefato): o colaborador abre de novo esta conversa, ou uma nova com o mesmo cliente e competência. Volte à etapa onde está o ajuste (em geral 5 ou 6), registre a correção na aba `Rodadas` do papel de trabalho, atualize o mapa se a correção mudar uma regra e entregue de novo para revisão.
+
+**Próximo período:** o que depende de alguém antes do próximo fechamento (documento do cliente, procuração, retificação do fiscal) vai na aba `Pendências` com o responsável — o próximo fechamento começa conferindo essa aba na Etapa 1.
+
+**Porta de saída da Etapa 7 (fim do fechamento):** portas das etapas 1 a 6 conferidas, arquivos no lugar, pendências com responsável, mapa atualizado, competência liberada para revisão no artefato e resumo ao revisor redigido.
 
 ## Regras importantes
 

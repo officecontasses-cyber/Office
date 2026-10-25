@@ -83,7 +83,8 @@ aqui, peça o saldo atualizado a ela.
 4. Conclusão: suspensão (zero a pagar) ou redução (valor menor que a estimativa), com o comparativo
    contra a soma das estimativas já pagas no ano.
 5. Liberação da apuração ao fiscal quando houver valor a recolher (tributo, competência, base, valor e
-   forma) — neste escritório quem emite e envia o DARF é o fiscal, e o vencimento é o que está na
-   `Controle_Fiscal`; não invente código de receita nem data.
+   forma) — neste escritório, no Lucro Real, o fiscal aguarda essa liberação da contabilidade e só então
+   emite e envia o DARF; o vencimento é o que está na `Controle_Fiscal`. Não invente código de receita
+   nem data.
 6. Alerta explícito se identificar que a formalidade exigida (ex.: transcrição do balanço no Diário até o
    vencimento) ainda não foi cumprida — isso é risco a reportar na Etapa 7, não algo a assumir resolvido.

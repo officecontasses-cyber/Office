@@ -65,7 +65,8 @@ linha por conta com saldo ou movimento:
 
 Uma aba `Resultado` com as variações relevantes do período e a explicação de cada uma, e uma aba
 `Rodadas` registrando cada rodada de correção (data, contas reconferidas, o que mudou). A Etapa 6
-acrescenta a aba `Tributos` no mesmo arquivo.
+acrescenta a aba `Tributos` e a Etapa 7 a aba `Pendências` (responsável e próximo passo de cada
+pendência do fechamento), lida pela Etapa 1 do mês seguinte.
 
 `Sem suporte` não é o mesmo que conciliada: é conta cujo saldo ninguém consegue provar com documento —
 vira pendência para o revisor ver.
