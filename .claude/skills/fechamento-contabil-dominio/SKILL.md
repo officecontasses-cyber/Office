@@ -95,13 +95,32 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
 
 ### Etapa 3 — Extratos bancários → lançamentos para importar no Domínio
 
-**Usa:** os extratos da Etapa 1 (item A).
+**Usa:** os extratos (item A) e os comprovantes de pagamento (item B) da Etapa 1 e as regras `confirmada` do mapa contábil do cliente (Etapa 2). Detalhes do layout, das armadilhas e das conferências em `references/lancamentos-bancarios.md`.
 
-**O que fazer:** classifique cada lançamento do extrato nas contas corretas, aplicando primeiro as regras `confirmada` do mapa contábil do cliente (Etapa 2) e, só para o que nenhuma regra cobrir, a natureza da transação e a tabela de categorias padrão de `references/checklist-documentos.md` — nesse caso, a classificação é proposta e precisa da confirmação do colaborador. Toda correção ou confirmação que o colaborador fizer aqui vira regra nova do mapa, gravada na Etapa 7. Use os comprovantes de pagamento da Etapa 1 (item B) para identificar que tributo/competência cada débito de imposto no extrato está pagando. Monte os lançamentos já prontos no modelo de importação em Excel do Domínio.
+**O que fazer:**
 
-**Onde salvar:** a planilha final, já com os lançamentos deste cliente e desta competência prontos para importar, vai na pasta do cliente — ano do fechamento, em `005_CONTABIL RELATORIOS`, na subpasta do mês (mesmo destino da Etapa 4; se o período for maior que um mês, crie uma pasta própria do período, em vez de uma subpasta mensal). `Meu Drive\1015_ROTINA AUTOMATICA\003 CONTABILIDADE\planilhamodeloimportacaolancamentoscontabeis` é o nome do **modelo/template** do escritório (planilha em branco no formato de importação do Domínio) — use-o como ponto de partida quando precisar, mas o arquivo preenchido com os dados reais do cliente não fica lá, fica em `005_CONTABIL RELATORIOS` do próprio cliente. Confirme com o colaborador que tem permissão de escrita nesses caminhos antes de salvar; se não tiver, entregue o arquivo pronto para ele salvar.
+1. **Leia e confira cada extrato antes de classificar:** saldo inicial + entradas − saídas = saldo final do próprio extrato. Se não fechar, o arquivo está incompleto ou mal exportado — pare e peça outro, não classifique em cima dele.
+2. **Classifique cada linha** com um dos três níveis de origem, sempre registrado:
+   - `regra` — aplicou uma regra `confirmada` do mapa (diga qual);
+   - `proposta` — nenhuma regra cobre; você sugere pela natureza da transação, pelo comprovante ou pela tabela padrão de `references/lancamentos-bancarios.md`. Precisa da confirmação do colaborador;
+   - `pendente` — não dá para classificar com segurança (PIX sem identificação, pagamento que mistura contas sem detalhamento). Não chute.
+3. **Respeite o que as integrações vão lançar (Etapa 4):** o banco normalmente só **baixa** contas que os módulos alimentam — recebimento baixa Clientes (a receita vem do fiscal), pagamento de folha baixa Salários a pagar (a despesa vem da folha), pagamento de tributo baixa o tributo a recolher. Lançar receita, despesa de folha ou tributo pelo banco quando o módulo também lança gera duplicidade. Siga o que o mapa mostra que o cliente faz; na dúvida, pergunte.
+4. **Cuidados que mais geram erro:** transferência entre contas do próprio cliente aparece nos dois extratos e é lançada uma vez só; aplicação e resgate automáticos; estornos (identifique o lançamento original); DARF ou guia que paga mais de um código vira lançamento de várias linhas, com o detalhamento do comprovante — nunca rateio por estimativa.
+5. **Monte dois arquivos por competência**, na pasta do cliente em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`:
+   - **Planilha de revisão** (`CONCILIACAO BANCARIA {NNN} {MM-AAAA}.xlsx`): todas as linhas do extrato, com a classificação, a origem (`regra`/`proposta`/`pendente`) e a observação — é o que o colaborador revisa;
+   - **Planilha de importação** (`IMPORTACAO {NNN} {MM-AAAA}.xlsx`): só as linhas `regra` e `proposta` já confirmadas, **no layout exato do modelo do escritório** (`1015_ROTINA AUTOMATICA\003 CONTABILIDADE\planilhamodeloimportacaolancamentoscontabeis`), com os códigos reduzidos do Domínio que estão no mapa.
+   Confirme com o colaborador que você tem permissão de escrita na pasta antes de salvar; se não tiver, entregue os arquivos prontos para ele salvar.
+6. **Apresente o resumo** por conta bancária: quantidade de linhas por origem, totais de entradas e saídas, e se o saldo final calculado bate com o extrato. Mostre as `proposta` **agrupadas por padrão** (ex.: "12 PIX para FULANO, R$ 5.000 — pró-labore?") para o colaborador confirmar em bloco, e liste as `pendente`.
 
-Se o fluxo do cliente específico usar a importação por TXT de posições fixas (em vez do Excel), avise que a skill `transformar-extrato-dominio` converte um Excel já classificado nesse TXT — não refaça essa lógica aqui, apenas acione-a.
+**Porta de saída da Etapa 3:**
+- todas as `proposta` confirmadas ou corrigidas pelo colaborador;
+- cada `pendente` resolvida, ou lançada na conta transitória/"a regularizar" do cliente (se o mapa tiver uma e o colaborador concordar) e registrada como pendência — nunca jogada em receita ou despesa;
+- a soma da planilha de importação por conta bancária bate com o movimento do extrato da competência (diferença só das `pendente` deixadas de fora, listadas);
+- o colaborador importa a planilha no Domínio e confirma que importou sem erro. Só então siga para a Etapa 4.
+
+Toda confirmação ou correção feita aqui entra na lista de regras novas do mapa, gravadas na Etapa 7.
+
+Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do Excel), acione `transformar-extrato-dominio`, que converte o Excel já classificado nesse TXT — não refaça essa lógica aqui.
 
 ### Etapa 4 — Integrações ao contábil (fiscal, folha, patrimônio)
 
