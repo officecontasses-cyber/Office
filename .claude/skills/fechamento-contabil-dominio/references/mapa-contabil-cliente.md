@@ -28,7 +28,7 @@ Duas tabelas na mesma aba.
 | Integração fiscal no Domínio | Sim · Não | Se não, a receita e os tributos entram por outro caminho (ex.: pelo banco) — diga qual |
 | Contribuinte de ICMS | Sim · Não · Baixada | |
 | Presta / toma serviço (ISS) | Presta · Toma · Ambos · Não | |
-| Folha | Funcionários · Só pró-labore · Não | |
+| Folha | Funcionários · Só pró-labore · Não | Do controle da folha do DP (aba `GATILHO`, quando existir) ou da pasta `003_FOPAG` do cliente |
 | Patrimônio no módulo do Domínio | Sim · Não | Se não, a depreciação (quando houver bens) é lançamento manual |
 | Outros módulos integrados | Ex.: contas a pagar/receber | |
 

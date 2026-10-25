@@ -43,6 +43,35 @@ especificamente. Essa tabela vem de uma fonte confirmada (central de suporte ofi
 assim, confirme com o colaborador se a versão/plano do Domínio da empresa segue a mesma nomenclatura de
 menu, já que o sistema pode variar por módulo contratado.
 
+## Manuais do Domínio para mandar ao colaborador
+
+Mande o link junto com cada integração pedida, para o colaborador consultar se tiver dúvida do que ou de
+como integrar. São soluções da central de suporte do Domínio encontradas por busca; **os títulos abaixo
+vêm do índice da busca — não foi possível abrir as páginas para conferir o conteúdo**. Se um link não
+corresponder ao título, avise e troque aqui.
+
+| Integração / assunto | Solução na central do Domínio |
+|---|---|
+| Fiscal → Contábil: configurar a integração contábil | [Como configurar integração contábil? (881)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=881) |
+| Fiscal: cadastrar acumulador (abas Impostos e Contabilidade) | [Como cadastrar um acumulador? (1156)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1156) |
+| Fiscal: lançamento não gerado ou errado, contas no acumulador, regerar, fornecedor/cliente duplicado | [Perguntas e Respostas – Integração Contábil Escrita Fiscal (5551)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=5551) |
+| Fiscal: integração dos impostos calculados | [Como configurar integração contábil dos impostos calculados? (231)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=231) |
+| Fiscal: integração dos impostos lançados por nota | [Como configurar a integração contábil dos impostos lançados… (2846)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=2846) |
+| Fiscal: integração de serviços prestados | [Como configurar a integração contábil de Serviços Prestados? (10185)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=10185) |
+| Fiscal: integração e baixa de tributos federais | [Como configurar integração contábil e baixar tributos federais… (6703)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=6703) |
+| Folha → Contábil: configurar e gerar a integração | [Como configurar e gerar Integração Contábil? (822)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=822) |
+| Folha: copiar configuração da integração entre empresas | [Exportar integração contábil do módulo folha (4497)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=4497) |
+| Folha: integração por colaborador | [Como fazer Integração Contábil por colaborador? (9272)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=9272) |
+| Folha: integração por centro de custo com rateio | [Como configurar Integração por Centro de Custo com Rateio… (3566)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=3566) |
+| Patrimônio: integração da baixa de bens | [Como configurar a integração contábil da baixa de Bens? (3522)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=3522) |
+| Contabilidade: lançamento contábil manual | [Como fazer Lançamento Contábil? (1278)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1278) |
+| Apuração de impostos (relatórios) | Solução nº 1998 — ver abaixo |
+
+Para a geração da integração do **patrimônio** (depreciação do período), a busca não trouxe um título
+específico confirmado: oriente pelo caminho geral (gerar lançamentos contábeis nos parâmetros do módulo,
+conta patrimonial no cadastro do bem, processo de integração contábil da competência) e peça ao
+colaborador para conferir na central do Domínio.
+
 ## Por que a ordem importa
 
 Os módulos fiscal, folha de pagamento e patrimônio geram lançamentos que **alimentam** o contábil — se o
@@ -65,6 +94,15 @@ com reintegração — não com lançamento manual no contábil.
 
 ### 1. Fiscal → Contábil
 Alimenta: receita bruta, tributos sobre receita e compras, tributos a recuperar, retenções.
+
+**Acumuladores.** Cada acumulador define como um tipo de documento fiscal é escriturado; a aba
+Contabilidade dele traz as contas contábeis dos lançamentos. Antes ou durante a integração:
+- todo acumulador usado no período (inclusive um criado no mês) tem as contas contábeis preenchidas,
+  coerentes com as contas do mapa do cliente;
+- nota sem lançamento, ou lançamento em conta errada, quase sempre é acumulador sem conta ou com conta
+  errada: ajuste o acumulador e regere os lançamentos (solução 5551), em vez de corrigir no contábil;
+- o acumulador é configuração do módulo fiscal: combine com o fiscal antes de alterar um acumulador que
+  ele também usa, e registre o ajuste no `Perfil` do mapa (Etapa 7).
 
 Conferir em todos os regimes:
 - Receita do razão no período = relatório de saídas + serviços prestados (sem notas faltando, duplicadas
@@ -90,12 +128,26 @@ comprovantes e a situação fiscal do pacote da Etapa 1.
 Alimenta: despesa de salários e pró-labore, encargos patronais (INSS, FGTS), provisões (férias, 13º
 quando aplicável), retenções a recolher (INSS, IRRF).
 
+**De onde vêm os dados da folha — o contábil não salva relatórios da folha:**
+- **Planilha de controle da folha do DP, aba `GATILHO`** — ainda em criação pelo escritório. Quando
+  existir, ela diz por cliente se há folha (funcionários / só pró-labore / não) e se a folha da
+  competência está fechada; registre aqui o nome da planilha e as colunas quando ficar pronta. Até lá,
+  use o Drive e o `Perfil` do mapa.
+- **Pasta do cliente `{ano}/003_FOPAG/{MM_MÊS}`**, onde o DP salva a folha do mês. Nos clientes vistos,
+  ela tem "Relação da Folha por Empregado {MMAAAA}" (.xls e .pdf), "Rateio Folha por Empregado
+  {MMAAAA}", "FGTS {MMAAAA}" e "Detalhes Trabalhadores FGTS {MMAAAA}" — os nomes podem variar por
+  cliente. Leia os totais (proventos, descontos, líquido, INSS, IRRF, FGTS); não repita no chat dados
+  pessoais de empregados.
+- Pasta `003_FOPAG` vazia para a competência de um cliente que tem folha: pergunte ao DP antes de
+  integrar — a folha pode ainda não estar fechada.
+
 Conferir após a integração:
-- Total líquido da folha integrada = o que foi pago no extrato (cruza com a Etapa 3): depois do
-  pagamento, salários e pró-labore a pagar ficam zerados (ou com o saldo que se explica).
-- Encargos patronais e provisões (férias/13º) foram gerados, não só o líquido da folha. No Simples, a
-  parte patronal depende do anexo (há anexos em que o INSS patronal é recolhido fora do DAS) — confirme
-  no `Perfil`/com o colaborador em vez de presumir.
+- Total líquido da folha integrada = líquido da relação da folha do DP = o que foi pago no extrato
+  (cruza com a Etapa 3): depois do pagamento, salários e pró-labore a pagar ficam zerados (ou com o saldo
+  que se explica).
+- Encargos patronais e provisões (férias/13º) foram gerados, não só o líquido; FGTS do razão = guia de
+  FGTS do DP. No Simples, a parte patronal depende do anexo (há anexos em que o INSS patronal é recolhido
+  fora do DAS) — confirme no `Perfil`/com o colaborador em vez de presumir.
 - Retenções (INSS, IRRF) estão em obrigação a recolher, com o valor que será pago no vencimento.
 - Cliente só com pró-labore: o módulo gera o pró-labore e o INSS/IRRF retidos — confira só isso.
 
@@ -131,9 +183,13 @@ para cobrir diferença de integração.
 
 ## Checklist de saída da Etapa 4
 
-- [ ] Lista de módulos do cliente montada (com o motivo de cada módulo fora da lista)
+- [ ] Lista de integrações do cliente enviada ao colaborador, com o link do manual de cada uma (e o
+  motivo de cada módulo fora da lista)
+- [ ] Relatórios do fiscal do item F da Etapa 1 disponíveis (pedidos agora, se tinham ficado pendentes)
+- [ ] Acumuladores do período com contas contábeis; ajustes combinados com o fiscal
 - [ ] Fiscal integrado e conferido: receita = saídas + serviços, entradas, retenções e tributos do regime
-- [ ] Folha integrada e conferida (líquido bate com o banco, encargos e provisões gerados)
+- [ ] Folha integrada e conferida com os dados do DP (controle da folha / `003_FOPAG`): líquido bate com
+  o banco, encargos, FGTS e provisões gerados
 - [ ] Patrimônio integrado e conferido (bens do período cadastrados antes da geração, depreciação plausível)
 - [ ] Qualquer outro módulo usado pelo cliente também integrado
 - [ ] Divergências corrigidas no módulo e reconferidas, ou registradas como pendência aceita
