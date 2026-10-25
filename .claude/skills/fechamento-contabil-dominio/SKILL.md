@@ -181,25 +181,40 @@ Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do
 
 ### Etapa 6 — Tributos do regime e resultado do período
 
-**O que fazer:** com tudo conciliado, confira (ou apure, quando for o caso) os tributos sobre receita e lucro do regime do cliente e feche o resultado do período. O caminho depende do regime confirmado no início:
+**Usa:** o balancete final da Etapa 5 (conciliado), a apuração de impostos do Domínio e os comprovantes do pacote da Etapa 1 (itens F e B), a aba `Apuração` do mapa contábil do cliente (tributos e forma de apuração dos meses anteriores), a GATILHO do fiscal (o que o fiscal já fechou e o que está esperando a contabilidade) e a aba Lucros distribuídos do artefato Controle Contábil.
+
+**Objetivo:** conferir (ou apurar, quando for papel da contabilidade) os tributos sobre receita e lucro do regime do cliente e fechar o resultado do período. Quem apura e emite a guia dos tributos do mês é, em regra, o fiscal; o papel da contabilidade aqui é **trazer o que só ela vê** (receitas e despesas que não passam pelo módulo fiscal, o resultado contábil) e, no IRPJ/CSLL que depende do balanço ou do trimestre, **liberar a apuração ao fiscal**.
+
+**O que fazer:**
+
+1. **Para cada tributo do regime**, monte a conferência: base no contábil × base na apuração do fiscal × valor apurado × provisionado no contábil × pago (comprovante) — com a diferença e o porquê. O caminho por regime:
 
 | Regime | O que esta etapa faz | Apoio |
 |---|---|---|
-| **Simples Nacional** | Confere o DAS: provisão contábil × apuração do Simples (relatório próprio do Domínio ou PGDAS-D) × comprovante de pagamento. Divergência de receita entre contábil e PGDAS-D é achado relevante | `conferir-apuracao-simples-nacional`; `calcular-das-simples-nacional` se precisar recalcular |
-| **Lucro Presumido** | Confere PIS/COFINS cumulativos do mês e, nos meses de fechamento de trimestre, IRPJ/CSLL trimestrais: provisão contábil × apuração do Domínio × DARF | `apuracao-lucro-presumido`; `calculo-pis-cofins-cumulativo` |
-| **Lucro Real — estimativa mensal** | Confere a estimativa de IRPJ/CSLL e o PIS/COFINS não cumulativo: provisão × apuração × DARF | `apuracao-lucro-real`; `calculo-pis-cofins-nao-cumulativo` |
-| **Lucro Real — balanço de suspensão/redução** | Gera o levantamento do balanço acumulado e apura IRPJ/CSLL: base de cálculo, adições e exclusões, compensação de prejuízo fiscal/base negativa, e se leva à **suspensão** (zero a pagar) ou **redução** (paga menos que a estimativa) | `references/apuracao-irpj-csll-balanco-suspensao.md`; `apuracao-lucro-real` |
+| **Simples Nacional** | Confere o DAS: receita do contábil × receita declarada na apuração do Simples (relatório do Domínio ou PGDAS-D) × provisão × comprovante. Receita no contábil que não está no PGDAS-D é o achado mais importante. Se o anexo do cliente depende do fator R, confira a folha usada com a folha do DP (regra e percentual a confirmar no Lefisc) | `conferir-apuracao-simples-nacional`; `calcular-das-simples-nacional` se precisar recalcular |
+| **Lucro Presumido** | Confere PIS/COFINS cumulativos do mês e, no mês de fechamento de cada trimestre, IRPJ/CSLL trimestrais: base × presunção, mais as receitas que entram direto na base, conforme a regra vigente | `apuracao-lucro-presumido`; `calculo-pis-cofins-cumulativo` |
+| **Lucro Real — estimativa mensal** | Confere a estimativa de IRPJ/CSLL e o PIS/COFINS não cumulativo (débitos e créditos) | `apuracao-lucro-real`; `calculo-pis-cofins-nao-cumulativo` |
+| **Lucro Real — balanço de suspensão/redução** | Gera o levantamento do balanço acumulado e apura IRPJ/CSLL: base, adições e exclusões, compensação de prejuízo fiscal/base negativa, e se leva à **suspensão** (zero a pagar) ou **redução** (paga menos que a estimativa) | `references/apuracao-irpj-csll-balanco-suspensao.md`; `apuracao-lucro-real` |
+
+2. **Receitas e despesas que não passam pelo fiscal:** rendimento de aplicação, juros recebidos, aluguéis, ganho na venda de bem, recuperação de despesa e similares aparecem no contábil e podem não estar na apuração do fiscal. Liste as do período e confirme no Lefisc como cada uma entra na base de cada tributo do regime do cliente — não aplique regra de memória. O que estiver faltando na apuração do fiscal vira **aviso ao fiscal** (ver passo 4), não guia emitida por você.
+3. **IRPJ/CSLL que depende da contabilidade** (Real, e Presumido no fechamento do trimestre quando o escritório apura pela contabilidade): neste escritório, o DARF de IRPJ/CSLL fica na `Controle_Fiscal` como pendente "aguardando a contabilidade liberar a apuração". Feche a apuração, com cada valor que dependa de parâmetro legal ainda não confirmado no Lefisc marcado como preliminar, e prepare a **liberação ao fiscal**: competência, tributo, base, valor, forma (estimativa, suspensão ou redução) e a fonte legal de cada ajuste. O vencimento é o que está na `Controle_Fiscal` — não invente data.
+4. **Divergência com a apuração do fiscal** (receita fora do PGDAS-D, receita financeira fora da base, crédito de PIS/COFINS sem origem): registre no papel de trabalho e redija o aviso ao fiscal com o valor, a competência e o porquê. Quem retifica a apuração e a declaração é o fiscal; você não emite guia nem retifica declaração.
+5. **Resultado do período:** lucro ou prejuízo contábil do mês e do acumulado do ano. **Lucros distribuídos** (aba Lucros distribuídos do artefato): confira se o resultado contábil acumulado os suporta. A regra de isenção e de retenção na fonte sobre lucros e dividendos depende do regime e teve mudança legal recente — confirme a regra vigente no Lefisc antes de concluir; não aplique regra de memória. Distribuição acima do que o resultado suporta é achado para o revisor.
+6. **Registre tudo numa aba `Tributos` do papel de trabalho** `CONCILIACAO {NNN} {MM-AAAA}.xlsx` (Etapa 5): uma linha por tributo, com base contábil, base do fiscal, apurado, provisionado, pago, diferença, status (`Conferido`, `Divergente — avisado ao fiscal`, `Liberado ao fiscal`, `Pendente`) e a fonte legal confirmada de cada ponto. Assim o revisor vê conciliação e tributos no mesmo arquivo.
 
 Em todos os regimes:
-- Os tributos apurados e pagos nos meses anteriores (e, no Real, a forma de apuração de cada mês) vêm da aba `Apuração` do mapa contábil do cliente (Etapa 2) — confira os valores do mês com os comprovantes do pacote da Etapa 1 antes de usá-los.
+- Os tributos e a forma de apuração dos meses anteriores vêm da aba `Apuração` do mapa (Etapa 2) — confira com os comprovantes do pacote antes de usá-los.
 - Não recalcule aqui a lógica que as skills de apoio já têm: acione-as. O papel desta etapa é levar os insumos conciliados (Etapas 1-5) até a conclusão, com cada ponto legal fundamentado (lei + artigo confirmados no Lefisc, por força da regra de honestidade acima).
-- **Lucros distribuídos no período** (aba Lucros distribuídos do artefato Controle Contábil, que lê a planilha DIST LUCROS): confira se o resultado contábil do período os suporta. A regra de isenção e de retenção na fonte sobre lucros e dividendos depende do regime e teve mudança legal recente — confirme a regra vigente no Lefisc antes de concluir; não aplique regra de memória.
 
-**Apresente ao colaborador:** o resultado do período (lucro ou prejuízo contábil), a conferência de cada tributo (apurado × provisionado × pago, com a divergência e o porquê) e, no Real com balanço, a base de cálculo, cada adição/exclusão com a fonte legal, o prejuízo fiscal compensado (respeitando o limite de 30%, a confirmar a vigência no Lefisc), o valor final de IRPJ/CSLL (ou a conclusão de suspensão) e os DARFs quando houver valor a recolher.
+**Porta de saída da Etapa 6:**
+- cada tributo do regime com status na aba `Tributos` (nenhum `Divergente` sem aviso ao fiscal redigido);
+- IRPJ/CSLL que depende da contabilidade com a liberação ao fiscal pronta — ou com o motivo de ainda não estar;
+- resultado do período e lucros distribuídos conferidos;
+- o colaborador revisou os avisos e a liberação ao fiscal antes de enviar. Só então siga para a Etapa 7.
 
 ### Etapa 7 — Encerramento e próximos passos
 
-**O que fazer:** resuma o fechamento (o que foi conciliado, o que foi integrado, o resultado da apuração), liste pendências e riscos (documentos do pacote que faltaram, divergências aceitas sem solução definitiva, parcelamentos/débitos ativos e certidões positivas identificados na Etapa 1) e indique o próximo passo objetivo a executar no Domínio ou no período seguinte.
+**O que fazer:** resuma o fechamento (o que foi conciliado, o que foi integrado, o resultado da apuração), confirme que os avisos e a liberação de IRPJ/CSLL ao fiscal (Etapa 6) foram enviados, liste pendências e riscos (documentos do pacote que faltaram, divergências aceitas sem solução definitiva, parcelamentos/débitos ativos e certidões positivas identificados na Etapa 1) e indique o próximo passo objetivo a executar no Domínio ou no período seguinte.
 
 **Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, módulos e lançamentos manuais recorrentes novos no `Perfil` (Etapa 4), saldos finais da competência fechada (que serão a abertura do próximo mês), os tributos apurados e pagos do mês na aba `Apuração` (no Real, também a forma: estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
 

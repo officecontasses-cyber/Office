@@ -64,7 +64,8 @@ linha por conta com saldo ou movimento:
 | Ação | O que fazer e onde (Etapa 3, Etapa 4, AJUSTES, cliente) |
 
 Uma aba `Resultado` com as variações relevantes do período e a explicação de cada uma, e uma aba
-`Rodadas` registrando cada rodada de correção (data, contas reconferidas, o que mudou).
+`Rodadas` registrando cada rodada de correção (data, contas reconferidas, o que mudou). A Etapa 6
+acrescenta a aba `Tributos` no mesmo arquivo.
 
 `Sem suporte` não é o mesmo que conciliada: é conta cujo saldo ninguém consegue provar com documento —
 vira pendência para o revisor ver.
