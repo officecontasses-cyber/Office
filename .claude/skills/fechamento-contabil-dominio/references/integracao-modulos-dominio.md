@@ -37,8 +37,8 @@ próprio no sistema:
 | 4, 5, 17, 19 — PIS e COFINS (cumulativo ou não-cumulativo) | `Relatórios > Acompanhamentos > Informativos de PIS e COFINS`; para conferência detalhada de créditos e débitos (EFD-Contribuições): `Movimentos > Apuração de PIS/COFINS` |
 | 38, 67, 68 — Retenções e substituição tributária (inclusive retenção de órgão público) | `Relatórios > Acompanhamentos > Retenções` |
 
-Um cliente que apure PIS/COFINS (como a maioria dos clientes deste perfil, no regime não-cumulativo do
-Real) **não vai aparecer no Demonstrativo geral** — use o caminho de PIS/COFINS acima para esse tributo
+Um cliente que apure PIS/COFINS (Lucro Presumido, no cumulativo, ou Lucro Real, no não cumulativo) **não
+vai aparecer no Demonstrativo geral** — use o caminho de PIS/COFINS acima para esse tributo
 especificamente. Essa tabela vem de uma fonte confirmada (central de suporte oficial do Domínio); mesmo
 assim, confirme com o colaborador se a versão/plano do Domínio da empresa segue a mesma nomenclatura de
 menu, já que o sistema pode variar por módulo contratado.

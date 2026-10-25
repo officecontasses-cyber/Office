@@ -1,13 +1,15 @@
 ---
-name: fechamento-lucro-real-dominio
-description: Conduz, por checklist e etapa por etapa no chat, o fechamento contábil mensal (ou de várias competências) de uma empresa optante pelo Lucro Real que apura IRPJ e CSLL por levantamento de balanço (suspensão ou redução), começando pela preparação do pacote de documentos (extratos bancários, comprovantes de pagamento, situação fiscal na Receita Federal, certidões/situação de débitos estadual e municipal, relatórios do Domínio), seguida de importação de lançamentos bancários, integração ao Domínio Sistemas (Thomson Reuters/Domínio) dos módulos fiscal, folha de pagamento e patrimônio, conciliação conta a conta e apuração final de IRPJ/CSLL com base legal pesquisada no Lefisc. O colaborador aciona informando o número do cliente na carteira e a(s) competência(s) — ex.: "fechamento 238 09/2026", "fechar 133 jul a set/2026". Use sempre que o usuário pedir para "fechar" um cliente do Lucro Real, mencionar "levantamento de balanço", "balanço de suspensão", "balanço de redução", "apuração por estimativa com suspensão/redução", "fechamento no Domínio", "importar lançamentos no Domínio", "integrar fiscal/folha/patrimônio no Domínio", ou pedir para orquestrar o fechamento completo de um cliente do Real do início ao fim — mesmo sem citar todos esses termos. NÃO use para Simples Nacional ou Lucro Presumido (outro regime, outro fluxo), nem para Real que apura só pela estimativa mensal pura, sem balanço de suspensão/redução (nesse caso a apuração é trimestral/anual — ver `apuracao-lucro-real`).
+name: fechamento-contabil-dominio
+description: Conduz, por checklist e etapa por etapa no chat, o fechamento contábil mensal (ou de várias competências) de qualquer cliente do escritório — Simples Nacional, Lucro Presumido ou Lucro Real (estimativa ou balanço de suspensão/redução) — no Domínio Sistemas (Thomson Reuters/Domínio). Começa pela preparação do pacote de documentos (extratos bancários, comprovantes de pagamento, situação fiscal na Receita Federal, certidões/situação de débitos estadual e municipal, relatórios do Domínio), monta/atualiza o mapa contábil do cliente, gera os lançamentos bancários para importar, orienta a integração dos módulos fiscal, folha e patrimônio, concilia conta a conta e confere/apura os tributos do regime, com base legal pesquisada no Lefisc. O colaborador aciona informando o número do cliente na carteira e a(s) competência(s) — ex.: "fechamento 238 09/2026", "fechar 016 jul a set/2026". Use sempre que o usuário pedir para "fechar" (contábil) um cliente, falar em "fechamento contábil", "fechamento no Domínio", "importar lançamentos no Domínio", "integrar fiscal/folha/patrimônio no Domínio", "levantamento de balanço", "balanço de suspensão/redução", ou pedir para orquestrar o fechamento contábil de um cliente do início ao fim — mesmo sem citar todos esses termos. NÃO use para o fechamento fiscal (conferência municipal/estadual e registro na Controle_Fiscal — ver `fechamento-completo-servicos`), para MEI (`apuracao-mei`) nem para cálculo isolado de um tributo sem fechamento contábil.
 ---
 
-# Fechamento mensal — Lucro Real (balanço de suspensão/redução) no Domínio
+# Fechamento contábil mensal no Domínio — todos os regimes
 
 ## Papel desta skill
 
-Você atua como contador(a) sênior conduzindo, **no chat e por checklist**, o fechamento contábil de uma empresa do Lucro Real que apura IRPJ/CSLL por **levantamento de balanço de suspensão ou redução** (Lei 8.981/1995 art. 35; IN RFB 1.700/2017 art. 47 — confirme a redação vigente no Lefisc antes de citar, ver regra de fonte abaixo). Isso é diferente de uma estimativa mensal pura: aqui o cliente levanta um balanço (acumulado desde janeiro, ou desde o início de apuração) para provar que o imposto devido é menor do que a estimativa mensal — e só paga (ou não paga nada) com base nesse balanço.
+Você atua como contador(a) sênior conduzindo, **no chat e por checklist**, o fechamento contábil de qualquer cliente da carteira do escritório: os clientes levantados no artefato **Controle Contábil** (https://claude.ai/artifact/JC1KXPzY6goap6Ci9PcEzN), que vêm das planilhas do fiscal — `Controle_Fiscal` (Lucro Presumido e Lucro Real) e `SIMPLES 2026` (Simples Nacional). As etapas são as mesmas para todos os regimes; o que muda por regime está marcado onde importa — principalmente na Etapa 6 (tributos do regime).
+
+O fechamento contábil vem **depois** do fechamento fiscal: o fiscal fecha e libera a competência (aba `GATILHO` das planilhas), e então o contábil fecha.
 
 Esta skill é **orquestradora**: ela mantém a ordem das etapas, os pontos de parada para validação com o colaborador, e o estado do fechamento — mas não duplica a lógica de skills especializadas já existentes no catálogo. Em cada etapa abaixo, quando houver uma skill mais específica, acione-a (via Skill tool) e siga as regras dela; esta skill define a ordem, o que pedir e onde guardar o resultado.
 
@@ -24,11 +26,16 @@ Nunca apresente uma base legal, uma alíquota, um prazo ou uma norma contábil d
 
 ## Como o colaborador aciona
 
-O colaborador informa **o número do cliente na carteira + a competência** (ou mais de uma). Exemplos: "fechamento 238 09/2026", "fechar 133 de julho a setembro/2026", "238 competências 07, 08 e 09/2026".
+O colaborador informa **o número do cliente na carteira + a competência** (ou mais de uma). Exemplos: "fechamento 238 09/2026", "fechar 016 de julho a setembro/2026", "238 competências 07, 08 e 09/2026".
 
-1. **Leia o número e a(s) competência(s)** da mensagem. Se faltar a competência, pergunte só isso. Para várias competências, trate o período como um bloco (o balanço de suspensão/redução é acumulado de qualquer forma), mas peça e confira os documentos **mês a mês**.
+1. **Leia o número e a(s) competência(s)** da mensagem. Se faltar a competência, pergunte só isso. Para várias competências, trate o período como um bloco, mas peça e confira os documentos **mês a mês**.
 2. **Localize você mesmo a pasta do cliente no Drive** pelo número — as pastas seguem o padrão `NNN_NOME DO CLIENTE` (ex.: "238" encontra `238_REAT HOLDING`). Só pergunte a pasta se a busca não achar nada ou achar mais de um resultado plausível.
-3. **Confirme o regime e a liberação do fiscal** na planilha `Controle_Fiscal` do Drive: a 1ª aba, `GATILHO`, tem por cliente o Regime e, por competência, se o fiscal liberou (`SIM` / `SEM PENDÊNCIA` = liberado; `NÃO` = há obrigação fiscal pendente). Se o regime não for Lucro Real com balanço de suspensão/redução, pare e direcione (ver "Quando escalar"). Se a competência estiver `NÃO` ou vazia, avise o colaborador e pergunte se segue mesmo assim — o fechamento contábil pode começar, mas os números fiscais ainda podem mudar.
+3. **Confirme o regime e a liberação do fiscal** na 1ª aba (`GATILHO`) das planilhas do fiscal no Drive — as mesmas que alimentam o artefato Controle Contábil:
+   - `Controle_Fiscal` → clientes do **Lucro Presumido** e do **Lucro Real** (coluna Regime). Liberação por competência: `SIM` ou `SEM PENDÊNCIA` = liberado; `NÃO` = há obrigação fiscal pendente.
+   - `SIMPLES 2026` → clientes do **Simples Nacional**. Liberação por competência: `SIM` = liberado; `CONFERIR` = marcado como fechado, mas com obrigação pendente no bloco; `PARCIAL` = DAS enviado, fechamento ainda não marcado; `NÃO` = pendente.
+   - Se o número não estiver em nenhuma das duas, o cliente não está no controle (pode ser ex-cliente ou cliente novo): pergunte ao colaborador antes de seguir.
+   - Para o **Lucro Real**, a planilha não diz se a apuração é por estimativa ou por balanço de suspensão/redução: veja na aba `Apuração` do mapa contábil do cliente (Etapa 2) ou pergunte.
+   - Se a competência não estiver liberada (ou estiver vazia), avise o colaborador e pergunte se segue mesmo assim — o fechamento contábil pode começar, mas os números fiscais ainda podem mudar.
 4. Responda em **uma mensagem curta de confirmação** (cliente, regime, competência(s), status do fiscal) e já emende a Etapa 1.
 
 ## O checklist (7 etapas, sempre nesta ordem)
@@ -46,11 +53,11 @@ Nunca pule uma etapa nem avance sem o que a etapa anterior entregou — cada eta
 | # | Documento | Origem | Observação |
 |---|---|---|---|
 | A | **Extratos bancários** de todas as contas e aplicações, de cada competência | Banco / cliente | **CSV de preferência** (é o que você lê com mais segurança); OFX aceito; PDF só se não houver outro |
-| B | **Comprovantes de pagamento** do período (DARF, DAS, GPS/DCTFWeb, parcelamentos) | Cliente; se o cliente **não enviou**, o colaborador baixa na **Receita Federal (e-CAC)** | A consulta na Receita costuma mostrar tudo o que foi pago no CNPJ, inclusive o que o cliente pagou sem avisar |
+| B | **Comprovantes de pagamento** do período (DARF, DAS, DCTFWeb/GPS, guias estaduais e municipais, parcelamentos) | Cliente; se o cliente **não enviou**, o colaborador baixa na **Receita Federal (e-CAC)** | A consulta na Receita costuma mostrar tudo o que foi pago no CNPJ, inclusive o que o cliente pagou sem avisar |
 | C | **Situação fiscal federal atualizada** — relatório de situação fiscal emitido agora, para este fechamento | **Receita Federal (e-CAC)** — passo **manual** do colaborador | Não serve relatório antigo: tem que ser emitido durante este fechamento |
 | D | **Certidão ou situação de débitos estadual** | Receita Estadual do cliente (ou export do SIEG, se recente) | Mesmo critério de data do item C |
 | E | **Certidão ou situação de débitos municipal** | Prefeitura do cliente | No SIEG a municipal costuma ser só para São Paulo — fora de SP é manual |
-| F | **Relatórios do Domínio**: razão (do início do último ano-calendário até a competência), balancete, plano de contas, relatórios de entradas, saídas, serviços prestados/tomados e apuração de impostos do período | Domínio — exportado pelo colaborador | Caminhos confirmados da apuração de impostos em `references/integracao-modulos-dominio.md` |
+| F | **Relatórios do Domínio**: razão (do início do último ano-calendário até a competência), balancete, plano de contas, relatórios de entradas, saídas, serviços prestados/tomados e apuração de impostos do período | Domínio — exportado pelo colaborador | Apuração conforme o regime (Simples, PIS/COFINS e demais têm relatórios próprios) — caminhos confirmados em `references/integracao-modulos-dominio.md` |
 | G | **Documentos de conciliação enviados pelo cliente** (notas, contratos de empréstimo, recibos, comprovantes não tributários) | Cliente | O que o cliente não enviou vira pendência com o cliente — a Receita não substitui esses |
 
 Onde salvar, como nomear e o que cada item precisa conter estão em `references/checklist-documentos.md`. Peça que o colaborador responda **"salvei"** (ou diga o que não conseguiu) quando terminar.
@@ -74,13 +81,13 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
 **O que fazer:**
 
 1. **Procure o mapa** em `{ano}/005_CONTABIL RELATORIOS/` do cliente; se não houver no ano atual, procure no ano anterior (no primeiro fechamento do ano ele é copiado de lá).
-2. **Se não existe (primeiro fechamento do cliente nesta skill):** monte o mapa a partir do razão (do início do último ano-calendário até a competência), do balancete e do plano de contas — as cinco partes: contas em uso, regras de classificação, saldos de abertura e pendências herdadas, dados do Lucro Real e histórico do mapa.
-3. **Se já existe:** leia o mapa e atualize só o que mudou entre o último fechamento registrado nele e a competência atual — contas novas, regras que deixaram de valer ou apareceram, saldos de abertura do último mês fechado, estimativas pagas. Se o razão do período contradisser uma regra do mapa, o razão vence: aponte a mudança em vez de seguir a regra antiga.
+2. **Se não existe (primeiro fechamento do cliente nesta skill):** monte o mapa a partir do razão (do início do último ano-calendário até a competência), do balancete e do plano de contas — as cinco partes: contas em uso, regras de classificação, saldos de abertura e pendências herdadas, apuração dos tributos do regime e histórico do mapa.
+3. **Se já existe:** leia o mapa e atualize só o que mudou entre o último fechamento registrado nele e a competência atual — contas novas, regras que deixaram de valer ou apareceram, saldos de abertura do último mês fechado, tributos apurados e pagos. Se o razão do período contradisser uma regra do mapa, o razão vence: aponte a mudança em vez de seguir a regra antiga.
 4. **Cruze com o pacote da Etapa 1:**
    - toda conta de banco/aplicação com saldo ou movimento no razão tem extrato no pacote? Se não tiver, volte e peça;
    - o saldo inicial de cada extrato bate com o saldo de abertura do mapa?
    - todo parcelamento e débito da situação fiscal (itens C, D, E) tem conta correspondente no passivo, e vice-versa?
-5. **Apresente um resumo curto** ao colaborador: contas novas, regras **propostas** (as que você deduziu do razão e ele ainda não confirmou), pendências herdadas (contas transitórias ou "a regularizar" com saldo, saldos invertidos), divergências dos cruzamentos e as estimativas de IRPJ/CSLL do ano.
+5. **Apresente um resumo curto** ao colaborador: contas novas, regras **propostas** (as que você deduziu do razão e ele ainda não confirmou), pendências herdadas (contas transitórias ou "a regularizar" com saldo, saldos invertidos), divergências dos cruzamentos e os tributos do regime apurados e pagos no ano.
 
 **Porta de saída da Etapa 2:** o colaborador confirma ou corrige as regras propostas. Só então salve o mapa (regras confirmadas passam a `confirmada`, com data) e siga para a Etapa 3. Divergência dos cruzamentos que não for resolvida agora vira pendência registrada, como na Etapa 1.
 
@@ -98,7 +105,7 @@ Se o fluxo do cliente específico usar a importação por TXT de posições fixa
 
 ### Etapa 4 — Integrações ao contábil (fiscal, folha, patrimônio)
 
-**O que fazer:** quem efetua a integração no Domínio é o colaborador — você não opera o sistema diretamente, orienta. Depois da importação bancária (Etapa 3) e com o pacote da Etapa 1 em mãos (incluindo os relatórios de entradas, saídas, serviços e apuração de impostos), oriente a integração dos módulos que alimentam o contábil no Domínio — fiscal, folha de pagamento, patrimônio e demais módulos aplicáveis. Siga a ordem e os pontos de conferência descritos em `references/integracao-modulos-dominio.md`.
+**O que fazer:** quem efetua a integração no Domínio é o colaborador — você não opera o sistema diretamente, orienta. Depois da importação bancária (Etapa 3) e com o pacote da Etapa 1 em mãos (incluindo os relatórios de entradas, saídas, serviços e apuração de impostos), oriente a integração dos módulos que alimentam o contábil no Domínio — fiscal, folha de pagamento (quando o cliente tiver folha ou pró-labore), patrimônio (quando tiver bens) e demais módulos aplicáveis. Siga a ordem e os pontos de conferência descritos em `references/integracao-modulos-dominio.md`.
 
 Use os relatórios de entradas/saídas/serviços/apuração de impostos como referência de conferência: depois que o colaborador confirmar que a integração foi feita no Domínio, confira se o que o razão/balancete resultante mostra (receita, tributos a recolher/recuperar) bate com o que esses relatórios já indicavam — uma divergência aqui é a chance de pegar um erro de integração antes da conciliação formal da Etapa 5, não depois.
 
@@ -121,23 +128,33 @@ Para a depreciação/baixa de bens do patrimônio, acione `ativo-imobilizado-dep
 - Fornecedores → `conciliacao-fornecedores`; Clientes → `conciliacao-clientes`; Cartões/credenciadora → `conciliacao-cartoes-credenciadora`, quando aplicável ao cliente.
 - Integridade e coerência geral do balancete (D=C, saldo invertido, variações atípicas) → `balancete-analise`.
 
-Só avance para a Etapa 6 quando as divergências relevantes estiverem resolvidas ou claramente registradas como pendência aceita pelo colaborador — nunca apure IRPJ/CSLL sobre um balancete ainda não conciliado.
+Só avance para a Etapa 6 quando as divergências relevantes estiverem resolvidas ou claramente registradas como pendência aceita pelo colaborador — nunca apure ou confira tributos sobre um balancete ainda não conciliado.
 
-### Etapa 6 — Apuração do IRPJ e da CSLL (levantamento de balanço)
+### Etapa 6 — Tributos do regime e resultado do período
 
-**O que fazer:** com tudo conciliado e ajustado, gere o levantamento do balanço (acumulado do período de apuração) e apure IRPJ e CSLL a recolher ou a compensar: base de cálculo, adições e exclusões, compensação de prejuízo fiscal/base negativa de CSLL quando aplicável, e se o resultado leva à **suspensão** (zero a pagar) ou **redução** (paga menos que a estimativa). Veja a mecânica detalhada, a tabela de adições/exclusões mais comuns e o que confirmar no Lefisc em `references/apuracao-irpj-csll-balanco-suspensao.md`.
+**O que fazer:** com tudo conciliado, confira (ou apure, quando for o caso) os tributos sobre receita e lucro do regime do cliente e feche o resultado do período. O caminho depende do regime confirmado no início:
 
-Para a mecânica de cálculo e para o controle de prejuízo fiscal na Parte B, acione `apuracao-lucro-real` em vez de recalcular essa lógica nesta skill — o papel desta etapa é reunir os insumos conciliados (Etapas 1-5) e levar o resultado à decisão de suspender/reduzir, com cada ajuste fundamentado (lei + artigo confirmados no Lefisc, por força da regra de honestidade acima).
+| Regime | O que esta etapa faz | Apoio |
+|---|---|---|
+| **Simples Nacional** | Confere o DAS: provisão contábil × apuração do Simples (relatório próprio do Domínio ou PGDAS-D) × comprovante de pagamento. Divergência de receita entre contábil e PGDAS-D é achado relevante | `conferir-apuracao-simples-nacional`; `calcular-das-simples-nacional` se precisar recalcular |
+| **Lucro Presumido** | Confere PIS/COFINS cumulativos do mês e, nos meses de fechamento de trimestre, IRPJ/CSLL trimestrais: provisão contábil × apuração do Domínio × DARF | `apuracao-lucro-presumido`; `calculo-pis-cofins-cumulativo` |
+| **Lucro Real — estimativa mensal** | Confere a estimativa de IRPJ/CSLL e o PIS/COFINS não cumulativo: provisão × apuração × DARF | `apuracao-lucro-real`; `calculo-pis-cofins-nao-cumulativo` |
+| **Lucro Real — balanço de suspensão/redução** | Gera o levantamento do balanço acumulado e apura IRPJ/CSLL: base de cálculo, adições e exclusões, compensação de prejuízo fiscal/base negativa, e se leva à **suspensão** (zero a pagar) ou **redução** (paga menos que a estimativa) | `references/apuracao-irpj-csll-balanco-suspensao.md`; `apuracao-lucro-real` |
 
-As estimativas já pagas no ano e a forma de apuração dos meses anteriores (estimativa, suspensão ou redução) vêm da aba `Lucro Real` do mapa contábil do cliente (Etapa 2) — confira os valores do mês com os comprovantes do pacote da Etapa 1 antes de usá-los.
+Em todos os regimes:
+- Os tributos apurados e pagos nos meses anteriores (e, no Real, a forma de apuração de cada mês) vêm da aba `Apuração` do mapa contábil do cliente (Etapa 2) — confira os valores do mês com os comprovantes do pacote da Etapa 1 antes de usá-los.
+- Não recalcule aqui a lógica que as skills de apoio já têm: acione-as. O papel desta etapa é levar os insumos conciliados (Etapas 1-5) até a conclusão, com cada ponto legal fundamentado (lei + artigo confirmados no Lefisc, por força da regra de honestidade acima).
+- **Lucros distribuídos no período** (aba Lucros distribuídos do artefato Controle Contábil, que lê a planilha DIST LUCROS): confira se o resultado contábil do período os suporta. A regra de isenção e de retenção na fonte sobre lucros e dividendos depende do regime e teve mudança legal recente — confirme a regra vigente no Lefisc antes de concluir; não aplique regra de memória.
 
-Apresente ao colaborador: a base de cálculo, cada adição/exclusão com a fonte legal, o prejuízo fiscal compensado (respeitando o limite de 30%, a confirmar a vigência no Lefisc), o valor final de IRPJ/CSLL (ou a conclusão de suspensão) e os DARFs quando houver valor a recolher.
+**Apresente ao colaborador:** o resultado do período (lucro ou prejuízo contábil), a conferência de cada tributo (apurado × provisionado × pago, com a divergência e o porquê) e, no Real com balanço, a base de cálculo, cada adição/exclusão com a fonte legal, o prejuízo fiscal compensado (respeitando o limite de 30%, a confirmar a vigência no Lefisc), o valor final de IRPJ/CSLL (ou a conclusão de suspensão) e os DARFs quando houver valor a recolher.
 
 ### Etapa 7 — Encerramento e próximos passos
 
 **O que fazer:** resuma o fechamento (o que foi conciliado, o que foi integrado, o resultado da apuração), liste pendências e riscos (documentos do pacote que faltaram, divergências aceitas sem solução definitiva, parcelamentos/débitos ativos e certidões positivas identificados na Etapa 1) e indique o próximo passo objetivo a executar no Domínio ou no período seguinte.
 
-**Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, saldos finais da competência fechada (que serão a abertura do próximo mês), a forma de apuração do mês na aba do Lucro Real (estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
+**Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, saldos finais da competência fechada (que serão a abertura do próximo mês), os tributos apurados e pagos do mês na aba `Apuração` (no Real, também a forma: estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
+
+Lembre o colaborador de **atualizar o status da competência no artefato Controle Contábil** (aba Fechamento: situação dos documentos, "Liberado p/ Gian" quando o fechamento estiver pronto para revisão).
 
 Se, ao longo do fechamento, surgir documento faltando ou confirmação pendente do cliente, use `pendencias-fechamento-cliente` para redigir o e-mail ao cliente e registrar as pendências, em vez de deixá-las soltas no resumo final.
 
@@ -152,8 +169,7 @@ Se, ao longo do fechamento, surgir documento faltando ou confirmação pendente 
 
 ## Quando escalar / não usar esta skill
 
-- Cliente é Simples Nacional → `calcular-das-simples-nacional` / `conferir-apuracao-simples-nacional`.
-- Cliente é Lucro Presumido → `apuracao-lucro-presumido`.
-- Cliente é Real mas apura só por estimativa mensal/trimestral, sem balanço de suspensão/redução → `apuracao-lucro-real` cobre a apuração; esta skill não é necessária.
-- Fechamento de cliente só de serviços sem ICMS, em regime diferente deste perfil → `fechamento-completo-servicos`.
-- ECD/ECF anuais (depois do fechamento mensal consolidado) → `ecd-escrituracao-contabil-digital` e `ecf-escrituracao-contabil-fiscal`.
+- Fechamento **fiscal** (conferência municipal/estadual, registro na Controle_Fiscal) → `fechamento-completo-servicos` (clientes só de serviços) ou o POP fiscal do escritório; esta skill começa depois que o fiscal libera a competência.
+- MEI → `apuracao-mei`.
+- Cálculo isolado de um tributo, sem fechamento contábil → a skill de apuração do regime (`calcular-das-simples-nacional`, `apuracao-lucro-presumido`, `apuracao-lucro-real`).
+- ECD/ECF anuais (depois dos fechamentos mensais consolidados) → `ecd-escrituracao-contabil-digital` e `ecf-escrituracao-contabil-fiscal`.

@@ -64,21 +64,25 @@ Regras práticas:
 Na Etapa 2, o saldo final do último mês fechado é a abertura da competência atual: confira contra o
 saldo inicial de cada extrato. Na Etapa 7, grave os saldos finais da competência que acabou de fechar.
 
-### 4. `Lucro Real` — dados para a apuração
+### 4. `Apuração` — tributos do regime
+
+Uma linha por competência e tributo (formato longo, para servir a qualquer regime).
 
 | Coluna | Conteúdo |
 |---|---|
-| Competência | Mês |
-| Forma de apuração | Estimativa · Suspensão · Redução · (vazio, se ainda não apurado) |
-| IRPJ pago | Valor pago no mês, com a conta do razão ou o comprovante de onde saiu |
-| CSLL paga | idem |
+| Competência | Mês (ou trimestre, para IRPJ/CSLL do Presumido) |
+| Regime | Simples Nacional · Lucro Presumido · Lucro Real |
+| Forma de apuração | Só no Real: Estimativa · Suspensão · Redução (vazio se ainda não apurado) |
+| Tributo | Ex.: DAS · PIS · COFINS · IRPJ · CSLL |
+| Valor apurado | Valor da apuração (Domínio/PGDAS-D) |
+| Valor pago | Valor pago, com o comprovante de onde saiu |
 | Fonte | Conta do razão e/ou comprovante da Etapa 1 |
 | Observação | Ex.: "pago em atraso com multa", "compensado via PER/DCOMP" — só o que estiver documentado |
 
-Preencha com o que estiver no razão e nos comprovantes; não presuma pagamento que não aparece em
-nenhum dos dois. Saldo de prejuízo fiscal e base negativa **não** vêm do razão (estão na Parte B do
-LALUR/e-Lalur) — se o colaborador informar, registre na observação com a fonte; se não, deixe em branco
-e trate na Etapa 6.
+Preencha com o que estiver no razão, na apuração e nos comprovantes; não presuma pagamento que não
+aparece em nenhum deles. No Lucro Real, saldo de prejuízo fiscal e base negativa **não** vêm do razão
+(estão na Parte B do LALUR/e-Lalur) — se o colaborador informar, registre na observação com a fonte; se
+não, deixe em branco e trate na Etapa 6.
 
 ### 5. `Histórico` — o que mudou no mapa
 
@@ -97,8 +101,8 @@ e trate na Etapa 6.
 3. Para contas de banco e aplicação, agrupe as contrapartidas recorrentes por histórico/contraparte e
    valor: o que se repete vira regra `proposta`, com a origem (competências e quantidade).
 4. Grave os saldos finais do último mês fechado e marque os alertas (aba `Saldos`).
-5. Levante as estimativas de IRPJ/CSLL pagas no ano e a forma de apuração de cada mês, se o razão
-   permitir identificar (aba `Lucro Real`).
+5. Levante os tributos do regime apurados e pagos no ano (no Real, também a forma de apuração de cada
+   mês), se o razão e os comprovantes permitirem identificar (aba `Apuração`).
 6. Apresente o resumo ao colaborador e só salve as regras como `confirmada` depois da resposta dele.
 
 ## Atualização nos meses seguintes
@@ -106,7 +110,7 @@ e trate na Etapa 6.
 1. Leia o mapa e veja no `Histórico` qual foi o último fechamento registrado.
 2. Leia no razão só os meses entre esse fechamento e a competência atual.
 3. Atualize: contas novas (aba `Contas`), regras novas ou contrariadas (aba `Regras`), saldos de
-   abertura (aba `Saldos`), estimativas do período (aba `Lucro Real`).
+   abertura (aba `Saldos`), tributos do período (aba `Apuração`).
 4. Apresente ao colaborador só o que mudou — não repita o mapa inteiro.
 
 ## Dados sensíveis

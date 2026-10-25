@@ -1,6 +1,7 @@
 # Apuração de IRPJ/CSLL por levantamento de balanço — suspensão ou redução
 
-Apoia a Etapa 6 do `SKILL.md`. Esta skill não recalcula a mecânica completa de LALUR/prejuízo fiscal —
+Apoia a Etapa 6 do `SKILL.md` para clientes do **Lucro Real com balanço de suspensão/redução** (os
+demais regimes seguem a tabela da Etapa 6). Esta skill não recalcula a mecânica completa de LALUR/prejuízo fiscal —
 isso é papel da skill `apuracao-lucro-real`, que deve ser acionada aqui. O que este arquivo cobre é a
 lógica específica de **por que** se levanta um balanço para suspender ou reduzir o pagamento mensal, e o
 checklist de insumos que as Etapas 1-5 precisam ter entregado antes de chegar aqui.
@@ -39,7 +40,7 @@ avance com dado presumido):
   na Etapa 5 — não um balancete "de passagem" ainda com pendência relevante aberta.
 - [ ] LAIR (resultado contábil antes de IR/CSLL) do acumulado.
 - [ ] Soma das estimativas mensais já pagas no ano até o mês anterior (para comparar com o valor apurado
-  pelo balanço) — aba `Lucro Real` do mapa contábil do cliente, conferida com os comprovantes da Etapa 1.
+  pelo balanço) — aba `Apuração` do mapa contábil do cliente, conferida com os comprovantes da Etapa 1.
 - [ ] Saldo de prejuízo fiscal acumulado (Parte B do LALUR) e de base negativa de CSLL, se houver.
 - [ ] Qualquer adição/exclusão específica do período (ver tabela de pontos de atenção abaixo) com o
   documento que a comprova (NF, ata, comprovante).
