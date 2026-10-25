@@ -96,7 +96,3 @@ CHECAGEM FINAL
 - O levantamento da empresa muda o material: o mesmo tema do evento vira "já temos" ou "ainda dá para melhorar" conforme a evidência. Peça sempre o caminho do arquivo como prova.
 - Os e-mails trouxeram prazos atualizados e a ata de mentoria da empresa, que não estavam nos arquivos.
 - Se a empresa aparece no palco do evento, vale confirmar internamente a condição que foi divulgada.
-
-## Documentos do evento (primeira aplicação)
-
-Salvos em: https://drive.google.com/drive/folders/1Ofx6jZnpmxB3-Zkz8bJ7VyzPg1oadqVQ?usp=sharing
