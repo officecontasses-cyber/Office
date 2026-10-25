@@ -150,21 +150,34 @@ Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do
 
 ### Etapa 5 — Conciliação contábil conta a conta
 
-**Usa:** o razão e o balancete exportados ao final da Etapa 4, já com a importação bancária, as integrações e os ajustes.
+**Usa:** o razão e o balancete exportados ao final da Etapa 4 (já com a importação bancária, as integrações e os ajustes), o pacote de documentos da Etapa 1, o mapa contábil do cliente (saldos de abertura e pendências herdadas), a GATILHO da `CONTROLE | DP REINF'S` e a folha do DP em `003_FOPAG`. Ordem dos grupos de contas, suporte de cada um e layout do papel de trabalho em `references/conciliacao-contas.md`.
 
-**O que fazer:** concilie conta a conta o mês (ou período) a fechar. Para cada conta relevante, aponte: o que deve ser analisado nela, a divergência encontrada (se houver) e o passo objetivo para o colaborador resolver — o que ajustar e por quê, nunca só "está divergente".
+**Objetivo:** provar o saldo de cada conta patrimonial com um suporte que não seja o próprio razão (extrato, relatório, guia, contrato, situação fiscal), e revisar o resultado do período. O que sai daqui é o **papel de trabalho de conciliação**, que é o que o revisor (Gian) olha depois.
 
-**Use o pacote da Etapa 1 como base de conferência**, principalmente nas contas de tributos:
-- Tributos a recolher/recuperar × comprovantes de pagamento (item B) × apuração de impostos do Domínio (item F): o que foi apurado, o que foi pago e o que ficou em aberto precisam fechar.
-- Retenções a recolher (como tomador) e a compensar (como prestador) × GATILHO da `CONTROLE | DP REINF'S`: competência `COM RETENÇÃO` precisa ter as retenções no contábil; `SEM MOVIMENTO` com retenção no contábil é divergência a explicar.
-- Parcelamentos e débitos em aberto × situação fiscal federal (item C) e situação estadual/municipal (itens D e E): todo parcelamento ou débito ativo que aparece nesses relatórios precisa estar refletido no passivo (e vice-versa).
+**O que fazer:**
+
+1. **Integridade primeiro:** balancete fecha (D = C, sintéticas = soma das analíticas), sem saldo invertido sem explicação, e o saldo de abertura de cada conta = saldo final do mês anterior no mapa (aba `Saldos`). Diferença de abertura não se corrige no mês atual sem decisão do colaborador: é pendência herdada de período já fechado.
+2. **Concilie grupo a grupo, na ordem da referência** — disponibilidades, clientes, tributos a recuperar, imobilizado, fornecedores, obrigações trabalhistas, tributos a recolher e parcelamentos, empréstimos, sócios e lucros, patrimônio líquido e contas transitórias. Para cada conta com saldo ou movimento: saldo contábil, saldo do suporte, diferença e a fonte do suporte.
+3. **Toda diferença diferente de zero é registrada** — você não decide sozinho o que é "irrelevante". Para cada uma: a causa provável e a ação objetiva, dizendo **onde** corrigir:
+   - erro de módulo (nota, folha, bem) → volta à Etapa 4, corrige no módulo e reintegra;
+   - erro na importação bancária → volta à Etapa 3;
+   - lançamento que falta e não é de módulo → linha nova na planilha `AJUSTES {NNN} {MM-AAAA}.xlsx` (a mesma da Etapa 4), com o histórico e o porquê;
+   - documento que não existe → pendência com o cliente (`pendencias-fechamento-cliente`).
+4. **Revise o resultado do período:** receita × relatórios do fiscal (já cruzada na Etapa 4), despesas recorrentes que faltaram ou duplicaram, e variações relevantes contra o mês anterior e o mesmo mês do ano anterior — cada variação grande com a explicação ou a pergunta ao colaborador.
+5. **Monte o papel de trabalho** `CONCILIACAO {NNN} {MM-AAAA}.xlsx` em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`: uma linha por conta, com saldo contábil, suporte, diferença, status (`Conciliada`, `Divergente`, `Pendência aceita`, `Sem suporte`), explicação e ação. Confirme permissão de escrita antes de salvar; se não tiver, entregue o arquivo pronto.
+6. **Rodada de correção:** o colaborador corrige na origem e/ou importa os ajustes, exporta de novo o balancete, e você reconfere só as contas afetadas, atualizando o papel de trabalho. Repita até não sobrar `Divergente`.
 
 **Apoio por tipo de conta:**
 - Contas bancárias → `conciliar-extrato-razao` (match item a item extrato × razão).
 - Fornecedores → `conciliacao-fornecedores`; Clientes → `conciliacao-clientes`; Cartões/credenciadora → `conciliacao-cartoes-credenciadora`, quando aplicável ao cliente.
-- Integridade e coerência geral do balancete (D=C, saldo invertido, variações atípicas) → `balancete-analise`.
+- Integridade, coerência e variações do balancete → `balancete-analise`.
+- Imobilizado e depreciação → `ativo-imobilizado-depreciacao`.
 
-Só avance para a Etapa 6 quando as divergências relevantes estiverem resolvidas ou claramente registradas como pendência aceita pelo colaborador — nunca apure ou confira tributos sobre um balancete ainda não conciliado.
+**Porta de saída da Etapa 5:**
+- toda conta patrimonial com saldo ou movimento está no papel de trabalho com status;
+- nenhuma conta `Divergente`: cada diferença foi corrigida ou virou `Pendência aceita` pelo colaborador, com o motivo;
+- contas transitórias / "a regularizar" zeradas ou com a pendência explicada;
+- balancete final exportado depois da última rodada — é a base da Etapa 6. Nunca apure ou confira tributos sobre um balancete ainda não conciliado.
 
 ### Etapa 6 — Tributos do regime e resultado do período
 
@@ -190,7 +203,7 @@ Em todos os regimes:
 
 **Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, módulos e lançamentos manuais recorrentes novos no `Perfil` (Etapa 4), saldos finais da competência fechada (que serão a abertura do próximo mês), os tributos apurados e pagos do mês na aba `Apuração` (no Real, também a forma: estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
 
-Lembre o colaborador de **atualizar o status da competência no artefato Controle Contábil** (aba Fechamento: situação dos documentos, "Liberado p/ Gian" quando o fechamento estiver pronto para revisão).
+Lembre o colaborador de **atualizar o status da competência no artefato Controle Contábil** (aba Fechamento: situação dos documentos, "Liberado p/ Gian" quando o fechamento estiver pronto para revisão), indicando onde está o papel de trabalho de conciliação da Etapa 5 — é por ele que a revisão começa.
 
 Se, ao longo do fechamento, surgir documento faltando ou confirmação pendente do cliente, use `pendencias-fechamento-cliente` para redigir o e-mail ao cliente e registrar as pendências, em vez de deixá-las soltas no resumo final.
 
