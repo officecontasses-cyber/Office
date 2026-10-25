@@ -65,11 +65,24 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
 
 **Apoio:** `controle-debitos-certidoes-clientes` explica o formato dos exports de Diagnóstico e Certidões do SIEG no Drive; `cadastro-cliente-sieg`, se o cliente ainda não estiver cadastrado no SIEG.
 
-### Etapa 2 — Leitura do histórico contábil
+### Etapa 2 — Leitura do histórico contábil → mapa contábil do cliente
 
-**Usa:** o razão, o plano de contas e o balancete salvos na Etapa 1 (item F) — não peça de novo.
+**Usa:** o razão, o plano de contas e o balancete salvos na Etapa 1 (item F) — não peça de novo — e o **mapa contábil do cliente**, se já existir.
 
-**O que fazer:** antes de propor qualquer lançamento novo, leia os lançamentos recorrentes, a estrutura de contas em uso e o comportamento típico da empresa (que contas de banco, fornecedor, receita, tributo ela de fato usa, com que histórico). Isso vira a referência de classificação das etapas 3 e 4 — não adote um plano de contas "padrão de livro" se o cliente já tem uma lógica própria em uso. Confira também se toda conta de banco/aplicação com saldo ou movimento no razão tem extrato no pacote da Etapa 1; se não tiver, volte e peça.
+**Objetivo:** entregar um arquivo concreto, o mapa contábil do cliente (`MAPA CONTABIL {NNN}.xlsx`), que diz como esse cliente classifica as coisas. Ele é a referência de classificação das etapas 3 e 4 — não adote um plano de contas "padrão de livro" se o cliente já tem uma lógica própria em uso — e é **reaproveitado nos meses seguintes**, para a leitura não recomeçar do zero a cada fechamento. Estrutura das abas, regras de preenchimento e onde salvar em `references/mapa-contabil-cliente.md`.
+
+**O que fazer:**
+
+1. **Procure o mapa** em `{ano}/005_CONTABIL RELATORIOS/` do cliente; se não houver no ano atual, procure no ano anterior (no primeiro fechamento do ano ele é copiado de lá).
+2. **Se não existe (primeiro fechamento do cliente nesta skill):** monte o mapa a partir do razão (do início do último ano-calendário até a competência), do balancete e do plano de contas — as cinco partes: contas em uso, regras de classificação, saldos de abertura e pendências herdadas, dados do Lucro Real e histórico do mapa.
+3. **Se já existe:** leia o mapa e atualize só o que mudou entre o último fechamento registrado nele e a competência atual — contas novas, regras que deixaram de valer ou apareceram, saldos de abertura do último mês fechado, estimativas pagas. Se o razão do período contradisser uma regra do mapa, o razão vence: aponte a mudança em vez de seguir a regra antiga.
+4. **Cruze com o pacote da Etapa 1:**
+   - toda conta de banco/aplicação com saldo ou movimento no razão tem extrato no pacote? Se não tiver, volte e peça;
+   - o saldo inicial de cada extrato bate com o saldo de abertura do mapa?
+   - todo parcelamento e débito da situação fiscal (itens C, D, E) tem conta correspondente no passivo, e vice-versa?
+5. **Apresente um resumo curto** ao colaborador: contas novas, regras **propostas** (as que você deduziu do razão e ele ainda não confirmou), pendências herdadas (contas transitórias ou "a regularizar" com saldo, saldos invertidos), divergências dos cruzamentos e as estimativas de IRPJ/CSLL do ano.
+
+**Porta de saída da Etapa 2:** o colaborador confirma ou corrige as regras propostas. Só então salve o mapa (regras confirmadas passam a `confirmada`, com data) e siga para a Etapa 3. Divergência dos cruzamentos que não for resolvida agora vira pendência registrada, como na Etapa 1.
 
 **Apoio:** `balancete-analise` para integridade/coerência do balancete recebido; `plano-contas-cpc` só se o plano de contas parecer mal estruturado e precisar de revisão (não é o padrão — só acione se notar problema real).
 
@@ -77,7 +90,7 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
 
 **Usa:** os extratos da Etapa 1 (item A).
 
-**O que fazer:** classifique cada lançamento do extrato nas contas corretas, com base no histórico de classificação já identificado na Etapa 2 e na natureza de cada transação (ver `references/checklist-documentos.md` para a tabela de categorias padrão quando o histórico do cliente não decidir o caso). Use os comprovantes de pagamento da Etapa 1 (item B) para identificar que tributo/competência cada débito de imposto no extrato está pagando. Monte os lançamentos já prontos no modelo de importação em Excel do Domínio.
+**O que fazer:** classifique cada lançamento do extrato nas contas corretas, aplicando primeiro as regras `confirmada` do mapa contábil do cliente (Etapa 2) e, só para o que nenhuma regra cobrir, a natureza da transação e a tabela de categorias padrão de `references/checklist-documentos.md` — nesse caso, a classificação é proposta e precisa da confirmação do colaborador. Toda correção ou confirmação que o colaborador fizer aqui vira regra nova do mapa, gravada na Etapa 7. Use os comprovantes de pagamento da Etapa 1 (item B) para identificar que tributo/competência cada débito de imposto no extrato está pagando. Monte os lançamentos já prontos no modelo de importação em Excel do Domínio.
 
 **Onde salvar:** a planilha final, já com os lançamentos deste cliente e desta competência prontos para importar, vai na pasta do cliente — ano do fechamento, em `005_CONTABIL RELATORIOS`, na subpasta do mês (mesmo destino da Etapa 4; se o período for maior que um mês, crie uma pasta própria do período, em vez de uma subpasta mensal). `Meu Drive\1015_ROTINA AUTOMATICA\003 CONTABILIDADE\planilhamodeloimportacaolancamentoscontabeis` é o nome do **modelo/template** do escritório (planilha em branco no formato de importação do Domínio) — use-o como ponto de partida quando precisar, mas o arquivo preenchido com os dados reais do cliente não fica lá, fica em `005_CONTABIL RELATORIOS` do próprio cliente. Confirme com o colaborador que tem permissão de escrita nesses caminhos antes de salvar; se não tiver, entregue o arquivo pronto para ele salvar.
 
@@ -116,11 +129,15 @@ Só avance para a Etapa 6 quando as divergências relevantes estiverem resolvida
 
 Para a mecânica de cálculo e para o controle de prejuízo fiscal na Parte B, acione `apuracao-lucro-real` em vez de recalcular essa lógica nesta skill — o papel desta etapa é reunir os insumos conciliados (Etapas 1-5) e levar o resultado à decisão de suspender/reduzir, com cada ajuste fundamentado (lei + artigo confirmados no Lefisc, por força da regra de honestidade acima).
 
+As estimativas já pagas no ano e a forma de apuração dos meses anteriores (estimativa, suspensão ou redução) vêm da aba `Lucro Real` do mapa contábil do cliente (Etapa 2) — confira os valores do mês com os comprovantes do pacote da Etapa 1 antes de usá-los.
+
 Apresente ao colaborador: a base de cálculo, cada adição/exclusão com a fonte legal, o prejuízo fiscal compensado (respeitando o limite de 30%, a confirmar a vigência no Lefisc), o valor final de IRPJ/CSLL (ou a conclusão de suspensão) e os DARFs quando houver valor a recolher.
 
 ### Etapa 7 — Encerramento e próximos passos
 
 **O que fazer:** resuma o fechamento (o que foi conciliado, o que foi integrado, o resultado da apuração), liste pendências e riscos (documentos do pacote que faltaram, divergências aceitas sem solução definitiva, parcelamentos/débitos ativos e certidões positivas identificados na Etapa 1) e indique o próximo passo objetivo a executar no Domínio ou no período seguinte.
+
+**Atualize o mapa contábil do cliente** antes de encerrar: regras novas ou corrigidas pelo colaborador nas Etapas 3 a 5, saldos finais da competência fechada (que serão a abertura do próximo mês), a forma de apuração do mês na aba do Lucro Real (estimativa, suspensão ou redução) e uma linha no histórico do mapa. O próximo fechamento começa desse mapa.
 
 Se, ao longo do fechamento, surgir documento faltando ou confirmação pendente do cliente, use `pendencias-fechamento-cliente` para redigir o e-mail ao cliente e registrar as pendências, em vez de deixá-las soltas no resumo final.
 

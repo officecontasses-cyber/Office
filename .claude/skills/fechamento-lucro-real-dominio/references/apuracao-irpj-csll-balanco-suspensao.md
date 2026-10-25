@@ -39,7 +39,7 @@ avance com dado presumido):
   na Etapa 5 — não um balancete "de passagem" ainda com pendência relevante aberta.
 - [ ] LAIR (resultado contábil antes de IR/CSLL) do acumulado.
 - [ ] Soma das estimativas mensais já pagas no ano até o mês anterior (para comparar com o valor apurado
-  pelo balanço).
+  pelo balanço) — aba `Lucro Real` do mapa contábil do cliente, conferida com os comprovantes da Etapa 1.
 - [ ] Saldo de prejuízo fiscal acumulado (Parte B do LALUR) e de base negativa de CSLL, se houver.
 - [ ] Qualquer adição/exclusão específica do período (ver tabela de pontos de atenção abaixo) com o
   documento que a comprova (NF, ata, comprovante).

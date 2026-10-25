@@ -143,9 +143,10 @@ acima.
 
 ## Tabela de classificação padrão de extrato bancário (Etapa 3, quando o histórico do cliente não decidir)
 
-Esta tabela é um ponto de partida genérico, não uma regra fixa — sempre prefira a lógica que o próprio
-razão do cliente já usa (Etapa 2). Use-a só quando aparecer um tipo de lançamento sem precedente claro no
-histórico, e sinalize ao colaborador que a classificação é uma proposta a confirmar, não um fato.
+Esta tabela é um ponto de partida genérico, não uma regra fixa — sempre prefira as regras `confirmada`
+do mapa contábil do cliente (Etapa 2, `references/mapa-contabil-cliente.md`). Use-a só quando aparecer um
+tipo de lançamento que nenhuma regra do mapa cobre, e sinalize ao colaborador que a classificação é uma
+proposta a confirmar, não um fato.
 
 | Lançamento no extrato              | Lançamento contábil sugerido                              |
 |-------------------------------------|-------------------------------------------------------------|
