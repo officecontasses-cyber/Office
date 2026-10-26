@@ -37,5 +37,7 @@ fazer a pesquisa com você pelo Claude in Chrome.
   linhas onde aparece (regra de honestidade do `SKILL.md`).
 - Se o colaborador não tiver a extensão ou não souber se tem, não invente o passo a passo de instalação:
   sugira confirmar com a equipe/TI e use a alternativa (ele pesquisa e cola o trecho).
+- Se esta sessão não tem o Claude in Chrome disponível (ex.: sessão na nuvem, sem as ferramentas do
+  navegador), diga isso logo no bloco e vá direto à alternativa: o colaborador pesquisa e cola o trecho.
 - Na aba do Lefisc, só leitura: não clique em nada que altere cadastro, assinatura ou configuração.
 - Junte numa mensagem só as pesquisas da mesma etapa (um bloco por pergunta), em vez de pedir uma por vez.
