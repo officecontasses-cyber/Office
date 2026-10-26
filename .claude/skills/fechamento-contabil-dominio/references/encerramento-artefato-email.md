@@ -15,11 +15,19 @@ leitura do Drive, lucros) são alimentados por outras rotinas.
 | `liberadoRevisao` | `Sim` só quando as portas das etapas 1 a 6 passaram (ou o colaborador aceitou o que ficou aberto); senão `Não` |
 | `dataLiberacao` | Data de hoje (`AAAA-MM-DD`) quando `liberadoRevisao` = `Sim` |
 | `status` | `Liberado para revisão` com `liberadoRevisao` = `Sim`; senão `Em andamento`. Nunca grave `Aprovado` — é do revisor |
+| `atualizadoEm` | Data de hoje (`AAAA-MM-DD`) em toda gravação — é o que ordena o bloco de avisos do topo |
 
-**Bloco "Liberados para revisão":** no topo do artefato, antes das abas, a página lista toda competência
-com `liberadoRevisao` = `Sim` que ainda não foi aprovada — cliente, competência, data da liberação e o
-começo da observação do analista, com o botão **Abrir**. É o aviso ao revisor/contador. Quando o revisor
-marca `Aprovado`, a linha sai do bloco e aparece em "Aprovados recentes".
+**Bloco "Avisos do fechamento":** no topo do artefato, antes das abas, a página mostra duas listas, com
+o botão **Abrir** em cada linha:
+- **Liberados para revisão** — `liberadoRevisao` = `Sim` e ainda não aprovado (aviso ao revisor/contador);
+- **Em andamento** — `status` = `Em andamento`, do mais recente para o mais antigo por `atualizadoEm`,
+  com a marca "atualizado hoje".
+Quando o revisor marca `Aprovado`, a linha sai do bloco e aparece em "Aprovados recentes".
+
+**Quando gravar:** no fim da Etapa 1 (pacote conferido), ofereça marcar a competência como
+`Em andamento`, com `docsSituacao`, `docsPendentes`, uma linha em `obsAnalista` e `atualizadoEm` — assim
+o fechamento já aparece no topo do artefato. Na Etapa 7, grave o encerramento (campos acima). Sempre com
+a autorização do colaborador.
 
 Regras:
 - **Mostre os campos ao colaborador e só grave depois que ele autorizar.** O artefato é compartilhado

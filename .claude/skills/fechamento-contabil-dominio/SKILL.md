@@ -37,7 +37,7 @@ O colaborador informa **o número do cliente na carteira + a competência** (ou 
    - Se o número não estiver em nenhuma das duas, o cliente não está no controle (pode ser ex-cliente ou cliente novo): pergunte ao colaborador antes de seguir.
    - Para o **Lucro Real**, a planilha não diz se a apuração é por estimativa ou por balanço de suspensão/redução: veja na aba `Apuração` do mapa contábil do cliente (Etapa 2) ou pergunte.
    - Se a competência não estiver liberada (ou estiver vazia), avise o colaborador e pergunte se segue mesmo assim — o fechamento contábil pode começar, mas os números fiscais ainda podem mudar.
-4. Responda em **uma mensagem curta de confirmação** (cliente, regime, competência(s), status do fiscal) e já emende a Etapa 1.
+4. Responda em **uma mensagem curta de confirmação** (cliente, regime, competência(s), status do fiscal) e já emende a Etapa 1. Ao fechar a Etapa 1, ofereça marcar a competência como `Em andamento` no artefato Controle Contábil, para ela aparecer no bloco de avisos do topo (campos em `references/encerramento-artefato-email.md`; grave só com autorização).
 5. **Modo teste:** se o colaborador disser que a rodada é teste (ex.: para ver a skill num cliente já fechado), siga todas as etapas e entregue os arquivos normalmente, mas não peça para importar, excluir ou integrar nada no Domínio — as portas que dependem disso viram só conferência, e você segue com a hipótese explícita (ex.: "supondo que o lote duplicado seja excluído"). Diga no resumo de cada etapa o que, fora do teste, o colaborador teria de fazer no sistema.
 
 ## Pedido ao Domínio sempre com o manual
