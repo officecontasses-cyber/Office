@@ -197,6 +197,7 @@ textarea{width:100%;min-height:64px;resize:vertical}
         <span class="label" id="radarStatus"></span>
       </div>
       <div class="muted" id="radarIntro"></div>
+      <details id="radarCobBox" hidden><summary class="label" style="cursor:pointer">O que foi pesquisado na última rodada</summary><div class="src" id="radarCob" style="margin-top:8px"></div></details>
     </div>
     <div class="list" id="radarList"></div>
     <details class="block" id="radarDoneBox"><summary><h2>Enviados e aprovados <span class="muted" id="nRDone"></span></h2></summary><div class="list" id="radarDone"></div></details>
@@ -364,7 +365,10 @@ function taskCard(t,today){
 const CATS=[['decidir','Pra decidir'],['andamento','Em andamento'],['informativo','Informativo'],['acompanhar','Só acompanhar']];
 function renderRadar(today){
   const m=S.rmeta||{};
-  $('radarStatus').textContent=m.data?'Última rodada '+br(m.data)+(m.obs?' · '+m.obs:''):'';
+  $('radarStatus').textContent=m.data?'Última rodada '+br(m.data)+(m.periodo?' · período '+m.periodo:''):'';
+  const cob=Array.isArray(m.cobertura)?m.cobertura:[];
+  $('radarCobBox').hidden=!cob.length&&!m.obs;
+  $('radarCob').innerHTML=(m.obs?`<span></span><div><b>${esc(m.obs)}</b></div>`:'')+cob.map(c=>{const nada=/nada|sem resultado|não encontr/i.test(c.resultado||'');return `<span class="dot ${nada?'wait':'ok'}" aria-hidden="true"></span><div><b>${esc(c.tema)}</b> · ${esc(c.consultas??'')} busca(s)<br><span class="muted">${esc(c.resultado||'')}</span></div>`;}).join('');
   const pub=r=>r.publico==='simples'?'simples':'carteira';
   const live=S.radar.filter(r=>!(S.rdir[r.id]||{}).descartadoRadarEm);
   $('nRC').textContent='('+live.filter(r=>pub(r)==='carteira').length+')';
