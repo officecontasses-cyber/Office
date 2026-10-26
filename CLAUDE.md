@@ -30,6 +30,10 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
 - **Receita do 247 (Porto Mais Alegre):** o cliente informa vendas pelo Forms, mas a Fernanda **sempre valida nos extratos bancários** do mês os créditos com cara de receita (venda de imóvel, sinal, parcelas) que não tenham sido informados. Sem o extrato do mês no Drive, receita = `Pendente`, não `Sem movimento`.
 - **Nada é escrito direto na Controle_Fiscal.** Toda atualização entra pela aba `Atualizações`
   (fila), em TSV **inline no chat**, e a Fernanda roda o script `processarAtualizacoes()`.
+  **Desde 26/10/2026 (pedido da Fernanda: "não quero ficar colando"):** com o conector Google Sheets ligado, a agente grava
+  as linhas **direto na aba `Atualizações`** (próxima linha vazia, colunas A:F, `Processado` em branco) e confere lendo de volta;
+  nas abas de mês continua não escrevendo. O processamento é o `processarAtualizacoes()` (à mão ou pelo gatilho de
+  `apps-script/gatilhoAtualizacoes.gs`, a cada 5 min, se instalado). Sem o conector, volta o TSV no chat.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
