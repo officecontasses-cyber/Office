@@ -33,3 +33,9 @@ Resumo em `BASE_LEGAL_ASBBM_PARTE2_2026-10-18.md`. Principais: SC Cosit 50/2019 
 
 ## TSV de resolução adiada (18/10/2026 noite)
 Fernanda pediu para registrar na Controle apenas observações resumidas do que foi mapeado e resolver o 197 **por último**, depois das demais empresas. TSV em `TSV_197_09-2026.md` (Tomados/PIS/COFINS/IRPJ/CSLL `Pendente`). Atenção aos prazos: PIS/COFINS 23/10 e IRPJ/CSLL 30/10 — decidir enquadramento antes.
+
+## Retomada 26/10/2026 (por último, como combinado)
+- Controle Set2026: REINF `Enviado`; Prestados/Guia `Sem movimento`; Declaração `Enviado`; Fora município `Não se aplica`; **Tomados, PIS, COFINS, IRPJ, CSLL `Em andamento`**; SPED `Pendente` (Ago foi `Não se aplica`).
+- Drive (busca 26/10): nada novo do 197 desde 19/10; **Domínio set. do 197 continua não salvo**; sem registro de resposta do Gian (e-mail não é visível daqui).
+- **Decisão pendente (Fernanda/Gian): enquadramento.** Cenário A, manter Lucro Presumido (como a ECF 2024): CSLL **R$ 95,64** cota única até 30/10; IRPJ sem DARF (−79,60, IRRF maior que o imposto); PIS/COFINS cumulativos sem base (sem receita de serviços; receita financeira fora da base do cumulativo, a conferir) → `Sem movimento`. Cenário B, isenta (Lei 9.532 art. 15): IRPJ/CSLL `Não se aplica`, IRRF das aplicações definitivo, PIS 1% só sobre folha (sem folha conhecida), COFINS das anuidades isenta, possível COFINS 4% sobre receita financeira (SC 243/2019, a confirmar).
+- Sugestão da agente para o prazo de 30/10 (sem decidir o enquadramento): seguir o regime da última ECF (LP) e pagar a CSLL de 95,64; rever o enquadramento com o Gian para a ECF 2026. Aguardando a Fernanda.
