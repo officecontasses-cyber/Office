@@ -330,7 +330,7 @@ function taskCard(t,today){
   ].join('');
   let detail='';
   if(S.open.has(t.id)){
-    const steps=passos.map((p,i)=>`<label class="${p.ok?'ok':''}"><input type="checkbox" data-act="step" data-id="${id}" data-i="${i}" ${p.ok?'checked':''}><span>${esc(p.t)}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">abrir ↗</a>`:''}</span></label>`).join('');
+    const steps=passos.map((p,i)=>`<label class="${p.ok?'ok':''}"><input type="checkbox" data-act="step" data-id="${id}" data-i="${i}" ${p.ok?'checked':''}><span>${esc(p.t)}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">abrir ↗</a>`:''}${p.resumo?`<br><small class="muted">${esc(p.resumo)}</small>`:''}</span></label>`).join('');
     const conf=S.confirm===t.id?`<div class="confirm">Excluir esta tarefa de vez? <button class="btn danger solid" data-act="delYes" data-id="${id}">Excluir</button><button class="btn" data-act="delNo">Cancelar</button></div>`:'';
     detail=`<div class="detail">
       ${passos.length?`<div><span class="label">Passos</span><div class="steps">${steps}</div><div class="btns" style="margin-top:6px"><button class="btn" data-act="stepsAll" data-id="${id}">Marcar todos</button></div></div>`:''}
@@ -381,7 +381,7 @@ function radarCard(r,today,mode){
   const id=esc(r.id);const x=S.rdir[r.id]||{};
   const where=[r.esfera,r.orgao,r.uf,r.municipio].filter(Boolean).join(' · ');
   const pz=isISO(r.prazo)?(()=>{const d=diffDays(r.prazo,today);return `<span class="chip ${d<0?'danger':d<=7?'warn':''}">Prazo ${br(r.prazo)}${d>=0?' · em '+d+' dias':' · vencido'}</span>`;})():'';
-  const cli=Array.isArray(r.clientes)&&r.clientes.length?`<div class="chips"><span class="label">Clientes atingidos</span>${r.clientes.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>`:'';
+  const cli=Array.isArray(r.clientes)&&r.clientes.length?`<details><summary class="label" style="cursor:pointer">Clientes atingidos (${r.clientes.length})</summary><div class="chips" style="margin-top:6px">${r.clientes.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div></details>`:'';
   if(mode==='desc')return `<div class="item"><span></span><div class="body"><div class="title" style="cursor:default">${esc(r.titulo)}</div><div class="why">${esc(x.motivoDescarte||'Descartado')} · ${br((x.descartadoRadarEm||'').slice(0,10))}</div><div class="btns"><button class="btn" data-act="rRestore" data-id="${id}">Restaurar</button></div></div></div>`;
   const msgs=[r.avisoDiretoria?`<div><span class="label">Aviso à diretoria</span><p class="pre">${esc(r.avisoDiretoria)}</p><button class="btn" data-act="copyTxt" data-txt="${esc(r.avisoDiretoria)}">Copiar</button></div>`:'',
     r.rascunhoMkt?`<div><span class="label">Comercial / marketing</span><p class="pre">${esc(r.rascunhoMkt)}</p><button class="btn" data-act="copyTxt" data-txt="${esc(r.rascunhoMkt)}">Copiar</button></div>`:''].join('');
