@@ -41,7 +41,8 @@ regras de conferência abaixo).
 | G. Documentos de conciliação do cliente | `{ano}/001_DOCUMENTOS DIGITALIZADOS/{MM_MÊS}` |
 
 Nome do arquivo é livre — você lê o conteúdo —, mas peça que o colaborador ponha a **data de emissão** no
-nome dos itens C, D e E (ex.: `SITUACAO FISCAL RFB 25-10-2026.pdf`): é o que mostra, de relance, que o
+nome dos itens C, D e E (ex.: `SITUACAO FISCAL RFB 25-10-2026.pdf`, `DIAGNOSTICO SIEG 25-10-2026.pdf`) e o
+período e a data de pagamento nos comprovantes (ex.: `DARF PA 08-2026 PG 18-09-2026.pdf`): é o que mostra, de relance, que o
 relatório foi atualizado para este fechamento.
 
 ## Mensagem-modelo ao colaborador (início da Etapa 1)
@@ -85,6 +86,13 @@ Leia os arquivos; não aceite só a confirmação. Para cada item:
   confira os totais com mais cuidado.
 
 **B. Comprovantes de pagamento**
+- Dois grupos, ambos necessários: (1) os **pagos dentro da competência** — batem com as saídas do
+  extrato do mês e costumam ser de competências anteriores (ex.: em setembro, o DARF do PA 08 pago em
+  18/09); (2) os **pagos depois, até hoje, das guias da própria competência** (ex.: o PA 09 pago em
+  20/10) — mostram o que da competência ficou de fato em aberto. Pagamento em atraso vem com multa e
+  juros no mesmo DARF: separe pelo detalhamento.
+- No SIEG, a tabela da tela de Comprovantes pode mostrar código e número errados (no teste do 238,
+  todos os DARFs apareciam como "cód. 1410" e com o mesmo número): **vale o PDF do comprovante**.
 - Para cada tributo que aparece na apuração de impostos (item F) com vencimento no período, há um
   comprovante — liste o que foi apurado e não tem comprovante, e o que tem comprovante e não foi apurado
   (pode ser parcelamento, multa ou pagamento de outra competência).
@@ -98,9 +106,15 @@ Leia os arquivos; não aceite só a confirmação. Para cada item:
 - Registre o que cada um mostra: débitos em aberto (tributo, competência, valor), parcelamentos ativos,
   omissões de declaração, certidão negativa / positiva / positiva com efeitos de negativa. Isso vira
   insumo direto da Etapa 5.
-- Export do SIEG (Diagnóstico federal, certidão estadual) pode complementar ou substituir D quando
-  estiver dentro desse critério de data; o relatório de situação fiscal da Receita (C) continua sendo
-  emitido pelo colaborador no e-CAC.
+- O Diagnóstico Fiscal do SIEG, quando emitido neste fechamento, serve para débitos RFB/PGFN,
+  exigibilidade suspensa, parcelamentos e a última certidão federal — mas **não tem a seção de omissões
+  de declaração** (visto no teste do 238). Para omissões, só o relatório do e-CAC (item C); sem ele,
+  registre "omissões não verificadas" como pendência.
+- Certidão com validade vencida é achado (ex.: certidão federal positiva com efeitos de negativa
+  vencida): registre, e diga se os débitos atuais impedem uma nova.
+- Débito em aberto com pagamento parecido em outra competência (mesmo código e valor, período
+  diferente) costuma ser DARF vinculado ao período errado ou DCTFWeb não vinculada: aponte os dois lados
+  para o fiscal conferir, em vez de tratar como débito e pagamento independentes.
 
 **F. Relatórios do Domínio**
 - Razão do início do último ano-calendário até a competência; balancete da última competência; plano
@@ -129,10 +143,23 @@ salvar {X} antes?".
 
 ## SIEG: o que já ajuda hoje e rotina em desenho
 
-**Hoje (sem rotina nova):** se o escritório já exportou do SIEG para o Drive o Diagnóstico federal e as
-certidões do CNPJ, use esses arquivos como complemento do pacote, respeitando o critério de data acima. O
-SIEG Docs Fiscais também guarda os XML de NF-e/CT-e/NFS-e do cliente, que servem para conferir os
-relatórios de entradas, saídas e serviços do Domínio.
+**Hoje (sem rotina nova):** o colaborador pode tirar do SIEG, para o CNPJ do cliente:
+- **Diagnóstico Fiscal** — débitos RFB/PGFN, exigibilidade suspensa, parcelamentos e última certidão
+  federal (sem omissões de declaração, ver item C);
+- **Comprovantes** — os comprovantes de pagamento (item B); baixe o PDF de cada um, porque a tabela da
+  tela pode mostrar código e número errados;
+- **Certidões** — estadual, trabalhista e FGTS (municipal, em geral, só São Paulo);
+- **Docs Fiscais** — os XML de NF-e/CT-e/NFS-e, para conferir os relatórios de entradas, saídas e
+  serviços do Domínio.
+
+**Empresa inativa no SIEG:** se o cliente estiver em Pendências › Empresas, na aba "Inativas", ele não
+aparece no Diagnóstico nem em Comprovantes. Ativar é uma ação que muda o sistema: só com autorização do
+colaborador. Depois de ativada, a empresa pode demorar a aparecer em Certidões — se não aparecer, tire as
+certidões nos sites oficiais ou registre como pendência.
+
+Na Claude para Chrome, a navegação no SIEG é só leitura e download (ver a regra no `SKILL.md`). Salve os
+PDFs direto na pasta do cliente (`001_DOCUMENTOS DIGITALIZADOS/{MM_MÊS}`), não na pasta de rotinas do
+escritório.
 
 **Em desenho (ainda não implementado — não prometa ao colaborador como se existisse):** uma rotina para
 baixar do SIEG, por CNPJ, o Diagnóstico, as certidões e os XML do período direto para a pasta do
