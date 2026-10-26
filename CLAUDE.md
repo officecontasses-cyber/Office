@@ -31,7 +31,9 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. Agosto/2026
 - **Nada é escrito direto na Controle_Fiscal.** Toda atualização entra pela aba `Atualizações`
   (fila), em TSV **inline no chat**, e a Fernanda roda o script `processarAtualizacoes()`.
   **Desde 26/10/2026 (pedido da Fernanda: "não quero ficar colando"):** com o conector Google Sheets ligado, a agente grava
-  as linhas **direto na aba `Atualizações`** (próxima linha vazia, colunas A:F, `Processado` em branco) e confere lendo de volta;
+  as linhas **direto na aba `Atualizações`** e confere lendo de volta. **Antes de gravar (Fernanda, 26/10/2026):** ler a fila e
+  **apagar as linhas anteriores já marcadas `Processado`** (limpar A:G); linha **sem** `Processado` nunca se apaga (ainda não entrou
+  na aba do mês). As linhas novas entram a partir da linha 2, colunas A:F, `Processado` em branco;
   nas abas de mês continua não escrevendo. O processamento é o `processarAtualizacoes()` (à mão ou pelo gatilho de
   `apps-script/gatilhoAtualizacoes.gs`, a cada 5 min, se instalado). Sem o conector, volta o TSV no chat.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
