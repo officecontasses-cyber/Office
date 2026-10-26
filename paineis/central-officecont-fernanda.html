@@ -159,6 +159,7 @@ textarea{width:100%;min-height:64px;resize:vertical}
     <div class="block">
       <div class="blockhead"><h2>Caixa de entrada</h2><span class="label" id="filaLbl"></span></div>
       <div class="list" id="inbox"></div>
+      <details id="tratadosBox" hidden><summary class="label" style="cursor:pointer">Tratados <span id="nTratados"></span></summary><div class="list" id="tratados" style="margin-top:8px"></div></details>
     </div>
     <details class="block"><summary><h2>De onde veio</h2></summary><div class="src" id="fontes"></div></details>
   </section>
@@ -279,25 +280,24 @@ function renderDia(today){
   $('fontes').innerHTML=keys.length?keys.map(k=>{const v=f[k]||{};const st=v.status||'wait';return `<span class="dot ${st==='ok'?'ok':st==='erro'?'no':'wait'}" aria-hidden="true"></span><div><b>${esc(k)}</b> · ${esc(st==='ok'?'deu certo':st==='erro'?'falhou':'ainda não conectado')}${v.obs?'<br><span class="muted">'+esc(v.obs)+'</span>':''}</div>`;}).join(''):'<span></span><div class="muted">Nenhuma rodada registrada ainda.</div>';
 }
 const DECISOES=[['resolvido','Resolvido ✓'],['respondi','Respondi'],['tarefa','Virar tarefa'],['deleguei','Deleguei'],['aguardando','Aguardando resposta'],['nada','Nada a fazer']];
-const ACOES=[['ler_arquivar','Ler e arquivar'],['arquivar','Só arquivar'],['lixeira','Apagar (lixeira)']];
+const decLabel=k=>(DECISOES.find(d=>d[0]===k)||[0,k])[1];
 function renderInbox(){
-  const em=S.emails.filter(e=>e.inbox!==false).sort((a,b)=>String(b.quandoISO||'').localeCompare(String(a.quandoISO||'')));
-  const fila=S.emails.filter(e=>e.acao&&!e.acaoFeita).length;
-  $('filaLbl').textContent=fila?fila+' na fila · peça "executa a fila" no chat':'';
-  if(!em.length){$('inbox').innerHTML='<div class="empty">O e-mail ainda não está conectado. Quando estiver, cada conversa com pedido aparece aqui com leitura sugerida, rascunho de resposta e a decisão a tomar. Nada é enviado nem apagado pelo painel.</div>';return;}
+  const all=S.emails.filter(e=>e.inbox!==false).sort((a,b)=>String(b.quandoISO||'').localeCompare(String(a.quandoISO||'')));
+  const em=all.filter(e=>!e.decisao),done=all.filter(e=>e.decisao);
+  $('filaLbl').textContent=em.length?em.length+' para decidir':'';
+  $('tratadosBox').hidden=!done.length;$('nTratados').textContent='('+done.length+')';
+  $('tratados').innerHTML=done.map(e=>`<div class="item done"><span class="chip ok">${esc(decLabel(e.decisao))}</span><div class="body"><div class="title" style="cursor:default">${esc(e.assunto||'(sem assunto)')}</div><div class="why">${esc(e.de||'')} · ${esc(e.quando||'')}${e.decisaoEm?' · decidido em '+br(e.decisaoEm.slice(0,10)):''}</div><div class="btns"><button class="btn" data-act="decUndo" data-id="${esc(e.id)}">Desfazer</button></div></div></div>`).join('');
+  if(!all.length){$('inbox').innerHTML='<div class="empty">Nenhum e-mail lido ainda. Peça no chat para ler a caixa de entrada: cada conversa com pedido aparece aqui com leitura sugerida, rascunho de resposta e a decisão a tomar. Nada é enviado pelo painel.</div>';return;}
+  if(!em.length){$('inbox').innerHTML='<div class="empty">Tudo decidido. Os e-mails tratados estão logo abaixo.</div>';return;}
   $('inbox').innerHTML=em.map(e=>{
     const id=esc(e.id);
-    const dec=DECISOES.map(([k,l])=>`<button class="btn ${k==='resolvido'?'ok':''}" data-act="dec" data-id="${id}" data-v="${k}" aria-pressed="${e.decisao===k}">${l}</button>`).join('');
-    const ac=ACOES.map(([k,l])=>`<button class="btn ${k==='lixeira'?'danger':''}" data-act="acao" data-id="${id}" data-v="${k}" aria-pressed="${e.acao===k}">${l}</button>`).join('');
-    const st=e.acaoFeita?`<span class="chip ok">Feito no e-mail</span>`:e.acaoErro?`<span class="chip danger">Erro: ${esc(e.acaoErro)}</span>`:e.acao?`<span class="chip warn">Na fila</span>`:'';
+    const dec=DECISOES.map(([k,l])=>`<button class="btn ${k==='resolvido'?'ok':''}" data-act="dec" data-id="${id}" data-v="${k}">${l}</button>`).join('');
     return `<div class="block mail"><div class="blockhead"><h3>${e.naoLida?'● ':''}${esc(e.assunto||'(sem assunto)')}</h3>${e.link?`<a href="${esc(e.link)}" target="_blank" rel="noopener">abrir ↗</a>`:''}</div>
     <div class="meta">${esc(e.de||'')} · ${esc(e.quando||'')}${e.cliente?' · '+esc(e.cliente):''}${e.prazo?' · prazo '+esc(e.prazo):''}</div>
     ${e.pedido?`<div><span class="label">Pedido</span><div>${esc(e.pedido)}</div></div>`:''}
     ${e.sugestao?`<div><span class="label">Leitura sugerida</span><div>${esc(e.sugestao)}</div></div>`:''}
     ${e.rascunho?`<details><summary class="label" style="cursor:pointer">Rascunho de resposta</summary><p class="pre">${esc(e.rascunho)}</p><button class="btn" data-act="copyTxt" data-txt="${esc(e.rascunho)}">Copiar rascunho</button></details>`:''}
-    <div><span class="label">O que fazer</span><div class="btns">${dec}</div></div>
-    <div><span class="label">No e-mail</span><div class="btns">${ac}<input type="text" id="etq-${id}" data-act="etq" data-id="${id}" placeholder="Etiqueta" value="${esc(e.etiqueta||e.etiquetaSugerida||'')}" aria-label="Etiqueta" style="width:150px"></div></div>
-    <div class="chips">${st}${e.decisao?`<span class="chip info">${esc((DECISOES.find(d=>d[0]===e.decisao)||[0,e.decisao])[1])}</span>`:''}</div></div>`;}).join('');
+    <div><span class="label">O que fazer</span><div class="btns">${dec}</div></div></div>`;}).join('');
 }
 function editingIn(boxId){const a=document.activeElement;return a&&a!==document.body&&$(boxId).contains(a)&&/^(TEXTAREA|INPUT|SELECT)$/.test(a.tagName)&&a.type!=='checkbox';}
 function renderTarefas(today){
@@ -412,7 +412,7 @@ function radarCard(r,today,mode){
 
 /* ---------- Ações ---------- */
 function rdirSet(id,patch){if(!db)return toast('Banco indisponível');const cur=Object.assign({},S.rdir[id]||{});Object.keys(patch).forEach(k=>{if(patch[k]===null)delete cur[k];else cur[k]=patch[k];});return write('radar_dir/'+id,()=>db.doc('radar_dir/'+id).set(cur));}
-function emailUpd(id,patch){if(!db)return toast('Banco indisponível');return write('emails/'+id,()=>db.doc('emails/'+id).update(patch));}
+function emailUpd(id,patch,okMsg){if(!db)return toast('Banco indisponível');return write('emails/'+id,()=>db.doc('emails/'+id).update(patch).then(()=>{if(okMsg)toast(okMsg);}));}
 function complete(t){
   const today=todayISO();
   upd(t.id,{concluida:true,concluidaEm:nowISO()});
@@ -438,8 +438,8 @@ document.addEventListener('click',e=>{
     case 'stepsAll': if(t){upd(id,{passos:(t.passos||[]).map(x=>Object.assign({},x,{ok:true}))});}break;
     case 'bucket': S.f.bucket=S.f.bucket===el.dataset.v?null:el.dataset.v;render();break;
     case 'copyTxt': copy(el.dataset.txt||'');break;
-    case 'dec': {const em=S.emails.find(x=>x.id===id);if(!em)break;const v=el.dataset.v;const patch={decisao:em.decisao===v?null:v,decisaoEm:nowISO()};if(v==='resolvido'&&em.decisao!==v&&!em.acao){patch.acao='ler_arquivar';patch.acaoEm=nowISO();patch.etiqueta=($('etq-'+id)||{}).value||em.etiquetaSugerida||'';}emailUpd(id,patch);if(v==='tarefa'&&em.decisao!==v&&db){db.collection('pendencias').add({titulo:em.pendenciaTitulo||em.assunto||'Responder e-mail',cliente:em.cliente||'',prazo:isISO(em.prazo)?em.prazo:null,prioridade:'media',situacao:'aberta',notas:'Do e-mail de '+(em.de||'')+(em.link?' · '+em.link:''),origem:'manual',concluida:false,criadoEm:nowISO(),atualizadoEm:nowISO()}).then(()=>toast('Tarefa criada'));}break;}
-    case 'acao': {const em=S.emails.find(x=>x.id===id);if(!em)break;const v=el.dataset.v;if(em.acao===v)emailUpd(id,{acao:null,acaoEm:null});else emailUpd(id,{acao:v,acaoEm:nowISO(),etiqueta:($('etq-'+id)||{}).value||'',acaoFeita:null,acaoErro:null});break;}
+    case 'decUndo': emailUpd(id,{decisao:null,decisaoEm:null});break;
+    case 'dec': {const em=S.emails.find(x=>x.id===id);if(!em||em.decisao)break;const v=el.dataset.v;emailUpd(id,{decisao:v,decisaoEm:nowISO()},decLabel(v)+': movido para Tratados');if(v==='tarefa'&&db){db.collection('pendencias').add({titulo:em.pendenciaTitulo||em.assunto||'Responder e-mail',cliente:em.cliente||'',prazo:isISO(em.prazo)?em.prazo:null,prioridade:'media',situacao:'aberta',notas:'Do e-mail de '+(em.de||'')+(em.link?' · '+em.link:''),origem:'manual',concluida:false,criadoEm:nowISO(),atualizadoEm:nowISO()}).then(()=>toast('Tarefa criada'));}break;}
     case 'rApprove': rdirSet(id,{aprovadoEm:nowISO()});break;
     case 'rUnapprove': rdirSet(id,{aprovadoEm:null});break;
     case 'rSend': rdirSet(id,{enviadoEm:nowISO()});toast('Marcado como enviado');break;
@@ -456,7 +456,6 @@ document.addEventListener('change',e=>{
   else if(a==='prazo')upd(id,{prazo:el.value||null});
   else if(a==='rec')upd(id,{recorrenciaDias:Math.max(0,Number(el.value)||0)});
   else if(a==='rCat')rdirSet(id,{categoria:el.value});
-  else if(a==='etq'){const em=S.emails.find(x=>x.id===id);if(em&&em.acao&&!em.acaoFeita)emailUpd(id,{etiqueta:el.value});}
 });
 $('taskList').addEventListener('focusout',()=>setTimeout(()=>{if(renderTarefas.pending)renderTarefas(todayISO());},0));
 $('fq').addEventListener('input',e=>{S.f.q=e.target.value;renderTarefas(todayISO());});
