@@ -25,3 +25,9 @@ Atividade a partir de 08/09/2026 (menos de um mês no trimestre). Sem receita co
 - **ALERTA de cadastro no Domínio:** o Resumo rotula **"PIS Não Cumulativo" e "COFINS Não Cumulativa"** para o 265, que é **Lucro Presumido (cumulativo: 0,65% e 3%)**. Corrigir o regime de PIS/COFINS no cadastro da empresa no Domínio antes de lançar qualquer receita (aluguel/arquitetura), senão a apuração sai errada.
 - **Não salvos:** Entradas e Serviços (não dá para confirmar o honorário de set. da OfficeCont nas Entradas nem que não há NFS-e).
 - **Drive do cliente (nova varredura 19/10 à noite):** nada além do que já havia: nenhum extrato, contrato de locação, recibo, NF, pró-labore nem aplicação (pastas 001 e 008 vazias); só cadastro/contrato social/proposta/cenário, o REINF de 15/10, as guias/recibos da DCTFWeb (não fiscal) e os relatórios de Portal/Domínio. Receita de aluguéis de set. continua sem prova → `Pendente`.
+
+## Retorno do Gian (e-mail 26/10/2026 15:03)
+- Sem receita de aluguéis em 09/2026 (os aluguéis começam em **2027**), sem receita financeira, conta aberta só com o capital (R$ 300,00; o contrato fala em R$ 321,67 em moeda), sem pró-labore.
+- RECEITA ALUGUEIS Set2026 → `Sem movimento` (gravado na fila em 26/10). Com isso o 09/2026 do 265 fecha sem movimento (fora o SPED Contribuições, prazo 16/11).
+- Planilha de Rendimentos 3ºTRIM está `NT` (sem conta), mas agora existe conta (sem rendimento): avisar a Gabi para trocar para `Zerado` se for o caso.
+- **Sem resposta ainda:** contratos de locação, matrículas em nome da PJ/ITBI, cadastro no SIEG e no G-Click. Antes de 2027, corrigir no Domínio o regime de PIS/COFINS (cumulativo).
