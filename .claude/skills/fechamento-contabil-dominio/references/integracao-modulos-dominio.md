@@ -18,9 +18,26 @@ antes dele virar pendência no fim:
 - **Relatório de serviços prestados e tomados**, quando o cliente emitir ou tomar nota de serviço.
 - **Apuração de impostos do período** — ver o caminho confirmado abaixo, que varia por tributo.
 
-Para entradas, saídas e serviços, ainda não há um caminho de tela confirmado — pergunte ao colaborador como
-ele normalmente extrai esses relatórios no sistema dele, em vez de aceitar um caminho de menu citado de
-memória, ou peça que ele consulte a central de suporte do Domínio (suporte.dominioatendimento.com).
+### Manual de cada relatório — mande o link junto com o pedido
+
+**Todo pedido de relatório do Domínio, em qualquer etapa, vai com o link do manual** (tabela abaixo), para
+o colaborador consultar se tiver dúvida de como emitir. Relatório sem manual na tabela: diga que não há
+manual mapeado e peça o caminho que o colaborador já usa — e, se ele informar, registre aqui. Os títulos
+vêm do índice de busca da central do Domínio; só os marcados "abre" foram abertos por um colaborador.
+
+| Relatório | Manual na central do Domínio |
+|---|---|
+| Razão | [Como emitir o Razão? (1817)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1817) |
+| Balancete | [Como emitir Balancete? (1809)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1809) |
+| Plano de contas | [Como emitir relatório do plano de contas? (44)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=44) |
+| Livros contábeis (Diário, Razão, Balanço) | [Como emitir os livros contábeis? (51)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=51) |
+| Conferência da integração (o que cada módulo lançou) | [Como emitir relatórios para conferir a Integração? (3609)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=3609) · [Como emitir relatório de Integração Contábil? (3568)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=3568) |
+| Serviços prestados e tomados (acompanhamento) | [Como emitir relatório de acompanhamento de Serviços? (71)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=71) |
+| Entradas e saídas | Sem manual específico mapeado. O material de treinamento do Domínio indica `Relatórios > Acompanhamentos` (Entradas, Saídas, Serviços) e `Relatórios > Livros` (Registro de Entradas/Saídas) — caminho a confirmar com o colaborador |
+| Apuração de impostos | Solução 1998 — caminhos por tributo logo abaixo |
+| Patrimônio: depreciação do período (por bem, resumo por conta, acompanhamento patrimonial) | [Onde faço a emissão do(s) relatório(s) de depreciação fiscal? (509)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=509) |
+| Patrimônio: relação dos bens (sem baixados / adquiridos no período) | [Relatório cadastral sem os bens baixados (504)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=504) · [Somente bens adquiridos no período (505)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=505) |
+| Títulos em aberto de fornecedores/clientes | Sem manual mapeado — pergunte o caminho que o colaborador usa |
 
 ### Apuração de impostos — caminho confirmado (central de suporte do Domínio, solução nº 1998)
 

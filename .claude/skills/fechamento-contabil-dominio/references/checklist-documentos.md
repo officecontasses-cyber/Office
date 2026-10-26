@@ -69,8 +69,15 @@ Uma mensagem só, curta, sem repetir explicações que o colaborador já conhece
 > ⬜ Certidão ou situação de débitos municipal
 >
 > **Domínio** — em `005_CONTABIL RELATORIOS/{MM_MÊS}`
-> ⬜ Razão (desde jan/{ano anterior}), balancete, plano de contas
-> ⬜ Entradas, saídas, serviços prestados/tomados e apuração de impostos do período
+> ⬜ Razão (desde jan/{ano anterior}) — [manual](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1817)
+> ⬜ Balancete — [manual](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1809)
+> ⬜ Plano de contas — [manual](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=44)
+> ⬜ Serviços prestados/tomados — [manual](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=71)
+> ⬜ Entradas e saídas (caminho que você já usa)
+> ⬜ Apuração de impostos do período — [manual](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1998)
+> ⬜ Depreciação do período, se o cliente usa o patrimônio — [manual](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=509)
+>
+> Os links são os manuais da central do Domínio, para consultar se tiver dúvida de como emitir.
 >
 > **Do cliente** — o que tiver para conciliação (contratos, notas, recibos)
 >
