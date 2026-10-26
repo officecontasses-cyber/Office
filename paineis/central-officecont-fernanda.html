@@ -343,9 +343,9 @@ function taskRow(t,today){
   const hi=hiDot(t,today);
   let detail='';
   if(S.open.has(t.id)){
-    const steps=passos.map((p,i)=>`<label class="${p.ok?'ok':''}"><input type="checkbox" data-act="step" data-id="${id}" data-i="${i}" ${p.ok?'checked':''}><span><span>${esc(p.t)}</span>${p.url?` <a href="${esc(p.url)}" target="_blank" rel="noopener">abrir no G-Click ↗</a>`:''}${p.resumo?`<small>${esc(p.resumo)}</small>`:''}</span></label>`).join('');
+    const steps=passos.map((p,i)=>`<label class="${p.ok?'ok':''}"><input type="checkbox" data-act="step" data-id="${id}" data-i="${i}" ${p.ok?'checked':''}><span><span>${esc(p.t)}</span>${p.url?` <a href="${esc(p.url)}" target="_blank" rel="noopener">${o==='planilha'?'abrir na planilha':'abrir no G-Click'} ↗</a>`:''}${p.resumo?`<small>${esc(p.resumo)}</small>`:''}</span></label>`).join('');
     const one=passos.length===1&&passos[0].url?passos[0].url:null;
-    const link=one?`<a class="small" href="${esc(one)}" target="_blank" rel="noopener">Abrir a tarefa no G-Click ↗</a>`:(t.links&&t.links[0])?`<a class="small" href="${esc(t.links[0].url)}" target="_blank" rel="noopener">Abrir ${esc(t.links[0].t||'origem')} ↗</a>`:'';
+    const link=one?`<a class="small" href="${esc(one)}" target="_blank" rel="noopener">${o==='planilha'?'Abrir a linha na planilha':'Abrir a tarefa no G-Click'} ↗</a>`:(t.links&&t.links[0])?`<a class="small" href="${esc(t.links[0].url)}" target="_blank" rel="noopener">Abrir ${esc(t.links[0].t||'origem')} ↗</a>`:'';
     const conf=S.confirm===t.id?`<div class="confirm">Excluir esta tarefa de vez? <button class="btn link danger" data-act="delYes" data-id="${id}">Excluir</button><button class="btn link" data-act="delNo">Cancelar</button></div>`:'';
     detail=`<div class="detail">
       ${passos.length?`<div class="steps">${steps}</div>`:''}
