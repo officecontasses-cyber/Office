@@ -45,6 +45,10 @@ nome dos itens C, D e E (ex.: `SITUACAO FISCAL RFB 25-10-2026.pdf`, `DIAGNOSTICO
 período e a data de pagamento nos comprovantes (ex.: `DARF PA 08-2026 PG 18-09-2026.pdf`): é o que mostra, de relance, que o
 relatório foi atualizado para este fechamento.
 
+**Senha no nome do arquivo:** extrato protegido costuma chegar com a senha no nome (ex.: "Extr Inv senha
+…"). Não repita esse nome nem a senha no chat ou nos arquivos da skill. Peça ao colaborador uma cópia sem
+senha (ele abre e salva de novo) e que renomeie ou apague o original da pasta.
+
 ## Mensagem-modelo ao colaborador (início da Etapa 1)
 
 Adapte ao que você já encontrou no Drive (✅ = já está lá, com o nome do arquivo; ⬜ = falta salvar).

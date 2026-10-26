@@ -46,16 +46,17 @@ menu, já que o sistema pode variar por módulo contratado.
 ## Manuais do Domínio para mandar ao colaborador
 
 Mande o link junto com cada integração pedida, para o colaborador consultar se tiver dúvida do que ou de
-como integrar. São soluções da central de suporte do Domínio encontradas por busca; **os títulos abaixo
-vêm do índice da busca — não foi possível abrir as páginas para conferir o conteúdo**. Se um link não
+como integrar. São soluções da central de suporte do Domínio encontradas por busca. **Só os links
+marcados "abre" foram abertos por um colaborador**; os outros têm o título do índice da busca e não foram
+conferidos (a solução 5551, por exemplo, estava inativa). Quando um link estiver inativo ou não
 corresponder ao título, avise e troque aqui.
 
 | Integração / assunto | Solução na central do Domínio |
 |---|---|
 | Fiscal → Contábil: configurar a integração contábil | [Como configurar integração contábil? (881)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=881) |
 | Fiscal: cadastrar acumulador (abas Impostos e Contabilidade) | [Como cadastrar um acumulador? (1156)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1156) |
-| Fiscal: integração contábil dos lançamentos das notas | [Como configurar a integração contábil dos lançamentos das notas para a contabilidade? (230)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=230) — a confirmar |
-| Fiscal: lançamento não regerado (relatório de conferência, contas nos cadastros, acumulador) | [Mensagem: 'Existem lançamentos contábeis que não foram regerados' (655)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=655) — a confirmar |
+| Fiscal: integração contábil dos lançamentos das notas | [Como configurar a integração contábil dos lançamentos das notas para a contabilidade? (230)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=230) — abre (confirmado em 26/10/2026) |
+| Fiscal: lançamento não regerado (relatório de conferência, contas nos cadastros, acumulador) | [Mensagem: 'Existem lançamentos contábeis que não foram regerados' (655)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=655) — abre (confirmado em 26/10/2026) |
 | Fiscal: integração dos impostos calculados | [Como configurar integração contábil dos impostos calculados? (231)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=231) |
 | Fiscal: integração dos impostos lançados por nota | [Como configurar a integração contábil dos impostos lançados… (2846)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=2846) |
 | Fiscal: integração de serviços prestados | [Como configurar a integração contábil de Serviços Prestados? (10185)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=10185) |
@@ -114,6 +115,10 @@ Conferir em todos os regimes:
   Retenções`): retidas pelo cliente como tomador em obrigação a recolher; retidas dele como prestador em
   tributo a compensar/recuperar, não em despesa.
 - Retenções federais × controle da REINF do DP (ver "Retenções — controle do DP" abaixo).
+- Nenhum lançamento manual relançando nota já integrada: nas contas de fornecedores, clientes e
+  retenções, histórico fora do padrão da integração (ex.: "PROVISÃO REF. MM/AAAA" em vez de "SERVIÇO
+  TOMADO NESTA DATA {nota}") com o mesmo número de nota de uma integração de outro mês é duplicidade —
+  dobra fornecedor, despesa e retenções. Correção: excluir o lançamento manual no Domínio.
 
 **Retenções — controle do DP (`CONTROLE | DP REINF'S`, aba `GATILHO`).** A 1ª aba da planilha resume,
 por cliente (Nº) e competência (colunas `01.2026` … `12.2026`), o que o DP registrou nas abas mensais

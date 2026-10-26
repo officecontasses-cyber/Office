@@ -38,6 +38,11 @@ O colaborador informa **o número do cliente na carteira + a competência** (ou 
    - Para o **Lucro Real**, a planilha não diz se a apuração é por estimativa ou por balanço de suspensão/redução: veja na aba `Apuração` do mapa contábil do cliente (Etapa 2) ou pergunte.
    - Se a competência não estiver liberada (ou estiver vazia), avise o colaborador e pergunte se segue mesmo assim — o fechamento contábil pode começar, mas os números fiscais ainda podem mudar.
 4. Responda em **uma mensagem curta de confirmação** (cliente, regime, competência(s), status do fiscal) e já emende a Etapa 1.
+5. **Modo teste:** se o colaborador disser que a rodada é teste (ex.: para ver a skill num cliente já fechado), siga todas as etapas e entregue os arquivos normalmente, mas não peça para importar, excluir ou integrar nada no Domínio — as portas que dependem disso viram só conferência, e você segue com a hipótese explícita (ex.: "supondo que o lote duplicado seja excluído"). Diga no resumo de cada etapa o que, fora do teste, o colaborador teria de fazer no sistema.
+
+## Arquivos: você entrega, o colaborador salva
+
+Você lê o Drive (pastas, PDFs, planilhas, exports), mas **não grava planilhas .xlsx no Drive**: o conector exige mandar o arquivo inteiro como texto codificado, e um caractere errado corrompe a planilha. Por isso, todo arquivo que a skill gera (mapa, conciliação bancária, importação, ajustes, papel de trabalho) é **entregue no chat**, sempre com o **caminho exato** de onde salvar (ex.: `238_REAT HOLDING/2026/005_CONTABIL RELATORIOS/09_SETEMBRO/`). Depois que o colaborador disser que salvou, **confira no Drive** (nome, pasta, tamanho do arquivo) antes de seguir — arquivo que só existe no chat se perde quando a conversa acaba.
 
 ## O checklist (7 etapas, sempre nesta ordem)
 
@@ -90,13 +95,15 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
    - todo parcelamento e débito da situação fiscal (itens C, D, E) tem conta correspondente no passivo, e vice-versa?
 5. **Apresente um resumo curto** ao colaborador: contas novas, regras **propostas** (as que você deduziu do razão e ele ainda não confirmou), pendências herdadas (contas transitórias ou "a regularizar" com saldo, saldos invertidos), divergências dos cruzamentos e os tributos do regime apurados e pagos no ano.
 
-**Porta de saída da Etapa 2:** o colaborador confirma ou corrige as regras propostas. Só então salve o mapa (regras confirmadas passam a `confirmada`, com data) e siga para a Etapa 3. Divergência dos cruzamentos que não for resolvida agora vira pendência registrada, como na Etapa 1.
+**Porta de saída da Etapa 2:** o colaborador confirma ou corrige as regras propostas. Só então feche o mapa (regras confirmadas passam a `confirmada`, com data; regras que ele não confirmou ficam como estão), entregue-o para o colaborador salvar em `{ano}/005_CONTABIL RELATORIOS/` e confira no Drive que foi salvo antes de seguir para a Etapa 3. Divergência dos cruzamentos que não for resolvida agora vira pendência registrada, como na Etapa 1.
 
 **Apoio:** `balancete-analise` para integridade/coerência do balancete recebido; `plano-contas-cpc` só se o plano de contas parecer mal estruturado e precisar de revisão (não é o padrão — só acione se notar problema real).
 
 ### Etapa 3 — Extratos bancários → lançamentos para importar no Domínio
 
 **Usa:** os extratos (item A) e os comprovantes de pagamento (item B) da Etapa 1 e as regras `confirmada` do mapa contábil do cliente (Etapa 2). Detalhes do layout, das armadilhas e das conferências em `references/lancamentos-bancarios.md`.
+
+**Mês já lançado no Domínio → modo conferência.** Se o razão da competência já tem os lançamentos dos bancos (o saldo de cada conta bancária no balancete bate com o extrato), não classifique de novo do zero: case cada linha do extrato com um lançamento do razão (mesmo valor, data próxima), confira a classificação contra as regras do mapa e aponte o que diverge. A planilha de revisão ganha a coluna `Situação` (`Conferido`, `Ajustar conta`, `Ajustar histórico`, `Pergunta`, `Conferir com notas`) e a importação leva **só os ajustes** confirmados. Aplicação financeira: confira rendimento, IRRF, IOF e diferença de resgate **por título** do extrato de aplicações — no teste do 238, um dos dois CDBs não tinha rendimento lançado. Detalhes em `references/lancamentos-bancarios.md`.
 
 **O que fazer:**
 
@@ -110,7 +117,7 @@ Onde salvar, como nomear e o que cada item precisa conter estão em `references/
 5. **Monte dois arquivos por competência**, na pasta do cliente em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`:
    - **Planilha de revisão** (`CONCILIACAO BANCARIA {NNN} {MM-AAAA}.xlsx`): todas as linhas do extrato, com a classificação, a origem (`regra`/`proposta`/`pendente`) e a observação — é o que o colaborador revisa;
    - **Planilha de importação** (`IMPORTACAO {NNN} {MM-AAAA}.xlsx`): só as linhas `regra` e `proposta` já confirmadas, **no layout exato do modelo do escritório** (`1015_ROTINA AUTOMATICA\003 CONTABILIDADE\planilhamodeloimportacaolancamentoscontabeis`), com os códigos reduzidos do Domínio que estão no mapa.
-   Confirme com o colaborador que você tem permissão de escrita na pasta antes de salvar; se não tiver, entregue os arquivos prontos para ele salvar.
+   Entregue os dois arquivos no chat com o caminho de onde salvar (ver "Arquivos: você entrega, o colaborador salva").
 6. **Apresente o resumo** por conta bancária: quantidade de linhas por origem, totais de entradas e saídas, e se o saldo final calculado bate com o extrato. Mostre as `proposta` **agrupadas por padrão** (ex.: "12 PIX para FULANO, R$ 5.000 — pró-labore?") para o colaborador confirmar em bloco, e liste as `pendente`.
 
 **Porta de saída da Etapa 3:**
@@ -138,8 +145,9 @@ Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do
 5. **Folha: os dados vêm do DP, o contábil não salva relatórios da folha.** Para saber se o cliente tem folha e quanto deu, leia a pasta `{ano}/003_FOPAG/{MM_MÊS}` do cliente (relação da folha por empregado, rateio, FGTS), onde o DP já salva a folha do mês. A planilha de controle da folha do DP ainda não foi localizada (**pendente — confirmar com a Júlia, responsável pelo DP**); quando existir, a aba `GATILHO` dela passa a dizer quem tem folha e se a competência está fechada. Use esses totais para conferir a integração da folha.
 6. **Um módulo por vez:** o colaborador integra e responde "integrei {módulo}". Peça o razão (ou o relatório de lançamentos gerados) das contas que o módulo alimenta e confira contra os relatórios — as conferências de cada módulo, inclusive o que muda por regime (Simples, Presumido, Real), estão na referência.
 7. **Cruze com o banco (Etapa 3):** as contas que o banco baixou e o módulo alimentou precisam conversar — receita no razão = relatório de saídas/serviços (receita a mais costuma ser duplicidade com o banco), salários a pagar zerados depois do pagamento, tributo pago baixado da conta certa.
-8. **Erro de integração se corrige na origem** (acumulador, parâmetro de integração, cadastro do bem, evento da folha), com reintegração ou regeração — não proponha lançamento manual no contábil para tapar diferença de módulo. Depois, confira de novo.
-9. **Ajustes manuais do mês:** lançamentos que nenhum módulo gera e que o cliente faz todo mês (os recorrentes estão no `Perfil` do mapa — ex.: apropriação de despesa antecipada, juros de mútuo, depreciação quando o cliente não usa o módulo de patrimônio) ou que o pacote mostrou que faltam. Monte esses lançamentos numa planilha `AJUSTES {NNN} {MM-AAAA}.xlsx`, no mesmo layout do modelo de importação (ver `references/lancamentos-bancarios.md`), em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`, com o histórico e o porquê de cada um, para o colaborador revisar e importar.
+8. **Procure lançamento manual que duplica o módulo:** nas contas que o módulo alimenta (fornecedores, clientes, retenções), lançamento com histórico fora do padrão da integração (ex.: "PROVISÃO REF. 08/2026" em vez de "SERVIÇO TOMADO NESTA DATA {nota}") relançando nota que o módulo já integrou em outro mês. Compare o número da nota nos dois. No teste do 238, um lote assim duplicava três notas de agosto e dobrava as retenções de setembro. Correção: o colaborador exclui o lançamento manual no Domínio — não é ajuste.
+9. **Erro de integração se corrige na origem** (acumulador, parâmetro de integração, cadastro do bem, evento da folha), com reintegração ou regeração — não proponha lançamento manual no contábil para tapar diferença de módulo. Depois, confira de novo.
+10. **Ajustes manuais do mês:** lançamentos que nenhum módulo gera e que o cliente faz todo mês (os recorrentes estão no `Perfil` do mapa — ex.: apropriação de despesa antecipada, juros de mútuo, depreciação quando o cliente não usa o módulo de patrimônio) ou que o pacote mostrou que faltam. Monte esses lançamentos numa planilha `AJUSTES {NNN} {MM-AAAA}.xlsx`, no mesmo layout do modelo de importação (ver `references/lancamentos-bancarios.md`), em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`, com o histórico e o porquê de cada um, para o colaborador revisar e importar.
 
 **Apoio:** `ativo-imobilizado-depreciacao` para a depreciação/baixa de bens (não recalcule aqui); `lancamentos-contabeis-padrao` para lançamentos-modelo de operações fora do padrão do cliente (empréstimo, equivalência patrimonial etc.); `analisar-folha-pagamento` se a folha integrada não bater e for preciso abrir o detalhe.
 
@@ -165,7 +173,7 @@ Se o fluxo do cliente usar a importação por TXT de posições fixas (em vez do
    - lançamento que falta e não é de módulo → linha nova na planilha `AJUSTES {NNN} {MM-AAAA}.xlsx` (a mesma da Etapa 4), com o histórico e o porquê;
    - documento que não existe → pendência com o cliente (`pendencias-fechamento-cliente`).
 4. **Revise o resultado do período:** receita × relatórios do fiscal (já cruzada na Etapa 4), despesas recorrentes que faltaram ou duplicaram, e variações relevantes contra o mês anterior e o mesmo mês do ano anterior — cada variação grande com a explicação ou a pergunta ao colaborador.
-5. **Monte o papel de trabalho** `CONCILIACAO {NNN} {MM-AAAA}.xlsx` em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`: uma linha por conta, com saldo contábil, suporte, diferença, status (`Conciliada`, `Divergente`, `Pendência aceita`, `Sem suporte`), explicação e ação. Confirme permissão de escrita antes de salvar; se não tiver, entregue o arquivo pronto.
+5. **Monte o papel de trabalho** `CONCILIACAO {NNN} {MM-AAAA}.xlsx` em `{ano}/005_CONTABIL RELATORIOS/{MM_MÊS}`: uma linha por conta, com saldo contábil, suporte, diferença, status (`Conciliada`, `Divergente`, `Pendência aceita`, `Sem suporte`), explicação e ação. Entregue o arquivo com o caminho de onde salvar.
 6. **Rodada de correção:** o colaborador corrige na origem e/ou importa os ajustes, exporta de novo o balancete, e você reconfere só as contas afetadas, atualizando o papel de trabalho. Repita até não sobrar `Divergente`.
 
 **Apoio por tipo de conta:**

@@ -29,10 +29,34 @@ preenchida; as linhas seguintes do mesmo lote têm só a outra conta e `Inicia L
 crédito 245 de 100.000,00 com `Inicia Lote` = 99, seguido de débitos 5 e 55 de 10.000,00 e 90.000,00).
 O total a débito e a crédito de cada lote precisa fechar.
 
-**O que ainda não está confirmado:** o significado exato do valor em `Inicia Lote` (no modelo aparecem
-99 e 854 — pode ser número do lote ou só um marcador) e se o Domínio exige algum formato de data
-específico. No primeiro uso com um cliente, peça ao colaborador para importar e confirmar que o Domínio
-aceitou; se ele souber a regra, registre-a aqui em vez de manter a dúvida.
+**`Inicia Lote`:** o próprio modelo tem um comentário na célula G1: *"Informe '1' para indicar um novo
+lote"*. Use `1` na primeira linha de cada lançamento (lançamento simples: em toda linha) e deixe vazio
+nas linhas seguintes do mesmo lote. No modelo, os valores 99 e 854 também marcam início de lote.
+
+**Formato das células, como no modelo:** `Data` como data de verdade (não texto), códigos de conta como
+número inteiro, `Valor` como número com formato `0.00`. O jeito mais seguro é copiar o arquivo do modelo,
+apagar as linhas de exemplo e preencher. O que ainda não foi confirmado numa importação real: se o
+Domínio aceitou o arquivo sem erro — no primeiro uso, peça ao colaborador para importar e confirmar.
+
+## Modo conferência (mês já lançado no Domínio)
+
+Quando os bancos da competência já estão lançados (saldo do balancete = extrato), a planilha de revisão
+casa cada linha do extrato com o lançamento do razão — mesmo valor, data próxima, uma vez só — e mostra a
+contrapartida usada, a regra do mapa que se aplica e a `Situação`:
+
+| Situação | Quando |
+|---|---|
+| `Conferido` | Classificação = regra do mapa (ou lote de DARF = comprovante, código a código) |
+| `Ajustar conta` / `Ajustar histórico` | Conta ou histórico errado no lançamento |
+| `Pergunta` | Classificação plausível, mas depende de informação que só o colaborador tem |
+| `Conferir com notas` | A regra depende de documento ainda não recebido (ex.: notas de aluguel) |
+
+Linha do extrato sem par no razão (ou lançamento do razão sem par no extrato) é divergência. Os ajustes
+confirmados vão para a importação no layout acima; nada do que já está certo é relançado.
+
+**Extrato de aplicações com vários títulos:** confira rendimento, IRRF, IOF e "Dif. Resgate" por título,
+contra os lançamentos da conta de aplicação. Saldo final do extrato = saldo anterior + aplicações +
+rendimento − resgates brutos − diferença de resgate; o resgate líquido creditado no banco = bruto − IRRF − IOF.
 
 ## Planilha de revisão
 
