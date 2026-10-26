@@ -54,7 +54,8 @@ corresponder ao título, avise e troque aqui.
 |---|---|
 | Fiscal → Contábil: configurar a integração contábil | [Como configurar integração contábil? (881)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=881) |
 | Fiscal: cadastrar acumulador (abas Impostos e Contabilidade) | [Como cadastrar um acumulador? (1156)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=1156) |
-| Fiscal: lançamento não gerado ou errado, contas no acumulador, regerar, fornecedor/cliente duplicado | [Perguntas e Respostas – Integração Contábil Escrita Fiscal (5551)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=5551) |
+| Fiscal: integração contábil dos lançamentos das notas | [Como configurar a integração contábil dos lançamentos das notas para a contabilidade? (230)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=230) — a confirmar |
+| Fiscal: lançamento não regerado (relatório de conferência, contas nos cadastros, acumulador) | [Mensagem: 'Existem lançamentos contábeis que não foram regerados' (655)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=655) — a confirmar |
 | Fiscal: integração dos impostos calculados | [Como configurar integração contábil dos impostos calculados? (231)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=231) |
 | Fiscal: integração dos impostos lançados por nota | [Como configurar a integração contábil dos impostos lançados… (2846)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=2846) |
 | Fiscal: integração de serviços prestados | [Como configurar a integração contábil de Serviços Prestados? (10185)](https://suporte.dominioatendimento.com/central/faces/solucao.html?codigo=10185) |
@@ -100,7 +101,7 @@ Contabilidade dele traz as contas contábeis dos lançamentos. Antes ou durante 
 - todo acumulador usado no período (inclusive um criado no mês) tem as contas contábeis preenchidas,
   coerentes com as contas do mapa do cliente;
 - nota sem lançamento, ou lançamento em conta errada, quase sempre é acumulador sem conta ou com conta
-  errada: ajuste o acumulador e regere os lançamentos (solução 5551), em vez de corrigir no contábil;
+  errada: ajuste o acumulador e regere os lançamentos (soluções 230 e 655), em vez de corrigir no contábil;
 - o acumulador é configuração do módulo fiscal: combine com o fiscal antes de alterar um acumulador que
   ele também usa, e registre o ajuste no `Perfil` do mapa (Etapa 7).
 
