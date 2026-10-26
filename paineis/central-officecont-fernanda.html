@@ -50,8 +50,6 @@ details.block>summary{cursor:pointer;list-style:none;display:flex;align-items:ce
 details.block>summary::-webkit-details-marker{display:none}
 details.block>summary::after{content:"Abrir";font-size:12px;color:var(--muted);font-weight:600}
 details.block[open]>summary::after{content:"Recolher"}
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-.grid2>*{min-width:0}
 .list{display:flex;flex-direction:column;gap:8px}
 .empty{padding:12px;border:1px dashed var(--line);border-radius:8px;color:var(--muted);font-size:14px}
 .chip{display:inline-flex;align-items:center;gap:4px;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;background:var(--surface-2);color:var(--muted);white-space:nowrap}
@@ -145,15 +143,9 @@ textarea{width:100%;min-height:64px;resize:vertical}
       <div class="blockhead"><h2>Por onde começar</h2><span class="label" id="ordemSrc"></span></div>
       <div class="list" id="ordem"><div class="empty">Carregando…</div></div>
     </div>
-    <div class="grid2">
-      <div class="block">
-        <div class="blockhead"><h2>Agora</h2><span class="label">vence hoje ou atrasado</span></div>
-        <div class="list" id="agora"><div class="empty">Carregando…</div></div>
-      </div>
-      <div class="block">
-        <div class="blockhead"><h2>Agenda do dia</h2></div>
-        <div class="list" id="agenda"></div>
-      </div>
+    <div class="block">
+      <div class="blockhead"><h2>Agora</h2><span class="label">vence hoje ou atrasado</span></div>
+      <div class="list" id="agora"><div class="empty">Carregando…</div></div>
     </div>
     <details class="block"><summary><h2>Semana à frente <span class="muted" id="nSemana"></span></h2></summary><div class="list" id="semana"></div></details>
     <div class="block">
@@ -273,8 +265,6 @@ function renderDia(today){
   const sem=open.filter(t=>bucketOf(t,today)==='semana').sort((a,b)=>cmp(rank(a,today),rank(b,today)));
   $('nSemana').textContent='('+sem.length+')';
   $('semana').innerHTML=sem.length?sem.map(t=>miniItem(t,today)).join(''):'<div class="empty">Nada vence nos próximos 7 dias.</div>';
-  const ag=Array.isArray(md.agenda)?md.agenda:[];
-  $('agenda').innerHTML=ag.length?ag.map(e=>`<div class="item"><span class="chip info">${esc(e.hora||'')}</span><div class="body"><div class="title" style="cursor:default">${esc(e.titulo||'')}</div>${e.link?`<div class="why"><a href="${esc(e.link)}" target="_blank" rel="noopener">entrar ↗</a></div>`:''}</div></div>`).join(''):'<div class="empty">A agenda ainda não está conectada. Os compromissos aparecem aqui depois do briefing da manhã.</div>';
   renderInbox();
   const f=md.fontes||{};const keys=Object.keys(f);
   $('fontes').innerHTML=keys.length?keys.map(k=>{const v=f[k]||{};const st=v.status||'wait';return `<span class="dot ${st==='ok'?'ok':st==='erro'?'no':'wait'}" aria-hidden="true"></span><div><b>${esc(k)}</b> · ${esc(st==='ok'?'deu certo':st==='erro'?'falhou':'ainda não conectado')}${v.obs?'<br><span class="muted">'+esc(v.obs)+'</span>':''}</div>`;}).join(''):'<span></span><div class="muted">Nenhuma rodada registrada ainda.</div>';
