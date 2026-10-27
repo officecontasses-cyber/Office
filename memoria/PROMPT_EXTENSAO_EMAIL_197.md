@@ -22,12 +22,12 @@ Assunto: RE: ASBBM (197) | enquadramento de IRPJ/CSLL
 
 Oi, Gian,
 
-Retomando a ASBBM (197): a **CSLL do 3º trimestre vence quinta, 30/10** (R$ 95,64, se ficar em Lucro Presumido). Preciso só de uma definição até quarta (29/10):
+Retomando a ASBBM (197): a **CSLL do 3º trimestre vence sexta, 30/10** (R$ 95,64, se ficar em Lucro Presumido). Preciso só de uma definição até quinta (29/10):
 1. Em 2026 a ASBBM fica em **Lucro Presumido** (como na ECF 2024) ou é **isenta** (Lei 9.532, art. 15)?
 2. Se for Lucro Presumido: pago a CSLL de R$ 95,64 e o IRPJ fica sem guia (o IRRF das aplicações cobre).
 3. Se for isenta: não gero IRPJ/CSLL; e o PIS/COFINS (folha, anuidades, receita financeira), como você quer tratar?
 
-Se não der para decidir até quarta, minha sugestão é pagar a CSLL pelo regime da última ECF (Lucro Presumido) e revermos o enquadramento com calma para a ECF 2026. Pode ser?
+Se não der para decidir até quinta, minha sugestão é pagar a CSLL pelo regime da última ECF (Lucro Presumido) e revermos o enquadramento com calma para a ECF 2026. Pode ser?
 
 Obrigada,
 Fernanda
@@ -36,3 +36,6 @@ Regras: NÃO envie; salve só em Rascunhos e me diga o assunto e o horário em q
 ---
 
 Depois de rodar, a Fernanda cola o retorno no chat; a agente atualiza `CLIENTE_197_ASBBM.md`, `PENDENCIAS.md`, o snapshot do dia no Drive e grava na fila o que for decidido.
+
+## Resultado da Fase 1 (27/10/2026)
+O e-mail de 18/10 ao Gian **nunca foi enviado** (nem rascunho; Rascunhos vazia). Sem resposta do Gian. Única troca recente: pedido de rendimentos à Gabriela (04/10; resposta geral em 19/10). Última troca com a ASBBM: 05/10 (acesso ao Visão Cliente). Fase 2 = e-mail **novo** (texto abaixo, dias corrigidos: 29/10 é quinta, 30/10 é sexta).
