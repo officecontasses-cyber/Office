@@ -39,3 +39,28 @@ Depois de rodar, a Fernanda cola o retorno no chat; a agente atualiza `CLIENTE_1
 
 ## Resultado da Fase 1 (27/10/2026)
 O e-mail de 18/10 ao Gian **nunca foi enviado** (nem rascunho; Rascunhos vazia). Sem resposta do Gian. Única troca recente: pedido de rendimentos à Gabriela (04/10; resposta geral em 19/10). Última troca com a ASBBM: 05/10 (acesso ao Visão Cliente). Fase 2 = e-mail **novo** (texto abaixo, dias corrigidos: 29/10 é quinta, 30/10 é sexta).
+
+### Texto para colar na extensão (Fase 2, e-mail novo)
+Pode rascunhar, com estes ajustes: é um e-mail NOVO (não "RE:"), para o Gian, e os dias certos são quinta 29/10 e sexta 30/10. Use exatamente este texto, salve em Rascunhos e NÃO envie:
+
+Assunto: ASBBM (197) | enquadramento de IRPJ/CSLL: isenta, imune ou Lucro Presumido?
+
+Oi, Gian, tudo bem?
+
+Preciso de uma definição sua sobre a ASBBM (Associação Sul Brasileira de Biomedicina, CNPJ 05.164.750/0001-12) para fechar o 3º trimestre. A **CSLL vence sexta, 30/10** e eu preciso da resposta **até quinta (29/10)**.
+
+O que encontramos:
+- Na Receita, a natureza jurídica é Associação Privada (CNAE 9412-0/99). Nas ECFs, 2019 a 2021 constam como "Isento do IRPJ", 2022 e 2023 como "Imune" e **2024 como Lucro Presumido**.
+- O estatuto (2014) diz que é sem fins lucrativos, sem remuneração de dirigentes e sem distribuição de receitas.
+- Em 2026 não há receita de serviços; só rendimentos de aplicações (3º trimestre R$ 1.062,66, IRRF R$ 239,00).
+
+O que preciso que você defina:
+1. Em 2026 a ASBBM fica em **Lucro Presumido** (como na ECF 2024) ou é **isenta** (Lei 9.532, art. 15)?
+2. Se for Lucro Presumido: pago a CSLL de **R$ 95,64** e o IRPJ fica sem guia (o IRRF das aplicações é maior que o imposto).
+3. Se for isenta: não gero IRPJ/CSLL. Como você quer tratar o PIS/COFINS (folha, anuidades, receita financeira)?
+4. Por que a ECF 2024 saiu em Lucro Presumido? E a ECF 2025, com que forma de tributação foi entregue?
+
+Se não der para decidir até quinta, minha sugestão é pagar a CSLL pelo regime da última ECF (Lucro Presumido) e revermos o enquadramento com calma para a ECF 2026. Pode ser?
+
+Obrigada,
+Fernanda
