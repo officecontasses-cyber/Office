@@ -123,3 +123,11 @@ TAREFA B — G-CLICK (só para atualizar o registro; NÃO enviar ao cliente)
 4. **NÃO clique em nada que envie e-mail ao cliente** ("Enviar", "Enviar ao cliente", "Solicitação" por e-mail, reenvio). Se a única forma de anexar disparar envio ao cliente, pare e me pergunte antes.
 5. Não conclua nem reabra outras tarefas. Não mexa em tarefas de outros clientes.
 6. Me devolva: o que fez, o nome do arquivo que ficou na tarefa, a data/hora que o G-Click mostrou e se algum e-mail foi disparado (sim/não). Se possível, deixe a tela aberta para eu tirar o print.
+
+---
+## Prompt 4 (28/10/2026): e-mail à Giatech com a guia atualizada (OWA) + anexar a guia no G-Click (só registro)
+
+Arquivo: `I:\Meu Drive\1015_ROTINA AUTOMATICA\001 FECHAMENTO FISCAL\001_FECHAMENTO FISCAL\09_SETEMBRO\009 IMPOSTOS FEDERAIS\261_Giatech_NovoHamburgo_09.2026_IRPJ-CSLL 3ºTRIM.pdf` (DARF 07.16.26301.2705806-1, R$ 2.801,71). Texto do prompt: ver a resposta da agente de 28/10 (mesmo conteúdo abaixo).
+
+Tarefa A (OWA): e-mail NOVO para Jania Luisa Lippert, Cc Norberto Luiz Giacomazzo (endereços copiados da conversa "Correção NF 10 - GIATECH", sem responder nela), assunto "Giatech | Guia IRPJ/CSLL 3º trimestre/2026 ATUALIZADA (R$ 2.801,71) – vence 30/10", com o PDF anexado; salvar em Rascunhos, não enviar.
+Tarefa B (G-Click): tarefa "CSLL e IRPJ - LP (Trimestral) - TRIM 03/2026" do 261: substituir/anexar o PDF de 2.801,71 só como registro, sem disparar e-mail ao cliente.
