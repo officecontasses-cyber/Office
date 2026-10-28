@@ -46,3 +46,18 @@ Regras da Fase 2: NÃO envie; salve só em Rascunhos; não anexe arquivos; não 
 ---
 
 Depois de rodar, a Fernanda cola o retorno no chat; a agente atualiza `CLIENTE_261_GIATECH.md`, `PENDENCIAS.md` e o snapshot do dia, e ajusta a guia/fila se a Betha tiver recolhido.
+
+---
+## Prompt 2 (28/10/2026): ler o RETORNO da Betha (depois da nossa resposta)
+
+Você vai ler a resposta da BETHA SISTEMAS LTDA (CNPJ 00.456.865/0001-67) sobre a CSLL não retida na NFS-e nº 10 da GIATECH (CNPJ 64.866.011/0001-31; 25/09/2026; R$ 34.000,00; CSLL 1% = R$ 340,00). SOMENTE LEITURA: não responda, não encaminhe, não apague, não mova e não rascunhe nada. NUNCA digite senhas.
+
+1. Abra a conversa mais recente com a Betha sobre esse assunto (procure por `Betha`, `Giatech`, `CSLL`, `retenção`, `nota 10`, desde 26/10/2026) e leia a(s) mensagem(ns) que chegaram DEPOIS da nossa última resposta.
+2. Responda, copiando entre aspas as frases exatas da Betha:
+   a. A Betha **já recolheu** a CSLL de R$ 340,00? (sim / não / vai recolher / não disse)
+   b. Se recolheu: **data do pagamento, código da receita (ex.: 5952, 5987), período de apuração, valor principal, multa e juros** e se informou na EFD-Reinf (R-4020).
+   c. Há **anexo** (DARF, comprovante, planilha)? Abra e descreva só esses campos: tipo de documento, código, período de apuração, vencimento, data de pagamento, valor total e CNPJ que consta. Não copie dados bancários.
+   d. A Betha **confirma o desconto de R$ 340,00 na próxima nota** ou pede outra forma (PIX, substituição da nota 10, outra)?
+   e. Falou da **nota 9 de julho** ou de outras notas/retenções?
+   f. Pede algo mais de nós (documento, prazo, ajuste na nota)?
+3. Devolva uma tabela (data/hora | de → para | assunto | resumo) e um parágrafo final no formato: "A Betha recolheu/não recolheu …; comprovante: …; pede: …". NÃO invente nem complete o que não estiver escrito; se algo não aparecer, escreva "não informado".
