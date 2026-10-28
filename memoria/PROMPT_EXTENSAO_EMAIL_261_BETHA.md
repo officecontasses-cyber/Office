@@ -88,3 +88,38 @@ OfficeCont Assessoria Empresarial
 4. Se já houver uma assinatura automática igual, não a duplique: mantenha só uma.
 5. Salve em Rascunhos e **não envie**.
 6. Me devolva: os destinatários (Para e Cc), o assunto, o horário em que o rascunho foi salvo e o texto final. Se surgiu na conversa alguma mensagem nova depois das 16:49 de 28/10 (da Betha ou da Giatech), me mostre um resumo com as frases exatas entre aspas antes de salvar, porque o texto pode precisar de ajuste.
+
+---
+## Prompt 4 (28/10/2026): e-mail à Giatech com a guia atualizada (OWA) + anexar a guia no G-Click (só registro)
+
+Você vai fazer DUAS tarefas para o cliente 261 GIATECH SISTEMAS E TECNOLOGIA LTDA (CNPJ 64.866.011/0001-31). NUNCA envie e-mail. NUNCA digite senhas. Se aparecer tela de login, pare e me avise. Faça a Tarefa A, me mostre o resultado e só depois faça a Tarefa B.
+
+TAREFA A — RASCUNHO NO OWA
+1. Abra a conversa "Correção NF 10 - GIATECH" só para copiar os endereços de e-mail da **Jania Luisa Lippert (Jani)** e do **Norberto Luiz Giacomazzo**. NÃO responda nessa conversa (ela tem a Betha; a guia não vai para a Betha).
+2. Crie um **e-mail NOVO**:
+   - Para: Jania Luisa Lippert. Cc: Norberto Luiz Giacomazzo.
+   - Assunto: `Giatech | Guia IRPJ/CSLL 3º trimestre/2026 ATUALIZADA (R$ 2.801,71) – vence 30/10`
+   - Corpo (use exatamente este texto; se a assinatura automática entrar, não digite outro fechamento):
+
+Oi, Jani, tudo bem?
+
+Segue a guia atualizada de IRPJ/CSLL do 3º trimestre de 2026 da Giatech, no valor de R$ 2.801,71, com vencimento na sexta-feira, 30/10/2026:
+- IRPJ (código 2089): R$ 1.772,32
+- CSLL (código 2372): R$ 1.029,39
+
+A guia anterior, de R$ 3.141,71, deve ser descartada. A diferença de R$ 340,00 é a CSLL da nota fiscal nº 10 (setembro), que a Betha confirmou por e-mail que vai recolher; esse valor será abatido no pagamento da nota de outubro, como combinado.
+
+Para emitirmos a nota de outubro, por favor nos informem o valor do serviço do mês.
+
+Qualquer dúvida, estou à disposição.
+
+3. **Anexo:** tente anexar o PDF da guia nova (`261_Giatech_NovoHamburgo_09.2026_IRPJ-CSLL 3ºTRIM.pdf`, R$ 2.801,71). Se para isso abrir a janela de seleção de arquivos do Windows, NÃO tente navegar nela: pare e me peça para escolher o arquivo. Antes de salvar, confira que o anexo é a guia de **R$ 2.801,71** e NÃO a de 3.141,71 (se houver dúvida, abra o anexo e veja o valor).
+4. Salve em Rascunhos e **NÃO envie**. Me devolva: Para, Cc, assunto, nome e valor do anexo, horário em que salvou e o texto final.
+
+TAREFA B — G-CLICK (só para atualizar o registro; NÃO enviar ao cliente)
+1. No G-Click, cliente **261 GIATECH**, abra a tarefa **"CSLL e IRPJ - LP (Trimestral) - TRIM 03/2026"** (já concluída em 19/10).
+2. Veja onde está o arquivo da guia anterior (R$ 3.141,71) e me diga, antes de alterar, quais opções aparecem: substituir arquivo, anexar novo, reabrir tarefa etc.
+3. Anexe/substitua pelo PDF da guia de **R$ 2.801,71** (mesmo nome do item 3 da Tarefa A). Se abrir a janela de arquivos do Windows, pare e me peça para escolher o arquivo.
+4. **NÃO clique em nada que envie e-mail ao cliente** ("Enviar", "Enviar ao cliente", "Solicitação" por e-mail, reenvio). Se a única forma de anexar disparar envio ao cliente, pare e me pergunte antes.
+5. Não conclua nem reabra outras tarefas. Não mexa em tarefas de outros clientes.
+6. Me devolva: o que fez, o nome do arquivo que ficou na tarefa, a data/hora que o G-Click mostrou e se algum e-mail foi disparado (sim/não). Se possível, deixe a tela aberta para eu tirar o print.
