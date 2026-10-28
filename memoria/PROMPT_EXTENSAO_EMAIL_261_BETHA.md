@@ -61,3 +61,30 @@ Você vai ler a resposta da BETHA SISTEMAS LTDA (CNPJ 00.456.865/0001-67) sobre 
    e. Falou da **nota 9 de julho** ou de outras notas/retenções?
    f. Pede algo mais de nós (documento, prazo, ajuste na nota)?
 3. Devolva uma tabela (data/hora | de → para | assunto | resumo) e um parágrafo final no formato: "A Betha recolheu/não recolheu …; comprovante: …; pede: …". NÃO invente nem complete o que não estiver escrito; se algo não aparecer, escreva "não informado".
+
+---
+## Prompt 3 (28/10/2026): rascunhar a resposta à Priscila na conversa "Correção NF 10 - GIATECH"
+
+Você vai rascunhar uma resposta no OWA, na conversa que já está em andamento com a BETHA SISTEMAS LTDA, assunto "Correção NF 10 - GIATECH". NUNCA envie o e-mail; salve só como rascunho. NUNCA digite senhas. Não anexe arquivos.
+
+1. Abra a conversa "Correção NF 10 - GIATECH" e localize a mensagem mais recente da Priscila (fiscal da Betha, 28/10/2026 por volta das 16:42), que diz "A Betha realizará o recolhimento do valor referente à CSLL".
+2. Clique em **Responder a todos** nessa mensagem, para manter os mesmos destinatários e cópias (inclusive o Norberto e a Jani, se estiverem na conversa). Não mude o assunto.
+3. Cole exatamente este texto no corpo, acima do histórico:
+
+Olá, Priscila,
+
+Obrigada pelo retorno. Combinado: o valor de R$ 340,00 será abatido no pagamento da próxima nota fiscal da Giatech (competência 10/2026).
+
+Para ajustarmos a apuração da Giatech e considerarmos a CSLL retida, pedimos que nos enviem, assim que efetuado:
+1. o comprovante do recolhimento (DARF com código da receita, período de apuração 09/2026, data do pagamento e valor);
+2. a confirmação de que a retenção foi informada na EFD-Reinf (R-4020), referente à NFS-e nº 10.
+
+A nota de outubro será emitida pelo valor cheio do serviço, com todas as retenções (IRRF 1,5%, PIS 0,65%, COFINS 3% e CSLL 1%), e o abatimento de R$ 340,00 constará nas informações complementares.
+
+Atenciosamente,
+Fernanda
+OfficeCont Assessoria Empresarial
+
+4. Se já houver uma assinatura automática igual, não a duplique: mantenha só uma.
+5. Salve em Rascunhos e **não envie**.
+6. Me devolva: os destinatários (Para e Cc), o assunto, o horário em que o rascunho foi salvo e o texto final. Se surgiu na conversa alguma mensagem nova depois das 16:49 de 28/10 (da Betha ou da Giatech), me mostre um resumo com as frases exatas entre aspas antes de salvar, porque o texto pode precisar de ajuste.
