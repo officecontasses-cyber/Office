@@ -66,7 +66,9 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
 - **Texto para copiar vai sempre em bloco de código (pedido da Fernanda, 29/10/2026):** todo **rascunho de e-mail**, **mensagem de WhatsApp**
   e **prompt para o Claude in Chrome / extensão** vem dentro de bloco de código, para ela usar o botão de copiar. Nunca em citação (`>`)
   nem solto no texto. Dentro do bloco, escrever em texto puro (sem tabela markdown, sem negrito), já no formato em que vai ser colado;
-  o assunto do e-mail entra na primeira linha, como `Assunto: ...`.
+  o assunto do e-mail entra na primeira linha, como `Assunto: ...`. **Assunto curto e afirmativo (Fernanda, 29/10/2026):**
+  nome/número do cliente e o tema, sem pergunta e sem explicação — `Tatsch & Leite (126) | taxa de fiscalização anual`,
+  nunca `... | a guia foi enviada ao cliente?`.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
