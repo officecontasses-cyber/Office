@@ -104,3 +104,10 @@ Pesquisa só por busca na web; **o portal do STF (`portal.stf.jus.br`) está blo
 - IRPJ 15% = 167.733,10 (158.644,13 + 9.088,97 dos rendimentos) + **adicional 10%** sobre o que passa de 60.000 = 105.822,07 → 273.555,17; − IRRF de serviços 149.676,47 − IRRF de rendimentos 18.949,05 = **IRPJ 104.929,65**.
 - CSLL 9% sobre 1.118.220,65 = 100.639,86 − IRRF/CSLL retida de serviços 31.182,66 = **CSLL 69.457,20**.
 - PIS/COFINS: retenção cobre tudo (a recolher 0,00; saldos 0,02 e 0,07) → `Retido`, sem DARF.
+
+## Fechado: IRPJ/CSLL do 3ºTRIM (29/10/2026)
+- **DARF nº 07.16.26302.4311001-5**, gerado 29/10 10:35, **total R$ 174.386,85** = IRPJ 2089 **104.929,65** + CSLL 2372 **69.457,20**, PA 3º Trimestre/2026, venc. 30/10/2026. PDF: `71_Conte_Brasília_09.2026_IRPJ-CSLL 3ºTRIM.pdf` (id `1DSiKHWOhcwkNk1hnX6DbkBqpvm6vwb7h`, pasta `009 IMPOSTOS FEDERAIS` de 09_SETEMBRO). Valores = Domínio (Consulta Apuração 09/2026) e = apuração conferida.
+- **G-Click:** tarefa "CSLL e IRPJ - LP (Trimestral) - TRIM 03/2026" (criada 07/02/2026, meta 27/10, venc. 30/10), atividade "CSLL E IRPJ" concluída 29/10 10:36 e "Envio ao cliente" 10:37 (fernanda.officecont). Cliente no G-Click: `08307701000180 CONTE CORN...`.
+- **Fila gravada** em 29/10: DARF IRPJ `Enviado` 104.929,65 e DARF CSLL `Enviado` 69.457,20.
+- **FAT corrigido** no mesmo dia: célula M10 (3ºTRIM do IRRF do Bradesco) estava vazia → `=SUM(J10:L10)` = 9,04. Não afetou a apuração (o Domínio já usava os 9,04).
+- **Fica em aberto no 71:** extrato/informe do Bradesco do 3º trimestre (o cliente não conseguiu; vale centavos); andamento da ADI 7936 (majoração 35,2%, paga sem liminar — se cair, vira crédito a recuperar); SPED Contribuições 09/2026 (16/11); **certificado A1 vence 13/11/2026**; IBS/CBS do pós-fechamento; juros do mútuo CBR.
