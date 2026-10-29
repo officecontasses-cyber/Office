@@ -38,10 +38,13 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   `apps-script/gatilhoAtualizacoes.gs`, a cada 5 min, se instalado). Sem o conector, volta o TSV no chat.
 - **CNPJ sem pontuação (pedido da Fernanda, 29/10/2026):** sempre que falar de um cliente, trazer também o **CNPJ só com números**
   (ex.: 247 Porto Mais Alegre = `53290951000109`), porque é o formato que os portais e sistemas pedem para colar.
-- **Cobrança sempre com opções (pedido da Fernanda, 29/10/2026):** quando houver pendência que depende de terceiro, não trazer só o texto da cobrança.
-  Trazer **(1) o que conferir antes** (ex.: se o informe de rendimentos já chegou no Drive ou se a planilha `CONTROLE | Rendimentos` já foi liberada),
-  **(2) a cobrança pronta para copiar** e **(3) as outras saídas possíveis** (gerar sem o documento, usar o regime/valor anterior, deixar para o pós-fechamento),
-  cada uma com o comando pronto para ela me mandar de volta.
+- **Cobrança sempre com opções (pedido da Fernanda, 29/10/2026, completado no mesmo dia):** quando houver pendência que depende de terceiro,
+  nunca trazer só o texto da cobrança. Trazer sempre as **quatro** opções, cada uma com o comando pronto para ela me devolver:
+  **(1) Analisar antes se o documento de fato falta** — procurar no Drive (pasta do cliente, `001_DOCUMENTOS DIGITALIZADOS`, mês),
+  na planilha `CONTROLE | Rendimentos` (`LIBERADO FISCAL` e Observações), no FAT e na Controle_Fiscal. Muitas vezes já chegou e a cobrança é desnecessária;
+  **(2) a cobrança pronta para copiar** (e-mail ou WhatsApp, conforme o cliente);
+  **(3) as outras saídas** (apurar sem o documento e revisar depois, usar o regime/valor anterior, deixar para o pós-fechamento);
+  **(4) "outro comando"** — uma linha em branco dizendo que ela pode escrever o que quiser em vez de usar as opções acima.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
