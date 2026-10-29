@@ -73,3 +73,27 @@ Pontos que ele trouxe (texto dele, resumido):
 - **Ponto que decide o caso:** o §2º fala em **imposto de renda**. Para o rendimento financeiro, o IR é cobrado **na fonte** e, para entidade isenta, é **definitivo** (não compensável) — foi o que o Gian disse. **O §2º não menciona a CSLL**, e é exatamente aí que mora a dúvida dos 95,64: se a isenção de CSLL do §1º continua alcançando esse rendimento, **não há CSLL a pagar**.
 - Fontes lidas por busca (secundárias, não o texto oficial): LegJur e Juruadocs (texto do art. 15), tributodevido.com.br e okai.com.br (resumo da **SC Cosit 33/2025**: sem PIS sobre receita financeira dessas associações, que pagam 1% sobre a folha; COFINS não cumulativa alcança o rendimento de aplicação). **Não abri o site da Receita (bloqueado para a agente).**
 - **Encaminhamento:** pesquisa no Lefisc (prompt 4 em `PROMPT_EXTENSAO_EMAIL_197.md`) e uma frase de confirmação do Gian.
+
+## RESOLVIDO no Lefisc (29/10/2026): a CSLL de 95,64 NÃO é devida
+Pesquisa feita pela Fernanda no Lefisc (logada). **Dispositivo que fecha a questão: IN RFB 1.700/2017, art. 13** (Seção IV, Das Isenções; Subseção I, Das Associações e Fundações):
+- *caput*: "São isentas do IRPJ e da CSLL as instituições de caráter filantrópico, recreativo, cultural e científico e as associações civis que prestam os serviços para os quais foram instituídas…"
+- *§1º*: "**Não estão abrangidos pela isenção do IRPJ** os rendimentos e ganhos de capital auferidos em aplicações financeiras de renda fixa ou de renda variável."
+- *§2º*: "**Será definitivo o imposto sobre a renda retido na fonte** de instituição isenta, sobre rendimento de aplicações financeiras…"
+**Leitura:** o caput isenta IRPJ **e** CSLL; o §1º tira da isenção **só o IRPJ**. Logo, **a isenção de CSLL continua valendo sobre o rendimento de aplicação financeira → CSLL 95,64 não é devida**. Reforço por contraste: o art. 20 da mesma IN, quando quer alcançar os dois, escreve "é isenta do IRPJ, inclusive do incidente sobre ganhos líquidos mensais e do retido na fonte…, e da CSLL". **Ressalva:** é leitura *a contrario* de texto da própria Receita; o Lefisc não traz frase expressa dizendo "não paga CSLL sobre aplicação financeira" nem divergência registrada. Blindagem possível: Consultoria por E-mail do Lefisc.
+**IRRF definitivo confirmado** (matéria do Lefisc de abr/2026, itens 5 e 8.1; IN 1.585/2015 arts. 46, 47, 49, 70 II e 72): entidade **isenta** sofre retenção pela tabela regressiva, **em caráter definitivo, não compensável**. A dispensa de retenção (declaração do Anexo III) é só para **imune**. → **o saldo credor de IRPJ de 79,60 que o FAT mostrava não existe.** Conferir se no Domínio o IRRF não está em "IRRF a Recuperar": pelo Lefisc, o lançamento é D Bancos / D IRRF s/ aplicações (resultado).
+**ACHADO NOVO — COFINS 4% sobre a receita financeira.** Receita financeira não é atividade própria: a isenta fica na **COFINS não cumulativa, alíquota 4% (código 5856)**, base IN 2.121/2022 arts. 146 e 789 (bate com a SC Cosit 243/2019 já anotada). PIS: entidade do art. 13 da MP 2.158-35 paga **1% sobre a folha**, sem PIS sobre receita financeira. Cálculo sobre os rendimentos do FAT 2026 (mensal, venc. dia 25 do mês seguinte):
+| Mês | Rendimento | COFINS 4% |
+|---|---|---|
+| jan | 0,18 | 0,01 |
+| fev | 0,24 | 0,01 |
+| mar | 60,37 | 2,41 |
+| abr | 2.903,85 | **116,15** |
+| mai | 58,20 | 2,33 |
+| jun | 4,62 | 0,18 |
+| jul | 519,49 | 20,78 |
+| ago | 83,68 | 3,35 |
+| set | 459,49 | 18,38 |
+| **2026 até set** | **4.090,12** | **163,60** |
+**Todas em atraso** (nenhuma guia de COFINS do 197 em 2026). 3ºTRIM sozinho = 42,51. Decidir com o Gian: regularizar os 163,60 com multa e juros.
+**ECF:** forma de tributação **9 – Isenta do IRPJ**, registros 0000/0010/0020/0030/0930, **X390** e Y612; prazo último dia útil de julho. Sem IRPJ e sem CSLL, nada a declarar por esses tributos no MIT; **a COFINS mensal, sim, entra no MIT/DCTFWeb**.
+**Fontes (Lefisc, logado):** matéria "ASSOCIAÇÕES SEM FINS LUCRATIVOS – ISENTAS DE IRPJ E CSLL E SOBRE A CBS" (ago/2026, itens 2, 4, 9 e 12) e "APLICAÇÕES FINANCEIRAS DE RENDA FIXA" (abr/2026, itens 5 e 8.1); IN 1.700/2017 arts. 13 e 20 no Banco de Legislação. SC Cosit 33/2025 **não existe no Lefisc**; as SCs que ele traz (58/2021, 7270/2021, 3015/2023, 68/2023) tratam de atividades próprias, Cofins e ganho de capital, não de CSLL sobre aplicação.
