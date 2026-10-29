@@ -66,3 +66,10 @@ Pastas abertas (cliente 186, `001_DOCUMENTOS DIGITALIZADOS`, id do ano `1udhnfVF
 | Fundo Simples Automático 31/07 ≈653,00 / ≈6,51 | **Sim, o resgate existe; o valor da renda é calculado** | Extrato da conta: 31/07 "RESG AUTOMATICO INVESTIM" **2.386,49**. A renda não está em nenhum relatório (vão entre o Resumo de JUL, cota 30/07, e o de AGO). |
 | Rendimento provisionado do fundo (jul 1.808,17; ago 828,95; set 854,15 "Renda Total" do saldo) | **Não entra** | São os saldos acumulados não resgatados: Resumo de SET mostra **Total de Resgates 0,00** em setembro (saldo parado em 637,18844 cotas de 31/08 a 30/09). |
 **Conclusão:** o critério da casa (rendimento só sobre resgate) está respeitado. O único número sem documento é a renda do resgate de 31/07.
+
+## 186 — rendimentos lançados no FAT (29/10/2026, autorizado pela Fernanda)
+- `RENDIM. FINANCEIROS`: **julho 657,62** (Invest Fácil 4,62 + resgate do Fundo Simples Automático de 31/07 **653,00**, calculado por cotas) e **agosto 362,93** (Fundo, documentado). Setembro segue 0,90 (Invest Fácil).
+- `IRRF S/RESGATES`: **julho 7,32** (0,81 + 6,51) e **agosto 4,92**. Setembro 0,17.
+- **3ºTRIM passou a mostrar: rendimentos 1.021,45, IRRF 12,41, IRPJ R$ 1.456,55 e CSLL R$ 881,38** (mês a mês: jul 459,45/280,06; ago 446,34/270,75; set 550,77/330,56).
+- Os valores anteriores (1.315,74 / 789,45, sem rendimento nenhum) são os que provavelmente foram ao MIT: **conferir e retificar antes de gerar a guia**.
+- **Único número sem documento do banco:** os 653,00 e 6,51 do resgate de 31/07 (o resgate em si está no extrato: R$ 2.386,49). Se o informe anual trouxer outro valor, ajustar.
