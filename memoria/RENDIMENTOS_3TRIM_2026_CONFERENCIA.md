@@ -47,3 +47,11 @@ Pastas abertas (cliente 186, `001_DOCUMENTOS DIGITALIZADOS`, id do ano `1udhnfVF
 - Efeito no trimestre: **IRPJ +89 a +91** e **CSLL +58,8 a +59,0**.
 
 **Conclusão:** só o banco fecha o número (informe de rendimentos de 2026 ou extrato da operação de 31/07). A diferença entre as duas estimativas é de centavos no imposto.
+
+## 186 — FAT corrigido (29/10/2026, a pedido da Fernanda)
+`186_LOPES&NADAL_FAT2026` (id `1PBj8TsfH5N4Hu8Z04NBZ8uTVigl8yQ3q0BjxUFive2M`), aba `2026`.
+- **Antes:** IRPJ `=N(X4)*4,8%-N(X10)` e CSLL `=N(X4)*2,88%-N(X13)` — só receita de serviços; **os rendimentos financeiros (linha 5) e o IRRF s/resgates (linha 8) não entravam**.
+- **Depois:** IRPJ `=N(X4)*32%*15%+N(X5)*15%-N(X10)-N(X8)` e CSLL `=N(X4)*32%*9%+N(X5)*9%-N(X13)`, nas colunas de mês (B:D, F:H, J:L, N). Trimestres (E, I, M) continuam `SUM`.
+- **Atenção ao escrever fórmula pela API:** decimal com ponto (`4.8%`) quebra a planilha (`#ERROR!`, locale pt-BR). Usar `32%*15%` em vez de `4,8%`.
+- **Resultado:** 1º e 2º trimestres não mudam (sem rendimentos). 3ºTRIM: **IRPJ 1.315,74 → 1.315,59** e **CSLL 789,45 → 789,94** (só com o Invest Fácil: jul 4,62/IRRF 0,81 e set 0,90/0,17).
+- **Ainda falta lançar no FAT (linhas 5 e 8) o Fundo Simples Automático:** ago **362,93 / IRRF 4,92** (documentado) e o resgate de **31/07 ≈ 653,00 / IRRF ≈ 6,51** (calculado por cotas). Com os dois: **IRPJ 1.456,56 e CSLL 881,37**. Só com o de agosto: **IRPJ 1.365,11 e CSLL 822,60**.
