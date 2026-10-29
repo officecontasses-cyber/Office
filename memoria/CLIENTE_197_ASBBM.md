@@ -45,3 +45,15 @@ Fernanda pediu para registrar na Controle apenas observações resumidas do que 
 **Existe guia de CSLL paga como Lucro Presumido:** `CSLL 1º TRIM REF. 03.2025.pdf` (id `1eIKQNNDyd_tOJDgJ1M1lUR7Oxse7ba49`) — DARF nº **07.16.25113.4268604-4**, ASSOCIACAO SUL BRASILEIRA DE BIOMEDICINA, **CSLL 2372 "LUCRO PRESUMIDO OU ARBITRADO - ENTIDADE", R$ 41,42**, PA **1º Trimestre/2025**, venc. 30/04/2025, gerada 23/04/2025, recibo da declaração 50000335529947. **Ou seja: o escritório já tratou a ASBBM como Lucro Presumido e recolheu CSLL sobre os rendimentos financeiros**, no mesmo critério do que está proposto agora (95,64 do 3ºTRIM/2026).
 - Também há `DARF-05164750000112 multas asbbm.pdf` (2022) e recibos de ECF de 2019 e 2022 a 2025 no Drive. Não encontrei guias dos demais trimestres de 2025 nem de 2026 (busca por "TRIM" e pelo nome da entidade).
 - **Conclusão prática:** a linha do escritório, na prática e na ECF 2024, é Lucro Presumido. Pagar os 95,64 mantém a coerência; a revisão do enquadramento (isenta x LP) continua valendo como projeto para a ECF 2026, com o Gian.
+
+## De onde vêm os 95,64 (conferência de 29/10/2026)
+Fonte: `197_ASBBM_FAT2026` (id `1tz5vSLtMncAV-LHddX23Ta87mT6WzxlqS2NMz8LLrP4`), aba `2026`.
+| Mês | Rendimento (linha `RENDIM. FINANCEIROS`) | IRRF (linha `IRRF S/RESGATES`) | CSLL 9% | IRPJ 15% − IRRF |
+|---|---|---|---|---|
+| Julho | 519,49 | 116,83 | 46,75 | −38,91 |
+| Agosto | 83,68 | 18,80 | 7,53 | −6,25 |
+| Setembro | 459,49 | 103,37 | 41,35 | −34,45 |
+| **3ºTRIM** | **1.062,66** | **239,00** | **95,64** (1.062,66 × 9%) | **−79,60** (159,40 − 239,00) |
+Conferido na calculadora: 1.062,66 × 9% = 95,6394 → **95,64**; 1.062,66 × 15% = 159,40, menor que o IRRF de 239,00 → **IRPJ sem guia, com saldo credor de 79,60**. Rendimento entra 100% na base (sem presunção), como nos demais clientes.
+**O que NÃO foi validado:** os valores mensais do FAT **não foram conferidos contra os extratos** (PagBank/aplicações) nesta rodada — a pasta tem extratos de 04 a 06/2026; não localizei os de jul-set. A planilha `CONTROLE | Rendimentos` marca o 3ºTRIM como `LIBERADO FISCAL = Sim`, sem observação.
+**Alerta — trimestres anteriores de 2026 pelo mesmo critério:** 1ºTRIM CSLL **5,47** (venc. 30/04/2026) e **2ºTRIM CSLL 267,00** (venc. 31/07/2026, rendimentos de 2.966,67, puxados por abril: 2.903,85). **Não há guia desses trimestres no Drive** nem linha de IRPJ/CSLL do 197 nas abas anteriores da Controle. Se o enquadramento for Lucro Presumido, esses dois estão em atraso e precisam de guia com multa e juros. Levantar com a Fernanda/Gian — é o outro lado da discussão de enquadramento.
