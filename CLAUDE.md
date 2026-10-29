@@ -36,8 +36,11 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   na aba do mês). As linhas novas entram a partir da linha 2, colunas A:F, `Processado` em branco;
   nas abas de mês continua não escrevendo. O processamento é o `processarAtualizacoes()` (à mão ou pelo gatilho de
   `apps-script/gatilhoAtualizacoes.gs`, a cada 5 min, se instalado). Sem o conector, volta o TSV no chat.
-- **CNPJ sem pontuação (pedido da Fernanda, 29/10/2026):** sempre que falar de um cliente, trazer também o **CNPJ só com números**
-  (ex.: 247 Porto Mais Alegre = `53290951000109`), porque é o formato que os portais e sistemas pedem para colar.
+- **CNPJ sem pontuação em TODA resposta (pedido da Fernanda, 29/10/2026; reforçado no mesmo dia porque eu só trouxe uma vez):**
+  na **primeira menção de cada cliente em cada resposta**, escrever o número, o nome e o **CNPJ só com números** entre crases:
+  `#71 CONTE (08307701000180)`. Vale em toda rodada — resumo de pendências, análise, cobrança, confirmação de guia —, não só quando ela pede.
+  **Buscar o CNPJ em `memoria/CNPJS_CLIENTES.md`** (tabela dos 30 clientes, tirada da aba `Cadastro_Clientes`), nunca de memória; se o cliente
+  não estiver lá, dizer que não tenho e pedir, em vez de inventar.
 - **Cobrança sempre com opções (pedido da Fernanda, 29/10/2026, completado no mesmo dia):** quando houver pendência que depende de terceiro,
   nunca trazer só o texto da cobrança. Trazer sempre as **quatro** opções, cada uma com o comando pronto para ela me devolver:
   **(1) Analisar antes se o documento de fato falta** — procurar no Drive (pasta do cliente, `001_DOCUMENTOS DIGITALIZADOS`, mês),
