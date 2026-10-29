@@ -43,6 +43,13 @@ nav button:hover{background:rgba(255,255,255,.08);color:#fff}
 nav button[aria-current="true"]{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 3px 0 0 var(--accent)}
 nav button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 nav .n{font-size:12px;font-variant-numeric:tabular-nums;color:#A9C6E6}
+.sbacts{display:grid;gap:5px}
+.sbacts .grp{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#7FA0C7;margin:12px 0 3px;font-weight:700}
+.sbacts button{appearance:none;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#fff;
+  font:700 13px var(--f);padding:8px 11px;border-radius:9px;cursor:pointer;text-align:left}
+.sbacts button:hover{background:var(--accent);border-color:var(--accent);color:#3B2200}
+.sbacts button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sbacts p{margin:2px 0 0;font-size:11px;color:#7FA0C7;line-height:1.35}
 .sbfoot{margin-top:auto;font-size:11.5px;color:#7FA0C7;line-height:1.4}
 
 /* ---------- Área de trabalho ---------- */
@@ -199,6 +206,13 @@ textarea{width:100%;min-height:52px;resize:vertical}
     <button data-tab="tarefas">Tarefas<span class="n" id="nTarefas"></span></button>
     <button data-tab="radar">Radar<span class="n" id="nRadar"></span></button>
   </nav>
+  <div class="sbacts" id="sbacts" hidden>
+    <span class="grp">Pedir ao Claude</span>
+    <button type="button" data-act="ask" data-ask="meudia">Monta o meu dia</button>
+    <button type="button" data-act="ask" data-ask="sincronizar">Atualiza o painel</button>
+    <button type="button" data-act="ask" data-ask="radar">Roda o Radar</button>
+    <p id="askHint">Vai para a caixa de mensagem da conversa. Nada é enviado até você apertar enter.</p>
+  </div>
   <div class="sbfoot">Fiscal · Porto Alegre/RS<br>G-Click e planilha Controle_Fiscal</div>
 </aside>
 
@@ -279,8 +293,8 @@ textarea{width:100%;min-height:52px;resize:vertical}
 <script>
 (function(){
 const TZ='America/Sao_Paulo';
-const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,rv:'carteira',loaded:false};
-let db=null;
+const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,rv:'carteira',loaded:false,canAsk:false};
+let db=null,room=null;
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const todayISO=()=>new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -441,7 +455,7 @@ function taskRow(t,today){
         <textarea id="nota-${id}" data-act="nota" data-id="${id}" placeholder="Contexto, histórico, o que combinei" aria-label="Minhas anotações">${esc(/^(G-Click:|Planilha \S+:)/.test(t.notas||'')?'':(t.notas||''))}</textarea></div>
       <div class="cmdbox"><span class="fieldlbl">Comando para o Claude</span>
         <textarea id="cmd-${id}" data-act="comando" data-id="${id}" placeholder="O que você quer pedir no chat sobre esta tarefa" aria-label="Comando para o Claude">${cmd}</textarea>
-        <div class="btns" style="margin-top:7px"><button class="btn accent" data-act="copyCmd" data-id="${id}">Copiar comando</button><span class="small muted">Cole no chat quando quiser que eu faça.</span></div></div>
+        <div class="btns" style="margin-top:7px"><button class="btn accent" data-act="copyCmd" data-id="${id}">Copiar comando</button>${S.canAsk?`<button class="btn primary" data-act="askTask" data-id="${id}">Pedir ao Claude</button>`:''}<span class="small muted">${S.canAsk?'Vai para a caixa de mensagem da conversa.':'Cole no chat quando quiser que eu faça.'}</span></div></div>
       <div class="actions">
         <div class="btns">
           ${t.concluida?`<button class="btn" data-act="reopen" data-id="${id}">Reabrir</button>`:`<button class="btn ok" data-act="done" data-id="${id}">Concluir</button>
@@ -520,6 +534,29 @@ function complete(t){
     db.collection('pendencias').add(next).then(()=>toast('Concluída. Próxima criada para '+br(next.prazo))).catch(()=>toast('Concluída, mas a próxima não foi criada.'));}
   else toast(t.origem==='gclick'?'Concluída aqui. Lembre de concluir no G-Click.':'Concluída');
 }
+/* Pedidos ao Claude da conversa aberta ao lado. Sempre em rascunho: a plataforma
+   põe o pedido na caixa de mensagem e nada é enviado até a Fernanda apertar enter. */
+const PEDIDOS={
+  meudia:{label:'Monta o meu dia',rotina:'meudia',
+    pedido:'Monta o briefing do Meu dia na Central: le as pendencias abertas, os e-mails sem decisao e o Radar com prazo proximo, e grava o resumo e a ordem em meudia/hoje.'},
+  sincronizar:{label:'Atualiza o painel',rotina:'sincronizar',
+    pedido:'Atualiza a Central: sincroniza as tarefas do G-Click pela API (somente leitura) e depois a planilha Controle_Fiscal, mantendo a planilha so com o que o G-Click nao tem.'},
+  radar:{label:'Roda o Radar',rotina:'radar',
+    pedido:'Roda o Radar de atualizacoes fiscais da Central no periodo desde a ultima rodada, cruzando com as duas carteiras, e grava os itens novos.'}
+};
+async function checkAsk(){
+  if(!room||!room.canSendToClaudeSession){S.canAsk=false;return;}
+  let v='off';try{v=await room.canSendToClaudeSession();}catch(_){v='off';}
+  S.canAsk=v==='available'||v==='available_if_summoned'||v==='available_if_opened';
+  $('sbacts').hidden=!S.canAsk;
+  if(S.canAsk&&v!=='available')$('askHint').textContent='Abre a sua conversa com o pedido na caixa de mensagem. Nada é enviado até você apertar enter.';
+}
+function ask(data){
+  if(!room||!S.canAsk)return toast('Sem conversa aberta ao lado do painel');
+  let p;try{p=room.sendToClaudeSession(data);}catch(_){return toast('Não foi possível levar o pedido');}
+  p.then(r=>toast(r&&r.to==='pane'?'Pedido na caixa de mensagem: aperte enter':'Levado para a sua conversa'))
+   .catch(e=>{const c=e&&e.code;toast(c==='claude_unavailable'?'Abra o painel ao lado da conversa para pedir':c==='rate_limited'?'Espere um instante e peça de novo':'Não foi possível levar o pedido');checkAsk();});
+}
 function goTo(spec){
   const [kind,val]=String(spec||'').split(':');
   if(kind==='tab'){setTab(val);return;}
@@ -532,6 +569,11 @@ document.addEventListener('click',e=>{
   if(el.tagName==='SELECT'||el.tagName==='TEXTAREA'||(el.tagName==='INPUT'&&el.type!=='checkbox'))return;
   switch(a){
     case 'tile': goTo(el.dataset.go);break;
+    case 'ask': {const p=PEDIDOS[el.dataset.ask];if(p)ask({label:p.label,tipo:'rotina',rotina:p.rotina,pedido:p.pedido});break;}
+    case 'askTask': {if(!t)break;const ta=$('cmd-'+id);const c=(ta?ta.value:(t.comando||'')).trim();
+      ask({label:titleOf(t).slice(0,110),tipo:'tarefa',tarefaId:t.id,titulo:String(t.titulo||'').slice(0,300),
+        cliente:String(t.cliente||'').slice(0,120),prazo:isISO(t.prazo)?t.prazo:'',origem:t.origem||'manual',
+        pedido:c||'Me ajuda nesta tarefa da Central: diz o que falta e o proximo passo.'});break;}
     case 'toggle': S.open.has(id)?S.open.delete(id):S.open.add(id);S.confirm=null;render();break;
     case 'goto': S.open.add(id);S.f.bucket=null;setTab('tarefas');render();setTimeout(()=>{const n=$('t-'+id);n&&n.scrollIntoView({block:'center'});},30);break;
     case 'done': if(t)complete(t);break;
@@ -593,6 +635,12 @@ const listen=(ref,fn)=>ref.onSnapshot(fn,err=>{console.error(err);if(err&&err.co
   listen(db.collection('radar_dir'),s=>{S.rdir=Object.fromEntries(s.docs.map(d=>[d.id,d.data()]));render();});
   listen(db.doc('radar_meta/status'),s=>{S.rmeta=s.exists?s.data():null;renderRadar(todayISO());});
   listen(db.doc('config/portais'),s=>{const d=s.exists?s.data():null;S.portais=(d&&Array.isArray(d.itens))?d.itens:[];renderDia(todayISO());});
+})();
+(async()=>{
+  room=await (window.claude&&window.claude.use?window.claude.use('room'):Promise.resolve(null));
+  if(!room)return;
+  await checkAsk();
+  if(S.canAsk)renderTarefas(todayISO());
 })();
 setInterval(()=>{const k=todayISO();if(k!==render._d){render._d=k;render();}},60000);render._d=todayISO();
 })();
