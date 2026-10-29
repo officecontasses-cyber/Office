@@ -66,3 +66,16 @@ Arquivo `247_PORTOMAISALEGRE_FAT2026` (id 1qz0iNDaVmRKEht7PetQpHi9WMFEQsOnbG3gUS
 - **Confirma que o 1ºTRIM/2026 fechou com IRPJ negativo:** no Drive só existe a guia **`CSLL 1º TRIM REF. 03.2026.pdf`** (DARF 07.16.26106.0330865-8, CSLL 2372 R$ 411,77, venc. 30/04/2026, recibo 50000469674966). **Não há guia de IRPJ do 1ºTRIM/2026**, ou seja, não houve IRPJ a pagar no trimestre.
 - **Origem do 3.451,85: não confirmada.** Hipótese mais provável: IRRF de resgates de aplicação no 1ºTRIM (só o IRPJ absorve esse crédito, e a CSLL do trimestre saiu positiva, o que combina). Outra hipótese: saldo negativo de IRPJ vindo de 2025. Para confirmar: Demonstrativo do 1ºTRIM no Domínio, informe de rendimentos do Sicredi de 2026 e a ECF/DCTF.
 - **Ponto formal:** saldo negativo de IRPJ se aproveita por **PER/DCOMP** (com Selic), não por dedução direta na DARF do trimestre seguinte. Sem PER/DCOMP transmitida, a guia de 807,13 paga menos do que a DCTFWeb/MIT vai cobrar, e sobram 2.994,33 em aberto.
+
+## Fechado: IRPJ/CSLL do 3ºTRIM (29/10/2026)
+- **DARF nº 07.16.26302.4034482-1**, gerado 29/10 09:39, **total R$ 4.309,37** = IRPJ 2089 **807,13** + CSLL 2372 **3.502,24**, PA 3º Trimestre/2026, cota única, venc. 30/10/2026. PDF no Drive: `247_Porto Mais Alegre_09.2026__IRPJ-CSLL 3ºTRIM.pdf` (pasta `009 IMPOSTOS FEDERAIS` de 09_SETEMBRO).
+- **G-Click:** tarefa "CSLL e IRPJ - LP (Trimestral) - TRIM 03/2026", atividade "CSLL E IRPJ" concluída 29/10 09:43 e "Envio ao cliente" 09:44 (fernanda.officecont; responsável Fernanda Poleto; meta 27/10, vencimento 30/10). Cliente no G-Click: `53290951000109 PORTO MAIS ALEGRE 247`.
+- **Fila gravada** em 29/10: DARF IRPJ `Enviado` 807,13 e DARF CSLL `Enviado` 3.502,24.
+- Domínio conferido antes de gerar (Consulta Apuração, 09/2026): CSLL 3º Trimestre saldo devedor 3.502,24 e IRPJ 807,13 — igual ao cálculo e ao FAT corrigido.
+
+## PARA O 4º TRIMESTRE/2026 — rever e compensar (decisão da Fernanda, 29/10/2026)
+A Fernanda optou por **não mexer nisso agora**: a guia do 3ºTRIM já saiu com o saldo credor de IRPJ de **R$ 2.994,33** abatido (IRPJ 3.917,07 − IRRF 115,61 − 2.994,33 = 807,13). **No fechamento do 4ºTRIM (guia vence 31/01/2027), revisar e regularizar:**
+1. **Achar a origem dos 3.451,85** que geraram o crédito: está **digitado na fórmula** do FAT (E17 = `SUM(B17:D17)-3451,85`) e a linha `IRRF S/RESGATES` do 1ºTRIM está zerada. Olhar o **Demonstrativo do 1ºTRIM no Domínio**, o informe de rendimentos do Sicredi de 2026 e a ECF.
+2. **Confirmar se há PER/DCOMP transmitida** do saldo negativo de IRPJ do 1ºTRIM/2026. Saldo negativo se aproveita por PER/DCOMP (com Selic desde o mês seguinte ao encerramento do trimestre), não por dedução direta na DARF. **Sem PER/DCOMP, os 2.994,33 ficam em aberto na DCTFWeb/MIT mesmo com a guia de 807,13 paga.**
+3. Se não houver, transmitir a PER/DCOMP (ou pagar a diferença) e **corrigir o FAT**, trocando o valor digitado por linhas reais (IRRF do 1ºTRIM) para o crédito deixar de ser invisível.
+4. Confirma que o 1ºTRIM/2026 fechou sem IRPJ: no Drive só existe `CSLL 1º TRIM REF. 03.2026.pdf` (DARF 07.16.26106.0330865-8, 411,77, venc. 30/04/2026).
