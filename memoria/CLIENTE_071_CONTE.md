@@ -71,3 +71,10 @@
 
 ## ENTRADAS do 71 = `Sem movimento` (regra da Fernanda, 17/10/2026)
 ENTRADAS é só compra de produtos (NF-e/CT-e); NFS-e tomadas ficam em SERVIÇOS TOMADOS. No SIEG (`Entrada/2026`) o 71 só tem a pasta `Julho` (sem Agosto nem Setembro) e as 147 linhas do Domínio Entradas de 09/2026 são todas NFS-e (espécie 39): ENTRADAS 09/2026 = `Sem movimento`. **Corrige o TSV anterior (ENTRADAS `Importado` 469.779,47, que misturava serviços tomados).**
+
+## Rendimentos liberados (conferido em 29/10/2026)
+A planilha `CONTROLE | Rendimentos`, aba `3ºTRIM 2026`, linha 71, **mudou**: `LIBERADO FISCAL` = **Sim**, observação **"*Cliente não conseguiu o Informe de rendimentos"**. Antes (19/10) estava em branco com "Falta só Informe de Rend. 3º trim/2026 BRADESCO". **Ou seja: a contabilidade liberou o trimestre mesmo sem o informe do Bradesco** — o bloqueio deixou de existir.
+- **Peso do documento que falta:** o Bradesco responde por valores pequenos no trimestre (set. 30,71; jul+ago 88,12 com IRRF 9,04 no FAT). O grosso do rendimento é da Caixa (set. 21.391,97), que já está lançado. O informe mudaria centavos no IRPJ, não a ordem de grandeza.
+- **Busca no Drive em 29/10:** nenhum informe de rendimentos do Bradesco de 2026 da Conte; os "Informe Bradesco" encontrados são de outros clientes/anos.
+- **Valores apurados no Domínio (19/10, com os rendimentos do FAT):** **IRPJ 104.929,65** e **CSLL 69.457,20**.
+- **Ponto em aberto que afeta o valor:** a majoração de 32% para 35,2% (LC 224/2025) está embutida na base; há notícia de liminares na **ADI 7936** suspendendo a majoração. Conferir o andamento antes de gerar, se ainda não foi conferido.
