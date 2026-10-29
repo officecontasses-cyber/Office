@@ -73,3 +73,19 @@ Todos os 10 XMLs abertos; nº, emitente e vNF batem com o Domínio. IBS/CBS = gr
 
 ## TSV final entregue (17/10/2026 ~20:40) — DARFs enviados no G-Click
 G-Click 17/10 20:34: COFINS/PIS (venc. 23/10) e CSLL/IRPJ LP 3 cotas COTA 1 (venc. 30/10). Guia PIS+COFINS: doc 07.16.26290.7485452-3, COFINS 3.093,09 + PIS 998,81 = 4.091,90. Guia IRPJ+CSLL cota 1: doc 07.16.26290.7487505-9, IRPJ 7.763,14 + CSLL 3.514,73 = 11.277,87 (= 1/3 de 23.289,40 e 10.544,19). Cotas 2 e 3 (nov e dez, com Selic) pendentes. TSV: PIS, COFINS, IRPJ, CSLL = Enviado; SERVIÇOS PRESTADOS e ENTRADAS = Importado. SERVIÇOS TOMADOS ficou fora (Facebook 146442407 e Officecont 1056 fora do export do Portal) aguardando OK da Fernanda.
+
+## Divergência dos dois DARFs de PIS/COFINS de 09/2026 — RESOLVIDA (29/10/2026)
+Os dois PDFs da pasta `009 IMPOSTOS FEDERAIS` são **a mesma dívida**, não retificação nem complemento:
+| | 1ª guia | 2ª guia (`_RE`) |
+|---|---|---|
+| Documento | 07.16.26290.7485452-3 | 07.16.26300.7267065-8 |
+| Gerada em | 17/10/2026 20:32 | 27/10/2026 11:38 |
+| Recibo da declaração | 50000540023812 | **50000540023812 (o mesmo)** |
+| COFINS 2172 | 3.093,09 | 3.093,09 + multa/juros 20,41 = 3.113,50 |
+| PIS 8109 | 998,81 | 998,81 + multa/juros 6,59 = 1.005,40 |
+| Total | **4.091,90** | **4.118,90** |
+| Pagar até | 23/10/2026 | 27/10/2026 |
+**Conclusão: a guia venceu em 23/10 sem pagamento e foi reemitida em 27/10 com R$ 27,00 de acréscimos.** O sufixo `_RE` é reemissão. **A planilha mostra os valores do principal (998,81 e 3.093,09) como `Enviado`** — correto quanto ao envio, mas **o valor efetivamente devido depende da data do pagamento**: 4.118,90 se pago em 27/10, mais juros depois. **Confirmar com a Fernanda se foi pago e em que data**; se ainda estiver em aberto, reemitir de novo.
+**Divergência a conferir no Domínio:** a conferência de 17/10 (Resumo das 19:40) registrou **COFINS 4.609,87** (3% de 153.662,41), mas a guia gerada às 20:32 do mesmo dia saiu com **COFINS 3.093,09** (≈ 2,01% da receita). O PIS bate (998,81 = 0,65%). Diferença de **1.516,78**. Não há no Drive relatório do Domínio posterior a 19:40 que explique; **levantar o que mudou na apuração entre 19:40 e 20:32** (receita reclassificada, exclusão da base, crédito) antes do SPED Contribuições de 16/11, que vai repetir a base.
+## Taxa de fiscalização anual (G-Click, competência 12/2026, vencida 15/10/2026)
+Tarefa existe no G-Click, com checklist de gerar a guia e enviar ao cliente, e **não tem linha na Controle_Fiscal**. Natureza a confirmar com a Fernanda (taxa municipal de fiscalização/funcionamento de São Leopoldo ou anuidade de conselho). Enquanto não se confirma, fica fora da planilha.
