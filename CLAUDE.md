@@ -38,6 +38,10 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   `apps-script/gatilhoAtualizacoes.gs`, a cada 5 min, se instalado). Sem o conector, volta o TSV no chat.
 - **CNPJ sem pontuação (pedido da Fernanda, 29/10/2026):** sempre que falar de um cliente, trazer também o **CNPJ só com números**
   (ex.: 247 Porto Mais Alegre = `53290951000109`), porque é o formato que os portais e sistemas pedem para colar.
+- **Cobrança sempre com opções (pedido da Fernanda, 29/10/2026):** quando houver pendência que depende de terceiro, não trazer só o texto da cobrança.
+  Trazer **(1) o que conferir antes** (ex.: se o informe de rendimentos já chegou no Drive ou se a planilha `CONTROLE | Rendimentos` já foi liberada),
+  **(2) a cobrança pronta para copiar** e **(3) as outras saídas possíveis** (gerar sem o documento, usar o regime/valor anterior, deixar para o pós-fechamento),
+  cada uma com o comando pronto para ela me mandar de volta.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
