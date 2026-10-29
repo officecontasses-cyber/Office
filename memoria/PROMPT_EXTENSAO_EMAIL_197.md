@@ -123,3 +123,20 @@ O que preciso que você defina:
 
 Obrigada,
 Fernanda
+
+---
+## Prompt 4 (29/10/2026): pesquisa no Lefisc — tributação de aplicações financeiras de entidade isenta
+Colar no Claude in Chrome, com o **Lefisc já aberto e logado** (a assinatura é do escritório; eu não acesso daqui).
+
+Você vai pesquisar no **Lefisc** uma dúvida de fechamento. Só leitura: não altere nada, não baixe em massa, não digite senhas.
+
+**Caso:** associação civil sem fins lucrativos (ASBBM, CNPJ 05164750000112, associação profissional de biomedicina, CNAE 9412-0/99, natureza jurídica Associação Privada), **sem receita de serviços em 2026**, com **rendimentos de aplicações financeiras** de R$ 1.062,66 no 3º trimestre e **IRRF retido de R$ 239,00**. A dúvida é se há **CSLL a recolher (R$ 95,64)** sobre esse rendimento, ou se o IRRF encerra a tributação.
+
+**Pesquise no Lefisc e me traga, com a citação exata e o link/caminho de cada fonte:**
+1. **Lei 9.532/1997, art. 15** — texto do **caput**, do **§1º** (isenção limitada a IRPJ e CSLL) e do **§2º** (exclusão dos rendimentos de aplicações financeiras da isenção **do imposto de renda**). Copie os três literalmente.
+2. **O §2º fala só de imposto de renda ou alcança também a CSLL?** Procure no Lefisc a resposta direta: entidade isenta do art. 15 **paga CSLL sobre rendimento de aplicação financeira?** Se houver divergência, traga os dois lados.
+3. **O IRRF sobre aplicação financeira de entidade isenta é definitivo** (encerra a tributação) ou é antecipação compensável? Base: IN RFB 1.585/2015 (arts. sobre entidades isentas/imunes) e o que o Lefisc disser.
+4. Se houver **Solução de Consulta Cosit** sobre o tema (procure também a **SC Cosit 33/2025**, que trata de PIS/COFINS e receita financeira de associação), traga número, data, ementa e o que ela conclui.
+5. **Procedimento prático:** se a entidade for isenta e não houver CSLL, como ficam **DCTFWeb/MIT e ECF** do trimestre (forma de tributação 9 = isenta)? E se já houve ECF anterior em Lucro Presumido, o Lefisc orienta algo?
+
+**Formato da resposta:** para cada item, (a) a citação literal entre aspas, (b) a fonte com link ou caminho no Lefisc, (c) uma frase de conclusão em português simples. No fim, responda em uma linha: **"CSLL de 95,64 é devida: sim / não / depende de X"**. Não invente: o que não achar, escreva "não encontrado no Lefisc".
