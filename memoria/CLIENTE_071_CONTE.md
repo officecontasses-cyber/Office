@@ -78,3 +78,9 @@ A planilha `CONTROLE | Rendimentos`, aba `3ºTRIM 2026`, linha 71, **mudou**: `L
 - **Busca no Drive em 29/10:** nenhum informe de rendimentos do Bradesco de 2026 da Conte; os "Informe Bradesco" encontrados são de outros clientes/anos.
 - **Valores apurados no Domínio (19/10, com os rendimentos do FAT):** **IRPJ 104.929,65** e **CSLL 69.457,20**.
 - **Ponto em aberto que afeta o valor:** a majoração de 32% para 35,2% (LC 224/2025) está embutida na base; há notícia de liminares na **ADI 7936** suspendendo a majoração. Conferir o andamento antes de gerar, se ainda não foi conferido.
+
+## ADI 7936 — pesquisa de 29/10/2026 (sem conclusão definitiva)
+Pesquisa só por busca na web; **o portal do STF (`portal.stf.jus.br`) está bloqueado para a agente** nesta sessão, então não consegui ler o andamento oficial.
+- **ADI 7936 (CNS), relator min. Luiz Fux**, contra o art. 4º da LC 224/2025, arts. 2º e 12 do Decreto 12.808/2025 e arts. 2º, 4º, 13, 14 e 15 da IN 2.305/2025 (acréscimo de 10% nos percentuais de presunção sobre a receita anual acima de R$ 5 mi: 32% → 35,2% em serviços; 8% → 8,8%). Há pedido de cautelar. **Não encontrei notícia de liminar concedida pelo STF**; as notícias achadas são de fevereiro/2026. Existe também a **ADI 7920 (CNI)** e uma ADI do Conselho Federal da OAB sobre a mesma majoração.
+- **O que há são liminares de instâncias inferiores, individuais:** 1ª Vara Federal de Resende (suspensão da exigibilidade) e **TRF-4** (suspendeu o acréscimo de 10% na base), noticiadas em 08/2026. Valem para quem obteve, não para todos.
+- **Conclusão prática para o 71:** sem liminar própria da Conte, **a majoração continua exigível** e a apuração com 35,2% está correta. Alternativa jurídica (decisão da Fernanda/Gian, fora do fechamento): medida judicial para a Conte, com depósito ou provisão da diferença.
