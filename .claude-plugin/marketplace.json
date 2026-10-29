@@ -1,0 +1,13 @@
+{
+  "name": "officecont",
+  "owner": {
+    "name": "OfficeCont"
+  },
+  "plugins": [
+    {
+      "name": "painel-fechamento",
+      "source": "./mods/painel-fechamento",
+      "description": "Painel das pendências do fechamento fiscal ao lado do chat, com caixa de comando livre e botões por cliente"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "officecont": {
+      "source": {
+        "source": "directory",
+        "path": "."
+      }
+    }
+  },
+  "enabledPlugins": {
+    "painel-fechamento@officecont": true
+  }
+}
