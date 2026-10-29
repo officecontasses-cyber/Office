@@ -50,3 +50,11 @@ Criada `_133` em `007 ARQUIVOS SIEG` (id 1FTDUA311NpqBf9WmDbihK4masg9ShjhN, ao l
 - **FAT:** na aba Compensações a linha 028 repete o nº da 027 (`38252.90637.200926.1.3.04-0560`): o correto é `29817.01875.181026.1.3.04-9972`. A observação de set diz "COMPENSADO PARTE DO COFINS" (PIS não foi compensado).
 - **Crédito de 10/2024 esgotado:** outubro/2026 e seguintes viram DARF cheio (~R$ 64,8/mês) salvo novo crédito.
 - PIS de agosto (11,55): a DEC da 027 (20/09) não está na pasta; crédito usado 60,41 < débitos de agosto (53,22 + 11,55 = 64,77): conferir.
+
+## IRPJ/CSLL do 3ºTRIM — análise de 29/10/2026 (véspera do vencimento)
+- **Controle_Fiscal (Set2026):** DARF IRPJ e DARF CSLL `Pendente`, **sem valor**, observação "Lucro Real: aguarda a contabilidade liberar a apuração do 3º trimestre. Venc. 30/10/2026". Todo o resto de setembro está fechado: Declaração Prefeitura `Enviado` (retificadora 1), ISSQN `Sem movimento`, PIS 11,56 e COFINS 46,01 `Enviado` (guia 07.16.26291.8027591-4, G-Click 18/10 10:58). Falta só o SPED (16/11).
+- **Busca no Drive em 29/10: não existe balancete, LALUR nem apuração de IRPJ/CSLL do 133 em 2026.** Também não há guia de IRPJ/CSLL de trimestres anteriores de 2026 no Drive.
+- **O FAT do 133 não tem seção de IRPJ/CSLL** (é Lucro Real: o imposto sai do balancete/LALUR, não do FAT). O FAT só controla aluguel, receita financeira e PIS/COFINS não cumulativo.
+- **Resumo dos Impostos do Domínio (18/10 10:57):** só PIS 11,56 e COFINS 46,01; IBS, CBS e ISS zerados. **Nada de IRPJ/CSLL** — o módulo fiscal não apura Lucro Real.
+- **Ordem de grandeza:** receita do trimestre = aluguel 700,00 × 3 = 2.100,00 + receita financeira (jul 0,40 + ago 0,54 + set 1,38 = 2,32) = **2.102,32**; despesas conhecidas: NFS-e tomadas 1.552,35 no mês de setembro (Officecont 1.252,35 + Shaiane 300,00) e os meses anteriores. Com esse porte, o resultado do trimestre pode ser **prejuízo ou lucro muito pequeno** — mas isso **só o balancete diz**.
+- **Conclusão:** é pendência da **contabilidade**, não do fiscal, e não há documento nenhum para apurar daqui.
