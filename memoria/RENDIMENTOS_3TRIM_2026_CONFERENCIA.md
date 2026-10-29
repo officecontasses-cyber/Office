@@ -55,3 +55,14 @@ Pastas abertas (cliente 186, `001_DOCUMENTOS DIGITALIZADOS`, id do ano `1udhnfVF
 - **Atenção ao escrever fórmula pela API:** decimal com ponto (`4.8%`) quebra a planilha (`#ERROR!`, locale pt-BR). Usar `32%*15%` em vez de `4,8%`.
 - **Resultado:** 1º e 2º trimestres não mudam (sem rendimentos). 3ºTRIM: **IRPJ 1.315,74 → 1.315,59** e **CSLL 789,45 → 789,94** (só com o Invest Fácil: jul 4,62/IRRF 0,81 e set 0,90/0,17).
 - **Ainda falta lançar no FAT (linhas 5 e 8) o Fundo Simples Automático:** ago **362,93 / IRRF 4,92** (documentado) e o resgate de **31/07 ≈ 653,00 / IRRF ≈ 6,51** (calculado por cotas). Com os dois: **IRPJ 1.456,56 e CSLL 881,37**. Só com o de agosto: **IRPJ 1.365,11 e CSLL 822,60**.
+
+## 186 — todos os números são de RESGATE? Conferência linha a linha (29/10/2026)
+| Valor no FAT / a lançar | É resgate? | Onde está escrito |
+|---|---|---|
+| Invest Fácil jul 4,62 / IRRF 0,81 | **Sim** | `JUL 26 - Investfácil.pdf`: linha "**Total de Resgates** 28.347,30 — Valor Renda Bruta 4,62, IR 0,81". As aplicações do mês somam renda 0,00. |
+| Invest Fácil ago 0,00 | Sim (sem renda) | `AGO 26 - Investfácil` |
+| Invest Fácil set 0,90 / IRRF 0,17 | **Sim** | `SET 26 - Investfácil`: "**Total de Resgates** 4.594,89 — Renda Bruta 0,90, IR 0,17" (6 resgates em 15, 24, 25 e 30/09). Aplicações: renda 0,00. |
+| Fundo Simples Automático ago 362,93 / IRRF 4,92 | **Sim** | `Resumo de Movimentação AGO`: linha "**Total de Resgates** 281,64732 cotas, principal 945,09, bruto 1.308,02, IRRF 4,92" e "Renda Total 362,93 / Valor Líquido 1.303,10". |
+| Fundo Simples Automático 31/07 ≈653,00 / ≈6,51 | **Sim, o resgate existe; o valor da renda é calculado** | Extrato da conta: 31/07 "RESG AUTOMATICO INVESTIM" **2.386,49**. A renda não está em nenhum relatório (vão entre o Resumo de JUL, cota 30/07, e o de AGO). |
+| Rendimento provisionado do fundo (jul 1.808,17; ago 828,95; set 854,15 "Renda Total" do saldo) | **Não entra** | São os saldos acumulados não resgatados: Resumo de SET mostra **Total de Resgates 0,00** em setembro (saldo parado em 637,18844 cotas de 31/08 a 30/09). |
+**Conclusão:** o critério da casa (rendimento só sobre resgate) está respeitado. O único número sem documento é a renda do resgate de 31/07.
