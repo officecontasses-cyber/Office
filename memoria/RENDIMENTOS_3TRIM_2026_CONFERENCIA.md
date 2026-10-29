@@ -73,3 +73,6 @@ Pastas abertas (cliente 186, `001_DOCUMENTOS DIGITALIZADOS`, id do ano `1udhnfVF
 - **3ºTRIM passou a mostrar: rendimentos 1.021,45, IRRF 12,41, IRPJ R$ 1.456,55 e CSLL R$ 881,38** (mês a mês: jul 459,45/280,06; ago 446,34/270,75; set 550,77/330,56).
 - Os valores anteriores (1.315,74 / 789,45, sem rendimento nenhum) são os que provavelmente foram ao MIT: **conferir e retificar antes de gerar a guia**.
 - **Único número sem documento do banco:** os 653,00 e 6,51 do resgate de 31/07 (o resgate em si está no extrato: R$ 2.386,49). Se o informe anual trouxer outro valor, ajustar.
+
+## 186 — FECHADO (29/10/2026)
+**DARF nº 07.16.26302.4584488-1**, gerado 29/10 11:44, recibo da declaração 50000543834629, **total R$ 2.337,93** = IRPJ 2089 **1.456,55** + CSLL 2372 **881,38**, PA 3º Trimestre/2026, cota única, venc. 30/10. PDF: `186_Lopes&Nadal_PortoAlegre_09.2026_IRPJ-CSLL 3ºTRIM.pdf` (id `1DyrRSFkP-aRLWWKoArKNErECisiyFxQD`). G-Click: tarefa concluída 29/10 11:45 e envio ao cliente 11:45. **Fila gravada.** Base: 27.411,35 × 32% = 8.771,63 + rendimentos 1.021,45 = 9.793,08; IRPJ 15% − IRRF 12,41; CSLL 9%.
