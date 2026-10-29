@@ -44,7 +44,8 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   na planilha `CONTROLE | Rendimentos` (`LIBERADO FISCAL` e Observações), no FAT e na Controle_Fiscal. Muitas vezes já chegou e a cobrança é desnecessária;
   **(2) a cobrança pronta para copiar** (e-mail ou WhatsApp, conforme o cliente);
   **(3) as outras saídas** (apurar sem o documento e revisar depois, usar o regime/valor anterior, deixar para o pós-fechamento);
-  **(4) "outro comando"** — uma linha em branco dizendo que ela pode escrever o que quiser em vez de usar as opções acima.
+  **(4) "outro comando"** — também em bloco de código pronto para copiar, no formato `#<nº> outro comando: ` (com os dois pontos no fim),
+  para ela colar e completar com o que quiser. Todas as quatro opções vêm em bloco de código copiável, nunca só em texto corrido.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
