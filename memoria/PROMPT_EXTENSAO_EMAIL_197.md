@@ -64,3 +64,33 @@ Se não der para decidir até quinta, minha sugestão é pagar a CSLL pelo regim
 
 Obrigada,
 Fernanda
+
+---
+## Prompt 3 (29/10/2026): o e-mail ao Gian saiu? Ele respondeu? (véspera do vencimento)
+Colar no Claude in Chrome com o OWA aberto. **Fase 1 é só leitura.**
+
+Você vai verificar o andamento de um e-mail sobre o cliente 197 ASBBM (Associação Sul Brasileira de Biomedicina, nome fantasia AGAB, CNPJ 05164750000112, Novo Hamburgo/RS). O destinatário é o **Gian**, da contabilidade. NUNCA envie e-mail. NUNCA digite senhas. Trabalhe em duas fases e pare no fim da Fase 1.
+
+FASE 1 — LEITURA
+1. Procure em **todas as pastas** (Caixa de Entrada, Itens Enviados, Rascunhos, Arquivo, Lixo), **desde 26/10/2026**, por: `ASBBM`, `AGAB`, `197`, `Biomedicina`, `05.164.750`, `05164750`, `enquadramento`, `isenta`, `imune`, `Lucro Presumido`, `CSLL`, `Gian`.
+2. Responda, com data/hora e trecho entre aspas, ou "NÃO ENCONTRADO":
+   a. **O e-mail ao Gian foi enviado?** O assunto esperado é "ASBBM (197) | enquadramento de IRPJ/CSLL: isenta, imune ou Lucro Presumido?". Diga se está em **Itens Enviados** (com data/hora e destinatários) ou se ficou parado em **Rascunhos**. Em 27/10 ele existia só como texto, não tinha sido enviado.
+   b. **O Gian respondeu?** Se sim, resuma fielmente o que ele diz sobre: (1) a ASBBM é isenta, imune ou Lucro Presumido em 2026; (2) se paga a CSLL de R$ 95,64 do 3º trimestre; (3) PIS/COFINS (folha, anuidades, receita financeira); (4) por que a ECF 2024 saiu em Lucro Presumido; (5) se pediu algum documento.
+   c. Houve conversa com o **presidente Tiago** ou com outra pessoa da ASBBM sobre isso no período?
+   d. Ficou alguma mensagem **esperando resposta nossa**?
+3. Devolva uma tabela (data/hora | de → para | assunto | resumo) e uma frase final no formato: "enviado em X / não enviado; Gian respondeu Y / não respondeu". Não invente nada. **Pare aqui.**
+
+FASE 2 — só depois que eu disser "pode rascunhar"
+- **Se o e-mail nunca foi enviado:** abra o rascunho (ou crie um novo com o texto do `Prompt 2` deste arquivo), ajuste a urgência para "a CSLL vence amanhã, 30/10", salve em Rascunhos e me mostre. Não envie.
+- **Se foi enviado e o Gian não respondeu:** crie um RASCUNHO de cobrança curta, na mesma conversa, salve em Rascunhos e não envie:
+
+Oi, Gian,
+
+Retomando a ASBBM (197): a **CSLL do 3º trimestre vence amanhã, 30/10**, no valor de R$ 95,64, se o enquadramento for Lucro Presumido.
+
+Sem uma definição hoje, minha orientação é pagar pelo regime da última ECF, que é Lucro Presumido, e revermos o enquadramento com calma para a ECF 2026. Se você discordar, me avise ainda hoje.
+
+Obrigada,
+Fernanda
+
+Regras: não envie nada; salve só em Rascunhos; sem anexos; me diga o assunto e o horário em que salvou.
