@@ -73,6 +73,12 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   e **263 (Tacom Projetos)**. O cliente quer as guias do ISSQN **no dia 1** do mês. Antes de qualquer outro
   cliente, rodar o robô para os dois e entregar à Fernanda os PDFs (`DeclaraçãoMensal.pdf` e `ISSQN.pdf`)
   para ela encaminhar. (Regra dada em 02/10/2026.)
+- **Grupo Tacom: o federal é entregue pela MATRIZ, e a matriz NÃO é cliente do escritório (Fernanda, 29/10/2026).**
+  Ficam conosco só as **filiais**: 138 (Tacom Sistemas FL RS, `08196752000262`), 248 (Tacom Projetos FL SC, `01005845002003`)
+  e 263 (Tacom Projetos FL RS, `01005845002186`). Por isso elas **não têm** linhas de DARF de IRPJ/CSLL/PIS/COFINS, REINF nem
+  SPED Contribuições na Controle_Fiscal: **não é falha do controle**. O que cuidamos é o **municipal** (Declaração e Guia de ISSQN)
+  e, onde há inscrição estadual, o **estadual** (Entradas, Saídas, Guia ICMS, GIA RS/DIME, SPED ICMS) — por isso o 248 (SC) e o 138
+  têm mais linhas que o 263, que só tem o ISSQN de Porto Alegre.
 - Lembrar: a Tacom é apurada pela matriz, e só o ISSQN de Porto Alegre entra nessa prioridade.
   O robô roda no PC do escritório, não na nuvem: a agente prepara o comando e confere o resultado.
 - **LOPES & NADAL (cliente 186) também é prioridade**, mas com outra regra: **só se roda depois que a cliente envia os documentos**
