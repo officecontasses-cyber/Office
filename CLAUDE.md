@@ -36,6 +36,8 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   na aba do mês). As linhas novas entram a partir da linha 2, colunas A:F, `Processado` em branco;
   nas abas de mês continua não escrevendo. O processamento é o `processarAtualizacoes()` (à mão ou pelo gatilho de
   `apps-script/gatilhoAtualizacoes.gs`, a cada 5 min, se instalado). Sem o conector, volta o TSV no chat.
+- **CNPJ sem pontuação (pedido da Fernanda, 29/10/2026):** sempre que falar de um cliente, trazer também o **CNPJ só com números**
+  (ex.: 247 Porto Mais Alegre = `53290951000109`), porque é o formato que os portais e sistemas pedem para colar.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
