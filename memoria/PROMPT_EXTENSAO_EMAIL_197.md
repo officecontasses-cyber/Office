@@ -94,3 +94,32 @@ Obrigada,
 Fernanda
 
 Regras: não envie nada; salve só em Rascunhos; sem anexos; me diga o assunto e o horário em que salvou.
+
+### Resultado do Prompt 3 (29/10/2026)
+A extensão varreu Caixa de Entrada, Itens Enviados, Itens Excluídos, Arquivo Morto (e conferiu Rascunhos, vazia) desde 26/10: **o e-mail ao Gian continua SEM SER ENVIADO** (segunda vez que isso se confirma; a primeira foi em 27/10) e **não há resposta dele**, nem conversa com o presidente Tiago, nem mensagem esperando resposta nossa. Últimas menções à ASBBM: 19/10 (rendimentos 3ºTRIM), 13/10 (Gian, "Regularização do faturamento"), 06/10 e 05/10 (Visão Cliente).
+**Alerta de segurança levantado pela extensão:** um e-mail antigo de 04/03/2026 ("Cadastro e-mail contribuinte", Novo Hamburgo) mostra **CNPJ e senha de acesso em texto aberto** no corpo. A extensão não reproduziu a senha. Conferir se a senha ainda está em uso e, se estiver, trocar e apagar/arquivar a mensagem.
+
+### Texto da Fase 2 (e-mail NOVO, urgência de 29/10)
+Pode rascunhar: e-mail NOVO para o Gian (não é "RE:"), salvar em Rascunhos e NÃO enviar.
+
+Assunto: ASBBM (197) | enquadramento de IRPJ/CSLL — preciso hoje (CSLL vence amanhã)
+
+Oi, Gian, tudo bem?
+
+Preciso de uma definição sua sobre a ASBBM (Associação Sul Brasileira de Biomedicina, CNPJ 05.164.750/0001-12) ainda hoje: a **CSLL do 3º trimestre vence amanhã, 30/10**.
+
+O que encontramos:
+- Na Receita, a natureza jurídica é Associação Privada (CNAE 9412-0/99). Nas ECFs, 2019 a 2021 constam como "Isento do IRPJ", 2022 e 2023 como "Imune" e **2024 como Lucro Presumido**.
+- O estatuto (2014) diz que é sem fins lucrativos, sem remuneração de dirigentes e sem distribuição de receitas.
+- Em 2026 não há receita de serviços; só rendimentos de aplicações (3º trimestre R$ 1.062,66, IRRF R$ 239,00).
+
+O que preciso que você defina:
+1. Em 2026 a ASBBM fica em **Lucro Presumido** (como na ECF 2024) ou é **isenta** (Lei 9.532, art. 15)?
+2. Se for Lucro Presumido: pago a CSLL de **R$ 95,64** e o IRPJ fica sem guia (o IRRF das aplicações é maior que o imposto).
+3. Se for isenta: não gero IRPJ/CSLL. E o **PIS/COFINS** (folha, anuidades, receita financeira), que está em aberto desde 23/10, como você quer tratar?
+4. Por que a ECF 2024 saiu em Lucro Presumido? E a ECF 2025, com que forma de tributação foi entregue?
+
+**Sem resposta até o fim do dia, eu pago a CSLL pelo regime da última ECF (Lucro Presumido) e revemos o enquadramento com calma para a ECF 2026.** Se você discordar, me avise hoje.
+
+Obrigada,
+Fernanda
