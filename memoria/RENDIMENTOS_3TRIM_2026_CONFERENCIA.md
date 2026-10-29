@@ -31,3 +31,19 @@ Em aberto: 71 Conte (falta o informe do Bradesco), 186 Lopes & Nadal (pedido out
 - **FAT IRPJ/CSLL 3ºTRIM (1.315,74 / 789,45) = 15% / 9% × 32% × receita de serviços (27.411,35), sem rendimentos nem IRRF.**
   - Só com o documentado (rendimentos 368,45; IRRF 5,90): IRPJ ≈ 1.365,11; CSLL ≈ 822,61.
   - Com o resgate de 31/07 estimado: IRPJ ≈ 1.455 e CSLL ≈ 881 (estimativa). Vencimento 30/10, cota única (< R$ 2.000).
+
+## 186 — varredura pasta por pasta do Drive (29/10/2026): o documento do resgate de 31/07 NÃO existe
+Pastas abertas (cliente 186, `001_DOCUMENTOS DIGITALIZADOS`, id do ano `1udhnfVFsQ-GFuFVvYAhXJtXozaBPsw_-`):
+- **`07_JULHO` > `2026_Julho EXTRATOS`** (id `1_wKI9aslInXMb_A5SoicKh3PRF7hRqs4`): `Bradesco_Extrato_JUL_2026.PDF`, `Bradesco_Resumo de Movimentação_JUL_Fundo Autom._2026.pdf` e 2 OFX. Nada mais.
+- **`09_SETEMBRO`** (id `1kbtIldzpba31jW5WE1D0F5ztynGhOfWW`): `JUL 26 - Investfácil.pdf`, `JUL 26 - CDB.pdf`, `AGO 26 - Investfácil`, `SET 26 - Investfácil` e a subpasta `2026_Setembro EXTRATOS` (Resumo SET do fundo, Extrato SET, 2 OFX).
+- **Resumo de AGO do fundo** (id `1j9jqLkHNHX-kJANI0eMYPt0FhqKpJ5kI`).
+
+**Por que o documento não existe:** o `Resumo de Movimentação` de **julho** é emitido com **cota de 30/07** e mostra **Total de Resgates 0,00** (saldo 1.437,37265 cotas, principal 4.823,24, bruto 6.631,42). O de **agosto** abre já **depois** do resgate (saldo final 637,18844 + resgates do mês 281,64732 = **918,83576 cotas**). O resgate de 31/07 cai exatamente no vão entre os dois relatórios. O `Bradesco_Extrato_JUL_2026.PDF` confirma a operação na conta: **31/07 "RESG AUTOMATICO INVESTIM" R$ 2.386,49**, usado no mesmo dia para pagar um DARF de 2.633,39.
+
+**Cálculo do rendimento (duas formas, sem documento do banco):**
+- Cotas resgatadas: 1.437,37265 − 918,83576 = **518,53689**; principal por cota 3,355595 → **principal R$ 1.740,00**.
+- (a) Cota de 31/07 interpolada entre 30/07 (4,6135698) e 31/08 (4,6565719): bruto 2.393,00 → **renda 653,00 / IRRF 6,51**.
+- (b) Pela proporção IRRF/renda de agosto (4,92/362,93 = 1,3556%): **renda 655,37 / IRRF 8,88**.
+- Efeito no trimestre: **IRPJ +89 a +91** e **CSLL +58,8 a +59,0**.
+
+**Conclusão:** só o banco fecha o número (informe de rendimentos de 2026 ou extrato da operação de 31/07). A diferença entre as duas estimativas é de centavos no imposto.
