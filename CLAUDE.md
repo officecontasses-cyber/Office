@@ -7,6 +7,11 @@ passo a passo, um passo por vez.
 
 `memoria/PENDENCIAS.md` guarda **o que está pendente e o que já foi resolvido**. Leia no início de cada sessão e atualize a cada
 etapa; salve também um snapshot datado (`PENDENCIAS_E_RESOLVIDOS_AAAA-MM-DD.md`) na pasta `ARQUIVOS EXTENSÃO - CODE - CLAUDE` do Drive.
+**Desde 29/10/2026 (pedido da Fernanda: "passa a salvar os snapshots no repositório também"):** o snapshot do dia vai **nos dois lugares** —
+`memoria/PENDENCIAS_E_RESOLVIDOS_AAAA-MM-DD.md` neste repositório **e** o mesmo arquivo na pasta do Drive. O do repositório é o que a agente
+consegue gravar sozinha (o conector do Drive desta sessão só atualiza metadados, não sobrescreve conteúdo de arquivo existente): escrever e
+comitar o do repositório primeiro, e entregar à Fernanda o trecho em bloco de código para ela colar no do Drive, ou editar pelo navegador com
+a extensão do Chrome. Nunca criar `_v2` nem cópia datada do mesmo dia: atualizar no lugar.
 A Fernanda pediu em 02/10/2026: "não podemos perder os contextos".
 **A cada rodada (04/10/2026):** registrar tudo na memória: `PENDENCIAS.md` (o que foi feito e o que ainda está pendente),
 o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçado em 26/10/2026 ("sempre salvar o md de contexto de tudo pra não esquecer"):** a cada análise, gravar o dossiê do cliente e o `PENDENCIAS.md` e atualizar o snapshot do dia no Drive (pasta `ARQUIVOS EXTENSÃO - CODE - CLAUDE`, id `1xNOw2aLVluPSI_3PTZ0z8M1Mav9hV7kf`). Agosto/2026 está fechado; o SPED Contribuições de 08/2026
