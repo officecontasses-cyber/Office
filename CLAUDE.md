@@ -49,6 +49,15 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   **(3) as outras saídas** (apurar sem o documento e revisar depois, usar o regime/valor anterior, deixar para o pós-fechamento);
   **(4) "outro comando"** — também em bloco de código pronto para copiar, no formato `#<nº> outro comando: ` (com os dois pontos no fim),
   para ela colar e completar com o que quiser. Todas as quatro opções vêm em bloco de código copiável, nunca só em texto corrido.
+- **Formato visual das respostas (pedido da Fernanda, 29/10/2026: "ando me perdendo demais"):** toda resposta segue esta ordem, sempre:
+  **(1) Uma linha de situação** no topo: `#<nº> NOME (CNPJ)` e, em meia linha, o que estamos fazendo.
+  **(2) Painel de status** em tabela curta (no máximo 6 linhas) com os marcadores: `✓` feito, `▲` vence hoje ou amanhã, `■` vencido,
+  `○` aguardando terceiro, `→` próximo passo. Nada de cor fora de urgência.
+  **(3) Números só em tabela**, nunca soltos no meio do texto. Memória de cálculo em tabela ou lista curta, com os nomes em negrito.
+  **(4) Separar sempre "O que eu fiz" de "O que depende de você"**, com esses títulos.
+  **(5) Detalhe longo vai no fim**, sob o título `Detalhe`, ou fica fora se ela não pediu. À vista só o que pede ação.
+  **(6) Terminar com `→ Próximo passo`** e os comandos em blocos de código copiáveis (regra das 4 opções quando houver pendência de terceiro).
+  Parágrafo longo, texto corrido com números e resposta sem o painel no topo são os erros a evitar.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
