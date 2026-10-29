@@ -91,3 +91,15 @@ Os dois PDFs da pasta `009 IMPOSTOS FEDERAIS` são **a mesma dívida**, não ret
 Tarefa existe no G-Click, com checklist de gerar a guia e enviar ao cliente, e **não tem linha na Controle_Fiscal**. Natureza a confirmar com a Fernanda (taxa municipal de fiscalização/funcionamento de São Leopoldo ou anuidade de conselho). Enquanto não se confirma, fica fora da planilha.
 - **29/10/2026 (Fernanda):** a **taxa de fiscalização anual é ação do Gian** e corre **por e-mail**, não pela Controle_Fiscal. Por isso não há linha na planilha e **não deve ser criada**. O que cabe ao fiscal é cobrar o acompanhamento: se a guia foi enviada ao cliente e se o cliente pagou. E-mail ao Gian rascunhado nesta data.
 - **29/10/2026:** e-mail ao Gian **enviado** sobre a taxa de fiscalização anual (tarefa do G-Click, comp. 12/2026, vencida 15/10): perguntado se a guia foi gerada e enviada à cliente, se há retorno de pagamento e quem gera, se ainda não foi. Aguardando resposta para anexar o comprovante e concluir a tarefa no G-Click.
+
+## A diferença de 1.516,78 na COFINS — EXPLICADA (29/10/2026), não é erro
+Conferido no **FAT 126 (`1eBuHiIYRmzxxN4a-VTLywpl1j5c5JMRSI8-vLaYeN-U`), aba `Compensações` e aviso da contabilidade**:
+- COFINS cheia de 09/2026 = **4.609,87** (3% de 153.662,41) — é o que o Resumo do Domínio das 19:40 mostrava.
+- Compensado **R$ 1.516,78** via PER/DCOMP, créditos de **01/2025** atualizados, ambos transmitidos em **17/10/2026**:
+  - **PERDCOMP 002** `003502205317102613040009` — crédito de **COFINS**, saldo original 462,54 → **562,22**;
+  - **PERDCOMP 003** `006728298517102613041725` — crédito de **PIS**, saldo original 785,32 → **954,56** (usado contra COFINS).
+- 4.609,87 − 1.516,78 = **3.093,09** = valor da guia. **Confere exatamente.** O aviso no FAT de setembro já dizia: "COFINS compensado (PERDCOMP 002 R$ 562,22 + 003 R$ 954,56)".
+- Os créditos de 01/2025 ficaram **totalmente utilizados** (o PERDCOMP 001, de 17/08/26, já tinha consumido o saldo de 4.326,99 em jul/2026).
+- **PIS não foi compensado** em setembro: 998,81 integral (0,65% de 153.662,41).
+**Conclusão: não há divergência de apuração.** O que fica é o **pagamento**: a guia de 17/10 (4.091,90) venceu em 23/10 sem pagamento e foi reemitida em 27/10 por **4.118,90**. Confirmar se foi paga.
+**Correção do registro anterior:** a nota de 29/10 que apontava "divergência de 1.516,78 sem explicação" está superada — a explicação estava no próprio FAT, aba Compensações.
