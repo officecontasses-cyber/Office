@@ -58,6 +58,10 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   **(5) Detalhe longo vai no fim**, sob o título `Detalhe`, ou fica fora se ela não pediu. À vista só o que pede ação.
   **(6) Terminar com `→ Próximo passo`** e os comandos em blocos de código copiáveis (regra das 4 opções quando houver pendência de terceiro).
   Parágrafo longo, texto corrido com números e resposta sem o painel no topo são os erros a evitar.
+- **Texto para copiar vai sempre em bloco de código (pedido da Fernanda, 29/10/2026):** todo **rascunho de e-mail**, **mensagem de WhatsApp**
+  e **prompt para o Claude in Chrome / extensão** vem dentro de bloco de código, para ela usar o botão de copiar. Nunca em citação (`>`)
+  nem solto no texto. Dentro do bloco, escrever em texto puro (sem tabela markdown, sem negrito), já no formato em que vai ser colado;
+  o assunto do e-mail entra na primeira linha, como `Assunto: ...`.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
