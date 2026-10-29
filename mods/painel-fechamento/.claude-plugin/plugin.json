@@ -1,0 +1,6 @@
+{
+  "name": "painel-fechamento",
+  "version": "0.1.0",
+  "description": "Painel das pendências do fechamento fiscal, com caixa de comando livre e botões por cliente",
+  "types": "./types/index.d.ts"
+}
