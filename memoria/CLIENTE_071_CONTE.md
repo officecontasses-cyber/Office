@@ -84,3 +84,23 @@ Pesquisa só por busca na web; **o portal do STF (`portal.stf.jus.br`) está blo
 - **ADI 7936 (CNS), relator min. Luiz Fux**, contra o art. 4º da LC 224/2025, arts. 2º e 12 do Decreto 12.808/2025 e arts. 2º, 4º, 13, 14 e 15 da IN 2.305/2025 (acréscimo de 10% nos percentuais de presunção sobre a receita anual acima de R$ 5 mi: 32% → 35,2% em serviços; 8% → 8,8%). Há pedido de cautelar. **Não encontrei notícia de liminar concedida pelo STF**; as notícias achadas são de fevereiro/2026. Existe também a **ADI 7920 (CNI)** e uma ADI do Conselho Federal da OAB sobre a mesma majoração.
 - **O que há são liminares de instâncias inferiores, individuais:** 1ª Vara Federal de Resende (suspensão da exigibilidade) e **TRF-4** (suspendeu o acréscimo de 10% na base), noticiadas em 08/2026. Valem para quem obteve, não para todos.
 - **Conclusão prática para o 71:** sem liminar própria da Conte, **a majoração continua exigível** e a apuração com 35,2% está correta. Alternativa jurídica (decisão da Fernanda/Gian, fora do fechamento): medida judicial para a Conte, com depósito ou provisão da diferença.
+
+## Validação dos rendimentos do 3ºTRIM contra os documentos (29/10/2026)
+**Caixa — os três meses conferidos nos extratos do fundo CAIXA FIC GIRO EMPRESAS RF REF DI L (CNPJ 16.916.063/0001-22), conta 1292.000578476707-7, todos em nome de CONTE CORNETET (08.307.701/0001-80). Bate 100% com o FAT:**
+| Mês | Rendimento base | IRRF | Documento (Drive) |
+|---|---|---|---|
+| 07/2026 | 19.986,77 | 7.840,77 | `CAIXA - Extrato de Fundos.pdf` id `1klyQj30iupSuDyIORBDLYkafM6RZAPPs` |
+| 08/2026 | 19.126,28 | 5.427,39 | id `1ogymps31z351v3OhAItTMPkoUvwpsJVZ` |
+| 09/2026 | 21.391,97 | 5.671,85 | id `1YxvzMX1cETlATiQxU5_fkmSOrmWy2cYQ` |
+| **3ºTRIM** | **60.505,02** | **18.940,01** | = FAT |
+
+**Bradesco — NÃO validado por documento:** o FAT traz jul 18,71 / ago 38,70 / set 30,71 = **88,12** e IRRF 1,76 / 3,97 / 3,31 = **9,04**, mas **não há informe nem extrato do Bradesco de 2026 da Conte no Drive** (busca de 29/10). É exatamente o documento que o cliente não conseguiu. Os valores foram digitados no FAT a partir de outra fonte (extrato mensal da conta, provavelmente); não consegui conferir.
+
+**Erro encontrado no FAT (071_CONTE ARQUITETURA_FAT2026, aba 2026):** a linha `IRRF RECEITA FINAN. S/RESGATES BRADESCO` está com a **célula do 3ºTRIM vazia** (deveria somar 1,76 + 3,97 + 3,31 = **9,04**). Os meses estão preenchidos; só o total do trimestre ficou em branco. O Domínio **não** foi afetado: usou IRRF de rendimentos 18.949,05 = 18.940,01 (Caixa) + 9,04 (Bradesco). Isso explica parte da diferença de centavos entre a estimativa do FAT (104.929,63) e o Domínio (104.929,65).
+
+**Apuração do 3ºTRIM conferida (Domínio, Resumo de 17/10 19:15):**
+- Receita de serviços 3.118.259,98 (jul 974.825,34 + ago 1.052.357,10 + set 1.091.077,54).
+- Base presumida: 1.250.000,00 × 32% = 400.000,00 + 1.868.259,98 × 35,2% = 657.627,51 → **1.057.627,51**; + rendimentos financeiros 60.593,14 = **1.118.220,65**.
+- IRPJ 15% = 167.733,10 (158.644,13 + 9.088,97 dos rendimentos) + **adicional 10%** sobre o que passa de 60.000 = 105.822,07 → 273.555,17; − IRRF de serviços 149.676,47 − IRRF de rendimentos 18.949,05 = **IRPJ 104.929,65**.
+- CSLL 9% sobre 1.118.220,65 = 100.639,86 − IRRF/CSLL retida de serviços 31.182,66 = **CSLL 69.457,20**.
+- PIS/COFINS: retenção cobre tudo (a recolher 0,00; saldos 0,02 e 0,07) → `Retido`, sem DARF.
