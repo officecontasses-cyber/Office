@@ -59,6 +59,30 @@ main{min-width:0;padding-block:22px 60px;padding-left:max(20px,env(safe-area-ins
 .daterow h1{margin:0;font-size:19px;font-weight:800;letter-spacing:-.02em;color:var(--navy)}
 section.view{display:flex;flex-direction:column;gap:24px;min-width:0}
 
+/* Herói: medidor ao lado dos números */
+.hero{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:stretch}
+.gauge{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0}
+.gauge svg{display:block;width:136px;height:86px}
+.gauge .gv{font-size:25px;font-weight:800;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;fill:var(--navy)}
+.gauge .gs{font-size:11px;font-weight:600;fill:var(--muted)}
+.gauge .glbl{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center}
+.gauge .gsel{font:700 11.5px var(--f);color:var(--muted);background:transparent;border:0;padding:2px 4px;border-radius:6px;text-align:center;cursor:pointer;letter-spacing:.04em;text-transform:uppercase}
+.gauge .gsel:hover{background:var(--surface-2);color:var(--navy)}
+.gauge .gcli{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.gauge .gtrack{stroke:var(--surface-2)} .gauge .gfill{stroke:var(--ok);transition:stroke-dasharray .4s}
+.strip{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 14px}
+.strip .frase{font-size:14.5px;font-weight:600;color:var(--navy);flex:1 1 240px;min-width:0}
+.strip .tempo{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.strip .leitura{font-size:13px;color:var(--muted);flex:1 1 100%}
+.meters{display:flex;flex-direction:column;gap:7px;padding:4px 2px}
+.meter{display:grid;grid-template-columns:minmax(0,1fr) 90px auto;gap:10px;align-items:center;font-size:13.5px}
+.meter .mn{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.meter .mt{height:7px;border-radius:9px;background:var(--surface-2);overflow:hidden}
+.meter .mt i{display:block;height:100%;background:var(--ok);border-radius:9px}
+.meter.late .mt i{background:var(--late)} .meter.hoje .mt i{background:var(--warn)}
+.meter .mv{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:620px){.hero{grid-template-columns:minmax(0,1fr)}.gauge{flex-direction:row;justify-content:center;gap:14px;align-items:center}.meter{grid-template-columns:minmax(0,1fr) 64px auto}}
+
 /* Números grandes */
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:10px}
 .tile{appearance:none;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 13px;cursor:pointer;
@@ -222,7 +246,27 @@ textarea{width:100%;min-height:52px;resize:vertical}
 
   <section class="view" id="view-dia">
     <div class="daterow"><h1 id="todayLbl"></h1><span class="muted small" id="ordemSrc"></span></div>
-    <div class="tiles" id="tiles"></div>
+    <div class="hero">
+      <div class="gauge">
+        <svg viewBox="0 0 136 86" role="img" aria-labelledby="gaugeTitle">
+          <title id="gaugeTitle">Medidor do fechamento do mês</title>
+          <path class="gtrack" d="M 14 68 A 54 54 0 0 1 122 68" fill="none" stroke-width="12" stroke-linecap="round"></path>
+          <path class="gfill" id="gfill" d="M 14 68 A 54 54 0 0 1 122 68" fill="none" stroke-width="12" stroke-linecap="round" stroke-dasharray="0 170"></path>
+          <text class="gv" id="gv" x="68" y="58" text-anchor="middle">—</text>
+          <text class="gs" id="gs" x="68" y="80" text-anchor="middle"></text>
+        </svg>
+        <span class="glbl" id="glbl">Fechamento</span>
+        <select class="gsel" id="gsel" aria-label="Competência do fechamento" hidden></select>
+        <span class="gcli" id="gcli"></span>
+      </div>
+      <div class="tiles" id="tiles"></div>
+    </div>
+    <div class="strip">
+      <span class="frase" id="frase"></span>
+      <span class="tempo" id="tempo"></span>
+      <span class="leitura" id="leitura"></span>
+    </div>
+    <details class="more" id="metersBox" hidden><summary id="metersLbl">Fechamento por obrigação</summary><div class="meters" id="meters"></div></details>
     <div class="sec" id="sec-ordem">
       <div class="sechead"><h2>Por onde começar</h2></div>
       <div class="rows" id="ordem"><div class="empty">Carregando…</div></div>
@@ -293,7 +337,7 @@ textarea{width:100%;min-height:52px;resize:vertical}
 <script>
 (function(){
 const TZ='America/Sao_Paulo';
-const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,rv:'carteira',loaded:false,canAsk:false};
+const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],frases:[],comps:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,rv:'carteira',loaded:false,canAsk:false};
 let db=null,room=null;
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -366,9 +410,72 @@ function renderTiles(today){
   ];
   $('tiles').innerHTML=T.map(([c,l,n,go])=>`<button class="tile ${n?c:'zero'}" data-act="tile" data-go="${go}"><b>${n}</b><span>${l}</span></button>`).join('');
 }
+/* Medidor por tarefa, dentro de uma COMPETÊNCIA de fechamento (não pelo mês do prazo).
+   A competência de cada tarefa sai, nesta ordem: do campo `comp`; da aba da planilha
+   (Set2026 = 2026-09); ou do texto "comp. MM/AAAA" que o G-Click grava no passo. */
+const ARC=169.6;
+const MES3={jan:'01',fev:'02',mar:'03',abr:'04',mai:'05',jun:'06',jul:'07',ago:'08',set:'09',out:'10',nov:'11',dez:'12'};
+function compOf(t){
+  if(typeof t.comp==='string'&&/^\d{4}-\d{2}$/.test(t.comp))return t.comp;
+  const ab=String(t.aba||'');const m=ab.match(/^([A-Za-z]{3})[a-z]*(\d{4})$/);
+  if(m&&MES3[m[1].toLowerCase()])return m[2]+'-'+MES3[m[1].toLowerCase()];
+  const ps=Array.isArray(t.passos)?t.passos:[];
+  for(const p of ps){
+    if(typeof p.comp==='string'&&/^\d{4}-\d{2}$/.test(p.comp))return p.comp;
+    const c=String(p.t||'').match(/comp\.\s*(\d{2})\/(\d{4})/);
+    if(c)return c[2]+'-'+c[1];
+  }
+  return null;
+}
+const compBR=c=>c?c.slice(5,7)+'/'+c.slice(0,4):'';
+function compAtual(){
+  try{const v=localStorage.getItem('central-comp');if(v&&S.comps.includes(v))return v;}catch(_){}
+  const cnt={};S.tasks.forEach(t=>{if(t.concluida)return;const c=compOf(t);if(c)cnt[c]=(cnt[c]||0)+1;});
+  const ks=Object.keys(cnt);
+  if(!ks.length)return S.comps[S.comps.length-1]||null;
+  ks.sort((a,b)=>cnt[b]-cnt[a]||b.localeCompare(a));
+  return ks[0];
+}
+function renderGauge(today){
+  S.comps=[...new Set(S.tasks.map(compOf).filter(Boolean))].sort();
+  const c=compAtual();
+  const mes=c?S.tasks.filter(t=>compOf(t)===c):[];
+  const ok=mes.filter(t=>t.concluida).length,tot=mes.length;
+  const pct=tot?Math.round(ok/tot*100):0;
+  const ps=mes.flatMap(t=>Array.isArray(t.passos)?t.passos:[]);
+  const pok=ps.filter(p=>p.ok).length;
+  $('gfill').setAttribute('stroke-dasharray',(tot?ARC*pct/100:0).toFixed(1)+' '+ARC);
+  $('gv').textContent=tot?pct+'%':'—';
+  $('gs').textContent=tot?ok+' de '+tot+(tot===1?' tarefa':' tarefas'):'sem competência identificada';
+  $('gcli').textContent=ps.length?pok+' de '+ps.length+' clientes':'';
+  $('gsel').innerHTML=S.comps.map(x=>`<option value="${x}" ${x===c?'selected':''}>Fechamento ${compBR(x)}</option>`).join('');
+  $('gsel').hidden=S.comps.length<2;
+  $('glbl').hidden=S.comps.length>=2;
+  $('glbl').textContent=c?'Fechamento '+compBR(c):'Fechamento';
+  /* Medidores por obrigação: aqui a unidade é o passo, que é um cliente. */
+  const open=S.tasks.filter(t=>!t.concluida&&Array.isArray(t.passos)&&t.passos.length>1);
+  const rows=open.map(t=>{const p=t.passos,k=p.filter(x=>x.ok).length;
+    return {n:titleOf(t),k,tot:p.length,b:bucketOf(t,today),prazo:t.prazo||'9999'};})
+    .sort((a,b)=>cmp([{atrasada:0,hoje:1,semana:2,adiante:3,semdata:4}[a.b]??9,a.prazo],[{atrasada:0,hoje:1,semana:2,adiante:3,semdata:4}[b.b]??9,b.prazo]));
+  $('metersBox').hidden=!rows.length;
+  $('metersLbl').textContent='Fechamento por obrigação ('+rows.length+')';
+  $('meters').innerHTML=rows.map(r=>`<div class="meter ${r.b==='atrasada'?'late':r.b==='hoje'?'hoje':''}"><span class="mn" title="${esc(r.n)}">${esc(r.n)}</span><span class="mt" aria-hidden="true"><i style="width:${Math.round(r.k/r.tot*100)}%"></i></span><span class="mv">${r.k}/${r.tot} clientes</span></div>`).join('');
+}
+function renderStrip(today){
+  const md=S.meudia||{};
+  const fr=Array.isArray(S.frases)&&S.frases.length?S.frases[(Math.floor(toD(today)/86400000))%S.frases.length]:'';
+  $('frase').textContent=fr||'';
+  const w=md.tempo&&typeof md.tempo==='object'?md.tempo:null;
+  if(w){const p=[];if(w.agora!=null)p.push(w.agora+' °C agora');if(w.max!=null)p.push('máx '+w.max);if(w.min!=null)p.push('mín '+w.min);if(w.texto)p.push(w.texto);
+    $('tempo').textContent='Porto Alegre · '+p.join(' · ')+(w.lidoEm?' · lido às '+esc(w.lidoEm):'');}
+  else $('tempo').textContent='';
+  $('leitura').textContent=md.leitura||'';
+}
 function renderDia(today){
   const md=S.meudia||{};
   renderTiles(today);
+  renderGauge(today);
+  renderStrip(today);
   $('resumo').textContent=md.resumo||'O resumo aparece aqui quando o briefing da manhã rodar.';
   const open=S.tasks.filter(t=>!t.concluida);
   const byId=Object.fromEntries(S.tasks.map(t=>[t.id,t]));
@@ -611,6 +718,7 @@ $('taskList').addEventListener('focusout',()=>setTimeout(()=>{if(renderTarefas.p
 $('fq').addEventListener('input',e=>{S.f.q=e.target.value;renderTarefas(todayISO());});
 $('forigem').addEventListener('change',e=>{S.f.origem=e.target.value;renderTarefas(todayISO());});
 $('newBtn').addEventListener('click',()=>{const f=$('addForm');f.hidden=!f.hidden;$('newBtn').setAttribute('aria-expanded',String(!f.hidden));if(!f.hidden)$('addTitulo').focus();});
+$('gsel').addEventListener('change',e=>{try{localStorage.setItem('central-comp',e.target.value);}catch(_){}renderGauge(todayISO());});
 $('rview').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;S.rv=b.dataset.rv;[...$('rview').children].forEach(x=>x.setAttribute('aria-pressed',x===b));renderRadar(todayISO());});
 $('addForm').addEventListener('submit',e=>{e.preventDefault();if(!db)return toast('Banco indisponível');const f=e.target;const titulo=f.titulo.value.trim();if(!titulo)return;
   db.collection('pendencias').add({titulo,cliente:f.cliente.value.trim(),prazo:f.prazo.value||null,prioridade:f.prioridade.value,situacao:'aberta',passos:[],notas:'',comando:'',recorrenciaDias:0,responsavel:'Fernanda',origem:'manual',concluida:false,criadoEm:nowISO(),atualizadoEm:nowISO()})
@@ -635,6 +743,7 @@ const listen=(ref,fn)=>ref.onSnapshot(fn,err=>{console.error(err);if(err&&err.co
   listen(db.collection('radar_dir'),s=>{S.rdir=Object.fromEntries(s.docs.map(d=>[d.id,d.data()]));render();});
   listen(db.doc('radar_meta/status'),s=>{S.rmeta=s.exists?s.data():null;renderRadar(todayISO());});
   listen(db.doc('config/portais'),s=>{const d=s.exists?s.data():null;S.portais=(d&&Array.isArray(d.itens))?d.itens:[];renderDia(todayISO());});
+  listen(db.doc('config/frases'),s=>{const d=s.exists?s.data():null;S.frases=(d&&Array.isArray(d.itens))?d.itens.filter(x=>typeof x==='string'&&x.trim()):[];renderStrip(todayISO());});
 })();
 (async()=>{
   room=await (window.claude&&window.claude.use?window.claude.use('room'):Promise.resolve(null));
