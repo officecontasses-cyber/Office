@@ -91,8 +91,10 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   `--border`, `--radius`), para funcionar no claro e no escuro; **sem emoji e sem negrito no meio da frase**; o texto explicativo fica
   **na resposta, fora do painel**. **Fechar com esse painel toda resposta em que a agente resolver, enviar, sugerir ou responder algo,
   inclusive as curtas.** Texto para copiar continua em bloco de código.
-  **Limite conhecido (30/10/2026):** no Claude Code a resposta é renderizada como markdown de terminal e **HTML não é interpretado** —
-  a confirmar com a Fernanda se o painel aparece montado no ambiente dela; se não aparecer, voltar ao painel em markdown.
+  **TESTADO E DESCARTADO AQUI (30/10/2026):** no Claude Code o HTML **veio como código cru** na tela da Fernanda ("veio código cru,
+  volta pro painel em markdown"). **Neste ambiente o painel é em markdown** (tabelas curtas com os marcadores `✓ ▲ ■ ○ →`, números
+  em tabela, comandos em blocos de código copiáveis), seguindo a mesma ordem e as mesmas regras de agrupamento e cor. O painel em
+  HTML com botões vale no Cowork e na Central, não aqui.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
