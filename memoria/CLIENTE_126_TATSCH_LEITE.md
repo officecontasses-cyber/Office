@@ -103,3 +103,4 @@ Conferido no **FAT 126 (`1eBuHiIYRmzxxN4a-VTLywpl1j5c5JMRSI8-vLaYeN-U`), aba `Co
 - **PIS não foi compensado** em setembro: 998,81 integral (0,65% de 153.662,41).
 **Conclusão: não há divergência de apuração.** O que fica é o **pagamento**: a guia de 17/10 (4.091,90) venceu em 23/10 sem pagamento e foi reemitida em 27/10 por **4.118,90**. Confirmar se foi paga.
 **Correção do registro anterior:** a nota de 29/10 que apontava "divergência de 1.516,78 sem explicação" está superada — a explicação estava no próprio FAT, aba Compensações.
+- **Cotas do IRPJ/CSLL (regra da Fernanda, 30/10/2026):** o 126 parcela o trimestre em **3 cotas**, e as **cotas 2 e 3 são emitidas só nos meses 11 e 12** — não é pendência de outubro. A guia de outubro é a `QUOTA 1` (IRPJ 7.763,14 + CSLL 3.514,73 = 1/3 de 23.289,40 e 10.544,19). O status `E` das cotas 2 e 3 no G-Click reflete isso.
