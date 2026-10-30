@@ -66,6 +66,9 @@ section.view{display:flex;flex-direction:column;gap:24px;min-width:0}
 .gauge .gv{font-size:25px;font-weight:800;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;fill:var(--navy)}
 .gauge .gs{font-size:11px;font-weight:600;fill:var(--muted)}
 .gauge .glbl{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center}
+.gauge .gsel{font:700 11.5px var(--f);color:var(--muted);background:transparent;border:0;padding:2px 4px;border-radius:6px;text-align:center;cursor:pointer;letter-spacing:.04em;text-transform:uppercase}
+.gauge .gsel:hover{background:var(--surface-2);color:var(--navy)}
+.gauge .gcli{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 .gauge .gtrack{stroke:var(--surface-2)} .gauge .gfill{stroke:var(--ok);transition:stroke-dasharray .4s}
 .strip{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 14px}
 .strip .frase{font-size:14.5px;font-weight:600;color:var(--navy);flex:1 1 240px;min-width:0}
@@ -252,7 +255,9 @@ textarea{width:100%;min-height:52px;resize:vertical}
           <text class="gv" id="gv" x="68" y="58" text-anchor="middle">—</text>
           <text class="gs" id="gs" x="68" y="80" text-anchor="middle"></text>
         </svg>
-        <span class="glbl" id="glbl">Fechamento do mês</span>
+        <span class="glbl" id="glbl">Fechamento</span>
+        <select class="gsel" id="gsel" aria-label="Competência do fechamento" hidden></select>
+        <span class="gcli" id="gcli"></span>
       </div>
       <div class="tiles" id="tiles"></div>
     </div>
@@ -332,7 +337,7 @@ textarea{width:100%;min-height:52px;resize:vertical}
 <script>
 (function(){
 const TZ='America/Sao_Paulo';
-const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],frases:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,rv:'carteira',loaded:false,canAsk:false};
+const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],frases:[],comps:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,rv:'carteira',loaded:false,canAsk:false};
 let db=null,room=null;
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -405,23 +410,48 @@ function renderTiles(today){
   ];
   $('tiles').innerHTML=T.map(([c,l,n,go])=>`<button class="tile ${n?c:'zero'}" data-act="tile" data-go="${go}"><b>${n}</b><span>${l}</span></button>`).join('');
 }
-/* Medidor por tarefa: concluídas ÷ tarefas do mês. "Do mês" = prazo no mês corrente,
-   mais as concluídas dentro do mês mesmo com prazo fora dele. Sem data não entra. */
+/* Medidor por tarefa, dentro de uma COMPETÊNCIA de fechamento (não pelo mês do prazo).
+   A competência de cada tarefa sai, nesta ordem: do campo `comp`; da aba da planilha
+   (Set2026 = 2026-09); ou do texto "comp. MM/AAAA" que o G-Click grava no passo. */
 const ARC=169.6;
-function doMes(t,ym){
-  if(isISO(t.prazo)&&t.prazo.slice(0,7)===ym)return true;
-  return !!(t.concluida&&typeof t.concluidaEm==='string'&&t.concluidaEm.slice(0,7)===ym);
+const MES3={jan:'01',fev:'02',mar:'03',abr:'04',mai:'05',jun:'06',jul:'07',ago:'08',set:'09',out:'10',nov:'11',dez:'12'};
+function compOf(t){
+  if(typeof t.comp==='string'&&/^\d{4}-\d{2}$/.test(t.comp))return t.comp;
+  const ab=String(t.aba||'');const m=ab.match(/^([A-Za-z]{3})[a-z]*(\d{4})$/);
+  if(m&&MES3[m[1].toLowerCase()])return m[2]+'-'+MES3[m[1].toLowerCase()];
+  const ps=Array.isArray(t.passos)?t.passos:[];
+  for(const p of ps){
+    if(typeof p.comp==='string'&&/^\d{4}-\d{2}$/.test(p.comp))return p.comp;
+    const c=String(p.t||'').match(/comp\.\s*(\d{2})\/(\d{4})/);
+    if(c)return c[2]+'-'+c[1];
+  }
+  return null;
+}
+const compBR=c=>c?c.slice(5,7)+'/'+c.slice(0,4):'';
+function compAtual(){
+  try{const v=localStorage.getItem('central-comp');if(v&&S.comps.includes(v))return v;}catch(_){}
+  const cnt={};S.tasks.forEach(t=>{if(t.concluida)return;const c=compOf(t);if(c)cnt[c]=(cnt[c]||0)+1;});
+  const ks=Object.keys(cnt);
+  if(!ks.length)return S.comps[S.comps.length-1]||null;
+  ks.sort((a,b)=>cnt[b]-cnt[a]||b.localeCompare(a));
+  return ks[0];
 }
 function renderGauge(today){
-  const ym=today.slice(0,7);
-  const mes=S.tasks.filter(t=>doMes(t,ym));
+  S.comps=[...new Set(S.tasks.map(compOf).filter(Boolean))].sort();
+  const c=compAtual();
+  const mes=c?S.tasks.filter(t=>compOf(t)===c):[];
   const ok=mes.filter(t=>t.concluida).length,tot=mes.length;
   const pct=tot?Math.round(ok/tot*100):0;
+  const ps=mes.flatMap(t=>Array.isArray(t.passos)?t.passos:[]);
+  const pok=ps.filter(p=>p.ok).length;
   $('gfill').setAttribute('stroke-dasharray',(tot?ARC*pct/100:0).toFixed(1)+' '+ARC);
   $('gv').textContent=tot?pct+'%':'—';
-  $('gs').textContent=tot?ok+' de '+tot:'sem tarefas com data';
-  const nm=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',month:'long'}).format(toD(today));
-  $('glbl').textContent='Fechamento de '+nm;
+  $('gs').textContent=tot?ok+' de '+tot+(tot===1?' tarefa':' tarefas'):'sem competência identificada';
+  $('gcli').textContent=ps.length?pok+' de '+ps.length+' clientes':'';
+  $('gsel').innerHTML=S.comps.map(x=>`<option value="${x}" ${x===c?'selected':''}>Fechamento ${compBR(x)}</option>`).join('');
+  $('gsel').hidden=S.comps.length<2;
+  $('glbl').hidden=S.comps.length>=2;
+  $('glbl').textContent=c?'Fechamento '+compBR(c):'Fechamento';
   /* Medidores por obrigação: aqui a unidade é o passo, que é um cliente. */
   const open=S.tasks.filter(t=>!t.concluida&&Array.isArray(t.passos)&&t.passos.length>1);
   const rows=open.map(t=>{const p=t.passos,k=p.filter(x=>x.ok).length;
@@ -688,6 +718,7 @@ $('taskList').addEventListener('focusout',()=>setTimeout(()=>{if(renderTarefas.p
 $('fq').addEventListener('input',e=>{S.f.q=e.target.value;renderTarefas(todayISO());});
 $('forigem').addEventListener('change',e=>{S.f.origem=e.target.value;renderTarefas(todayISO());});
 $('newBtn').addEventListener('click',()=>{const f=$('addForm');f.hidden=!f.hidden;$('newBtn').setAttribute('aria-expanded',String(!f.hidden));if(!f.hidden)$('addTitulo').focus();});
+$('gsel').addEventListener('change',e=>{try{localStorage.setItem('central-comp',e.target.value);}catch(_){}renderGauge(todayISO());});
 $('rview').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;S.rv=b.dataset.rv;[...$('rview').children].forEach(x=>x.setAttribute('aria-pressed',x===b));renderRadar(todayISO());});
 $('addForm').addEventListener('submit',e=>{e.preventDefault();if(!db)return toast('Banco indisponível');const f=e.target;const titulo=f.titulo.value.trim();if(!titulo)return;
   db.collection('pendencias').add({titulo,cliente:f.cliente.value.trim(),prazo:f.prazo.value||null,prioridade:f.prioridade.value,situacao:'aberta',passos:[],notas:'',comando:'',recorrenciaDias:0,responsavel:'Fernanda',origem:'manual',concluida:false,criadoEm:nowISO(),atualizadoEm:nowISO()})
