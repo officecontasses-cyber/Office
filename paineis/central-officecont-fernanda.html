@@ -237,7 +237,7 @@ textarea{width:100%;min-height:52px;resize:vertical}
     <button type="button" data-act="ask" data-ask="radar">Roda o Radar</button>
     <p id="askHint">Vai para a caixa de mensagem da conversa. Nada é enviado até você apertar enter.</p>
   </div>
-  <div class="sbfoot">Fiscal · Porto Alegre/RS<br>G-Click e planilha Controle_Fiscal</div>
+  <div class="sbfoot">Fernanda Poleto · fiscal · Porto Alegre/RS<br>Só o que é meu: meu login do G-Click, a minha planilha e o meu e-mail.</div>
 </aside>
 
 <main>
@@ -317,15 +317,15 @@ textarea{width:100%;min-height:52px;resize:vertical}
   <section class="view" id="view-radar" hidden>
     <div class="sec">
       <div class="toolbar" style="justify-content:space-between">
-        <div class="seg" id="rview" role="group" aria-label="Carteira">
-          <button data-rv="carteira" aria-pressed="true">Presumido e Real <span id="nRC"></span></button>
-          <button data-rv="simples" aria-pressed="false">Simples Nacional <span id="nRS"></span></button>
-        </div>
+        <h2>Minha carteira · Lucro Presumido e Real <span class="muted small" id="nRC"></span></h2>
         <span class="muted small" id="radarStatus"></span>
       </div>
       <details class="more" id="radarCobBox" hidden><summary>O que foi pesquisado na última rodada</summary><div class="src" id="radarCob"></div></details>
     </div>
     <div class="sec" id="radarList"></div>
+    <details class="more" id="simplesBox"><summary>Simples Nacional <span id="nRS"></span> — não é da minha carteira</summary>
+      <p class="small muted" style="margin:4px 2px 8px">O Simples é da Camila e do Gian. Fica aqui só para eu avisar quando algo os atingir.</p>
+      <div class="sec" id="radarSimples"></div></details>
     <details class="more"><summary>Enviados <span id="nRDone"></span></summary><div class="rows" id="radarDone"></div></details>
     <details class="more"><summary>Descartados <span id="nRDesc"></span></summary><div class="rows" id="radarDesc"></div></details>
   </section>
@@ -337,7 +337,7 @@ textarea{width:100%;min-height:52px;resize:vertical}
 <script>
 (function(){
 const TZ='America/Sao_Paulo';
-const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],frases:[],comps:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,rv:'carteira',loaded:false,canAsk:false};
+const S={tasks:[],meudia:null,emails:[],radar:[],rdir:{},rmeta:null,portais:[],frases:[],comps:[],f:{q:'',origem:'todas',bucket:null},open:new Set(),confirm:null,loaded:false,canAsk:false};
 let db=null,room=null;
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -448,10 +448,10 @@ function renderGauge(today){
   $('gv').textContent=tot?pct+'%':'—';
   $('gs').textContent=tot?ok+' de '+tot+(tot===1?' tarefa':' tarefas'):'sem competência identificada';
   $('gcli').textContent=ps.length?pok+' de '+ps.length+' clientes':'';
-  $('gsel').innerHTML=S.comps.map(x=>`<option value="${x}" ${x===c?'selected':''}>Fechamento ${compBR(x)}</option>`).join('');
+  $('gsel').innerHTML=S.comps.map(x=>`<option value="${x}" ${x===c?'selected':''}>Meu fechamento ${compBR(x)}</option>`).join('');
   $('gsel').hidden=S.comps.length<2;
   $('glbl').hidden=S.comps.length>=2;
-  $('glbl').textContent=c?'Fechamento '+compBR(c):'Fechamento';
+  $('glbl').textContent=c?'Meu fechamento '+compBR(c):'Meu fechamento';
   /* Medidores por obrigação: aqui a unidade é o passo, que é um cliente. */
   const open=S.tasks.filter(t=>!t.concluida&&Array.isArray(t.passos)&&t.passos.length>1);
   const rows=open.map(t=>{const p=t.passos,k=p.filter(x=>x.ok).length;
@@ -595,15 +595,18 @@ function renderRadar(today){
   const pub=r=>r.publico==='simples'?'simples':'carteira';
   const live=S.radar.filter(r=>{const x=S.rdir[r.id]||{};return!x.descartadoRadarEm&&!x.enviadoEm;});
   const nc=live.filter(r=>pub(r)==='carteira').length,ns=live.filter(r=>pub(r)==='simples').length;
-  $('nRC').textContent=nc?'· '+nc:'';$('nRS').textContent=ns?'· '+ns:'';
-  const mine=S.radar.filter(r=>pub(r)===S.rv);
-  const active=[],done=[],desc=[];
-  mine.forEach(r=>{const x=S.rdir[r.id]||{};if(x.descartadoRadarEm)desc.push(r);else if(x.enviadoEm)done.push(r);else active.push(r);});
+  $('nRC').textContent=nc?'· '+nc:'';$('nRS').textContent=ns?'('+ns+')':'';
+  const active=[],done=[],desc=[],simp=[];
+  S.radar.forEach(r=>{const x=S.rdir[r.id]||{};
+    if(x.descartadoRadarEm)desc.push(r);
+    else if(x.enviadoEm)done.push(r);
+    else if(pub(r)==='simples')simp.push(r);
+    else active.push(r);});
+  const grupos=lista=>CATS.map(([k,l])=>{const items=lista.filter(r=>((S.rdir[r.id]||{}).categoria||r.categoria||'informativo')===k).sort((a,b)=>String(a.prazo||'9999').localeCompare(String(b.prazo||'9999')));return items.length?`<div class="grouplabel">${l} · ${items.length}</div><div class="rows">${items.map(r=>radarCard(r,today)).join('')}</div>`:'';}).join('');
   if(!S.radar.length){$('radarList').innerHTML='<div class="rows"><div class="empty">O Radar ainda não rodou.</div></div>';}
-  else{
-    const groups=CATS.map(([k,l])=>{const items=active.filter(r=>((S.rdir[r.id]||{}).categoria||r.categoria||'informativo')===k).sort((a,b)=>String(a.prazo||'9999').localeCompare(String(b.prazo||'9999')));return items.length?`<div class="grouplabel">${l} · ${items.length}</div><div class="rows">${items.map(r=>radarCard(r,today)).join('')}</div>`:'';}).join('');
-    $('radarList').innerHTML=groups||'<div class="rows"><div class="empty">Nada pendente nesta carteira.</div></div>';
-  }
+  else $('radarList').innerHTML=grupos(active)||'<div class="rows"><div class="empty">Nada pendente na minha carteira.</div></div>';
+  $('simplesBox').hidden=!simp.length;
+  $('radarSimples').innerHTML=grupos(simp)||'<div class="rows"><div class="empty">Nada do Simples agora.</div></div>';
   $('nRDone').textContent='('+done.length+')';$('radarDone').innerHTML=done.length?done.map(r=>radarMini(r,'rUnsend','Voltar para a lista','Enviado '+br((S.rdir[r.id].enviadoEm||'').slice(0,10)))).join(''):'<div class="empty">Nada enviado ainda.</div>';
   $('nRDesc').textContent='('+desc.length+')';$('radarDesc').innerHTML=desc.length?desc.map(r=>radarMini(r,'rRestore','Restaurar','Descartado '+br((S.rdir[r.id].descartadoRadarEm||'').slice(0,10)))).join(''):'<div class="empty">Nada descartado.</div>';
 }
@@ -719,7 +722,6 @@ $('fq').addEventListener('input',e=>{S.f.q=e.target.value;renderTarefas(todayISO
 $('forigem').addEventListener('change',e=>{S.f.origem=e.target.value;renderTarefas(todayISO());});
 $('newBtn').addEventListener('click',()=>{const f=$('addForm');f.hidden=!f.hidden;$('newBtn').setAttribute('aria-expanded',String(!f.hidden));if(!f.hidden)$('addTitulo').focus();});
 $('gsel').addEventListener('change',e=>{try{localStorage.setItem('central-comp',e.target.value);}catch(_){}renderGauge(todayISO());});
-$('rview').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;S.rv=b.dataset.rv;[...$('rview').children].forEach(x=>x.setAttribute('aria-pressed',x===b));renderRadar(todayISO());});
 $('addForm').addEventListener('submit',e=>{e.preventDefault();if(!db)return toast('Banco indisponível');const f=e.target;const titulo=f.titulo.value.trim();if(!titulo)return;
   db.collection('pendencias').add({titulo,cliente:f.cliente.value.trim(),prazo:f.prazo.value||null,prioridade:f.prioridade.value,situacao:'aberta',passos:[],notas:'',comando:'',recorrenciaDias:0,responsavel:'Fernanda',origem:'manual',concluida:false,criadoEm:nowISO(),atualizadoEm:nowISO()})
   .then(()=>{f.reset();f.hidden=true;$('newBtn').setAttribute('aria-expanded','false');toast('Tarefa adicionada');}).catch(()=>toast('Não foi possível adicionar.'));});

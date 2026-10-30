@@ -27,6 +27,16 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
 
 ## Regras que não se discutem
 
+- **O painel Central é SÓ do escopo da Fernanda (definido por ela em 30/10/2026):** o login dela no G-Click
+  (`responsaveisIds=109763`), a planilha fiscal dela (`Controle_Fiscal`) e o e-mail dela. Nada entra ali que não seja
+  trabalho dela. Por isso: o **medidor** do fechamento mede o fechamento **dela**, e é rotulado "Meu fechamento";
+  o **Radar** é olhado pelo regime **dela**, Lucro Presumido e Lucro Real (`config/carteira`), e "tudo que importa para
+  a carteira dela e além" quer dizer que novidade relevante para esses dois regimes entra mesmo sem atingir cliente
+  hoje, como informativo ou acompanhar — o que não tem a ver com Presumido nem Real fica fora.
+  **O Simples Nacional não é dela:** é da Camila e do Gian. O Radar continua pesquisando o que atinge o Simples
+  (`config/carteira_simples`), mas só para ela avisá-los; no painel esse grupo aparece recolhido e marcado como não
+  sendo da carteira dela, e o aviso é escrito como recado à Camila e ao Gian, nunca como tarefa dela.
+
 - **GUIA só vai para a fila como "Enviado" com envio comprovado pelo G-Click.** Gerar a guia,
   baixar o PDF e salvar no Drive **não** é envio. Sem a comprovação do G-Click, o status da
   guia fica `Pendente`. (Regra dada pela Fernanda em 01/10/2026.)
