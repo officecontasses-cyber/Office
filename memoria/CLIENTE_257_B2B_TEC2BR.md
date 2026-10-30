@@ -22,3 +22,10 @@ CNPJ 30.839.235/0001-32, Lucro Presumido, **contribuinte de ICMS (SIM)**, comér
 ## Guias geradas e enviadas (19/10/2026)
 - **PIS/COFINS:** nº 07.16.26292.3429886-0, **R$ 5.301,65** (COFINS 2172 R$ 4.357,52 + PIS 8109 R$ 944,13), venc. 23/10/2026, gerada 19:40:40; G-Click "Darf Pis / Cofins" concluído 19/10 19:41 (fernanda.officecont).
 - **IRPJ/CSLL:** nº 07.16.26292.3432106-4, **R$ 29.676,72** (IRPJ 2089 R$ 19.321,40 + CSLL 2372 R$ 10.355,32), venc. 30/10/2026, **cota única**, gerada 19:41:17; G-Click "CSLL e IRPJ - LP (Trimestral)" concluído 19/10 19:41. Valores = Domínio. Razão social na guia: B2B SOLUCOES EM TECNOLOGIA LTDA.
+
+## FAT corrigido (30/10/2026, autorizado pela Fernanda)
+`257_TEC2BR TECNOLOGIA_FAT2026` (id `10-HBuUPvfogmJN0K9lJiOS4FOSY43hLIlreBmnCta9M`), aba `2026`. A Fernanda confirmou que **TEC2BR e B2B Soluções são a mesma empresa** (CNPJ `30839235000132`).
+- **Erro:** a célula do 3ºTRIM do IRPJ (M17) estava `=SUM(J17:L17)` — **sem somar o adicional de IRPJ**, que fica na linha 25 (`ADIC. IRPJ` do trimestre, M25 = 5.505,91). Nos trimestres anteriores a fórmula já somava: E17 `=SUM(B17:D17)+E25` e I17 `=SUM(F17:H17)+I25`.
+- **Correção:** M17 passou a ser **`=SUM(J17:L17)+M25`**.
+- **Resultado:** o 3ºTRIM do IRPJ foi de **13.815,47 para 19.321,39**; o DARF é de **19.321,40** (2 centavos de arredondamento das bases mensais). A CSLL (10.355,32) não mudou e já batia.
+- **Nada mais foi alterado.** A guia, a planilha Controle_Fiscal e a apuração do Domínio já estavam corretas — o erro era só de exibição no FAT.
