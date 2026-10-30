@@ -77,6 +77,22 @@ o log `PROCESSO_FECHAMENTO_09-2026.md` e o snapshot datado no Drive. **Reforçad
   o assunto do e-mail entra na primeira linha, como `Assunto: ...`. **Assunto curto e afirmativo (Fernanda, 29/10/2026):**
   nome/número do cliente e o tema, sem pergunta e sem explicação — `Tatsch & Leite (126) | taxa de fiscalização anual`,
   nunca `... | a guia foi enviada ao cliente?`.
+- **Painel visual em HTML no lugar de lista (pedido da Fernanda, 30/10/2026):** sempre que a resposta mostrar **pendências, prazos,
+  o que falta ou o próximo passo**, em vez de lista ou tabela em texto, gerar um **painel inline em HTML**, nesta ordem:
+  **(1)** faixa verde no topo **só quando algo acabou de ser concluído**, com uma linha de detalhe; **(2)** números do resumo em
+  cartões lado a lado (vencidos, próximo prazo, sem prazo); **(3)** campo de texto livre com botões **Enviar** e **Limpar**
+  (Enter envia; campo vazio mostra erro em linha); **(4)** um cartão por item.
+  **Cada cartão:** título em uma linha, uma linha de contexto (valor, motivo ou de quem é a bola), etiqueta de prazo à direita e
+  três botões — **Fazer agora** (manda ao chat o pedido já pronto, escrito pela agente), **Escrever** (põe o item no campo de texto
+  para ela completar) e **Pular** (esconde o cartão).
+  **Regras:** agrupar **por prazo**, do mais urgente ao sem prazo, nunca por assunto; **cor só para urgência** (vermelho = vencido ou
+  hoje, amarelo = próximo prazo, neutro = resto); **todo item é clicável**, nada de cartão só informativo; usar as variáveis de tema
+  (`--surface-1`, `--surface-2`, `--text-primary`, `--text-secondary`, `--bg-danger`, `--text-danger`, `--bg-warning`, `--text-warning`,
+  `--border`, `--radius`), para funcionar no claro e no escuro; **sem emoji e sem negrito no meio da frase**; o texto explicativo fica
+  **na resposta, fora do painel**. **Fechar com esse painel toda resposta em que a agente resolver, enviar, sugerir ou responder algo,
+  inclusive as curtas.** Texto para copiar continua em bloco de código.
+  **Limite conhecido (30/10/2026):** no Claude Code a resposta é renderizada como markdown de terminal e **HTML não é interpretado** —
+  a confirmar com a Fernanda se o painel aparece montado no ambiente dela; se não aparecer, voltar ao painel em markdown.
 - **Status só com confirmação explícita** dela. Nunca deduzir que algo foi entregue.
 - **Nunca abrir** `G:\_BACKUPS - Senhas e controles`.
 - **Senhas** (o `clientes.csv` do robô) não vão para repositório, nem para pasta sincronizada
