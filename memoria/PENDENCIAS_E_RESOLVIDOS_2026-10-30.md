@@ -65,3 +65,13 @@ Versão completa: `memoria/PENDENCIAS.md` e dossiês `memoria/CLIENTE_NNN_*.md`.
 ## Alertas
 - **Senha em texto aberto** num e-mail de 04/03/2026 ("Cadastro e-mail contribuinte", Novo Hamburgo): trocar e apagar.
 - **Certificado A1 do 71 vence em 13/11.**
+
+## Rotina única da Central — rodada das 06:45 (30/10/2026)
+- G-Click (API, só GET): 775 tarefas na janela 31/08–28/01, **462 abertas**. Planilha Controle_Fiscal: **sem mudança** desde 29/10 (Set2026 43 e Ago2026 64 linhas abertas).
+- **Resolvido hoje no G-Click:** 155 MANIERI E OLIVEIRA (`17333275000140`) — COFINS/PIS (4.9160) e CSLL e IRPJ LP Trimestral (4.9166) **concluídas**. Vencidas em aberto: de 8 para **7**. **Nada vence hoje em aberto** (as 27 tarefas de IRPJ/CSLL de 30/10 estão todas `C` ou `D`).
+- **Lista de concluir: 5 tarefas** — 018 CC&D (`93309631000178`) COFINS/PIS; 248 TACOM PROJETOS FL SC (`01005845002003`) EFD ICMS/IPI; 152 CRBM5 (`13738204000176`) EFD Reinf; 138 TACOM SISTEMAS FL RS (`08196752000262`) e 257 B2B SOLUCOES (`30839235000132`) EFD ICMS/IPI + GIA.
+- **Ação de verdade, fora da lista:** 152 CRBM5 Confirmações - Retenções (envio ao CRBIO) e 126 TATSCH & LEITE (`10914420000137`) taxa de fiscalização anual (e-mail ao Gian enviado em 29/10, aguardando resposta).
+- **`E` decifrado:** cotas 2 e 3 do IRPJ/CSLL do 126, venc. 30/11 e 31/12, com `dataConclusao` 17/10 — tarefa já trabalhada à espera do mês da cota. Não é pendência.
+- **227 PROGEST: CNPJ `45087762000105`** (obtido pela API, confere com a planilha).
+- **197 ASBBM (`05164750000112`) segue sem COFINS/PIS cadastrado no G-Click** — não aparece entre os 27 clientes de 25/11.
+- **Alerta de controle:** a coluna `Prazo` da Set2026 está congelada em 26/10; a contagem regressiva está 4 dias atrasada.
