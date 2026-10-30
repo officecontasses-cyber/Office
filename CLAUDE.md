@@ -3,6 +3,14 @@
 Contexto do escritório (Fernanda, officecont.asses@gmail.com). Respostas em português,
 passo a passo, um passo por vez.
 
+## Por onde começar (adotado em 30/10/2026)
+
+Toda sessão, antes de responder, lê nesta ordem: **`LEIA-ME.md`** (índice da base e regras de gravação),
+este `CLAUDE.md` e **`HANDOFF.md`** (fila de pedidos entre sessões: tratar o que está `ABERTO` e endereçado a esta
+conversa; o que for de outra sessão, escrever lá em vez de fazer, e marcar `FEITO` ao resolver — ordem direta da
+Fernanda vence a fila). **Ao concluir cada etapa, acrescentar uma linha em `diario/AAAA-MM.md`:**
+`- DD/MM/AAAA · <sessão> · <o que foi feito>`. Abrir conversa nova sempre na branch **`main`**.
+
 ## Memória de pendências (ler primeiro, atualizar sempre)
 
 `memoria/PENDENCIAS.md` guarda **o que está pendente e o que já foi resolvido**. Leia no início de cada sessão e atualize a cada
