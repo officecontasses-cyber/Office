@@ -41,8 +41,10 @@ Fontes: <de onde veio a informação>
 7. **O que saiu de uso vai para `99 Arquivo`** — ou some, se for lixo.
 8. **Uma linha no Diário a cada etapa concluída.**
 9. **A base vence a memória local.** Em conflito, siga a base e avise a pessoa.
+10. **O Google Drive é só leitura para a montagem da base.** Nesta etapa (decisão de 30/10/2026) nada é criado, movido, renomeado ou apagado no Drive. Só se escreve nos `.md` deste repositório git. Mexer no Drive só com pedido expresso da pessoa.
 
 ## Estado da montagem
 - Passo 1 (local): feito em 30/10/2026 — a base mora neste repositório git.
 - Passo 2 (estrutura): feito em 30/10/2026.
-- Passos 3 a 7 (levantar o que existe, migrar por tema, apontar o Claude, fechar): pendentes.
+- Passo 3 (levantar o que existe): em andamento. Mapa das pastas do Drive gravado em `06 Sistemas e integrações/Drive - mapa das pastas.md`. Falta a pessoa decidir item por item (entra na base, `99 Arquivo` ou lixo) e abrir as pastas marcadas "não vi por dentro".
+- Passos 4 a 7 (migrar por tema, apontar o Claude, fechar): pendentes.
